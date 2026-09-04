@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T17:14:28Z",
+  "generated_at": "2026-09-04T21:10:41Z",
   "chart_week": "2026-08-24",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
@@ -440,6 +440,125 @@
       "genre_family": "Pop / K-Pop",
       "sa3_prompt": "Indonesian pop instrumental, 120 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, warm and hopeful",
       "suno_prompt": "[style: Indonesian pop with a K-pop-leaning gloss] [tempo: 120 BPM] [mood: warm, hopeful, gently euphoric] [instruments: clean electric guitar arpeggios, synth bass, programmed kit with claps, glassy keys, airy pads] [vocal: soft male lead in Bahasa Indonesia, breathy verse, group-sung chorus]"
+    },
+    "AU": {
+      "city": "Sydney",
+      "country": "Australia",
+      "tz": "Australia/Sydney",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "lufs": -11.8,
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "love"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          114.84,
+          129.2
+        ]
+      },
+      "genre_family": "",
+      "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, energetic and romantic",
+      "suno_prompt": "[style: chart pop, country-pop, K-pop-styled girl-group pop] [tempo: 123 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: confident female lead, big harmonised chorus]"
+    },
+    "CO": {
+      "city": "Bogota",
+      "country": "Colombia",
+      "tz": "America/Bogota",
+      "readout": {
+        "bpm": 74.9,
+        "mode": "minor",
+        "lufs": -12.4,
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ],
+        "n_tracks": 3,
+        "excluded_tracks": [
+          "CO-1",
+          "CO-2"
+        ],
+        "bpm_iqr": [
+          66.16,
+          77.82
+        ]
+      },
+      "genre_family": "Música Mexicana / Pop Latino / Rap / Hip Hop",
+      "sa3_prompt": "Colombian pop instrumental, 75 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "suno_prompt": "[style: musica mexicana as heard in Colombia, pop latino, reggaeton undertow] [tempo: 75 BPM] [mood: romantic, joyful, energetic] [instruments: bass, requinto guitar, accordion, soft percussion, pads] [vocal: male lead in Spanish, heartfelt delivery, harmonised chorus]"
+    },
+    "PH": {
+      "city": "Manila",
+      "country": "Philippines",
+      "tz": "Asia/Manila",
+      "readout": {
+        "bpm": 69.84,
+        "mode": "major",
+        "lufs": -14.67,
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          66.26,
+          80.75
+        ]
+      },
+      "genre_family": "Alternative / Indie Pop / Pop / Rap / Hip Hop / Hip-Hop / Rap",
+      "sa3_prompt": "Filipino pop instrumental, 70 BPM, major key, clean drum kit groove, warm bass, jangly electric guitar, soft piano, wide pads, earnest indie-pop lift, big-chorus dynamics, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "suno_prompt": "[style: OPM pop, indie pop, hip-hop-inflected pop ballad] [tempo: 70 BPM] [mood: romantic, energetic, joyful] [instruments: drum kit, bass, jangly guitar, piano, pads] [vocal: soaring male or female lead in Tagalog and English, anthemic chorus]"
+    },
+    "NZ": {
+      "city": "Auckland",
+      "country": "New Zealand",
+      "tz": "Pacific/Auckland",
+      "readout": {
+        "bpm": 112.35,
+        "mode": "major",
+        "lufs": -11.83,
+        "instruments": [
+          "drums",
+          "bass",
+          "keyboard"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "love"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          90.67,
+          114.84
+        ]
+      },
+      "genre_family": "",
+      "sa3_prompt": "New Zealand chart pop instrumental, 112 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and keyboard chords carrying the arrangement, joyful, energetic and romantic",
+      "suno_prompt": "[style: chart pop, country-pop, girl-group pop, hip-hop crossover] [tempo: 112 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: warm lead vocal, layered harmonies, singalong chorus]"
     }
   },
   "tracks": [
@@ -1552,6 +1671,342 @@
       "title": "Terang Sekali Hatiku",
       "artist": "Sari Gudang Musik",
       "mirrors_rank": 4,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2
+    },
+    {
+      "id": "CO-01",
+      "region": "CO",
+      "file": "audio/CO-01.mp3",
+      "duration_s": 106.32,
+      "title": "Noche en Andes",
+      "artist": "La Candelaria Tape Club",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2
+    },
+    {
+      "id": "CO-02",
+      "region": "CO",
+      "file": "audio/CO-02.mp3",
+      "duration_s": 109.6,
+      "title": "Sabor de Oro",
+      "artist": "Cerros Choir",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        214,
+        215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2
+    },
+    {
+      "id": "CO-03",
+      "region": "CO",
+      "file": "audio/CO-03.mp3",
+      "duration_s": 109.4,
+      "title": "Calle Azul",
+      "artist": "Cerros Society",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        314,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.3
+    },
+    {
+      "id": "CO-04",
+      "region": "CO",
+      "file": "audio/CO-04.mp3",
+      "duration_s": 111.14,
+      "title": "Noche en Andes",
+      "artist": "La Candelaria Radio",
+      "mirrors_rank": 1,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2
+    },
+    {
+      "id": "PH-01",
+      "region": "PH",
+      "file": "audio/PH-01.mp3",
+      "duration_s": 105.94,
+      "title": "Kanto ng Bayan",
+      "artist": "Roxas Boulevard Cassette",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2
+    },
+    {
+      "id": "PH-02",
+      "region": "PH",
+      "file": "audio/PH-02.mp3",
+      "duration_s": 106.74,
+      "title": "Kanto ng Asul",
+      "artist": "Malate Skyline",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        214,
+        215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2
+    },
+    {
+      "id": "PH-03",
+      "region": "PH",
+      "file": "audio/PH-03.mp3",
+      "duration_s": 110.22,
+      "title": "Tag-init sa Maynila",
+      "artist": "Roxas Boulevard Trio",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        314,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2
+    },
+    {
+      "id": "PH-04",
+      "region": "PH",
+      "file": "audio/PH-04.mp3",
+      "duration_s": 107.08,
+      "title": "Tag-init sa Araw",
+      "artist": "Quiapo Yard Sessions",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2
+    },
+    {
+      "id": "AU-01",
+      "region": "AU",
+      "file": "audio/AU-01.mp3",
+      "duration_s": 111.78,
+      "title": "Dancing at January",
+      "artist": "Marrickville Tape Club",
+      "mirrors_rank": 1,
+      "mirrors_cities": 15,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2
+    },
+    {
+      "id": "AU-02",
+      "region": "AU",
+      "file": "audio/AU-02.mp3",
+      "duration_s": 109.96,
+      "title": "Down the Blue",
+      "artist": "Parramatta Band",
+      "mirrors_rank": 2,
+      "mirrors_cities": 3,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        214,
+        215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2
+    },
+    {
+      "id": "AU-03",
+      "region": "AU",
+      "file": "audio/AU-03.mp3",
+      "duration_s": 108.98,
+      "title": "Down the the Harbour",
+      "artist": "Harbour Line Trio",
+      "mirrors_rank": 3,
+      "mirrors_cities": 3,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        314,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2
+    },
+    {
+      "id": "AU-04",
+      "region": "AU",
+      "file": "audio/AU-04.mp3",
+      "duration_s": 110.86,
+      "title": "Night on Bondi",
+      "artist": "Newtown Band",
+      "mirrors_rank": 4,
+      "mirrors_cities": 4,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2
+    },
+    {
+      "id": "NZ-01",
+      "region": "NZ",
+      "file": "audio/NZ-01.mp3",
+      "duration_s": 101.58,
+      "title": "Dance at the Harbour",
+      "artist": "Karangahape Choir",
+      "mirrors_rank": 1,
+      "mirrors_cities": 15,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2
+    },
+    {
+      "id": "NZ-02",
+      "region": "NZ",
+      "file": "audio/NZ-02.mp3",
+      "duration_s": 106.4,
+      "title": "Heart of Blue",
+      "artist": "Grey Lynn Skyline",
+      "mirrors_rank": 2,
+      "mirrors_cities": 3,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        214,
+        215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2
+    },
+    {
+      "id": "NZ-03",
+      "region": "NZ",
+      "file": "audio/NZ-03.mp3",
+      "duration_s": 107.56,
+      "title": "Dance at Piha",
+      "artist": "Harbour Bridge Union",
+      "mirrors_rank": 3,
+      "mirrors_cities": 4,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        314,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2
+    },
+    {
+      "id": "NZ-04",
+      "region": "NZ",
+      "file": "audio/NZ-04.mp3",
+      "duration_s": 107.56,
+      "title": "Along the January",
+      "artist": "Grey Lynn Rooftop Crew",
+      "mirrors_rank": 4,
+      "mirrors_cities": 4,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
