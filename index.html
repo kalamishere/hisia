@@ -48,7 +48,7 @@ body{
   transition:opacity 1.6s ease;
 }
 .ground.b{opacity:0;transition:opacity 1.6s ease}
-#groundWrap{position:absolute;inset:0}
+#groundWrap{position:absolute;inset:0;z-index:1}
 .horizonline{
   position:absolute;left:0;right:0;top:var(--horizon);height:1px;
   background:linear-gradient(90deg,transparent,var(--hz,rgba(255,255,255,.28)) 18%,var(--hz,rgba(255,255,255,.28)) 82%,transparent);
@@ -63,7 +63,7 @@ body{
 }
 /* sun */
 #sun{
-  position:absolute;left:var(--sun-x);top:var(--sun-y);
+  position:absolute;left:var(--sun-x);top:var(--sun-y);z-index:0;
   width:clamp(74px,7.6vw,150px);aspect-ratio:1;margin:0 0 0 0;
   transform:translate(-50%,-50%);
   opacity:var(--sun-op);
@@ -135,10 +135,10 @@ body{
 }
 
 /* ---------- chrome ---------- */
-#veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,8,18,.28) 0%,rgba(6,8,18,0) 22%,rgba(6,8,18,0) 52%,rgba(6,8,18,.34) 76%,rgba(6,8,18,.62) 100%);pointer-events:none}
+#veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(6,8,18,.28) 0%,rgba(6,8,18,0) 22%,rgba(6,8,18,0) 52%,rgba(6,8,18,.34) 76%,rgba(6,8,18,.62) 100%);pointer-events:none}
 
 header{
-  position:absolute;top:0;left:0;right:0;padding:calc(var(--pad) * .72) var(--pad);
+  position:absolute;top:0;left:0;right:0;z-index:2;padding:calc(var(--pad) * .72) var(--pad);
   display:flex;justify-content:space-between;align-items:baseline;gap:24px;
 }
 .mark{
@@ -153,7 +153,7 @@ header{
 .nextcity b{font-weight:400;color:var(--ink-soft)}
 
 #card{
-  position:absolute;left:var(--pad);bottom:calc(var(--pad) * 1.15);
+  position:absolute;left:var(--pad);bottom:calc(var(--pad) * 1.15);z-index:2;
   max-width:min(56ch,62vw);
 }
 .city{
@@ -221,7 +221,7 @@ button.ctl.icon{width:2.9em;height:2.9em;padding:0;display:grid;place-items:cent
 #vol::-moz-range-thumb{width:11px;height:11px;border:0;border-radius:50%;background:#fff;cursor:pointer}
 
 footer{
-  position:absolute;left:var(--pad);bottom:calc(var(--pad) * .2);
+  position:absolute;left:var(--pad);bottom:calc(var(--pad) * .2);z-index:2;
   font-size:clamp(10px,.72vw,13px);letter-spacing:.16em;color:rgba(255,255,255,.38);
 }
 footer a{color:rgba(255,255,255,.6);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
@@ -229,7 +229,7 @@ footer a:hover{color:#fff}
 
 /* city strip along the horizon: every city in order of local time, lit by how close it is to evening */
 #strip{
-  position:absolute;left:var(--pad);right:var(--pad);top:calc(var(--horizon) + 1.6vh);
+  position:absolute;left:var(--pad);right:var(--pad);top:calc(var(--horizon) - 3.2vh);
   display:flex;justify-content:space-between;gap:.6em;
   font-size:clamp(9px,.62vw,12px);letter-spacing:.14em;text-transform:uppercase;
   color:#fff;pointer-events:none;white-space:nowrap;z-index:2;
@@ -238,6 +238,9 @@ footer a:hover{color:#fff}
 #strip span i{font-style:normal;opacity:.7;margin-left:.45em;letter-spacing:.06em}
 #strip span.on{opacity:1;text-shadow:0 0 12px rgba(255,220,160,.6)}
 @media(max-width:820px){#strip{display:none}}
+
+/* stream frame: the prompt takes its own column on the right so the card stays clear of the horizon strip */
+body.stream #promptBox{position:fixed;left:auto;right:var(--pad);bottom:calc(var(--pad) * 1.15);width:min(46ch,34vw);max-width:none;margin:0;z-index:2}
 
 /* start overlay */
 #start{
@@ -349,6 +352,17 @@ window.__setClock = function(iso){
   clockOffset = isNaN(t) ? 0 : t - Date.now();
   paint(); return now().toISOString();
 };
+
+/* ---------------- puppet mode ----------------
+   ?puppet=1 (implied by ?stream=1) — the page stops being a player and
+   becomes a display: it polls /now.json every 2s and shows whatever the
+   stream backend (radio/stream/player.js) is actually playing. Same city,
+   same card, same sun, same strip, same next-up. No audio is decoded here;
+   the backend's PCM is already in the encoder. ?puppet=0 opts back out. */
+var Q0 = new URLSearchParams(location.search);
+var IS_STREAM = Q0.get("stream") === "1";
+var PUPPET = Q0.get("puppet") === "1" || (IS_STREAM && Q0.get("puppet") !== "0");
+var puppetStart = 0, puppetDur = 0, puppetSkew = 0;
 
 /* ---------------- local time helpers ---------------- */
 var fmtCache = {};
@@ -502,11 +516,15 @@ function pickRegion(){
   var skip = recent.slice(recent.length - hold);
   var cands = all.filter(function(k){ return skip.indexOf(k) === -1; });
   if (!cands.length) cands = all;
+  /* any city within 3.5 h of evening, at random — strict "closest" looped four
+     cities for half an hour; this spreads an hour across ten */
   var d = now(), score = {}, jitter = {};
   cands.forEach(function(k){
-    score[k] = Math.round(eveningness(regionsByIso[k].tz, d) * 2) / 2;
+    score[k] = eveningness(regionsByIso[k].tz, d);
     jitter[k] = Math.random();
   });
+  var near = cands.filter(function(k){ return score[k] <= 3.5; });
+  if (near.length) return near[Math.floor(Math.random() * near.length)];
   cands.sort(function(a,b){ return (score[a] - score[b]) || (jitter[a] - jitter[b]); });
   return cands[0];
 }
@@ -524,7 +542,7 @@ function refill(){
     take.forEach(function(t){ played.push(t.id); queue.push(t); });
     lastRegion = iso;
     recent.push(iso);
-    if (recent.length > 3) recent.shift();
+    if (recent.length > 4) recent.shift();
   }
 }
 
@@ -632,13 +650,35 @@ var elCity = document.getElementById("cityLine"),
     elNext = document.getElementById("nextCity"),
     elProgress = document.getElementById("progress");
 
+/* tags the mood/instrument models hand to nearly every chart on earth ("love", "happy",
+   "bass", "drums") say nothing about a city; show what this city has that most don't */
+var tagShare = null;
+function tagShares(){
+  if (tagShare) return tagShare;
+  var n = 0, count = {};
+  Object.keys(regionsByIso).forEach(function(k){
+    var ro = regionsByIso[k].readout || {}; n++;
+    (ro.instruments || []).concat(ro.moods || []).forEach(function(t){ count[t] = (count[t] || 0) + 1; });
+  });
+  tagShare = {}; Object.keys(count).forEach(function(t){ tagShare[t] = count[t] / Math.max(n, 1); });
+  return tagShare;
+}
+function distinctive(tags, keep){
+  var share = tagShares();
+  var rare = (tags || []).filter(function(t){ return (share[t] || 0) <= 0.5; });
+  var out = rare.slice(0, keep);
+  if (!out.length && tags && tags.length) out = tags.slice(0, 1);
+  return out;
+}
 function readoutLine(r){
   var ro = r.readout || {};
   var bits = [];
   if (ro.bpm) bits.push(Math.round(ro.bpm) + " BPM");
   if (ro.mode) bits.push(ro.mode);
-  if (ro.instruments && ro.instruments.length) bits.push(ro.instruments.slice(0,3).join(", "));
-  if (ro.moods && ro.moods.length) bits.push(ro.moods.slice(0,2).join(", "));
+  var inst = distinctive(ro.instruments, 2), mood = distinctive(ro.moods, 2);
+  var tidy = function(t){ return t.replace(/^electric(guitar)$/, "electric $1").replace(/^acoustic(guitar)$/, "acoustic $1"); };
+  if (inst.length) bits.push(inst.map(tidy).join(", "));
+  if (mood.length) bits.push(mood.join(", "));
   return bits.join(" · ");
 }
 
@@ -697,6 +737,14 @@ function escapeHTML(s){
 var lastSkyTick = 0;
 function frame(ts){
   requestAnimationFrame(frame);
+  if (PUPPET){
+    if (current && puppetDur > 0){
+      var el = (Date.now() - puppetSkew - puppetStart) / 1000;
+      elProgress.style.width = Math.min(100, Math.max(0, (el / puppetDur) * 100)).toFixed(2) + "%";
+    }
+    if (ts - lastSkyTick > 1000){ lastSkyTick = ts; if (current) paint(); paintNext(); }
+    return;
+  }
   var p = ctx ? players[active] : null;
   if (p && p.el && current){
     var dur = p.el.duration || current.duration_s || 0;
@@ -774,6 +822,29 @@ document.addEventListener("keydown", function(e){
   else if (e.key === "m" || e.key === "M"){ toggleMute(); }
 });
 
+/* ---------------- puppet polling ---------------- */
+function applyNow(n){
+  if (!n || !n.track) return;
+  puppetStart = n.startedAt || Date.now();
+  puppetDur = n.durationS || n.track.duration_s || 0;
+  if (n.serverTime) puppetSkew = 0; /* same machine; keep the hook explicit */
+  queue = (n.next && n.next.track) ? [n.next.track] : [];
+  var changed = !current || current.id !== n.track.id;
+  current = n.track;
+  if (changed) paint();
+  paintNext();
+}
+function startPuppet(){
+  var poll = function(){
+    fetch("/now.json", {cache:"no-store"})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(applyNow)
+      .catch(function(){});
+  };
+  poll();
+  setInterval(poll, 2000);
+}
+
 /* ---------------- boot ---------------- */
 loadLibrary().then(function(data){
   lib = data;
@@ -792,11 +863,20 @@ loadLibrary().then(function(data){
     current = null;
     elNext.innerHTML = "";
   }
-  /* ?stream=1 — the capture frame: no start overlay, no controls, starts by itself
-     (a capture browser must be launched with autoplay allowed) */
-  if (new URLSearchParams(location.search).get("stream") === "1"){
+  /* ?stream=1 — the capture frame: no start overlay, no controls.
+     Puppeted (the default under ?stream=1) it displays the backend's stream;
+     with ?puppet=0 it falls back to playing the library itself, as before. */
+  if (IS_STREAM || PUPPET){
     document.getElementById("start").classList.add("gone");
     document.getElementById("controls").hidden = true;
+    elPromptBox.hidden = false; /* the stream always shows how the track was made */
+    document.body.classList.add("stream");
+  }
+  if (PUPPET){
+    current = null;
+    elNext.innerHTML = "";
+    startPuppet();
+  } else if (IS_STREAM){
     try { begin(); } catch(e){}
   }
 }).catch(function(err){
