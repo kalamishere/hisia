@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>hisia · World Sound</title>
+<meta name="description" content="Continuous radio of AI-generated mirrors of this week's charts around the world. Follows the sun.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --text:"Inter", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --horizon:62%;
+  --ink:#fff;
+  --ink-soft:rgba(255,255,255,.72);
+  --ink-faint:rgba(255,255,255,.5);
+  --scrim:rgba(6,8,18,.34);
+  --star-op:0;
+  --cloud-op:.5;
+  --sun-x:50%;
+  --sun-y:30%;
+  --sun-op:1;
+  --sun-core:#fff4d8;
+  --sun-glow:255,214,140;
+  --pad:clamp(20px, 4.2vw, 84px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;background:#0a1020;color:var(--ink);
+  font-family:var(--text);font-weight:300;
+  -webkit-font-smoothing:antialiased;
+  overflow:hidden;
+}
+#stage{position:fixed;inset:0;overflow:hidden}
+
+/* ---------- sky ---------- */
+.sky{position:absolute;inset:0;transition:opacity 1.6s ease}
+.sky.b{opacity:0}
+.ground{position:absolute;left:0;right:0;top:var(--horizon);bottom:0}
+#seaGlow{
+  position:absolute;left:0;right:0;top:var(--horizon);height:16vh;
+  background:radial-gradient(46vw 16vh at var(--sun-x) 0%, rgba(var(--sun-glow),.5), rgba(var(--sun-glow),0) 72%);
+  mix-blend-mode:screen;opacity:var(--sun-op);pointer-events:none;
+  transition:opacity 1.6s ease;
+}
+.ground.b{opacity:0;transition:opacity 1.6s ease}
+#groundWrap{position:absolute;inset:0}
+.horizonline{
+  position:absolute;left:0;right:0;top:var(--horizon);height:1px;
+  background:linear-gradient(90deg,transparent,var(--hz,rgba(255,255,255,.28)) 18%,var(--hz,rgba(255,255,255,.28)) 82%,transparent);
+  opacity:.8;
+}
+/* soft glow sitting on the horizon under the sun */
+#horizonGlow{
+  position:absolute;left:0;right:0;top:calc(var(--horizon) - 30vh);height:34vh;
+  background:radial-gradient(60vw 30vh at var(--sun-x) 100%, rgba(var(--sun-glow),.55), rgba(var(--sun-glow),0) 70%);
+  opacity:var(--sun-op);pointer-events:none;
+  transition:opacity 1.6s ease;
+}
+/* sun */
+#sun{
+  position:absolute;left:var(--sun-x);top:var(--sun-y);
+  width:clamp(74px,7.6vw,150px);aspect-ratio:1;margin:0 0 0 0;
+  transform:translate(-50%,-50%);
+  opacity:var(--sun-op);
+  will-change:transform;
+}
+#sun::before{ /* glow */
+  content:"";position:absolute;inset:-140%;border-radius:50%;
+  background:radial-gradient(circle, rgba(var(--sun-glow),.55) 0%, rgba(var(--sun-glow),.22) 34%, rgba(var(--sun-glow),0) 68%);
+}
+#sun::after{ /* disc */
+  content:"";position:absolute;inset:0;border-radius:50%;
+  background:radial-gradient(circle at 50% 45%, #fff 0%, var(--sun-core) 52%, rgba(var(--sun-glow),.92) 100%);
+  box-shadow:0 0 60px 12px rgba(var(--sun-glow),.35);
+}
+/* reflection column on the water/plain */
+#reflection{
+  position:absolute;left:var(--sun-x);top:var(--horizon);bottom:0;
+  width:clamp(140px,16vw,330px);transform:translateX(-50%);
+  background:radial-gradient(ellipse 42% 96% at 50% 0%, rgba(var(--sun-glow),.5) 0%, rgba(var(--sun-glow),.16) 45%, rgba(var(--sun-glow),0) 100%);
+  filter:blur(18px);opacity:var(--sun-op);mix-blend-mode:screen;pointer-events:none;
+  transition:opacity 1.6s ease;
+}
+/* gentle water lines */
+.wave{
+  position:absolute;left:-10%;width:120%;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
+  animation:drift 26s linear infinite;opacity:.5;
+}
+.wave:nth-of-type(1){top:calc(var(--horizon) + 3.2vh);animation-duration:34s}
+.wave:nth-of-type(2){top:calc(var(--horizon) + 7vh);animation-duration:46s;animation-direction:reverse;opacity:.34}
+.wave:nth-of-type(3){top:calc(var(--horizon) + 12.5vh);animation-duration:60s;opacity:.22}
+@keyframes drift{from{transform:translateX(-6%)}to{transform:translateX(6%)}}
+
+/* clouds */
+.cloud{
+  position:absolute;border-radius:50%;
+  background:radial-gradient(closest-side, rgba(255,255,255,.9), rgba(255,255,255,.35) 60%, rgba(255,255,255,0) 100%);
+  filter:blur(14px);opacity:var(--cloud-op);
+  transition:opacity 1.6s ease;
+  will-change:transform;
+}
+.cloud.c1{width:44vw;height:9vh;top:18%;left:-50vw;animation:cross 210s linear infinite}
+.cloud.c2{width:30vw;height:6vh;top:31%;left:-40vw;animation:cross 320s linear infinite;animation-delay:-90s;opacity:calc(var(--cloud-op) * .7)}
+.cloud.c3{width:56vw;height:7vh;top:44%;left:-60vw;animation:cross 420s linear infinite;animation-delay:-180s;opacity:calc(var(--cloud-op) * .5)}
+@keyframes cross{from{transform:translateX(0)}to{transform:translateX(180vw)}}
+
+/* stars */
+#stars{position:absolute;inset:0 0 38% 0;opacity:var(--star-op);transition:opacity 2.4s ease;pointer-events:none}
+#stars i{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;
+  animation:twinkle 6s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.25}50%{opacity:.95}}
+
+/* birds */
+.bird{position:absolute;left:-8vw;opacity:0;will-change:transform;pointer-events:none}
+.bird svg{display:block;overflow:visible}
+.bird path{fill:none;stroke:rgba(20,18,30,.55);stroke-width:1.6;stroke-linecap:round}
+.bird.b1{top:26%;animation:fly 31s linear infinite}
+.bird.b2{top:33%;animation:fly 43s linear infinite;animation-delay:-15s;transform:scale(.72)}
+@keyframes fly{
+  0%{transform:translate(0,0);opacity:0}
+  4%{opacity:.55}
+  22%{transform:translate(58vw,-3vh);opacity:.55}
+  38%{transform:translate(118vw,1vh);opacity:0}
+  100%{transform:translate(118vw,1vh);opacity:0}
+}
+@media (prefers-reduced-motion: reduce){
+  .cloud,.bird,.wave,#stars i{animation:none!important}
+  .bird{opacity:0}
+}
+
+/* ---------- chrome ---------- */
+#veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,8,18,.28) 0%,rgba(6,8,18,0) 22%,rgba(6,8,18,0) 52%,rgba(6,8,18,.34) 76%,rgba(6,8,18,.62) 100%);pointer-events:none}
+
+header{
+  position:absolute;top:0;left:0;right:0;padding:calc(var(--pad) * .72) var(--pad);
+  display:flex;justify-content:space-between;align-items:baseline;gap:24px;
+}
+.mark{
+  font-family:var(--text);font-weight:400;
+  font-size:clamp(11px,.86vw,16px);letter-spacing:.28em;text-transform:uppercase;
+  color:var(--ink-soft);
+}
+.nextcity{
+  font-size:clamp(11px,.82vw,15px);letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink-faint);text-align:right;
+}
+.nextcity b{font-weight:400;color:var(--ink-soft)}
+
+#card{
+  position:absolute;left:var(--pad);bottom:calc(var(--pad) * 1.15);
+  max-width:min(56ch,62vw);
+}
+.city{
+  font-family:var(--display);font-weight:400;
+  font-size:clamp(38px,4.6vw,92px);line-height:1.02;letter-spacing:-.01em;
+  margin:0 0 .18em;text-shadow:0 2px 30px rgba(4,6,16,.45);
+}
+.city.long{font-size:clamp(30px,3.5vw,70px)}
+.city .time{opacity:.62;font-style:italic}
+.country{
+  display:block;font-family:var(--text);font-size:clamp(10px,.78vw,14px);
+  letter-spacing:.26em;text-transform:uppercase;color:var(--ink-faint);
+  margin-bottom:1.1em;
+}
+.track{
+  font-size:clamp(16px,1.35vw,27px);font-weight:400;line-height:1.35;margin:0 0 .5em;
+  color:var(--ink);
+}
+.track .artist{opacity:.82}
+.track .sep{opacity:.4;padding:0 .35em}
+.track .title{font-family:var(--display);font-size:1.12em}
+.meta{font-size:clamp(12px,.92vw,18px);color:var(--ink-soft);line-height:1.6;margin:0}
+.meta .genre{letter-spacing:.02em}
+.readout{color:var(--ink-faint)}
+.honest{
+  margin:.85em 0 0;font-size:clamp(10.5px,.76vw,14px);letter-spacing:.06em;
+  color:rgba(255,255,255,.44);line-height:1.6;max-width:52ch;
+}
+#promptBox{
+  margin-top:1em;padding:.85em 1em;border-left:2px solid rgba(255,255,255,.28);
+  background:rgba(6,8,18,.34);backdrop-filter:blur(6px);
+  font-size:clamp(11px,.8vw,15px);line-height:1.6;color:var(--ink-soft);
+  max-width:64ch;
+}
+#promptBox .lab{display:block;font-size:.82em;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:.5em}
+[hidden]{display:none!important}
+
+/* progress */
+#progressWrap{
+  position:absolute;left:var(--pad);right:var(--pad);bottom:calc(var(--pad) * .62);
+  height:1px;background:rgba(255,255,255,.16);
+}
+#progress{height:100%;width:0;background:rgba(255,255,255,.85);transform-origin:left}
+
+/* controls */
+#controls{
+  position:absolute;right:var(--pad);bottom:calc(var(--pad) * 1.15);
+  display:flex;align-items:center;gap:clamp(10px,1vw,18px);
+}
+button.ctl{
+  appearance:none;border:1px solid rgba(255,255,255,.3);background:rgba(6,8,18,.28);
+  backdrop-filter:blur(6px);color:var(--ink);border-radius:999px;
+  font-family:var(--text);font-size:clamp(10px,.74vw,13px);letter-spacing:.18em;text-transform:uppercase;
+  padding:.72em 1.1em;cursor:pointer;transition:background .2s,border-color .2s,opacity .2s;
+  white-space:nowrap;
+}
+button.ctl:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5)}
+button.ctl:focus-visible{outline:2px solid rgba(255,255,255,.75);outline-offset:2px}
+button.ctl.icon{width:2.9em;height:2.9em;padding:0;display:grid;place-items:center;font-size:clamp(11px,.8vw,15px)}
+#vol{
+  -webkit-appearance:none;appearance:none;width:clamp(64px,7vw,120px);height:2px;
+  background:rgba(255,255,255,.28);border-radius:2px;cursor:pointer;
+}
+#vol::-webkit-slider-thumb{-webkit-appearance:none;width:11px;height:11px;border-radius:50%;background:#fff;cursor:pointer}
+#vol::-moz-range-thumb{width:11px;height:11px;border:0;border-radius:50%;background:#fff;cursor:pointer}
+
+footer{
+  position:absolute;left:var(--pad);bottom:calc(var(--pad) * .2);
+  font-size:clamp(10px,.72vw,13px);letter-spacing:.16em;color:rgba(255,255,255,.38);
+}
+footer a{color:rgba(255,255,255,.6);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
+footer a:hover{color:#fff}
+
+/* city strip along the horizon: every city in order of local time, lit by how close it is to evening */
+#strip{
+  position:absolute;left:var(--pad);right:var(--pad);top:calc(var(--horizon) + 1.6vh);
+  display:flex;justify-content:space-between;gap:.6em;
+  font-size:clamp(9px,.62vw,12px);letter-spacing:.14em;text-transform:uppercase;
+  color:#fff;pointer-events:none;white-space:nowrap;z-index:2;
+}
+#strip span{opacity:.22;transition:opacity 1.2s}
+#strip span i{font-style:normal;opacity:.7;margin-left:.45em;letter-spacing:.06em}
+#strip span.on{opacity:1;text-shadow:0 0 12px rgba(255,220,160,.6)}
+@media(max-width:820px){#strip{display:none}}
+
+/* start overlay */
+#start{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:rgba(5,7,16,.42);backdrop-filter:blur(3px);
+  transition:opacity .7s ease;z-index:5;
+}
+#start.gone{opacity:0;pointer-events:none}
+#startInner{text-align:center;padding:0 24px;max-width:min(90vw,640px)}
+#startInner h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,4.4vw,84px);margin:0 0 .16em;letter-spacing:-.01em}
+#startInner p{margin:0 0 2em;color:var(--ink-soft);font-size:clamp(12px,1vw,19px);letter-spacing:.03em}
+#startBtn{
+  appearance:none;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.06);
+  color:#fff;border-radius:999px;padding:1.05em 2.6em;cursor:pointer;
+  font-family:var(--text);font-size:clamp(11px,.86vw,15px);letter-spacing:.28em;text-transform:uppercase;
+  transition:background .25s,transform .25s;
+}
+#startBtn:hover{background:rgba(255,255,255,.16);transform:translateY(-1px)}
+#err{position:absolute;left:var(--pad);top:50%;color:#ffd8d8;font-size:14px;max-width:60ch}
+
+@media (max-width:760px){
+  :root{--horizon:56%}
+  header{align-items:flex-start}
+  .nextcity{max-width:38vw}
+  #card{max-width:none;right:var(--pad);bottom:calc(var(--pad) * 4.6)}
+  #controls{left:var(--pad);right:var(--pad);bottom:calc(var(--pad) * 1.5);flex-wrap:wrap;justify-content:flex-start}
+  .honest{max-width:none}
+  footer{right:var(--pad);bottom:calc(var(--pad) * .45)}
+}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="sky a" id="skyA"></div>
+  <div class="sky b" id="skyB"></div>
+
+  <div id="stars" aria-hidden="true"></div>
+
+  <div id="horizonGlow" aria-hidden="true"></div>
+
+  <div class="cloud c1" aria-hidden="true"></div>
+  <div class="cloud c2" aria-hidden="true"></div>
+  <div class="cloud c3" aria-hidden="true"></div>
+
+  <div class="bird b1" aria-hidden="true"><svg width="26" height="10" viewBox="0 0 26 10"><path d="M1 6 L6 1.5 L11 6"/><path d="M15 7.5 L19.5 3.5 L24 7.5"/></svg></div>
+  <div class="bird b2" aria-hidden="true"><svg width="26" height="10" viewBox="0 0 26 10"><path d="M1 6 L5.5 2 L10 6"/></svg></div>
+
+  <div id="groundWrap" aria-hidden="true">
+    <div class="ground a" id="groundA"></div>
+    <div class="ground b" id="groundB"></div>
+    <div id="seaGlow"></div>
+    <div class="wave"></div><div class="wave"></div><div class="wave"></div>
+    <div class="horizonline"></div>
+    <div id="reflection"></div>
+  </div>
+
+  <div id="sun" aria-hidden="true"></div>
+  <div id="veil" aria-hidden="true"></div>
+  <div id="strip" aria-label="cities by local time"></div>
+
+  <header>
+    <div class="mark">World Sound</div>
+    <div class="nextcity" id="nextCity"></div>
+  </header>
+
+  <div id="card">
+    <h2 class="city" id="cityLine">—</h2>
+    <span class="country" id="countryLine"></span>
+    <p class="track" id="trackLine"></p>
+    <p class="meta"><span class="genre" id="genreLine"></span><br><span class="readout" id="readoutLine"></span></p>
+    <p class="honest" id="honestLine"></p>
+    <div id="promptBox" hidden><span class="lab">SA3 prompt</span><span id="promptText"></span></div>
+  </div>
+
+  <div id="controls">
+    <button class="ctl icon" id="btnPlay" title="play / pause (space)" aria-label="Play or pause">▶</button>
+    <button class="ctl icon" id="btnNext" title="next track (n)" aria-label="Next track">↦</button>
+    <button class="ctl icon" id="btnMute" title="mute (m)" aria-label="Mute">🔊</button>
+    <input id="vol" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+    <button class="ctl" id="btnPrompt">show prompt</button>
+  </div>
+
+  <div id="progressWrap"><div id="progress"></div></div>
+  <footer>SA3 medium on Hugging Face · an experiment from <a href="https://decimalpoints.substack.com/" target="_blank" rel="noopener">Decimal Points</a> · <a href="https://decimalpoints.substack.com/" target="_blank" rel="noopener">how it's made →</a></footer>
+
+  <div id="start">
+    <div id="startInner">
+      <h1>World Sound</h1>
+      <p>Mirrors of this week's charts, following the sun into evening.</p>
+      <button id="startBtn">Play</button>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+(function(){
+
+/* ---------------- clock (overridable for testing) ---------------- */
+var clockOffset = 0;
+(function(){
+  var q = new URLSearchParams(location.search);
+  var c = q.get("clock");
+  if (c){ var t = Date.parse(c); if(!isNaN(t)) clockOffset = t - Date.now(); }
+})();
+function now(){ return new Date(Date.now() + clockOffset); }
+window.__setClock = function(iso){
+  var t = iso ? Date.parse(iso) : NaN;
+  clockOffset = isNaN(t) ? 0 : t - Date.now();
+  paint(); return now().toISOString();
+};
+
+/* ---------------- local time helpers ---------------- */
+var fmtCache = {};
+function parts(tz, d){
+  var f = fmtCache[tz] || (fmtCache[tz] = new Intl.DateTimeFormat("en-GB", {
+    timeZone: tz, hour: "2-digit", minute: "2-digit", hour12: false
+  }));
+  var out = {h:0,m:0};
+  f.formatToParts(d).forEach(function(p){
+    if (p.type === "hour") out.h = parseInt(p.value,10) % 24;
+    if (p.type === "minute") out.m = parseInt(p.value,10);
+  });
+  return out;
+}
+function localHour(tz, d){ var p = parts(tz, d||now()); return p.h + p.m/60; }
+function localClock(tz, d){
+  var p = parts(tz, d||now());
+  return String(p.h).padStart(2,"0") + ":" + String(p.m).padStart(2,"0");
+}
+/* circular distance in hours to the evening target */
+var EVENING = 20.0;
+function eveningness(tz, d){
+  var h = localHour(tz, d), diff = Math.abs(h - EVENING);
+  return Math.min(diff, 24 - diff);
+}
+
+/* ---------------- palettes ---------------- */
+var PHASES = {
+  night:  {sky:["#04060f","#070b1a","#0d1430","#151d3d","#20294c"], ground:["#141d3a","#04060f"],
+           star:1, cloud:.16, glow:"150,170,220", core:"#dfe6ff", hz:"rgba(160,180,230,.22)"},
+  dawn:   {sky:["#1b2a5c","#3a4785","#7a5f92","#c98a7d","#f0b489"], ground:["#4a3455","#130f22"],
+           star:.35, cloud:.42, glow:"255,190,150", core:"#fff0dc", hz:"rgba(255,210,180,.3)"},
+  day:    {sky:["#1f5fa8","#3d84c4","#74b0da","#a8cfe8","#dfeaf0"], ground:["#3f83a0","#0e2a3c"],
+           star:0, cloud:.62, glow:"255,244,214", core:"#ffffff", hz:"rgba(255,255,255,.3)"},
+  golden: {sky:["#1e3572","#4d4e8f","#9a5c8d","#e07f5c","#f7c169"], ground:["#8a4f5c","#1c1028"],
+           star:0, cloud:.72, glow:"255,196,120", core:"#fff2cf", hz:"rgba(255,205,150,.38)"},
+  dusk:   {sky:["#0d1436","#241f52","#4d2a63","#8b3a58","#c05a45"], ground:["#5b2a44","#0a0718"],
+           star:.55, cloud:.34, glow:"255,150,110", core:"#ffd9bb", hz:"rgba(255,170,140,.3)"}
+};
+var SUNRISE = 6.2, SUNSET = 19.6;
+function phaseFor(h){
+  if (h < 5.0 || h >= 21.0) return "night";
+  if (h < 7.0) return "dawn";
+  if (h < 16.4) return "day";
+  if (h < SUNSET) return "golden";
+  return "dusk";
+}
+function skyCSS(c){
+  return "linear-gradient(180deg," +
+    c[0]+" 0%,"+c[0]+" 16%,"+
+    c[1]+" 32%,"+c[1]+" 40%,"+
+    c[2]+" 52%,"+c[2]+" 58%,"+
+    c[3]+" 66%,"+c[3]+" 70%,"+
+    c[4]+" 78%,"+c[4]+" 100%)";
+}
+function groundCSS(g){
+  return "linear-gradient(180deg,"+g[0]+" 0%,"+g[0]+" 6%,"+g[1]+" 62%,"+g[1]+" 100%)";
+}
+
+/* double-buffered sky/ground so phase changes crossfade instead of snapping */
+var skyA = document.getElementById("skyA"), skyB = document.getElementById("skyB");
+var grA = document.getElementById("groundA"), grB = document.getElementById("groundB");
+var frontIsA = true, currentPhase = null;
+function applyPhase(name){
+  if (name === currentPhase) return;
+  var p = PHASES[name], root = document.documentElement.style;
+  var front = frontIsA ? skyA : skyB, back = frontIsA ? skyB : skyA;
+  var gFront = frontIsA ? grA : grB, gBack = frontIsA ? grB : grA;
+  back.style.background = skyCSS(p.sky);
+  gBack.style.background = groundCSS(p.ground);
+  if (currentPhase === null){
+    front.style.background = skyCSS(p.sky);
+    gFront.style.background = groundCSS(p.ground);
+  }
+  back.style.opacity = "1"; front.style.opacity = "0";
+  gBack.style.opacity = "1"; gFront.style.opacity = "0";
+  frontIsA = !frontIsA;
+  root.setProperty("--star-op", p.star);
+  root.setProperty("--cloud-op", p.cloud);
+  root.setProperty("--sun-glow", p.glow);
+  root.setProperty("--sun-core", p.core);
+  root.setProperty("--hz", p.hz);
+  currentPhase = name;
+}
+
+/* sun position from the playing city's local hour */
+function placeSun(h){
+  var root = document.documentElement.style, up = (h > SUNRISE && h < SUNSET);
+  var t = (h - SUNRISE) / (SUNSET - SUNRISE);
+  var x = 14 + 72 * Math.min(1, Math.max(0, t));
+  var horizon = 62, top = 11;
+  var elev = up ? Math.sin(Math.PI * t) : 0;
+  var y = horizon - elev * (horizon - top);
+  root.setProperty("--sun-x", x.toFixed(2) + "%");
+  root.setProperty("--sun-y", y.toFixed(2) + "%");
+  /* fade the sun out across the last 20 minutes before it sets */
+  var op = 0;
+  if (up){
+    var edge = 0.34; /* hours */
+    op = Math.min(1, Math.min(h - SUNRISE, SUNSET - h) / edge);
+  }
+  root.setProperty("--sun-op", Math.max(0, op).toFixed(3));
+}
+
+/* stars, built once */
+(function(){
+  var box = document.getElementById("stars"), frag = document.createDocumentFragment();
+  for (var i=0;i<90;i++){
+    var s = document.createElement("i");
+    s.style.left = (Math.random()*100).toFixed(2)+"%";
+    s.style.top = (Math.random()*100).toFixed(2)+"%";
+    var sz = (Math.random()<.18 ? 2.6 : 1.6).toFixed(1);
+    s.style.width = sz+"px"; s.style.height = sz+"px";
+    s.style.animationDelay = (-Math.random()*6).toFixed(2)+"s";
+    s.style.opacity = (.35 + Math.random()*.55).toFixed(2);
+    frag.appendChild(s);
+  }
+  box.appendChild(frag);
+})();
+
+/* ---------------- library ---------------- */
+var lib = null, regionsByIso = {}, poolByRegion = {}, playedByRegion = {};
+/* RUN = how many tracks a region gets before the sun moves on. 1 keeps the rule
+   "never the same region twice in a row" literal; raise it for longer city sets. */
+var queue = [], lastRegion = null, RUN = 1;
+
+function loadLibrary(){
+  return fetch("library.json", {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw new Error("no library.json"); return r.json(); })
+    .catch(function(){
+      return fetch("library.dev.json", {cache:"no-store"}).then(function(r){
+        if(!r.ok) throw new Error("no library.dev.json either");
+        return r.json();
+      });
+    });
+}
+
+function shuffle(a){
+  for (var i=a.length-1;i>0;i--){ var j = Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; }
+  return a;
+}
+
+/* closest to evening wins, but cities inside the same half hour are tied and the
+   tie is broken at random, and the last couple of cities stand aside so the
+   rotation keeps moving instead of ping-ponging between two time zones */
+var recent = [];
+function pickRegion(){
+  var all = Object.keys(poolByRegion).filter(function(k){ return poolByRegion[k].length; });
+  if (!all.length) return null;
+  var hold = Math.min(recent.length, Math.max(0, all.length - 1));
+  var skip = recent.slice(recent.length - hold);
+  var cands = all.filter(function(k){ return skip.indexOf(k) === -1; });
+  if (!cands.length) cands = all;
+  var d = now(), score = {}, jitter = {};
+  cands.forEach(function(k){
+    score[k] = Math.round(eveningness(regionsByIso[k].tz, d) * 2) / 2;
+    jitter[k] = Math.random();
+  });
+  cands.sort(function(a,b){ return (score[a] - score[b]) || (jitter[a] - jitter[b]); });
+  return cands[0];
+}
+
+function refill(){
+  var guard = 0;
+  while (queue.length < 3 && guard++ < 40){
+    var iso = pickRegion();
+    if (!iso) break;
+    var pool = poolByRegion[iso], played = playedByRegion[iso];
+    var fresh = pool.filter(function(t){ return played.indexOf(t.id) === -1; });
+    if (!fresh.length){ played.length = 0; fresh = pool.slice(); }
+    shuffle(fresh);
+    var take = fresh.slice(0, Math.min(RUN, fresh.length));
+    take.forEach(function(t){ played.push(t.id); queue.push(t); });
+    lastRegion = iso;
+    recent.push(iso);
+    if (recent.length > 3) recent.shift();
+  }
+}
+
+/* ---------------- audio ---------------- */
+var ctx = null, master = null, players = [], active = 0;
+var current = null, upcoming = null, fading = false, muted = false, wantPlay = false;
+var XFADE = 2.0;
+
+function makePlayer(){
+  var el = new Audio();
+  el.crossOrigin = "anonymous";
+  el.preload = "auto";
+  el.loop = false;
+  var gain = ctx.createGain();
+  gain.gain.value = 0;
+  var src = ctx.createMediaElementSource(el);
+  src.connect(gain); gain.connect(master);
+  return {el:el, gain:gain, src:src, track:null};
+}
+
+function initAudio(){
+  if (ctx) return;
+  var AC = window.AudioContext || window.webkitAudioContext;
+  ctx = new AC();
+  master = ctx.createGain();
+  master.gain.value = parseFloat(document.getElementById("vol").value);
+  master.connect(ctx.destination);
+  players = [makePlayer(), makePlayer()];
+  players.forEach(function(p){
+    p.el.addEventListener("error", function(){
+      /* only the player we are actually listening to may skip the queue on */
+      if (wantPlay && p === players[active] && p.el.src) advance(true);
+    });
+    p.el.addEventListener("ended", function(){ if (!fading && p === players[active]) advance(true); });
+  });
+}
+
+/* equal-power curves, computed once */
+var CURVE_UP = new Float32Array(64), CURVE_DOWN = new Float32Array(64);
+for (var i=0;i<64;i++){
+  var x = i/63;
+  CURVE_UP[i] = Math.cos((1-x) * Math.PI/2);
+  CURVE_DOWN[i] = Math.cos(x * Math.PI/2);
+}
+
+function preloadNext(){
+  if (!queue.length) refill();
+  upcoming = queue[0] || null;
+  var other = players[1-active];
+  if (upcoming && other.track !== upcoming){
+    other.track = upcoming;
+    other.el.src = upcoming.file;
+    try { other.el.load(); } catch(e){}
+  }
+  paintNext();
+}
+
+function startTrack(track, fade){
+  var p = players[active];
+  if (p.track !== track){ p.track = track; p.el.src = track.file; }
+  p.el.currentTime = 0;
+  var t = ctx.currentTime;
+  p.gain.gain.cancelScheduledValues(t);
+  if (fade){
+    p.gain.gain.setValueAtTime(0, t);
+    p.gain.gain.setValueCurveAtTime(CURVE_UP, t, XFADE);
+  } else {
+    p.gain.gain.setValueAtTime(1, t);
+  }
+  var pr = p.el.play();
+  if (pr && pr.catch) pr.catch(function(){});
+  current = track;
+  fading = false;
+  paint();
+  preloadNext();
+}
+
+function advance(immediate){
+  if (!queue.length) refill();
+  var next = queue.shift();
+  if (!next) return;
+  var outgoing = players[active];
+  active = 1 - active;
+  var t = ctx.currentTime;
+  outgoing.gain.gain.cancelScheduledValues(t);
+  if (immediate){
+    outgoing.gain.gain.setValueCurveAtTime(CURVE_DOWN, t, 0.35);
+    setTimeout(function(){ try{ outgoing.el.pause(); }catch(e){} }, 420);
+  } else {
+    outgoing.gain.gain.setValueCurveAtTime(CURVE_DOWN, t, XFADE);
+    setTimeout(function(){ try{ outgoing.el.pause(); }catch(e){} }, (XFADE+0.15)*1000);
+  }
+  startTrack(next, true);
+}
+
+/* ---------------- rendering ---------------- */
+var elCity = document.getElementById("cityLine"),
+    elCountry = document.getElementById("countryLine"),
+    elTrack = document.getElementById("trackLine"),
+    elGenre = document.getElementById("genreLine"),
+    elReadout = document.getElementById("readoutLine"),
+    elHonest = document.getElementById("honestLine"),
+    elPromptBox = document.getElementById("promptBox"),
+    elPromptText = document.getElementById("promptText"),
+    elNext = document.getElementById("nextCity"),
+    elProgress = document.getElementById("progress");
+
+function readoutLine(r){
+  var ro = r.readout || {};
+  var bits = [];
+  if (ro.bpm) bits.push(Math.round(ro.bpm) + " BPM");
+  if (ro.mode) bits.push(ro.mode);
+  if (ro.instruments && ro.instruments.length) bits.push(ro.instruments.slice(0,3).join(", "));
+  if (ro.moods && ro.moods.length) bits.push(ro.moods.slice(0,2).join(", "));
+  return bits.join(" · ");
+}
+
+function paint(){
+  if (!current) return;
+  var r = regionsByIso[current.region];
+  if (!r) return;
+  var h = localHour(r.tz);
+  applyPhase(phaseFor(h));
+  placeSun(h);
+  elCity.classList.toggle("long", String(r.city).length > 10);
+  elCity.innerHTML = escapeHTML(r.city) + ' <span class="time">' + localClock(r.tz) + "</span>";
+  elCountry.textContent = r.country || "";
+  elTrack.innerHTML = '<span class="artist">' + escapeHTML(current.artist) +
+    '</span><span class="sep">—</span><span class="title">' + escapeHTML(current.title) + "</span>";
+  elGenre.textContent = r.genre_family || "";
+  elReadout.textContent = readoutLine(r);
+  elHonest.textContent = "a variation on this week's " + r.city + " chart · after #" +
+    (current.mirrors_rank || 1) + " · AI-generated · no real songs";
+  elPromptText.textContent = r.sa3_prompt || "";
+  document.title = r.city + " · World Sound";
+}
+
+function paintNext(){
+  var t = current ? queue[0] : null;
+  if (!t){ elNext.textContent = ""; return; }
+  var r = regionsByIso[t.region];
+  if (!r){ elNext.textContent = ""; return; }
+  elNext.innerHTML = "following the sun · next · <b>" + escapeHTML(r.city) + "</b> " + localClock(r.tz);
+  paintStrip();
+}
+
+function paintStrip(){
+  var el = document.getElementById("strip"); if (!el || !lib) return;
+  var d = now();
+  var rows = Object.keys(regionsByIso).map(function(k){
+    var r = regionsByIso[k];
+    return {iso:k, city:r.city, h:localHour(r.tz, d), clock:localClock(r.tz, d), ev:eveningness(r.tz, d)};
+  }).sort(function(a,b){ return a.h - b.h; });
+  el.innerHTML = rows.map(function(x){
+    var lit = Math.max(.18, 1 - Math.min(x.ev, 9) / 9);
+    var on = current && current.region === x.iso;
+    return '<span class="' + (on ? "on" : "") + '" style="opacity:' + (on ? 1 : lit.toFixed(2)) + '">' +
+      escapeHTML(x.city) + "<i>" + x.clock + "</i></span>";
+  }).join("");
+}
+setInterval(paintStrip, 60000);
+
+function escapeHTML(s){
+  return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+  });
+}
+
+/* one rAF loop: progress line, crossfade trigger, and a 1 Hz sky refresh */
+var lastSkyTick = 0;
+function frame(ts){
+  requestAnimationFrame(frame);
+  var p = ctx ? players[active] : null;
+  if (p && p.el && current){
+    var dur = p.el.duration || current.duration_s || 0;
+    var cur = p.el.currentTime || 0;
+    if (dur > 0){
+      elProgress.style.width = Math.min(100, (cur/dur)*100).toFixed(2) + "%";
+      if (!fading && !p.el.paused && dur - cur <= XFADE && dur - cur > 0.05){
+        fading = true;
+        advance(false);
+      }
+    }
+  }
+  if (ts - lastSkyTick > 1000){
+    lastSkyTick = ts;
+    if (current) paint();
+    paintNext();
+  }
+}
+requestAnimationFrame(frame);
+
+/* ---------------- controls ---------------- */
+var btnPlay = document.getElementById("btnPlay"),
+    btnNext = document.getElementById("btnNext"),
+    btnMute = document.getElementById("btnMute"),
+    btnPrompt = document.getElementById("btnPrompt"),
+    vol = document.getElementById("vol"),
+    startOverlay = document.getElementById("start");
+
+function begin(){
+  initAudio();
+  if (ctx.state === "suspended") ctx.resume();
+  startOverlay.classList.add("gone");
+  wantPlay = true;
+  btnPlay.textContent = "❚❚";
+  if (!current){
+    refill();
+    var first = queue.shift();
+    if (first) startTrack(first, true);
+  } else {
+    players[active].el.play().catch(function(){});
+  }
+}
+function togglePlay(){
+  if (!ctx){ begin(); return; }
+  var p = players[active];
+  if (p.el.paused){ ctx.resume(); p.el.play().catch(function(){}); wantPlay = true; btnPlay.textContent = "❚❚"; }
+  else { p.el.pause(); wantPlay = false; btnPlay.textContent = "▶"; }
+}
+function toggleMute(){
+  if (!ctx) return;
+  muted = !muted;
+  var t = ctx.currentTime;
+  master.gain.cancelScheduledValues(t);
+  master.gain.linearRampToValueAtTime(muted ? 0.0001 : parseFloat(vol.value), t + 0.15);
+  btnMute.textContent = muted ? "🔇" : "🔊";
+}
+document.getElementById("startBtn").addEventListener("click", begin);
+btnPlay.addEventListener("click", togglePlay);
+btnNext.addEventListener("click", function(){ if (!ctx){ begin(); return; } advance(true); });
+btnMute.addEventListener("click", toggleMute);
+vol.addEventListener("input", function(){
+  if (!ctx) return;
+  muted = false; btnMute.textContent = "🔊";
+  master.gain.setTargetAtTime(parseFloat(vol.value), ctx.currentTime, 0.02);
+});
+btnPrompt.addEventListener("click", function(){
+  var open = !elPromptBox.hidden;
+  elPromptBox.hidden = open;
+  btnPrompt.textContent = open ? "show prompt" : "hide prompt";
+});
+document.addEventListener("keydown", function(e){
+  if (e.target && /input|textarea/i.test(e.target.tagName)) return;
+  if (e.code === "Space"){ e.preventDefault(); togglePlay(); }
+  else if (e.key === "n" || e.key === "N"){ if (!ctx){ begin(); } else advance(true); }
+  else if (e.key === "m" || e.key === "M"){ toggleMute(); }
+});
+
+/* ---------------- boot ---------------- */
+loadLibrary().then(function(data){
+  lib = data;
+  regionsByIso = data.regions || {};
+  (data.tracks || []).forEach(function(t){
+    if (!regionsByIso[t.region]) return;
+    (poolByRegion[t.region] = poolByRegion[t.region] || []).push(t);
+    playedByRegion[t.region] = playedByRegion[t.region] || [];
+  });
+  refill();
+  /* paint the sky and the card for the first queued track before anyone presses play */
+  var first = queue[0];
+  if (first){
+    current = first;
+    paint();
+    current = null;
+    elNext.innerHTML = "";
+  }
+  /* ?stream=1 — the capture frame: no start overlay, no controls, starts by itself
+     (a capture browser must be launched with autoplay allowed) */
+  if (new URLSearchParams(location.search).get("stream") === "1"){
+    document.getElementById("start").classList.add("gone");
+    document.getElementById("controls").hidden = true;
+    try { begin(); } catch(e){}
+  }
+}).catch(function(err){
+  applyPhase("dusk"); placeSun(19.0);
+  var d = document.createElement("div");
+  d.id = "err";
+  d.textContent = "No library found: put library.json (or library.dev.json) next to this page. " + err.message;
+  document.getElementById("stage").appendChild(d);
+});
+
+/* something on screen immediately, before the fetch lands */
+(function(){
+  var d = now(), h = d.getHours() + d.getMinutes()/60;
+  applyPhase(phaseFor(h)); placeSun(h);
+})();
+
+})();
+</script>
+</body>
+</html>
