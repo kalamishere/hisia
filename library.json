@@ -559,6 +559,37 @@
       "genre_family": "",
       "sa3_prompt": "New Zealand chart pop instrumental, 112 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and keyboard chords carrying the arrangement, joyful, energetic and romantic",
       "suno_prompt": "[style: chart pop, country-pop, girl-group pop, hip-hop crossover] [tempo: 112 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: warm lead vocal, layered harmonies, singalong chorus]"
+    },
+    "CV": {
+      "city": "Praia",
+      "country": "Cape Verde",
+      "tz": "Atlantic/Cape_Verde",
+      "readout": {
+        "bpm": 127.78,
+        "mode": "minor",
+        "lufs": -12.63,
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "summer"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "CV-3"
+        ],
+        "bpm_iqr": [
+          115.35,
+          132.51
+        ]
+      },
+      "genre_family": "Worldwide / African Music / Dance",
+      "sa3_prompt": "Cape Verdean dance instrumental, 128 BPM, minor key, funana-style accordion riffs, fast ferro-scraper percussion, bouncing bass, kizomba-zouk drum groove, bright guitar, joyful island dance energy, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, deep and sunny",
+      "suno_prompt": "[style: funana, kizomba, zouk, Cape Verdean dance-pop] [tempo: 128 BPM] [mood: romantic, deep, sunny] [instruments: accordion, ferro scraper, bass, zouk drums, guitar] [vocal: male lead in Kriolu, call-and-response chorus]"
     }
   },
   "tracks": [
@@ -2007,6 +2038,90 @@
       "artist": "Grey Lynn Rooftop Crew",
       "mirrors_rank": 4,
       "mirrors_cities": 4,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2
+    },
+    {
+      "id": "CV-01",
+      "region": "CV",
+      "file": "audio/CV-01.mp3",
+      "duration_s": 114.0,
+      "title": "Baile na Ilha",
+      "artist": "Cidade Velha Set",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2
+    },
+    {
+      "id": "CV-02",
+      "region": "CV",
+      "file": "audio/CV-02.mp3",
+      "duration_s": 114.0,
+      "title": "Korason di Bairro",
+      "artist": "Achada Choir",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        214,
+        215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2
+    },
+    {
+      "id": "CV-03",
+      "region": "CV",
+      "file": "audio/CV-03.mp3",
+      "duration_s": 114.0,
+      "title": "Rua di Ilha",
+      "artist": "Ribeira Grande Choir",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        314,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2
+    },
+    {
+      "id": "CV-04",
+      "region": "CV",
+      "file": "audio/CV-04.mp3",
+      "duration_s": 114.0,
+      "title": "Verão na Praia",
+      "artist": "Cidade Velha Society",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,

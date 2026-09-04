@@ -677,10 +677,11 @@ function tagShares(){
 }
 function distinctive(tags, keep){
   var share = tagShares();
-  var rare = (tags || []).filter(function(t){ return (share[t] || 0) <= 0.5; });
-  var out = rare.slice(0, keep);
-  if (!out.length && tags && tags.length) out = tags.slice(0, 1);
-  return out;
+  var sorted = (tags || []).slice().sort(function(a, b){ return (share[a] || 0) - (share[b] || 0); });
+  var rare = sorted.filter(function(t){ return (share[t] || 0) <= 0.5; });
+  if (rare.length) return rare.slice(0, keep);
+  /* nothing distinctive: show the least common tag only if it says something, never a word every city has */
+  return sorted.length && (share[sorted[0]] || 0) < 0.8 ? [sorted[0]] : [];
 }
 function readoutLine(r){
   var ro = r.readout || {};
