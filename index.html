@@ -213,6 +213,7 @@ button.ctl{
 button.ctl:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5)}
 button.ctl:focus-visible{outline:2px solid rgba(255,255,255,.75);outline-offset:2px}
 button.ctl.icon{width:2.9em;height:2.9em;padding:0;display:grid;place-items:center;font-size:clamp(11px,.8vw,15px)}
+button.ctl.icon svg{width:1.25em;height:1.25em;fill:currentColor;display:block}
 #vol{
   -webkit-appearance:none;appearance:none;width:clamp(64px,7vw,120px);height:2px;
   background:rgba(255,255,255,.28);border-radius:2px;cursor:pointer;
@@ -316,9 +317,9 @@ body.stream #promptBox{position:fixed;left:auto;right:var(--pad);bottom:calc(var
   </div>
 
   <div id="controls">
-    <button class="ctl icon" id="btnPlay" title="play / pause (space)" aria-label="Play or pause">▶</button>
-    <button class="ctl icon" id="btnNext" title="next track (n)" aria-label="Next track">↦</button>
-    <button class="ctl icon" id="btnMute" title="mute (m)" aria-label="Mute">🔊</button>
+    <button class="ctl icon" id="btnPlay" title="play / pause (space)" aria-label="Play or pause"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+    <button class="ctl icon" id="btnNext" title="next track (n)" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16.5 5h2.5v14h-2.5z"/></svg></button>
+    <button class="ctl icon" id="btnMute" title="mute (m)" aria-label="Mute"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16.5 8.5a4.5 4.5 0 0 1 0 7M18.8 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 9v6h4l5 4V5L8 9z"/></svg></button>
     <input id="vol" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
     <button class="ctl" id="btnPrompt">show prompt</button>
   </div>
@@ -766,6 +767,7 @@ function frame(ts){
 requestAnimationFrame(frame);
 
 /* ---------------- controls ---------------- */
+var ICON = {"play": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>", "pause": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>", "next": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16.5 5h2.5v14h-2.5z"/></svg>", "vol": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16.5 8.5a4.5 4.5 0 0 1 0 7M18.8 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 9v6h4l5 4V5L8 9z"/></svg>", "muted": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16 9l5 6M21 9l-5 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>"};
 var btnPlay = document.getElementById("btnPlay"),
     btnNext = document.getElementById("btnNext"),
     btnMute = document.getElementById("btnMute"),
@@ -778,7 +780,7 @@ function begin(){
   if (ctx.state === "suspended") ctx.resume();
   startOverlay.classList.add("gone");
   wantPlay = true;
-  btnPlay.textContent = "❚❚";
+  btnPlay.innerHTML = ICON.pause;
   if (!current){
     refill();
     var first = queue.shift();
@@ -790,8 +792,8 @@ function begin(){
 function togglePlay(){
   if (!ctx){ begin(); return; }
   var p = players[active];
-  if (p.el.paused){ ctx.resume(); p.el.play().catch(function(){}); wantPlay = true; btnPlay.textContent = "❚❚"; }
-  else { p.el.pause(); wantPlay = false; btnPlay.textContent = "▶"; }
+  if (p.el.paused){ ctx.resume(); p.el.play().catch(function(){}); wantPlay = true; btnPlay.innerHTML = ICON.pause; }
+  else { p.el.pause(); wantPlay = false; btnPlay.innerHTML = ICON.play; }
 }
 function toggleMute(){
   if (!ctx) return;
@@ -799,7 +801,7 @@ function toggleMute(){
   var t = ctx.currentTime;
   master.gain.cancelScheduledValues(t);
   master.gain.linearRampToValueAtTime(muted ? 0.0001 : parseFloat(vol.value), t + 0.15);
-  btnMute.textContent = muted ? "🔇" : "🔊";
+  btnMute.innerHTML = muted ? ICON.muted : ICON.vol;
 }
 document.getElementById("startBtn").addEventListener("click", begin);
 btnPlay.addEventListener("click", togglePlay);
