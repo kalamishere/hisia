@@ -240,8 +240,12 @@ footer a:hover{color:#fff}
 #strip span.on{opacity:1;text-shadow:0 0 12px rgba(255,220,160,.6)}
 @media(max-width:820px){#strip{display:none}}
 
-/* stream frame: the prompt takes its own column on the right so the card stays clear of the horizon strip */
-body.stream #promptBox{position:fixed;left:auto;right:var(--pad);bottom:calc(var(--pad) * 1.15);width:min(46ch,34vw);max-width:none;margin:0;z-index:2}
+/* on a wide screen the prompt takes its own column on the right, above the controls, so the card never
+   grows into the horizon strip; the stream frame has no controls, so its column sits lower */
+@media (min-width:1000px){
+  #promptBox:not([hidden]){position:fixed;left:auto;right:var(--pad);bottom:calc(var(--pad) * 1.15 + 4.6em);width:min(46ch,34vw);max-width:none;margin:0;z-index:2}
+  body.stream #promptBox:not([hidden]){bottom:calc(var(--pad) * 1.15)}
+}
 
 /* start overlay */
 #start{
