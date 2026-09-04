@@ -524,8 +524,15 @@ function pickRegion(){
     score[k] = eveningness(regionsByIso[k].tz, d);
     jitter[k] = Math.random();
   });
+  /* weighted toward the sunset: a city with the sun on the horizon (~19:30) plays
+     about three times as often as one already two hours into the night */
   var near = cands.filter(function(k){ return score[k] <= 3.5; });
-  if (near.length) return near[Math.floor(Math.random() * near.length)];
+  if (near.length){
+    var w = near.map(function(k){ var dd = Math.abs(localHour(regionsByIso[k].tz, d) - 19.5); dd = Math.min(dd, 24 - dd); return 1 / (0.5 + dd); });
+    var total = w.reduce(function(a,b){ return a + b; }, 0), pick = Math.random() * total;
+    for (var i = 0; i < near.length; i++){ pick -= w[i]; if (pick <= 0) return near[i]; }
+    return near[near.length - 1];
+  }
   cands.sort(function(a,b){ return (score[a] - score[b]) || (jitter[a] - jitter[b]); });
   return cands[0];
 }
@@ -697,8 +704,10 @@ function paint(){
     '</span><span class="sep">—</span><span class="title">' + escapeHTML(current.title) + "</span>";
   elGenre.textContent = r.genre_family || "";
   elReadout.textContent = readoutLine(r);
+  var n = current.mirrors_cities || 1;
   elHonest.textContent = "a variation on this week's " + r.city + " chart · after #" +
-    (current.mirrors_rank || 1) + " · AI-generated · no real songs";
+    (current.mirrors_rank || 1) + (n > 1 ? " · a hit in " + n + " cities this week" : "") +
+    " · AI-generated · no real songs";
   elPromptText.textContent = r.sa3_prompt || "";
   document.title = r.city + " · World Sound";
 }
@@ -767,7 +776,7 @@ function frame(ts){
 requestAnimationFrame(frame);
 
 /* ---------------- controls ---------------- */
-var ICON = {"play": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>", "pause": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>", "next": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16.5 5h2.5v14h-2.5z"/></svg>", "vol": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16.5 8.5a4.5 4.5 0 0 1 0 7M18.8 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 9v6h4l5 4V5L8 9z"/></svg>", "muted": "<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16 9l5 6M21 9l-5 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>"};
+var ICON = {"play": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M8 5.5v13l11-6.5z\"/></svg>", "pause": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 5h4v14H7zM13 5h4v14h-4z\"/></svg>", "next": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 5.5v13l9-6.5zM16.5 5h2.5v14h-2.5z\"/></svg>", "vol": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M16.5 8.5a4.5 4.5 0 0 1 0 7M18.8 6a8 8 0 0 1 0 12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M4 9v6h4l5 4V5L8 9z\"/></svg>", "muted": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 9v6h4l5 4V5L8 9z\"/><path d=\"M16 9l5 6M21 9l-5 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/></svg>"};
 var btnPlay = document.getElementById("btnPlay"),
     btnNext = document.getElementById("btnNext"),
     btnMute = document.getElementById("btnMute"),
