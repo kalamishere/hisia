@@ -231,10 +231,14 @@ footer a:hover{color:#fff}
 /* city strip along the horizon: every city in order of local time, lit by how close it is to evening */
 #strip{
   position:absolute;left:var(--pad);right:var(--pad);top:calc(var(--horizon) - 3.2vh);
-  display:flex;justify-content:space-between;gap:.6em;
-  font-size:clamp(9px,.62vw,12px);letter-spacing:.14em;text-transform:uppercase;
+  display:flex;justify-content:center;gap:clamp(.9em,1.4vw,1.6em);overflow:hidden;
+  font-size:clamp(9px,.62vw,12px);letter-spacing:.12em;text-transform:uppercase;
   color:#fff;pointer-events:none;white-space:nowrap;z-index:2;
+  /* the list is rotated so the playing city sits in the middle; the edges fade out midday and 3 a.m. */
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
 }
+#strip span{flex:0 0 auto}
 #strip span{opacity:.22;transition:opacity 1.2s}
 #strip span i{font-style:normal;opacity:.7;margin-left:.45em;letter-spacing:.06em}
 #strip span.on{opacity:1;text-shadow:0 0 12px rgba(255,220,160,.6)}
@@ -733,6 +737,11 @@ function paintStrip(){
     var r = regionsByIso[k];
     return {iso:k, city:r.city, h:localHour(r.tz, d), clock:localClock(r.tz, d), ev:eveningness(r.tz, d)};
   }).sort(function(a,b){ return a.h - b.h; });
+  /* rotate so the playing city (or the one nearest evening) is the centre of the row */
+  var centre = current ? rows.findIndex(function(x){ return x.iso === current.region; }) : -1;
+  if (centre < 0){ var best = 99; rows.forEach(function(x, i){ if (x.ev < best){ best = x.ev; centre = i; } }); }
+  var half = Math.floor(rows.length / 2), shift = ((centre - half) % rows.length + rows.length) % rows.length;
+  rows = rows.slice(shift).concat(rows.slice(0, shift));
   el.innerHTML = rows.map(function(x){
     var lit = Math.max(.18, 1 - Math.min(x.ev, 9) / 9);
     var on = current && current.region === x.iso;
