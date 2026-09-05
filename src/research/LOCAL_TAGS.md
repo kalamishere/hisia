@@ -124,3 +124,33 @@ trust the centered list only when 3-4 tracks from the same region converge on th
 family (IN, MX are the clean cases); treat a single-track, single-concept spike as noise until a
 person confirms it by ear — this needs a human listening pass before any tag gets written back to
 `library.json`.
+
+## Checks 1 and 4 (2026-09-05): real-chart confirmation and attractor removal
+
+**Check 4, attractors:** a tag in the centred top-5 of at least 12% of the 76 generated tracks *and* spread over six or more regions is a prompt artefact, not a detection. Dropped everywhere: **mariachi trumpet (13/76, 6 regions), tuba bass (10/76, 8 regions)**.
+
+**Check 1, real-chart confirmation:** a tag counts for a city only if it is also in the centred top-5 of that city's real chart previews (27 previews across 9 regions were tagged in the charts run). Counts are (generated tracks with the tag / real previews with the tag).
+
+| region | gen | real | confirmed on both | gen-only, ≥3 of 4 tracks |
+|---|---|---|---|---|
+| AE | 4 | 3 | defiant swagger (1/4 gen, 2/3 real), cinematic drama (1/4 gen, 1/3 real), handclaps (1/4 gen, 1/3 real), log drum (1/4 gen, 1/3 real), rapped verse (1/4 gen, 1/3 real) | — |
+| AU | 4 | – | (no real previews tagged) | synthesizer |
+| BR | 4 | 3 | kora (1/4 gen, 1/3 real) | timbales, cavaquinho |
+| CO | 4 | 3 | saxophone (1/4 gen, 2/3 real), accordion (1/4 gen, 1/3 real), harmonium (1/4 gen, 1/3 real), rural working song (1/4 gen, 1/3 real) | — |
+| CV | 4 | 3 | protest and struggle (1/4 gen, 1/3 real) | — |
+| GB | 4 | – | (no real previews tagged) | piano |
+| GH | 4 | – | (no real previews tagged) | funk carioca beat, rapped verse, dhol |
+| ID | 4 | – | (no real previews tagged) | female lead vocal, nostalgic retro |
+| IN | 4 | 3 | devotional (1/4 gen, 1/3 real), funeral / mourning (1/4 gen, 1/3 real), heartbreak lament (1/4 gen, 1/3 real) | veena, mridangam, playback vocal |
+| KE | 4 | 3 | defiant swagger (2/4 gen, 1/3 real), spoken adlib (1/4 gen, 1/3 real) | — |
+| KR | 4 | – | (no real previews tagged) | synthesizer, electric guitar, group chant |
+| MX | 4 | 3 | timbales (4/4 gen, 2/3 real), bajo sexto (2/4 gen, 2/3 real), cuatro (3/4 gen, 1/3 real), requinto guitar (1/4 gen, 1/3 real) | — |
+| NG | 4 | – | (no real previews tagged) | — |
+| NZ | 4 | – | (no real previews tagged) | — |
+| PH | 4 | 3 | heartbreak lament (4/4 gen, 2/3 real), funeral / mourning (2/4 gen, 2/3 real), female lead vocal (2/4 gen, 1/3 real), piano (1/4 gen, 2/3 real), devotional (1/4 gen, 1/3 real) | — |
+| TZ | 4 | 3 | shekere (1/4 gen, 2/3 real), afrobeats log-drum kit (1/4 gen, 1/3 real), steel pan (1/4 gen, 1/3 real), tabla (1/4 gen, 1/3 real) | — |
+| UG | 4 | – | (no real previews tagged) | funk carioca beat, shekere |
+| US | 4 | – | (no real previews tagged) | highlife guitar, acoustic guitar |
+| ZA | 4 | – | (no real previews tagged) | live crowd recording, sensual slow groove |
+
+Reading: a confirmed tag with counts on both sides describes the region's sound — Mexico City (timbales 4/4 and 2/3, cuatro, bajo sexto) and Manila (heartbreak lament 4/4 and 2/3, female lead vocal) are the clean cases; single 1/4-and-1/3 coincidences are not evidence. Gen-only tags that all four tracks share (Mumbai: veena, mridangam) are either the recipe's habit or a real instrument the three previews missed — that is where check 2 (audio-to-audio against named Komplete instruments) comes in. Ten regions have no tagged previews yet; tagging their 30 s previews is a 2-minute CPU run when wanted.
