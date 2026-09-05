@@ -560,8 +560,10 @@ function skyCSS(c){
     c[3]+" 66%,"+c[3]+" 70%,"+
     c[4]+" 78%,"+c[4]+" 100%)";
 }
-function groundCSS(g){
-  return "linear-gradient(180deg,"+g[0]+" 0%,"+g[0]+" 6%,"+g[1]+" 62%,"+g[1]+" 100%)";
+function groundCSS(g, skyBottom){
+  /* the ground starts in the sky's last colour and eases into its own, so the horizon is a line, never a step */
+  var top = skyBottom || g[0];
+  return "linear-gradient(180deg,"+top+" 0%,"+g[0]+" 10%,"+g[1]+" 62%,"+g[1]+" 100%)";
 }
 
 /* double-buffered sky/ground so phase changes crossfade instead of snapping */
@@ -574,10 +576,10 @@ function applyPhase(name){
   var front = frontIsA ? skyA : skyB, back = frontIsA ? skyB : skyA;
   var gFront = frontIsA ? grA : grB, gBack = frontIsA ? grB : grA;
   back.style.background = skyCSS(p.sky);
-  gBack.style.background = groundCSS(p.ground);
+  gBack.style.background = groundCSS(p.ground, p.sky[4]);
   if (currentPhase === null){
     front.style.background = skyCSS(p.sky);
-    gFront.style.background = groundCSS(p.ground);
+    gFront.style.background = groundCSS(p.ground, p.sky[4]);
   }
   back.style.opacity = "1"; front.style.opacity = "0";
   gBack.style.opacity = "1"; gFront.style.opacity = "0";
