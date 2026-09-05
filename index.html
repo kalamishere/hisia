@@ -518,9 +518,11 @@ function shuffle(a){
    tie is broken at random, and the last couple of cities stand aside so the
    rotation keeps moving instead of ping-ponging between two time zones */
 var recent = [];
+var forcedCity = Q0.get("city");   /* ?city=KE — first pick is that city (screenshots, sharing a city) */
 function pickRegion(){
   var all = Object.keys(poolByRegion).filter(function(k){ return poolByRegion[k].length; });
   if (!all.length) return null;
+  if (forcedCity && poolByRegion[forcedCity]){ var f = forcedCity; forcedCity = null; return f; }
   var hold = Math.min(recent.length, Math.max(0, all.length - 1));
   var skip = recent.slice(recent.length - hold);
   var cands = all.filter(function(k){ return skip.indexOf(k) === -1; });
