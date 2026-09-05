@@ -837,6 +837,7 @@ function paint(){
     " · AI-generated · no real songs";
   elPromptText.textContent = r.sa3_prompt || "";
   document.title = r.city + " · World Sound";
+  requestAnimationFrame(fitStrip);
   if ("mediaSession" in navigator){
     try {
       navigator.mediaSession.metadata = new MediaMetadata({
@@ -882,6 +883,15 @@ function paintStrip(){
   }).join("");
 }
 setInterval(paintStrip, 60000);
+/* a two-line track name grows the card upward into the strip: lift the strip clear of it */
+function fitStrip(){
+  var strip = document.getElementById("strip"), card = document.getElementById("card");
+  if (!strip || !card || getComputedStyle(strip).display === "none") return;
+  strip.style.top = "";
+  var s = strip.getBoundingClientRect(), c = card.getBoundingClientRect();
+  if (s.bottom > c.top - 8) strip.style.top = Math.max(0, c.top - s.height - 10) + "px";
+}
+window.addEventListener("resize", fitStrip);
 setInterval(function(){ if (current) paint(); }, 60000); /* sun, moon and clock keep moving between tracks */
 
 /* shooting stars: one every half minute or so, only over a dark sky, never under reduced motion */
