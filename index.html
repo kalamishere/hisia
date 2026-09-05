@@ -89,6 +89,27 @@ body{
   background:radial-gradient(circle at 50% 45%, #fff 0%, var(--sun-core) 52%, rgba(var(--sun-glow),.92) 100%);
   box-shadow:0 0 60px 12px rgba(var(--sun-glow),.35);
 }
+/* ---- sky variants (?sky=sodium | mirror), after Eliasson's Weather Project: one colour of light,
+   a half sun completed by its mirror image, haze with body. Inert without a body.sky-* class. ---- */
+#sodium{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:var(--sodium-op,0);transition:opacity 2.4s ease;
+  background:#f0a53a;mix-blend-mode:color}
+#sodium2{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:calc(var(--sodium-op,0) * .28);transition:opacity 2.4s ease;
+  background:#c8781a;mix-blend-mode:multiply}
+#sunMirror{display:none;position:absolute;left:var(--sun-x);top:var(--horizon);z-index:1;
+  width:calc(clamp(74px,7.6vw,150px) * var(--sun-scale,1));aspect-ratio:1;transform:translate(-50%,-50%) scaleY(-1);
+  border-radius:50%;background:radial-gradient(circle at 50% 45%, #fff 0%, var(--sun-core) 52%, rgba(var(--sun-glow),.92) 100%);
+  opacity:calc(var(--sun-op) * var(--mirror-op,0));filter:blur(1.5px);pointer-events:none;
+  -webkit-mask-image:linear-gradient(0deg,rgba(0,0,0,.9) 50%,rgba(0,0,0,.05) 100%);mask-image:linear-gradient(0deg,rgba(0,0,0,.9) 50%,rgba(0,0,0,.05) 100%)}
+#sunMirror::before{content:"";position:absolute;inset:-120%;border-radius:50%;
+  background:radial-gradient(circle, rgba(var(--sun-glow),.5) 0%, rgba(var(--sun-glow),.18) 36%, rgba(var(--sun-glow),0) 68%)}
+.haze{display:none;position:absolute;left:-10%;width:120%;height:9vh;z-index:0;pointer-events:none;
+  background:radial-gradient(62vw 100% at var(--sun-x) 50%, rgba(var(--sun-glow),.42), rgba(var(--sun-glow),0) 72%);
+  filter:blur(16px);mix-blend-mode:screen;opacity:calc(var(--sun-op) * var(--haze-op,0));animation:drift 40s linear infinite alternate}
+.haze.h1{top:calc(var(--horizon) - 14vh);animation-duration:52s}
+.haze.h2{top:calc(var(--horizon) - 6vh);height:12vh;animation-direction:reverse;animation-duration:64s}
+.haze.h3{top:calc(var(--horizon) + 1vh);height:7vh;animation-duration:44s;opacity:calc(var(--sun-op) * var(--haze-op,0) * .6)}
+body.sky-sodium #sun, body.sky-mirror #sun{width:calc(clamp(74px,7.6vw,150px) * var(--sun-scale,1))}
+body.sky-mirror #sunMirror, body.sky-mirror .haze{display:block}
 /* reflection column on the water/plain */
 #reflection{
   position:absolute;left:var(--sun-x);top:var(--horizon);bottom:0;
@@ -329,7 +350,10 @@ footer a:hover{color:#fff}
     <div class="wave"></div><div class="wave"></div><div class="wave"></div>
     <div class="horizonline"></div>
     <div id="reflection"></div>
+    <div id="sunMirror"></div>
+    <div class="haze h1"></div><div class="haze h2"></div><div class="haze h3"></div>
   </div>
+  <div id="sodium" aria-hidden="true"></div><div id="sodium2" aria-hidden="true"></div>
 
   <div id="sun" aria-hidden="true"></div>
   <div id="moon" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#ece9dc"/><path id="moonDark" d="" fill="#0b1124" fill-opacity=".92"/></svg></div>
@@ -483,6 +507,25 @@ function moonDarkPath(f, darkLeft){
   return "M50,0 A50,50 0 0," + outer + " 50,100 A" + rx + ",50 0 0," + term + " 50,0";
 }
 var MOON_OP = {night:.95, dusk:.7, dawn:.5, golden:.2, day:0};
+/* sky variant from ?sky= : one-colour light at golden/dusk, bigger sun, mirrored half sun + haze */
+var SKY = (new URLSearchParams(location.search).get("sky") || "blend").toLowerCase();  /* blend is the pick (Kalam, 2026-09-05); ?sky=current restores the old sky */
+if (SKY === "sodium" || SKY === "mirror" || SKY === "blend") document.body.classList.add("sky-" + (SKY === "blend" ? "sodium" : SKY));
+var SKY_VALS = {golden:{sod:.78, scale:2.1, mirror:.9, haze:1}, dusk:{sod:.62, scale:1.7, mirror:.8, haze:.8},
+                dawn:{sod:.3, scale:1.3, mirror:.5, haze:.5}, day:{sod:0, scale:1, mirror:.35, haze:.25}, night:{sod:0, scale:1, mirror:0, haze:0}};
+function applySky(phase, h, sh){
+  var root = document.documentElement.style, v = SKY_VALS[phase] || SKY_VALS.day, on = (SKY === "sodium" || SKY === "mirror" || SKY === "blend");
+  var sod = v.sod, scale = v.scale;
+  if (SKY === "blend" && sh){
+    /* amber rises over the last hour before sunset, peaks with the sun on the horizon, and is gone ten minutes after it sets: the purples come back for dusk */
+    var m = (sh.set - h) * 60;                     /* minutes to sunset, negative after */
+    var k = m >= 0 ? Math.min(1, Math.max(0, (60 - m) / 45)) : Math.max(0, 1 + m / 10);
+    sod = .78 * k; scale = 1 + 1.1 * k;
+  }
+  root.setProperty("--sodium-op", on ? sod : 0);
+  root.setProperty("--sun-scale", on ? scale : 1);
+  root.setProperty("--mirror-op", SKY === "mirror" ? v.mirror : 0);
+  root.setProperty("--haze-op", SKY === "mirror" ? v.haze : 0);
+}
 function placeMoon(iso, phase){
   var root = document.documentElement.style, c = COORDS[iso];
   if (!c){ root.setProperty("--moon-op", 0); return; }
@@ -548,13 +591,14 @@ function applyPhase(name){
 }
 
 /* sun position from the playing city's local hour */
-function placeSun(h, sh){
+function placeSun(h, sh, phase){
   var SUNRISE = sh ? sh.rise : 6.2, SUNSET = sh ? sh.set : 19.6;
   var root = document.documentElement.style, up = (h > SUNRISE && h < SUNSET);
   var t = (h - SUNRISE) / (SUNSET - SUNRISE);
   var x = 14 + 72 * Math.min(1, Math.max(0, t));
   var horizon = 62, top = 11;
   var elev = up ? Math.sin(Math.PI * t) : 0;
+  if (SKY === "mirror" && (phase === "golden" || phase === "dusk")) elev = Math.min(elev, 0.06);
   var y = horizon - elev * (horizon - top);
   root.setProperty("--sun-x", x.toFixed(2) + "%");
   root.setProperty("--sun-y", y.toFixed(2) + "%");
@@ -828,8 +872,9 @@ function paint(){
   if (!r) return;
   var h = localHour(r.tz), sh = sunHours(current.region, r.tz), ph = phaseFor(h, sh);
   applyPhase(ph);
-  placeSun(h, sh);
+  placeSun(h, sh, ph);
   placeMoon(current.region, ph);
+  applySky(ph, h, sh);
   elCity.classList.toggle("long", String(r.city).length > 10);
   elCity.innerHTML = escapeHTML(r.city) + ' <span class="time">' + localClock(r.tz) + "</span>";
   elCountry.textContent = r.country || "";
