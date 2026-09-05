@@ -537,6 +537,9 @@ function pickRegion(){
   /* weighted toward the sunset: a city with the sun on the horizon (~19:30) plays
      about three times as often as one already two hours into the night */
   var near = cands.filter(function(k){ return score[k] <= 3.5; });
+  /* a thin side of the clock (the Americas at this hour) leaves too few cities in the
+     window and the pool repeats; take the six nearest to evening instead */
+  if (near.length < 6){ near = cands.slice().sort(function(a,b){ return score[a] - score[b]; }).slice(0, 6); }
   if (near.length){
     var w = near.map(function(k){ var dd = Math.abs(localHour(regionsByIso[k].tz, d) - 19.5); dd = Math.min(dd, 24 - dd); return 1 / (0.5 + dd); });
     var total = w.reduce(function(a,b){ return a + b; }, 0), pick = Math.random() * total;
