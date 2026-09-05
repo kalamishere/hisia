@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Sound · stream console</title>
+<style>
+:root{color-scheme:dark}
+body{margin:0;background:#0a0d16;color:#e8eaf2;font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;padding:24px}
+h1{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#8a93ad;font-weight:500;margin:0 0 20px}
+.box{border:1px solid #1e2437;border-radius:6px;padding:16px;margin-bottom:14px;background:#0d1220}
+.lab{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#6b7490;margin-bottom:6px}
+.big{font-size:19px}
+.city{color:#ffd9a3}
+.dim{color:#8a93ad}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+button{font:inherit;background:#182036;color:#e8eaf2;border:1px solid #2b3450;border-radius:5px;padding:7px 15px;cursor:pointer}
+button:hover{background:#212c4a}
+button:disabled{opacity:.4;cursor:default}
+button.go{border-color:#2f6b46;background:#14301f}
+button.stop{border-color:#6b2f2f;background:#301414}
+label{color:#a8b0c6;user-select:none}
+input[type=checkbox]{accent-color:#7c8cff}
+#bar{height:3px;background:#1e2437;border-radius:2px;margin-top:10px;overflow:hidden}
+#barIn{height:100%;width:0;background:#ffd9a3;transition:width .5s linear}
+#log{white-space:pre-wrap;font-size:12px;color:#98a1ba;max-height:290px;overflow:auto;margin:0}
+.dot{width:8px;height:8px;border-radius:50%;background:#57607d;display:inline-block;margin-right:7px}
+.dot.on{background:#5ad07a;box-shadow:0 0 8px #5ad07a}
+</style>
+</head>
+<body>
+<h1>World Sound · stream console</h1>
+
+<div class="box">
+  <div class="lab">now playing</div>
+  <div class="big"><span class="city" id="city">—</span> <span class="dim" id="clock"></span></div>
+  <div id="track" class="dim"></div>
+  <div id="bar"><div id="barIn"></div></div>
+  <div class="lab" style="margin-top:14px">next</div>
+  <div id="next" class="dim">—</div>
+  <div class="row" style="margin-top:14px">
+    <button id="skip">Skip →</button>
+    <button id="reload">Reload page</button>
+  </div>
+</div>
+
+<div class="box">
+  <div class="lab">broadcast</div>
+  <div class="row">
+    <label><input type="checkbox" id="tw" checked> twitch</label>
+    <label><input type="checkbox" id="yt"> youtube</label>
+    <label><input type="checkbox" id="fl"> record mp4</label>
+    <button class="go" id="start">Start</button>
+    <button class="stop" id="stop">Stop</button>
+  </div>
+  <div class="row" style="margin-top:12px"><span class="dot" id="dot"></span><span id="health" class="dim">off air</span></div>
+</div>
+
+<div class="box">
+  <div class="lab">log</div>
+  <pre id="log"></pre>
+</div>
+
+<script>
+"use strict";
+var startedAt = 0, durationS = 0;
+function esc(s){return String(s==null?"":s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
+
+function tick(){
+  if (durationS > 0){
+    var p = Math.min(100, Math.max(0, ((Date.now()-startedAt)/1000/durationS)*100));
+    document.getElementById("barIn").style.width = p.toFixed(1)+"%";
+  }
+  requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+
+function poll(){
+  fetch("/status.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(s){
+    var n = s.now;
+    if (n && n.track){
+      startedAt = n.startedAt; durationS = n.durationS;
+      document.getElementById("city").textContent = n.city || n.region;
+      document.getElementById("clock").textContent = "· " + Math.round(n.elapsedS) + "s / " + Math.round(n.durationS) + "s";
+      document.getElementById("track").innerHTML = esc(n.track.artist) + " — " + esc(n.track.title) +
+        " <span class='dim'>(" + esc(n.track.id) + ")</span>";
+      document.getElementById("next").textContent = n.next
+        ? (n.next.city || n.next.region) + " · " + n.next.track.artist + " — " + n.next.track.title : "—";
+    }
+    var c = s.capture || {};
+    document.getElementById("dot").className = "dot" + (s.live ? " on" : "");
+    document.getElementById("health").textContent = s.live
+      ? ("on air · " + (s.legs.join("+") || "—") + " · " + (c.frameSize||"?") +
+         " · " + (c.distinctFps==null?"—":c.distinctFps) + " sampled fps · " + (c.freshFps==null?"":c.freshFps+" fresh of "+c.cfrFps+" on air · ") + (c.encoderSpeed==null?"":"enc "+c.encoderSpeed+"x · ") + "maxIFG " +
+         (c.maxInterFrameGapMs==null?"—":c.maxInterFrameGapMs) + "ms · dropped " + (c.dropped||0) +
+         " · up " + s.broadcastUptimeS + "s")
+      : ("off air · radio up " + s.serverUptimeS + "s · underrun blocks " + (s.player?s.player.underrunBlocks:0));
+  }).catch(function(){});
+  fetch("/log.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(l){
+    document.getElementById("log").textContent = (l.lines||[]).join("\n");
+    var el = document.getElementById("log"); el.scrollTop = el.scrollHeight;
+  }).catch(function(){});
+}
+poll(); setInterval(poll, 2000);
+
+document.getElementById("skip").onclick = function(){
+  fetch("/skip",{method:"POST"}).then(poll);
+};
+document.getElementById("reload").onclick = function(){
+  fetch("/reload",{method:"POST"}).then(function(r){return r.json();})
+    .then(function(x){ if(!x.ok) alert("reload failed: "+x.reason); poll(); });
+};
+document.getElementById("start").onclick = function(){
+  var t = [];
+  if (document.getElementById("tw").checked) t.push("twitch");
+  if (document.getElementById("yt").checked) t.push("youtube");
+  if (document.getElementById("fl").checked) t.push("file");
+  fetch("/broadcast",{method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({action:"start",targets:t})})
+    .then(function(r){return r.json();})
+    .then(function(x){ if(!x.ok) alert("start failed: "+x.reason); poll(); });
+};
+document.getElementById("stop").onclick = function(){
+  fetch("/broadcast",{method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({action:"stop"})}).then(poll);
+};
+</script>
+</body>
+</html>
