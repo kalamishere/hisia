@@ -42,7 +42,8 @@
      "Dance",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "AE": {
    "city": "Dubai",
@@ -77,7 +78,8 @@
      "Soundtrack",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "TZ": {
    "city": "Dar es Salaam",
@@ -122,7 +124,8 @@
      "Pop",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "NG": {
    "city": "Lagos",
@@ -159,7 +162,8 @@
      "Afrobeats",
      3
     ]
-   ]
+   ],
+   "heard": []
   },
   "GH": {
    "city": "Accra",
@@ -201,7 +205,8 @@
      "Afrobeats",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "UG": {
    "city": "Kampala",
@@ -247,7 +252,8 @@
      "Afro-Pop",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "ZA": {
    "city": "Johannesburg",
@@ -292,6 +298,9 @@
      "Amapiano",
      1
     ]
+   ],
+   "heard": [
+    "log-drum kit"
    ]
   },
   "GB": {
@@ -327,7 +336,8 @@
      "Pop",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "BR": {
    "city": "Sao Paulo",
@@ -369,6 +379,9 @@
      "Brazilian Music",
      1
     ]
+   ],
+   "heard": [
+    "riq tambourine"
    ]
   },
   "KR": {
@@ -404,6 +417,9 @@
      "K-Pop",
      5
     ]
+   ],
+   "heard": [
+    "electric guitar"
    ]
   },
   "MX": {
@@ -446,6 +462,10 @@
      "Latin",
      1
     ]
+   ],
+   "heard": [
+    "timbales",
+    "bajo sexto"
    ]
   },
   "US": {
@@ -476,7 +496,8 @@
    "genre_family": "",
    "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 102 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, easy and sunlit",
    "suno_prompt": "[style: contemporary country-pop meeting melodic hip-hop] [tempo: 102 BPM] [mood: easy, sunlit, wistful] [instruments: strummed acoustic guitar, slide electric, warm bass, laid-back kit with snaps, piano pads] [vocal: mixed male and female lead in English, conversational verse, big singalong chorus]",
-   "genres_own": []
+   "genres_own": [],
+   "heard": []
   },
   "IN": {
    "city": "Mumbai",
@@ -519,7 +540,8 @@
      "Indian Pop",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "ID": {
    "city": "Jakarta",
@@ -558,7 +580,8 @@
      "K-Pop",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "CO": {
    "city": "Bogota",
@@ -604,7 +627,8 @@
      "Hip-Hop",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "PH": {
    "city": "Manila",
@@ -651,7 +675,8 @@
      "Pop",
      1
     ]
-   ]
+   ],
+   "heard": []
   },
   "AU": {
    "city": "Sydney",
@@ -681,7 +706,8 @@
    "genre_family": "",
    "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, energetic and romantic",
    "suno_prompt": "[style: chart pop, country-pop, K-pop-styled girl-group pop] [tempo: 123 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: confident female lead, big harmonised chorus]",
-   "genres_own": []
+   "genres_own": [],
+   "heard": []
   },
   "NZ": {
    "city": "Auckland",
@@ -711,7 +737,8 @@
    "genre_family": "",
    "sa3_prompt": "New Zealand chart pop instrumental, 112 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and keyboard chords carrying the arrangement, joyful, energetic and romantic",
    "suno_prompt": "[style: chart pop, country-pop, girl-group pop, hip-hop crossover] [tempo: 112 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: warm lead vocal, layered harmonies, singalong chorus]",
-   "genres_own": []
+   "genres_own": [],
+   "heard": []
   },
   "CV": {
    "city": "Praia",
@@ -756,7 +783,8 @@
      "Dance",
      1
     ]
-   ]
+   ],
+   "heard": []
   }
  },
  "tracks": [
