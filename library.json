@@ -1,2185 +1,2360 @@
 {
-  "generated_at": "2026-09-05T13:15:48Z",
-  "chart_week": "2026-08-24",
-  "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
-  "regions": {
-    "KE": {
-      "city": "Nairobi",
-      "country": "Kenya",
-      "tz": "Africa/Nairobi",
-      "readout": {
-        "bpm": 94.9,
-        "mode": "minor",
-        "lufs": -13.43,
-        "instruments": [
-          "bass",
-          "keyboard",
-          "drums"
-        ],
-        "moods": [
-          "love",
-          "happy",
-          "deep"
-        ],
-        "n_tracks": 4,
-        "excluded_tracks": [
-          "KE-1"
-        ],
-        "bpm_iqr": [
-          91.88,
-          103.9
-        ]
-      },
-      "genre_family": "Dance / Afro-Pop",
-      "sa3_prompt": "East African afro-pop instrumental, 98 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, sunny and romantic",
-      "suno_prompt": "[style: afro-pop, bongo flava, dancehall-zouk swing, tropical house sheen] [tempo: 98 BPM] [mood: romantic, sunny, warm] [instruments: log drum, shakers, sliding bass, plucked guitar, synth pads] [vocal: male lead, Swahili hook, call-and-response backing vocals -- e.g. a repeated 'nakupenda mpenzi wangu' refrain]"
-    },
-    "AE": {
-      "city": "Dubai",
-      "country": "United Arab Emirates",
-      "tz": "Asia/Dubai",
-      "readout": {
-        "bpm": 99.38,
-        "mode": "minor",
-        "lufs": -14.26,
-        "instruments": [
-          "bass",
-          "drums",
-          "percussion"
-        ],
-        "moods": [
-          "love",
-          "deep",
-          "summer"
-        ],
-        "n_tracks": 5,
-        "excluded_tracks": [],
-        "bpm_iqr": [
-          95.7,
-          105.46
-        ]
-      },
-      "genre_family": "Soundtrack",
-      "sa3_prompt": "Mid-tempo Gulf-chart pop instrumental, 96 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix",
-      "suno_prompt": "[style: South-Asian film-pop meets Arabic urban pop, reggaeton/trap drum programming] [tempo: 96 BPM, wide range 53-115] [mood: emotional, deep, romantic] [instruments: sub bass, trap hats, percussion, synth, ornamented strings/reeds] [vocal: melismatic lead with microtonal ornament; the chart mixes Hindi/Tamil playback vocals and Egyptian-Arabic rap, so either a Hindi-pop hook or an Arabic rap verse fits]"
-    },
-    "TZ": {
-      "city": "Dar es Salaam",
-      "country": "Tanzania",
-      "tz": "Africa/Dar_es_Salaam",
-      "readout": {
-        "bpm": 120.25,
-        "mode": "major",
-        "lufs": -11.4,
-        "instruments": [
-          "percussion",
-          "keyboard",
-          "bass"
-        ],
-        "moods": [
-          "love",
-          "summer",
-          "happy"
-        ],
-        "n_tracks": 4,
-        "excluded_tracks": [
-          "TZ-5"
-        ],
-        "bpm_iqr": [
-          117.45,
-          128.18
-        ]
-      },
-      "genre_family": "Afro-Pop / Afrobeats / Pop",
-      "sa3_prompt": "Bongo flava instrumental, 118 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, joyful summer dance groove",
-      "suno_prompt": "[style: bongo flava, afro-pop, zouk-inflected, singeli-adjacent energy] [tempo: 118 BPM] [mood: joyful, summery, celebratory] [instruments: congas, shakers, punchy kick, sliding bass, bright guitar arpeggio, warm keys] [vocal: duet male/female, Swahili lead, big singalong chorus -- e.g. a 'malaika wangu' style refrain]"
-    },
-    "NG": {
-      "city": "Lagos",
-      "country": "Nigeria",
-      "tz": "Africa/Lagos",
-      "readout": {
-        "bpm": 109.96,
-        "mode": "minor",
-        "lufs": -12.54,
-        "instruments": [
-          "bass",
-          "drums",
-          "percussion"
-        ],
-        "moods": [
-          "deep",
-          "love",
-          "summer"
-        ],
-        "n_tracks": 4,
-        "excluded_tracks": [
-          "NG-3"
-        ],
-        "bpm_iqr": [
-          104.37,
-          115.6
-        ]
-      },
-      "genre_family": "Afrobeats",
-      "sa3_prompt": "Nigerian afrobeats instrumental, 110 BPM, minor key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, warm and romantic",
-      "suno_prompt": "[style: afrobeats, Lagos street-pop, afro-fusion] [tempo: 110 BPM] [mood: warm, romantic, sunlit, a little melancholy] [instruments: log drum, shakers, sub bass, muted guitar plucks, electric piano, airy pads] [vocal: male lead, Nigerian-English and pidgin phrasing, relaxed melodic flow, layered ad-libs answering the hook]"
-    },
-    "GH": {
-      "city": "Accra",
-      "country": "Ghana",
-      "tz": "Africa/Accra",
-      "readout": {
-        "bpm": 99.38,
-        "mode": "major",
-        "lufs": -13.0,
-        "instruments": [
-          "bass",
-          "drums",
-          "percussion"
-        ],
-        "moods": [
-          "deep",
-          "summer",
-          "happy"
-        ],
-        "n_tracks": 3,
-        "excluded_tracks": [
-          "GH-2",
-          "GH-3"
-        ],
-        "bpm_iqr": [
-          86.08,
-          107.11
-        ]
-      },
-      "genre_family": "Hip-Hop / Rap / Afrobeats",
-      "sa3_prompt": "Ghanaian afrobeats and rap instrumental, 99 BPM, major key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, confident and easy",
-      "suno_prompt": "[style: Ghanaian afrobeats, hiplife-leaning rap, highlife guitar colour] [tempo: 99 BPM] [mood: confident, sunny, easy] [instruments: swung kicks and claps, hand percussion, round bass, piano stabs, clean guitar licks] [vocal: rap verses in Ghanaian English and Twi phrasing over a sung hook, crew backing shouts]"
-    },
-    "UG": {
-      "city": "Kampala",
-      "country": "Uganda",
-      "tz": "Africa/Kampala",
-      "readout": {
-        "bpm": 126.05,
-        "mode": "major",
-        "lufs": -11.55,
-        "instruments": [
-          "percussion",
-          "bass",
-          "keyboard"
-        ],
-        "moods": [
-          "love",
-          "deep",
-          "happy"
-        ],
-        "n_tracks": 3,
-        "excluded_tracks": [
-          "UG-3",
-          "UG-5"
-        ],
-        "bpm_iqr": [
-          114.7,
-          129.28
-        ]
-      },
-      "genre_family": "Afro-Beat / Afro-fusion / Afro-Pop",
-      "sa3_prompt": "Ugandan afro-fusion instrumental, 126 BPM, major key, fast hand-drum and shaker patterns, bouncing bass, bright single-coil guitar riff, warm organ keys, up-tempo dance lilt, joyful and romantic",
-      "suno_prompt": "[style: Ugandan afro-fusion, afro-pop, kadongo-kamu-flavoured dance] [tempo: 126 BPM] [mood: joyful, romantic, celebratory] [instruments: hand drums, shakers, bouncing bass, bright guitar riff, organ keys] [vocal: male lead in Luganda with English lines, call-and-response chorus, whistles and crowd shouts]"
-    },
-    "ZA": {
-      "city": "Johannesburg",
-      "country": "South Africa",
-      "tz": "Africa/Johannesburg",
-      "readout": {
-        "bpm": 112.35,
-        "mode": "minor",
-        "lufs": -18.13,
-        "instruments": [
-          "synthesizer",
-          "drums",
-          "bass"
-        ],
-        "moods": [
-          "deep",
-          "happy",
-          "summer"
-        ],
-        "n_tracks": 4,
-        "excluded_tracks": [
-          "ZA-3"
-        ],
-        "bpm_iqr": [
-          103.54,
-          112.35
-        ]
-      },
-      "genre_family": "Dance / South Africa / Amapiano",
-      "sa3_prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, deep and hypnotic late-night groove",
-      "suno_prompt": "[style: amapiano, South African dance] [tempo: 112 BPM] [mood: deep, hypnotic, late-night, sunlit come-down] [instruments: log drum, shakers, rimshots, soft piano chords, wide pads] [vocal: sparse chanted vocal in isiZulu and Sepedi phrasing, half-sung ad-libs, long gaps between lines]"
-    },
-    "GB": {
-      "city": "London",
-      "country": "United Kingdom",
-      "tz": "Europe/London",
-      "readout": {
-        "bpm": 123.05,
-        "mode": "major",
-        "lufs": -11.66,
-        "instruments": [
-          "drums",
-          "bass",
-          "synthesizer"
-        ],
-        "moods": [
-          "energetic",
-          "love",
-          "happy"
-        ],
-        "n_tracks": 5,
-        "excluded_tracks": [],
-        "bpm_iqr": [
-          114.84,
-          129.2
-        ]
-      },
-      "genre_family": "Pop",
-      "sa3_prompt": "UK chart pop instrumental, 126 BPM, major key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, energetic and euphoric",
-      "suno_prompt": "[style: UK chart pop with K-pop crossover sheen, dance-pop] [tempo: 126 BPM] [mood: energetic, euphoric, glossy] [instruments: four-on-the-floor kit, claps, synth bass, supersaw chords, chopped electric guitar] [vocal: group vocal, English hook sung in unison then split into harmony, chanted pre-chorus]"
-    },
-    "BR": {
-      "city": "Sao Paulo",
-      "country": "Brazil",
-      "tz": "America/Sao_Paulo",
-      "readout": {
-        "bpm": 147.66,
-        "mode": "major",
-        "lufs": -11.61,
-        "instruments": [
-          "drums",
-          "bass",
-          "percussion"
-        ],
-        "moods": [
-          "love",
-          "happy",
-          "energetic"
-        ],
-        "n_tracks": 3,
-        "excluded_tracks": [
-          "BR-2",
-          "BR-3"
-        ],
-        "bpm_iqr": [
-          135.35,
-          152.14
-        ]
-      },
-      "genre_family": "Brazilian Music / Sertanejo",
-      "sa3_prompt": "Brazilian sertanejo and funk instrumental, 150 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, romantic and rowdy",
-      "suno_prompt": "[style: sertanejo universitario meets funk paulista] [tempo: 150 BPM] [mood: festive, romantic, rowdy] [instruments: tamborim and snare, punchy kick, sliding bass, accordion-coloured keys, steel-string acoustic guitar] [vocal: male duet in Brazilian Portuguese, singalong chorus, crowd noise under the last chorus]"
-    },
-    "KR": {
-      "city": "Seoul",
-      "country": "South Korea",
-      "tz": "Asia/Seoul",
-      "readout": {
-        "bpm": 123.05,
-        "mode": "minor",
-        "lufs": -10.33,
-        "instruments": [
-          "synthesizer",
-          "bass",
-          "drums"
-        ],
-        "moods": [
-          "energetic",
-          "happy",
-          "love"
-        ],
-        "n_tracks": 5,
-        "excluded_tracks": [],
-        "bpm_iqr": [
-          112.35,
-          123.05
-        ]
-      },
-      "genre_family": "K-Pop",
-      "sa3_prompt": "K-pop instrumental, 123 BPM, minor key, hard programmed drums, distorted synth bass, bright arpeggiated synths, crunchy electric guitar stabs, loud glossy mix, energetic and confident with a big drop",
-      "suno_prompt": "[style: K-pop, dance-pop with a hip-hop spine] [tempo: 123 BPM] [mood: energetic, confident, sharp] [instruments: hard programmed drums, distorted synth bass, arpeggiated synths, electric guitar stabs] [vocal: group vocal, romanised Korean hook with English hooks, rap verse into a chanted drop]"
-    },
-    "MX": {
-      "city": "Mexico City",
-      "country": "Mexico",
-      "tz": "America/Mexico_City",
-      "readout": {
-        "bpm": 123.05,
-        "mode": "major",
-        "lufs": -12.54,
-        "instruments": [
-          "drums",
-          "bass",
-          "electricguitar"
-        ],
-        "moods": [
-          "love",
-          "happy",
-          "deep"
-        ],
-        "n_tracks": 3,
-        "excluded_tracks": [
-          "MX-2",
-          "MX-5"
-        ],
-        "bpm_iqr": [
-          106.86,
-          127.78
-        ]
-      },
-      "genre_family": "Latin / Música Mexicana",
-      "sa3_prompt": "Mexican regional instrumental, norteno and corridos tumbados, 109 BPM, minor key, bajo sexto and nylon-string requinto lines, tuba and sousaphone bass walking under the beat, snare and tambora shuffle, accordion swells, close warm mix, romantic and swaggering",
-      "suno_prompt": "[style: musica mexicana - norteno-banda ballad crossed with corridos tumbados] [tempo: 109 BPM] [mood: romantic, swaggering, bittersweet] [instruments: bajo sexto, nylon-string requinto, tuba bass, tambora and snare shuffle, accordion] [vocal: male lead in Spanish, plain-spoken verse into a wide two-part harmony chorus, shouted asides]"
-    },
-    "US": {
-      "city": "Los Angeles",
-      "country": "United States",
-      "tz": "America/Los_Angeles",
-      "readout": {
-        "bpm": 112.35,
-        "mode": "major",
-        "lufs": -11.83,
-        "instruments": [
-          "drums",
-          "bass",
-          "keyboard"
-        ],
-        "moods": [
-          "happy",
-          "energetic",
-          "love"
-        ],
-        "n_tracks": 5,
-        "excluded_tracks": [],
-        "bpm_iqr": [
-          90.67,
-          114.84
-        ]
-      },
-      "genre_family": "",
-      "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 102 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, easy and sunlit",
-      "suno_prompt": "[style: contemporary country-pop meeting melodic hip-hop] [tempo: 102 BPM] [mood: easy, sunlit, wistful] [instruments: strummed acoustic guitar, slide electric, warm bass, laid-back kit with snaps, piano pads] [vocal: mixed male and female lead in English, conversational verse, big singalong chorus]"
-    },
-    "IN": {
-      "city": "Mumbai",
-      "country": "India",
-      "tz": "Asia/Kolkata",
-      "readout": {
-        "bpm": 92.73,
-        "mode": "major",
-        "lufs": -15.03,
-        "instruments": [
-          "synthesizer",
-          "bass",
-          "drums"
-        ],
-        "moods": [
-          "love",
-          "energetic",
-          "happy"
-        ],
-        "n_tracks": 2,
-        "excluded_tracks": [
-          "IN-5",
-          "IN-1",
-          "IN-2"
-        ],
-        "bpm_iqr": [
-          80.36,
-          105.1
-        ]
-      },
-      "genre_family": "Bollywood / Indian Pop",
-      "sa3_prompt": "Indian film pop instrumental, 93 BPM, major key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, romantic and rising",
-      "suno_prompt": "[style: Bollywood film pop with an Indian-pop electronic underlay] [tempo: 93 BPM] [mood: romantic, rising, cinematic] [instruments: dholak and tabla, programmed kit, sitar and santoor plucks, synth bass, string pad] [vocal: female lead in romanised Hindi with a male answering line, long held notes, harmonium-coloured ornament]"
-    },
-    "ID": {
-      "city": "Jakarta",
-      "country": "Indonesia",
-      "tz": "Asia/Jakarta",
-      "readout": {
-        "bpm": 117.45,
-        "mode": "major",
-        "lufs": -11.32,
-        "instruments": [
-          "drums",
-          "guitar",
-          "bass"
-        ],
-        "moods": [
-          "love",
-          "energetic",
-          "happy"
-        ],
-        "n_tracks": 5,
-        "excluded_tracks": [],
-        "bpm_iqr": [
-          101.33,
-          123.05
-        ]
-      },
-      "genre_family": "Pop / K-Pop",
-      "sa3_prompt": "Indonesian pop instrumental, 120 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, warm and hopeful",
-      "suno_prompt": "[style: Indonesian pop with a K-pop-leaning gloss] [tempo: 120 BPM] [mood: warm, hopeful, gently euphoric] [instruments: clean electric guitar arpeggios, synth bass, programmed kit with claps, glassy keys, airy pads] [vocal: soft male lead in Bahasa Indonesia, breathy verse, group-sung chorus]"
-    },
-    "CO": {
-      "city": "Bogota",
-      "country": "Colombia",
-      "tz": "America/Bogota",
-      "readout": {
-        "bpm": 74.9,
-        "mode": "minor",
-        "lufs": -12.4,
-        "instruments": [
-          "drums",
-          "bass",
-          "synthesizer"
-        ],
-        "moods": [
-          "love",
-          "happy",
-          "energetic"
-        ],
-        "n_tracks": 3,
-        "excluded_tracks": [
-          "CO-1",
-          "CO-2"
-        ],
-        "bpm_iqr": [
-          66.16,
-          77.82
-        ]
-      },
-      "genre_family": "Música Mexicana / Pop Latino / Rap / Hip Hop",
-      "sa3_prompt": "Colombian pop instrumental, 75 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
-      "suno_prompt": "[style: musica mexicana as heard in Colombia, pop latino, reggaeton undertow] [tempo: 75 BPM] [mood: romantic, joyful, energetic] [instruments: bass, requinto guitar, accordion, soft percussion, pads] [vocal: male lead in Spanish, heartfelt delivery, harmonised chorus]"
-    },
-    "PH": {
-      "city": "Manila",
-      "country": "Philippines",
-      "tz": "Asia/Manila",
-      "readout": {
-        "bpm": 69.84,
-        "mode": "major",
-        "lufs": -14.67,
-        "instruments": [
-          "drums",
-          "bass",
-          "synthesizer"
-        ],
-        "moods": [
-          "love",
-          "energetic",
-          "happy"
-        ],
-        "n_tracks": 5,
-        "excluded_tracks": [],
-        "bpm_iqr": [
-          66.26,
-          80.75
-        ]
-      },
-      "genre_family": "Alternative / Indie Pop / Pop / Rap / Hip Hop / Hip-Hop / Rap",
-      "sa3_prompt": "Filipino pop instrumental, 70 BPM, major key, clean drum kit groove, warm bass, jangly electric guitar, soft piano, wide pads, earnest indie-pop lift, big-chorus dynamics, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
-      "suno_prompt": "[style: OPM pop, indie pop, hip-hop-inflected pop ballad] [tempo: 70 BPM] [mood: romantic, energetic, joyful] [instruments: drum kit, bass, jangly guitar, piano, pads] [vocal: soaring male or female lead in Tagalog and English, anthemic chorus]"
-    },
-    "AU": {
-      "city": "Sydney",
-      "country": "Australia",
-      "tz": "Australia/Sydney",
-      "readout": {
-        "bpm": 123.05,
-        "mode": "major",
-        "lufs": -11.8,
-        "instruments": [
-          "drums",
-          "bass",
-          "synthesizer"
-        ],
-        "moods": [
-          "happy",
-          "energetic",
-          "love"
-        ],
-        "n_tracks": 5,
-        "excluded_tracks": [],
-        "bpm_iqr": [
-          114.84,
-          129.2
-        ]
-      },
-      "genre_family": "",
-      "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, energetic and romantic",
-      "suno_prompt": "[style: chart pop, country-pop, K-pop-styled girl-group pop] [tempo: 123 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: confident female lead, big harmonised chorus]"
-    },
-    "NZ": {
-      "city": "Auckland",
-      "country": "New Zealand",
-      "tz": "Pacific/Auckland",
-      "readout": {
-        "bpm": 112.35,
-        "mode": "major",
-        "lufs": -11.83,
-        "instruments": [
-          "drums",
-          "bass",
-          "keyboard"
-        ],
-        "moods": [
-          "happy",
-          "energetic",
-          "love"
-        ],
-        "n_tracks": 5,
-        "excluded_tracks": [],
-        "bpm_iqr": [
-          90.67,
-          114.84
-        ]
-      },
-      "genre_family": "",
-      "sa3_prompt": "New Zealand chart pop instrumental, 112 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and keyboard chords carrying the arrangement, joyful, energetic and romantic",
-      "suno_prompt": "[style: chart pop, country-pop, girl-group pop, hip-hop crossover] [tempo: 112 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: warm lead vocal, layered harmonies, singalong chorus]"
-    },
-    "CV": {
-      "city": "Praia",
-      "country": "Cape Verde",
-      "tz": "Atlantic/Cape_Verde",
-      "readout": {
-        "bpm": 127.78,
-        "mode": "minor",
-        "lufs": -12.63,
-        "instruments": [
-          "percussion",
-          "bass",
-          "drums"
-        ],
-        "moods": [
-          "love",
-          "deep",
-          "summer"
-        ],
-        "n_tracks": 4,
-        "excluded_tracks": [
-          "CV-3"
-        ],
-        "bpm_iqr": [
-          115.35,
-          132.51
-        ]
-      },
-      "genre_family": "Worldwide / African Music / Dance",
-      "sa3_prompt": "Cape Verdean dance instrumental, 128 BPM, minor key, funana-style accordion riffs, fast ferro-scraper percussion, bouncing bass, kizomba-zouk drum groove, bright guitar, joyful island dance energy, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, deep and sunny",
-      "suno_prompt": "[style: funana, kizomba, zouk, Cape Verdean dance-pop] [tempo: 128 BPM] [mood: romantic, deep, sunny] [instruments: accordion, ferro scraper, bass, zouk drums, guitar] [vocal: male lead in Kriolu, call-and-response chorus]"
-    }
+ "generated_at": "2026-09-05T13:15:48Z",
+ "chart_week": "2026-08-24",
+ "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
+ "regions": {
+  "KE": {
+   "city": "Nairobi",
+   "country": "Kenya",
+   "tz": "Africa/Nairobi",
+   "readout": {
+    "bpm": 94.9,
+    "mode": "minor",
+    "lufs": -13.43,
+    "instruments": [
+     "bass",
+     "keyboard",
+     "drums"
+    ],
+    "moods": [
+     "love",
+     "happy",
+     "deep"
+    ],
+    "n_tracks": 4,
+    "excluded_tracks": [
+     "KE-1"
+    ],
+    "bpm_iqr": [
+     91.88,
+     103.9
+    ]
+   },
+   "genre_family": "Dance / Afro-Pop",
+   "sa3_prompt": "East African afro-pop instrumental, 98 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, sunny and romantic",
+   "suno_prompt": "[style: afro-pop, bongo flava, dancehall-zouk swing, tropical house sheen] [tempo: 98 BPM] [mood: romantic, sunny, warm] [instruments: log drum, shakers, sliding bass, plucked guitar, synth pads] [vocal: male lead, Swahili hook, call-and-response backing vocals -- e.g. a repeated 'nakupenda mpenzi wangu' refrain]",
+   "genres_own": [
+    [
+     "Afro-Pop",
+     3
+    ],
+    [
+     "Dance",
+     1
+    ]
+   ]
   },
-  "tracks": [
-    {
-      "id": "KE-01",
-      "region": "KE",
-      "file": "audio/KE-01.mp3",
-      "duration_s": 114.0,
-      "title": "Barabara ya Jioni",
-      "artist": "Kesho Matatu Radio",
-      "mirrors_rank": 2,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "KE-02",
-      "region": "KE",
-      "file": "audio/KE-02.mp3",
-      "duration_s": 114.0,
-      "title": "Moyo Jioni",
-      "artist": "Riverside Stage Skyline",
-      "mirrors_rank": 3,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "KE-03",
-      "region": "KE",
-      "file": "audio/KE-03.mp3",
-      "duration_s": 114.0,
-      "title": "Wimbo wa Ngong",
-      "artist": "Mwangaza Radio",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "KE-04",
-      "region": "KE",
-      "file": "audio/KE-04.mp3",
-      "duration_s": 114.0,
-      "title": "Moyo Mzito",
-      "artist": "Uhuru Park Choir",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "AE-01",
-      "region": "AE",
-      "file": "audio/AE-01.mp3",
-      "duration_s": 114.0,
-      "title": "Layali Qamar",
-      "artist": "Bahr Al Fajr Sessions",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.4
-    },
-    {
-      "id": "AE-02",
-      "region": "AE",
-      "file": "audio/AE-02.mp3",
-      "duration_s": 114.0,
-      "title": "Tariq Al Hadi",
-      "artist": "Deira Corniche Skyline",
-      "mirrors_rank": 1,
-      "mirrors_cities": 2,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "AE-03",
-      "region": "AE",
-      "file": "audio/AE-03.mp3",
-      "duration_s": 114.0,
-      "title": "Layali Tawila",
-      "artist": "Qamar Lane Band",
-      "mirrors_rank": 2,
-      "mirrors_cities": 15,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "AE-04",
-      "region": "AE",
-      "file": "audio/AE-04.mp3",
-      "duration_s": 114.0,
-      "title": "Layali Sagheera",
-      "artist": "Qamar Lane Trio",
-      "mirrors_rank": 3,
-      "mirrors_cities": 2,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "TZ-01",
-      "region": "TZ",
-      "file": "audio/TZ-01.mp3",
-      "duration_s": 114.0,
-      "title": "Bahari ya Yangu Tulivu",
-      "artist": "Kigamboni Trio",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "TZ-02",
-      "region": "TZ",
-      "file": "audio/TZ-02.mp3",
-      "duration_s": 114.0,
-      "title": "Pwani Mchana",
-      "artist": "Zuhura Beach Circuit",
-      "mirrors_rank": 2,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "TZ-03",
-      "region": "TZ",
-      "file": "audio/TZ-03.mp3",
-      "duration_s": 114.0,
-      "title": "Rangi za Yangu Tulivu",
-      "artist": "Mzee Ferry Skyline",
-      "mirrors_rank": 3,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "TZ-04",
-      "region": "TZ",
-      "file": "audio/TZ-04.mp3",
-      "duration_s": 114.0,
-      "title": "Pwani wa Kusini",
-      "artist": "Zuhura Beach Circuit",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "NG-01",
-      "region": "NG",
-      "file": "audio/NG-01.mp3",
-      "duration_s": 114.0,
-      "title": "Owambe Harmattan",
-      "artist": "Lekki Tollgate Night Bus",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "NG-02",
-      "region": "NG",
-      "file": "audio/NG-02.mp3",
-      "duration_s": 114.0,
-      "title": "Sunlight for Sunrise",
-      "artist": "Lekki Tollgate Yard Sessions",
-      "mirrors_rank": 2,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "NG-03",
-      "region": "NG",
-      "file": "audio/NG-03.mp3",
-      "duration_s": 114.0,
-      "title": "Slow Motion Harmattan",
-      "artist": "Surulere Institute",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "NG-04",
-      "region": "NG",
-      "file": "audio/NG-04.mp3",
-      "duration_s": 114.0,
-      "title": "Palmwine Weekend",
-      "artist": "Lekki Tollgate Lamplight",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "GH-01",
-      "region": "GH",
-      "file": "audio/GH-01.mp3",
-      "duration_s": 112.54,
-      "title": "Gari and Sunshine",
-      "artist": "Trotro Weekend Skyline",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "GH-02",
-      "region": "GH",
-      "file": "audio/GH-02.mp3",
-      "duration_s": 112.08,
-      "title": "Trotro Ba",
-      "artist": "Kokrobite Night Bus",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "GH-03",
-      "region": "GH",
-      "file": "audio/GH-03.mp3",
-      "duration_s": 114.0,
-      "title": "Chalewote Sunshine",
-      "artist": "Accra Newtown Union",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.3
-    },
-    {
-      "id": "GH-04",
-      "region": "GH",
-      "file": "audio/GH-04.mp3",
-      "duration_s": 114.0,
-      "title": "Chalewote Morning",
-      "artist": "Adjoa Highlife Choir",
-      "mirrors_rank": 2,
-      "mirrors_cities": 4,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "UG-01",
-      "region": "UG",
-      "file": "audio/UG-01.mp3",
-      "duration_s": 114.0,
-      "title": "Munange Ekiro",
-      "artist": "Bodaboda Skyline Institute",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "UG-02",
-      "region": "UG",
-      "file": "audio/UG-02.mp3",
-      "duration_s": 114.0,
-      "title": "Emmwanyi Twala",
-      "artist": "Ggaba Lakeside Collective",
-      "mirrors_rank": 2,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "UG-03",
-      "region": "UG",
-      "file": "audio/UG-03.mp3",
-      "duration_s": 114.0,
-      "title": "Tuli Wamu Leero",
-      "artist": "Kabalagala Society",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "UG-04",
-      "region": "UG",
-      "file": "audio/UG-04.mp3",
-      "duration_s": 114.0,
-      "title": "Omukwano Gwaffe",
-      "artist": "Ggaba Lakeside Institute",
-      "mirrors_rank": 3,
-      "mirrors_cities": 15,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "ZA-01",
-      "region": "ZA",
-      "file": "audio/ZA-01.mp3",
-      "duration_s": 114.0,
-      "title": "Amanzi Yanos",
-      "artist": "Thandeka Yard Set",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.3
-    },
-    {
-      "id": "ZA-02",
-      "region": "ZA",
-      "file": "audio/ZA-02.mp3",
-      "duration_s": 114.0,
-      "title": "Izolo Nathi",
-      "artist": "Maboneng Set",
-      "mirrors_rank": 2,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "ZA-03",
-      "region": "ZA",
-      "file": "audio/ZA-03.mp3",
-      "duration_s": 114.0,
-      "title": "Amanzi Wethu",
-      "artist": "Maboneng Tape Club",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.3
-    },
-    {
-      "id": "ZA-04",
-      "region": "ZA",
-      "file": "audio/ZA-04.mp3",
-      "duration_s": 114.0,
-      "title": "Groove Ya Nathi",
-      "artist": "Yeoville Rooftop Yard Sessions",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.1
-    },
-    {
-      "id": "GB-01",
-      "region": "GB",
-      "file": "audio/GB-01.mp3",
-      "duration_s": 114.0,
-      "title": "Late Rain",
-      "artist": "New Cross Skyline",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.3
-    },
-    {
-      "id": "GB-02",
-      "region": "GB",
-      "file": "audio/GB-02.mp3",
-      "duration_s": 114.0,
-      "title": "Static in the Chorus",
-      "artist": "Camberwell Collective",
-      "mirrors_rank": 1,
-      "mirrors_cities": 15,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "GB-03",
-      "region": "GB",
-      "file": "audio/GB-03.mp3",
-      "duration_s": 114.0,
-      "title": "Two Left Rain",
-      "artist": "New Cross Band",
-      "mirrors_rank": 2,
-      "mirrors_cities": 4,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "GB-04",
-      "region": "GB",
-      "file": "audio/GB-04.mp3",
-      "duration_s": 114.0,
-      "title": "Corner Shop Trainers",
-      "artist": "Deptford Bridge Circuit",
-      "mirrors_rank": 3,
-      "mirrors_cities": 3,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "BR-01",
-      "region": "BR",
-      "file": "audio/BR-01.mp3",
-      "duration_s": 114.0,
-      "title": "Saudade de Interior",
-      "artist": "Sertao Neon Sessions",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "BR-02",
-      "region": "BR",
-      "file": "audio/BR-02.mp3",
-      "duration_s": 114.0,
-      "title": "Poeira e Manha",
-      "artist": "Vila Madalena Set",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "BR-03",
-      "region": "BR",
-      "file": "audio/BR-03.mp3",
-      "duration_s": 114.0,
-      "title": "Poeira e Viola Nova",
-      "artist": "Beira do Rio Institute",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "BR-04",
-      "region": "BR",
-      "file": "audio/BR-04.mp3",
-      "duration_s": 114.0,
-      "title": "Poeira e Viola Nova",
-      "artist": "Poeira Azul Yard Sessions",
-      "mirrors_rank": 2,
-      "mirrors_cities": 2,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.3
-    },
-    {
-      "id": "KR-01",
-      "region": "KR",
-      "file": "audio/KR-01.mp3",
-      "duration_s": 114.0,
-      "title": "Danger Signal Soda",
-      "artist": "Mapo Night Sound",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "KR-02",
-      "region": "KR",
-      "file": "audio/KR-02.mp3",
-      "duration_s": 114.0,
-      "title": "Frozen Peach Arcade",
-      "artist": "Han River Youth Yard Sessions",
-      "mirrors_rank": 2,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "KR-03",
-      "region": "KR",
-      "file": "audio/KR-03.mp3",
-      "duration_s": 114.0,
-      "title": "Frozen Peach Sonyeo",
-      "artist": "Han River Youth Skyline",
-      "mirrors_rank": 3,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "KR-04",
-      "region": "KR",
-      "file": "audio/KR-04.mp3",
-      "duration_s": 114.0,
-      "title": "Neon Soda",
-      "artist": "Sinchon Arcade Lamplight",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "MX-01",
-      "region": "MX",
-      "file": "audio/MX-01.mp3",
-      "duration_s": 114.0,
-      "title": "Noche de Tianguis",
-      "artist": "Hermanas Tolvanera Night Bus",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "MX-02",
-      "region": "MX",
-      "file": "audio/MX-02.mp3",
-      "duration_s": 114.0,
-      "title": "Luna de Metrobus",
-      "artist": "Coyoacan Circuit",
-      "mirrors_rank": 3,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "MX-03",
-      "region": "MX",
-      "file": "audio/MX-03.mp3",
-      "duration_s": 114.0,
-      "title": "Carretera de Metrobus",
-      "artist": "Hermanas Tolvanera Yard Sessions",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "MX-04",
-      "region": "MX",
-      "file": "audio/MX-04.mp3",
-      "duration_s": 114.0,
-      "title": "Noche de Metrobus",
-      "artist": "Coyoacan Lamplight",
-      "mirrors_rank": 2,
-      "mirrors_cities": 2,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "US-01",
-      "region": "US",
-      "file": "audio/US-01.mp3",
-      "duration_s": 114.0,
-      "title": "Two Lane Sunrise",
-      "artist": "Palmdale Pickup Trio",
-      "mirrors_rank": 1,
-      "mirrors_cities": 15,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.3
-    },
-    {
-      "id": "US-02",
-      "region": "US",
-      "file": "audio/US-02.mp3",
-      "duration_s": 114.0,
-      "title": "Cheap Beer Sunrise",
-      "artist": "Sunset Truckstop Institute",
-      "mirrors_rank": 2,
-      "mirrors_cities": 3,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "US-03",
-      "region": "US",
-      "file": "audio/US-03.mp3",
-      "duration_s": 114.0,
-      "title": "Runnin' Late Home",
-      "artist": "Dustbowl Avenue Cassette",
-      "mirrors_rank": 3,
-      "mirrors_cities": 4,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.3
-    },
-    {
-      "id": "US-04",
-      "region": "US",
-      "file": "audio/US-04.mp3",
-      "duration_s": 114.0,
-      "title": "Two Lane Sunday",
-      "artist": "Palmdale Pickup Trio",
-      "mirrors_rank": 4,
-      "mirrors_cities": 4,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.3
-    },
-    {
-      "id": "IN-01",
-      "region": "IN",
-      "file": "audio/IN-01.mp3",
-      "duration_s": 114.0,
-      "title": "Sapne Wali Chandni",
-      "artist": "Juhu Monsoon Lamplight",
-      "mirrors_rank": 3,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "IN-02",
-      "region": "IN",
-      "file": "audio/IN-02.mp3",
-      "duration_s": 114.0,
-      "title": "Roshni Ki Sadak",
-      "artist": "Bandra Filmi Set",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "IN-03",
-      "region": "IN",
-      "file": "audio/IN-03.mp3",
-      "duration_s": 114.0,
-      "title": "Dil Ka Sapna",
-      "artist": "Colaba Dhol Night Bus",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "IN-04",
-      "region": "IN",
-      "file": "audio/IN-04.mp3",
-      "duration_s": 114.0,
-      "title": "Chhat Pe Gaadi",
-      "artist": "Juhu Monsoon Rooftop Crew",
-      "mirrors_rank": 1,
-      "mirrors_cities": 2,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.5
-    },
-    {
-      "id": "ID-01",
-      "region": "ID",
-      "file": "audio/ID-01.mp3",
-      "duration_s": 114.0,
-      "title": "Sore di Bundaran",
-      "artist": "Kembang Api Radio",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "ID-02",
-      "region": "ID",
-      "file": "audio/ID-02.mp3",
-      "duration_s": 114.0,
-      "title": "Hujan di Biru",
-      "artist": "Bundaran Malam Radio",
-      "mirrors_rank": 2,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "ID-03",
-      "region": "ID",
-      "file": "audio/ID-03.mp3",
-      "duration_s": 114.0,
-      "title": "Malam Jakarta Senja",
-      "artist": "Ancol Beach Pop Skyline",
-      "mirrors_rank": 3,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "ID-04",
-      "region": "ID",
-      "file": "audio/ID-04.mp3",
-      "duration_s": 114.0,
-      "title": "Sore di Bundaran",
-      "artist": "Angkot Sore Radio",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "CO-01",
-      "region": "CO",
-      "file": "audio/CO-01.mp3",
-      "duration_s": 114.0,
-      "title": "Noche en Andes",
-      "artist": "La Candelaria Tape Club",
-      "mirrors_rank": 3,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "CO-02",
-      "region": "CO",
-      "file": "audio/CO-02.mp3",
-      "duration_s": 114.0,
-      "title": "Sabor de Oro",
-      "artist": "Cerros Choir",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "CO-03",
-      "region": "CO",
-      "file": "audio/CO-03.mp3",
-      "duration_s": 114.0,
-      "title": "Calle Azul",
-      "artist": "Cerros Society",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "CO-04",
-      "region": "CO",
-      "file": "audio/CO-04.mp3",
-      "duration_s": 114.0,
-      "title": "Noche en Andes",
-      "artist": "La Candelaria Radio",
-      "mirrors_rank": 1,
-      "mirrors_cities": 2,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.3
-    },
-    {
-      "id": "PH-01",
-      "region": "PH",
-      "file": "audio/PH-01.mp3",
-      "duration_s": 114.0,
-      "title": "Kanto ng Bayan",
-      "artist": "Roxas Boulevard Cassette",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "PH-02",
-      "region": "PH",
-      "file": "audio/PH-02.mp3",
-      "duration_s": 114.0,
-      "title": "Kanto ng Asul",
-      "artist": "Malate Skyline",
-      "mirrors_rank": 2,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "PH-03",
-      "region": "PH",
-      "file": "audio/PH-03.mp3",
-      "duration_s": 114.0,
-      "title": "Tag-init sa Maynila",
-      "artist": "Roxas Boulevard Trio",
-      "mirrors_rank": 3,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "PH-04",
-      "region": "PH",
-      "file": "audio/PH-04.mp3",
-      "duration_s": 114.0,
-      "title": "Tag-init sa Araw",
-      "artist": "Quiapo Yard Sessions",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "AU-01",
-      "region": "AU",
-      "file": "audio/AU-01.mp3",
-      "duration_s": 114.0,
-      "title": "Dancing at January",
-      "artist": "Marrickville Tape Club",
-      "mirrors_rank": 1,
-      "mirrors_cities": 15,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "AU-02",
-      "region": "AU",
-      "file": "audio/AU-02.mp3",
-      "duration_s": 114.0,
-      "title": "Down the Blue",
-      "artist": "Parramatta Band",
-      "mirrors_rank": 2,
-      "mirrors_cities": 3,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "AU-03",
-      "region": "AU",
-      "file": "audio/AU-03.mp3",
-      "duration_s": 114.0,
-      "title": "Down the the Harbour",
-      "artist": "Harbour Line Trio",
-      "mirrors_rank": 3,
-      "mirrors_cities": 3,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "AU-04",
-      "region": "AU",
-      "file": "audio/AU-04.mp3",
-      "duration_s": 114.0,
-      "title": "Night on Bondi",
-      "artist": "Newtown Band",
-      "mirrors_rank": 4,
-      "mirrors_cities": 4,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "NZ-01",
-      "region": "NZ",
-      "file": "audio/NZ-01.mp3",
-      "duration_s": 114.0,
-      "title": "Dance at the Harbour",
-      "artist": "Karangahape Choir",
-      "mirrors_rank": 1,
-      "mirrors_cities": 15,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "NZ-02",
-      "region": "NZ",
-      "file": "audio/NZ-02.mp3",
-      "duration_s": 114.0,
-      "title": "Heart of Blue",
-      "artist": "Grey Lynn Skyline",
-      "mirrors_rank": 2,
-      "mirrors_cities": 3,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "NZ-03",
-      "region": "NZ",
-      "file": "audio/NZ-03.mp3",
-      "duration_s": 114.0,
-      "title": "Dance at Piha",
-      "artist": "Harbour Bridge Union",
-      "mirrors_rank": 3,
-      "mirrors_cities": 4,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "NZ-04",
-      "region": "NZ",
-      "file": "audio/NZ-04.mp3",
-      "duration_s": 114.0,
-      "title": "Along the January",
-      "artist": "Grey Lynn Rooftop Crew",
-      "mirrors_rank": 4,
-      "mirrors_cities": 4,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    },
-    {
-      "id": "CV-01",
-      "region": "CV",
-      "file": "audio/CV-01.mp3",
-      "duration_s": 114.0,
-      "title": "Baile na Ilha",
-      "artist": "Cidade Velha Set",
-      "mirrors_rank": 1,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        112,
-        113,
-        114,
-        115
-      ],
-      "stage1_seed": 111,
-      "lufs": -14.2
-    },
-    {
-      "id": "CV-02",
-      "region": "CV",
-      "file": "audio/CV-02.mp3",
-      "duration_s": 114.0,
-      "title": "Korason di Bairro",
-      "artist": "Achada Choir",
-      "mirrors_rank": 2,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        212,
-        213,
-        214,
-        215
-      ],
-      "stage1_seed": 211,
-      "lufs": -14.2
-    },
-    {
-      "id": "CV-03",
-      "region": "CV",
-      "file": "audio/CV-03.mp3",
-      "duration_s": 114.0,
-      "title": "Rua di Ilha",
-      "artist": "Ribeira Grande Choir",
-      "mirrors_rank": 4,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        312,
-        313,
-        314,
-        315
-      ],
-      "stage1_seed": 311,
-      "lufs": -14.2
-    },
-    {
-      "id": "CV-04",
-      "region": "CV",
-      "file": "audio/CV-04.mp3",
-      "duration_s": 114.0,
-      "title": "Verão na Praia",
-      "artist": "Cidade Velha Society",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
-      "seed_source": "synthetic",
-      "vibe": 0.42,
-      "chunks": 4,
-      "seeds": [
-        412,
-        413,
-        414,
-        415
-      ],
-      "stage1_seed": 411,
-      "lufs": -14.2
-    }
-  ]
+  "AE": {
+   "city": "Dubai",
+   "country": "United Arab Emirates",
+   "tz": "Asia/Dubai",
+   "readout": {
+    "bpm": 99.38,
+    "mode": "minor",
+    "lufs": -14.26,
+    "instruments": [
+     "bass",
+     "drums",
+     "percussion"
+    ],
+    "moods": [
+     "love",
+     "deep",
+     "summer"
+    ],
+    "n_tracks": 5,
+    "excluded_tracks": [],
+    "bpm_iqr": [
+     95.7,
+     105.46
+    ]
+   },
+   "genre_family": "Soundtrack",
+   "sa3_prompt": "Mid-tempo Gulf-chart pop instrumental, 96 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix",
+   "suno_prompt": "[style: South-Asian film-pop meets Arabic urban pop, reggaeton/trap drum programming] [tempo: 96 BPM, wide range 53-115] [mood: emotional, deep, romantic] [instruments: sub bass, trap hats, percussion, synth, ornamented strings/reeds] [vocal: melismatic lead with microtonal ornament; the chart mixes Hindi/Tamil playback vocals and Egyptian-Arabic rap, so either a Hindi-pop hook or an Arabic rap verse fits]",
+   "genres_own": [
+    [
+     "Soundtrack",
+     1
+    ]
+   ]
+  },
+  "TZ": {
+   "city": "Dar es Salaam",
+   "country": "Tanzania",
+   "tz": "Africa/Dar_es_Salaam",
+   "readout": {
+    "bpm": 120.25,
+    "mode": "major",
+    "lufs": -11.4,
+    "instruments": [
+     "percussion",
+     "keyboard",
+     "bass"
+    ],
+    "moods": [
+     "love",
+     "summer",
+     "happy"
+    ],
+    "n_tracks": 4,
+    "excluded_tracks": [
+     "TZ-5"
+    ],
+    "bpm_iqr": [
+     117.45,
+     128.18
+    ]
+   },
+   "genre_family": "Afro-Pop / Afrobeats / Pop",
+   "sa3_prompt": "Bongo flava instrumental, 118 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, joyful summer dance groove",
+   "suno_prompt": "[style: bongo flava, afro-pop, zouk-inflected, singeli-adjacent energy] [tempo: 118 BPM] [mood: joyful, summery, celebratory] [instruments: congas, shakers, punchy kick, sliding bass, bright guitar arpeggio, warm keys] [vocal: duet male/female, Swahili lead, big singalong chorus -- e.g. a 'malaika wangu' style refrain]",
+   "genres_own": [
+    [
+     "Afro-Pop",
+     2
+    ],
+    [
+     "Afrobeats",
+     1
+    ],
+    [
+     "Pop",
+     1
+    ]
+   ]
+  },
+  "NG": {
+   "city": "Lagos",
+   "country": "Nigeria",
+   "tz": "Africa/Lagos",
+   "readout": {
+    "bpm": 109.96,
+    "mode": "minor",
+    "lufs": -12.54,
+    "instruments": [
+     "bass",
+     "drums",
+     "percussion"
+    ],
+    "moods": [
+     "deep",
+     "love",
+     "summer"
+    ],
+    "n_tracks": 4,
+    "excluded_tracks": [
+     "NG-3"
+    ],
+    "bpm_iqr": [
+     104.37,
+     115.6
+    ]
+   },
+   "genre_family": "Afrobeats",
+   "sa3_prompt": "Nigerian afrobeats instrumental, 110 BPM, minor key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, warm and romantic",
+   "suno_prompt": "[style: afrobeats, Lagos street-pop, afro-fusion] [tempo: 110 BPM] [mood: warm, romantic, sunlit, a little melancholy] [instruments: log drum, shakers, sub bass, muted guitar plucks, electric piano, airy pads] [vocal: male lead, Nigerian-English and pidgin phrasing, relaxed melodic flow, layered ad-libs answering the hook]",
+   "genres_own": [
+    [
+     "Afrobeats",
+     3
+    ]
+   ]
+  },
+  "GH": {
+   "city": "Accra",
+   "country": "Ghana",
+   "tz": "Africa/Accra",
+   "readout": {
+    "bpm": 99.38,
+    "mode": "major",
+    "lufs": -13.0,
+    "instruments": [
+     "bass",
+     "drums",
+     "percussion"
+    ],
+    "moods": [
+     "deep",
+     "summer",
+     "happy"
+    ],
+    "n_tracks": 3,
+    "excluded_tracks": [
+     "GH-2",
+     "GH-3"
+    ],
+    "bpm_iqr": [
+     86.08,
+     107.11
+    ]
+   },
+   "genre_family": "Hip-Hop / Rap / Afrobeats",
+   "sa3_prompt": "Ghanaian afrobeats and rap instrumental, 99 BPM, major key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, confident and easy",
+   "suno_prompt": "[style: Ghanaian afrobeats, hiplife-leaning rap, highlife guitar colour] [tempo: 99 BPM] [mood: confident, sunny, easy] [instruments: swung kicks and claps, hand percussion, round bass, piano stabs, clean guitar licks] [vocal: rap verses in Ghanaian English and Twi phrasing over a sung hook, crew backing shouts]",
+   "genres_own": [
+    [
+     "Hip-Hop",
+     1
+    ],
+    [
+     "Afrobeats",
+     1
+    ]
+   ]
+  },
+  "UG": {
+   "city": "Kampala",
+   "country": "Uganda",
+   "tz": "Africa/Kampala",
+   "readout": {
+    "bpm": 126.05,
+    "mode": "major",
+    "lufs": -11.55,
+    "instruments": [
+     "percussion",
+     "bass",
+     "keyboard"
+    ],
+    "moods": [
+     "love",
+     "deep",
+     "happy"
+    ],
+    "n_tracks": 3,
+    "excluded_tracks": [
+     "UG-3",
+     "UG-5"
+    ],
+    "bpm_iqr": [
+     114.7,
+     129.28
+    ]
+   },
+   "genre_family": "Afro-Beat / Afro-fusion / Afro-Pop",
+   "sa3_prompt": "Ugandan afro-fusion instrumental, 126 BPM, major key, fast hand-drum and shaker patterns, bouncing bass, bright single-coil guitar riff, warm organ keys, up-tempo dance lilt, joyful and romantic",
+   "suno_prompt": "[style: Ugandan afro-fusion, afro-pop, kadongo-kamu-flavoured dance] [tempo: 126 BPM] [mood: joyful, romantic, celebratory] [instruments: hand drums, shakers, bouncing bass, bright guitar riff, organ keys] [vocal: male lead in Luganda with English lines, call-and-response chorus, whistles and crowd shouts]",
+   "genres_own": [
+    [
+     "Afro-Beat",
+     1
+    ],
+    [
+     "Afro-fusion",
+     1
+    ],
+    [
+     "Afro-Pop",
+     1
+    ]
+   ]
+  },
+  "ZA": {
+   "city": "Johannesburg",
+   "country": "South Africa",
+   "tz": "Africa/Johannesburg",
+   "readout": {
+    "bpm": 112.35,
+    "mode": "minor",
+    "lufs": -18.13,
+    "instruments": [
+     "synthesizer",
+     "drums",
+     "bass"
+    ],
+    "moods": [
+     "deep",
+     "happy",
+     "summer"
+    ],
+    "n_tracks": 4,
+    "excluded_tracks": [
+     "ZA-3"
+    ],
+    "bpm_iqr": [
+     103.54,
+     112.35
+    ]
+   },
+   "genre_family": "Dance / South Africa / Amapiano",
+   "sa3_prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, deep and hypnotic late-night groove",
+   "suno_prompt": "[style: amapiano, South African dance] [tempo: 112 BPM] [mood: deep, hypnotic, late-night, sunlit come-down] [instruments: log drum, shakers, rimshots, soft piano chords, wide pads] [vocal: sparse chanted vocal in isiZulu and Sepedi phrasing, half-sung ad-libs, long gaps between lines]",
+   "genres_own": [
+    [
+     "Dance",
+     2
+    ],
+    [
+     "South Africa",
+     1
+    ],
+    [
+     "Amapiano",
+     1
+    ]
+   ]
+  },
+  "GB": {
+   "city": "London",
+   "country": "United Kingdom",
+   "tz": "Europe/London",
+   "readout": {
+    "bpm": 123.05,
+    "mode": "major",
+    "lufs": -11.66,
+    "instruments": [
+     "drums",
+     "bass",
+     "synthesizer"
+    ],
+    "moods": [
+     "energetic",
+     "love",
+     "happy"
+    ],
+    "n_tracks": 5,
+    "excluded_tracks": [],
+    "bpm_iqr": [
+     114.84,
+     129.2
+    ]
+   },
+   "genre_family": "Pop",
+   "sa3_prompt": "UK chart pop instrumental, 126 BPM, major key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, energetic and euphoric",
+   "suno_prompt": "[style: UK chart pop with K-pop crossover sheen, dance-pop] [tempo: 126 BPM] [mood: energetic, euphoric, glossy] [instruments: four-on-the-floor kit, claps, synth bass, supersaw chords, chopped electric guitar] [vocal: group vocal, English hook sung in unison then split into harmony, chanted pre-chorus]",
+   "genres_own": [
+    [
+     "Pop",
+     1
+    ]
+   ]
+  },
+  "BR": {
+   "city": "Sao Paulo",
+   "country": "Brazil",
+   "tz": "America/Sao_Paulo",
+   "readout": {
+    "bpm": 147.66,
+    "mode": "major",
+    "lufs": -11.61,
+    "instruments": [
+     "drums",
+     "bass",
+     "percussion"
+    ],
+    "moods": [
+     "love",
+     "happy",
+     "energetic"
+    ],
+    "n_tracks": 3,
+    "excluded_tracks": [
+     "BR-2",
+     "BR-3"
+    ],
+    "bpm_iqr": [
+     135.35,
+     152.14
+    ]
+   },
+   "genre_family": "Brazilian Music / Sertanejo",
+   "sa3_prompt": "Brazilian sertanejo and funk instrumental, 150 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, romantic and rowdy",
+   "suno_prompt": "[style: sertanejo universitario meets funk paulista] [tempo: 150 BPM] [mood: festive, romantic, rowdy] [instruments: tamborim and snare, punchy kick, sliding bass, accordion-coloured keys, steel-string acoustic guitar] [vocal: male duet in Brazilian Portuguese, singalong chorus, crowd noise under the last chorus]",
+   "genres_own": [
+    [
+     "Sertanejo",
+     2
+    ],
+    [
+     "Brazilian Music",
+     1
+    ]
+   ]
+  },
+  "KR": {
+   "city": "Seoul",
+   "country": "South Korea",
+   "tz": "Asia/Seoul",
+   "readout": {
+    "bpm": 123.05,
+    "mode": "minor",
+    "lufs": -10.33,
+    "instruments": [
+     "synthesizer",
+     "bass",
+     "drums"
+    ],
+    "moods": [
+     "energetic",
+     "happy",
+     "love"
+    ],
+    "n_tracks": 5,
+    "excluded_tracks": [],
+    "bpm_iqr": [
+     112.35,
+     123.05
+    ]
+   },
+   "genre_family": "K-Pop",
+   "sa3_prompt": "K-pop instrumental, 123 BPM, minor key, hard programmed drums, distorted synth bass, bright arpeggiated synths, crunchy electric guitar stabs, loud glossy mix, energetic and confident with a big drop",
+   "suno_prompt": "[style: K-pop, dance-pop with a hip-hop spine] [tempo: 123 BPM] [mood: energetic, confident, sharp] [instruments: hard programmed drums, distorted synth bass, arpeggiated synths, electric guitar stabs] [vocal: group vocal, romanised Korean hook with English hooks, rap verse into a chanted drop]",
+   "genres_own": [
+    [
+     "K-Pop",
+     5
+    ]
+   ]
+  },
+  "MX": {
+   "city": "Mexico City",
+   "country": "Mexico",
+   "tz": "America/Mexico_City",
+   "readout": {
+    "bpm": 123.05,
+    "mode": "major",
+    "lufs": -12.54,
+    "instruments": [
+     "drums",
+     "bass",
+     "electricguitar"
+    ],
+    "moods": [
+     "love",
+     "happy",
+     "deep"
+    ],
+    "n_tracks": 3,
+    "excluded_tracks": [
+     "MX-2",
+     "MX-5"
+    ],
+    "bpm_iqr": [
+     106.86,
+     127.78
+    ]
+   },
+   "genre_family": "Latin / Música Mexicana",
+   "sa3_prompt": "Mexican regional instrumental, norteno and corridos tumbados, 109 BPM, minor key, bajo sexto and nylon-string requinto lines, tuba and sousaphone bass walking under the beat, snare and tambora shuffle, accordion swells, close warm mix, romantic and swaggering",
+   "suno_prompt": "[style: musica mexicana - norteno-banda ballad crossed with corridos tumbados] [tempo: 109 BPM] [mood: romantic, swaggering, bittersweet] [instruments: bajo sexto, nylon-string requinto, tuba bass, tambora and snare shuffle, accordion] [vocal: male lead in Spanish, plain-spoken verse into a wide two-part harmony chorus, shouted asides]",
+   "genres_own": [
+    [
+     "Música Mexicana",
+     2
+    ],
+    [
+     "Latin",
+     1
+    ]
+   ]
+  },
+  "US": {
+   "city": "Los Angeles",
+   "country": "United States",
+   "tz": "America/Los_Angeles",
+   "readout": {
+    "bpm": 112.35,
+    "mode": "major",
+    "lufs": -11.83,
+    "instruments": [
+     "drums",
+     "bass",
+     "keyboard"
+    ],
+    "moods": [
+     "happy",
+     "energetic",
+     "love"
+    ],
+    "n_tracks": 5,
+    "excluded_tracks": [],
+    "bpm_iqr": [
+     90.67,
+     114.84
+    ]
+   },
+   "genre_family": "",
+   "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 102 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, easy and sunlit",
+   "suno_prompt": "[style: contemporary country-pop meeting melodic hip-hop] [tempo: 102 BPM] [mood: easy, sunlit, wistful] [instruments: strummed acoustic guitar, slide electric, warm bass, laid-back kit with snaps, piano pads] [vocal: mixed male and female lead in English, conversational verse, big singalong chorus]",
+   "genres_own": []
+  },
+  "IN": {
+   "city": "Mumbai",
+   "country": "India",
+   "tz": "Asia/Kolkata",
+   "readout": {
+    "bpm": 92.73,
+    "mode": "major",
+    "lufs": -15.03,
+    "instruments": [
+     "synthesizer",
+     "bass",
+     "drums"
+    ],
+    "moods": [
+     "love",
+     "energetic",
+     "happy"
+    ],
+    "n_tracks": 2,
+    "excluded_tracks": [
+     "IN-5",
+     "IN-1",
+     "IN-2"
+    ],
+    "bpm_iqr": [
+     80.36,
+     105.1
+    ]
+   },
+   "genre_family": "Bollywood / Indian Pop",
+   "sa3_prompt": "Indian film pop instrumental, 93 BPM, major key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, romantic and rising",
+   "suno_prompt": "[style: Bollywood film pop with an Indian-pop electronic underlay] [tempo: 93 BPM] [mood: romantic, rising, cinematic] [instruments: dholak and tabla, programmed kit, sitar and santoor plucks, synth bass, string pad] [vocal: female lead in romanised Hindi with a male answering line, long held notes, harmonium-coloured ornament]",
+   "genres_own": [
+    [
+     "Bollywood",
+     1
+    ],
+    [
+     "Indian Pop",
+     1
+    ]
+   ]
+  },
+  "ID": {
+   "city": "Jakarta",
+   "country": "Indonesia",
+   "tz": "Asia/Jakarta",
+   "readout": {
+    "bpm": 117.45,
+    "mode": "major",
+    "lufs": -11.32,
+    "instruments": [
+     "drums",
+     "guitar",
+     "bass"
+    ],
+    "moods": [
+     "love",
+     "energetic",
+     "happy"
+    ],
+    "n_tracks": 5,
+    "excluded_tracks": [],
+    "bpm_iqr": [
+     101.33,
+     123.05
+    ]
+   },
+   "genre_family": "Pop / K-Pop",
+   "sa3_prompt": "Indonesian pop instrumental, 120 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, warm and hopeful",
+   "suno_prompt": "[style: Indonesian pop with a K-pop-leaning gloss] [tempo: 120 BPM] [mood: warm, hopeful, gently euphoric] [instruments: clean electric guitar arpeggios, synth bass, programmed kit with claps, glassy keys, airy pads] [vocal: soft male lead in Bahasa Indonesia, breathy verse, group-sung chorus]",
+   "genres_own": [
+    [
+     "Pop",
+     4
+    ],
+    [
+     "K-Pop",
+     1
+    ]
+   ]
+  },
+  "CO": {
+   "city": "Bogota",
+   "country": "Colombia",
+   "tz": "America/Bogota",
+   "readout": {
+    "bpm": 74.9,
+    "mode": "minor",
+    "lufs": -12.4,
+    "instruments": [
+     "drums",
+     "bass",
+     "synthesizer"
+    ],
+    "moods": [
+     "love",
+     "happy",
+     "energetic"
+    ],
+    "n_tracks": 3,
+    "excluded_tracks": [
+     "CO-1",
+     "CO-2"
+    ],
+    "bpm_iqr": [
+     66.16,
+     77.82
+    ]
+   },
+   "genre_family": "Música Mexicana / Pop Latino / Rap / Hip Hop",
+   "sa3_prompt": "Colombian pop instrumental, 75 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+   "suno_prompt": "[style: musica mexicana as heard in Colombia, pop latino, reggaeton undertow] [tempo: 75 BPM] [mood: romantic, joyful, energetic] [instruments: bass, requinto guitar, accordion, soft percussion, pads] [vocal: male lead in Spanish, heartfelt delivery, harmonised chorus]",
+   "genres_own": [
+    [
+     "Música Mexicana",
+     1
+    ],
+    [
+     "Pop Latino",
+     1
+    ],
+    [
+     "Hip-Hop",
+     1
+    ]
+   ]
+  },
+  "PH": {
+   "city": "Manila",
+   "country": "Philippines",
+   "tz": "Asia/Manila",
+   "readout": {
+    "bpm": 69.84,
+    "mode": "major",
+    "lufs": -14.67,
+    "instruments": [
+     "drums",
+     "bass",
+     "synthesizer"
+    ],
+    "moods": [
+     "love",
+     "energetic",
+     "happy"
+    ],
+    "n_tracks": 5,
+    "excluded_tracks": [],
+    "bpm_iqr": [
+     66.26,
+     80.75
+    ]
+   },
+   "genre_family": "Alternative / Indie Pop / Pop / Rap / Hip Hop / Hip-Hop / Rap",
+   "sa3_prompt": "Filipino pop instrumental, 70 BPM, major key, clean drum kit groove, warm bass, jangly electric guitar, soft piano, wide pads, earnest indie-pop lift, big-chorus dynamics, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+   "suno_prompt": "[style: OPM pop, indie pop, hip-hop-inflected pop ballad] [tempo: 70 BPM] [mood: romantic, energetic, joyful] [instruments: drum kit, bass, jangly guitar, piano, pads] [vocal: soaring male or female lead in Tagalog and English, anthemic chorus]",
+   "genres_own": [
+    [
+     "Hip-Hop",
+     2
+    ],
+    [
+     "Alternative",
+     1
+    ],
+    [
+     "Indie Pop",
+     1
+    ],
+    [
+     "Pop",
+     1
+    ]
+   ]
+  },
+  "AU": {
+   "city": "Sydney",
+   "country": "Australia",
+   "tz": "Australia/Sydney",
+   "readout": {
+    "bpm": 123.05,
+    "mode": "major",
+    "lufs": -11.8,
+    "instruments": [
+     "drums",
+     "bass",
+     "synthesizer"
+    ],
+    "moods": [
+     "happy",
+     "energetic",
+     "love"
+    ],
+    "n_tracks": 5,
+    "excluded_tracks": [],
+    "bpm_iqr": [
+     114.84,
+     129.2
+    ]
+   },
+   "genre_family": "",
+   "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, energetic and romantic",
+   "suno_prompt": "[style: chart pop, country-pop, K-pop-styled girl-group pop] [tempo: 123 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: confident female lead, big harmonised chorus]",
+   "genres_own": []
+  },
+  "NZ": {
+   "city": "Auckland",
+   "country": "New Zealand",
+   "tz": "Pacific/Auckland",
+   "readout": {
+    "bpm": 112.35,
+    "mode": "major",
+    "lufs": -11.83,
+    "instruments": [
+     "drums",
+     "bass",
+     "keyboard"
+    ],
+    "moods": [
+     "happy",
+     "energetic",
+     "love"
+    ],
+    "n_tracks": 5,
+    "excluded_tracks": [],
+    "bpm_iqr": [
+     90.67,
+     114.84
+    ]
+   },
+   "genre_family": "",
+   "sa3_prompt": "New Zealand chart pop instrumental, 112 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and keyboard chords carrying the arrangement, joyful, energetic and romantic",
+   "suno_prompt": "[style: chart pop, country-pop, girl-group pop, hip-hop crossover] [tempo: 112 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: warm lead vocal, layered harmonies, singalong chorus]",
+   "genres_own": []
+  },
+  "CV": {
+   "city": "Praia",
+   "country": "Cape Verde",
+   "tz": "Atlantic/Cape_Verde",
+   "readout": {
+    "bpm": 127.78,
+    "mode": "minor",
+    "lufs": -12.63,
+    "instruments": [
+     "percussion",
+     "bass",
+     "drums"
+    ],
+    "moods": [
+     "love",
+     "deep",
+     "summer"
+    ],
+    "n_tracks": 4,
+    "excluded_tracks": [
+     "CV-3"
+    ],
+    "bpm_iqr": [
+     115.35,
+     132.51
+    ]
+   },
+   "genre_family": "Worldwide / African Music / Dance",
+   "sa3_prompt": "Cape Verdean dance instrumental, 128 BPM, minor key, funana-style accordion riffs, fast ferro-scraper percussion, bouncing bass, kizomba-zouk drum groove, bright guitar, joyful island dance energy, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, deep and sunny",
+   "suno_prompt": "[style: funana, kizomba, zouk, Cape Verdean dance-pop] [tempo: 128 BPM] [mood: romantic, deep, sunny] [instruments: accordion, ferro scraper, bass, zouk drums, guitar] [vocal: male lead in Kriolu, call-and-response chorus]",
+   "genres_own": [
+    [
+     "Worldwide",
+     1
+    ],
+    [
+     "African",
+     1
+    ],
+    [
+     "Dance",
+     1
+    ]
+   ]
+  }
+ },
+ "tracks": [
+  {
+   "id": "KE-01",
+   "region": "KE",
+   "file": "audio/KE-01.mp3",
+   "duration_s": 114.0,
+   "title": "Barabara ya Jioni",
+   "artist": "Kesho Matatu Radio",
+   "mirrors_rank": 2,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "KE-02",
+   "region": "KE",
+   "file": "audio/KE-02.mp3",
+   "duration_s": 114.0,
+   "title": "Moyo Jioni",
+   "artist": "Riverside Stage Skyline",
+   "mirrors_rank": 3,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "KE-03",
+   "region": "KE",
+   "file": "audio/KE-03.mp3",
+   "duration_s": 114.0,
+   "title": "Wimbo wa Ngong",
+   "artist": "Mwangaza Radio",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "KE-04",
+   "region": "KE",
+   "file": "audio/KE-04.mp3",
+   "duration_s": 114.0,
+   "title": "Moyo Mzito",
+   "artist": "Uhuru Park Choir",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "AE-01",
+   "region": "AE",
+   "file": "audio/AE-01.mp3",
+   "duration_s": 114.0,
+   "title": "Layali Qamar",
+   "artist": "Bahr Al Fajr Sessions",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.4
+  },
+  {
+   "id": "AE-02",
+   "region": "AE",
+   "file": "audio/AE-02.mp3",
+   "duration_s": 114.0,
+   "title": "Tariq Al Hadi",
+   "artist": "Deira Corniche Skyline",
+   "mirrors_rank": 1,
+   "mirrors_cities": 2,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "AE-03",
+   "region": "AE",
+   "file": "audio/AE-03.mp3",
+   "duration_s": 114.0,
+   "title": "Layali Tawila",
+   "artist": "Qamar Lane Band",
+   "mirrors_rank": 2,
+   "mirrors_cities": 15,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "AE-04",
+   "region": "AE",
+   "file": "audio/AE-04.mp3",
+   "duration_s": 114.0,
+   "title": "Layali Sagheera",
+   "artist": "Qamar Lane Trio",
+   "mirrors_rank": 3,
+   "mirrors_cities": 2,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "TZ-01",
+   "region": "TZ",
+   "file": "audio/TZ-01.mp3",
+   "duration_s": 114.0,
+   "title": "Bahari ya Yangu Tulivu",
+   "artist": "Kigamboni Trio",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "TZ-02",
+   "region": "TZ",
+   "file": "audio/TZ-02.mp3",
+   "duration_s": 114.0,
+   "title": "Pwani Mchana",
+   "artist": "Zuhura Beach Circuit",
+   "mirrors_rank": 2,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "TZ-03",
+   "region": "TZ",
+   "file": "audio/TZ-03.mp3",
+   "duration_s": 114.0,
+   "title": "Rangi za Yangu Tulivu",
+   "artist": "Mzee Ferry Skyline",
+   "mirrors_rank": 3,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "TZ-04",
+   "region": "TZ",
+   "file": "audio/TZ-04.mp3",
+   "duration_s": 114.0,
+   "title": "Pwani wa Kusini",
+   "artist": "Zuhura Beach Circuit",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "NG-01",
+   "region": "NG",
+   "file": "audio/NG-01.mp3",
+   "duration_s": 114.0,
+   "title": "Owambe Harmattan",
+   "artist": "Lekki Tollgate Night Bus",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "NG-02",
+   "region": "NG",
+   "file": "audio/NG-02.mp3",
+   "duration_s": 114.0,
+   "title": "Sunlight for Sunrise",
+   "artist": "Lekki Tollgate Yard Sessions",
+   "mirrors_rank": 2,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "NG-03",
+   "region": "NG",
+   "file": "audio/NG-03.mp3",
+   "duration_s": 114.0,
+   "title": "Slow Motion Harmattan",
+   "artist": "Surulere Institute",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "NG-04",
+   "region": "NG",
+   "file": "audio/NG-04.mp3",
+   "duration_s": 114.0,
+   "title": "Palmwine Weekend",
+   "artist": "Lekki Tollgate Lamplight",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "GH-01",
+   "region": "GH",
+   "file": "audio/GH-01.mp3",
+   "duration_s": 112.54,
+   "title": "Gari and Sunshine",
+   "artist": "Trotro Weekend Skyline",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "GH-02",
+   "region": "GH",
+   "file": "audio/GH-02.mp3",
+   "duration_s": 112.08,
+   "title": "Trotro Ba",
+   "artist": "Kokrobite Night Bus",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "GH-03",
+   "region": "GH",
+   "file": "audio/GH-03.mp3",
+   "duration_s": 114.0,
+   "title": "Chalewote Sunshine",
+   "artist": "Accra Newtown Union",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.3
+  },
+  {
+   "id": "GH-04",
+   "region": "GH",
+   "file": "audio/GH-04.mp3",
+   "duration_s": 114.0,
+   "title": "Chalewote Morning",
+   "artist": "Adjoa Highlife Choir",
+   "mirrors_rank": 2,
+   "mirrors_cities": 4,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "UG-01",
+   "region": "UG",
+   "file": "audio/UG-01.mp3",
+   "duration_s": 114.0,
+   "title": "Munange Ekiro",
+   "artist": "Bodaboda Skyline Institute",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "UG-02",
+   "region": "UG",
+   "file": "audio/UG-02.mp3",
+   "duration_s": 114.0,
+   "title": "Emmwanyi Twala",
+   "artist": "Ggaba Lakeside Collective",
+   "mirrors_rank": 2,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "UG-03",
+   "region": "UG",
+   "file": "audio/UG-03.mp3",
+   "duration_s": 114.0,
+   "title": "Tuli Wamu Leero",
+   "artist": "Kabalagala Society",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "UG-04",
+   "region": "UG",
+   "file": "audio/UG-04.mp3",
+   "duration_s": 114.0,
+   "title": "Omukwano Gwaffe",
+   "artist": "Ggaba Lakeside Institute",
+   "mirrors_rank": 3,
+   "mirrors_cities": 15,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "ZA-01",
+   "region": "ZA",
+   "file": "audio/ZA-01.mp3",
+   "duration_s": 114.0,
+   "title": "Amanzi Yanos",
+   "artist": "Thandeka Yard Set",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.3
+  },
+  {
+   "id": "ZA-02",
+   "region": "ZA",
+   "file": "audio/ZA-02.mp3",
+   "duration_s": 114.0,
+   "title": "Izolo Nathi",
+   "artist": "Maboneng Set",
+   "mirrors_rank": 2,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "ZA-03",
+   "region": "ZA",
+   "file": "audio/ZA-03.mp3",
+   "duration_s": 114.0,
+   "title": "Amanzi Wethu",
+   "artist": "Maboneng Tape Club",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.3
+  },
+  {
+   "id": "ZA-04",
+   "region": "ZA",
+   "file": "audio/ZA-04.mp3",
+   "duration_s": 114.0,
+   "title": "Groove Ya Nathi",
+   "artist": "Yeoville Rooftop Yard Sessions",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.1
+  },
+  {
+   "id": "GB-01",
+   "region": "GB",
+   "file": "audio/GB-01.mp3",
+   "duration_s": 114.0,
+   "title": "Late Rain",
+   "artist": "New Cross Skyline",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.3
+  },
+  {
+   "id": "GB-02",
+   "region": "GB",
+   "file": "audio/GB-02.mp3",
+   "duration_s": 114.0,
+   "title": "Static in the Chorus",
+   "artist": "Camberwell Collective",
+   "mirrors_rank": 1,
+   "mirrors_cities": 15,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "GB-03",
+   "region": "GB",
+   "file": "audio/GB-03.mp3",
+   "duration_s": 114.0,
+   "title": "Two Left Rain",
+   "artist": "New Cross Band",
+   "mirrors_rank": 2,
+   "mirrors_cities": 4,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "GB-04",
+   "region": "GB",
+   "file": "audio/GB-04.mp3",
+   "duration_s": 114.0,
+   "title": "Corner Shop Trainers",
+   "artist": "Deptford Bridge Circuit",
+   "mirrors_rank": 3,
+   "mirrors_cities": 3,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "BR-01",
+   "region": "BR",
+   "file": "audio/BR-01.mp3",
+   "duration_s": 114.0,
+   "title": "Saudade de Interior",
+   "artist": "Sertao Neon Sessions",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "BR-02",
+   "region": "BR",
+   "file": "audio/BR-02.mp3",
+   "duration_s": 114.0,
+   "title": "Poeira e Manha",
+   "artist": "Vila Madalena Set",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "BR-03",
+   "region": "BR",
+   "file": "audio/BR-03.mp3",
+   "duration_s": 114.0,
+   "title": "Poeira e Viola Nova",
+   "artist": "Beira do Rio Institute",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "BR-04",
+   "region": "BR",
+   "file": "audio/BR-04.mp3",
+   "duration_s": 114.0,
+   "title": "Poeira e Viola Nova",
+   "artist": "Poeira Azul Yard Sessions",
+   "mirrors_rank": 2,
+   "mirrors_cities": 2,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.3
+  },
+  {
+   "id": "KR-01",
+   "region": "KR",
+   "file": "audio/KR-01.mp3",
+   "duration_s": 114.0,
+   "title": "Danger Signal Soda",
+   "artist": "Mapo Night Sound",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "KR-02",
+   "region": "KR",
+   "file": "audio/KR-02.mp3",
+   "duration_s": 114.0,
+   "title": "Frozen Peach Arcade",
+   "artist": "Han River Youth Yard Sessions",
+   "mirrors_rank": 2,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "KR-03",
+   "region": "KR",
+   "file": "audio/KR-03.mp3",
+   "duration_s": 114.0,
+   "title": "Frozen Peach Sonyeo",
+   "artist": "Han River Youth Skyline",
+   "mirrors_rank": 3,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "KR-04",
+   "region": "KR",
+   "file": "audio/KR-04.mp3",
+   "duration_s": 114.0,
+   "title": "Neon Soda",
+   "artist": "Sinchon Arcade Lamplight",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "MX-01",
+   "region": "MX",
+   "file": "audio/MX-01.mp3",
+   "duration_s": 114.0,
+   "title": "Noche de Tianguis",
+   "artist": "Hermanas Tolvanera Night Bus",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "MX-02",
+   "region": "MX",
+   "file": "audio/MX-02.mp3",
+   "duration_s": 114.0,
+   "title": "Luna de Metrobus",
+   "artist": "Coyoacan Circuit",
+   "mirrors_rank": 3,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "MX-03",
+   "region": "MX",
+   "file": "audio/MX-03.mp3",
+   "duration_s": 114.0,
+   "title": "Carretera de Metrobus",
+   "artist": "Hermanas Tolvanera Yard Sessions",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "MX-04",
+   "region": "MX",
+   "file": "audio/MX-04.mp3",
+   "duration_s": 114.0,
+   "title": "Noche de Metrobus",
+   "artist": "Coyoacan Lamplight",
+   "mirrors_rank": 2,
+   "mirrors_cities": 2,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "US-01",
+   "region": "US",
+   "file": "audio/US-01.mp3",
+   "duration_s": 114.0,
+   "title": "Two Lane Sunrise",
+   "artist": "Palmdale Pickup Trio",
+   "mirrors_rank": 1,
+   "mirrors_cities": 15,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.3
+  },
+  {
+   "id": "US-02",
+   "region": "US",
+   "file": "audio/US-02.mp3",
+   "duration_s": 114.0,
+   "title": "Cheap Beer Sunrise",
+   "artist": "Sunset Truckstop Institute",
+   "mirrors_rank": 2,
+   "mirrors_cities": 3,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "US-03",
+   "region": "US",
+   "file": "audio/US-03.mp3",
+   "duration_s": 114.0,
+   "title": "Runnin' Late Home",
+   "artist": "Dustbowl Avenue Cassette",
+   "mirrors_rank": 3,
+   "mirrors_cities": 4,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.3
+  },
+  {
+   "id": "US-04",
+   "region": "US",
+   "file": "audio/US-04.mp3",
+   "duration_s": 114.0,
+   "title": "Two Lane Sunday",
+   "artist": "Palmdale Pickup Trio",
+   "mirrors_rank": 4,
+   "mirrors_cities": 4,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.3
+  },
+  {
+   "id": "IN-01",
+   "region": "IN",
+   "file": "audio/IN-01.mp3",
+   "duration_s": 114.0,
+   "title": "Sapne Wali Chandni",
+   "artist": "Juhu Monsoon Lamplight",
+   "mirrors_rank": 3,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "IN-02",
+   "region": "IN",
+   "file": "audio/IN-02.mp3",
+   "duration_s": 114.0,
+   "title": "Roshni Ki Sadak",
+   "artist": "Bandra Filmi Set",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "IN-03",
+   "region": "IN",
+   "file": "audio/IN-03.mp3",
+   "duration_s": 114.0,
+   "title": "Dil Ka Sapna",
+   "artist": "Colaba Dhol Night Bus",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "IN-04",
+   "region": "IN",
+   "file": "audio/IN-04.mp3",
+   "duration_s": 114.0,
+   "title": "Chhat Pe Gaadi",
+   "artist": "Juhu Monsoon Rooftop Crew",
+   "mirrors_rank": 1,
+   "mirrors_cities": 2,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.5
+  },
+  {
+   "id": "ID-01",
+   "region": "ID",
+   "file": "audio/ID-01.mp3",
+   "duration_s": 114.0,
+   "title": "Sore di Bundaran",
+   "artist": "Kembang Api Radio",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "ID-02",
+   "region": "ID",
+   "file": "audio/ID-02.mp3",
+   "duration_s": 114.0,
+   "title": "Hujan di Biru",
+   "artist": "Bundaran Malam Radio",
+   "mirrors_rank": 2,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "ID-03",
+   "region": "ID",
+   "file": "audio/ID-03.mp3",
+   "duration_s": 114.0,
+   "title": "Malam Jakarta Senja",
+   "artist": "Ancol Beach Pop Skyline",
+   "mirrors_rank": 3,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "ID-04",
+   "region": "ID",
+   "file": "audio/ID-04.mp3",
+   "duration_s": 114.0,
+   "title": "Sore di Bundaran",
+   "artist": "Angkot Sore Radio",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "CO-01",
+   "region": "CO",
+   "file": "audio/CO-01.mp3",
+   "duration_s": 114.0,
+   "title": "Noche en Andes",
+   "artist": "La Candelaria Tape Club",
+   "mirrors_rank": 3,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "CO-02",
+   "region": "CO",
+   "file": "audio/CO-02.mp3",
+   "duration_s": 114.0,
+   "title": "Sabor de Oro",
+   "artist": "Cerros Choir",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "CO-03",
+   "region": "CO",
+   "file": "audio/CO-03.mp3",
+   "duration_s": 114.0,
+   "title": "Calle Azul",
+   "artist": "Cerros Society",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "CO-04",
+   "region": "CO",
+   "file": "audio/CO-04.mp3",
+   "duration_s": 114.0,
+   "title": "Noche en Andes",
+   "artist": "La Candelaria Radio",
+   "mirrors_rank": 1,
+   "mirrors_cities": 2,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.3
+  },
+  {
+   "id": "PH-01",
+   "region": "PH",
+   "file": "audio/PH-01.mp3",
+   "duration_s": 114.0,
+   "title": "Kanto ng Bayan",
+   "artist": "Roxas Boulevard Cassette",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "PH-02",
+   "region": "PH",
+   "file": "audio/PH-02.mp3",
+   "duration_s": 114.0,
+   "title": "Kanto ng Asul",
+   "artist": "Malate Skyline",
+   "mirrors_rank": 2,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "PH-03",
+   "region": "PH",
+   "file": "audio/PH-03.mp3",
+   "duration_s": 114.0,
+   "title": "Tag-init sa Maynila",
+   "artist": "Roxas Boulevard Trio",
+   "mirrors_rank": 3,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "PH-04",
+   "region": "PH",
+   "file": "audio/PH-04.mp3",
+   "duration_s": 114.0,
+   "title": "Tag-init sa Araw",
+   "artist": "Quiapo Yard Sessions",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "AU-01",
+   "region": "AU",
+   "file": "audio/AU-01.mp3",
+   "duration_s": 114.0,
+   "title": "Dancing at January",
+   "artist": "Marrickville Tape Club",
+   "mirrors_rank": 1,
+   "mirrors_cities": 15,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "AU-02",
+   "region": "AU",
+   "file": "audio/AU-02.mp3",
+   "duration_s": 114.0,
+   "title": "Down the Blue",
+   "artist": "Parramatta Band",
+   "mirrors_rank": 2,
+   "mirrors_cities": 3,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "AU-03",
+   "region": "AU",
+   "file": "audio/AU-03.mp3",
+   "duration_s": 114.0,
+   "title": "Down the the Harbour",
+   "artist": "Harbour Line Trio",
+   "mirrors_rank": 3,
+   "mirrors_cities": 3,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "AU-04",
+   "region": "AU",
+   "file": "audio/AU-04.mp3",
+   "duration_s": 114.0,
+   "title": "Night on Bondi",
+   "artist": "Newtown Band",
+   "mirrors_rank": 4,
+   "mirrors_cities": 4,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "NZ-01",
+   "region": "NZ",
+   "file": "audio/NZ-01.mp3",
+   "duration_s": 114.0,
+   "title": "Dance at the Harbour",
+   "artist": "Karangahape Choir",
+   "mirrors_rank": 1,
+   "mirrors_cities": 15,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "NZ-02",
+   "region": "NZ",
+   "file": "audio/NZ-02.mp3",
+   "duration_s": 114.0,
+   "title": "Heart of Blue",
+   "artist": "Grey Lynn Skyline",
+   "mirrors_rank": 2,
+   "mirrors_cities": 3,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "NZ-03",
+   "region": "NZ",
+   "file": "audio/NZ-03.mp3",
+   "duration_s": 114.0,
+   "title": "Dance at Piha",
+   "artist": "Harbour Bridge Union",
+   "mirrors_rank": 3,
+   "mirrors_cities": 4,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "NZ-04",
+   "region": "NZ",
+   "file": "audio/NZ-04.mp3",
+   "duration_s": 114.0,
+   "title": "Along the January",
+   "artist": "Grey Lynn Rooftop Crew",
+   "mirrors_rank": 4,
+   "mirrors_cities": 4,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  },
+  {
+   "id": "CV-01",
+   "region": "CV",
+   "file": "audio/CV-01.mp3",
+   "duration_s": 114.0,
+   "title": "Baile na Ilha",
+   "artist": "Cidade Velha Set",
+   "mirrors_rank": 1,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    112,
+    113,
+    114,
+    115
+   ],
+   "stage1_seed": 111,
+   "lufs": -14.2
+  },
+  {
+   "id": "CV-02",
+   "region": "CV",
+   "file": "audio/CV-02.mp3",
+   "duration_s": 114.0,
+   "title": "Korason di Bairro",
+   "artist": "Achada Choir",
+   "mirrors_rank": 2,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    212,
+    213,
+    214,
+    215
+   ],
+   "stage1_seed": 211,
+   "lufs": -14.2
+  },
+  {
+   "id": "CV-03",
+   "region": "CV",
+   "file": "audio/CV-03.mp3",
+   "duration_s": 114.0,
+   "title": "Rua di Ilha",
+   "artist": "Ribeira Grande Choir",
+   "mirrors_rank": 4,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    312,
+    313,
+    314,
+    315
+   ],
+   "stage1_seed": 311,
+   "lufs": -14.2
+  },
+  {
+   "id": "CV-04",
+   "region": "CV",
+   "file": "audio/CV-04.mp3",
+   "duration_s": 114.0,
+   "title": "Verão na Praia",
+   "artist": "Cidade Velha Society",
+   "mirrors_rank": 5,
+   "mirrors_cities": 1,
+   "seed_source": "synthetic",
+   "vibe": 0.42,
+   "chunks": 4,
+   "seeds": [
+    412,
+    413,
+    414,
+    415
+   ],
+   "stage1_seed": 411,
+   "lufs": -14.2
+  }
+ ]
 }

@@ -61,6 +61,17 @@ body{
   opacity:var(--sun-op);pointer-events:none;
   transition:opacity 1.6s ease;
 }
+/* moon: real phase and sky position for the playing city */
+#moon{position:absolute;left:var(--moon-x,50%);top:var(--moon-y,30%);z-index:0;width:clamp(26px,2.6vw,48px);aspect-ratio:1;
+  transform:translate(-50%,-50%);opacity:var(--moon-op,0);transition:opacity 2.4s ease;pointer-events:none;
+  filter:drop-shadow(0 0 14px rgba(210,220,250,.35))}
+#moon svg{width:100%;height:100%;display:block}
+/* shooting stars */
+#stars b{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;box-shadow:0 0 6px 1px rgba(255,255,255,.75);
+  opacity:0;animation:shoot var(--dur,1.1s) ease-out forwards}
+#stars b::before{content:"";position:absolute;right:0;top:0;height:2px;width:var(--len,90px);transform-origin:right center;
+  transform:rotate(var(--ang));background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.7))}
+@keyframes shoot{0%{opacity:0;transform:translate(0,0)}10%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy))}}
 /* sun */
 #sun{
   position:absolute;left:var(--sun-x);top:var(--sun-y);z-index:0;
@@ -130,7 +141,7 @@ body{
   100%{transform:translate(118vw,1vh);opacity:0}
 }
 @media (prefers-reduced-motion: reduce){
-  .cloud,.bird,.wave,#stars i{animation:none!important}
+  .cloud,.bird,.wave,#stars i,#stars b{animation:none!important}
   .bird{opacity:0}
 }
 
@@ -315,6 +326,7 @@ footer a:hover{color:#fff}
   </div>
 
   <div id="sun" aria-hidden="true"></div>
+  <div id="moon" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#ece9dc"/><path id="moonDark" d="" fill="#0b1124" fill-opacity=".92"/></svg></div>
   <div id="veil" aria-hidden="true"></div>
   <div id="strip" aria-label="cities by local time"></div>
 
@@ -419,12 +431,76 @@ var PHASES = {
   dusk:   {sky:["#0d1436","#241f52","#4d2a63","#8b3a58","#c05a45"], ground:["#5b2a44","#0a0718"],
            star:.55, cloud:.34, glow:"255,150,110", core:"#ffd9bb", hz:"rgba(255,170,140,.3)"}
 };
-var SUNRISE = 6.2, SUNSET = 19.6;
-function phaseFor(h){
-  if (h < 5.0 || h >= 21.0) return "night";
-  if (h < 7.0) return "dawn";
-  if (h < 16.4) return "day";
-  if (h < SUNSET) return "golden";
+/* real sunrise/sunset and moon for the playing city (suncalc maths, BSD; no library) */
+var COORDS = {KE:[-1.29,36.82],AE:[25.20,55.27],TZ:[-6.79,39.28],NG:[6.52,3.38],GH:[5.60,-0.19],UG:[0.35,32.58],
+  ZA:[-26.20,28.04],GB:[51.51,-0.13],BR:[-23.55,-46.63],KR:[37.57,126.98],MX:[19.43,-99.13],US:[34.05,-118.24],
+  IN:[19.08,72.88],ID:[-6.21,106.85],CO:[4.71,-74.07],PH:[14.60,120.98],AU:[-33.87,151.21],NZ:[-36.85,174.76],
+  CV:[14.93,-23.51],PT:[38.72,-9.14],EG:[30.04,31.24],AR:[-34.60,-58.38]};
+var RAD = Math.PI/180, J1970 = 2440588, J2000 = 2451545, OBL = RAD*23.4397;
+function toDays(d){ return d.valueOf()/86400000 - 0.5 + J1970 - J2000; }
+function fromJulian(j){ return new Date((j + 0.5 - J1970) * 86400000); }
+function rightAsc(l,b){ return Math.atan2(Math.sin(l)*Math.cos(OBL) - Math.tan(b)*Math.sin(OBL), Math.cos(l)); }
+function declin(l,b){ return Math.asin(Math.sin(b)*Math.cos(OBL) + Math.cos(b)*Math.sin(OBL)*Math.sin(l)); }
+function solarMeanAnomaly(d){ return RAD*(357.5291 + 0.98560028*d); }
+function eclipticLon(M){ return M + RAD*(1.9148*Math.sin(M) + 0.02*Math.sin(2*M) + 0.0003*Math.sin(3*M)) + RAD*102.9372 + Math.PI; }
+function sunCoords(d){ var L = eclipticLon(solarMeanAnomaly(d)); return {dec: declin(L,0), ra: rightAsc(L,0)}; }
+function sunTimes(date, lat, lng){
+  var lw = RAD*-lng, phi = RAD*lat, d = toDays(date), n = Math.round(d - 0.0009 - lw/(2*Math.PI));
+  var ds = 0.0009 + lw/(2*Math.PI) + n, M = solarMeanAnomaly(ds), L = eclipticLon(M), dec = declin(L,0);
+  var Jnoon = J2000 + ds + 0.0053*Math.sin(M) - 0.0069*Math.sin(2*L);
+  var w = Math.acos((Math.sin(RAD*-0.833) - Math.sin(phi)*Math.sin(dec)) / (Math.cos(phi)*Math.cos(dec)));
+  if (isNaN(w)) return null;
+  var a = 0.0009 + (w + lw)/(2*Math.PI) + n, Jset = J2000 + a + 0.0053*Math.sin(M) - 0.0069*Math.sin(2*L);
+  return {rise: fromJulian(Jnoon - (Jset - Jnoon)), set: fromJulian(Jset)};
+}
+function moonCoords(d){
+  var L = RAD*(218.316 + 13.176396*d), M = RAD*(134.963 + 13.064993*d), F = RAD*(93.272 + 13.229350*d);
+  var l = L + RAD*6.289*Math.sin(M), b = RAD*5.128*Math.sin(F), dt = 385001 - 20905*Math.cos(M);
+  return {ra: rightAsc(l,b), dec: declin(l,b), dist: dt};
+}
+function moonPosition(date, lat, lng){
+  var lw = RAD*-lng, phi = RAD*lat, d = toDays(date), c = moonCoords(d), H = RAD*(280.16 + 360.9856235*d) - lw - c.ra;
+  return {azimuth: Math.atan2(Math.sin(H), Math.cos(H)*Math.sin(phi) - Math.tan(c.dec)*Math.cos(phi)),
+          altitude: Math.asin(Math.sin(phi)*Math.sin(c.dec) + Math.cos(phi)*Math.cos(c.dec)*Math.cos(H))};
+}
+function moonIllumination(date){
+  var d = toDays(date), s = sunCoords(d), m = moonCoords(d), sdist = 149598000;
+  var phi = Math.acos(Math.sin(s.dec)*Math.sin(m.dec) + Math.cos(s.dec)*Math.cos(m.dec)*Math.cos(s.ra - m.ra));
+  var inc = Math.atan2(sdist*Math.sin(phi), m.dist - sdist*Math.cos(phi));
+  var angle = Math.atan2(Math.cos(s.dec)*Math.sin(s.ra - m.ra), Math.sin(s.dec)*Math.cos(m.dec) - Math.cos(s.dec)*Math.sin(m.dec)*Math.cos(s.ra - m.ra));
+  return {fraction: (1 + Math.cos(inc))/2, waxing: angle < 0};
+}
+/* the dark part of the disc: outer arc on the dark side, back along the terminator ellipse */
+function moonDarkPath(f, darkLeft){
+  var rx = (50*Math.abs(1 - 2*f)).toFixed(2), outer = darkLeft ? 0 : 1;
+  var term = f < 0.5 ? (darkLeft ? 0 : 1) : (darkLeft ? 1 : 0);
+  return "M50,0 A50,50 0 0," + outer + " 50,100 A" + rx + ",50 0 0," + term + " 50,0";
+}
+var MOON_OP = {night:.95, dusk:.7, dawn:.5, golden:.2, day:0};
+function placeMoon(iso, phase){
+  var root = document.documentElement.style, c = COORDS[iso];
+  if (!c){ root.setProperty("--moon-op", 0); return; }
+  var t = now(), pos = moonPosition(t, c[0], c[1]), ill = moonIllumination(t);
+  var alt = pos.altitude;
+  if (alt <= 0){ root.setProperty("--moon-op", 0); return; }
+  document.getElementById("moonDark").setAttribute("d", moonDarkPath(ill.fraction, ill.waxing !== (c[0] < 0)));
+  var x = 50 + 36*Math.sin(pos.azimuth), y = 62 - Math.min(1, alt/(Math.PI/2)) * 54;
+  root.setProperty("--moon-x", x.toFixed(2) + "%");
+  root.setProperty("--moon-y", y.toFixed(2) + "%");
+  root.setProperty("--moon-op", ((MOON_OP[phase] || 0) * Math.min(1, alt/(RAD*6))).toFixed(3));
+}
+/* sunrise/sunset as local hours for the playing city; fixed fallback if the maths gives up */
+function sunHours(iso, tz){
+  var c = COORDS[iso], st = c && sunTimes(now(), c[0], c[1]);
+  if (!st) return {rise: 6.2, set: 19.6};
+  return {rise: localHour(tz, st.rise), set: localHour(tz, st.set)};
+}
+function phaseFor(h, sh){
+  var rise = sh ? sh.rise : 6.2, set = sh ? sh.set : 19.6;
+  if (h < rise - 1.1 || h >= set + 1.5) return "night";
+  if (h < rise + 0.7) return "dawn";
+  if (h < set - 1.5) return "day";
+  if (h < set) return "golden";
   return "dusk";
 }
 function skyCSS(c){
@@ -466,7 +542,8 @@ function applyPhase(name){
 }
 
 /* sun position from the playing city's local hour */
-function placeSun(h){
+function placeSun(h, sh){
+  var SUNRISE = sh ? sh.rise : 6.2, SUNSET = sh ? sh.set : 19.6;
   var root = document.documentElement.style, up = (h > SUNRISE && h < SUNSET);
   var t = (h - SUNRISE) / (SUNSET - SUNRISE);
   var x = 14 + 72 * Math.min(1, Math.max(0, t));
@@ -700,31 +777,57 @@ function distinctive(tags, keep){
   /* nothing distinctive: show the least common tag only if it says something, never a word every city has */
   return sorted.length && (share[sorted[0]] || 0) < 0.8 ? [sorted[0]] : [];
 }
+/* the words the track was actually made from: the prompt's instrument clauses and its feel,
+   minus the genre header and the numbers the line already shows */
+function promptCut(p){
+  var cl = String(p || "").split(/,\s*/).map(function(s){ return s.trim(); }).filter(Boolean);
+  if (cl.length < 3) return "";
+  var body = cl.slice(1).filter(function(c){ return !/\b(bpm|key|major|minor|instrumental)\b/i.test(c); });
+  if (!body.length) return "";
+  var feel = body[body.length - 1], inst = body.slice(0, -1).slice(0, 3);
+  var out = inst.concat([feel]).join(", ");
+  while (out.length > 92 && inst.length > 1){ inst.pop(); out = inst.concat([feel]).join(", "); }
+  return out;
+}
 function readoutLine(r){
-  var ro = r.readout || {};
-  var bits = [];
+  var ro = r.readout || {}, bits = [];
   if (ro.bpm) bits.push(Math.round(ro.bpm) + " BPM");
-  if (ro.mode) bits.push(ro.mode);
-  var inst = distinctive(ro.instruments, 2), mood = distinctive(ro.moods, 2);
-  var tidy = function(t){ return t.replace(/^electric(guitar)$/, "electric $1").replace(/^acoustic(guitar)$/, "acoustic $1"); };
-  if (inst.length) bits.push(inst.map(tidy).join(", "));
-  if (mood.length) bits.push(mood.join(", "));
+  var cut = promptCut(r.sa3_prompt);
+  if (cut) bits.push(cut);
+  else {
+    var inst = distinctive(ro.instruments, 2), mood = distinctive(ro.moods, 2);
+    if (inst.length) bits.push(inst.join(", "));
+    if (mood.length) bits.push(mood.join(", "));
+  }
   return bits.join(" · ");
+}
+/* genre from the city's own hits only (store labels, normalised, by count); when every hit this
+   week is a world hit there is no local label to give, and the card says so instead */
+function genreLine(r){
+  var g = r.genres_own || [];
+  if (!g.length){
+    var n = (current && current.mirrors_cities) || 1;
+    return n > 1 ? "shared with " + (n - 1) + " other cities this week" : (r.genre_family || "");
+  }
+  var total = g.reduce(function(a, x){ return a + x[1]; }, 0);
+  if (g.length === 1 || g[0][1] >= total * 0.6) return g[0][0];
+  return g[0][0] + " / " + g[1][0];
 }
 
 function paint(){
   if (!current) return;
   var r = regionsByIso[current.region];
   if (!r) return;
-  var h = localHour(r.tz);
-  applyPhase(phaseFor(h));
-  placeSun(h);
+  var h = localHour(r.tz), sh = sunHours(current.region, r.tz), ph = phaseFor(h, sh);
+  applyPhase(ph);
+  placeSun(h, sh);
+  placeMoon(current.region, ph);
   elCity.classList.toggle("long", String(r.city).length > 10);
   elCity.innerHTML = escapeHTML(r.city) + ' <span class="time">' + localClock(r.tz) + "</span>";
   elCountry.textContent = r.country || "";
   elTrack.innerHTML = '<span class="artist">' + escapeHTML(current.artist) +
     '</span><span class="sep">—</span><span class="title">' + escapeHTML(current.title) + "</span>";
-  elGenre.textContent = r.genre_family || "";
+  elGenre.textContent = genreLine(r);
   elReadout.textContent = readoutLine(r);
   var n = current.mirrors_cities || 1;
   elHonest.textContent = "a variation on this week's " + r.city + " chart · after #" +
@@ -777,6 +880,30 @@ function paintStrip(){
   }).join("");
 }
 setInterval(paintStrip, 60000);
+setInterval(function(){ if (current) paint(); }, 60000); /* sun, moon and clock keep moving between tracks */
+
+/* shooting stars: one every half minute or so, only over a dark sky, never under reduced motion */
+(function(){
+  var box = document.getElementById("stars");
+  var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function starOp(){ return parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--star-op")) || 0; }
+  function shoot(){
+    var b = document.createElement("b");
+    var dx = 120 + Math.random()*220, dy = 40 + Math.random()*120, left = 5 + Math.random()*70, top = 5 + Math.random()*55;
+    if (Math.random() < 0.5) dx = -dx;
+    b.style.left = left.toFixed(1) + "%"; b.style.top = top.toFixed(1) + "%";
+    b.style.setProperty("--dx", dx.toFixed(0) + "px"); b.style.setProperty("--dy", dy.toFixed(0) + "px");
+    b.style.setProperty("--ang", (Math.atan2(dy, dx) * 180/Math.PI + 180).toFixed(1) + "deg");
+    b.style.setProperty("--len", (60 + Math.random()*70).toFixed(0) + "px");
+    b.style.setProperty("--dur", (0.8 + Math.random()*0.6).toFixed(2) + "s");
+    box.appendChild(b); setTimeout(function(){ b.remove(); }, 1800);
+  }
+  function tick(){
+    if (!still && document.visibilityState === "visible" && starOp() > 0.45){ shoot(); if (Math.random() < 0.2) setTimeout(shoot, 400 + Math.random()*900); }
+    setTimeout(tick, 18000 + Math.random()*40000);
+  }
+  setTimeout(tick, 8000 + Math.random()*12000);
+})();
 
 function escapeHTML(s){
   return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
