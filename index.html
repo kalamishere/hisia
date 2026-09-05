@@ -242,7 +242,16 @@ footer a:hover{color:#fff}
 #strip span{opacity:.22;transition:opacity 1.2s}
 #strip span i{font-style:normal;opacity:.7;margin-left:.45em;letter-spacing:.06em}
 #strip span.on{opacity:1;text-shadow:0 0 12px rgba(255,220,160,.6)}
-@media(max-width:820px){#strip{display:none}}
+@media(max-width:820px){
+  #strip{display:none}
+  .nextcity .pre{display:none}                       /* "following the sun ·" is implied on a phone */
+  #card{bottom:calc(var(--pad) * .2 + 8.4em + env(safe-area-inset-bottom));max-width:calc(100vw - 2 * var(--pad))}
+  #controls{left:var(--pad);right:var(--pad);bottom:calc(var(--pad) * .2 + 4.2em + env(safe-area-inset-bottom));justify-content:flex-start;flex-wrap:wrap}
+  .nextcity{white-space:nowrap}
+  footer{bottom:calc(var(--pad) * .2 + env(safe-area-inset-bottom));font-size:10px;letter-spacing:.1em}
+  #promptBox:not([hidden]){max-height:28vh;overflow:auto}
+}
+@media(pointer:coarse){#vol{display:none}}          /* hardware volume on phones; the slider does nothing */
 
 /* on a wide screen the prompt takes its own column on the right, above the controls, so the card never
    grows into the horizon strip; the stream frame has no controls, so its column sits lower */
@@ -274,10 +283,9 @@ footer a:hover{color:#fff}
   :root{--horizon:56%}
   header{align-items:flex-start}
   .nextcity{max-width:38vw}
-  #card{max-width:none;right:var(--pad);bottom:calc(var(--pad) * 4.6)}
-  #controls{left:var(--pad);right:var(--pad);bottom:calc(var(--pad) * 1.5);flex-wrap:wrap;justify-content:flex-start}
+  #card{right:var(--pad)}
   .honest{max-width:none}
-  footer{right:var(--pad);bottom:calc(var(--pad) * .45)}
+  footer{right:var(--pad)}   /* vertical stacking of card / controls / footer is set in the 820px block above */
 }
 </style>
 </head>
@@ -724,6 +732,20 @@ function paint(){
     " · AI-generated · no real songs";
   elPromptText.textContent = r.sa3_prompt || "";
   document.title = r.city + " · World Sound";
+  if ("mediaSession" in navigator){
+    try {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: current.title, artist: current.artist,
+        album: r.city + " · " + localClock(r.tz) + " · World Sound" });
+    } catch(e){}
+  }
+}
+if ("mediaSession" in navigator){
+  try {
+    navigator.mediaSession.setActionHandler("play", function(){ togglePlay(); });
+    navigator.mediaSession.setActionHandler("pause", function(){ togglePlay(); });
+    navigator.mediaSession.setActionHandler("nexttrack", function(){ if (!ctx){ begin(); return; } advance(true); });
+  } catch(e){}
 }
 
 function paintNext(){
@@ -731,7 +753,7 @@ function paintNext(){
   if (!t){ elNext.textContent = ""; return; }
   var r = regionsByIso[t.region];
   if (!r){ elNext.textContent = ""; return; }
-  elNext.innerHTML = "following the sun · next · <b>" + escapeHTML(r.city) + "</b> " + localClock(r.tz);
+  elNext.innerHTML = '<span class="pre">following the sun · </span>next · <b>' + escapeHTML(r.city) + "</b> " + localClock(r.tz);
   paintStrip();
 }
 
