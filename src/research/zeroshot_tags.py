@@ -217,8 +217,10 @@ def pick_tracks(regions: list[str], per_region: int) -> list[dict]:
         rows = manifest.get(reg, [])
         n = 0
         for row in sorted(rows, key=lambda r: r.get("rank", 99)):
-            path = FIXTURES / row.get("preview_path", "")
-            if not path.exists():
+            if not row.get("preview_path"):
+                continue
+            path = FIXTURES / row["preview_path"]
+            if not path.is_file():
                 continue
             # Skip the global crossover record that appears in half the
             # regions - it tells us nothing about a local scene.

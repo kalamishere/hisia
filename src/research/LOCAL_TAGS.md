@@ -127,30 +127,32 @@ person confirms it by ear — this needs a human listening pass before any tag g
 
 ## Checks 1 and 4 (2026-09-05): real-chart confirmation and attractor removal
 
-**Check 4, attractors:** a tag in the centred top-5 of at least 12% of the 76 generated tracks *and* spread over six or more regions is a prompt artefact, not a detection. Dropped everywhere: **mariachi trumpet (13/76, 6 regions), tuba bass (10/76, 8 regions)**.
+**Check 4, attractors.** A tag in the centred top-5 of at least 12% of a set *and* spread over six or more regions is a prompt artefact, not a detection. Dropped: on the 76 generated tracks **mariachi trumpet (13/76, 6 regions), tuba bass (10/76, 8 regions)**; on the 83 real previews **funk carioca beat (17/83, 13 regions), defiant swagger (15/83, 13 regions), handclaps (14/83, 7 regions), rapped verse (14/83, 12 regions), heartbreak lament (11/83, 7 regions), piano (11/83, 7 regions), shekere (11/83, 7 regions), funeral / mourning (11/83, 8 regions), spoken adlib (10/83, 8 regions), synthesizer (10/83, 6 regions)**.
 
-**Check 1, real-chart confirmation:** a tag counts for a city only if it is also in the centred top-5 of that city's real chart previews (27 previews across 9 regions were tagged in the charts run). Counts are (generated tracks with the tag / real previews with the tag).
+**Check 1, real-chart confirmation.** All 19 cities' real chart previews were tagged (83 previews, 4–5 per city). A tag counts for a city only if it is in the centred top-5 of both a generated track and a real preview of that city. Counts: (generated tracks / real previews).
 
-| region | gen | real | confirmed on both | gen-only, ≥3 of 4 tracks |
-|---|---|---|---|---|
-| AE | 4 | 3 | defiant swagger (1/4 gen, 2/3 real), cinematic drama (1/4 gen, 1/3 real), handclaps (1/4 gen, 1/3 real), log drum (1/4 gen, 1/3 real), rapped verse (1/4 gen, 1/3 real) | — |
-| AU | 4 | – | (no real previews tagged) | synthesizer |
-| BR | 4 | 3 | kora (1/4 gen, 1/3 real) | timbales, cavaquinho |
-| CO | 4 | 3 | saxophone (1/4 gen, 2/3 real), accordion (1/4 gen, 1/3 real), harmonium (1/4 gen, 1/3 real), rural working song (1/4 gen, 1/3 real) | — |
-| CV | 4 | 3 | protest and struggle (1/4 gen, 1/3 real) | — |
-| GB | 4 | – | (no real previews tagged) | piano |
-| GH | 4 | – | (no real previews tagged) | funk carioca beat, rapped verse, dhol |
-| ID | 4 | – | (no real previews tagged) | female lead vocal, nostalgic retro |
-| IN | 4 | 3 | devotional (1/4 gen, 1/3 real), funeral / mourning (1/4 gen, 1/3 real), heartbreak lament (1/4 gen, 1/3 real) | veena, mridangam, playback vocal |
-| KE | 4 | 3 | defiant swagger (2/4 gen, 1/3 real), spoken adlib (1/4 gen, 1/3 real) | — |
-| KR | 4 | – | (no real previews tagged) | synthesizer, electric guitar, group chant |
-| MX | 4 | 3 | timbales (4/4 gen, 2/3 real), bajo sexto (2/4 gen, 2/3 real), cuatro (3/4 gen, 1/3 real), requinto guitar (1/4 gen, 1/3 real) | — |
-| NG | 4 | – | (no real previews tagged) | — |
-| NZ | 4 | – | (no real previews tagged) | — |
-| PH | 4 | 3 | heartbreak lament (4/4 gen, 2/3 real), funeral / mourning (2/4 gen, 2/3 real), female lead vocal (2/4 gen, 1/3 real), piano (1/4 gen, 2/3 real), devotional (1/4 gen, 1/3 real) | — |
-| TZ | 4 | 3 | shekere (1/4 gen, 2/3 real), afrobeats log-drum kit (1/4 gen, 1/3 real), steel pan (1/4 gen, 1/3 real), tabla (1/4 gen, 1/3 real) | — |
-| UG | 4 | – | (no real previews tagged) | funk carioca beat, shekere |
-| US | 4 | – | (no real previews tagged) | highlife guitar, acoustic guitar |
-| ZA | 4 | – | (no real previews tagged) | live crowd recording, sensual slow groove |
+| region | confirmed on both (gen, real) | gen-only, ≥3 of 4 | real-only, ≥3 previews |
+|---|---|---|---|
+| AE | tabla (1/4, 1/4) | — | — |
+| AU | melisma (1/4, 2/4), children's playful (1/4, 1/4), club late night (1/4, 1/4), electric guitar (1/4, 1/4) | — | female lead vocal |
+| BR | cavaquinho (3/4, 1/4), riq tambourine (2/4, 2/4), accordion (1/4, 1/4), brass section (1/4, 1/4), kora (1/4, 1/4) | timbales | — |
+| CO | saxophone (1/4, 2/4), accordion (1/4, 1/4), cavaquinho (1/4, 1/4), harmonium (1/4, 1/4) | — | — |
+| CV | protest and struggle (1/4, 1/4) | — | conga |
+| GB | brass section (2/4, 1/5), electric guitar (2/4, 1/5), children's playful (1/4, 1/5), nostalgic retro (1/4, 1/5), string section (1/4, 1/5) | piano | — |
+| GH | afrobeats log-drum kit (1/4, 2/4) | dhol | — |
+| ID | nostalgic retro (3/4, 1/5), highlife guitar (1/4, 1/5), male lead vocal (1/4, 1/5) | female lead vocal | — |
+| IN | veena (4/4, 1/4), playback vocal (3/4, 1/4), sarangi (3/4, 1/4), devotional (1/4, 1/4) | mridangam, tabla | — |
+| KE | highlife guitar (2/4, 1/4), djembe (1/4, 1/4) | — | — |
+| KR | electric guitar (3/4, 3/5), auto-tuned lead (1/4, 3/5), steel pan (1/4, 1/5) | group chant | — |
+| MX | timbales (4/4, 2/4), bajo sexto (2/4, 2/4), cavaquinho (1/4, 2/4), duet (1/4, 1/4), requinto guitar (1/4, 1/4) | cuatro | — |
+| NG | 808 sub bass (1/4, 2/5), gamelan (1/4, 1/5) | — | — |
+| NZ | children's playful (1/4, 1/4), ney flute (1/4, 1/4) | — | female lead vocal |
+| PH | call-and-response chorus (2/4, 1/5), female lead vocal (2/4, 1/5), auto-tuned lead (1/4, 1/5), devotional (1/4, 1/5), sitar (1/4, 1/5) | — | — |
+| TZ | 808 sub bass (1/4, 1/5), afrobeats log-drum kit (1/4, 1/5), log drum (1/4, 1/5) | — | — |
+| UG | angklung (1/4, 1/4) | — | conga |
+| US | nostalgic retro (1/4, 1/5) | highlife guitar, acoustic guitar | female lead vocal |
+| ZA | afrobeats log-drum kit (2/4, 2/4), live crowd recording (3/4, 1/4), 808 sub bass (2/4, 1/4), log drum (1/4, 1/4) | sensual slow groove | — |
 
-Reading: a confirmed tag with counts on both sides describes the region's sound — Mexico City (timbales 4/4 and 2/3, cuatro, bajo sexto) and Manila (heartbreak lament 4/4 and 2/3, female lead vocal) are the clean cases; single 1/4-and-1/3 coincidences are not evidence. Gen-only tags that all four tracks share (Mumbai: veena, mridangam) are either the recipe's habit or a real instrument the three previews missed — that is where check 2 (audio-to-audio against named Komplete instruments) comes in. Ten regions have no tagged previews yet; tagging their 30 s previews is a 2-minute CPU run when wanted.
+**Strong (at least 2 generated and 2 real):** BR: riq tambourine; KR: electric guitar; MX: timbales; MX: bajo sexto; ZA: afrobeats log-drum kit.
+
+Reading: the strong list is what the card could honestly say the city sounds like this week. Gen-only tags shared by 3–4 variations are the recipe's habit; real-only tags shared by 3+ previews are things the region has that the recipe did not carry over — a prompt-writing lead for next week, not a card label.
