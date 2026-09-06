@@ -884,6 +884,14 @@ function genreLine(r){
   return g[0][0] + " / " + g[1][0];
 }
 
+/* provenance: the library version (radio/VERSIONS.md) and how this track was made */
+var RECIPE_WORDS = {grow: "grown", parallel: "four chunks", inpaint: "chain", mixed: "chain"};
+function provenance(t){
+  var bits = [];
+  if (lib && lib.version) bits.push(lib.version);
+  if (t && t.recipe && RECIPE_WORDS[t.recipe]) bits.push(RECIPE_WORDS[t.recipe]);
+  return bits.length ? " · " + bits.join(" · ") : "";
+}
 function paint(){
   if (!current) return;
   var r = regionsByIso[current.region];
@@ -903,7 +911,7 @@ function paint(){
   var n = current.mirrors_cities || 1;
   elHonest.textContent = "a variation on this week's " + r.city + " chart · after #" +
     (current.mirrors_rank || 1) + (n > 1 ? " · a hit in " + n + " cities this week" : "") +
-    " · AI-generated · no real songs";
+    " · AI-generated · no real songs" + provenance(current);
   elPromptText.textContent = r.sa3_prompt || "";
   document.title = r.city + " · World Sound";
   requestAnimationFrame(fitStrip);
