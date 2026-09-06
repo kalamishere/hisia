@@ -851,13 +851,13 @@ function readoutLine(r){
   if (ro.bpm) bits.push(Math.round(ro.bpm) + " BPM");
   var cut = promptCut(r.sa3_prompt);
   if (cut) bits.push(cut);
-  /* instrument words heard on both this week's real chart and the variation (see research/LOCAL_TAGS.md) */
-  if (r.heard && r.heard.length) bits.push("heard: " + r.heard.join(", "));
   else {
     var inst = distinctive(ro.instruments, 2), mood = distinctive(ro.moods, 2);
     if (inst.length) bits.push(inst.join(", "));
     if (mood.length) bits.push(mood.join(", "));
   }
+  /* instrument words heard on both this week's real chart and the variation (see research/LOCAL_TAGS.md) */
+  if (r.heard && r.heard.length) bits.push("heard: " + r.heard.join(", "));
   return bits.join(" · ");
 }
 /* genre from the city's own hits only (store labels, normalised, by count); when every hit this
