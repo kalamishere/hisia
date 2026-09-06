@@ -885,12 +885,11 @@ function genreLine(r){
 }
 
 /* provenance: the library version (radio/VERSIONS.md) and how this track was made */
-var RECIPE_WORDS = {grow: "grown", parallel: "four chunks", inpaint: "chain", mixed: "chain"};
+var RECIPE_WORDS = {grow: "grown", parallel: "chunks", inpaint: "chain", mixed: "chain"};
 function provenance(t){
-  var bits = [];
-  if (lib && lib.version) bits.push(lib.version);
-  if (t && t.recipe && RECIPE_WORDS[t.recipe]) bits.push(RECIPE_WORDS[t.recipe]);
-  return bits.length ? " · " + bits.join(" · ") : "";
+  var v = (lib && lib.version) || "", r = (t && t.recipe && RECIPE_WORDS[t.recipe]) || "";
+  if (v && r) return " · " + v + " : " + r;
+  return (v || r) ? " · " + (v || r) : "";
 }
 function paint(){
   if (!current) return;
