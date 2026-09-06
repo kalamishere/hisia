@@ -226,7 +226,10 @@ header{
   font-size:clamp(11px,.8vw,15px);line-height:1.6;color:var(--ink-soft);
   max-width:64ch;
 }
-#promptBox .lab{display:block;font-size:.82em;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:.5em}
+#promptBox .lab{display:flex;align-items:center;gap:.8em;font-size:.82em;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:.5em}
+#btnCopy{font:inherit;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:.15em .7em;cursor:pointer}
+#btnCopy:hover{background:rgba(255,255,255,.16)} #btnCopy.done{color:#0a1020;background:#f0a53a;border-color:#f0a53a}
+body.stream #btnCopy{display:none}
 [hidden]{display:none!important}
 
 /* progress */
@@ -371,7 +374,7 @@ footer a:hover{color:#fff}
     <p class="track" id="trackLine"></p>
     <p class="meta"><span class="genre" id="genreLine"></span><br><span class="readout" id="readoutLine"></span></p>
     <p class="honest" id="honestLine"></p>
-    <div id="promptBox" hidden><span class="lab">SA3 prompt</span><span id="promptText"></span></div>
+    <div id="promptBox" hidden><span class="lab">SA3 prompt <button id="btnCopy" type="button" title="copy the prompt for Suno, Stable Audio, ACE-Step…">copy</button></span><span id="promptText"></span></div>
   </div>
 
   <div id="controls">
@@ -470,7 +473,10 @@ var COORDS = {KE:[-1.29,36.82],AE:[25.20,55.27],TZ:[-6.79,39.28],NG:[6.52,3.38],
   FR:[48.86,2.35],ES:[40.42,-3.70],IT:[45.46,9.19],NL:[52.37,4.90],PL:[52.23,21.01],SE:[59.33,18.07],
   SA:[24.71,46.68],MA:[33.57,-7.59],VN:[10.78,106.70],SG:[1.35,103.82],HK:[22.32,114.17],
   SN:[14.72,-17.47],CI:[5.36,-4.01],ET:[9.03,38.74],AO:[-8.84,13.23],MZ:[-25.97,32.57],
-  ZW:[-17.83,31.05],CM:[4.05,9.70],JM:[18.00,-76.79],DO:[18.49,-69.93]};
+  ZW:[-17.83,31.05],CM:[4.05,9.70],JM:[18.00,-76.79],DO:[18.49,-69.93],
+  GR:[37.98,23.73],RO:[44.43,26.10],UA:[50.45,30.52],RS:[44.79,20.46],IE:[53.35,-6.26],
+  DK:[55.68,12.57],FI:[60.17,24.94],IS:[64.15,-21.94],CZ:[50.08,14.44],
+  CL:[-33.45,-70.67],PE:[-12.05,-77.04],CA:[43.65,-79.38]};
 var RAD = Math.PI/180, J1970 = 2440588, J2000 = 2451545, OBL = RAD*23.4397;
 function toDays(d){ return d.valueOf()/86400000 - 0.5 + J1970 - J2000; }
 function fromJulian(j){ return new Date((j + 0.5 - J1970) * 86400000); }
@@ -955,6 +961,17 @@ function fitStrip(){
 }
 window.addEventListener("resize", fitStrip);
 setInterval(function(){ if (current) paint(); }, 60000); /* sun, moon and clock keep moving between tracks */
+/* copy the prompt: listeners take it to Suno, Stable Audio, ACE-Step or anything else that takes words */
+(function(){
+  var b = document.getElementById("btnCopy"); if (!b) return;
+  b.addEventListener("click", function(){
+    var t = (document.getElementById("promptText").textContent || "").trim(); if (!t) return;
+    var done = function(){ b.textContent = "copied"; b.classList.add("done"); setTimeout(function(){ b.textContent = "copy"; b.classList.remove("done"); }, 1600); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, function(){ fallback(); });
+    else fallback();
+    function fallback(){ var ta = document.createElement("textarea"); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); done(); } catch(e){} ta.remove(); }
+  });
+})();
 
 /* shooting stars: one every half minute or so, only over a dark sky, never under reduced motion */
 (function(){
