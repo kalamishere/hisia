@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T08:28:04Z",
+  "generated_at": "2026-09-06T17:53:26Z",
   "chart_week": "2026-08-24",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
@@ -491,42 +491,34 @@
       "country": "United States",
       "tz": "America/Los_Angeles",
       "readout": {
-        "bpm": 101.51,
+        "bpm": 112.35,
         "mode": "major",
-        "lufs": -12.73,
+        "lufs": -11.83,
         "instruments": [
-          "guitar",
-          "piano",
-          "drums"
+          "drums",
+          "bass",
+          "keyboard"
         ],
         "moods": [
-          "love",
           "happy",
-          "energetic"
+          "energetic",
+          "love"
         ],
-        "n_tracks": 2,
-        "excluded_tracks": [
-          "US-1",
-          "US-3",
-          "US-4"
-        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
         "bpm_iqr": [
-          96.09,
-          106.93
+          90.67,
+          114.84
         ]
       },
       "genres_own": [
-        [
-          "Country",
-          1
-        ],
         [
           "Hip-Hop",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Country / Hip-Hop / Rap",
+      "genre_family": "Hip-Hop / Rap",
       "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 102 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, easy and sunlit",
       "suno_prompt": "[style: contemporary country-pop meeting melodic hip-hop] [tempo: 102 BPM] [mood: easy, sunlit, wistful] [instruments: strummed acoustic guitar, slide electric, warm bass, laid-back kit with snaps, piano pads] [vocal: mixed male and female lead in English, conversational verse, big singalong chorus]"
     },
@@ -866,14 +858,9 @@
           129.2
         ]
       },
-      "genres_own": [
-        [
-          "Country",
-          1
-        ]
-      ],
+      "genres_own": [],
       "heard": [],
-      "genre_family": "Country",
+      "genre_family": "",
       "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, energetic and romantic",
       "suno_prompt": "[style: chart pop, country-pop, K-pop-styled girl-group pop] [tempo: 123 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: confident female lead, big harmonised chorus]"
     },
@@ -882,42 +869,34 @@
       "country": "New Zealand",
       "tz": "Pacific/Auckland",
       "readout": {
-        "bpm": 101.51,
+        "bpm": 112.35,
         "mode": "major",
-        "lufs": -12.73,
+        "lufs": -11.83,
         "instruments": [
-          "guitar",
-          "piano",
-          "drums"
+          "drums",
+          "bass",
+          "keyboard"
         ],
         "moods": [
-          "love",
           "happy",
-          "energetic"
+          "energetic",
+          "love"
         ],
-        "n_tracks": 2,
-        "excluded_tracks": [
-          "NZ-1",
-          "NZ-3",
-          "NZ-4"
-        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
         "bpm_iqr": [
-          96.09,
-          106.93
+          90.67,
+          114.84
         ]
       },
       "genres_own": [
-        [
-          "Country",
-          1
-        ],
         [
           "Hip-Hop",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Country / Hip-Hop / Rap",
+      "genre_family": "Hip-Hop / Rap",
       "sa3_prompt": "New Zealand chart pop instrumental, 112 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and keyboard chords carrying the arrangement, joyful, energetic and romantic",
       "suno_prompt": "[style: chart pop, country-pop, girl-group pop, hip-hop crossover] [tempo: 112 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: warm lead vocal, layered harmonies, singalong chorus]"
     },
@@ -1233,6 +1212,524 @@
       "genre_family": "Hip-Hop / Rap / Afro-Pop / Turkish Hip-Hop / Rap",
       "sa3_prompt": "German-language rap chart instrumental, with an Afro-pop and Turkish-German crossover current, 104 BPM, minor key, deep 808 bass, trap-programmed hi-hats and snare, dark synth pads, plucked oud-adjacent melody line, warm percussion, moody urban-pop groove, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, deep, sunny and joyful",
       "suno_prompt": "[style: German hip-hop/rap, Afro-pop crossover, Turkish-German rap colour] [tempo: 104 BPM] [mood: deep, sunny, joyful] [instruments: 808 bass, trap drums, synth pads, plucked melody line, percussion] [vocal: male lead rapping in German, half-sung hook, an occasional Turkish phrase]"
+    },
+    "FR": {
+      "city": "Paris",
+      "country": "France",
+      "tz": "Europe/Paris",
+      "readout": {
+        "bpm": 130.85,
+        "mode": "major",
+        "lufs": -13.91,
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "love",
+          "happy"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "FR-1"
+        ],
+        "bpm_iqr": [
+          127.66,
+          136.3
+        ]
+      },
+      "genres_own": [
+        [
+          "South African Hip-Hop",
+          2
+        ],
+        [
+          "Hip-Hop",
+          2
+        ]
+      ],
+      "heard": [],
+      "genre_family": "South African Hip-Hop / Rap / Hip-Hop / Rap",
+      "sa3_prompt": "French-language rap and hip-hop chart instrumental, with an amapiano-adjacent South African crossover current, 131 BPM, major key, deep sub bass, log-drum-adjacent low end, trap hi-hat rolls, dark piano and synth stabs, plucked guitar accents, moody urban-pop groove, glossy modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, romantic and joyful",
+      "suno_prompt": "[style: French rap, hip-hop, amapiano-adjacent crossover colour] [tempo: 131 BPM] [mood: energetic, romantic, joyful] [instruments: sub bass, trap drums, piano/synth stabs, plucked guitar] [vocal: male lead rapping in French, half-sung hook]"
+    },
+    "ES": {
+      "city": "Madrid",
+      "country": "Spain",
+      "tz": "Europe/Madrid",
+      "readout": {
+        "bpm": 111.16,
+        "mode": "minor",
+        "lufs": -12.06,
+        "instruments": [
+          "drums",
+          "synthesizer",
+          "percussion"
+        ],
+        "moods": [
+          "happy",
+          "love",
+          "summer"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "ES-1"
+        ],
+        "bpm_iqr": [
+          108.84,
+          112.97
+        ]
+      },
+      "genres_own": [
+        [
+          "Urbano latino",
+          2
+        ],
+        [
+          "Pop",
+          1
+        ],
+        [
+          "Latin",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Urbano latino / Pop / Latin",
+      "sa3_prompt": "Spanish-language urbano latino chart instrumental, reggaeton-rooted with a Latin pop crossover current, 111 BPM, minor key, dembow reggaeton drum pattern, deep sub bass, plucked nylon-guitar and synth melody, bright percussion accents, warm dancefloor groove, glossy modern mix, a prominent kit, synth-led textures and layered hand percussion carrying the arrangement, joyful, romantic and sunny",
+      "suno_prompt": "[style: Spanish urbano latino, reggaeton, Latin pop crossover] [tempo: 111 BPM] [mood: joyful, romantic, sunny] [instruments: dembow drums, sub bass, plucked guitar/synth melody, percussion] [vocal: lead vocal singing and half-rapping in Spanish, catchy melodic hook]"
+    },
+    "IT": {
+      "city": "Milan",
+      "country": "Italy",
+      "tz": "Europe/Rome",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "lufs": -10.62,
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "keyboard"
+        ],
+        "moods": [
+          "energetic",
+          "summer",
+          "happy"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "IT-1"
+        ],
+        "bpm_iqr": [
+          127.66,
+          133.82
+        ]
+      },
+      "genres_own": [
+        [
+          "Pop",
+          2
+        ],
+        [
+          "Hip-Hop",
+          2
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Pop / Hip-Hop / Rap / Rap / Hip Hop",
+      "sa3_prompt": "Italian chart pop instrumental, with a hip-hop/rap crossover current, 129 BPM, minor key, bright synth-pop chords, punchy programmed kit, warm rounded bass, trap hi-hat accents, light guitar strum, glossy radio-pop lift, polished modern mix, synth-led textures, bass well forward and keyboard chords carrying the arrangement, energetic, sunny and joyful",
+      "suno_prompt": "[style: Italian pop, Italian hip-hop/rap crossover] [tempo: 129 BPM] [mood: energetic, sunny, joyful] [instruments: synth chords, programmed kit, bass, trap hats, guitar] [vocal: Italian-language lead, sung verse opening into a rapped or half-sung hook]"
+    },
+    "NL": {
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "tz": "Europe/Amsterdam",
+      "readout": {
+        "bpm": 99.24,
+        "mode": "minor",
+        "lufs": -12.65,
+        "instruments": [
+          "bass",
+          "drums",
+          "keyboard"
+        ],
+        "moods": [
+          "summer",
+          "deep",
+          "happy"
+        ],
+        "n_tracks": 2,
+        "excluded_tracks": [
+          "NL-1",
+          "NL-2",
+          "NL-3"
+        ],
+        "bpm_iqr": [
+          92.68,
+          105.79
+        ]
+      },
+      "genres_own": [
+        [
+          "Afro-Pop",
+          1
+        ],
+        [
+          "Pop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Afro-Pop / Pop",
+      "sa3_prompt": "Dutch chart pop instrumental, mostly K-pop and other global chart hits, with an Afro-pop crossover current, 99 BPM, minor key, glossy programmed kit, punchy synth bass, bright supersaw chords, warm Afro-pop guitar and percussion touch, big polished pop-chorus lift, bass well forward, a prominent kit and keyboard chords carrying the arrangement, sunny, deep and joyful",
+      "suno_prompt": "[style: Dutch chart pop, K-pop/global crossover sheen, Afro-pop touch] [tempo: 99 BPM] [mood: sunny, deep, joyful] [instruments: programmed kit, synth bass, supersaw chords, guitar, percussion] [vocal: bright lead vocal in Dutch or English, unison pop hook]"
+    },
+    "PL": {
+      "city": "Warsaw",
+      "country": "Poland",
+      "tz": "Europe/Warsaw",
+      "readout": {
+        "bpm": 111.22,
+        "mode": "minor",
+        "lufs": -12.59,
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "melodic",
+          "happy"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "PL-1"
+        ],
+        "bpm_iqr": [
+          98.46,
+          128.18
+        ]
+      },
+      "genres_own": [
+        [
+          "Pop",
+          2
+        ],
+        [
+          "Electronic",
+          1
+        ],
+        [
+          "Hip-Hop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Pop / Electronic / Hip-Hop / Rap",
+      "sa3_prompt": "Polish chart pop instrumental, with an electronic and hip-hop/rap crossover current, 111 BPM, minor key, bright synth pads, four-on-the-floor electronic drums, rounded bass, trap hi-hat accents, clean radio-pop energy, glossy mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, melodic and joyful",
+      "suno_prompt": "[style: Polish pop, electronic dance-pop, Polish hip-hop/rap] [tempo: 111 BPM] [mood: energetic, melodic, joyful] [instruments: synth pads, electronic drums, bass, trap hats] [vocal: Polish-language lead, sung verse into a catchy pop hook]"
+    },
+    "SE": {
+      "city": "Stockholm",
+      "country": "Sweden",
+      "tz": "Europe/Stockholm",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "lufs": -11.83,
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          114.84,
+          129.2
+        ]
+      },
+      "genres_own": [
+        [
+          "Hip-Hop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Hip-Hop / Rap",
+      "sa3_prompt": "Swedish chart pop instrumental, mostly K-pop and other global chart hits, with a Swedish hip-hop/rap current, 123 BPM, major key, glossy Scandi-pop synths, deep 808 bass, trap hi-hat rolls, bright programmed kit, polished Scandi-pop lift, modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "suno_prompt": "[style: Swedish chart pop, K-pop/global crossover, Swedish hip-hop/rap] [tempo: 123 BPM] [mood: energetic, joyful, romantic] [instruments: synths, 808 bass, trap hats, programmed kit] [vocal: Swedish-language lead, rapped verse into a sung pop hook]"
+    },
+    "SA": {
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
+      "tz": "Asia/Riyadh",
+      "readout": {
+        "bpm": 71.78,
+        "mode": "minor",
+        "lufs": -14.26,
+        "instruments": [
+          "drums",
+          "synthesizer",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          60.1,
+          87.59
+        ]
+      },
+      "genres_own": [
+        [
+          "Arabic Pop",
+          3
+        ],
+        [
+          "Egyptian Pop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Arabic Pop / Egyptian Pop",
+      "sa3_prompt": "Khaliji and Arabic pop chart instrumental, with an Egyptian-pop crossover current, 72 BPM, minor key, ornamented oud and synth melody line, driving Khaliji hand percussion, deep sub bass, bright keys, cinematic glossy mix, mid-tempo sway, a prominent kit, synth-led textures and bass well forward carrying the arrangement, romantic, joyful and energetic",
+      "suno_prompt": "[style: Khaliji pop, Arabic pop, Egyptian pop crossover] [tempo: 72 BPM] [mood: romantic, joyful, energetic] [instruments: oud/synth melody, hand percussion, sub bass, keys] [vocal: melismatic Arabic lead vocal, ornamented sung hook]"
+    },
+    "MA": {
+      "city": "Casablanca",
+      "country": "Morocco",
+      "tz": "Africa/Casablanca",
+      "readout": {
+        "bpm": 121.62,
+        "mode": "minor",
+        "lufs": -15.6,
+        "instruments": [
+          "guitar",
+          "synthesizer",
+          "piano"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "MA-3"
+        ],
+        "bpm_iqr": [
+          114.99,
+          126.29
+        ]
+      },
+      "genres_own": [
+        [
+          "Pop",
+          2
+        ],
+        [
+          "Folk",
+          1
+        ],
+        [
+          "Hip-Hop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Pop / Folk / Hip-Hop / Rap",
+      "sa3_prompt": "Moroccan chart pop instrumental, with a folk and hip-hop/rap crossover current, 122 BPM, minor key, bright pop synths, bendir-style hand percussion, warm rounded bass, trap hi-hat accents, plucked oud-adjacent line, festive mid-tempo groove, glossy modern mix, acoustic guitar, synth-led textures and piano carrying the arrangement, romantic, joyful and energetic",
+      "suno_prompt": "[style: Moroccan pop, Moroccan folk colour, hip-hop/rap crossover] [tempo: 122 BPM] [mood: romantic, joyful, energetic] [instruments: synths, hand percussion, bass, trap hats, plucked melody line] [vocal: lead vocal in Darija Arabic, sung verse into a rapped or sung hook]"
+    },
+    "VN": {
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "tz": "Asia/Ho_Chi_Minh",
+      "readout": {
+        "bpm": 126.05,
+        "mode": "major",
+        "lufs": -11.67,
+        "instruments": [
+          "bass",
+          "synthesizer",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          120.19,
+          129.2
+        ]
+      },
+      "genres_own": [
+        [
+          "Pop",
+          3
+        ],
+        [
+          "Alternative Rap",
+          1
+        ],
+        [
+          "K-Pop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Pop / Alternative Rap / K-Pop",
+      "sa3_prompt": "Vietnamese V-pop chart instrumental, with an alternative-rap and K-pop crossover edge, 126 BPM, major key, bright pop keys, clean electric guitar, punchy programmed kit, round bass, K-pop-leaning synth stabs, polished ballad-into-chorus lift, glossy V-pop mix, bass well forward, synth-led textures and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "suno_prompt": "[style: Vietnamese V-pop, alternative rap, K-pop crossover sheen] [tempo: 126 BPM] [mood: energetic, joyful, romantic] [instruments: keys, electric guitar, programmed kit, bass, synth stabs] [vocal: tender lead vocal in Vietnamese, sung verse opening into a soaring chorus]"
+    },
+    "SG": {
+      "city": "Singapore",
+      "country": "Singapore",
+      "tz": "Asia/Singapore",
+      "readout": {
+        "bpm": 105.45,
+        "mode": "minor",
+        "lufs": -13.72,
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "romantic"
+        ],
+        "n_tracks": 2,
+        "excluded_tracks": [
+          "SG-2",
+          "SG-4",
+          "SG-5"
+        ],
+        "bpm_iqr": [
+          90.18,
+          120.72
+        ]
+      },
+      "genres_own": [
+        [
+          "Cantopop/HK-Pop",
+          1
+        ],
+        [
+          "Pop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Cantopop / HK-Pop / Pop",
+      "sa3_prompt": "Singapore chart pop instrumental, mostly K-pop and other global chart hits, with a Cantopop/HK-pop crossover current, 105 BPM, minor key, glossy programmed kit, bright synth hooks, punchy bass, light Cantopop string touches, big polished pop-chorus lift, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, tender and romantic",
+      "suno_prompt": "[style: Singapore chart pop, K-pop/global crossover, Cantopop/HK-pop] [tempo: 105 BPM] [mood: romantic, tender, romantic] [instruments: programmed kit, synth hooks, bass, strings] [vocal: Mandarin or English lead vocal, bright unison pop hook]"
+    },
+    "HK": {
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "tz": "Asia/Hong_Kong",
+      "readout": {
+        "bpm": 74.37,
+        "mode": "major",
+        "lufs": -14.47,
+        "instruments": [
+          "piano",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "HK-3"
+        ],
+        "bpm_iqr": [
+          72.6,
+          78.45
+        ]
+      },
+      "genres_own": [
+        [
+          "Reggae",
+          1
+        ],
+        [
+          "Asian Music",
+          1
+        ],
+        [
+          "Pop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Reggae / Asian Music / Pop",
+      "sa3_prompt": "Cantopop chart instrumental, with a reggae and hip-hop crossover current, 74 BPM, major key, skanking reggae guitar and organ touch, warm rounded bass, punchy programmed kit, Cantopop synth strings, laid-back groove into a glossy pop lift, piano, acoustic guitar and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "suno_prompt": "[style: Cantopop, reggae crossover, Hong Kong hip-hop touch] [tempo: 74 BPM] [mood: romantic, tender, joyful] [instruments: reggae guitar/organ, bass, programmed kit, synth strings] [vocal: Cantonese lead vocal, laid-back verse into a sung pop hook]"
+    },
+    "SN": {
+      "city": "Dakar",
+      "country": "Senegal",
+      "tz": "Africa/Dakar",
+      "readout": {
+        "bpm": 137.93,
+        "mode": "minor",
+        "lufs": -13.43,
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "happy",
+          "love",
+          "deep"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "SN-4"
+        ],
+        "bpm_iqr": [
+          124.58,
+          152.73
+        ]
+      },
+      "genres_own": [
+        [
+          "Mbalax",
+          3
+        ],
+        [
+          "African",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Mbalax / African",
+      "sa3_prompt": "Senegalese mbalax chart instrumental, sabar-drum rooted with a wider Afropop crossover current, 138 BPM, minor key, sabar and tama talking-drum percussion, warm plucked guitar riff, deep rounded bass, bright synth pads, festive uptempo mbalax groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, joyful, romantic and deep",
+      "suno_prompt": "[style: Senegalese mbalax, sabar percussion, Afropop crossover] [tempo: 138 BPM] [mood: joyful, romantic, deep] [instruments: sabar/tama percussion, plucked guitar, bass, synth pads] [vocal: male lead singing in Wolof, call-and-response griot-style hook]"
     }
   },
   "tracks": [
@@ -1247,7 +1744,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -1255,7 +1752,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "KE-02",
@@ -1268,7 +1766,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -1276,7 +1774,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "KE-03",
@@ -1297,7 +1796,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "KE-04",
@@ -1318,7 +1818,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "AE-01",
@@ -1331,7 +1832,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -1339,7 +1840,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.4
+      "lufs": -14.3,
+      "recipe": "grow"
     },
     {
       "id": "AE-02",
@@ -1360,7 +1862,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "AE-03",
@@ -1370,7 +1873,7 @@
       "title": "Layali Tawila",
       "artist": "Qamar Lane Band",
       "mirrors_rank": 2,
-      "mirrors_cities": 28,
+      "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -1381,7 +1884,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "AE-04",
@@ -1394,7 +1898,7 @@
       "mirrors_cities": 3,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -1402,7 +1906,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "TZ-01",
@@ -1415,7 +1920,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -1423,7 +1928,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "TZ-02",
@@ -1436,7 +1942,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -1444,7 +1950,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "TZ-03",
@@ -1457,7 +1964,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -1465,7 +1972,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "TZ-04",
@@ -1478,7 +1986,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -1486,7 +1994,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "NG-01",
@@ -1507,7 +2016,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "NG-02",
@@ -1520,7 +2030,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -1528,7 +2038,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "NG-03",
@@ -1541,7 +2052,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -1549,7 +2060,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "NG-04",
@@ -1570,7 +2082,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "GH-01",
@@ -1591,20 +2104,21 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "GH-02",
       "region": "GH",
       "file": "audio/GH-02.mp3",
-      "duration_s": 112.08,
+      "duration_s": 114.0,
       "title": "Trotro Ba",
       "artist": "Kokrobite Night Bus",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -1612,7 +2126,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.3,
+      "recipe": "grow"
     },
     {
       "id": "GH-03",
@@ -1633,7 +2148,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "GH-04",
@@ -1654,7 +2170,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "UG-01",
@@ -1675,7 +2192,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "UG-02",
@@ -1696,7 +2214,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "UG-03",
@@ -1717,7 +2236,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "UG-04",
@@ -1727,7 +2247,7 @@
       "title": "Omukwano Gwaffe",
       "artist": "Ggaba Lakeside Institute",
       "mirrors_rank": 3,
-      "mirrors_cities": 28,
+      "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -1738,7 +2258,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "ZA-01",
@@ -1759,7 +2280,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "ZA-02",
@@ -1780,7 +2302,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "ZA-03",
@@ -1801,7 +2324,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "ZA-04",
@@ -1822,7 +2346,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.1
+      "lufs": -14.1,
+      "recipe": "parallel"
     },
     {
       "id": "GB-01",
@@ -1843,7 +2368,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "GB-02",
@@ -1853,7 +2379,7 @@
       "title": "Static in the Chorus",
       "artist": "Camberwell Collective",
       "mirrors_rank": 1,
-      "mirrors_cities": 28,
+      "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -1864,7 +2390,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "GB-03",
@@ -1874,7 +2401,7 @@
       "title": "Two Left Rain",
       "artist": "New Cross Band",
       "mirrors_rank": 2,
-      "mirrors_cities": 7,
+      "mirrors_cities": 12,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -1885,7 +2412,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "GB-04",
@@ -1895,7 +2423,7 @@
       "title": "Corner Shop Trainers",
       "artist": "Deptford Bridge Circuit",
       "mirrors_rank": 3,
-      "mirrors_cities": 4,
+      "mirrors_cities": 6,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -1906,7 +2434,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "BR-01",
@@ -1927,7 +2456,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "BR-02",
@@ -1948,7 +2478,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "BR-03",
@@ -1969,7 +2500,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "BR-04",
@@ -1990,7 +2522,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "KR-01",
@@ -2011,7 +2544,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "KR-02",
@@ -2032,7 +2566,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "KR-03",
@@ -2053,7 +2588,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "KR-04",
@@ -2074,7 +2610,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "MX-01",
@@ -2095,7 +2632,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "MX-02",
@@ -2116,7 +2654,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "MX-03",
@@ -2137,7 +2676,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "MX-04",
@@ -2158,7 +2698,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "US-01",
@@ -2168,7 +2709,7 @@
       "title": "Two Lane Sunrise",
       "artist": "Palmdale Pickup Trio",
       "mirrors_rank": 1,
-      "mirrors_cities": 28,
+      "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2179,7 +2720,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "US-02",
@@ -2189,7 +2731,7 @@
       "title": "Cheap Beer Sunrise",
       "artist": "Sunset Truckstop Institute",
       "mirrors_rank": 2,
-      "mirrors_cities": 3,
+      "mirrors_cities": 4,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2200,17 +2742,18 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "US-03",
       "region": "US",
       "file": "audio/US-03.mp3",
       "duration_s": 114.0,
-      "title": "Runnin' Late Home",
-      "artist": "Dustbowl Avenue Cassette",
+      "title": "Two Lane Again",
+      "artist": "Sunset Truckstop Trio",
       "mirrors_rank": 3,
-      "mirrors_cities": 7,
+      "mirrors_cities": 12,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2221,7 +2764,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "US-04",
@@ -2231,7 +2775,7 @@
       "title": "Two Lane Sunday",
       "artist": "Palmdale Pickup Trio",
       "mirrors_rank": 4,
-      "mirrors_cities": 6,
+      "mirrors_cities": 10,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2242,7 +2786,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "IN-01",
@@ -2263,7 +2808,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "IN-02",
@@ -2284,7 +2830,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "IN-03",
@@ -2305,7 +2852,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "IN-04",
@@ -2326,7 +2874,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.5
+      "lufs": -14.5,
+      "recipe": "parallel"
     },
     {
       "id": "ID-01",
@@ -2347,7 +2896,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "ID-02",
@@ -2368,7 +2918,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "ID-03",
@@ -2389,7 +2940,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "ID-04",
@@ -2410,7 +2962,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "PT-01",
@@ -2431,7 +2984,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "PT-02",
@@ -2452,7 +3006,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "PT-03",
@@ -2462,7 +3017,7 @@
       "title": "Noite de Lisboa",
       "artist": "Bairro Alto Radio",
       "mirrors_rank": 1,
-      "mirrors_cities": 28,
+      "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2473,7 +3028,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "PT-04",
@@ -2494,7 +3050,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "EG-01",
@@ -2515,7 +3072,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "EG-02",
@@ -2536,7 +3094,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "EG-03",
@@ -2557,7 +3116,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.1
+      "lufs": -14.1,
+      "recipe": "parallel"
     },
     {
       "id": "EG-04",
@@ -2578,7 +3138,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "AR-01",
@@ -2599,7 +3160,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.4
+      "lufs": -14.4,
+      "recipe": "parallel"
     },
     {
       "id": "AR-02",
@@ -2620,7 +3182,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "AR-03",
@@ -2629,7 +3192,7 @@
       "duration_s": 114.0,
       "title": "Calle Sur",
       "artist": "Chacarita Society",
-      "mirrors_rank": 4,
+      "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
@@ -2641,7 +3204,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "AR-04",
@@ -2650,8 +3214,8 @@
       "duration_s": 114.0,
       "title": "Luz de Río",
       "artist": "Chacarita Trio",
-      "mirrors_rank": 5,
-      "mirrors_cities": 1,
+      "mirrors_rank": 1,
+      "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2662,7 +3226,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "CO-01",
@@ -2683,7 +3248,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "CO-02",
@@ -2704,7 +3270,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "CO-03",
@@ -2725,7 +3292,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "CO-04",
@@ -2746,7 +3314,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "PH-01",
@@ -2767,7 +3336,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "PH-02",
@@ -2788,7 +3358,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "PH-03",
@@ -2809,7 +3380,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "PH-04",
@@ -2830,7 +3402,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "AU-01",
@@ -2840,7 +3413,7 @@
       "title": "Down the the Coast",
       "artist": "Harbour Line Circuit",
       "mirrors_rank": 1,
-      "mirrors_cities": 28,
+      "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2851,7 +3424,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "AU-02",
@@ -2861,7 +3435,7 @@
       "title": "Down the Blue",
       "artist": "Parramatta Band",
       "mirrors_rank": 2,
-      "mirrors_cities": 3,
+      "mirrors_cities": 4,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2872,7 +3446,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "AU-03",
@@ -2882,7 +3457,7 @@
       "title": "Down the the Harbour",
       "artist": "Harbour Line Trio",
       "mirrors_rank": 3,
-      "mirrors_cities": 4,
+      "mirrors_cities": 6,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2893,7 +3468,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "AU-04",
@@ -2903,7 +3479,7 @@
       "title": "Night on Bondi",
       "artist": "Newtown Band",
       "mirrors_rank": 4,
-      "mirrors_cities": 7,
+      "mirrors_cities": 12,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2914,7 +3490,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "NZ-01",
@@ -2924,7 +3501,7 @@
       "title": "Dance at the Harbour",
       "artist": "Karangahape Choir",
       "mirrors_rank": 1,
-      "mirrors_cities": 28,
+      "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2935,7 +3512,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "NZ-02",
@@ -2945,7 +3523,7 @@
       "title": "Heart of Blue",
       "artist": "Grey Lynn Skyline",
       "mirrors_rank": 2,
-      "mirrors_cities": 3,
+      "mirrors_cities": 4,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2956,7 +3534,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "NZ-03",
@@ -2966,7 +3545,7 @@
       "title": "Dance at Piha",
       "artist": "Harbour Bridge Union",
       "mirrors_rank": 3,
-      "mirrors_cities": 7,
+      "mirrors_cities": 12,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2977,7 +3556,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "NZ-04",
@@ -2987,7 +3567,7 @@
       "title": "Along the January",
       "artist": "Grey Lynn Rooftop Crew",
       "mirrors_rank": 4,
-      "mirrors_cities": 6,
+      "mirrors_cities": 10,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -2998,7 +3578,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "CV-01",
@@ -3019,7 +3600,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "CV-02",
@@ -3040,7 +3622,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "CV-03",
@@ -3061,7 +3644,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "CV-04",
@@ -3082,7 +3666,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "JP-01",
@@ -3103,7 +3688,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "JP-02",
@@ -3124,7 +3710,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "JP-03",
@@ -3145,7 +3732,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "JP-04",
@@ -3166,7 +3754,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "TH-01",
@@ -3187,7 +3776,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "TH-02",
@@ -3208,7 +3798,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.1
+      "lufs": -14.1,
+      "recipe": "parallel"
     },
     {
       "id": "TH-03",
@@ -3229,7 +3820,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "TH-04",
@@ -3250,7 +3842,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "TW-01",
@@ -3271,7 +3864,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.1
+      "lufs": -14.1,
+      "recipe": "parallel"
     },
     {
       "id": "TW-02",
@@ -3292,7 +3886,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "TW-03",
@@ -3313,7 +3908,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "TW-04",
@@ -3334,7 +3930,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "TR-01",
@@ -3355,7 +3952,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "TR-02",
@@ -3376,7 +3974,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "TR-03",
@@ -3397,7 +3996,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "TR-04",
@@ -3418,7 +4018,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "MY-01",
@@ -3439,7 +4040,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "MY-02",
@@ -3460,7 +4062,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "MY-03",
@@ -3481,7 +4084,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2
+      "lufs": -14.2,
+      "recipe": "parallel"
     },
     {
       "id": "MY-04",
@@ -3502,7 +4106,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "DE-01",
@@ -3523,7 +4128,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
     },
     {
       "id": "DE-02",
@@ -3544,7 +4150,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.5
+      "lufs": -14.5,
+      "recipe": "parallel"
     },
     {
       "id": "DE-03",
@@ -3554,7 +4161,7 @@
       "title": "Licht auf Sehnsucht",
       "artist": "Warschauer Bruecke Sound",
       "mirrors_rank": 1,
-      "mirrors_cities": 28,
+      "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
       "chunks": 4,
@@ -3565,7 +4172,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.4
+      "lufs": -14.4,
+      "recipe": "parallel"
     },
     {
       "id": "DE-04",
@@ -3586,7 +4194,1087 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3
+      "lufs": -14.3,
+      "recipe": "parallel"
+    },
+    {
+      "id": "FR-01",
+      "region": "FR",
+      "file": "audio/FR-01.mp3",
+      "duration_s": 114.0,
+      "title": "Lumiere de Bleu",
+      "artist": "Marais Soir Society",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.4,
+      "recipe": "grow"
+    },
+    {
+      "id": "FR-02",
+      "region": "FR",
+      "file": "audio/FR-02.mp3",
+      "duration_s": 96.0,
+      "title": "Rue du Soleil",
+      "artist": "Bastille Radio",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        1213,
+        2213,
+        214,
+        1214,
+        2214,
+        215,
+        1215,
+        2215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.4,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "FR-03",
+      "region": "FR",
+      "file": "audio/FR-03.mp3",
+      "duration_s": 114.0,
+      "title": "Coeur de Minuit",
+      "artist": "Marais Soir Set",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        1313,
+        2313,
+        313,
+        314,
+        1314,
+        2314,
+        314,
+        315,
+        1315,
+        2315,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.3,
+      "recipe": "parallel"
+    },
+    {
+      "id": "FR-04",
+      "region": "FR",
+      "file": "audio/FR-04.mp3",
+      "duration_s": 114.0,
+      "title": "Coeur de Minuit",
+      "artist": "Marais Soir Circuit",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.5,
+      "recipe": "grow"
+    },
+    {
+      "id": "ES-01",
+      "region": "ES",
+      "file": "audio/ES-01.mp3",
+      "duration_s": 96.0,
+      "title": "Luz de Medianoche",
+      "artist": "La Latina Trio",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        1113,
+        2113,
+        114,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.1,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "ES-02",
+      "region": "ES",
+      "file": "audio/ES-02.mp3",
+      "duration_s": 96.0,
+      "title": "Luz de Madrid",
+      "artist": "Malasana Cassette",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        1213,
+        2213,
+        214,
+        215,
+        1215,
+        2215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "ES-03",
+      "region": "ES",
+      "file": "audio/ES-03.mp3",
+      "duration_s": 114.0,
+      "title": "Baile en Azul",
+      "artist": "Lavapies Cassette",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "ES-04",
+      "region": "ES",
+      "file": "audio/ES-04.mp3",
+      "duration_s": 96.0,
+      "title": "Noche en Sol",
+      "artist": "Retiro Sur Cassette",
+      "mirrors_rank": 1,
+      "mirrors_cities": 39,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        1413,
+        2413,
+        414,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "IT-01",
+      "region": "IT",
+      "file": "audio/IT-01.mp3",
+      "duration_s": 114.0,
+      "title": "Ballo a Milano",
+      "artist": "Isola Society",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "IT-02",
+      "region": "IT",
+      "file": "audio/IT-02.mp3",
+      "duration_s": 114.0,
+      "title": "Cuore di Sole",
+      "artist": "Citta Studi Collective",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "IT-03",
+      "region": "IT",
+      "file": "audio/IT-03.mp3",
+      "duration_s": 96.0,
+      "title": "Estate a Mezzanotte",
+      "artist": "Sempione Circuit",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        1313,
+        2313,
+        314,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "IT-04",
+      "region": "IT",
+      "file": "audio/IT-04.mp3",
+      "duration_s": 114.0,
+      "title": "Estate a Sole",
+      "artist": "Ticinese Night Bus",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "NL-01",
+      "region": "NL",
+      "file": "audio/NL-01.mp3",
+      "duration_s": 114.0,
+      "title": "Nacht in Gracht",
+      "artist": "Noordermarkt Collective",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        1113,
+        2113,
+        113,
+        114,
+        1114,
+        2114,
+        114,
+        115,
+        1115,
+        2115,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.3,
+      "recipe": "parallel"
+    },
+    {
+      "id": "NL-02",
+      "region": "NL",
+      "file": "audio/NL-02.mp3",
+      "duration_s": 114.0,
+      "title": "Hart van Blauw",
+      "artist": "De Pijp Nacht Trio",
+      "mirrors_rank": 1,
+      "mirrors_cities": 39,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        1213,
+        2213,
+        213,
+        214,
+        1214,
+        2214,
+        214,
+        215,
+        1215,
+        2215,
+        215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "parallel"
+    },
+    {
+      "id": "NL-03",
+      "region": "NL",
+      "file": "audio/NL-03.mp3",
+      "duration_s": 114.0,
+      "title": "Licht van Blauw",
+      "artist": "Noordermarkt Skyline",
+      "mirrors_rank": 2,
+      "mirrors_cities": 12,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "NL-04",
+      "region": "NL",
+      "file": "audio/NL-04.mp3",
+      "duration_s": 114.0,
+      "title": "Hart van Buurt",
+      "artist": "Oosterpark Cassette",
+      "mirrors_rank": 3,
+      "mirrors_cities": 10,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        1413,
+        2413,
+        413,
+        414,
+        1414,
+        2414,
+        414,
+        415,
+        1415,
+        2415,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "parallel"
+    },
+    {
+      "id": "PL-01",
+      "region": "PL",
+      "file": "audio/PL-01.mp3",
+      "duration_s": 114.0,
+      "title": "Ulica Slonce",
+      "artist": "Praga Noc Circuit",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "PL-02",
+      "region": "PL",
+      "file": "audio/PL-02.mp3",
+      "duration_s": 96.0,
+      "title": "Taniec w Warszawie",
+      "artist": "Saska Kepa Skyline",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        1213,
+        214,
+        215,
+        1215,
+        2215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "PL-03",
+      "region": "PL",
+      "file": "audio/PL-03.mp3",
+      "duration_s": 114.0,
+      "title": "Swiatlo z Warszawie",
+      "artist": "Stare Miasto Sessions",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "PL-04",
+      "region": "PL",
+      "file": "audio/PL-04.mp3",
+      "duration_s": 96.0,
+      "title": "Noc w Wisla",
+      "artist": "Mokotow Sessions",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "SE-01",
+      "region": "SE",
+      "file": "audio/SE-01.mp3",
+      "duration_s": 114.0,
+      "title": "Dans i Midnatt",
+      "artist": "Skanstull Skyline",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "SE-02",
+      "region": "SE",
+      "file": "audio/SE-02.mp3",
+      "duration_s": 114.0,
+      "title": "Dans i Sol",
+      "artist": "Kungsholmen Sound",
+      "mirrors_rank": 1,
+      "mirrors_cities": 39,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "SE-03",
+      "region": "SE",
+      "file": "audio/SE-03.mp3",
+      "duration_s": 114.0,
+      "title": "Gatan i Skargarden",
+      "artist": "Slussen Lamplight",
+      "mirrors_rank": 2,
+      "mirrors_cities": 12,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "SE-04",
+      "region": "SE",
+      "file": "audio/SE-04.mp3",
+      "duration_s": 114.0,
+      "title": "Natt i Stockholm",
+      "artist": "Kungsholmen Rooftop Crew",
+      "mirrors_rank": 3,
+      "mirrors_cities": 10,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "SA-01",
+      "region": "SA",
+      "file": "audio/SA-01.mp3",
+      "duration_s": 114.0,
+      "title": "Sayf fi Riyadh",
+      "artist": "Al Faisaliah Lamplight",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "SA-02",
+      "region": "SA",
+      "file": "audio/SA-02.mp3",
+      "duration_s": 96.0,
+      "title": "Raqs fi Hay",
+      "artist": "Diriyah Collective",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        214,
+        215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "SA-03",
+      "region": "SA",
+      "file": "audio/SA-03.mp3",
+      "duration_s": 114.0,
+      "title": "Shari Al Muntasaf",
+      "artist": "Al Faisaliah Sessions",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "SA-04",
+      "region": "SA",
+      "file": "audio/SA-04.mp3",
+      "duration_s": 96.0,
+      "title": "Sayf fi Shams",
+      "artist": "Al Murabba Set",
+      "mirrors_rank": 1,
+      "mirrors_cities": 3,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        414,
+        415,
+        1415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "MA-01",
+      "region": "MA",
+      "file": "audio/MA-01.mp3",
+      "duration_s": 114.0,
+      "title": "Qalb d Zrag",
+      "artist": "Bourgogne Yard Sessions",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.4,
+      "recipe": "grow"
+    },
+    {
+      "id": "MA-02",
+      "region": "MA",
+      "file": "audio/MA-02.mp3",
+      "duration_s": 114.0,
+      "title": "Daw d Bhar",
+      "artist": "Bourgogne Trio",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        1213,
+        2213,
+        213,
+        214,
+        1214,
+        2214,
+        214,
+        215,
+        1215,
+        2215,
+        215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.3,
+      "recipe": "parallel"
+    },
+    {
+      "id": "MA-03",
+      "region": "MA",
+      "file": "audio/MA-03.mp3",
+      "duration_s": 114.0,
+      "title": "Raqsa fi Houma",
+      "artist": "Derb Sultan Society",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "MA-04",
+      "region": "MA",
+      "file": "audio/MA-04.mp3",
+      "duration_s": 114.0,
+      "title": "Raqsa fi Bhar",
+      "artist": "Bourgogne Rooftop Crew",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        1413,
+        2413,
+        413,
+        414,
+        1414,
+        2414,
+        414,
+        415,
+        1415,
+        2415,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "parallel"
+    },
+    {
+      "id": "VN-01",
+      "region": "VN",
+      "file": "audio/VN-01.mp3",
+      "duration_s": 114.0,
+      "title": "Mua He Mau Xanh",
+      "artist": "Thao Dien Yard Sessions",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "VN-02",
+      "region": "VN",
+      "file": "audio/VN-02.mp3",
+      "duration_s": 114.0,
+      "title": "Con Duong Song Nuoc",
+      "artist": "Thu Thiem Sessions",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "VN-03",
+      "region": "VN",
+      "file": "audio/VN-03.mp3",
+      "duration_s": 114.0,
+      "title": "Con Duong Song Nuoc",
+      "artist": "Le Loi Sang Choir",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "VN-04",
+      "region": "VN",
+      "file": "audio/VN-04.mp3",
+      "duration_s": 114.0,
+      "title": "Dem Tai Khu Pho",
+      "artist": "Le Loi Sang Night Bus",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "SG-01",
+      "region": "SG",
+      "file": "audio/SG-01.mp3",
+      "duration_s": 102.0,
+      "title": "Malam di Singapura",
+      "artist": "Tanjong Pagar Night Bus",
+      "mirrors_rank": 1,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        1113,
+        2113,
+        114,
+        115,
+        1115,
+        2115,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "mixed"
+    },
+    {
+      "id": "SG-02",
+      "region": "SG",
+      "file": "audio/SG-02.mp3",
+      "duration_s": 114.0,
+      "title": "Jalan Selat",
+      "artist": "Katong Senja Sessions",
+      "mirrors_rank": 2,
+      "mirrors_cities": 4,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "SG-03",
+      "region": "SG",
+      "file": "audio/SG-03.mp3",
+      "duration_s": 114.0,
+      "title": "Tarian di Matahari",
+      "artist": "Chinatown Point Society",
+      "mirrors_rank": 3,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "SG-04",
+      "region": "SG",
+      "file": "audio/SG-04.mp3",
+      "duration_s": 96.0,
+      "title": "Malam di Singapura",
+      "artist": "Haji Lane Society",
+      "mirrors_rank": 4,
+      "mirrors_cities": 39,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "inpaint"
+    },
+    {
+      "id": "HK-01",
+      "region": "HK",
+      "file": "audio/HK-01.mp3",
+      "duration_s": 114.0,
+      "title": "Gwong Sin Hai Yat Tau",
+      "artist": "Sham Shui Po Choir",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "HK-02",
+      "region": "HK",
+      "file": "audio/HK-02.mp3",
+      "duration_s": 114.0,
+      "title": "Sam Hai Yat Tau",
+      "artist": "Sheung Wan Circuit",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "HK-03",
+      "region": "HK",
+      "file": "audio/HK-03.mp3",
+      "duration_s": 114.0,
+      "title": "Gwong Sin Hai Laam",
+      "artist": "Sham Shui Po Lamplight",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "HK-04",
+      "region": "HK",
+      "file": "audio/HK-04.mp3",
+      "duration_s": 114.0,
+      "title": "Ye Man Hai Hoi Bin",
+      "artist": "Mong Kok Yeh Set",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.1,
+      "recipe": "grow"
+    },
+    {
+      "id": "SN-01",
+      "region": "SN",
+      "file": "audio/SN-01.mp3",
+      "duration_s": 102.0,
+      "title": "Nawet ci Ndox",
+      "artist": "Plateau Nuit Cassette",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        1113,
+        2113,
+        114,
+        1114,
+        2114,
+        114,
+        115,
+        1115,
+        2115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "mixed"
+    },
+    {
+      "id": "SN-02",
+      "region": "SN",
+      "file": "audio/SN-02.mp3",
+      "duration_s": 114.0,
+      "title": "Mbedd bu Guddi",
+      "artist": "Sacre Coeur Skyline",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        212,
+        213,
+        1213,
+        2213,
+        213,
+        214,
+        1214,
+        2214,
+        214,
+        215,
+        1215,
+        2215,
+        215
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "parallel"
+    },
+    {
+      "id": "SN-03",
+      "region": "SN",
+      "file": "audio/SN-03.mp3",
+      "duration_s": 113.88,
+      "title": "Xol bu Ndox",
+      "artist": "Almadies Sound",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        1313,
+        2313,
+        313,
+        314,
+        1314,
+        2314,
+        314,
+        315,
+        1315,
+        2315,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "parallel"
+    },
+    {
+      "id": "SN-04",
+      "region": "SN",
+      "file": "audio/SN-04.mp3",
+      "duration_s": 96.0,
+      "title": "Fecc ci Teranga",
+      "artist": "Point E Skyline",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.0,
+      "recipe": "inpaint"
     }
   ]
 }
