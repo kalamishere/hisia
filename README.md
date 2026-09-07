@@ -34,3 +34,7 @@ The pipeline's harvest and analysis steps call into two private projects on my m
 The most direct way to make something generated sound like a region is to seed the model from that region's recordings. Licensing treats that as remixing, so experimenters route around catalogue: synthetic seeds, no influence trail, no one paid. Anyone can do this. Imagine a way to use it that pays artists.
 
 Powered by Stability AI. Built by Kalam Ali with Claude and agentic friends.
+
+## Licence
+
+Code is MIT. The audio, library, prompts and notes are CC BY 4.0. See [LICENSE.md](LICENSE.md).
