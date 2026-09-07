@@ -28,10 +28,28 @@
   --sun-y:30%;
   --sun-op:1;
   --sun-core:#fff4d8;
-  --sun-glow:255,214,140;
+  --sun-glow-c:rgb(255,214,140);
+  --hz:rgba(255,255,255,.28);
+  --sun-scale:1;
+  --sodium-op:0;
+  --moon-x:50%;
+  --moon-y:30%;
   --pad:clamp(20px, 4.2vw, 84px);
   color-scheme:dark;
 }
+/* the sun, moon, light and colours glide between cities instead of snapping (Kalam, 2026-09-07);
+   registered properties interpolate on :root, so every gradient that reads them follows */
+@property --sun-x{syntax:'<percentage>';inherits:true;initial-value:50%}
+@property --sun-y{syntax:'<percentage>';inherits:true;initial-value:30%}
+@property --moon-x{syntax:'<percentage>';inherits:true;initial-value:50%}
+@property --moon-y{syntax:'<percentage>';inherits:true;initial-value:30%}
+@property --sun-scale{syntax:'<number>';inherits:true;initial-value:1}
+@property --sodium-op{syntax:'<number>';inherits:true;initial-value:0}
+@property --sun-glow-c{syntax:'<color>';inherits:true;initial-value:rgb(255,214,140)}
+@property --sun-core{syntax:'<color>';inherits:true;initial-value:#fff4d8}
+@property --hz{syntax:'<color>';inherits:true;initial-value:rgba(255,255,255,.28)}
+:root{transition:--sun-x 2.4s ease,--sun-y 2.4s ease,--moon-x 2.4s ease,--moon-y 2.4s ease,--sun-scale 2.4s ease,
+      --sodium-op 2.4s ease,--sun-glow-c 2.4s ease,--sun-core 2.4s ease,--hz 2.4s ease}
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -48,7 +66,7 @@ body{
 .ground{position:absolute;left:0;right:0;top:var(--horizon);bottom:0}
 #seaGlow{
   position:absolute;left:0;right:0;top:var(--horizon);height:16vh;
-  background:radial-gradient(46vw 16vh at var(--sun-x) 0%, rgba(var(--sun-glow),.5), rgba(var(--sun-glow),0) 72%);
+  background:radial-gradient(46vw 16vh at var(--sun-x) 0%, color-mix(in srgb,var(--sun-glow-c) 50%,transparent), color-mix(in srgb,var(--sun-glow-c) 0%,transparent) 72%);
   mix-blend-mode:screen;opacity:var(--sun-op);pointer-events:none;
   transition:opacity 1.6s ease;
 }
@@ -62,7 +80,7 @@ body{
 /* soft glow sitting on the horizon under the sun */
 #horizonGlow{
   position:absolute;left:0;right:0;top:calc(var(--horizon) - 30vh);height:34vh;
-  background:radial-gradient(60vw 30vh at var(--sun-x) 100%, rgba(var(--sun-glow),.55), rgba(var(--sun-glow),0) 70%);
+  background:radial-gradient(60vw 30vh at var(--sun-x) 100%, color-mix(in srgb,var(--sun-glow-c) 55%,transparent), color-mix(in srgb,var(--sun-glow-c) 0%,transparent) 70%);
   opacity:var(--sun-op);pointer-events:none;
   transition:opacity 1.6s ease;
 }
@@ -82,17 +100,17 @@ body{
   position:absolute;left:var(--sun-x);top:var(--sun-y);z-index:0;
   width:clamp(74px,7.6vw,150px);aspect-ratio:1;margin:0 0 0 0;
   transform:translate(-50%,-50%);
-  opacity:var(--sun-op);
+  opacity:var(--sun-op);transition:opacity 2.4s ease;
   will-change:transform;
 }
 #sun::before{ /* glow */
   content:"";position:absolute;inset:-140%;border-radius:50%;
-  background:radial-gradient(circle, rgba(var(--sun-glow),.55) 0%, rgba(var(--sun-glow),.22) 34%, rgba(var(--sun-glow),0) 68%);
+  background:radial-gradient(circle, color-mix(in srgb,var(--sun-glow-c) 55%,transparent) 0%, color-mix(in srgb,var(--sun-glow-c) 22%,transparent) 34%, color-mix(in srgb,var(--sun-glow-c) 0%,transparent) 68%);
 }
 #sun::after{ /* disc */
   content:"";position:absolute;inset:0;border-radius:50%;
-  background:radial-gradient(circle at 50% 45%, #fff 0%, var(--sun-core) 52%, rgba(var(--sun-glow),.92) 100%);
-  box-shadow:0 0 60px 12px rgba(var(--sun-glow),.35);
+  background:radial-gradient(circle at 50% 45%, #fff 0%, var(--sun-core) 52%, color-mix(in srgb,var(--sun-glow-c) 92%,transparent) 100%);
+  box-shadow:0 0 60px 12px color-mix(in srgb,var(--sun-glow-c) 35%,transparent);
 }
 /* ---- sky variants (?sky=sodium | mirror), after Eliasson's Weather Project: one colour of light,
    a half sun completed by its mirror image, haze with body. Inert without a body.sky-* class. ---- */
@@ -102,13 +120,13 @@ body{
   background:#c8781a;mix-blend-mode:multiply}
 #sunMirror{display:none;position:absolute;left:var(--sun-x);top:var(--horizon);z-index:1;
   width:calc(clamp(74px,7.6vw,150px) * var(--sun-scale,1));aspect-ratio:1;transform:translate(-50%,-50%) scaleY(-1);
-  border-radius:50%;background:radial-gradient(circle at 50% 45%, #fff 0%, var(--sun-core) 52%, rgba(var(--sun-glow),.92) 100%);
+  border-radius:50%;background:radial-gradient(circle at 50% 45%, #fff 0%, var(--sun-core) 52%, color-mix(in srgb,var(--sun-glow-c) 92%,transparent) 100%);
   opacity:calc(var(--sun-op) * var(--mirror-op,0));filter:blur(1.5px);pointer-events:none;
   -webkit-mask-image:linear-gradient(0deg,rgba(0,0,0,.9) 50%,rgba(0,0,0,.05) 100%);mask-image:linear-gradient(0deg,rgba(0,0,0,.9) 50%,rgba(0,0,0,.05) 100%)}
 #sunMirror::before{content:"";position:absolute;inset:-120%;border-radius:50%;
-  background:radial-gradient(circle, rgba(var(--sun-glow),.5) 0%, rgba(var(--sun-glow),.18) 36%, rgba(var(--sun-glow),0) 68%)}
+  background:radial-gradient(circle, color-mix(in srgb,var(--sun-glow-c) 50%,transparent) 0%, color-mix(in srgb,var(--sun-glow-c) 18%,transparent) 36%, color-mix(in srgb,var(--sun-glow-c) 0%,transparent) 68%)}
 .haze{display:none;position:absolute;left:-10%;width:120%;height:9vh;z-index:0;pointer-events:none;
-  background:radial-gradient(62vw 100% at var(--sun-x) 50%, rgba(var(--sun-glow),.42), rgba(var(--sun-glow),0) 72%);
+  background:radial-gradient(62vw 100% at var(--sun-x) 50%, color-mix(in srgb,var(--sun-glow-c) 42%,transparent), color-mix(in srgb,var(--sun-glow-c) 0%,transparent) 72%);
   filter:blur(16px);mix-blend-mode:screen;opacity:calc(var(--sun-op) * var(--haze-op,0));animation:drift 40s linear infinite alternate}
 .haze.h1{top:calc(var(--horizon) - 14vh);animation-duration:52s}
 .haze.h2{top:calc(var(--horizon) - 6vh);height:12vh;animation-direction:reverse;animation-duration:64s}
@@ -119,7 +137,7 @@ body.sky-mirror #sunMirror, body.sky-mirror .haze{display:block}
 #reflection{
   position:absolute;left:var(--sun-x);top:var(--horizon);bottom:0;
   width:clamp(140px,16vw,330px);transform:translateX(-50%);
-  background:radial-gradient(ellipse 42% 96% at 50% 0%, rgba(var(--sun-glow),.5) 0%, rgba(var(--sun-glow),.16) 45%, rgba(var(--sun-glow),0) 100%);
+  background:radial-gradient(ellipse 42% 96% at 50% 0%, color-mix(in srgb,var(--sun-glow-c) 50%,transparent) 0%, color-mix(in srgb,var(--sun-glow-c) 16%,transparent) 45%, color-mix(in srgb,var(--sun-glow-c) 0%,transparent) 100%);
   filter:blur(18px);opacity:var(--sun-op);mix-blend-mode:screen;pointer-events:none;
   transition:opacity 1.6s ease;
 }
@@ -169,6 +187,7 @@ body.sky-mirror #sunMirror, body.sky-mirror .haze{display:block}
 @media (prefers-reduced-motion: reduce){
   .cloud,.bird,.wave,#stars i,#stars b{animation:none!important}
   .bird{opacity:0}
+  :root{transition:none}
 }
 
 /* ---------- chrome ---------- */
@@ -327,9 +346,12 @@ footer a:hover{color:#fff}
 
 @media (max-width:760px){
   :root{--horizon:56%}
-  header{align-items:flex-start}
-  .nextcity{max-width:38vw}
-  #card{right:var(--pad)}
+  header{align-items:baseline}
+  .mark{flex:none}
+  .nextcity{max-width:none;min-width:0;flex:1 1 auto;letter-spacing:.12em;font-size:11px}   /* never clips the clock */
+  /* the city name hangs from the horizon, so it stays put however long the lines under it run */
+  #card{right:var(--pad);top:calc(var(--horizon) - 4.4rem);bottom:auto}
+  #card.low{top:auto;bottom:calc(var(--pad) * .2 + 8.4em + env(safe-area-inset-bottom))}
   .honest{max-width:none}
   footer{right:var(--pad)}   /* vertical stacking of card / controls / footer is set in the 820px block above */
 }
@@ -387,7 +409,6 @@ footer a:hover{color:#fff}
     <button class="ctl icon" id="btnNext" title="next track (n)" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16.5 5h2.5v14h-2.5z"/></svg></button>
     <button class="ctl icon" id="btnMute" title="mute (m)" aria-label="Mute"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16.5 8.5a4.5 4.5 0 0 1 0 7M18.8 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 9v6h4l5 4V5L8 9z"/></svg></button>
     <input id="vol" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
-    <button class="ctl" id="btnMode" title="drift: each next track is the closest by sound (d)" aria-pressed="false">follow the sun</button>
     <button class="ctl" id="btnPrompt">show prompt</button>
   </div>
 
@@ -603,7 +624,7 @@ function applyPhase(name){
   frontIsA = !frontIsA;
   root.setProperty("--star-op", p.star);
   root.setProperty("--cloud-op", p.cloud);
-  root.setProperty("--sun-glow", p.glow);
+  root.setProperty("--sun-glow-c", "rgb(" + p.glow + ")");
   root.setProperty("--sun-core", p.core);
   root.setProperty("--hz", p.hz);
   currentPhase = name;
@@ -651,14 +672,6 @@ var lib = null, regionsByIso = {}, poolByRegion = {}, playedByRegion = {};
 /* RUN = how many tracks a region gets before the sun moves on. 1 keeps the rule
    "never the same region twice in a row" literal; raise it for longer city sets. */
 var queue = [], lastRegion = null, RUN = 1;
-var trackById = {};
-/* Drift: instead of the sun, the next track is the closest by sound to the one
-   playing - nearest5 per track is computed at publish time (refresh/step7b_nearest.py,
-   CLAP audio embeddings, radio/research/CLOSENESS.md). Rule: nearest untried
-   track, never the same city twice in a row, the last three cities stand aside.
-   When the list is missing or used up, that step falls back to the sun. */
-var DRIFT = false;
-try { DRIFT = localStorage.getItem("hisia.mode") === "drift"; } catch(e){}
 
 function loadLibrary(){
   return fetch("library.json", {cache:"no-store"})
@@ -712,34 +725,9 @@ function pickRegion(){
   return cands[0];
 }
 
-function pickDrift(from){
-  if (!from || !from.nearest5 || !from.nearest5.length) return null;
-  var skip = recent.slice(Math.max(0, recent.length - 3));
-  for (var i = 0; i < from.nearest5.length; i++){
-    var t = trackById[from.nearest5[i]];
-    if (!t || !poolByRegion[t.region]) continue;
-    if (t.region === from.region || skip.indexOf(t.region) !== -1) continue;
-    if (playedByRegion[t.region].indexOf(t.id) !== -1) continue;
-    return t;
-  }
-  return null;
-}
-
 function refill(){
   var guard = 0;
   while (queue.length < 3 && guard++ < 40){
-    if (DRIFT){
-      var from = queue.length ? queue[queue.length - 1] : current;
-      var near = pickDrift(from);
-      if (near){
-        near.by = "sound";
-        playedByRegion[near.region].push(near.id); queue.push(near);
-        lastRegion = near.region;
-        recent.push(near.region);
-        if (recent.length > 4) recent.shift();
-        continue;
-      }
-    }
     var iso = pickRegion();
     if (!iso) break;
     var pool = poolByRegion[iso], played = playedByRegion[iso];
@@ -747,7 +735,7 @@ function refill(){
     if (!fresh.length){ played.length = 0; fresh = pool.slice(); }
     shuffle(fresh);
     var take = fresh.slice(0, Math.min(RUN, fresh.length));
-    take.forEach(function(t){ t.by = "sun"; played.push(t.id); queue.push(t); });
+    take.forEach(function(t){ played.push(t.id); queue.push(t); });
     lastRegion = iso;
     recent.push(iso);
     if (recent.length > 4) recent.shift();
@@ -758,12 +746,27 @@ function refill(){
 var ctx = null, master = null, players = [], active = 0;
 var current = null, upcoming = null, fading = false, muted = false, wantPlay = false;
 var XFADE = 2.0;
+/* iOS stops Web Audio when the screen locks or Safari goes to the background, and ignores element volume;
+   so on iPhone/iPad the two <audio> elements play plain, with a hard cut instead of a crossfade (Kalam, 2026-09-07) */
+var PLAIN = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1) ||
+            new URLSearchParams(location.search).has("plain");   /* ?plain=1 tries the iPhone path on a desktop */
+var PLAIN_CTX = {state:"running", resume:function(){ return Promise.resolve(); }, get currentTime(){ return performance.now() / 1000; }};
+function rampVolume(el, to, ms, done){
+  var from = el.volume, t0 = performance.now();
+  (function step(){
+    var k = Math.min(1, (performance.now() - t0) / ms);
+    try { el.volume = from + (to - from) * k; } catch(e){}
+    if (k < 1) requestAnimationFrame(step); else if (done) done();
+  })();
+}
 
 function makePlayer(){
   var el = new Audio();
-  el.crossOrigin = "anonymous";
   el.preload = "auto";
   el.loop = false;
+  el.setAttribute("playsinline", "");
+  if (PLAIN) return {el:el, track:null};
+  el.crossOrigin = "anonymous";
   var gain = ctx.createGain();
   gain.gain.value = 0;
   var src = ctx.createMediaElementSource(el);
@@ -773,11 +776,14 @@ function makePlayer(){
 
 function initAudio(){
   if (ctx) return;
-  var AC = window.AudioContext || window.webkitAudioContext;
-  ctx = new AC();
-  master = ctx.createGain();
-  master.gain.value = parseFloat(document.getElementById("vol").value);
-  master.connect(ctx.destination);
+  if (PLAIN){ ctx = PLAIN_CTX; }
+  else {
+    var AC = window.AudioContext || window.webkitAudioContext;
+    ctx = new AC();
+    master = ctx.createGain();
+    master.gain.value = parseFloat(document.getElementById("vol").value);
+    master.connect(ctx.destination);
+  }
   players = [makePlayer(), makePlayer()];
   players.forEach(function(p){
     p.el.addEventListener("error", function(){
@@ -813,11 +819,13 @@ function startTrack(track, fade){
   if (p.track !== track){ p.track = track; p.el.src = track.file; }
   p.el.currentTime = 0;
   var t = ctx.currentTime;
-  p.gain.gain.cancelScheduledValues(t);
-  if (fade){
+  if (PLAIN){ try { p.el.volume = 1; p.el.muted = muted; } catch(e){} }
+  else if (fade){
+    p.gain.gain.cancelScheduledValues(t);
     p.gain.gain.setValueAtTime(0, t);
     p.gain.gain.setValueCurveAtTime(CURVE_UP, t, XFADE);
   } else {
+    p.gain.gain.cancelScheduledValues(t);
     p.gain.gain.setValueAtTime(1, t);
   }
   var pr = p.el.play();
@@ -835,8 +843,9 @@ function advance(immediate){
   var outgoing = players[active];
   active = 1 - active;
   var t = ctx.currentTime;
-  outgoing.gain.gain.cancelScheduledValues(t);
-  if (immediate){
+  if (PLAIN){
+    rampVolume(outgoing.el, 0, immediate ? 250 : XFADE * 1000, function(){ try{ outgoing.el.pause(); }catch(e){} });
+  } else if (immediate){
     outgoing.gain.gain.setValueCurveAtTime(CURVE_DOWN, t, 0.35);
     setTimeout(function(){ try{ outgoing.el.pause(); }catch(e){} }, 420);
   } else {
@@ -944,8 +953,7 @@ function paint(){
   var n = current.mirrors_cities || 1;
   elHonest.textContent = "a variation on this week's " + r.city + " chart · after #" +
     (current.mirrors_rank || 1) + (n > 1 ? " · a hit in " + n + " cities this week" : "") +
-    " · AI-generated · no real songs" + provenance(current) +
-    (current.by === "sound" ? " · closest by sound" : "");
+    " · AI-generated · no real songs" + provenance(current);
   elPromptText.textContent = r.sa3_prompt || "";
   document.title = r.city + " · World Sound";
   requestAnimationFrame(fitStrip);
@@ -970,7 +978,7 @@ function paintNext(){
   if (!t){ elNext.textContent = ""; return; }
   var r = regionsByIso[t.region];
   if (!r){ elNext.textContent = ""; return; }
-  elNext.innerHTML = '<span class="pre">' + (DRIFT ? "drifting" : "following the sun") + ' · </span>next · <b>' + escapeHTML(r.city) + "</b> " + localClock(r.tz);
+  elNext.innerHTML = '<span class="pre">following the sun · </span>next · <b>' + escapeHTML(r.city) + "</b> " + localClock(r.tz);
   paintStrip();
 }
 
@@ -997,7 +1005,14 @@ setInterval(paintStrip, 60000);
 /* a two-line track name grows the card upward into the strip: lift the strip clear of it */
 function fitStrip(){
   var strip = document.getElementById("strip"), card = document.getElementById("card");
-  if (!strip || !card || getComputedStyle(strip).display === "none") return;
+  if (!strip || !card) return;
+  /* phone: the card hangs from the horizon; if the lines under the city would run into the controls, let it sit on them instead */
+  var ctl = document.getElementById("controls");
+  card.classList.remove("low");
+  if (ctl && matchMedia("(max-width:760px)").matches){
+    if (card.getBoundingClientRect().bottom > ctl.getBoundingClientRect().top - 8) card.classList.add("low");
+  }
+  if (getComputedStyle(strip).display === "none") return;
   strip.style.top = ""; card.classList.remove("tight1", "tight2");
   var clear = function(){ var s = strip.getBoundingClientRect(), c = card.getBoundingClientRect(); return s.bottom <= c.top - 8; };
   if (clear()) return;
@@ -1113,6 +1128,7 @@ function togglePlay(){
 function toggleMute(){
   if (!ctx) return;
   muted = !muted;
+  if (PLAIN){ players.forEach(function(p){ p.el.muted = muted; }); btnMute.innerHTML = muted ? ICON.muted : ICON.vol; return; }
   var t = ctx.currentTime;
   master.gain.cancelScheduledValues(t);
   master.gain.linearRampToValueAtTime(muted ? 0.0001 : parseFloat(vol.value), t + 0.15);
@@ -1124,41 +1140,33 @@ btnNext.addEventListener("click", function(){ if (!ctx){ begin(); return; } adva
 btnMute.addEventListener("click", toggleMute);
 vol.addEventListener("input", function(){
   if (!ctx) return;
-  muted = false; btnMute.textContent = "🔊";
+  muted = false; btnMute.innerHTML = ICON.vol;
+  if (PLAIN){ players.forEach(function(p){ try { p.el.volume = parseFloat(vol.value); } catch(e){} }); return; }
   master.gain.setTargetAtTime(parseFloat(vol.value), ctx.currentTime, 0.02);
 });
-var btnMode = document.getElementById("btnMode");
-function setMode(drift){
-  DRIFT = !!drift;
-  btnMode.textContent = DRIFT ? "drift" : "follow the sun";
-  btnMode.setAttribute("aria-pressed", DRIFT ? "true" : "false");
-  try { localStorage.setItem("hisia.mode", DRIFT ? "drift" : "sun"); } catch(e){}
-  /* re-plan what comes next; what is already playing stays */
-  if (current){
-    queue.forEach(function(t){
-      var played = playedByRegion[t.region] || [], i = played.indexOf(t.id);
-      if (i !== -1) played.splice(i, 1);
-      var j = recent.lastIndexOf(t.region);
-      if (j !== -1) recent.splice(j, 1);
-    });
-    queue.length = 0;
-    refill();
-    if (ctx) preloadNext(); else paintNext();
-  }
-}
-setMode(DRIFT);
-btnMode.addEventListener("click", function(){ setMode(!DRIFT); });
 btnPrompt.addEventListener("click", function(){
   var open = !elPromptBox.hidden;
   elPromptBox.hidden = open;
   btnPrompt.textContent = open ? "show prompt" : "hide prompt";
 });
+/* a thumb swipe to the left is next; a scroll inside the prompt box is not a swipe */
+(function(){
+  var sx = 0, sy = 0, t0 = 0, inBox = false;
+  document.addEventListener("touchstart", function(e){
+    var t = e.changedTouches[0]; sx = t.clientX; sy = t.clientY; t0 = Date.now();
+    inBox = !!(e.target && e.target.closest && e.target.closest("#promptBox"));
+  }, {passive:true});
+  document.addEventListener("touchend", function(e){
+    if (inBox) return;
+    var t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+    if (Date.now() - t0 < 700 && dx < -60 && Math.abs(dy) < 50){ if (!ctx) begin(); else advance(true); }
+  }, {passive:true});
+})();
 document.addEventListener("keydown", function(e){
   if (e.target && /input|textarea/i.test(e.target.tagName)) return;
   if (e.code === "Space"){ e.preventDefault(); togglePlay(); }
   else if (e.key === "n" || e.key === "N"){ if (!ctx){ begin(); } else advance(true); }
   else if (e.key === "m" || e.key === "M"){ toggleMute(); }
-  else if (e.key === "d" || e.key === "D"){ setMode(!DRIFT); }
 });
 
 /* ---------------- puppet polling ---------------- */
@@ -1188,10 +1196,8 @@ function startPuppet(){
 loadLibrary().then(function(data){
   lib = data;
   regionsByIso = data.regions || {};
-  if (Q0.get("mode") === "drift" || Q0.get("mode") === "sun") setMode(Q0.get("mode") === "drift");
   (data.tracks || []).forEach(function(t){
     if (!regionsByIso[t.region]) return;
-    trackById[t.id] = t;
     (poolByRegion[t.region] = poolByRegion[t.region] || []).push(t);
     playedByRegion[t.region] = playedByRegion[t.region] || [];
   });

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-06T19:45:45Z",
+  "generated_at": "2026-09-07T14:34:41Z",
   "chart_week": "2026-08-24",
-  "version": "v4a",
+  "version": "v4-interim",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
     "KE": {
@@ -1731,6 +1731,177 @@
       "genre_family": "Mbalax / African",
       "sa3_prompt": "Senegalese mbalax chart instrumental, sabar-drum rooted with a wider Afropop crossover current, 138 BPM, minor key, sabar and tama talking-drum percussion, warm plucked guitar riff, deep rounded bass, bright synth pads, festive uptempo mbalax groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, joyful, romantic and deep",
       "suno_prompt": "[style: Senegalese mbalax, sabar percussion, Afropop crossover] [tempo: 138 BPM] [mood: joyful, romantic, deep] [instruments: sabar/tama percussion, plucked guitar, bass, synth pads] [vocal: male lead singing in Wolof, call-and-response griot-style hook]"
+    },
+    "CI": {
+      "city": "Abidjan",
+      "country": "Cote d'Ivoire",
+      "tz": "Africa/Abidjan",
+      "readout": {
+        "bpm": 139.67,
+        "mode": "minor",
+        "lufs": -12.25,
+        "instruments": [
+          "bass",
+          "drums",
+          "percussion"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "love"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "CI-4"
+        ],
+        "bpm_iqr": [
+          137.88,
+          143.9
+        ]
+      },
+      "genres_own": [
+        [
+          "Afrobeats",
+          2
+        ],
+        [
+          "Hip-Hop",
+          2
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Afrobeats / Rap / Hip Hop",
+      "sa3_prompt": "Ivorian chart instrumental, Afrobeats-rooted crossed with French-language rap and hip-hop, 140 BPM, minor key, log-drum bass, snapping afrobeats percussion, trap hi-hat rolls, bright synth stabs, uptempo coupe-decale-adjacent dance energy, glossy modern mix, bass well forward, a prominent kit and layered hand percussion carrying the arrangement, joyful, energetic and romantic",
+      "suno_prompt": "[style: Ivorian Afrobeats, French rap/hip-hop crossover] [tempo: 140 BPM] [mood: joyful, energetic, romantic] [instruments: log drum, afrobeats percussion, trap hats, synth stabs] [vocal: male lead rapping or half-singing in French, chant-along hook]"
+    },
+    "ET": {
+      "city": "Addis Ababa",
+      "country": "Ethiopia",
+      "tz": "Africa/Addis_Ababa",
+      "readout": {
+        "bpm": 87.59,
+        "mode": "major",
+        "lufs": -12.15,
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "percussion"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "melodic"
+        ],
+        "n_tracks": 3,
+        "excluded_tracks": [
+          "ET-1",
+          "ET-3"
+        ],
+        "bpm_iqr": [
+          85.47,
+          99.97
+        ]
+      },
+      "genres_own": [
+        [
+          "Reggae",
+          2
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Reggae",
+      "sa3_prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 88 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, bass well forward and layered hand percussion carrying the arrangement, romantic, joyful and melodic",
+      "suno_prompt": "[style: Ethiopian reggae-pop, Amharic pop crossover] [tempo: 88 BPM] [mood: romantic, joyful, melodic] [instruments: reggae guitar/organ, bass, hand percussion, synth pads] [vocal: melismatic Amharic lead vocal, sung verse into a reggae-lilt chorus]"
+    },
+    "AO": {
+      "city": "Luanda",
+      "country": "Angola",
+      "tz": "Africa/Luanda",
+      "readout": {
+        "bpm": 136.85,
+        "mode": "minor",
+        "lufs": -12.23,
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "love",
+          "happy"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "AO-2"
+        ],
+        "bpm_iqr": [
+          120.9,
+          148.74
+        ]
+      },
+      "genres_own": [
+        [
+          "African",
+          2
+        ],
+        [
+          "House",
+          1
+        ],
+        [
+          "Baile Funk",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "African / African Music / House / Baile Funk",
+      "sa3_prompt": "Angolan chart instrumental, kuduro-adjacent African dance crossed with house and baile funk, 137 BPM, minor key, driving kuduro-tempo percussion, four-on-the-floor house kick, punchy baile-funk-style bass stabs, bright synth leads, high-energy uptempo dancefloor groove, glossy mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, energetic, romantic and joyful",
+      "suno_prompt": "[style: Angolan kuduro/African dance, house and baile funk crossover] [tempo: 137 BPM] [mood: energetic, romantic, joyful] [instruments: uptempo percussion, house kick, bass stabs, synth leads] [vocal: male lead chanting or singing in Portuguese, call-and-response hook]"
+    },
+    "MZ": {
+      "city": "Maputo",
+      "country": "Mozambique",
+      "tz": "Africa/Maputo",
+      "readout": {
+        "bpm": 112.35,
+        "mode": "major",
+        "lufs": -17.44,
+        "instruments": [
+          "synthesizer",
+          "keyboard",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "melodic"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          97.51,
+          120.19
+        ]
+      },
+      "genres_own": [
+        [
+          "African",
+          3
+        ],
+        [
+          "Amapiano",
+          1
+        ],
+        [
+          "Alternative",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Amapiano / African Music / Alternative",
+      "sa3_prompt": "Mozambican chart instrumental, amapiano-rooted with a wider African-pop crossover current, 112 BPM, major key, log-drum amapiano bass, shaker and hi-hat groove, warm marrabenta-adjacent guitar line, soft synth pads, mid-tempo amapiano sway, glossy modern mix, synth-led textures, keyboard chords and bass well forward carrying the arrangement, romantic, joyful and melodic",
+      "suno_prompt": "[style: Mozambican amapiano, African pop, marrabenta-adjacent guitar colour] [tempo: 112 BPM] [mood: romantic, joyful, melodic] [instruments: log-drum bass, shakers/hats, guitar, synth pads] [vocal: Portuguese lead vocal, sung verse into a chanted amapiano-style hook]"
     }
   },
   "tracks": [
@@ -1754,14 +1925,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "EG-01",
-        "KE-04",
-        "AE-02",
-        "AE-01",
-        "NL-01"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "KE-02",
@@ -1783,14 +1947,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "KE-04",
-        "KE-03",
-        "NG-04",
-        "NG-02",
-        "IN-03"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "KE-03",
@@ -1812,14 +1969,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "KE-04",
-        "KE-02",
-        "IN-03",
-        "NG-02",
-        "AE-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "KE-04",
@@ -1841,14 +1991,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "KE-02",
-        "KE-03",
-        "NG-04",
-        "AE-04",
-        "ID-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AE-01",
@@ -1870,14 +2013,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "grow",
-      "nearest5": [
-        "AE-04",
-        "KE-02",
-        "KE-04",
-        "US-02",
-        "PL-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "AE-02",
@@ -1899,14 +2035,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "ES-02",
-        "AE-03",
-        "AE-04",
-        "ES-01",
-        "ES-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AE-03",
@@ -1928,14 +2057,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "AE-02",
-        "PL-04",
-        "PT-03",
-        "AE-04",
-        "ES-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AE-04",
@@ -1957,14 +2079,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "PL-04",
-        "SG-04",
-        "AE-02",
-        "ID-04",
-        "AE-01"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "TZ-01",
@@ -1986,14 +2101,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "TZ-02",
-        "TZ-03",
-        "TZ-04",
-        "ID-02",
-        "KE-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "TZ-02",
@@ -2015,14 +2123,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "TZ-01",
-        "TZ-04",
-        "US-01",
-        "TZ-03",
-        "UG-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "TZ-03",
@@ -2044,14 +2145,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "GB-02",
-        "AU-03",
-        "GB-04",
-        "IT-04",
-        "NZ-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "TZ-04",
@@ -2073,14 +2167,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "ID-04",
-        "NZ-04",
-        "US-01",
-        "KE-04",
-        "US-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "NG-01",
@@ -2102,14 +2189,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "NG-03",
-        "NG-04",
-        "ZA-01",
-        "ZA-03",
-        "PT-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "NG-02",
@@ -2131,14 +2211,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "KE-02",
-        "ZA-03",
-        "NG-04",
-        "ES-02",
-        "AE-01"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "NG-03",
@@ -2160,14 +2233,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "NG-01",
-        "NG-04",
-        "PT-04",
-        "ID-04",
-        "ZA-03"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "NG-04",
@@ -2189,14 +2255,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "NG-01",
-        "ZA-04",
-        "ZA-03",
-        "ZA-01",
-        "NG-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "GH-01",
@@ -2218,14 +2277,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "GH-04",
-        "TR-02",
-        "EG-01",
-        "GH-03",
-        "FR-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "GH-02",
@@ -2247,14 +2299,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.3,
-      "recipe": "grow",
-      "nearest5": [
-        "DE-01",
-        "FR-03",
-        "GH-04",
-        "FR-02",
-        "DE-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "GH-03",
@@ -2276,14 +2321,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "GH-04",
-        "TR-02",
-        "GH-01",
-        "AR-02",
-        "MA-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "GH-04",
@@ -2305,14 +2343,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "GH-01",
-        "GH-03",
-        "TR-02",
-        "GH-02",
-        "AR-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "UG-01",
@@ -2334,14 +2365,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "UG-02",
-        "MY-03",
-        "UG-03",
-        "ID-03",
-        "CO-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "UG-02",
@@ -2363,14 +2387,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "UG-03",
-        "UG-01",
-        "CV-03",
-        "NZ-02",
-        "NZ-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "UG-03",
@@ -2392,14 +2409,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "UG-02",
-        "UG-01",
-        "CV-03",
-        "CO-02",
-        "CV-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "UG-04",
@@ -2421,14 +2431,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MA-04",
-        "PT-03",
-        "EG-04",
-        "US-03",
-        "BR-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "ZA-01",
@@ -2450,14 +2453,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "ZA-02",
-        "ZA-04",
-        "ZA-03",
-        "NG-04",
-        "NG-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "ZA-02",
@@ -2479,14 +2475,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "ZA-01",
-        "ZA-04",
-        "ZA-03",
-        "NG-04",
-        "NG-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "ZA-03",
@@ -2508,14 +2497,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "ZA-04",
-        "ZA-01",
-        "NG-04",
-        "ZA-02",
-        "NG-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "ZA-04",
@@ -2537,14 +2519,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.1,
-      "recipe": "parallel",
-      "nearest5": [
-        "ZA-01",
-        "ZA-03",
-        "ZA-02",
-        "NG-04",
-        "AE-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "GB-01",
@@ -2566,14 +2541,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "GB-02",
-        "GB-03",
-        "GB-04",
-        "KR-02",
-        "SE-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "GB-02",
@@ -2595,14 +2563,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "GB-04",
-        "GB-01",
-        "GB-03",
-        "TZ-03",
-        "SG-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "GB-03",
@@ -2624,14 +2585,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "GB-01",
-        "GB-02",
-        "GB-04",
-        "AU-01",
-        "US-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "GB-04",
@@ -2653,14 +2607,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "GB-02",
-        "KR-04",
-        "SG-03",
-        "GB-01",
-        "VN-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "BR-01",
@@ -2682,14 +2629,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MX-02",
-        "MX-03",
-        "MX-04",
-        "BR-04",
-        "CO-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "BR-02",
@@ -2711,14 +2651,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "CV-03",
-        "UG-02",
-        "UG-01",
-        "CV-01",
-        "BR-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "BR-03",
@@ -2740,14 +2673,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "ID-03",
-        "UG-01",
-        "UG-04",
-        "BR-02",
-        "US-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "BR-04",
@@ -2769,14 +2695,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "MX-03",
-        "MX-02",
-        "MX-01",
-        "CV-02",
-        "UG-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "KR-01",
@@ -2798,14 +2717,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "KR-03",
-        "KR-02",
-        "SE-03",
-        "KR-04",
-        "ES-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "KR-02",
@@ -2827,14 +2739,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "KR-04",
-        "KR-03",
-        "KR-01",
-        "NL-04",
-        "GB-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "KR-03",
@@ -2856,14 +2761,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "KR-01",
-        "KR-02",
-        "KR-04",
-        "SE-04",
-        "GB-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "KR-04",
@@ -2885,14 +2783,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "KR-02",
-        "GB-04",
-        "PL-01",
-        "KR-01",
-        "GB-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "MX-01",
@@ -2914,14 +2805,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MX-03",
-        "MX-02",
-        "MX-04",
-        "CO-02",
-        "BR-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "MX-02",
@@ -2943,14 +2827,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MX-01",
-        "MX-03",
-        "BR-04",
-        "MX-04",
-        "CO-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "MX-03",
@@ -2972,14 +2849,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MX-01",
-        "MX-02",
-        "MX-04",
-        "BR-04",
-        "CV-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "MX-04",
@@ -3001,14 +2871,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MX-03",
-        "MX-01",
-        "MX-02",
-        "CO-04",
-        "CO-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "US-01",
@@ -3030,14 +2893,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "US-02",
-        "US-03",
-        "TH-04",
-        "TH-03",
-        "ID-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "US-02",
@@ -3059,14 +2915,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "US-01",
-        "TH-02",
-        "US-03",
-        "TH-04",
-        "TH-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "US-03",
@@ -3088,14 +2937,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "US-01",
-        "PT-04",
-        "TH-01",
-        "US-02",
-        "GB-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "US-04",
@@ -3117,14 +2959,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "US-01",
-        "TH-02",
-        "US-02",
-        "MY-04",
-        "TH-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "IN-01",
@@ -3146,14 +2981,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "IN-02",
-        "IN-03",
-        "KE-02",
-        "ID-02",
-        "PT-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "IN-02",
@@ -3175,14 +3003,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "IN-01",
-        "IN-03",
-        "PT-02",
-        "IN-04",
-        "MY-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "IN-03",
@@ -3204,14 +3025,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "KE-02",
-        "ID-02",
-        "KE-03",
-        "IN-01",
-        "KE-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "IN-04",
@@ -3233,14 +3047,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.5,
-      "recipe": "parallel",
-      "nearest5": [
-        "TW-02",
-        "HK-04",
-        "TW-04",
-        "PL-02",
-        "IN-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "ID-01",
@@ -3262,14 +3069,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "ID-02",
-        "SN-02",
-        "MY-02",
-        "TZ-03",
-        "EG-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "ID-02",
@@ -3291,14 +3091,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "ID-01",
-        "IN-03",
-        "TZ-03",
-        "NZ-02",
-        "EG-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "ID-03",
@@ -3320,14 +3113,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MY-03",
-        "UG-01",
-        "BR-03",
-        "MA-04",
-        "VN-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "ID-04",
@@ -3349,14 +3135,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "NZ-04",
-        "TZ-04",
-        "US-01",
-        "AE-04",
-        "GB-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "PT-01",
@@ -3378,14 +3157,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "PT-04",
-        "PT-03",
-        "US-03",
-        "AE-02",
-        "NG-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "PT-02",
@@ -3407,14 +3179,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MY-02",
-        "NG-02",
-        "KE-03",
-        "KE-02",
-        "IN-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "PT-03",
@@ -3436,14 +3201,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "PT-01",
-        "UG-04",
-        "PT-04",
-        "ES-04",
-        "AE-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "PT-04",
@@ -3465,14 +3223,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "PT-01",
-        "US-03",
-        "NG-01",
-        "PT-03",
-        "ID-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "EG-01",
@@ -3494,14 +3245,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "TR-04",
-        "ES-04",
-        "SE-02",
-        "KE-01",
-        "SN-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "EG-02",
@@ -3523,14 +3267,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "SN-02",
-        "TZ-03",
-        "MY-01",
-        "ID-02",
-        "MA-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "EG-03",
@@ -3552,14 +3289,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.1,
-      "recipe": "parallel",
-      "nearest5": [
-        "DE-03",
-        "TR-03",
-        "AR-02",
-        "TR-02",
-        "ES-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "EG-04",
@@ -3581,14 +3311,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MA-03",
-        "TR-04",
-        "MA-04",
-        "SG-01",
-        "IT-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AR-01",
@@ -3610,14 +3333,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.4,
-      "recipe": "parallel",
-      "nearest5": [
-        "AR-03",
-        "GH-01",
-        "AR-02",
-        "MA-02",
-        "TR-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AR-02",
@@ -3639,14 +3355,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "TR-02",
-        "MA-02",
-        "TR-03",
-        "EG-03",
-        "DE-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AR-03",
@@ -3668,14 +3377,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "FR-03",
-        "DE-04",
-        "FR-04",
-        "DE-02",
-        "FR-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AR-04",
@@ -3697,14 +3399,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "SG-02",
-        "SG-04",
-        "PL-01",
-        "SG-03",
-        "PL-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "CO-01",
@@ -3726,14 +3421,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "CO-03",
-        "CO-02",
-        "MX-02",
-        "PT-03",
-        "UG-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "CO-02",
@@ -3755,14 +3443,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MX-01",
-        "CV-03",
-        "MX-03",
-        "UG-01",
-        "CV-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "CO-03",
@@ -3784,14 +3465,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "MX-02",
-        "CO-01",
-        "MY-01",
-        "CO-04",
-        "MX-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "CO-04",
@@ -3813,14 +3487,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "MY-04",
-        "MX-04",
-        "CO-03",
-        "TH-01",
-        "TH-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "PH-01",
@@ -3842,14 +3509,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "PH-02",
-        "PH-03",
-        "PH-04",
-        "NZ-02",
-        "NZ-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "PH-02",
@@ -3871,14 +3531,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "PH-03",
-        "NZ-01",
-        "PH-04",
-        "PH-01",
-        "NZ-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "PH-03",
@@ -3900,14 +3553,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "PH-02",
-        "PH-01",
-        "PH-04",
-        "NZ-01",
-        "SG-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "PH-04",
@@ -3929,14 +3575,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "PH-02",
-        "PH-01",
-        "AU-02",
-        "PH-03",
-        "NZ-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AU-01",
@@ -3958,14 +3597,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "AU-02",
-        "GB-01",
-        "NZ-01",
-        "GB-02",
-        "SE-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AU-02",
@@ -3987,14 +3619,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "AU-01",
-        "NZ-01",
-        "NZ-02",
-        "AU-03",
-        "VN-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AU-03",
@@ -4016,14 +3641,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "SG-03",
-        "ES-03",
-        "IT-01",
-        "GB-04",
-        "IT-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "AU-04",
@@ -4045,14 +3663,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "NZ-04",
-        "ID-04",
-        "HK-02",
-        "GB-04",
-        "TW-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "NZ-01",
@@ -4074,14 +3685,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "NZ-02",
-        "NZ-03",
-        "AU-02",
-        "AU-01",
-        "PH-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "NZ-02",
@@ -4103,14 +3707,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "NZ-01",
-        "NZ-03",
-        "AU-02",
-        "TZ-03",
-        "UG-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "NZ-03",
@@ -4132,14 +3729,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "NZ-01",
-        "NZ-02",
-        "AU-02",
-        "TZ-03",
-        "GB-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "NZ-04",
@@ -4161,14 +3751,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "ID-04",
-        "GB-04",
-        "PL-01",
-        "TZ-04",
-        "AU-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "CV-01",
@@ -4190,14 +3773,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "CV-02",
-        "MX-01",
-        "MY-01",
-        "CV-03",
-        "CO-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "CV-02",
@@ -4219,14 +3795,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "CV-01",
-        "CV-03",
-        "BR-04",
-        "UG-02",
-        "EG-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "CV-03",
@@ -4248,14 +3817,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "UG-02",
-        "CV-02",
-        "MX-03",
-        "CO-02",
-        "UG-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "CV-04",
@@ -4277,14 +3839,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "CV-03",
-        "CO-03",
-        "MX-02",
-        "MY-01",
-        "MA-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "JP-01",
@@ -4306,14 +3861,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "JP-04",
-        "JP-02",
-        "JP-03",
-        "HK-02",
-        "SG-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "JP-02",
@@ -4335,14 +3883,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "JP-03",
-        "JP-04",
-        "HK-03",
-        "HK-02",
-        "TH-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "JP-03",
@@ -4364,14 +3905,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "JP-02",
-        "JP-04",
-        "HK-02",
-        "HK-03",
-        "JP-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "JP-04",
@@ -4393,14 +3927,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "JP-02",
-        "JP-03",
-        "JP-01",
-        "HK-02",
-        "NZ-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TH-01",
@@ -4422,14 +3949,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "TH-04",
-        "TH-02",
-        "TH-03",
-        "HK-03",
-        "US-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TH-02",
@@ -4451,14 +3971,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.1,
-      "recipe": "parallel",
-      "nearest5": [
-        "TH-03",
-        "TH-01",
-        "TH-04",
-        "US-01",
-        "US-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TH-03",
@@ -4480,14 +3993,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "TH-02",
-        "TH-01",
-        "TH-04",
-        "US-01",
-        "US-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TH-04",
@@ -4509,14 +4015,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "TH-01",
-        "US-01",
-        "TH-03",
-        "TH-02",
-        "US-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TW-01",
@@ -4538,14 +4037,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.1,
-      "recipe": "parallel",
-      "nearest5": [
-        "DE-04",
-        "TW-04",
-        "AR-03",
-        "SA-04",
-        "FR-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TW-02",
@@ -4567,14 +4059,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "IN-04",
-        "SA-04",
-        "TW-04",
-        "US-04",
-        "FR-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TW-03",
@@ -4596,14 +4081,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "PL-04",
-        "NL-02",
-        "AE-04",
-        "SG-01",
-        "NZ-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TW-04",
@@ -4625,14 +4103,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "PL-02",
-        "PL-04",
-        "TW-03",
-        "AU-04",
-        "ZA-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TR-01",
@@ -4654,14 +4125,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "TR-02",
-        "TR-03",
-        "SA-04",
-        "DE-04",
-        "FR-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TR-02",
@@ -4683,14 +4147,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "TR-03",
-        "SE-02",
-        "DE-03",
-        "AR-02",
-        "GH-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TR-03",
@@ -4712,14 +4169,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "TR-02",
-        "SE-02",
-        "DE-03",
-        "FR-04",
-        "TR-01"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "TR-04",
@@ -4741,14 +4191,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "NL-04",
-        "PL-04",
-        "FR-01",
-        "IT-04",
-        "AU-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "MY-01",
@@ -4770,14 +4213,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "MA-02",
-        "EG-02",
-        "EG-04",
-        "CV-01",
-        "PT-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "MY-02",
@@ -4799,14 +4235,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "ID-01",
-        "EG-01",
-        "SN-02",
-        "PT-02",
-        "GB-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "MY-03",
@@ -4828,14 +4257,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "ES-01",
-        "ID-03",
-        "UG-01",
-        "DE-03",
-        "EG-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "MY-04",
@@ -4857,14 +4279,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "TH-04",
-        "US-04",
-        "NZ-04",
-        "US-01",
-        "CO-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "DE-01",
@@ -4886,14 +4301,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "FR-03",
-        "FR-02",
-        "DE-02",
-        "DE-04",
-        "SA-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "DE-02",
@@ -4915,14 +4323,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.5,
-      "recipe": "parallel",
-      "nearest5": [
-        "DE-01",
-        "FR-02",
-        "FR-03",
-        "DE-04",
-        "DE-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "DE-03",
@@ -4944,14 +4345,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.4,
-      "recipe": "parallel",
-      "nearest5": [
-        "EG-03",
-        "TR-03",
-        "TR-02",
-        "ES-02",
-        "TR-04"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "DE-04",
@@ -4973,14 +4367,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "SA-04",
-        "FR-02",
-        "DE-02",
-        "DE-01",
-        "AR-03"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "FR-01",
@@ -4999,14 +4386,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.4,
-      "recipe": "grow",
-      "nearest5": [
-        "FR-04",
-        "TR-04",
-        "FR-03",
-        "TR-02",
-        "SE-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "FR-02",
@@ -5034,14 +4414,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.4,
-      "recipe": "inpaint",
-      "nearest5": [
-        "DE-01",
-        "FR-03",
-        "DE-02",
-        "DE-04",
-        "FR-04"
-      ]
+      "recipe": "inpaint"
     },
     {
       "id": "FR-03",
@@ -5054,7 +4427,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -5071,15 +4444,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "DE-01",
-        "FR-02",
-        "DE-02",
-        "FR-04",
-        "FR-01"
-      ]
+      "lufs": -14.4,
+      "recipe": "grow"
     },
     {
       "id": "FR-04",
@@ -5098,27 +4464,20 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.5,
-      "recipe": "grow",
-      "nearest5": [
-        "FR-01",
-        "SE-01",
-        "FR-03",
-        "FR-02",
-        "SE-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "ES-01",
       "region": "ES",
       "file": "audio/ES-01.mp3",
-      "duration_s": 96.0,
+      "duration_s": 114.0,
       "title": "Luz de Medianoche",
       "artist": "La Latina Trio",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -5128,28 +4487,21 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.1,
-      "recipe": "inpaint",
-      "nearest5": [
-        "AE-02",
-        "ES-04",
-        "MY-03",
-        "ES-02",
-        "AE-03"
-      ]
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "ES-02",
       "region": "ES",
       "file": "audio/ES-02.mp3",
-      "duration_s": 96.0,
+      "duration_s": 114.0,
       "title": "Luz de Madrid",
       "artist": "Malasana Cassette",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -5162,14 +4514,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "inpaint",
-      "nearest5": [
-        "AE-02",
-        "DE-03",
-        "AE-04",
-        "NG-02",
-        "ES-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "ES-03",
@@ -5188,27 +4533,20 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "NL-02",
-        "SG-03",
-        "AU-03",
-        "KR-01",
-        "IT-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "ES-04",
       "region": "ES",
       "file": "audio/ES-04.mp3",
-      "duration_s": 96.0,
+      "duration_s": 114.0,
       "title": "Noche en Sol",
       "artist": "Retiro Sur Cassette",
       "mirrors_rank": 1,
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -5219,14 +4557,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "inpaint",
-      "nearest5": [
-        "PL-04",
-        "AU-03",
-        "GB-01",
-        "IT-04",
-        "AE-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "IT-01",
@@ -5245,14 +4576,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "IT-03",
-        "AU-03",
-        "PL-01",
-        "VN-04",
-        "GB-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "IT-02",
@@ -5271,27 +4595,20 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "IT-01",
-        "PL-03",
-        "VN-02",
-        "KR-01",
-        "MA-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "IT-03",
       "region": "IT",
       "file": "audio/IT-03.mp3",
-      "duration_s": 96.0,
+      "duration_s": 114.0,
       "title": "Estate a Mezzanotte",
       "artist": "Sempione Circuit",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -5302,14 +4619,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "inpaint",
-      "nearest5": [
-        "IT-01",
-        "SE-03",
-        "VN-04",
-        "GB-01",
-        "SE-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "IT-04",
@@ -5328,14 +4638,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "grow",
-      "nearest5": [
-        "AU-03",
-        "NL-04",
-        "ES-03",
-        "IT-01",
-        "NL-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "NL-01",
@@ -5348,7 +4651,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -5366,14 +4669,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "NL-02",
-        "IT-04",
-        "AU-03",
-        "ES-03",
-        "TR-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "NL-02",
@@ -5386,7 +4682,7 @@
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -5404,14 +4700,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "ES-03",
-        "SG-01",
-        "SG-03",
-        "NL-01",
-        "AU-03"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "NL-03",
@@ -5430,14 +4719,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "SA-03",
-        "SA-01",
-        "PL-03",
-        "SE-04",
-        "SA-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "NL-04",
@@ -5450,7 +4732,7 @@
       "mirrors_cities": 10,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -5468,14 +4750,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "TR-04",
-        "KR-02",
-        "IT-04",
-        "GB-04",
-        "GB-01"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "PL-01",
@@ -5494,27 +4769,20 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "SG-03",
-        "PL-04",
-        "GB-04",
-        "IT-01",
-        "VN-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "PL-02",
       "region": "PL",
       "file": "audio/PL-02.mp3",
-      "duration_s": 96.0,
+      "duration_s": 114.0,
       "title": "Taniec w Warszawie",
       "artist": "Saska Kepa Skyline",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -5526,14 +4794,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "inpaint",
-      "nearest5": [
-        "TW-04",
-        "FR-04",
-        "EG-04",
-        "TR-04",
-        "NL-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "PL-03",
@@ -5552,27 +4813,20 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "IT-04",
-        "NL-04",
-        "IT-02",
-        "NL-03",
-        "TR-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "PL-04",
       "region": "PL",
       "file": "audio/PL-04.mp3",
-      "duration_s": 96.0,
+      "duration_s": 114.0,
       "title": "Noc w Wisla",
       "artist": "Mokotow Sessions",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -5581,14 +4835,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "inpaint",
-      "nearest5": [
-        "PL-01",
-        "ES-04",
-        "AE-04",
-        "TW-03",
-        "AU-03"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SE-01",
@@ -5607,14 +4854,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "FR-04",
-        "SE-04",
-        "SE-02",
-        "SG-01",
-        "KR-03"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SE-02",
@@ -5633,14 +4873,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "TR-03",
-        "TR-02",
-        "PL-04",
-        "TR-04",
-        "SE-03"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SE-03",
@@ -5659,14 +4892,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "VN-04",
-        "GB-01",
-        "KR-01",
-        "IT-01",
-        "AU-03"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SE-04",
@@ -5685,14 +4911,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "SG-03",
-        "IT-01",
-        "ES-03",
-        "SE-03",
-        "NL-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SA-01",
@@ -5711,27 +4930,20 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "grow",
-      "nearest5": [
-        "SA-03",
-        "NL-03",
-        "SG-04",
-        "PL-03",
-        "NL-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SA-02",
       "region": "SA",
       "file": "audio/SA-02.mp3",
-      "duration_s": 96.0,
+      "duration_s": 114.0,
       "title": "Raqs fi Hay",
       "artist": "Diriyah Collective",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -5740,14 +4952,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "inpaint",
-      "nearest5": [
-        "ES-03",
-        "SA-03",
-        "NL-03",
-        "VN-01",
-        "IT-01"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SA-03",
@@ -5766,27 +4971,20 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "SA-01",
-        "NL-03",
-        "SA-02",
-        "ES-03",
-        "AR-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SA-04",
       "region": "SA",
       "file": "audio/SA-04.mp3",
-      "duration_s": 96.0,
+      "duration_s": 114.0,
       "title": "Sayf fi Shams",
       "artist": "Al Murabba Set",
       "mirrors_rank": 1,
       "mirrors_cities": 3,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -5796,14 +4994,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "inpaint",
-      "nearest5": [
-        "DE-04",
-        "FR-02",
-        "FR-04",
-        "DE-01",
-        "SE-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "MA-01",
@@ -5822,14 +5013,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.4,
-      "recipe": "grow",
-      "nearest5": [
-        "NL-03",
-        "IT-04",
-        "ES-03",
-        "PL-03",
-        "SA-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "MA-02",
@@ -5842,7 +5026,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -5859,15 +5043,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "MA-03",
-        "MY-01",
-        "AR-02",
-        "EG-04",
-        "EG-02"
-      ]
+      "lufs": -14.0,
+      "recipe": "grow"
     },
     {
       "id": "MA-03",
@@ -5886,14 +5063,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "EG-04",
-        "MA-02",
-        "ES-04",
-        "EG-02",
-        "AE-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "MA-04",
@@ -5906,7 +5076,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -5923,15 +5093,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3,
-      "recipe": "parallel",
-      "nearest5": [
-        "UG-04",
-        "VN-02",
-        "EG-04",
-        "NL-04",
-        "ES-04"
-      ]
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "VN-01",
@@ -5950,14 +5113,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "VN-03",
-        "VN-04",
-        "GB-04",
-        "SG-03",
-        "AU-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "VN-02",
@@ -5976,14 +5132,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "KR-02",
-        "NL-04",
-        "MA-04",
-        "IT-02",
-        "TR-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "VN-03",
@@ -6002,14 +5151,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "VN-01",
-        "VN-04",
-        "GB-04",
-        "PL-01",
-        "AU-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "VN-04",
@@ -6028,27 +5170,20 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "grow",
-      "nearest5": [
-        "VN-03",
-        "VN-01",
-        "SE-03",
-        "IT-01",
-        "GB-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SG-01",
       "region": "SG",
       "file": "audio/SG-01.mp3",
-      "duration_s": 102.0,
+      "duration_s": 114.0,
       "title": "Malam di Singapura",
       "artist": "Tanjong Pagar Night Bus",
       "mirrors_rank": 1,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -6062,14 +5197,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "mixed",
-      "nearest5": [
-        "NL-02",
-        "SG-03",
-        "GB-02",
-        "PL-04",
-        "SE-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SG-02",
@@ -6088,14 +5216,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "AR-04",
-        "SG-04",
-        "AE-04",
-        "PL-01",
-        "AE-01"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SG-03",
@@ -6114,27 +5235,20 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "PL-01",
-        "GB-04",
-        "ES-03",
-        "AU-03",
-        "NL-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SG-04",
       "region": "SG",
       "file": "audio/SG-04.mp3",
-      "duration_s": 96.0,
+      "duration_s": 114.0,
       "title": "Malam di Singapura",
       "artist": "Haji Lane Society",
       "mirrors_rank": 4,
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -6142,15 +5256,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3,
-      "recipe": "inpaint",
-      "nearest5": [
-        "AE-04",
-        "PL-01",
-        "SG-02",
-        "PL-04",
-        "AU-03"
-      ]
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "HK-01",
@@ -6169,14 +5276,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "AR-02",
-        "HK-04",
-        "TZ-02",
-        "GH-03",
-        "TR-02"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "HK-02",
@@ -6195,14 +5295,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "TZ-03",
-        "JP-02",
-        "NL-02",
-        "GB-02",
-        "HK-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "HK-03",
@@ -6221,14 +5314,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "TH-01",
-        "US-01",
-        "JP-02",
-        "TH-02",
-        "TH-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "HK-04",
@@ -6247,27 +5333,20 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "grow",
-      "nearest5": [
-        "US-03",
-        "GB-03",
-        "US-01",
-        "HK-02",
-        "SG-01"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SN-01",
       "region": "SN",
       "file": "audio/SN-01.mp3",
-      "duration_s": 102.0,
+      "duration_s": 114.0,
       "title": "Nawet ci Ndox",
       "artist": "Plateau Nuit Cassette",
       "mirrors_rank": 1,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -6283,14 +5362,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "mixed",
-      "nearest5": [
-        "SN-04",
-        "SN-03",
-        "SG-04",
-        "NG-02",
-        "KR-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SN-02",
@@ -6321,27 +5393,20 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
-      "nearest5": [
-        "EG-02",
-        "ID-01",
-        "EG-01",
-        "MY-02",
-        "NG-02"
-      ]
+      "recipe": "parallel"
     },
     {
       "id": "SN-03",
       "region": "SN",
       "file": "audio/SN-03.mp3",
-      "duration_s": 113.88,
+      "duration_s": 114.0,
       "title": "Xol bu Ndox",
       "artist": "Almadies Sound",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -6359,14 +5424,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.1,
-      "recipe": "parallel",
-      "nearest5": [
-        "SN-04",
-        "SN-01",
-        "DE-03",
-        "NG-02",
-        "ES-04"
-      ]
+      "recipe": "grow"
     },
     {
       "id": "SN-04",
@@ -6388,14 +5446,311 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.0,
-      "recipe": "inpaint",
-      "nearest5": [
-        "SN-01",
-        "SN-03",
-        "IT-02",
-        "NG-02",
-        "ES-04"
-      ]
+      "recipe": "inpaint"
+    },
+    {
+      "id": "CI-01",
+      "region": "CI",
+      "file": "audio/CI-01.mp3",
+      "duration_s": 114.0,
+      "title": "Ame de Soleil",
+      "artist": "Adjame Radio",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "CI-02",
+      "region": "CI",
+      "file": "audio/CI-02.mp3",
+      "duration_s": 114.0,
+      "title": "Groove a Soleil",
+      "artist": "Adjame Union",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow"
+    },
+    {
+      "id": "CI-03",
+      "region": "CI",
+      "file": "audio/CI-03.mp3",
+      "duration_s": 114.0,
+      "title": "Clarte de Abidjan",
+      "artist": "Treichville Union",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "CI-04",
+      "region": "CI",
+      "file": "audio/CI-04.mp3",
+      "duration_s": 114.0,
+      "title": "Groove a Minuit",
+      "artist": "Marcory Society",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "ET-01",
+      "region": "ET",
+      "file": "audio/ET-01.mp3",
+      "duration_s": 114.0,
+      "title": "Chewata be Tsehay",
+      "artist": "Mexico Sefer Rooftop Crew",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "ET-02",
+      "region": "ET",
+      "file": "audio/ET-02.mp3",
+      "duration_s": 114.0,
+      "title": "Menged ye Sefer",
+      "artist": "Kazanchis Lamplight",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "ET-03",
+      "region": "ET",
+      "file": "audio/ET-03.mp3",
+      "duration_s": 114.0,
+      "title": "Bega be Sefer",
+      "artist": "Arat Kilo Lamplight",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "ET-04",
+      "region": "ET",
+      "file": "audio/ET-04.mp3",
+      "duration_s": 114.0,
+      "title": "Birhan ye Chereka",
+      "artist": "Meskel Sessions",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "AO-01",
+      "region": "AO",
+      "file": "audio/AO-01.mp3",
+      "duration_s": 114.0,
+      "title": "Luz de Meia-noite",
+      "artist": "Rangel Circuit",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "AO-02",
+      "region": "AO",
+      "file": "audio/AO-02.mp3",
+      "duration_s": 114.0,
+      "title": "Noite em Kianda",
+      "artist": "Kilamba Noite Society",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "AO-03",
+      "region": "AO",
+      "file": "audio/AO-03.mp3",
+      "duration_s": 114.0,
+      "title": "Rua da Luanda",
+      "artist": "Alvalade Rooftop Crew",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "grow"
+    },
+    {
+      "id": "AO-04",
+      "region": "AO",
+      "file": "audio/AO-04.mp3",
+      "duration_s": 114.0,
+      "title": "Rua da Meia-noite",
+      "artist": "Maianga Night Bus",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "MZ-01",
+      "region": "MZ",
+      "file": "audio/MZ-01.mp3",
+      "duration_s": 114.0,
+      "title": "Claridade de Maputo",
+      "artist": "Polana Noite Night Bus",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.3,
+      "recipe": "grow"
+    },
+    {
+      "id": "MZ-02",
+      "region": "MZ",
+      "file": "audio/MZ-02.mp3",
+      "duration_s": 114.0,
+      "title": "Calor em Madrugada",
+      "artist": "Sommerschield Yard Sessions",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.3,
+      "recipe": "grow"
+    },
+    {
+      "id": "MZ-03",
+      "region": "MZ",
+      "file": "audio/MZ-03.mp3",
+      "duration_s": 114.0,
+      "title": "Alma de Maputo",
+      "artist": "Xipamanine Lamplight",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.3,
+      "recipe": "grow"
+    },
+    {
+      "id": "MZ-04",
+      "region": "MZ",
+      "file": "audio/MZ-04.mp3",
+      "duration_s": 114.0,
+      "title": "Noite na Madrugada",
+      "artist": "Coop Band",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.4,
+      "recipe": "grow"
     }
   ]
 }
