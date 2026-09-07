@@ -409,6 +409,7 @@ footer a:hover{color:#fff}
     <button class="ctl icon" id="btnNext" title="next track (n)" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16.5 5h2.5v14h-2.5z"/></svg></button>
     <button class="ctl icon" id="btnMute" title="mute (m)" aria-label="Mute"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16.5 8.5a4.5 4.5 0 0 1 0 7M18.8 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 9v6h4l5 4V5L8 9z"/></svg></button>
     <input id="vol" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+    <button class="ctl" id="btnMode" title="drift: each next track is the closest by sound (d)" aria-pressed="false">follow the sun</button>
     <button class="ctl" id="btnPrompt">show prompt</button>
   </div>
 
@@ -672,6 +673,14 @@ var lib = null, regionsByIso = {}, poolByRegion = {}, playedByRegion = {};
 /* RUN = how many tracks a region gets before the sun moves on. 1 keeps the rule
    "never the same region twice in a row" literal; raise it for longer city sets. */
 var queue = [], lastRegion = null, RUN = 1;
+var trackById = {};
+/* Drift: instead of the sun, the next track is the closest by sound to the one
+   playing - nearest5 per track is computed at publish time (refresh/step7b_nearest.py,
+   CLAP audio embeddings, radio/research/CLOSENESS.md). Rule: nearest untried
+   track, never the same city twice in a row, the last three cities stand aside.
+   When the list is missing or used up, that step falls back to the sun. */
+var DRIFT = false;
+try { DRIFT = localStorage.getItem("hisia.mode") === "drift"; } catch(e){}
 
 function loadLibrary(){
   return fetch("library.json", {cache:"no-store"})
@@ -725,9 +734,34 @@ function pickRegion(){
   return cands[0];
 }
 
+function pickDrift(from){
+  if (!from || !from.nearest5 || !from.nearest5.length) return null;
+  var skip = recent.slice(Math.max(0, recent.length - 3));
+  for (var i = 0; i < from.nearest5.length; i++){
+    var t = trackById[from.nearest5[i]];
+    if (!t || !poolByRegion[t.region]) continue;
+    if (t.region === from.region || skip.indexOf(t.region) !== -1) continue;
+    if (playedByRegion[t.region].indexOf(t.id) !== -1) continue;
+    return t;
+  }
+  return null;
+}
+
 function refill(){
   var guard = 0;
   while (queue.length < 3 && guard++ < 40){
+    if (DRIFT){
+      var from = queue.length ? queue[queue.length - 1] : current;
+      var near = pickDrift(from);
+      if (near){
+        near.by = "sound";
+        playedByRegion[near.region].push(near.id); queue.push(near);
+        lastRegion = near.region;
+        recent.push(near.region);
+        if (recent.length > 4) recent.shift();
+        continue;
+      }
+    }
     var iso = pickRegion();
     if (!iso) break;
     var pool = poolByRegion[iso], played = playedByRegion[iso];
@@ -735,7 +769,7 @@ function refill(){
     if (!fresh.length){ played.length = 0; fresh = pool.slice(); }
     shuffle(fresh);
     var take = fresh.slice(0, Math.min(RUN, fresh.length));
-    take.forEach(function(t){ played.push(t.id); queue.push(t); });
+    take.forEach(function(t){ t.by = "sun"; played.push(t.id); queue.push(t); });
     lastRegion = iso;
     recent.push(iso);
     if (recent.length > 4) recent.shift();
@@ -953,7 +987,8 @@ function paint(){
   var n = current.mirrors_cities || 1;
   elHonest.textContent = "a variation on this week's " + r.city + " chart · after #" +
     (current.mirrors_rank || 1) + (n > 1 ? " · a hit in " + n + " cities this week" : "") +
-    " · AI-generated · no real songs" + provenance(current);
+    " · AI-generated · no real songs" + provenance(current) +
+    (current.by === "sound" ? " · closest by sound" : "");
   elPromptText.textContent = r.sa3_prompt || "";
   document.title = r.city + " · World Sound";
   requestAnimationFrame(fitStrip);
@@ -978,7 +1013,7 @@ function paintNext(){
   if (!t){ elNext.textContent = ""; return; }
   var r = regionsByIso[t.region];
   if (!r){ elNext.textContent = ""; return; }
-  elNext.innerHTML = '<span class="pre">following the sun · </span>next · <b>' + escapeHTML(r.city) + "</b> " + localClock(r.tz);
+  elNext.innerHTML = '<span class="pre">' + (DRIFT ? "drifting" : "following the sun") + ' · </span>next · <b>' + escapeHTML(r.city) + "</b> " + localClock(r.tz);
   paintStrip();
 }
 
@@ -1144,6 +1179,27 @@ vol.addEventListener("input", function(){
   if (PLAIN){ players.forEach(function(p){ try { p.el.volume = parseFloat(vol.value); } catch(e){} }); return; }
   master.gain.setTargetAtTime(parseFloat(vol.value), ctx.currentTime, 0.02);
 });
+var btnMode = document.getElementById("btnMode");
+function setMode(drift){
+  DRIFT = !!drift;
+  btnMode.textContent = DRIFT ? "drift" : "follow the sun";
+  btnMode.setAttribute("aria-pressed", DRIFT ? "true" : "false");
+  try { localStorage.setItem("hisia.mode", DRIFT ? "drift" : "sun"); } catch(e){}
+  /* re-plan what comes next; what is already playing stays */
+  if (current){
+    queue.forEach(function(t){
+      var played = playedByRegion[t.region] || [], i = played.indexOf(t.id);
+      if (i !== -1) played.splice(i, 1);
+      var j = recent.lastIndexOf(t.region);
+      if (j !== -1) recent.splice(j, 1);
+    });
+    queue.length = 0;
+    refill();
+    if (ctx) preloadNext(); else paintNext();
+  }
+}
+setMode(DRIFT);
+btnMode.addEventListener("click", function(){ setMode(!DRIFT); });
 btnPrompt.addEventListener("click", function(){
   var open = !elPromptBox.hidden;
   elPromptBox.hidden = open;
@@ -1167,6 +1223,7 @@ document.addEventListener("keydown", function(e){
   if (e.code === "Space"){ e.preventDefault(); togglePlay(); }
   else if (e.key === "n" || e.key === "N"){ if (!ctx){ begin(); } else advance(true); }
   else if (e.key === "m" || e.key === "M"){ toggleMute(); }
+  else if (e.key === "d" || e.key === "D"){ setMode(!DRIFT); }
 });
 
 /* ---------------- puppet polling ---------------- */
@@ -1196,8 +1253,10 @@ function startPuppet(){
 loadLibrary().then(function(data){
   lib = data;
   regionsByIso = data.regions || {};
+  if (Q0.get("mode") === "drift" || Q0.get("mode") === "sun") setMode(Q0.get("mode") === "drift");
   (data.tracks || []).forEach(function(t){
     if (!regionsByIso[t.region]) return;
+    trackById[t.id] = t;
     (poolByRegion[t.region] = poolByRegion[t.region] || []).push(t);
     playedByRegion[t.region] = playedByRegion[t.region] || [];
   });
