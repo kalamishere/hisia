@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T14:34:41Z",
+  "generated_at": "2026-09-07T16:37:48Z",
   "chart_week": "2026-08-24",
-  "version": "v4-interim",
+  "version": "v5",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
     "KE": {
@@ -1902,6 +1902,184 @@
       "genre_family": "Amapiano / African Music / Alternative",
       "sa3_prompt": "Mozambican chart instrumental, amapiano-rooted with a wider African-pop crossover current, 112 BPM, major key, log-drum amapiano bass, shaker and hi-hat groove, warm marrabenta-adjacent guitar line, soft synth pads, mid-tempo amapiano sway, glossy modern mix, synth-led textures, keyboard chords and bass well forward carrying the arrangement, romantic, joyful and melodic",
       "suno_prompt": "[style: Mozambican amapiano, African pop, marrabenta-adjacent guitar colour] [tempo: 112 BPM] [mood: romantic, joyful, melodic] [instruments: log-drum bass, shakers/hats, guitar, synth pads] [vocal: Portuguese lead vocal, sung verse into a chanted amapiano-style hook]"
+    },
+    "ZW": {
+      "city": "Harare",
+      "country": "Zimbabwe",
+      "tz": "Africa/Harare",
+      "readout": {
+        "bpm": 76.0,
+        "mode": "major",
+        "lufs": -14.43,
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "summer"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          66.26,
+          87.59
+        ]
+      },
+      "genres_own": [
+        [
+          "Afro-Beat",
+          3
+        ],
+        [
+          "Afro-Pop",
+          1
+        ],
+        [
+          "African Dancehall",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Afro-Beat / Afro-Pop / African Dancehall",
+      "sa3_prompt": "Zimbabwean chart instrumental, afrobeat-rooted with an afro-pop and dancehall crossover current, 76 BPM, major key, driving afrobeat percussion, deep rounded bass, bright guitar riff, dancehall-style skanking chords, uptempo dance groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, deep and sunny",
+      "suno_prompt": "[style: Zimbabwean afrobeat, afro-pop, dancehall crossover] [tempo: 76 BPM] [mood: romantic, deep, sunny] [instruments: percussion, bass, guitar riff, skanking chords] [vocal: Shona-language lead, sung verse into a chanted hook]"
+    },
+    "CM": {
+      "city": "Douala",
+      "country": "Cameroon",
+      "tz": "Africa/Douala",
+      "readout": {
+        "bpm": 101.37,
+        "mode": "major",
+        "lufs": -12.45,
+        "instruments": [
+          "bass",
+          "synthesizer",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "CM-1"
+        ],
+        "bpm_iqr": [
+          96.43,
+          106.23
+        ]
+      },
+      "genres_own": [
+        [
+          "Afrobeats",
+          2
+        ],
+        [
+          "R&B",
+          1
+        ],
+        [
+          "Worldwide",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "R&B / Soul / Afrobeats / Worldwide",
+      "sa3_prompt": "Cameroonian chart instrumental, Afrobeats crossed with R&B/soul warmth, 101 BPM, major key, warm afrobeats percussion, soulful rounded bass, smooth electric guitar and keys, soft synth pads, mid-tempo soulful groove, glossy modern mix, bass well forward, synth-led textures and a prominent kit carrying the arrangement, romantic, energetic and joyful",
+      "suno_prompt": "[style: Cameroonian Afrobeats, R&B/soul crossover] [tempo: 101 BPM] [mood: romantic, energetic, joyful] [instruments: percussion, bass, guitar/keys, synth pads] [vocal: French-language lead, smooth sung verse into a soulful hook]"
+    },
+    "JM": {
+      "city": "Kingston",
+      "country": "Jamaica",
+      "tz": "America/Jamaica",
+      "readout": {
+        "bpm": 65.42,
+        "mode": "minor",
+        "lufs": -11.31,
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          64.6,
+          66.26
+        ]
+      },
+      "genres_own": [
+        [
+          "Reggae",
+          3
+        ],
+        [
+          "Hip-Hop",
+          1
+        ],
+        [
+          "Dub",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Hip-Hop / Rap / Reggae / Dub",
+      "sa3_prompt": "Jamaican chart instrumental, dancehall/reggae-rooted with a hip-hop crossover current, 65 BPM, minor key, skanking reggae guitar and organ, deep dub-style sub bass, punchy dancehall riddim drums, trap hi-hat accents, laid-back groove into a driving dancehall lift, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "suno_prompt": "[style: Jamaican dancehall/reggae, dub, hip-hop crossover] [tempo: 65 BPM] [mood: romantic, energetic, joyful] [instruments: reggae guitar/organ, sub bass, riddim drums, trap hats] [vocal: patois lead vocal, chatted verse into a sung or chanted hook]"
+    },
+    "DO": {
+      "city": "Santo Domingo",
+      "country": "Dominican Republic",
+      "tz": "America/Santo_Domingo",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "lufs": -11.68,
+        "instruments": [
+          "bass",
+          "synthesizer",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "love",
+          "happy"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          118.8,
+          132.51
+        ]
+      },
+      "genres_own": [
+        [
+          "Latin Music",
+          2
+        ],
+        [
+          "Underground Rap",
+          1
+        ],
+        [
+          "Música tropical",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Underground Rap / Música tropical / Latin Music",
+      "sa3_prompt": "Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 123 BPM, major key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, bass well forward, synth-led textures and a prominent kit carrying the arrangement, energetic, romantic and joyful",
+      "suno_prompt": "[style: Dominican dembow, underground rap, Latin tropical crossover] [tempo: 123 BPM] [mood: energetic, romantic, joyful] [instruments: dembow drums, sub bass, synth stabs, percussion] [vocal: Spanish-language lead, rapped verse into a sung dembow hook]"
     }
   },
   "tracks": [
@@ -1960,7 +2138,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -1968,8 +2146,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2,
-      "recipe": "parallel"
+      "lufs": -14.1,
+      "recipe": "grow"
     },
     {
       "id": "KE-04",
@@ -1982,7 +2160,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -1991,7 +2169,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "AE-01",
@@ -2026,7 +2204,7 @@
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -2035,7 +2213,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "AE-03",
@@ -2048,7 +2226,7 @@
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -2056,8 +2234,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.2,
-      "recipe": "parallel"
+      "lufs": -14.3,
+      "recipe": "grow"
     },
     {
       "id": "AE-04",
@@ -2180,7 +2358,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -2188,8 +2366,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2,
-      "recipe": "parallel"
+      "lufs": -14.3,
+      "recipe": "grow"
     },
     {
       "id": "NG-02",
@@ -2312,7 +2490,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -2320,8 +2498,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3,
-      "recipe": "parallel"
+      "lufs": -14.5,
+      "recipe": "grow"
     },
     {
       "id": "GH-04",
@@ -2334,7 +2512,7 @@
       "mirrors_cities": 4,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -2343,7 +2521,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "UG-01",
@@ -2356,7 +2534,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -2365,7 +2543,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "UG-02",
@@ -2378,7 +2556,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -2387,7 +2565,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "UG-03",
@@ -2400,7 +2578,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -2409,7 +2587,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "UG-04",
@@ -2422,7 +2600,7 @@
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -2431,7 +2609,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "ZA-01",
@@ -2444,7 +2622,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -2452,8 +2630,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.3,
-      "recipe": "parallel"
+      "lufs": -14.4,
+      "recipe": "grow"
     },
     {
       "id": "ZA-02",
@@ -2466,7 +2644,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -2474,8 +2652,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2,
-      "recipe": "parallel"
+      "lufs": -14.3,
+      "recipe": "grow"
     },
     {
       "id": "ZA-03",
@@ -2488,7 +2666,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -2496,8 +2674,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3,
-      "recipe": "parallel"
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "ZA-04",
@@ -2510,7 +2688,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -2518,8 +2696,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.1,
-      "recipe": "parallel"
+      "lufs": -14.4,
+      "recipe": "grow"
     },
     {
       "id": "GB-01",
@@ -2532,7 +2710,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -2541,7 +2719,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "GB-02",
@@ -2554,7 +2732,7 @@
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -2563,7 +2741,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "GB-03",
@@ -2576,7 +2754,7 @@
       "mirrors_cities": 12,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -2585,7 +2763,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "GB-04",
@@ -2598,7 +2776,7 @@
       "mirrors_cities": 6,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -2607,7 +2785,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "BR-01",
@@ -2620,7 +2798,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -2629,7 +2807,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "BR-02",
@@ -2642,7 +2820,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -2651,7 +2829,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "BR-03",
@@ -2664,7 +2842,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -2673,7 +2851,7 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "BR-04",
@@ -2686,7 +2864,7 @@
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -2694,8 +2872,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3,
-      "recipe": "parallel"
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "KR-01",
@@ -2972,7 +3150,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -2981,7 +3159,7 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "IN-02",
@@ -2994,7 +3172,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -3003,7 +3181,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "IN-03",
@@ -3038,7 +3216,7 @@
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -3046,8 +3224,8 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.5,
-      "recipe": "parallel"
+      "lufs": -14.3,
+      "recipe": "grow"
     },
     {
       "id": "ID-01",
@@ -3258,7 +3436,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -3267,7 +3445,7 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "EG-03",
@@ -3280,7 +3458,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -3288,8 +3466,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.1,
-      "recipe": "parallel"
+      "lufs": -14.2,
+      "recipe": "grow"
     },
     {
       "id": "EG-04",
@@ -3302,7 +3480,7 @@
       "mirrors_cities": 3,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -3311,7 +3489,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "AR-01",
@@ -4292,7 +4470,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -4300,8 +4478,8 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.3,
-      "recipe": "parallel"
+      "lufs": -14.5,
+      "recipe": "grow"
     },
     {
       "id": "DE-02",
@@ -4314,7 +4492,7 @@
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -4322,8 +4500,8 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.5,
-      "recipe": "parallel"
+      "lufs": -14.4,
+      "recipe": "grow"
     },
     {
       "id": "DE-03",
@@ -4336,7 +4514,7 @@
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4344,8 +4522,8 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.4,
-      "recipe": "parallel"
+      "lufs": -14.3,
+      "recipe": "grow"
     },
     {
       "id": "DE-04",
@@ -4358,7 +4536,7 @@
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4367,7 +4545,7 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "grow"
     },
     {
       "id": "FR-01",
@@ -5750,6 +5928,310 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.4,
+      "recipe": "grow"
+    },
+    {
+      "id": "ZW-01",
+      "region": "ZW",
+      "file": "audio/ZW-01.mp3",
+      "duration_s": 114.0,
+      "title": "Usiku hwe Ruvara",
+      "artist": "Belvedere Sessions",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.3,
+      "recipe": "grow"
+    },
+    {
+      "id": "ZW-02",
+      "region": "ZW",
+      "file": "audio/ZW-02.mp3",
+      "duration_s": 114.0,
+      "title": "Ngoma ye Nharaunda",
+      "artist": "Kambuzuma Skyline",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "ZW-03",
+      "region": "ZW",
+      "file": "audio/ZW-03.mp3",
+      "duration_s": 114.0,
+      "title": "Mwoyo we Nyanga",
+      "artist": "Newlands Band",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "ZW-04",
+      "region": "ZW",
+      "file": "audio/ZW-04.mp3",
+      "duration_s": 114.0,
+      "title": "Usiku hwe Usiku",
+      "artist": "Belvedere Night Bus",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "grow"
+    },
+    {
+      "id": "CM-01",
+      "region": "CM",
+      "file": "audio/CM-01.mp3",
+      "duration_s": 114.0,
+      "title": "Coeur de Douala",
+      "artist": "Makepe Choir",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.4,
+      "recipe": "grow"
+    },
+    {
+      "id": "CM-02",
+      "region": "CM",
+      "file": "audio/CM-02.mp3",
+      "duration_s": 114.0,
+      "title": "Coeur de Quartier",
+      "artist": "Deido Choir",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow"
+    },
+    {
+      "id": "CM-03",
+      "region": "CM",
+      "file": "audio/CM-03.mp3",
+      "duration_s": 114.0,
+      "title": "Makossa a Makossa",
+      "artist": "New Bell Union",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "CM-04",
+      "region": "CM",
+      "file": "audio/CM-04.mp3",
+      "duration_s": 114.0,
+      "title": "Saison a Douala",
+      "artist": "Deido Cassette",
+      "mirrors_rank": 1,
+      "mirrors_cities": 39,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "JM-01",
+      "region": "JM",
+      "file": "audio/JM-01.mp3",
+      "duration_s": 114.0,
+      "title": "Night inna Midnight",
+      "artist": "Cross Roads Skyline",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.3,
+      "recipe": "grow"
+    },
+    {
+      "id": "JM-02",
+      "region": "JM",
+      "file": "audio/JM-02.mp3",
+      "duration_s": 114.0,
+      "title": "Dance inna Riddim",
+      "artist": "Trench Town Cassette",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "JM-03",
+      "region": "JM",
+      "file": "audio/JM-03.mp3",
+      "duration_s": 114.0,
+      "title": "Light fram Sun",
+      "artist": "Spanish Town Road Rooftop Crew",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "JM-04",
+      "region": "JM",
+      "file": "audio/JM-04.mp3",
+      "duration_s": 114.0,
+      "title": "Night inna Kingston",
+      "artist": "Half Way Tree Band",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "grow"
+    },
+    {
+      "id": "DO-01",
+      "region": "DO",
+      "file": "audio/DO-01.mp3",
+      "duration_s": 114.0,
+      "title": "Calle de Malecon",
+      "artist": "Zona Colonial Union",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "DO-02",
+      "region": "DO",
+      "file": "audio/DO-02.mp3",
+      "duration_s": 114.0,
+      "title": "Brillo de Santo Domingo",
+      "artist": "Villa Consuelo Radio",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "DO-03",
+      "region": "DO",
+      "file": "audio/DO-03.mp3",
+      "duration_s": 114.0,
+      "title": "Noche por Madrugada",
+      "artist": "Villa Consuelo Band",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow"
+    },
+    {
+      "id": "DO-04",
+      "region": "DO",
+      "file": "audio/DO-04.mp3",
+      "duration_s": 114.0,
+      "title": "Noche por Sol",
+      "artist": "Villa Consuelo Sound",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
       "recipe": "grow"
     }
   ]
