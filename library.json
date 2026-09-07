@@ -1754,7 +1754,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "EG-01",
+        "KE-04",
+        "AE-02",
+        "AE-01",
+        "NL-01"
+      ]
     },
     {
       "id": "KE-02",
@@ -1776,7 +1783,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "KE-04",
+        "KE-03",
+        "NG-04",
+        "NG-02",
+        "IN-03"
+      ]
     },
     {
       "id": "KE-03",
@@ -1798,7 +1812,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "KE-04",
+        "KE-02",
+        "IN-03",
+        "NG-02",
+        "AE-01"
+      ]
     },
     {
       "id": "KE-04",
@@ -1820,7 +1841,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "KE-02",
+        "KE-03",
+        "NG-04",
+        "AE-04",
+        "ID-04"
+      ]
     },
     {
       "id": "AE-01",
@@ -1842,7 +1870,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "AE-04",
+        "KE-02",
+        "KE-04",
+        "US-02",
+        "PL-04"
+      ]
     },
     {
       "id": "AE-02",
@@ -1864,7 +1899,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ES-02",
+        "AE-03",
+        "AE-04",
+        "ES-01",
+        "ES-04"
+      ]
     },
     {
       "id": "AE-03",
@@ -1886,7 +1928,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "AE-02",
+        "PL-04",
+        "PT-03",
+        "AE-04",
+        "ES-01"
+      ]
     },
     {
       "id": "AE-04",
@@ -1908,7 +1957,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "PL-04",
+        "SG-04",
+        "AE-02",
+        "ID-04",
+        "AE-01"
+      ]
     },
     {
       "id": "TZ-01",
@@ -1930,7 +1986,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "TZ-02",
+        "TZ-03",
+        "TZ-04",
+        "ID-02",
+        "KE-04"
+      ]
     },
     {
       "id": "TZ-02",
@@ -1952,7 +2015,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "TZ-01",
+        "TZ-04",
+        "US-01",
+        "TZ-03",
+        "UG-02"
+      ]
     },
     {
       "id": "TZ-03",
@@ -1974,7 +2044,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "GB-02",
+        "AU-03",
+        "GB-04",
+        "IT-04",
+        "NZ-02"
+      ]
     },
     {
       "id": "TZ-04",
@@ -1996,7 +2073,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "ID-04",
+        "NZ-04",
+        "US-01",
+        "KE-04",
+        "US-04"
+      ]
     },
     {
       "id": "NG-01",
@@ -2018,7 +2102,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "NG-03",
+        "NG-04",
+        "ZA-01",
+        "ZA-03",
+        "PT-04"
+      ]
     },
     {
       "id": "NG-02",
@@ -2040,7 +2131,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "KE-02",
+        "ZA-03",
+        "NG-04",
+        "ES-02",
+        "AE-01"
+      ]
     },
     {
       "id": "NG-03",
@@ -2062,7 +2160,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "NG-01",
+        "NG-04",
+        "PT-04",
+        "ID-04",
+        "ZA-03"
+      ]
     },
     {
       "id": "NG-04",
@@ -2084,7 +2189,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "NG-01",
+        "ZA-04",
+        "ZA-03",
+        "ZA-01",
+        "NG-03"
+      ]
     },
     {
       "id": "GH-01",
@@ -2106,7 +2218,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "GH-04",
+        "TR-02",
+        "EG-01",
+        "GH-03",
+        "FR-01"
+      ]
     },
     {
       "id": "GH-02",
@@ -2128,7 +2247,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.3,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "DE-01",
+        "FR-03",
+        "GH-04",
+        "FR-02",
+        "DE-04"
+      ]
     },
     {
       "id": "GH-03",
@@ -2150,7 +2276,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "GH-04",
+        "TR-02",
+        "GH-01",
+        "AR-02",
+        "MA-02"
+      ]
     },
     {
       "id": "GH-04",
@@ -2172,7 +2305,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "GH-01",
+        "GH-03",
+        "TR-02",
+        "GH-02",
+        "AR-02"
+      ]
     },
     {
       "id": "UG-01",
@@ -2194,7 +2334,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "UG-02",
+        "MY-03",
+        "UG-03",
+        "ID-03",
+        "CO-02"
+      ]
     },
     {
       "id": "UG-02",
@@ -2216,7 +2363,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "UG-03",
+        "UG-01",
+        "CV-03",
+        "NZ-02",
+        "NZ-01"
+      ]
     },
     {
       "id": "UG-03",
@@ -2238,7 +2392,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "UG-02",
+        "UG-01",
+        "CV-03",
+        "CO-02",
+        "CV-02"
+      ]
     },
     {
       "id": "UG-04",
@@ -2260,7 +2421,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MA-04",
+        "PT-03",
+        "EG-04",
+        "US-03",
+        "BR-03"
+      ]
     },
     {
       "id": "ZA-01",
@@ -2282,7 +2450,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ZA-02",
+        "ZA-04",
+        "ZA-03",
+        "NG-04",
+        "NG-01"
+      ]
     },
     {
       "id": "ZA-02",
@@ -2304,7 +2479,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ZA-01",
+        "ZA-04",
+        "ZA-03",
+        "NG-04",
+        "NG-01"
+      ]
     },
     {
       "id": "ZA-03",
@@ -2326,7 +2508,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ZA-04",
+        "ZA-01",
+        "NG-04",
+        "ZA-02",
+        "NG-01"
+      ]
     },
     {
       "id": "ZA-04",
@@ -2348,7 +2537,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.1,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ZA-01",
+        "ZA-03",
+        "ZA-02",
+        "NG-04",
+        "AE-04"
+      ]
     },
     {
       "id": "GB-01",
@@ -2370,7 +2566,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "GB-02",
+        "GB-03",
+        "GB-04",
+        "KR-02",
+        "SE-03"
+      ]
     },
     {
       "id": "GB-02",
@@ -2392,7 +2595,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "GB-04",
+        "GB-01",
+        "GB-03",
+        "TZ-03",
+        "SG-03"
+      ]
     },
     {
       "id": "GB-03",
@@ -2414,7 +2624,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "GB-01",
+        "GB-02",
+        "GB-04",
+        "AU-01",
+        "US-03"
+      ]
     },
     {
       "id": "GB-04",
@@ -2436,7 +2653,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "GB-02",
+        "KR-04",
+        "SG-03",
+        "GB-01",
+        "VN-03"
+      ]
     },
     {
       "id": "BR-01",
@@ -2458,7 +2682,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MX-02",
+        "MX-03",
+        "MX-04",
+        "BR-04",
+        "CO-03"
+      ]
     },
     {
       "id": "BR-02",
@@ -2480,7 +2711,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "CV-03",
+        "UG-02",
+        "UG-01",
+        "CV-01",
+        "BR-03"
+      ]
     },
     {
       "id": "BR-03",
@@ -2502,7 +2740,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ID-03",
+        "UG-01",
+        "UG-04",
+        "BR-02",
+        "US-01"
+      ]
     },
     {
       "id": "BR-04",
@@ -2524,7 +2769,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MX-03",
+        "MX-02",
+        "MX-01",
+        "CV-02",
+        "UG-02"
+      ]
     },
     {
       "id": "KR-01",
@@ -2546,7 +2798,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "KR-03",
+        "KR-02",
+        "SE-03",
+        "KR-04",
+        "ES-03"
+      ]
     },
     {
       "id": "KR-02",
@@ -2568,7 +2827,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "KR-04",
+        "KR-03",
+        "KR-01",
+        "NL-04",
+        "GB-01"
+      ]
     },
     {
       "id": "KR-03",
@@ -2590,7 +2856,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "KR-01",
+        "KR-02",
+        "KR-04",
+        "SE-04",
+        "GB-01"
+      ]
     },
     {
       "id": "KR-04",
@@ -2612,7 +2885,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "KR-02",
+        "GB-04",
+        "PL-01",
+        "KR-01",
+        "GB-02"
+      ]
     },
     {
       "id": "MX-01",
@@ -2634,7 +2914,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MX-03",
+        "MX-02",
+        "MX-04",
+        "CO-02",
+        "BR-04"
+      ]
     },
     {
       "id": "MX-02",
@@ -2656,7 +2943,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MX-01",
+        "MX-03",
+        "BR-04",
+        "MX-04",
+        "CO-03"
+      ]
     },
     {
       "id": "MX-03",
@@ -2678,7 +2972,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MX-01",
+        "MX-02",
+        "MX-04",
+        "BR-04",
+        "CV-03"
+      ]
     },
     {
       "id": "MX-04",
@@ -2700,7 +3001,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MX-03",
+        "MX-01",
+        "MX-02",
+        "CO-04",
+        "CO-03"
+      ]
     },
     {
       "id": "US-01",
@@ -2722,7 +3030,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "US-02",
+        "US-03",
+        "TH-04",
+        "TH-03",
+        "ID-04"
+      ]
     },
     {
       "id": "US-02",
@@ -2744,7 +3059,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "US-01",
+        "TH-02",
+        "US-03",
+        "TH-04",
+        "TH-03"
+      ]
     },
     {
       "id": "US-03",
@@ -2766,7 +3088,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "US-01",
+        "PT-04",
+        "TH-01",
+        "US-02",
+        "GB-03"
+      ]
     },
     {
       "id": "US-04",
@@ -2788,7 +3117,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "US-01",
+        "TH-02",
+        "US-02",
+        "MY-04",
+        "TH-03"
+      ]
     },
     {
       "id": "IN-01",
@@ -2810,7 +3146,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "IN-02",
+        "IN-03",
+        "KE-02",
+        "ID-02",
+        "PT-02"
+      ]
     },
     {
       "id": "IN-02",
@@ -2832,7 +3175,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "IN-01",
+        "IN-03",
+        "PT-02",
+        "IN-04",
+        "MY-03"
+      ]
     },
     {
       "id": "IN-03",
@@ -2854,7 +3204,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "KE-02",
+        "ID-02",
+        "KE-03",
+        "IN-01",
+        "KE-04"
+      ]
     },
     {
       "id": "IN-04",
@@ -2876,7 +3233,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.5,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TW-02",
+        "HK-04",
+        "TW-04",
+        "PL-02",
+        "IN-02"
+      ]
     },
     {
       "id": "ID-01",
@@ -2898,7 +3262,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ID-02",
+        "SN-02",
+        "MY-02",
+        "TZ-03",
+        "EG-02"
+      ]
     },
     {
       "id": "ID-02",
@@ -2920,7 +3291,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ID-01",
+        "IN-03",
+        "TZ-03",
+        "NZ-02",
+        "EG-02"
+      ]
     },
     {
       "id": "ID-03",
@@ -2942,7 +3320,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MY-03",
+        "UG-01",
+        "BR-03",
+        "MA-04",
+        "VN-02"
+      ]
     },
     {
       "id": "ID-04",
@@ -2964,7 +3349,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "NZ-04",
+        "TZ-04",
+        "US-01",
+        "AE-04",
+        "GB-04"
+      ]
     },
     {
       "id": "PT-01",
@@ -2986,7 +3378,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "PT-04",
+        "PT-03",
+        "US-03",
+        "AE-02",
+        "NG-01"
+      ]
     },
     {
       "id": "PT-02",
@@ -3008,7 +3407,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MY-02",
+        "NG-02",
+        "KE-03",
+        "KE-02",
+        "IN-01"
+      ]
     },
     {
       "id": "PT-03",
@@ -3030,7 +3436,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "PT-01",
+        "UG-04",
+        "PT-04",
+        "ES-04",
+        "AE-02"
+      ]
     },
     {
       "id": "PT-04",
@@ -3052,7 +3465,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "PT-01",
+        "US-03",
+        "NG-01",
+        "PT-03",
+        "ID-04"
+      ]
     },
     {
       "id": "EG-01",
@@ -3074,7 +3494,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TR-04",
+        "ES-04",
+        "SE-02",
+        "KE-01",
+        "SN-02"
+      ]
     },
     {
       "id": "EG-02",
@@ -3096,7 +3523,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "SN-02",
+        "TZ-03",
+        "MY-01",
+        "ID-02",
+        "MA-03"
+      ]
     },
     {
       "id": "EG-03",
@@ -3118,7 +3552,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.1,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "DE-03",
+        "TR-03",
+        "AR-02",
+        "TR-02",
+        "ES-02"
+      ]
     },
     {
       "id": "EG-04",
@@ -3140,7 +3581,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MA-03",
+        "TR-04",
+        "MA-04",
+        "SG-01",
+        "IT-04"
+      ]
     },
     {
       "id": "AR-01",
@@ -3162,7 +3610,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.4,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "AR-03",
+        "GH-01",
+        "AR-02",
+        "MA-02",
+        "TR-02"
+      ]
     },
     {
       "id": "AR-02",
@@ -3184,7 +3639,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TR-02",
+        "MA-02",
+        "TR-03",
+        "EG-03",
+        "DE-03"
+      ]
     },
     {
       "id": "AR-03",
@@ -3206,7 +3668,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "FR-03",
+        "DE-04",
+        "FR-04",
+        "DE-02",
+        "FR-01"
+      ]
     },
     {
       "id": "AR-04",
@@ -3228,7 +3697,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "SG-02",
+        "SG-04",
+        "PL-01",
+        "SG-03",
+        "PL-04"
+      ]
     },
     {
       "id": "CO-01",
@@ -3250,7 +3726,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "CO-03",
+        "CO-02",
+        "MX-02",
+        "PT-03",
+        "UG-04"
+      ]
     },
     {
       "id": "CO-02",
@@ -3272,7 +3755,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MX-01",
+        "CV-03",
+        "MX-03",
+        "UG-01",
+        "CV-01"
+      ]
     },
     {
       "id": "CO-03",
@@ -3294,7 +3784,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MX-02",
+        "CO-01",
+        "MY-01",
+        "CO-04",
+        "MX-04"
+      ]
     },
     {
       "id": "CO-04",
@@ -3316,7 +3813,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MY-04",
+        "MX-04",
+        "CO-03",
+        "TH-01",
+        "TH-04"
+      ]
     },
     {
       "id": "PH-01",
@@ -3338,7 +3842,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "PH-02",
+        "PH-03",
+        "PH-04",
+        "NZ-02",
+        "NZ-01"
+      ]
     },
     {
       "id": "PH-02",
@@ -3360,7 +3871,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "PH-03",
+        "NZ-01",
+        "PH-04",
+        "PH-01",
+        "NZ-02"
+      ]
     },
     {
       "id": "PH-03",
@@ -3382,7 +3900,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "PH-02",
+        "PH-01",
+        "PH-04",
+        "NZ-01",
+        "SG-01"
+      ]
     },
     {
       "id": "PH-04",
@@ -3404,7 +3929,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "PH-02",
+        "PH-01",
+        "AU-02",
+        "PH-03",
+        "NZ-01"
+      ]
     },
     {
       "id": "AU-01",
@@ -3426,7 +3958,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "AU-02",
+        "GB-01",
+        "NZ-01",
+        "GB-02",
+        "SE-03"
+      ]
     },
     {
       "id": "AU-02",
@@ -3448,7 +3987,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "AU-01",
+        "NZ-01",
+        "NZ-02",
+        "AU-03",
+        "VN-01"
+      ]
     },
     {
       "id": "AU-03",
@@ -3470,7 +4016,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "SG-03",
+        "ES-03",
+        "IT-01",
+        "GB-04",
+        "IT-04"
+      ]
     },
     {
       "id": "AU-04",
@@ -3492,7 +4045,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "NZ-04",
+        "ID-04",
+        "HK-02",
+        "GB-04",
+        "TW-04"
+      ]
     },
     {
       "id": "NZ-01",
@@ -3514,7 +4074,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "NZ-02",
+        "NZ-03",
+        "AU-02",
+        "AU-01",
+        "PH-02"
+      ]
     },
     {
       "id": "NZ-02",
@@ -3536,7 +4103,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "NZ-01",
+        "NZ-03",
+        "AU-02",
+        "TZ-03",
+        "UG-02"
+      ]
     },
     {
       "id": "NZ-03",
@@ -3558,7 +4132,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "NZ-01",
+        "NZ-02",
+        "AU-02",
+        "TZ-03",
+        "GB-03"
+      ]
     },
     {
       "id": "NZ-04",
@@ -3580,7 +4161,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ID-04",
+        "GB-04",
+        "PL-01",
+        "TZ-04",
+        "AU-03"
+      ]
     },
     {
       "id": "CV-01",
@@ -3602,7 +4190,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "CV-02",
+        "MX-01",
+        "MY-01",
+        "CV-03",
+        "CO-02"
+      ]
     },
     {
       "id": "CV-02",
@@ -3624,7 +4219,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "CV-01",
+        "CV-03",
+        "BR-04",
+        "UG-02",
+        "EG-02"
+      ]
     },
     {
       "id": "CV-03",
@@ -3646,7 +4248,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "UG-02",
+        "CV-02",
+        "MX-03",
+        "CO-02",
+        "UG-03"
+      ]
     },
     {
       "id": "CV-04",
@@ -3668,7 +4277,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "CV-03",
+        "CO-03",
+        "MX-02",
+        "MY-01",
+        "MA-03"
+      ]
     },
     {
       "id": "JP-01",
@@ -3690,7 +4306,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "JP-04",
+        "JP-02",
+        "JP-03",
+        "HK-02",
+        "SG-01"
+      ]
     },
     {
       "id": "JP-02",
@@ -3712,7 +4335,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "JP-03",
+        "JP-04",
+        "HK-03",
+        "HK-02",
+        "TH-01"
+      ]
     },
     {
       "id": "JP-03",
@@ -3734,7 +4364,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "JP-02",
+        "JP-04",
+        "HK-02",
+        "HK-03",
+        "JP-01"
+      ]
     },
     {
       "id": "JP-04",
@@ -3756,7 +4393,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "JP-02",
+        "JP-03",
+        "JP-01",
+        "HK-02",
+        "NZ-04"
+      ]
     },
     {
       "id": "TH-01",
@@ -3778,7 +4422,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TH-04",
+        "TH-02",
+        "TH-03",
+        "HK-03",
+        "US-01"
+      ]
     },
     {
       "id": "TH-02",
@@ -3800,7 +4451,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.1,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TH-03",
+        "TH-01",
+        "TH-04",
+        "US-01",
+        "US-02"
+      ]
     },
     {
       "id": "TH-03",
@@ -3822,7 +4480,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TH-02",
+        "TH-01",
+        "TH-04",
+        "US-01",
+        "US-02"
+      ]
     },
     {
       "id": "TH-04",
@@ -3844,7 +4509,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TH-01",
+        "US-01",
+        "TH-03",
+        "TH-02",
+        "US-02"
+      ]
     },
     {
       "id": "TW-01",
@@ -3866,7 +4538,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.1,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "DE-04",
+        "TW-04",
+        "AR-03",
+        "SA-04",
+        "FR-04"
+      ]
     },
     {
       "id": "TW-02",
@@ -3888,7 +4567,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "IN-04",
+        "SA-04",
+        "TW-04",
+        "US-04",
+        "FR-02"
+      ]
     },
     {
       "id": "TW-03",
@@ -3910,7 +4596,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "PL-04",
+        "NL-02",
+        "AE-04",
+        "SG-01",
+        "NZ-04"
+      ]
     },
     {
       "id": "TW-04",
@@ -3932,7 +4625,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "PL-02",
+        "PL-04",
+        "TW-03",
+        "AU-04",
+        "ZA-01"
+      ]
     },
     {
       "id": "TR-01",
@@ -3954,7 +4654,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TR-02",
+        "TR-03",
+        "SA-04",
+        "DE-04",
+        "FR-04"
+      ]
     },
     {
       "id": "TR-02",
@@ -3976,7 +4683,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TR-03",
+        "SE-02",
+        "DE-03",
+        "AR-02",
+        "GH-01"
+      ]
     },
     {
       "id": "TR-03",
@@ -3998,7 +4712,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TR-02",
+        "SE-02",
+        "DE-03",
+        "FR-04",
+        "TR-01"
+      ]
     },
     {
       "id": "TR-04",
@@ -4020,7 +4741,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "NL-04",
+        "PL-04",
+        "FR-01",
+        "IT-04",
+        "AU-03"
+      ]
     },
     {
       "id": "MY-01",
@@ -4042,7 +4770,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MA-02",
+        "EG-02",
+        "EG-04",
+        "CV-01",
+        "PT-03"
+      ]
     },
     {
       "id": "MY-02",
@@ -4064,7 +4799,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ID-01",
+        "EG-01",
+        "SN-02",
+        "PT-02",
+        "GB-02"
+      ]
     },
     {
       "id": "MY-03",
@@ -4086,7 +4828,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ES-01",
+        "ID-03",
+        "UG-01",
+        "DE-03",
+        "EG-04"
+      ]
     },
     {
       "id": "MY-04",
@@ -4108,7 +4857,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TH-04",
+        "US-04",
+        "NZ-04",
+        "US-01",
+        "CO-04"
+      ]
     },
     {
       "id": "DE-01",
@@ -4130,7 +4886,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "FR-03",
+        "FR-02",
+        "DE-02",
+        "DE-04",
+        "SA-04"
+      ]
     },
     {
       "id": "DE-02",
@@ -4152,7 +4915,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.5,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "DE-01",
+        "FR-02",
+        "FR-03",
+        "DE-04",
+        "DE-03"
+      ]
     },
     {
       "id": "DE-03",
@@ -4174,7 +4944,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.4,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "EG-03",
+        "TR-03",
+        "TR-02",
+        "ES-02",
+        "TR-04"
+      ]
     },
     {
       "id": "DE-04",
@@ -4196,7 +4973,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "SA-04",
+        "FR-02",
+        "DE-02",
+        "DE-01",
+        "AR-03"
+      ]
     },
     {
       "id": "FR-01",
@@ -4215,7 +4999,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.4,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "FR-04",
+        "TR-04",
+        "FR-03",
+        "TR-02",
+        "SE-02"
+      ]
     },
     {
       "id": "FR-02",
@@ -4243,7 +5034,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.4,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "DE-01",
+        "FR-03",
+        "DE-02",
+        "DE-04",
+        "FR-04"
+      ]
     },
     {
       "id": "FR-03",
@@ -4274,7 +5072,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "DE-01",
+        "FR-02",
+        "DE-02",
+        "FR-04",
+        "FR-01"
+      ]
     },
     {
       "id": "FR-04",
@@ -4293,7 +5098,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.5,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "FR-01",
+        "SE-01",
+        "FR-03",
+        "FR-02",
+        "SE-02"
+      ]
     },
     {
       "id": "ES-01",
@@ -4317,7 +5129,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.1,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "AE-02",
+        "ES-04",
+        "MY-03",
+        "ES-02",
+        "AE-03"
+      ]
     },
     {
       "id": "ES-02",
@@ -4343,7 +5162,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "AE-02",
+        "DE-03",
+        "AE-04",
+        "NG-02",
+        "ES-04"
+      ]
     },
     {
       "id": "ES-03",
@@ -4362,7 +5188,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "NL-02",
+        "SG-03",
+        "AU-03",
+        "KR-01",
+        "IT-04"
+      ]
     },
     {
       "id": "ES-04",
@@ -4386,7 +5219,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "PL-04",
+        "AU-03",
+        "GB-01",
+        "IT-04",
+        "AE-02"
+      ]
     },
     {
       "id": "IT-01",
@@ -4405,7 +5245,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "IT-03",
+        "AU-03",
+        "PL-01",
+        "VN-04",
+        "GB-04"
+      ]
     },
     {
       "id": "IT-02",
@@ -4424,7 +5271,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "IT-01",
+        "PL-03",
+        "VN-02",
+        "KR-01",
+        "MA-04"
+      ]
     },
     {
       "id": "IT-03",
@@ -4448,7 +5302,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "IT-01",
+        "SE-03",
+        "VN-04",
+        "GB-01",
+        "SE-04"
+      ]
     },
     {
       "id": "IT-04",
@@ -4467,7 +5328,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "AU-03",
+        "NL-04",
+        "ES-03",
+        "IT-01",
+        "NL-02"
+      ]
     },
     {
       "id": "NL-01",
@@ -4498,7 +5366,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "NL-02",
+        "IT-04",
+        "AU-03",
+        "ES-03",
+        "TR-04"
+      ]
     },
     {
       "id": "NL-02",
@@ -4529,7 +5404,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "ES-03",
+        "SG-01",
+        "SG-03",
+        "NL-01",
+        "AU-03"
+      ]
     },
     {
       "id": "NL-03",
@@ -4548,7 +5430,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "SA-03",
+        "SA-01",
+        "PL-03",
+        "SE-04",
+        "SA-02"
+      ]
     },
     {
       "id": "NL-04",
@@ -4579,7 +5468,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "TR-04",
+        "KR-02",
+        "IT-04",
+        "GB-04",
+        "GB-01"
+      ]
     },
     {
       "id": "PL-01",
@@ -4598,7 +5494,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "SG-03",
+        "PL-04",
+        "GB-04",
+        "IT-01",
+        "VN-04"
+      ]
     },
     {
       "id": "PL-02",
@@ -4623,7 +5526,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "TW-04",
+        "FR-04",
+        "EG-04",
+        "TR-04",
+        "NL-04"
+      ]
     },
     {
       "id": "PL-03",
@@ -4642,7 +5552,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "IT-04",
+        "NL-04",
+        "IT-02",
+        "NL-03",
+        "TR-04"
+      ]
     },
     {
       "id": "PL-04",
@@ -4664,7 +5581,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "PL-01",
+        "ES-04",
+        "AE-04",
+        "TW-03",
+        "AU-03"
+      ]
     },
     {
       "id": "SE-01",
@@ -4683,7 +5607,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "FR-04",
+        "SE-04",
+        "SE-02",
+        "SG-01",
+        "KR-03"
+      ]
     },
     {
       "id": "SE-02",
@@ -4702,7 +5633,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "TR-03",
+        "TR-02",
+        "PL-04",
+        "TR-04",
+        "SE-03"
+      ]
     },
     {
       "id": "SE-03",
@@ -4721,7 +5659,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "VN-04",
+        "GB-01",
+        "KR-01",
+        "IT-01",
+        "AU-03"
+      ]
     },
     {
       "id": "SE-04",
@@ -4740,7 +5685,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "SG-03",
+        "IT-01",
+        "ES-03",
+        "SE-03",
+        "NL-02"
+      ]
     },
     {
       "id": "SA-01",
@@ -4759,7 +5711,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "SA-03",
+        "NL-03",
+        "SG-04",
+        "PL-03",
+        "NL-04"
+      ]
     },
     {
       "id": "SA-02",
@@ -4781,7 +5740,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "ES-03",
+        "SA-03",
+        "NL-03",
+        "VN-01",
+        "IT-01"
+      ]
     },
     {
       "id": "SA-03",
@@ -4800,7 +5766,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "SA-01",
+        "NL-03",
+        "SA-02",
+        "ES-03",
+        "AR-04"
+      ]
     },
     {
       "id": "SA-04",
@@ -4823,7 +5796,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "DE-04",
+        "FR-02",
+        "FR-04",
+        "DE-01",
+        "SE-02"
+      ]
     },
     {
       "id": "MA-01",
@@ -4842,7 +5822,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.4,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "NL-03",
+        "IT-04",
+        "ES-03",
+        "PL-03",
+        "SA-02"
+      ]
     },
     {
       "id": "MA-02",
@@ -4873,7 +5860,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "MA-03",
+        "MY-01",
+        "AR-02",
+        "EG-04",
+        "EG-02"
+      ]
     },
     {
       "id": "MA-03",
@@ -4892,7 +5886,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "EG-04",
+        "MA-02",
+        "ES-04",
+        "EG-02",
+        "AE-02"
+      ]
     },
     {
       "id": "MA-04",
@@ -4923,7 +5924,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "UG-04",
+        "VN-02",
+        "EG-04",
+        "NL-04",
+        "ES-04"
+      ]
     },
     {
       "id": "VN-01",
@@ -4942,7 +5950,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "VN-03",
+        "VN-04",
+        "GB-04",
+        "SG-03",
+        "AU-02"
+      ]
     },
     {
       "id": "VN-02",
@@ -4961,7 +5976,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "KR-02",
+        "NL-04",
+        "MA-04",
+        "IT-02",
+        "TR-04"
+      ]
     },
     {
       "id": "VN-03",
@@ -4980,7 +6002,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "VN-01",
+        "VN-04",
+        "GB-04",
+        "PL-01",
+        "AU-02"
+      ]
     },
     {
       "id": "VN-04",
@@ -4999,7 +6028,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "VN-03",
+        "VN-01",
+        "SE-03",
+        "IT-01",
+        "GB-04"
+      ]
     },
     {
       "id": "SG-01",
@@ -5026,7 +6062,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "mixed"
+      "recipe": "mixed",
+      "nearest5": [
+        "NL-02",
+        "SG-03",
+        "GB-02",
+        "PL-04",
+        "SE-04"
+      ]
     },
     {
       "id": "SG-02",
@@ -5045,7 +6088,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "AR-04",
+        "SG-04",
+        "AE-04",
+        "PL-01",
+        "AE-01"
+      ]
     },
     {
       "id": "SG-03",
@@ -5064,7 +6114,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "PL-01",
+        "GB-04",
+        "ES-03",
+        "AU-03",
+        "NL-02"
+      ]
     },
     {
       "id": "SG-04",
@@ -5086,7 +6143,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "AE-04",
+        "PL-01",
+        "SG-02",
+        "PL-04",
+        "AU-03"
+      ]
     },
     {
       "id": "HK-01",
@@ -5105,7 +6169,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "AR-02",
+        "HK-04",
+        "TZ-02",
+        "GH-03",
+        "TR-02"
+      ]
     },
     {
       "id": "HK-02",
@@ -5124,7 +6195,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "TZ-03",
+        "JP-02",
+        "NL-02",
+        "GB-02",
+        "HK-04"
+      ]
     },
     {
       "id": "HK-03",
@@ -5143,7 +6221,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "TH-01",
+        "US-01",
+        "JP-02",
+        "TH-02",
+        "TH-04"
+      ]
     },
     {
       "id": "HK-04",
@@ -5162,7 +6247,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "grow"
+      "recipe": "grow",
+      "nearest5": [
+        "US-03",
+        "GB-03",
+        "US-01",
+        "HK-02",
+        "SG-01"
+      ]
     },
     {
       "id": "SN-01",
@@ -5191,7 +6283,14 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "mixed"
+      "recipe": "mixed",
+      "nearest5": [
+        "SN-04",
+        "SN-03",
+        "SG-04",
+        "NG-02",
+        "KR-04"
+      ]
     },
     {
       "id": "SN-02",
@@ -5222,7 +6321,14 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "EG-02",
+        "ID-01",
+        "EG-01",
+        "MY-02",
+        "NG-02"
+      ]
     },
     {
       "id": "SN-03",
@@ -5253,7 +6359,14 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.1,
-      "recipe": "parallel"
+      "recipe": "parallel",
+      "nearest5": [
+        "SN-04",
+        "SN-01",
+        "DE-03",
+        "NG-02",
+        "ES-04"
+      ]
     },
     {
       "id": "SN-04",
@@ -5275,7 +6388,14 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.0,
-      "recipe": "inpaint"
+      "recipe": "inpaint",
+      "nearest5": [
+        "SN-01",
+        "SN-03",
+        "IT-02",
+        "NG-02",
+        "ES-04"
+      ]
     }
   ]
 }
