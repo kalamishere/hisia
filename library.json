@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T19:58:18Z",
+  "generated_at": "2026-09-08T14:11:19Z",
   "chart_week": "2026-08-24",
-  "version": "v5.1",
+  "version": "v5b",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
     "KE": {
@@ -2138,7 +2138,7 @@
         "IN-03",
         "NG-04",
         "IN-01",
-        "MZ-03"
+        "PT-04"
       ]
     },
     {
@@ -2196,7 +2196,7 @@
         "NG-04",
         "ES-02",
         "NG-03",
-        "ID-04"
+        "PT-04"
       ]
     },
     {
@@ -2223,9 +2223,9 @@
       "nearest5": [
         "NL-01",
         "NG-02",
-        "US-02",
         "AE-04",
-        "ES-01"
+        "ES-01",
+        "KE-01"
       ]
     },
     {
@@ -2281,9 +2281,9 @@
       "nearest5": [
         "AE-04",
         "AE-02",
-        "TR-04",
-        "TR-02",
-        "TR-03"
+        "TR-01",
+        "NL-01",
+        "ES-04"
       ]
     },
     {
@@ -2309,10 +2309,10 @@
       "recipe": "grow",
       "nearest5": [
         "AE-03",
-        "TW-03",
         "PL-04",
         "PL-01",
-        "NZ-04"
+        "VN-04",
+        "MZ-01"
       ]
     },
     {
@@ -2339,9 +2339,9 @@
       "nearest5": [
         "TZ-04",
         "TZ-02",
-        "ID-04",
         "HK-02",
-        "UG-04"
+        "UG-04",
+        "NZ-04"
       ]
     },
     {
@@ -2367,8 +2367,8 @@
       "recipe": "grow",
       "nearest5": [
         "TZ-01",
-        "US-01",
-        "ID-04",
+        "NZ-01",
+        "US-04",
         "TZ-04",
         "HK-02"
       ]
@@ -2396,10 +2396,10 @@
       "recipe": "grow",
       "nearest5": [
         "NZ-01",
-        "AU-03",
-        "ID-02",
-        "AU-02",
-        "AU-01"
+        "AU-01",
+        "AO-04",
+        "IN-03",
+        "ES-04"
       ]
     },
     {
@@ -2424,11 +2424,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "ID-04",
         "TZ-01",
+        "PH-04",
         "UG-04",
-        "MZ-03",
-        "NG-01"
+        "ID-04",
+        "MZ-03"
       ]
     },
     {
@@ -2453,8 +2453,8 @@
       "lufs": -14.3,
       "recipe": "grow",
       "nearest5": [
+        "PH-04",
         "NG-03",
-        "ID-04",
         "MZ-01",
         "PT-04",
         "TZ-04"
@@ -2513,9 +2513,9 @@
       "nearest5": [
         "NG-04",
         "NG-01",
-        "ID-04",
         "KE-04",
-        "MZ-01"
+        "PH-04",
+        "PT-04"
       ]
     },
     {
@@ -2569,11 +2569,11 @@
       "lufs": -14.2,
       "recipe": "parallel",
       "nearest5": [
-        "TR-02",
         "CM-01",
         "FR-01",
         "CM-03",
-        "DE-02"
+        "DE-02",
+        "GH-04"
       ]
     },
     {
@@ -2657,10 +2657,10 @@
       "recipe": "grow",
       "nearest5": [
         "GH-03",
-        "TR-02",
         "ET-03",
         "DE-01",
-        "DE-03"
+        "DE-03",
+        "AE-02"
       ]
     },
     {
@@ -2687,9 +2687,9 @@
       "nearest5": [
         "BR-02",
         "UG-02",
-        "MY-01",
-        "CO-02",
-        "UG-03"
+        "CV-03",
+        "UG-03",
+        "IN-03"
       ]
     },
     {
@@ -2715,10 +2715,10 @@
       "recipe": "grow",
       "nearest5": [
         "NZ-01",
-        "CV-03",
         "UG-01",
-        "ID-02",
-        "IN-03"
+        "CV-03",
+        "IN-03",
+        "TZ-02"
       ]
     },
     {
@@ -2743,11 +2743,11 @@
       "lufs": -14.3,
       "recipe": "grow",
       "nearest5": [
-        "MY-01",
         "ET-01",
-        "CV-01",
         "UG-01",
-        "ZW-02"
+        "ZW-02",
+        "CM-02",
+        "JM-04"
       ]
     },
     {
@@ -2772,11 +2772,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "MY-04",
-        "US-01",
         "ID-04",
         "TZ-04",
-        "HK-02"
+        "HK-02",
+        "NZ-03",
+        "PT-04"
       ]
     },
     {
@@ -2833,8 +2833,8 @@
         "KE-04",
         "NG-04",
         "NG-03",
-        "AR-04",
-        "KE-02"
+        "TW-03",
+        "TW-01"
       ]
     },
     {
@@ -2946,10 +2946,10 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "KR-04",
         "SE-03",
         "GB-04",
         "GB-01",
+        "AU-03",
         "VN-04"
       ]
     },
@@ -2975,11 +2975,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
+        "ID-04",
         "GB-04",
-        "AU-01",
-        "GB-01",
+        "NZ-03",
         "AU-02",
-        "ID-03"
+        "GB-01"
       ]
     },
     {
@@ -3004,8 +3004,8 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
+        "AU-01",
         "AU-03",
-        "KR-04",
         "SE-03",
         "VN-04",
         "NL-04"
@@ -3033,11 +3033,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "CO-03",
         "CV-04",
-        "MX-02",
         "MX-04",
-        "BR-04"
+        "BR-04",
+        "MX-01",
+        "MX-03"
       ]
     },
     {
@@ -3063,10 +3063,10 @@
       "recipe": "grow",
       "nearest5": [
         "UG-01",
-        "CV-01",
         "CV-03",
-        "CO-02",
-        "MY-01"
+        "CV-01",
+        "UG-02",
+        "NZ-01"
       ]
     },
     {
@@ -3092,10 +3092,10 @@
       "recipe": "grow",
       "nearest5": [
         "ZA-03",
+        "NZ-03",
         "MZ-01",
         "ZA-04",
-        "UG-04",
-        "US-01"
+        "UG-04"
       ]
     },
     {
@@ -3120,25 +3120,25 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "MY-01",
-        "CV-04",
-        "CO-04",
-        "MY-04",
-        "MX-02"
+        "MX-03",
+        "MX-02",
+        "UG-04",
+        "ET-04",
+        "HK-02"
       ]
     },
     {
       "id": "KR-01",
       "region": "KR",
       "file": "audio/KR-01.mp3",
-      "duration_s": 117.16,
+      "duration_s": 117.98,
       "title": "Neon Sonyeo",
       "artist": "Yeonnam Skyline",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -3147,27 +3147,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "KR-03",
-        "KR-02",
-        "KR-04",
         "SE-03",
-        "AO-03"
+        "KR-04",
+        "IT-03",
+        "AU-03",
+        "AU-01"
       ]
     },
     {
       "id": "KR-02",
       "region": "KR",
       "file": "audio/KR-02.mp3",
-      "duration_s": 117.2,
+      "duration_s": 118.82,
       "title": "Frozen Peach Arcade",
       "artist": "Han River Youth Yard Sessions",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -3176,27 +3176,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
         "KR-04",
-        "KR-01",
-        "KR-03",
+        "AO-03",
+        "AU-03",
         "DO-02",
-        "GB-04"
+        "DO-01"
       ]
     },
     {
       "id": "KR-03",
       "region": "KR",
       "file": "audio/KR-03.mp3",
-      "duration_s": 117.48,
+      "duration_s": 118.04,
       "title": "Frozen Peach Sonyeo",
       "artist": "Han River Youth Skyline",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -3205,27 +3205,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "KR-01",
         "KR-04",
-        "KR-02",
-        "AO-01",
-        "GB-02"
+        "AO-03",
+        "AU-03",
+        "AU-01",
+        "KR-02"
       ]
     },
     {
       "id": "KR-04",
       "region": "KR",
       "file": "audio/KR-04.mp3",
-      "duration_s": 116.68,
+      "duration_s": 118.06,
       "title": "Midnight Letter",
       "artist": "Yeonnam Sound",
       "mirrors_rank": 1,
       "mirrors_cities": 4,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -3234,27 +3234,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "KR-03",
         "KR-02",
-        "ES-04",
-        "GB-04",
-        "VN-04",
-        "GB-02"
+        "SE-03",
+        "KR-01",
+        "AU-03"
       ]
     },
     {
       "id": "MX-01",
       "region": "MX",
       "file": "audio/MX-01.mp3",
-      "duration_s": 119.1,
+      "duration_s": 118.2,
       "title": "Noche de Tianguis",
       "artist": "Hermanas Tolvanera Night Bus",
       "mirrors_rank": 1,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -3263,27 +3263,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
         "MX-03",
         "MX-02",
         "MX-04",
         "CV-01",
-        "CO-02"
+        "CO-03"
       ]
     },
     {
       "id": "MX-02",
       "region": "MX",
       "file": "audio/MX-02.mp3",
-      "duration_s": 119.22,
+      "duration_s": 119.14,
       "title": "Luna de Metrobus",
       "artist": "Coyoacan Circuit",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -3292,27 +3292,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
         "MX-03",
         "MX-01",
-        "CO-03",
+        "MX-04",
         "CV-01",
-        "MX-04"
+        "CO-03"
       ]
     },
     {
       "id": "MX-03",
       "region": "MX",
       "file": "audio/MX-03.mp3",
-      "duration_s": 118.6,
+      "duration_s": 118.84,
       "title": "Carretera de Metrobus",
       "artist": "Hermanas Tolvanera Yard Sessions",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -3321,12 +3321,12 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "MX-01",
         "MX-02",
+        "MX-01",
         "MX-04",
-        "CV-03",
+        "BR-04",
         "CV-01"
       ]
     },
@@ -3334,14 +3334,14 @@
       "id": "MX-04",
       "region": "MX",
       "file": "audio/MX-04.mp3",
-      "duration_s": 119.3,
+      "duration_s": 118.3,
       "title": "Noche de Metrobus",
       "artist": "Coyoacan Lamplight",
       "mirrors_rank": 2,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -3350,27 +3350,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "MX-01",
         "MX-02",
+        "MX-01",
         "MX-03",
-        "CO-03",
-        "CO-04"
+        "ET-04",
+        "BR-01"
       ]
     },
     {
       "id": "US-01",
       "region": "US",
       "file": "audio/US-01.mp3",
-      "duration_s": 119.3,
+      "duration_s": 119.52,
       "title": "Two Lane Sunrise",
       "artist": "Palmdale Pickup Trio",
       "mirrors_rank": 1,
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -3379,27 +3379,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "US-04",
         "TH-04",
-        "US-02",
-        "ID-04",
-        "US-03"
+        "TH-03",
+        "US-04",
+        "HK-03",
+        "US-02"
       ]
     },
     {
       "id": "US-02",
       "region": "US",
       "file": "audio/US-02.mp3",
-      "duration_s": 119.26,
+      "duration_s": 116.6,
       "title": "Cheap Beer Sunrise",
       "artist": "Sunset Truckstop Institute",
       "mirrors_rank": 2,
       "mirrors_cities": 4,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -3407,28 +3407,28 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2,
-      "recipe": "parallel",
+      "lufs": -14.4,
+      "recipe": "grow",
       "nearest5": [
         "US-01",
-        "TH-04",
         "US-04",
-        "NZ-01",
-        "TH-02"
+        "US-03",
+        "TH-01",
+        "TH-04"
       ]
     },
     {
       "id": "US-03",
       "region": "US",
       "file": "audio/US-03.mp3",
-      "duration_s": 119.3,
+      "duration_s": 117.44,
       "title": "Two Lane Again",
       "artist": "Sunset Truckstop Trio",
       "mirrors_rank": 3,
       "mirrors_cities": 12,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -3436,28 +3436,28 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3,
-      "recipe": "parallel",
+      "lufs": -14.2,
+      "recipe": "grow",
       "nearest5": [
+        "US-04",
+        "HK-04",
+        "US-02",
         "US-01",
-        "ZW-03",
-        "GB-03",
-        "TH-01",
-        "HK-04"
+        "MA-02"
       ]
     },
     {
       "id": "US-04",
       "region": "US",
       "file": "audio/US-04.mp3",
-      "duration_s": 117.38,
+      "duration_s": 116.46,
       "title": "Two Lane Sunday",
       "artist": "Palmdale Pickup Trio",
       "mirrors_rank": 4,
       "mirrors_cities": 10,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -3465,14 +3465,14 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3,
-      "recipe": "parallel",
+      "lufs": -14.2,
+      "recipe": "grow",
       "nearest5": [
+        "ID-04",
+        "US-03",
         "US-01",
-        "TH-02",
-        "TH-04",
-        "HK-03",
-        "ID-04"
+        "NZ-04",
+        "PH-04"
       ]
     },
     {
@@ -3499,9 +3499,9 @@
       "nearest5": [
         "KE-02",
         "IN-03",
-        "ID-02",
         "CM-04",
-        "MY-03"
+        "MY-03",
+        "CM-02"
       ]
     },
     {
@@ -3526,11 +3526,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
+        "MY-03",
         "CM-04",
         "ET-02",
         "IN-03",
-        "ET-03",
-        "UG-01"
+        "TH-02"
       ]
     },
     {
@@ -3556,10 +3556,10 @@
       "recipe": "parallel",
       "nearest5": [
         "KE-02",
-        "ID-02",
         "TZ-03",
-        "ID-01",
-        "IN-01"
+        "IN-01",
+        "CM-04",
+        "UG-02"
       ]
     },
     {
@@ -3585,7 +3585,7 @@
       "recipe": "grow",
       "nearest5": [
         "CM-04",
-        "TR-02",
+        "AR-02",
         "AE-02",
         "KE-02",
         "ET-03"
@@ -3595,14 +3595,14 @@
       "id": "ID-01",
       "region": "ID",
       "file": "audio/ID-01.mp3",
-      "duration_s": 118.04,
+      "duration_s": 116.88,
       "title": "Sore di Bundaran",
       "artist": "Kembang Api Radio",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -3611,27 +3611,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "ID-02",
-        "SN-02",
-        "TZ-03",
-        "IN-03",
-        "MY-02"
+        "PL-01",
+        "SG-04",
+        "PL-04",
+        "ES-03",
+        "ID-03"
       ]
     },
     {
       "id": "ID-02",
       "region": "ID",
       "file": "audio/ID-02.mp3",
-      "duration_s": 117.36,
+      "duration_s": 120.0,
       "title": "Hujan di Biru",
       "artist": "Bundaran Malam Radio",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -3640,27 +3640,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "ID-01",
-        "IN-03",
-        "TZ-03",
+        "IT-04",
+        "AU-01",
+        "VN-01",
         "ID-03",
-        "NZ-01"
+        "DO-02"
       ]
     },
     {
       "id": "ID-03",
       "region": "ID",
       "file": "audio/ID-03.mp3",
-      "duration_s": 118.68,
+      "duration_s": 115.64,
       "title": "Malam Jakarta Senja",
       "artist": "Ancol Beach Pop Skyline",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -3669,27 +3669,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "ID-01",
+        "VN-01",
         "ID-02",
-        "GB-03",
-        "MA-04",
-        "MY-03",
-        "CV-03"
+        "IT-04",
+        "GB-04"
       ]
     },
     {
       "id": "ID-04",
       "region": "ID",
       "file": "audio/ID-04.mp3",
-      "duration_s": 117.24,
+      "duration_s": 117.1,
       "title": "Sore di Bundaran",
       "artist": "Angkot Sore Radio",
       "mirrors_rank": 1,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -3698,27 +3698,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "US-04",
         "NZ-04",
-        "TZ-04",
-        "US-01",
-        "MZ-01",
-        "NG-01"
+        "NZ-03",
+        "GB-03",
+        "PH-04"
       ]
     },
     {
       "id": "PT-01",
       "region": "PT",
       "file": "audio/PT-01.mp3",
-      "duration_s": 119.22,
+      "duration_s": 119.7,
       "title": "Maré Azul",
       "artist": "Graça Choir",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -3727,27 +3727,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
         "PT-04",
-        "PT-03",
-        "AR-04",
-        "MZ-01",
-        "NG-03"
+        "MA-04",
+        "KE-02",
+        "MA-02",
+        "MZ-01"
       ]
     },
     {
       "id": "PT-02",
       "region": "PT",
       "file": "audio/PT-02.mp3",
-      "duration_s": 115.58,
+      "duration_s": 120.0,
       "title": "Verão em Alfama",
       "artist": "Miradouro Society",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -3756,27 +3756,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "MY-02",
-        "MZ-02",
+        "AR-02",
         "ET-02",
-        "SN-02",
-        "KE-02"
+        "KE-02",
+        "PH-03",
+        "MY-02"
       ]
     },
     {
       "id": "PT-03",
       "region": "PT",
       "file": "audio/PT-03.mp3",
-      "duration_s": 119.48,
+      "duration_s": 119.54,
       "title": "Noite de Lisboa",
       "artist": "Bairro Alto Radio",
       "mirrors_rank": 1,
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -3784,28 +3784,28 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3,
-      "recipe": "parallel",
+      "lufs": -14.2,
+      "recipe": "grow",
       "nearest5": [
-        "PT-01",
-        "PT-04",
         "ET-04",
-        "KE-01",
-        "ES-02"
+        "AR-03",
+        "PT-04",
+        "ZW-01",
+        "UG-04"
       ]
     },
     {
       "id": "PT-04",
       "region": "PT",
       "file": "audio/PT-04.mp3",
-      "duration_s": 116.16,
+      "duration_s": 120.0,
       "title": "Noite de Tejo",
       "artist": "Graça Band",
       "mirrors_rank": 3,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -3814,13 +3814,13 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
         "PT-01",
         "MZ-01",
-        "PT-03",
-        "NG-01",
-        "AR-04"
+        "MZ-03",
+        "KE-02",
+        "MZ-04"
       ]
     },
     {
@@ -3876,9 +3876,9 @@
       "nearest5": [
         "TZ-03",
         "ZW-03",
+        "ID-01",
         "AO-01",
-        "AO-04",
-        "AU-03"
+        "AO-04"
       ]
     },
     {
@@ -3907,7 +3907,7 @@
         "FR-04",
         "TR-03",
         "NL-02",
-        "TR-02"
+        "MA-02"
       ]
     },
     {
@@ -3943,14 +3943,14 @@
       "id": "AR-01",
       "region": "AR",
       "file": "audio/AR-01.mp3",
-      "duration_s": 116.12,
+      "duration_s": 117.66,
       "title": "Calle Sur",
       "artist": "Palermo Band",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -3959,27 +3959,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.4,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "AR-03",
+        "ZW-01",
+        "AR-04",
         "JM-02",
-        "GH-03",
-        "JM-04",
-        "MA-02"
+        "ZA-02",
+        "IN-04"
       ]
     },
     {
       "id": "AR-02",
       "region": "AR",
       "file": "audio/AR-02.mp3",
-      "duration_s": 116.38,
+      "duration_s": 120.0,
       "title": "Corazón de Barrio",
       "artist": "Chacarita Sound",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -3988,27 +3988,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "TR-02",
+        "PT-02",
+        "KE-02",
         "AR-04",
-        "DE-03",
-        "AE-03",
-        "JM-04"
+        "KE-04",
+        "CM-03"
       ]
     },
     {
       "id": "AR-03",
       "region": "AR",
       "file": "audio/AR-03.mp3",
-      "duration_s": 116.0,
+      "duration_s": 114.7,
       "title": "Calle Sur",
       "artist": "Chacarita Society",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4016,28 +4016,28 @@
         315
       ],
       "stage1_seed": 311,
-      "lufs": -14.3,
-      "recipe": "parallel",
+      "lufs": -14.2,
+      "recipe": "grow",
       "nearest5": [
-        "TR-03",
-        "FR-04",
-        "CI-04",
-        "JM-04",
-        "TR-02"
+        "ES-03",
+        "AR-04",
+        "SG-03",
+        "MA-03",
+        "PH-02"
       ]
     },
     {
       "id": "AR-04",
       "region": "AR",
       "file": "audio/AR-04.mp3",
-      "duration_s": 116.6,
+      "duration_s": 116.22,
       "title": "Luz de Río",
       "artist": "Chacarita Trio",
       "mirrors_rank": 1,
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4046,27 +4046,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "SG-04",
-        "PT-04",
-        "ES-03",
-        "SG-02",
-        "SG-03"
+        "AR-02",
+        "AR-03",
+        "SA-02",
+        "PH-02",
+        "CI-03"
       ]
     },
     {
       "id": "CO-01",
       "region": "CO",
       "file": "audio/CO-01.mp3",
-      "duration_s": 119.02,
+      "duration_s": 116.76,
       "title": "Tarde en Bogotá",
       "artist": "Cerros Band",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -4075,27 +4075,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "CV-02",
+        "CV-04",
+        "MX-03",
         "CO-03",
-        "PT-03",
-        "MA-02",
-        "CO-04",
-        "MX-04"
+        "JP-02"
       ]
     },
     {
       "id": "CO-02",
       "region": "CO",
       "file": "audio/CO-02.mp3",
-      "duration_s": 118.7,
+      "duration_s": 118.72,
       "title": "Sabor de Oro",
       "artist": "Cerros Choir",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -4104,27 +4104,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "MY-03",
         "CV-01",
-        "MY-01",
-        "BR-02",
-        "UG-01",
-        "CV-03"
+        "MY-04",
+        "CV-03",
+        "AO-02"
       ]
     },
     {
       "id": "CO-03",
       "region": "CO",
       "file": "audio/CO-03.mp3",
-      "duration_s": 117.82,
+      "duration_s": 117.78,
       "title": "Calle Azul",
       "artist": "Cerros Society",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4133,27 +4133,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "BR-01",
         "MX-02",
-        "CO-01",
-        "CV-04",
-        "MX-04"
+        "CO-04",
+        "MX-03",
+        "MX-01",
+        "BR-04"
       ]
     },
     {
       "id": "CO-04",
       "region": "CO",
       "file": "audio/CO-04.mp3",
-      "duration_s": 117.78,
+      "duration_s": 118.6,
       "title": "Noche en Andes",
       "artist": "La Candelaria Radio",
       "mirrors_rank": 1,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4161,28 +4161,28 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3,
-      "recipe": "parallel",
+      "lufs": -14.2,
+      "recipe": "grow",
       "nearest5": [
-        "BR-04",
-        "MX-04",
-        "CO-01",
-        "MY-04",
-        "TH-04"
+        "CO-03",
+        "TH-01",
+        "ZW-02",
+        "MX-02",
+        "TH-02"
       ]
     },
     {
       "id": "PH-01",
       "region": "PH",
       "file": "audio/PH-01.mp3",
-      "duration_s": 116.58,
+      "duration_s": 117.16,
       "title": "Kanto ng Bayan",
       "artist": "Roxas Boulevard Cassette",
       "mirrors_rank": 1,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -4191,27 +4191,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "PH-02",
         "PH-03",
         "PH-04",
-        "NZ-01",
-        "AU-02"
+        "SA-03",
+        "SG-04",
+        "KE-04"
       ]
     },
     {
       "id": "PH-02",
       "region": "PH",
       "file": "audio/PH-02.mp3",
-      "duration_s": 114.9,
+      "duration_s": 118.7,
       "title": "Kanto ng Asul",
       "artist": "Malate Skyline",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -4219,28 +4219,28 @@
         215
       ],
       "stage1_seed": 211,
-      "lufs": -14.2,
-      "recipe": "parallel",
+      "lufs": -14.3,
+      "recipe": "grow",
       "nearest5": [
-        "NZ-01",
-        "PH-01",
-        "PH-04",
-        "AU-02",
-        "TZ-03"
+        "VN-01",
+        "AO-04",
+        "SG-04",
+        "AR-02",
+        "AR-03"
       ]
     },
     {
       "id": "PH-03",
       "region": "PH",
       "file": "audio/PH-03.mp3",
-      "duration_s": 116.06,
+      "duration_s": 115.24,
       "title": "Tag-init sa Maynila",
       "artist": "Roxas Boulevard Trio",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4249,27 +4249,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "PH-01",
-        "PH-04",
-        "PH-02",
-        "MY-03",
-        "TW-01"
+        "MZ-02",
+        "PT-02",
+        "AU-02",
+        "AU-01",
+        "SE-02"
       ]
     },
     {
       "id": "PH-04",
       "region": "PH",
       "file": "audio/PH-04.mp3",
-      "duration_s": 115.82,
+      "duration_s": 117.22,
       "title": "Tag-init sa Araw",
       "artist": "Quiapo Yard Sessions",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4278,27 +4278,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "PH-01",
-        "PH-02",
-        "NZ-01",
-        "AU-02",
-        "PH-03"
+        "NG-01",
+        "ID-04",
+        "US-04",
+        "TZ-04",
+        "NZ-04"
       ]
     },
     {
       "id": "AU-01",
       "region": "AU",
       "file": "audio/AU-01.mp3",
-      "duration_s": 116.68,
+      "duration_s": 118.36,
       "title": "Down the the Coast",
       "artist": "Harbour Line Circuit",
       "mirrors_rank": 1,
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -4307,27 +4307,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "AU-02",
-        "NZ-01",
         "GB-04",
-        "TZ-03",
-        "NZ-03"
+        "SE-03",
+        "VN-01",
+        "SG-04",
+        "SG-03"
       ]
     },
     {
       "id": "AU-02",
       "region": "AU",
       "file": "audio/AU-02.mp3",
-      "duration_s": 117.46,
+      "duration_s": 120.0,
       "title": "Down the Blue",
       "artist": "Parramatta Band",
       "mirrors_rank": 2,
       "mirrors_cities": 4,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -4336,27 +4336,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
         "AU-01",
-        "NZ-01",
-        "NZ-03",
-        "AU-03",
-        "VN-01"
+        "NZ-02",
+        "GB-03",
+        "NZ-04",
+        "TZ-03"
       ]
     },
     {
       "id": "AU-03",
       "region": "AU",
       "file": "audio/AU-03.mp3",
-      "duration_s": 116.76,
+      "duration_s": 117.8,
       "title": "Down the the Harbour",
       "artist": "Harbour Line Trio",
       "mirrors_rank": 3,
       "mirrors_cities": 6,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4365,27 +4365,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "ES-04",
+        "VN-04",
         "GB-04",
-        "PL-01",
-        "VN-01",
-        "IT-01",
-        "VN-04"
+        "KR-02",
+        "IT-04"
       ]
     },
     {
       "id": "AU-04",
       "region": "AU",
       "file": "audio/AU-04.mp3",
-      "duration_s": 116.66,
+      "duration_s": 119.06,
       "title": "Night on Bondi",
       "artist": "Newtown Band",
       "mirrors_rank": 4,
       "mirrors_cities": 12,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4394,27 +4394,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "NZ-04",
+        "TW-04",
         "HK-02",
+        "NZ-04",
         "ID-04",
-        "PT-04",
-        "TZ-04"
+        "PL-01"
       ]
     },
     {
       "id": "NZ-01",
       "region": "NZ",
       "file": "audio/NZ-01.mp3",
-      "duration_s": 119.1,
+      "duration_s": 120.0,
       "title": "Dance at the Harbour",
       "artist": "Karangahape Choir",
       "mirrors_rank": 1,
       "mirrors_cities": 39,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -4423,27 +4423,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "AU-02",
-        "NZ-03",
+        "UG-02",
         "TZ-03",
-        "NZ-02",
-        "AU-01"
+        "TZ-02",
+        "AU-02",
+        "IN-03"
       ]
     },
     {
       "id": "NZ-02",
       "region": "NZ",
       "file": "audio/NZ-02.mp3",
-      "duration_s": 118.46,
+      "duration_s": 120.0,
       "title": "Heart of Blue",
       "artist": "Grey Lynn Skyline",
       "mirrors_rank": 2,
       "mirrors_cities": 4,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -4452,27 +4452,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "NZ-03",
-        "NZ-01",
-        "MY-01",
+        "AU-02",
         "TZ-03",
-        "ID-02"
+        "MY-01",
+        "AU-01",
+        "NZ-01"
       ]
     },
     {
       "id": "NZ-03",
       "region": "NZ",
       "file": "audio/NZ-03.mp3",
-      "duration_s": 118.5,
+      "duration_s": 120.0,
       "title": "Dance at Piha",
       "artist": "Harbour Bridge Union",
       "mirrors_rank": 3,
       "mirrors_cities": 12,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4481,27 +4481,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "NZ-01",
-        "AU-02",
-        "NZ-02",
-        "AU-01",
-        "TZ-03"
+        "ID-04",
+        "GB-03",
+        "UG-04",
+        "MZ-01",
+        "PH-04"
       ]
     },
     {
       "id": "NZ-04",
       "region": "NZ",
       "file": "audio/NZ-04.mp3",
-      "duration_s": 118.5,
+      "duration_s": 120.0,
       "title": "Along the January",
       "artist": "Grey Lynn Rooftop Crew",
       "mirrors_rank": 4,
       "mirrors_cities": 10,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4510,27 +4510,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
         "ID-04",
-        "TW-03",
-        "AE-04",
         "PL-01",
-        "AU-03"
+        "US-04",
+        "AU-04",
+        "PH-04"
       ]
     },
     {
       "id": "CV-01",
       "region": "CV",
       "file": "audio/CV-01.mp3",
-      "duration_s": 117.24,
+      "duration_s": 118.08,
       "title": "Baile na Ilha",
       "artist": "Cidade Velha Set",
       "mirrors_rank": 1,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -4539,27 +4539,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "MY-01",
+        "CV-03",
+        "CO-02",
         "CV-02",
-        "MX-02",
-        "BR-02",
-        "CO-02"
+        "MX-03",
+        "BR-02"
       ]
     },
     {
       "id": "CV-02",
       "region": "CV",
       "file": "audio/CV-02.mp3",
-      "duration_s": 116.72,
+      "duration_s": 120.0,
       "title": "Korason di Bairro",
       "artist": "Achada Choir",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -4568,27 +4568,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "CV-04",
         "CV-01",
-        "MY-01",
-        "MX-02",
         "CV-03",
-        "BR-04"
+        "EG-02",
+        "MA-03"
       ]
     },
     {
       "id": "CV-03",
       "region": "CV",
       "file": "audio/CV-03.mp3",
-      "duration_s": 118.5,
+      "duration_s": 118.74,
       "title": "Rua di Ilha",
       "artist": "Ribeira Grande Choir",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4597,27 +4597,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "CV-01",
+        "UG-01",
         "UG-02",
-        "MY-01",
-        "BR-02",
-        "MX-03",
-        "CV-01"
+        "CO-02",
+        "BR-02"
       ]
     },
     {
       "id": "CV-04",
       "region": "CV",
       "file": "audio/CV-04.mp3",
-      "duration_s": 118.5,
+      "duration_s": 119.26,
       "title": "Verão na Praia",
       "artist": "Cidade Velha Society",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4626,12 +4626,12 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "CV-02",
+        "TZ-01",
         "BR-04",
         "BR-01",
-        "CO-03",
-        "MX-02",
         "HK-02"
       ]
     },
@@ -4639,14 +4639,14 @@
       "id": "JP-01",
       "region": "JP",
       "file": "audio/JP-01.mp3",
-      "duration_s": 118.4,
+      "duration_s": 118.2,
       "title": "Natsu no Yume",
       "artist": "Yanesen Band",
       "mirrors_rank": 1,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -4654,28 +4654,28 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2,
-      "recipe": "parallel",
+      "lufs": -14.4,
+      "recipe": "grow",
       "nearest5": [
-        "JP-02",
-        "JP-04",
-        "JP-03",
-        "KR-03",
-        "SE-04"
+        "SE-04",
+        "IT-03",
+        "SG-04",
+        "ES-03",
+        "NL-02"
       ]
     },
     {
       "id": "JP-02",
       "region": "JP",
       "file": "audio/JP-02.mp3",
-      "duration_s": 117.46,
+      "duration_s": 119.36,
       "title": "Kimi to Hoshi",
       "artist": "Kichijoji Collective",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -4684,27 +4684,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "HK-03",
+        "ID-04",
         "JP-03",
         "JP-04",
-        "HK-03",
-        "JP-01",
-        "US-01"
+        "HK-04"
       ]
     },
     {
       "id": "JP-03",
       "region": "JP",
       "file": "audio/JP-03.mp3",
-      "duration_s": 118.66,
+      "duration_s": 117.82,
       "title": "Hikari ga Yume",
       "artist": "Sumida Gawa Sessions",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4713,27 +4713,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "JP-02",
         "JP-04",
+        "JP-02",
         "JP-01",
         "HK-02",
-        "HK-04"
+        "AU-04"
       ]
     },
     {
       "id": "JP-04",
       "region": "JP",
       "file": "audio/JP-04.mp3",
-      "duration_s": 118.9,
+      "duration_s": 117.5,
       "title": "Kaze no Hoshi",
       "artist": "Yanaka Yūgure Radio",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4742,27 +4742,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
         "JP-03",
         "JP-02",
         "JP-01",
-        "HK-04",
-        "HK-02"
+        "HK-03",
+        "ID-04"
       ]
     },
     {
       "id": "TH-01",
       "region": "TH",
       "file": "audio/TH-01.mp3",
-      "duration_s": 118.64,
+      "duration_s": 119.94,
       "title": "Duang Jai Bangkok",
       "artist": "Yaowarat Skyline",
       "mirrors_rank": 1,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -4770,28 +4770,28 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.2,
-      "recipe": "parallel",
+      "lufs": -14.1,
+      "recipe": "grow",
       "nearest5": [
+        "US-02",
         "TH-02",
-        "TH-04",
-        "HK-03",
-        "US-01",
-        "TH-03"
+        "US-03",
+        "ET-02",
+        "CO-04"
       ]
     },
     {
       "id": "TH-02",
       "region": "TH",
       "file": "audio/TH-02.mp3",
-      "duration_s": 118.28,
+      "duration_s": 119.96,
       "title": "Sai Lom Fah",
       "artist": "Ratchada Lamplight",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -4800,27 +4800,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.1,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "TH-04",
-        "US-04",
-        "TH-03",
+        "MY-03",
         "TH-01",
-        "US-01"
+        "CO-02",
+        "ET-02",
+        "GH-04"
       ]
     },
     {
       "id": "TH-03",
       "region": "TH",
       "file": "audio/TH-03.mp3",
-      "duration_s": 118.94,
+      "duration_s": 120.0,
       "title": "Sai Lom Ngao",
       "artist": "Ari Soi Cassette",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4829,27 +4829,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "TH-02",
         "TH-04",
+        "US-01",
         "US-04",
-        "TH-01",
-        "US-01"
+        "HK-03",
+        "PH-04"
       ]
     },
     {
       "id": "TH-04",
       "region": "TH",
       "file": "audio/TH-04.mp3",
-      "duration_s": 118.3,
+      "duration_s": 119.28,
       "title": "Duang Jai Ruk",
       "artist": "Chatuchak Cassette",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4858,27 +4858,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "TH-02",
         "TH-03",
         "US-01",
-        "TH-01",
-        "US-04"
+        "US-04",
+        "HK-03",
+        "UG-04"
       ]
     },
     {
       "id": "TW-01",
       "region": "TW",
       "file": "audio/TW-01.mp3",
-      "duration_s": 118.88,
+      "duration_s": 120.0,
       "title": "Ye Wan De Tian Kong",
       "artist": "Beitou Circuit",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -4886,28 +4886,28 @@
         115
       ],
       "stage1_seed": 111,
-      "lufs": -14.1,
-      "recipe": "parallel",
+      "lufs": -14.2,
+      "recipe": "grow",
       "nearest5": [
-        "TW-02",
-        "TW-04",
-        "TR-03",
-        "PL-02",
-        "EG-03"
+        "TW-03",
+        "SA-01",
+        "SG-04",
+        "SA-04",
+        "KE-04"
       ]
     },
     {
       "id": "TW-02",
       "region": "TW",
       "file": "audio/TW-02.mp3",
-      "duration_s": 117.54,
+      "duration_s": 116.66,
       "title": "Feng Chui Gu Shi",
       "artist": "Wenshan Lamplight",
       "mirrors_rank": 1,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -4916,27 +4916,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "TW-01",
-        "TW-04",
-        "NG-03",
-        "NG-01",
-        "PL-02"
+        "PL-02",
+        "DE-04",
+        "DE-02",
+        "MA-02",
+        "TR-03"
       ]
     },
     {
       "id": "TW-03",
       "region": "TW",
       "file": "audio/TW-03.mp3",
-      "duration_s": 118.82,
+      "duration_s": 116.52,
       "title": "Ye Wan De Cheng Shi",
       "artist": "Beitou Choir",
       "mirrors_rank": 2,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -4945,27 +4945,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.3,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "SG-02",
+        "SG-04",
+        "VN-03",
         "PL-01",
-        "AE-04",
-        "NZ-04",
-        "PL-04",
-        "NL-04"
+        "VN-01"
       ]
     },
     {
       "id": "TW-04",
       "region": "TW",
       "file": "audio/TW-04.mp3",
-      "duration_s": 118.68,
+      "duration_s": 119.74,
       "title": "Feng Chui Gu Shi",
       "artist": "Beitou Yard Sessions",
       "mirrors_rank": 3,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -4974,27 +4974,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.3,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "TW-01",
-        "TW-02",
-        "PL-02",
-        "NG-03",
-        "MA-02"
+        "AU-04",
+        "NZ-04",
+        "HK-02",
+        "TZ-04",
+        "UG-04"
       ]
     },
     {
       "id": "TR-01",
       "region": "TR",
       "file": "audio/TR-01.mp3",
-      "duration_s": 118.4,
+      "duration_s": 117.98,
       "title": "Yagmur Gibi Istanbul",
       "artist": "Bebek Institute",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -5003,27 +5003,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
+        "AE-03",
         "TR-03",
-        "DE-04",
-        "TR-02",
-        "SG-01",
-        "TW-01"
+        "NL-03",
+        "DE-01",
+        "DE-02"
       ]
     },
     {
       "id": "TR-02",
       "region": "TR",
       "file": "audio/TR-02.mp3",
-      "duration_s": 118.68,
+      "duration_s": 117.76,
       "title": "Yagmur Gibi Istanbul",
       "artist": "Galata Sessions",
       "mirrors_rank": 3,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -5032,27 +5032,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "TR-03",
-        "DE-04",
-        "DE-03",
-        "DE-01",
-        "AR-02"
+        "CI-01",
+        "NL-03",
+        "SA-03",
+        "EG-04",
+        "SE-01"
       ]
     },
     {
       "id": "TR-03",
       "region": "TR",
       "file": "audio/TR-03.mp3",
-      "duration_s": 118.18,
+      "duration_s": 117.9,
       "title": "Yagmur Gibi Istanbul",
       "artist": "Bebek Night Bus",
       "mirrors_rank": 4,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -5061,27 +5061,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "TR-02",
         "FR-04",
         "DE-04",
+        "FR-02",
         "EG-03",
-        "FR-02"
+        "TR-01"
       ]
     },
     {
       "id": "TR-04",
       "region": "TR",
       "file": "audio/TR-04.mp3",
-      "duration_s": 118.14,
+      "duration_s": 117.54,
       "title": "Gece Yarisi Sessizlik",
       "artist": "Karakoy Lamplight",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -5090,27 +5090,27 @@
       ],
       "stage1_seed": 411,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
         "NL-03",
-        "PL-01",
-        "NL-02",
+        "ID-03",
         "SA-03",
-        "TW-03"
+        "SA-04",
+        "ID-02"
       ]
     },
     {
       "id": "MY-01",
       "region": "MY",
       "file": "audio/MY-01.mp3",
-      "duration_s": 117.82,
+      "duration_s": 118.44,
       "title": "Bintang Di Kota",
       "artist": "Kelana Jaya Society",
       "mirrors_rank": 2,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         112,
         113,
@@ -5119,27 +5119,27 @@
       ],
       "stage1_seed": 111,
       "lufs": -14.3,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "CV-01",
+        "CO-02",
+        "MY-04",
         "NZ-02",
-        "MY-03",
-        "CV-03",
-        "UG-01"
+        "MA-04",
+        "CV-01"
       ]
     },
     {
       "id": "MY-02",
       "region": "MY",
       "file": "audio/MY-02.mp3",
-      "duration_s": 117.84,
+      "duration_s": 119.1,
       "title": "Hujan Di Rindu",
       "artist": "Brickfields Sound",
       "mirrors_rank": 5,
       "mirrors_cities": 1,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         212,
         213,
@@ -5148,27 +5148,27 @@
       ],
       "stage1_seed": 211,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "PT-02",
         "MZ-02",
-        "ID-01",
+        "MY-03",
+        "PT-02",
         "SN-02",
-        "DO-02"
+        "AR-02"
       ]
     },
     {
       "id": "MY-03",
       "region": "MY",
       "file": "audio/MY-03.mp3",
-      "duration_s": 117.78,
+      "duration_s": 117.48,
       "title": "Angin Malam Rindu",
       "artist": "Kelana Jaya Rooftop Crew",
       "mirrors_rank": 1,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         312,
         313,
@@ -5177,27 +5177,27 @@
       ],
       "stage1_seed": 311,
       "lufs": -14.2,
-      "recipe": "parallel",
+      "recipe": "grow",
       "nearest5": [
-        "MY-01",
+        "TH-02",
+        "CO-02",
         "TZ-03",
-        "ID-03",
-        "NZ-01",
-        "ID-02"
+        "IN-03",
+        "MY-02"
       ]
     },
     {
       "id": "MY-04",
       "region": "MY",
       "file": "audio/MY-04.mp3",
-      "duration_s": 118.04,
+      "duration_s": 118.18,
       "title": "Bintang Di Rindu",
       "artist": "Kampung Baru Lamplight",
       "mirrors_rank": 3,
       "mirrors_cities": 2,
       "seed_source": "synthetic",
       "vibe": 0.42,
-      "chunks": 4,
+      "chunks": 1,
       "seeds": [
         412,
         413,
@@ -5205,14 +5205,14 @@
         415
       ],
       "stage1_seed": 411,
-      "lufs": -14.3,
-      "recipe": "parallel",
+      "lufs": -14.1,
+      "recipe": "grow",
       "nearest5": [
-        "UG-04",
-        "PT-04",
-        "MZ-01",
-        "US-01",
-        "BR-04"
+        "CO-02",
+        "TZ-03",
+        "MY-01",
+        "CV-01",
+        "CV-03"
       ]
     },
     {
@@ -5237,11 +5237,11 @@
       "lufs": -14.5,
       "recipe": "grow",
       "nearest5": [
-        "TR-02",
         "DE-04",
         "FR-04",
         "DE-02",
-        "FR-02"
+        "FR-02",
+        "CI-04"
       ]
     },
     {
@@ -5270,7 +5270,7 @@
         "DE-04",
         "FR-04",
         "PL-02",
-        "TR-02"
+        "DE-01"
       ]
     },
     {
@@ -5295,11 +5295,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "TR-02",
-        "TR-03",
         "FR-01",
         "DE-02",
-        "AR-02"
+        "FR-04",
+        "GH-04",
+        "DE-04"
       ]
     },
     {
@@ -5326,9 +5326,9 @@
       "nearest5": [
         "DE-02",
         "FR-02",
-        "TR-02",
         "FR-04",
-        "DE-01"
+        "DE-01",
+        "TR-03"
       ]
     },
     {
@@ -5353,8 +5353,8 @@
         "FR-04",
         "JM-04",
         "DE-03",
-        "TR-03",
-        "CI-02"
+        "CI-02",
+        "DE-02"
       ]
     },
     {
@@ -5484,7 +5484,7 @@
         "DO-02",
         "KE-03",
         "ES-04",
-        "KR-04"
+        "EG-01"
       ]
     },
     {
@@ -5543,7 +5543,7 @@
         "SG-03",
         "SE-04",
         "PL-04",
-        "SA-02"
+        "AU-01"
       ]
     },
     {
@@ -5570,11 +5570,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "KR-04",
+        "AU-03",
         "PL-04",
         "DO-01",
         "SN-03",
-        "KR-02"
+        "VN-04"
       ]
     },
     {
@@ -5599,8 +5599,8 @@
         "IT-03",
         "GB-04",
         "IT-04",
-        "AU-03",
-        "NL-02"
+        "NL-02",
+        "PL-01"
       ]
     },
     {
@@ -5654,9 +5654,9 @@
       "recipe": "grow",
       "nearest5": [
         "IT-01",
+        "KR-01",
         "IT-04",
         "GB-04",
-        "KR-01",
         "AO-01"
       ]
     },
@@ -5681,8 +5681,8 @@
       "nearest5": [
         "IT-01",
         "AU-03",
+        "ID-02",
         "GB-04",
-        "KR-02",
         "IT-03"
       ]
     },
@@ -5759,7 +5759,7 @@
         "SE-04",
         "PL-01",
         "IT-01",
-        "TR-04"
+        "IT-04"
       ]
     },
     {
@@ -5821,9 +5821,9 @@
       "nearest5": [
         "NL-02",
         "GB-04",
-        "TW-03",
         "SG-01",
-        "GB-02"
+        "GB-02",
+        "IT-04"
       ]
     },
     {
@@ -5845,11 +5845,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "TW-03",
         "PL-04",
-        "AU-03",
         "VN-04",
-        "SG-04"
+        "SG-04",
+        "ID-01",
+        "AE-04"
       ]
     },
     {
@@ -5878,10 +5878,10 @@
       "recipe": "grow",
       "nearest5": [
         "DE-02",
+        "TW-02",
         "FR-04",
         "MA-02",
-        "DE-01",
-        "JM-04"
+        "DE-01"
       ]
     },
     {
@@ -5905,9 +5905,9 @@
       "nearest5": [
         "IT-04",
         "NL-02",
-        "KR-02",
+        "ID-02",
         "NL-04",
-        "TR-04"
+        "GB-02"
       ]
     },
     {
@@ -5936,7 +5936,7 @@
         "VN-04",
         "AE-04",
         "ES-04",
-        "KR-04"
+        "SG-03"
       ]
     },
     {
@@ -5984,11 +5984,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
+        "AU-01",
         "DO-02",
         "SE-03",
         "VN-04",
-        "SG-03",
-        "VN-01"
+        "SG-03"
       ]
     },
     {
@@ -6010,11 +6010,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
+        "AU-01",
         "GB-04",
-        "VN-04",
+        "KR-01",
         "KR-04",
-        "GB-02",
-        "GB-01"
+        "VN-04"
       ]
     },
     {
@@ -6066,7 +6066,7 @@
         "SA-04",
         "SA-02",
         "NL-03",
-        "TR-04"
+        "SG-04"
       ]
     },
     {
@@ -6119,9 +6119,9 @@
       "nearest5": [
         "SA-01",
         "NL-03",
-        "TR-04",
         "SA-02",
-        "SA-04"
+        "SA-04",
+        "SG-04"
       ]
     },
     {
@@ -6177,7 +6177,7 @@
         "AO-03",
         "IT-04",
         "DO-01",
-        "KR-02"
+        "AO-04"
       ]
     },
     {
@@ -6212,9 +6212,9 @@
       "recipe": "grow",
       "nearest5": [
         "PL-02",
-        "TR-02",
+        "US-03",
         "EG-03",
-        "AR-02",
+        "PT-01",
         "JM-04"
       ]
     },
@@ -6241,7 +6241,7 @@
         "NL-02",
         "ES-03",
         "EG-01",
-        "SG-01"
+        "AR-03"
       ]
     },
     {
@@ -6279,7 +6279,7 @@
         "SN-03",
         "AE-04",
         "VN-02",
-        "SG-02"
+        "PT-01"
       ]
     },
     {
@@ -6305,7 +6305,7 @@
         "DO-02",
         "SG-04",
         "VN-04",
-        "AU-03"
+        "AU-01"
       ]
     },
     {
@@ -6327,7 +6327,7 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "KR-02",
+        "AU-03",
         "MA-04",
         "MZ-03",
         "SN-03",
@@ -6356,8 +6356,8 @@
         "VN-01",
         "VN-04",
         "GB-04",
-        "AU-03",
-        "SG-04"
+        "SG-04",
+        "DO-02"
       ]
     },
     {
@@ -6379,10 +6379,10 @@
       "lufs": -14.3,
       "recipe": "grow",
       "nearest5": [
+        "AU-03",
         "VN-03",
         "DO-02",
         "VN-01",
-        "KR-04",
         "SE-03"
       ]
     },
@@ -6415,9 +6415,9 @@
       "nearest5": [
         "SG-04",
         "NL-04",
-        "AU-03",
         "ES-03",
-        "VN-01"
+        "VN-01",
+        "AO-04"
       ]
     },
     {
@@ -6439,10 +6439,10 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
+        "TW-03",
         "SG-04",
         "MA-04",
         "SN-03",
-        "AR-04",
         "NL-01"
       ]
     },
@@ -6467,7 +6467,7 @@
       "nearest5": [
         "ES-03",
         "SG-04",
-        "KR-04",
+        "AU-01",
         "GB-04",
         "SE-04"
       ]
@@ -6497,8 +6497,8 @@
         "ES-03",
         "VN-01",
         "SG-03",
-        "PL-01",
-        "AU-03"
+        "AU-01",
+        "PL-01"
       ]
     },
     {
@@ -6524,7 +6524,7 @@
         "HK-04",
         "CM-04",
         "MA-02",
-        "PL-02"
+        "US-03"
       ]
     },
     {
@@ -6546,10 +6546,10 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "HK-04",
-        "US-01",
-        "UG-04",
         "AU-04",
+        "HK-04",
+        "UG-04",
+        "ID-04",
         "TZ-01"
       ]
     },
@@ -6572,11 +6572,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
-        "TH-01",
-        "US-04",
-        "TH-02",
+        "TH-04",
+        "US-01",
         "JP-02",
-        "US-01"
+        "US-04",
+        "ID-04"
       ]
     },
     {
@@ -6599,10 +6599,10 @@
       "recipe": "grow",
       "nearest5": [
         "HK-02",
-        "US-01",
+        "ID-04",
         "US-03",
-        "TZ-02",
-        "GB-03"
+        "US-04",
+        "NZ-04"
       ]
     },
     {
@@ -6637,8 +6637,8 @@
         "SN-04",
         "PL-03",
         "SN-03",
-        "MA-04",
-        "KR-02"
+        "AU-03",
+        "MA-04"
       ]
     },
     {
@@ -6674,9 +6674,9 @@
       "nearest5": [
         "EG-01",
         "DO-01",
-        "ID-01",
-        "MY-02",
-        "ES-01"
+        "KR-02",
+        "ES-01",
+        "MZ-02"
       ]
     },
     {
@@ -6714,7 +6714,7 @@
         "ES-04",
         "MA-04",
         "NG-02",
-        "AE-04"
+        "AU-03"
       ]
     },
     {
@@ -6765,11 +6765,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
+        "TR-02",
         "NL-02",
         "SE-01",
         "FR-04",
-        "SA-03",
-        "JM-04"
+        "SA-03"
       ]
     },
     {
@@ -6794,8 +6794,8 @@
         "FR-04",
         "FR-02",
         "CI-04",
-        "TR-03",
-        "FR-01"
+        "FR-01",
+        "FR-03"
       ]
     },
     {
@@ -6818,10 +6818,10 @@
       "recipe": "grow",
       "nearest5": [
         "SE-01",
+        "AR-04",
         "JM-02",
         "JM-03",
-        "FR-04",
-        "CI-01"
+        "FR-04"
       ]
     },
     {
@@ -6895,11 +6895,11 @@
       "lufs": -14.2,
       "recipe": "grow",
       "nearest5": [
+        "PT-02",
         "CM-03",
         "ET-03",
-        "PT-02",
-        "GH-04",
-        "CM-02"
+        "TH-02",
+        "GH-04"
       ]
     },
     {
@@ -6999,11 +6999,11 @@
       "lufs": -14.1,
       "recipe": "grow",
       "nearest5": [
-        "MY-01",
+        "CO-02",
         "AO-01",
         "DO-01",
-        "AO-04",
-        "TZ-03"
+        "CV-01",
+        "AO-04"
       ]
     },
     {
@@ -7025,11 +7025,11 @@
       "lufs": -14.1,
       "recipe": "grow",
       "nearest5": [
+        "KR-02",
+        "KR-03",
+        "KR-04",
         "DO-01",
-        "AO-01",
-        "MA-01",
-        "DO-02",
-        "KR-01"
+        "AO-01"
       ]
     },
     {
@@ -7081,7 +7081,7 @@
         "MZ-04",
         "PT-04",
         "MA-04",
-        "ID-04"
+        "AE-04"
       ]
     },
     {
@@ -7103,11 +7103,11 @@
       "lufs": -14.3,
       "recipe": "grow",
       "nearest5": [
-        "PT-02",
+        "PH-03",
         "MY-02",
         "DO-02",
         "VN-01",
-        "SN-02"
+        "PT-02"
       ]
     },
     {
@@ -7130,10 +7130,10 @@
       "recipe": "grow",
       "nearest5": [
         "MZ-01",
+        "PT-04",
         "MZ-04",
         "NG-04",
-        "VN-02",
-        "TZ-04"
+        "VN-02"
       ]
     },
     {
@@ -7182,8 +7182,8 @@
       "recipe": "grow",
       "nearest5": [
         "NL-01",
-        "AR-04",
         "AE-02",
+        "PH-02",
         "ET-04",
         "SA-02"
       ]
@@ -7209,9 +7209,9 @@
       "nearest5": [
         "UG-03",
         "MX-03",
-        "NZ-02",
-        "MX-01",
-        "AO-02"
+        "CO-02",
+        "CO-04",
+        "NZ-02"
       ]
     },
     {
@@ -7235,9 +7235,9 @@
       "nearest5": [
         "AO-01",
         "EG-02",
-        "US-03",
         "NG-02",
-        "MZ-03"
+        "MZ-03",
+        "TZ-03"
       ]
     },
     {
@@ -7288,8 +7288,8 @@
         "CM-03",
         "GH-01",
         "ET-02",
-        "TR-02",
-        "GH-03"
+        "GH-03",
+        "DE-02"
       ]
     },
     {
@@ -7341,7 +7341,7 @@
         "CM-01",
         "ET-02",
         "ET-03",
-        "CM-04"
+        "AR-02"
       ]
     },
     {
@@ -7495,9 +7495,9 @@
       "nearest5": [
         "DO-03",
         "DO-02",
+        "KR-02",
         "EG-01",
-        "AO-03",
-        "ES-01"
+        "AO-03"
       ]
     },
     {
@@ -7521,9 +7521,9 @@
       "nearest5": [
         "VN-01",
         "VN-04",
-        "KR-04",
         "DO-01",
-        "KR-02"
+        "KR-02",
+        "AU-03"
       ]
     },
     {
@@ -7548,7 +7548,7 @@
         "DO-01",
         "DO-02",
         "AO-01",
-        "KR-04",
+        "KR-02",
         "AO-03"
       ]
     },
