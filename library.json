@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-08T14:11:19Z",
-  "chart_week": "2026-08-24",
-  "version": "v5b",
+  "generated_at": "2026-09-09T13:39:46Z",
+  "chart_week": "2026-08-31",
+  "version": "v6",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
     "KE": {
@@ -51,26 +51,28 @@
       "country": "United Arab Emirates",
       "tz": "Asia/Dubai",
       "readout": {
-        "bpm": 97.54,
+        "bpm": 88.84,
         "mode": "minor",
-        "lufs": -14.27,
+        "lufs": -13.64,
         "instruments": [
           "bass",
-          "drums",
-          "percussion"
+          "percussion",
+          "drums"
         ],
         "moods": [
           "love",
           "deep",
           "energetic"
         ],
-        "n_tracks": 4,
+        "n_tracks": 2,
         "excluded_tracks": [
-          "AE-2"
+          "AE-4",
+          "AE-3",
+          "AE-5"
         ],
         "bpm_iqr": [
-          91.35,
-          100.9
+          83.57,
+          94.11
         ]
       },
       "genres_own": [
@@ -79,22 +81,14 @@
           1
         ],
         [
-          "Arabic Pop",
-          1
-        ],
-        [
-          "Bollywood",
-          1
-        ],
-        [
           "Soundtrack",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Pop / Arabic Pop / Bollywood / Soundtrack",
-      "sa3_prompt": "Mid-tempo Gulf-chart pop instrumental, 96 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix",
-      "suno_prompt": "[style: South-Asian film-pop meets Arabic urban pop, reggaeton/trap drum programming] [tempo: 96 BPM, wide range 53-115] [mood: emotional, deep, romantic] [instruments: sub bass, trap hats, percussion, synth, ornamented strings/reeds] [vocal: melismatic lead with microtonal ornament; the chart mixes Hindi/Tamil playback vocals and Egyptian-Arabic rap, so either a Hindi-pop hook or an Arabic rap verse fits]"
+      "genre_family": "Pop / Soundtrack",
+      "sa3_prompt": "Mid-tempo Gulf-chart pop instrumental, 89 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and energetic",
+      "suno_prompt": "[style: South-Asian film-pop meets Arabic urban pop, reggaeton/trap drum programming] [tempo: 89 BPM] [mood: romantic, deep, energetic] [instruments: sub bass, trap hats, percussion, synth, ornamented strings/reeds] [vocal: melismatic lead with microtonal ornament; a Hindi-pop hook or an Arabic rap verse both fit]"
     },
     "TZ": {
       "city": "Dar es Salaam",
@@ -528,31 +522,31 @@
       "country": "India",
       "tz": "Asia/Kolkata",
       "readout": {
-        "bpm": 73.15,
+        "bpm": 88.4,
         "mode": "minor",
-        "lufs": -13.71,
+        "lufs": -14.01,
         "instruments": [
-          "synthesizer",
           "bass",
-          "drums"
+          "drums",
+          "synthesizer"
         ],
         "moods": [
           "love",
-          "energetic",
-          "happy"
+          "happy",
+          "energetic"
         ],
         "n_tracks": 4,
         "excluded_tracks": [
-          "IN-5"
+          "IN-1"
         ],
         "bpm_iqr": [
-          65.68,
-          82.65
+          80.75,
+          92.38
         ]
       },
       "genres_own": [
         [
-          "Bollywood",
+          "Telugu",
           2
         ],
         [
@@ -560,14 +554,14 @@
           1
         ],
         [
-          "Indian Pop",
+          "Tamil",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Pop / Bollywood / Indian Pop",
-      "sa3_prompt": "Indian film pop instrumental, 93 BPM, major key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, romantic and rising",
-      "suno_prompt": "[style: Bollywood film pop with an Indian-pop electronic underlay] [tempo: 93 BPM] [mood: romantic, rising, cinematic] [instruments: dholak and tabla, programmed kit, sitar and santoor plucks, synth bass, string pad] [vocal: female lead in romanised Hindi with a male answering line, long held notes, harmonium-coloured ornament]"
+      "genre_family": "Pop / Tamil / Telugu",
+      "sa3_prompt": "Indian film pop instrumental, 88 BPM, minor key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "suno_prompt": "[style: Bollywood film pop with an Indian-pop electronic underlay] [tempo: 88 BPM] [mood: romantic, joyful, energetic] [instruments: dholak and tabla, programmed kit, sitar and santoor plucks, synth bass, string pad] [vocal: female lead in romanised Hindi with a male answering line, long held notes]"
     },
     "ID": {
       "city": "Jakarta",
@@ -1561,44 +1555,36 @@
       "country": "Vietnam",
       "tz": "Asia/Ho_Chi_Minh",
       "readout": {
-        "bpm": 126.05,
+        "bpm": 99.38,
         "mode": "major",
-        "lufs": -11.67,
+        "lufs": -12.96,
         "instruments": [
-          "bass",
           "synthesizer",
+          "bass",
           "drums"
         ],
         "moods": [
-          "energetic",
+          "love",
           "happy",
-          "love"
+          "energetic"
         ],
         "n_tracks": 5,
         "excluded_tracks": [],
         "bpm_iqr": [
-          120.19,
-          129.2
+          93.96,
+          103.36
         ]
       },
       "genres_own": [
         [
           "Pop",
-          3
-        ],
-        [
-          "Alternative Rap",
-          1
-        ],
-        [
-          "K-Pop",
-          1
+          5
         ]
       ],
       "heard": [],
-      "genre_family": "Pop / Alternative Rap / K-Pop",
-      "sa3_prompt": "Vietnamese V-pop chart instrumental, with an alternative-rap and K-pop crossover edge, 126 BPM, major key, bright pop keys, clean electric guitar, punchy programmed kit, round bass, K-pop-leaning synth stabs, polished ballad-into-chorus lift, glossy V-pop mix, bass well forward, synth-led textures and a prominent kit carrying the arrangement, energetic, joyful and romantic",
-      "suno_prompt": "[style: Vietnamese V-pop, alternative rap, K-pop crossover sheen] [tempo: 126 BPM] [mood: energetic, joyful, romantic] [instruments: keys, electric guitar, programmed kit, bass, synth stabs] [vocal: tender lead vocal in Vietnamese, sung verse opening into a soaring chorus]"
+      "genre_family": "Pop",
+      "sa3_prompt": "Vietnamese V-pop chart instrumental, with an alternative-rap and K-pop crossover edge, 99 BPM, major key, bright pop keys, clean electric guitar, punchy programmed kit, round bass, K-pop-leaning synth stabs, polished ballad-into-chorus lift, glossy V-pop mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "suno_prompt": "[style: Vietnamese V-pop, alternative rap, K-pop crossover sheen] [tempo: 99 BPM] [mood: romantic, joyful, energetic] [instruments: keys, electric guitar, programmed kit, bass, synth stabs] [vocal: tender lead vocal in Vietnamese, sung verse opening into a soaring chorus]"
     },
     "SG": {
       "city": "Singapore",
@@ -2042,29 +2028,29 @@
       "country": "Dominican Republic",
       "tz": "America/Santo_Domingo",
       "readout": {
-        "bpm": 123.05,
-        "mode": "major",
-        "lufs": -11.68,
+        "bpm": 129.2,
+        "mode": "minor",
+        "lufs": -12.15,
         "instruments": [
-          "bass",
           "synthesizer",
+          "bass",
           "drums"
         ],
         "moods": [
           "energetic",
-          "love",
-          "happy"
+          "happy",
+          "love"
         ],
         "n_tracks": 5,
         "excluded_tracks": [],
         "bpm_iqr": [
-          118.8,
+          123.05,
           132.51
         ]
       },
       "genres_own": [
         [
-          "Latin Music",
+          "Música tropical",
           2
         ],
         [
@@ -2072,14 +2058,58 @@
           1
         ],
         [
-          "Música tropical",
+          "Urbano latino",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Underground Rap / Música tropical / Latin Music",
-      "sa3_prompt": "Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 123 BPM, major key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, bass well forward, synth-led textures and a prominent kit carrying the arrangement, energetic, romantic and joyful",
-      "suno_prompt": "[style: Dominican dembow, underground rap, Latin tropical crossover] [tempo: 123 BPM] [mood: energetic, romantic, joyful] [instruments: dembow drums, sub bass, synth stabs, percussion] [vocal: Spanish-language lead, rapped verse into a sung dembow hook]"
+      "genre_family": "Underground Rap / Música tropical / Urbano latino",
+      "sa3_prompt": "Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 129 BPM, minor key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "suno_prompt": "[style: Dominican dembow, underground rap, Latin tropical crossover] [tempo: 129 BPM] [mood: energetic, joyful, romantic] [instruments: dembow drums, sub bass, synth stabs, percussion] [vocal: Spanish-language lead, rapped verse into a sung dembow hook]"
+    },
+    "GR": {
+      "city": "Athens",
+      "country": "Greece",
+      "tz": "Europe/Athens",
+      "readout": {
+        "bpm": 135.35,
+        "mode": "major",
+        "lufs": -12.36,
+        "instruments": [
+          "acousticguitar",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "melodic",
+          "ballad"
+        ],
+        "n_tracks": 2,
+        "excluded_tracks": [
+          "GR-1",
+          "GR-2",
+          "GR-3"
+        ],
+        "bpm_iqr": [
+          129.2,
+          141.51
+        ]
+      },
+      "genres_own": [
+        [
+          "Worldwide",
+          1
+        ],
+        [
+          "Singer-songwriter",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Worldwide / Singer / Songwriter",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 135 BPM, major key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, acoustic guitar and a prominent kit carrying the arrangement, romantic, melodic and tender",
+      "suno_prompt": "[style: Greek singer-songwriter pop, laiko-adjacent balladry, chart pop] [tempo: 135 BPM] [mood: romantic, melodic, tender] [instruments: nylon guitar, bouzouki-adjacent guitar, piano, brushed drums, round bass] [vocal: solo lead in Greek, confiding verse opening into a warm sung chorus]"
     }
   },
   "tracks": [
@@ -2104,12 +2134,13 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-03",
+        "AE-06",
         "NL-01",
         "ES-02",
-        "PL-04",
-        "EG-01"
+        "PL-04"
       ]
     },
     {
@@ -2133,6 +2164,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-04",
         "IN-03",
@@ -2162,12 +2194,13 @@
       "stage1_seed": 311,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-01",
+        "AE-06",
+        "AE-07",
         "ES-01",
-        "EG-01",
-        "PL-04",
-        "DO-02"
+        "EG-01"
       ]
     },
     {
@@ -2191,6 +2224,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-02",
         "NG-04",
@@ -2220,6 +2254,7 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NL-01",
         "NG-02",
@@ -2249,6 +2284,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ET-01",
         "AE-03",
@@ -2278,12 +2314,13 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AE-04",
+        "VN-07",
         "AE-02",
-        "TR-01",
-        "NL-01",
-        "ES-04"
+        "DO-05",
+        "AE-08"
       ]
     },
     {
@@ -2307,12 +2344,13 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AE-03",
+        "VN-07",
         "PL-04",
         "PL-01",
-        "VN-04",
-        "MZ-01"
+        "VN-04"
       ]
     },
     {
@@ -2336,6 +2374,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TZ-04",
         "TZ-02",
@@ -2365,6 +2404,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TZ-01",
         "NZ-01",
@@ -2394,6 +2434,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NZ-01",
         "AU-01",
@@ -2423,6 +2464,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TZ-01",
         "PH-04",
@@ -2452,6 +2494,7 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PH-04",
         "NG-03",
@@ -2481,12 +2524,13 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SN-03",
         "MZ-04",
         "MA-04",
         "ZA-01",
-        "ZA-03"
+        "AE-05"
       ]
     },
     {
@@ -2510,6 +2554,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NG-04",
         "NG-01",
@@ -2539,6 +2584,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "parallel",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-04",
         "NG-03",
@@ -2568,6 +2614,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "parallel",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CM-01",
         "FR-01",
@@ -2597,6 +2644,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "GH-03",
         "GH-04",
@@ -2626,6 +2674,7 @@
       "stage1_seed": 311,
       "lufs": -14.5,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "GH-04",
         "JM-04",
@@ -2655,6 +2704,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "GH-03",
         "ET-03",
@@ -2684,6 +2734,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "BR-02",
         "UG-02",
@@ -2713,6 +2764,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NZ-01",
         "UG-01",
@@ -2742,6 +2794,7 @@
       "stage1_seed": 311,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ET-01",
         "UG-01",
@@ -2771,6 +2824,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ID-04",
         "TZ-04",
@@ -2800,6 +2854,7 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SN-03",
         "MZ-04",
@@ -2829,6 +2884,7 @@
       "stage1_seed": 211,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-04",
         "NG-04",
@@ -2858,6 +2914,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ZA-04",
         "SN-04",
@@ -2887,6 +2944,7 @@
       "stage1_seed": 411,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ZA-03",
         "ZA-01",
@@ -2916,6 +2974,7 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "GB-02",
         "SE-03",
@@ -2945,6 +3004,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SE-03",
         "GB-04",
@@ -2974,6 +3034,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ID-04",
         "GB-04",
@@ -3003,12 +3064,13 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AU-01",
         "AU-03",
         "SE-03",
-        "VN-04",
-        "NL-04"
+        "DO-05",
+        "VN-04"
       ]
     },
     {
@@ -3032,6 +3094,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CV-04",
         "MX-04",
@@ -3061,6 +3124,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "UG-01",
         "CV-03",
@@ -3090,6 +3154,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ZA-03",
         "NZ-03",
@@ -3119,6 +3184,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MX-03",
         "MX-02",
@@ -3148,6 +3214,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SE-03",
         "KR-04",
@@ -3177,12 +3244,13 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
+        "VN-06",
         "KR-04",
         "AO-03",
         "AU-03",
-        "DO-02",
-        "DO-01"
+        "DO-02"
       ]
     },
     {
@@ -3206,6 +3274,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KR-04",
         "AO-03",
@@ -3235,12 +3304,13 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
+        "VN-06",
         "KR-03",
         "KR-02",
         "SE-03",
-        "KR-01",
-        "AU-03"
+        "KR-01"
       ]
     },
     {
@@ -3264,6 +3334,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MX-03",
         "MX-02",
@@ -3293,6 +3364,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MX-03",
         "MX-01",
@@ -3322,6 +3394,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MX-02",
         "MX-01",
@@ -3351,6 +3424,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MX-02",
         "MX-01",
@@ -3380,6 +3454,7 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TH-04",
         "TH-03",
@@ -3409,6 +3484,7 @@
       "stage1_seed": 211,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "US-01",
         "US-04",
@@ -3438,6 +3514,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "US-04",
         "HK-04",
@@ -3467,6 +3544,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ID-04",
         "US-03",
@@ -3496,12 +3574,13 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-02",
         "IN-03",
+        "IN-08",
         "CM-04",
-        "MY-03",
-        "CM-02"
+        "MY-03"
       ]
     },
     {
@@ -3525,6 +3604,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MY-03",
         "CM-04",
@@ -3554,6 +3634,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "parallel",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-02",
         "TZ-03",
@@ -3583,12 +3664,13 @@
       "stage1_seed": 411,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
+        "IN-07",
         "CM-04",
+        "IN-05",
         "AR-02",
-        "AE-02",
-        "KE-02",
-        "ET-03"
+        "AE-05"
       ]
     },
     {
@@ -3612,6 +3694,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PL-01",
         "SG-04",
@@ -3641,6 +3724,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "IT-04",
         "AU-01",
@@ -3670,6 +3754,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ID-01",
         "VN-01",
@@ -3699,6 +3784,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "US-04",
         "NZ-04",
@@ -3728,6 +3814,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PT-04",
         "MA-04",
@@ -3757,6 +3844,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AR-02",
         "ET-02",
@@ -3786,6 +3874,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ET-04",
         "AR-03",
@@ -3815,6 +3904,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PT-01",
         "MZ-01",
@@ -3844,12 +3934,13 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "parallel",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "DO-01",
+        "AE-06",
         "DO-02",
         "SN-02",
-        "AO-03",
-        "KE-03"
+        "AO-03"
       ]
     },
     {
@@ -3873,6 +3964,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TZ-03",
         "ZW-03",
@@ -3902,12 +3994,13 @@
       "stage1_seed": 311,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
+        "DO-07",
         "JM-04",
         "FR-04",
         "TR-03",
-        "NL-02",
-        "MA-02"
+        "NL-02"
       ]
     },
     {
@@ -3931,6 +4024,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NG-02",
         "ZW-04",
@@ -3960,12 +4054,13 @@
       "stage1_seed": 111,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ZW-01",
         "AR-04",
         "JM-02",
-        "ZA-02",
-        "IN-04"
+        "IN-05",
+        "ZA-02"
       ]
     },
     {
@@ -3989,6 +4084,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PT-02",
         "KE-02",
@@ -4018,6 +4114,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ES-03",
         "AR-04",
@@ -4047,6 +4144,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AR-02",
         "AR-03",
@@ -4076,6 +4174,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CV-02",
         "CV-04",
@@ -4105,6 +4204,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MY-03",
         "CV-01",
@@ -4134,12 +4234,13 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MX-02",
         "CO-04",
         "MX-03",
         "MX-01",
-        "BR-04"
+        "GR-02"
       ]
     },
     {
@@ -4163,6 +4264,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CO-03",
         "TH-01",
@@ -4192,6 +4294,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PH-03",
         "PH-04",
@@ -4221,6 +4324,7 @@
       "stage1_seed": 211,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "VN-01",
         "AO-04",
@@ -4250,6 +4354,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MZ-02",
         "PT-02",
@@ -4279,6 +4384,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NG-01",
         "ID-04",
@@ -4308,12 +4414,13 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "GB-04",
         "SE-03",
         "VN-01",
         "SG-04",
-        "SG-03"
+        "DO-05"
       ]
     },
     {
@@ -4337,6 +4444,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AU-01",
         "NZ-02",
@@ -4366,12 +4474,13 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ES-04",
         "VN-04",
         "GB-04",
         "KR-02",
-        "IT-04"
+        "DO-05"
       ]
     },
     {
@@ -4395,6 +4504,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TW-04",
         "HK-02",
@@ -4424,6 +4534,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "UG-02",
         "TZ-03",
@@ -4453,6 +4564,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AU-02",
         "TZ-03",
@@ -4482,6 +4594,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ID-04",
         "GB-03",
@@ -4511,12 +4624,13 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ID-04",
         "PL-01",
         "US-04",
-        "AU-04",
-        "PH-04"
+        "AE-08",
+        "AU-04"
       ]
     },
     {
@@ -4540,6 +4654,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CV-03",
         "CO-02",
@@ -4569,12 +4684,13 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CV-04",
         "CV-01",
         "CV-03",
         "EG-02",
-        "MA-03"
+        "DO-08"
       ]
     },
     {
@@ -4598,6 +4714,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CV-01",
         "UG-01",
@@ -4627,6 +4744,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CV-02",
         "TZ-01",
@@ -4656,6 +4774,7 @@
       "stage1_seed": 111,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SE-04",
         "IT-03",
@@ -4685,6 +4804,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "HK-03",
         "ID-04",
@@ -4714,6 +4834,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "JP-04",
         "JP-02",
@@ -4743,12 +4864,13 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "JP-03",
         "JP-02",
         "JP-01",
         "HK-03",
-        "ID-04"
+        "IN-05"
       ]
     },
     {
@@ -4772,6 +4894,7 @@
       "stage1_seed": 111,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "US-02",
         "TH-02",
@@ -4801,6 +4924,7 @@
       "stage1_seed": 211,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MY-03",
         "TH-01",
@@ -4830,6 +4954,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TH-04",
         "US-01",
@@ -4859,6 +4984,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TH-03",
         "US-01",
@@ -4888,12 +5014,13 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TW-03",
         "SA-01",
         "SG-04",
         "SA-04",
-        "KE-04"
+        "VN-05"
       ]
     },
     {
@@ -4917,6 +5044,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PL-02",
         "DE-04",
@@ -4946,12 +5074,13 @@
       "stage1_seed": 311,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SG-02",
         "SG-04",
         "VN-03",
         "PL-01",
-        "VN-01"
+        "VN-05"
       ]
     },
     {
@@ -4975,6 +5104,7 @@
       "stage1_seed": 411,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AU-04",
         "NZ-04",
@@ -5004,12 +5134,13 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AE-03",
         "TR-03",
         "NL-03",
-        "DE-01",
-        "DE-02"
+        "VN-07",
+        "DE-01"
       ]
     },
     {
@@ -5033,6 +5164,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CI-01",
         "NL-03",
@@ -5062,6 +5194,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-04",
         "DE-04",
@@ -5091,6 +5224,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NL-03",
         "ID-03",
@@ -5120,6 +5254,7 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CO-02",
         "MY-04",
@@ -5149,6 +5284,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MZ-02",
         "MY-03",
@@ -5178,6 +5314,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TH-02",
         "CO-02",
@@ -5207,6 +5344,7 @@
       "stage1_seed": 411,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CO-02",
         "TZ-03",
@@ -5236,6 +5374,7 @@
       "stage1_seed": 111,
       "lufs": -14.5,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "DE-04",
         "FR-04",
@@ -5265,6 +5404,7 @@
       "stage1_seed": 211,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-02",
         "DE-04",
@@ -5294,6 +5434,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-01",
         "DE-02",
@@ -5323,6 +5464,7 @@
       "stage1_seed": 411,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "DE-02",
         "FR-02",
@@ -5349,6 +5491,7 @@
       "stage1_seed": 111,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-04",
         "JM-04",
@@ -5384,6 +5527,7 @@
       "stage1_seed": 211,
       "lufs": -14.4,
       "recipe": "inpaint",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-04",
         "DE-02",
@@ -5422,6 +5566,7 @@
       "stage1_seed": 311,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-04",
         "CI-04",
@@ -5448,6 +5593,7 @@
       "stage1_seed": 411,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-01",
         "FR-02",
@@ -5479,12 +5625,13 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "DO-01",
+        "AE-06",
+        "AE-07",
         "DO-02",
-        "KE-03",
-        "ES-04",
-        "EG-01"
+        "KE-03"
       ]
     },
     {
@@ -5512,6 +5659,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-01",
         "KE-04",
@@ -5538,6 +5686,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SG-04",
         "SG-03",
@@ -5569,12 +5718,13 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AU-03",
+        "DO-05",
         "PL-04",
         "DO-01",
-        "SN-03",
-        "VN-04"
+        "SN-03"
       ]
     },
     {
@@ -5595,6 +5745,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "IT-03",
         "GB-04",
@@ -5621,6 +5772,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SN-04",
         "IT-01",
@@ -5652,6 +5804,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "IT-01",
         "KR-01",
@@ -5678,6 +5831,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "IT-01",
         "AU-03",
@@ -5716,12 +5870,13 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KE-01",
+        "VN-07",
         "NL-04",
-        "ES-03",
-        "MA-03",
-        "SG-04"
+        "AE-06",
+        "ES-03"
       ]
     },
     {
@@ -5754,6 +5909,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NL-04",
         "SE-04",
@@ -5780,6 +5936,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TR-04",
         "SE-04",
@@ -5818,12 +5975,13 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NL-02",
         "GB-04",
+        "VN-07",
         "SG-01",
-        "GB-02",
-        "IT-04"
+        "GB-02"
       ]
     },
     {
@@ -5844,6 +6002,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PL-04",
         "VN-04",
@@ -5876,6 +6035,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "DE-02",
         "TW-02",
@@ -5902,6 +6062,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "IT-04",
         "NL-02",
@@ -5931,12 +6092,13 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PL-01",
         "VN-04",
-        "AE-04",
-        "ES-04",
-        "SG-03"
+        "VN-06",
+        "AE-08",
+        "AE-04"
       ]
     },
     {
@@ -5957,6 +6119,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-04",
         "CI-03",
@@ -5983,12 +6146,13 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
+        "AE-08",
         "AU-01",
+        "VN-06",
         "DO-02",
-        "SE-03",
-        "VN-04",
-        "SG-03"
+        "SE-03"
       ]
     },
     {
@@ -6009,6 +6173,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AU-01",
         "GB-04",
@@ -6035,6 +6200,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NL-02",
         "ES-03",
@@ -6061,6 +6227,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SA-03",
         "SA-04",
@@ -6090,6 +6257,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ES-03",
         "SG-04",
@@ -6116,6 +6284,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SA-01",
         "NL-03",
@@ -6146,6 +6315,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SA-01",
         "SA-02",
@@ -6172,12 +6342,13 @@
       "stage1_seed": 111,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AO-01",
         "AO-03",
         "IT-04",
         "DO-01",
-        "AO-04"
+        "DO-08"
       ]
     },
     {
@@ -6210,6 +6381,7 @@
       "stage1_seed": 211,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PL-02",
         "US-03",
@@ -6236,12 +6408,13 @@
       "stage1_seed": 311,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NL-01",
+        "VN-07",
         "NL-02",
-        "ES-03",
-        "EG-01",
-        "AR-03"
+        "AE-07",
+        "ES-03"
       ]
     },
     {
@@ -6274,6 +6447,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MZ-01",
         "SN-03",
@@ -6300,6 +6474,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "VN-03",
         "DO-02",
@@ -6326,6 +6501,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AU-03",
         "MA-04",
@@ -6352,12 +6528,13 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "VN-01",
         "VN-04",
+        "VN-05",
         "GB-04",
-        "SG-04",
-        "DO-02"
+        "DO-05"
       ]
     },
     {
@@ -6378,12 +6555,13 @@
       "stage1_seed": 411,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
+        "DO-05",
         "AU-03",
         "VN-03",
         "DO-02",
-        "VN-01",
-        "SE-03"
+        "VN-01"
       ]
     },
     {
@@ -6412,12 +6590,13 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SG-04",
         "NL-04",
-        "ES-03",
-        "VN-01",
-        "AO-04"
+        "VN-07",
+        "DO-05",
+        "ES-03"
       ]
     },
     {
@@ -6438,12 +6617,13 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TW-03",
         "SG-04",
         "MA-04",
         "SN-03",
-        "NL-01"
+        "VN-05"
       ]
     },
     {
@@ -6464,12 +6644,13 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
+        "AE-08",
         "ES-03",
         "SG-04",
         "AU-01",
-        "GB-04",
-        "SE-04"
+        "GB-04"
       ]
     },
     {
@@ -6493,6 +6674,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ES-03",
         "VN-01",
@@ -6519,6 +6701,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ET-03",
         "HK-04",
@@ -6545,6 +6728,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AU-04",
         "HK-04",
@@ -6571,6 +6755,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TH-04",
         "US-01",
@@ -6597,6 +6782,7 @@
       "stage1_seed": 411,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "HK-02",
         "ID-04",
@@ -6633,6 +6819,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SN-04",
         "PL-03",
@@ -6671,12 +6858,13 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "parallel",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "EG-01",
         "DO-01",
+        "AE-06",
         "KR-02",
-        "ES-01",
-        "MZ-02"
+        "ES-01"
       ]
     },
     {
@@ -6709,6 +6897,7 @@
       "stage1_seed": 311,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ZA-01",
         "ES-04",
@@ -6738,6 +6927,7 @@
       "stage1_seed": 411,
       "lufs": -14.0,
       "recipe": "inpaint",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ZA-03",
         "ZW-04",
@@ -6764,6 +6954,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "TR-02",
         "NL-02",
@@ -6790,6 +6981,7 @@
       "stage1_seed": 211,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-04",
         "FR-02",
@@ -6816,6 +7008,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "SE-01",
         "AR-04",
@@ -6842,6 +7035,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-04",
         "CI-02",
@@ -6868,6 +7062,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AE-02",
         "ET-04",
@@ -6894,6 +7089,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PT-02",
         "CM-03",
@@ -6920,6 +7116,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CM-04",
         "CM-03",
@@ -6946,6 +7143,7 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ET-01",
         "PT-03",
@@ -6972,6 +7170,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MA-01",
         "AO-04",
@@ -6998,6 +7197,7 @@
       "stage1_seed": 211,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CO-02",
         "AO-01",
@@ -7024,6 +7224,7 @@
       "stage1_seed": 311,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "KR-02",
         "KR-03",
@@ -7050,6 +7251,7 @@
       "stage1_seed": 411,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AO-01",
         "ES-03",
@@ -7076,6 +7278,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MZ-03",
         "MZ-04",
@@ -7102,6 +7305,7 @@
       "stage1_seed": 211,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "PH-03",
         "MY-02",
@@ -7128,6 +7332,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MZ-01",
         "PT-04",
@@ -7154,6 +7359,7 @@
       "stage1_seed": 411,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "MZ-01",
         "ZA-01",
@@ -7180,12 +7386,13 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "NL-01",
         "AE-02",
         "PH-02",
-        "ET-04",
-        "SA-02"
+        "VN-07",
+        "ET-04"
       ]
     },
     {
@@ -7206,6 +7413,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "UG-03",
         "MX-03",
@@ -7232,6 +7440,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "AO-01",
         "EG-02",
@@ -7258,6 +7467,7 @@
       "stage1_seed": 411,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ZA-03",
         "SN-04",
@@ -7284,6 +7494,7 @@
       "stage1_seed": 111,
       "lufs": -14.4,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CM-03",
         "GH-01",
@@ -7310,6 +7521,7 @@
       "stage1_seed": 211,
       "lufs": -14.1,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CM-03",
         "ET-01",
@@ -7336,6 +7548,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "CM-02",
         "CM-01",
@@ -7362,12 +7575,13 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "ET-03",
         "IN-03",
+        "IN-08",
         "ET-01",
-        "KE-02",
-        "CM-03"
+        "KE-02"
       ]
     },
     {
@@ -7388,6 +7602,7 @@
       "stage1_seed": 111,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "JM-02",
         "ZA-03",
@@ -7414,6 +7629,7 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "JM-04",
         "JM-01",
@@ -7440,6 +7656,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "GB-02",
         "SE-03",
@@ -7466,12 +7683,13 @@
       "stage1_seed": 411,
       "lufs": -14.3,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "FR-04",
         "FR-01",
         "EG-03",
-        "JM-02",
-        "NL-02"
+        "DO-07",
+        "JM-02"
       ]
     },
     {
@@ -7492,6 +7710,7 @@
       "stage1_seed": 111,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "DO-03",
         "DO-02",
@@ -7518,12 +7737,13 @@
       "stage1_seed": 211,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "VN-01",
         "VN-04",
         "DO-01",
         "KR-02",
-        "AU-03"
+        "AE-06"
       ]
     },
     {
@@ -7544,6 +7764,7 @@
       "stage1_seed": 311,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "DO-01",
         "DO-02",
@@ -7570,13 +7791,617 @@
       "stage1_seed": 411,
       "lufs": -14.2,
       "recipe": "grow",
+      "chart_week": "2026-08-24",
       "nearest5": [
         "DO-01",
+        "DO-08",
         "DO-03",
         "ES-04",
+        "DO-02"
+      ]
+    },
+    {
+      "id": "AE-05",
+      "region": "AE",
+      "file": "audio/AE-05.mp3",
+      "duration_s": 118.74,
+      "title": "Ghiyab Al Qamar",
+      "artist": "Khor Dubai Trio",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "AE-01",
+      "nearest5": [
+        "NG-02",
+        "FR-04",
+        "ZA-01",
+        "SN-03",
+        "AR-02"
+      ]
+    },
+    {
+      "id": "AE-06",
+      "region": "AE",
+      "file": "audio/AE-06.mp3",
+      "duration_s": 132.06,
+      "title": "Sahra Bahriya",
+      "artist": "Jumeirah Dusk Skyline",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "AE-02",
+      "nearest5": [
+        "KE-03",
+        "KE-01",
         "DO-02",
-        "SN-02"
+        "EG-01",
+        "ES-01"
+      ]
+    },
+    {
+      "id": "AE-07",
+      "region": "AE",
+      "file": "audio/AE-07.mp3",
+      "duration_s": 119.0,
+      "title": "Tariq Al Qamar",
+      "artist": "Jumeirah Dusk Night Bus",
+      "mirrors_rank": 1,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "AE-03",
+      "nearest5": [
+        "AE-08",
+        "DO-05",
+        "DO-02",
+        "ES-01",
+        "KE-01"
+      ]
+    },
+    {
+      "id": "AE-08",
+      "region": "AE",
+      "file": "audio/AE-08.mp3",
+      "duration_s": 118.66,
+      "title": "Nujoom Qamar",
+      "artist": "Qamar Lane Cassette",
+      "mirrors_rank": 3,
+      "mirrors_cities": 35,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "AE-04",
+      "nearest5": [
+        "SG-03",
+        "AE-07",
+        "VN-04",
+        "PL-04",
+        "DO-05"
+      ]
+    },
+    {
+      "id": "IN-05",
+      "region": "IN",
+      "file": "audio/IN-05.mp3",
+      "duration_s": 132.98,
+      "title": "Baarish Mein Sapna",
+      "artist": "Juhu Monsoon Night Bus",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.0,
+      "recipe": "grow+intro",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "IN-01",
+      "nearest5": [
+        "IN-07",
+        "PH-02",
+        "AR-03",
+        "ZW-01",
+        "EG-02"
+      ]
+    },
+    {
+      "id": "IN-06",
+      "region": "IN",
+      "file": "audio/IN-06.mp3",
+      "duration_s": 131.78,
+      "title": "Roshni Ki Chandni",
+      "artist": "Juhu Monsoon Institute",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.0,
+      "recipe": "grow+intro",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "IN-02",
+      "nearest5": [
+        "IN-05",
+        "JM-02",
+        "IN-04",
+        "EG-04",
+        "IN-07"
+      ]
+    },
+    {
+      "id": "IN-07",
+      "region": "IN",
+      "file": "audio/IN-07.mp3",
+      "duration_s": 130.74,
+      "title": "Baarish Mein Sadak",
+      "artist": "Andheri Rickshaw Circuit",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "IN-03",
+      "nearest5": [
+        "IN-05",
+        "IN-04",
+        "SA-03",
+        "EG-02",
+        "SA-01"
+      ]
+    },
+    {
+      "id": "IN-08",
+      "region": "IN",
+      "file": "audio/IN-08.mp3",
+      "duration_s": 118.5,
+      "title": "Roshni Ki Sadak",
+      "artist": "Dadar Terminus Band",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.1,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "IN-04",
+      "nearest5": [
+        "CM-04",
+        "KE-02",
+        "IN-03",
+        "IN-01",
+        "AR-02"
+      ]
+    },
+    {
+      "id": "VN-05",
+      "region": "VN",
+      "file": "audio/VN-05.mp3",
+      "duration_s": 129.7,
+      "title": "Mua He Nua Dem",
+      "artist": "Le Loi Sang Band",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "VN-01",
+      "nearest5": [
+        "VN-03",
+        "VN-04",
+        "TW-03",
+        "DO-05",
+        "VN-01"
+      ]
+    },
+    {
+      "id": "VN-06",
+      "region": "VN",
+      "file": "audio/VN-06.mp3",
+      "duration_s": 126.78,
+      "title": "Dem Tai Mat Troi",
+      "artist": "Thu Thiem Yard Sessions",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "VN-02",
+      "nearest5": [
+        "KR-04",
+        "KR-02",
+        "VN-04",
+        "AU-03",
+        "PL-04"
+      ]
+    },
+    {
+      "id": "VN-07",
+      "region": "VN",
+      "file": "audio/VN-07.mp3",
+      "duration_s": 113.09,
+      "title": "Anh Sang Khu Pho",
+      "artist": "Phu Nhuan Set",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        1313,
+        2313,
+        313,
+        314,
+        1314,
+        2314,
+        314,
+        315,
+        1315,
+        2315,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.3,
+      "recipe": "parallel",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "VN-03",
+      "nearest5": [
+        "AE-04",
+        "NL-04",
+        "DO-05",
+        "PL-01",
+        "AE-03"
+      ]
+    },
+    {
+      "id": "VN-08",
+      "region": "VN",
+      "file": "audio/VN-08.mp3",
+      "duration_s": 115.5,
+      "title": "Anh Sang Sai Gon",
+      "artist": "Phu Nhuan Band",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        1413,
+        2413,
+        413,
+        414,
+        1414,
+        2414,
+        414,
+        415,
+        1415,
+        2415,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "parallel",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "VN-04",
+      "nearest5": [
+        "SN-03",
+        "SG-02",
+        "VN-05",
+        "VN-04",
+        "VN-02"
+      ]
+    },
+    {
+      "id": "DO-05",
+      "region": "DO",
+      "file": "audio/DO-05.mp3",
+      "duration_s": 117.26,
+      "title": "Corazon de Sol",
+      "artist": "Naco Union",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "DO-01",
+      "nearest5": [
+        "VN-04",
+        "GB-04",
+        "AU-03",
+        "SE-03",
+        "AU-01"
+      ]
+    },
+    {
+      "id": "DO-06",
+      "region": "DO",
+      "file": "audio/DO-06.mp3",
+      "duration_s": 134.5,
+      "title": "Corazon de Sol",
+      "artist": "Gazcue Rooftop Crew",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "DO-02",
+      "nearest5": [
+        "KR-01",
+        "SE-03",
+        "SE-02",
+        "DO-01",
+        "IT-03"
+      ]
+    },
+    {
+      "id": "DO-07",
+      "region": "DO",
+      "file": "audio/DO-07.mp3",
+      "duration_s": 119.08,
+      "title": "Verano por Santo Domingo",
+      "artist": "Villa Consuelo Band",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "DO-03",
+      "nearest5": [
+        "EG-03",
+        "DO-01",
+        "JM-04",
+        "DO-03",
+        "EG-01"
+      ]
+    },
+    {
+      "id": "DO-08",
+      "region": "DO",
+      "file": "audio/DO-08.mp3",
+      "duration_s": 120.0,
+      "title": "Corazon de Madrugada",
+      "artist": "Zona Colonial Trio",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "built_as": "DO-04",
+      "nearest5": [
+        "DO-01",
+        "NG-02",
+        "MA-01",
+        "DO-07",
+        "DO-04"
+      ]
+    },
+    {
+      "id": "GR-01",
+      "region": "GR",
+      "file": "audio/GR-01.mp3",
+      "duration_s": 118.6,
+      "title": "Kalokairi sti Galazio",
+      "artist": "Thiseio Skyline",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "GR-03",
+        "GR-04",
+        "GR-02",
+        "CO-03",
+        "CO-04"
+      ]
+    },
+    {
+      "id": "GR-02",
+      "region": "GR",
+      "file": "audio/GR-02.mp3",
+      "duration_s": 132.96,
+      "title": "Fos tis Geitonia",
+      "artist": "Kolonaki Circuit",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "GR-03",
+        "GR-01",
+        "CO-03",
+        "CO-04",
+        "TH-02"
+      ]
+    },
+    {
+      "id": "GR-03",
+      "region": "GR",
+      "file": "audio/GR-03.mp3",
+      "duration_s": 117.78,
+      "title": "Fos tis Geitonia",
+      "artist": "Thiseio Choir",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "GR-01",
+        "GR-02",
+        "GR-04",
+        "BR-04",
+        "TH-04"
+      ]
+    },
+    {
+      "id": "GR-04",
+      "region": "GR",
+      "file": "audio/GR-04.mp3",
+      "duration_s": 118.98,
+      "title": "Dromos tis Galazio",
+      "artist": "Gazi Fos Union",
+      "mirrors_rank": 2,
+      "mirrors_cities": 35,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "GR-03",
+        "GR-01",
+        "BR-01",
+        "MX-04",
+        "BR-04"
       ]
     }
+  ],
+  "versions": [
+    "v6"
   ]
 }
