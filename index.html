@@ -278,6 +278,21 @@ button.ctl{
 button.ctl:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5)}
 button.ctl:focus-visible{outline:2px solid rgba(255,255,255,.75);outline-offset:2px}
 button.ctl.icon{width:2.9em;height:2.9em;padding:0;display:grid;place-items:center;font-size:clamp(11px,.8vw,15px)}
+/* what plays next: both orders visible at once, the active one filled, so the
+   label reads as a choice between two and not as a button that turns one on */
+.seg{
+  display:inline-flex;align-items:stretch;border:1px solid rgba(255,255,255,.3);
+  background:rgba(6,8,18,.28);backdrop-filter:blur(6px);border-radius:999px;padding:2px;
+}
+button.seg-opt{
+  appearance:none;border:0;background:transparent;color:var(--ink);opacity:.55;
+  border-radius:999px;font-family:var(--text);font-size:clamp(10px,.74vw,13px);
+  letter-spacing:.18em;text-transform:uppercase;padding:.62em 1em;cursor:pointer;
+  white-space:nowrap;transition:background .2s,opacity .2s;
+}
+button.seg-opt:hover{opacity:.85}
+button.seg-opt[aria-pressed="true"]{background:rgba(255,255,255,.18);opacity:1;cursor:default}
+button.seg-opt:focus-visible{outline:2px solid rgba(255,255,255,.75);outline-offset:2px}
 button.ctl.icon svg{width:1.25em;height:1.25em;fill:currentColor;display:block}
 #vol{
   -webkit-appearance:none;appearance:none;width:clamp(64px,7vw,120px);height:2px;
@@ -409,7 +424,10 @@ footer a:hover{color:#fff}
     <button class="ctl icon" id="btnNext" title="next track (n)" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16.5 5h2.5v14h-2.5z"/></svg></button>
     <button class="ctl icon" id="btnMute" title="mute (m)" aria-label="Mute"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16.5 8.5a4.5 4.5 0 0 1 0 7M18.8 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 9v6h4l5 4V5L8 9z"/></svg></button>
     <input id="vol" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
-    <button class="ctl" id="btnMode" title="drift: each next track is the closest by sound (d)" aria-pressed="false">follow the sun</button>
+    <div class="seg" role="group" aria-label="What plays next" title="what picks the next track (d)">
+      <button class="seg-opt" id="btnSun" aria-pressed="true" title="next track follows the local hour">sun</button>
+      <button class="seg-opt" id="btnDrift" aria-pressed="false" title="next track is the closest by sound">drift</button>
+    </div>
     <button class="ctl" id="btnPrompt">show prompt</button>
   </div>
 
@@ -1179,11 +1197,11 @@ vol.addEventListener("input", function(){
   if (PLAIN){ players.forEach(function(p){ try { p.el.volume = parseFloat(vol.value); } catch(e){} }); return; }
   master.gain.setTargetAtTime(parseFloat(vol.value), ctx.currentTime, 0.02);
 });
-var btnMode = document.getElementById("btnMode");
+var btnSun = document.getElementById("btnSun"), btnDrift = document.getElementById("btnDrift");
 function setMode(drift){
   DRIFT = !!drift;
-  btnMode.textContent = DRIFT ? "drift" : "follow the sun";
-  btnMode.setAttribute("aria-pressed", DRIFT ? "true" : "false");
+  btnSun.setAttribute("aria-pressed", DRIFT ? "false" : "true");
+  btnDrift.setAttribute("aria-pressed", DRIFT ? "true" : "false");
   try { localStorage.setItem("hisia.mode", DRIFT ? "drift" : "sun"); } catch(e){}
   /* re-plan what comes next; what is already playing stays */
   if (current){
@@ -1199,7 +1217,8 @@ function setMode(drift){
   }
 }
 setMode(DRIFT);
-btnMode.addEventListener("click", function(){ setMode(!DRIFT); });
+btnSun.addEventListener("click", function(){ if (DRIFT) setMode(false); });
+btnDrift.addEventListener("click", function(){ if (!DRIFT) setMode(true); });
 btnPrompt.addEventListener("click", function(){
   var open = !elPromptBox.hidden;
   elPromptBox.hidden = open;
