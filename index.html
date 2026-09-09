@@ -1192,8 +1192,22 @@ function begin(){
 function togglePlay(){
   if (!ctx){ begin(); return; }
   var p = players[active];
-  if (p.el.paused){ ctx.resume(); p.el.play().catch(function(){}); wantPlay = true; btnPlay.innerHTML = ICON.pause; }
-  else { p.el.pause(); wantPlay = false; btnPlay.innerHTML = ICON.play; }
+  /* Intent, not element state, decides which way this goes. advance() flips
+     `active` to the incoming element before it has started playing, so mid
+     crossfade `players[active].el.paused` is true while the radio is audibly
+     playing — reading it made the pause button START a second track over the
+     one still fading out (measured 9 Sep: two elements live after a "pause"). */
+  if (!wantPlay){ ctx.resume(); p.el.play().catch(function(){}); wantPlay = true; btnPlay.innerHTML = ICON.pause; }
+  else {
+    /* Pause BOTH elements, not just the active one. advance() flips `active` to
+       the incoming track the moment a crossfade starts and only pauses the
+       outgoing one on a timer XFADE seconds later, so for those two seconds the
+       previous track is still sounding out of the other element — pausing the
+       active one alone left it audible (Kalam, 9 Sep: "sometimes"). */
+    players.forEach(function(q){ try { q.el.pause(); } catch (e) {} });
+    fading = false;
+    wantPlay = false; btnPlay.innerHTML = ICON.play;
+  }
 }
 function toggleMute(){
   if (!ctx) return;
@@ -1341,7 +1355,7 @@ loadLibrary().then(function(data){
 <noscript>
 <div id="noscript-index">
 <h1>World Sound — a 24/7 radio of AI-generated mirrors of the world's charts</h1>
-<p>212 tracks across 49 cities. Every track is generated with Stable Audio Open Small (SA3 medium) from a prompt derived from that city's chart week — its measured tempo, key, instrumentation, mood and genre label. No recording is ever an input, and no track is a cover, a soundalike or a real song: the artist and title on every card are invented. This page needs JavaScript to play; the text below is what it plays.</p>
+<p>232 tracks across 49 cities. Every track is generated with Stable Audio Open Small (SA3 medium) from a prompt derived from that city's chart week — its measured tempo, key, instrumentation, mood and genre label. No recording is ever an input, and no track is a cover, a soundalike or a real song: the artist and title on every card are invented. This page needs JavaScript to play; the text below is what it plays.</p>
 <p>Chart weeks in this set: 24 Aug 2026, 31 Aug 2026.</p>
 <section><h2>Abidjan, Cote d&#x27;Ivoire</h2>
 <p>Afrobeats / Rap / Hip Hop · 140 BPM · minor key · bass, drums, percussion · happy, energetic, love</p>
@@ -1353,13 +1367,17 @@ loadLibrary().then(function(data){
 <li>“Groove a Minuit” by Marcory Society (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #5</li>
 </ul></section>
 <section><h2>Accra, Ghana</h2>
-<p>Hip-Hop / Rap / Afrobeats · 99 BPM · major key · bass, drums, percussion · deep, summer, happy</p>
-<p>The prompt these were generated from: <q>Ghanaian afrobeats and rap instrumental, 99 BPM, major key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, confident and easy</q></p>
+<p>Rap / Hip Hop / Hip-Hop / Rap / Afro-Beat · 111 BPM · minor key · synthesizer, bass, drums · love, deep, energetic</p>
+<p>The prompt these were generated from: <q>Ghanaian afrobeats and rap instrumental, 111 BPM, minor key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and energetic</q></p>
 <ul>
 <li>“Gari and Sunshine” by Trotro Weekend Skyline (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #1</li>
 <li>“Trotro Ba” by Kokrobite Night Bus (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
 <li>“Chalewote Sunshine” by Accra Newtown Union (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #5</li>
 <li>“Chalewote Morning” by Adjoa Highlife Choir (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #2</li>
+<li>“Trotro Rhythm” by Accra Newtown Band (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #1 · v6</li>
+<li>“Sunshine Weekend” by Accra Newtown Institute (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6</li>
+<li>“Trotro Ba” by Osu Beach Collective (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6</li>
+<li>“Highlife Weekend” by Accra Newtown Society (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6</li>
 </ul></section>
 <section><h2>Addis Ababa, Ethiopia</h2>
 <p>Reggae · 88 BPM · major key · synthesizer, bass, percussion · love, happy, melodic</p>
@@ -1443,13 +1461,17 @@ loadLibrary().then(function(data){
 <li>“Qamar Azraq” by Nile Corniche Set (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #1</li>
 </ul></section>
 <section><h2>Casablanca, Morocco</h2>
-<p>Pop / Folk / Hip-Hop / Rap · 122 BPM · minor key · guitar, synthesizer, piano · love, happy, energetic</p>
-<p>The prompt these were generated from: <q>Moroccan chart pop instrumental, with a folk and hip-hop/rap crossover current, 122 BPM, minor key, bright pop synths, bendir-style hand percussion, warm rounded bass, trap hi-hat accents, plucked oud-adjacent line, festive mid-tempo groove, glossy modern mix, acoustic guitar, synth-led textures and piano carrying the arrangement, romantic, joyful and energetic</q></p>
+<p>Pop / North African / Hip-Hop / Rap / Arabic Pop · 102 BPM · minor key · bass, drums, synthesizer · love, happy, deep</p>
+<p>The prompt these were generated from: <q>Moroccan chart pop instrumental, with a folk and hip-hop/rap crossover current, 102 BPM, minor key, bright pop synths, bendir-style hand percussion, warm rounded bass, trap hi-hat accents, plucked oud-adjacent line, festive mid-tempo groove, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and deep</q></p>
 <ul>
 <li>“Qalb d Zrag” by Bourgogne Yard Sessions (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #1</li>
 <li>“Daw d Bhar” by Bourgogne Trio (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #2</li>
 <li>“Raqsa fi Houma” by Derb Sultan Society (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
 <li>“Raqsa fi Bhar” by Bourgogne Rooftop Crew (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #5</li>
+<li>“Daw d Chms” by Bourgogne Society (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #1 · v6</li>
+<li>“Sif fi Bhar” by Anfa Layl Lamplight (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6</li>
+<li>“Sif fi Nos Lil” by Medina Qadima Collective (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6</li>
+<li>“Sif fi Bhar” by Medina Qadima Sound (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #5 · v6</li>
 </ul></section>
 <section><h2>Dakar, Senegal</h2>
 <p>Mbalax / African · 138 BPM · minor key · percussion, bass, drums · happy, love, deep</p>
@@ -1492,13 +1514,17 @@ loadLibrary().then(function(data){
 <li>“Nujoom Qamar” by Qamar Lane Cassette (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6</li>
 </ul></section>
 <section><h2>Harare, Zimbabwe</h2>
-<p>Afro-Beat / Afro-Pop / African Dancehall · 76 BPM · major key · percussion, bass, drums · love, deep, summer</p>
-<p>The prompt these were generated from: <q>Zimbabwean chart instrumental, afrobeat-rooted with an afro-pop and dancehall crossover current, 76 BPM, major key, driving afrobeat percussion, deep rounded bass, bright guitar riff, dancehall-style skanking chords, uptempo dance groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, deep and sunny</q></p>
+<p>Afro-Beat / Afro-Pop / African Dancehall · 120 BPM · major key · percussion, bass, drums · love, happy, deep</p>
+<p>The prompt these were generated from: <q>Zimbabwean chart instrumental, afrobeat-rooted with an afro-pop and dancehall crossover current, 120 BPM, major key, driving afrobeat percussion, deep rounded bass, bright guitar riff, dancehall-style skanking chords, uptempo dance groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep</q></p>
 <ul>
 <li>“Usiku hwe Ruvara” by Belvedere Sessions (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #1</li>
 <li>“Ngoma ye Nharaunda” by Kambuzuma Skyline (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #2</li>
 <li>“Mwoyo we Nyanga” by Newlands Band (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #3</li>
 <li>“Usiku hwe Usiku” by Belvedere Night Bus (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
+<li>“Usiku hwe Ruvara” by Belvedere Sessions (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #1 · v6</li>
+<li>“Usiku hwe Ruvara” by Belvedere Lamplight (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6</li>
+<li>“Mugwagwa we Usiku” by Eastlea Cassette (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6</li>
+<li>“Usiku hwe Nharaunda” by Eastlea Circuit (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6</li>
 </ul></section>
 <section><h2>Ho Chi Minh City, Vietnam</h2>
 <p>Pop · 99 BPM · major key · synthesizer, bass, drums · love, happy, energetic</p>
@@ -1514,13 +1540,17 @@ loadLibrary().then(function(data){
 <li>“Anh Sang Sai Gon” by Phu Nhuan Band (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6</li>
 </ul></section>
 <section><h2>Hong Kong, Hong Kong</h2>
-<p>Reggae / Asian Music / Pop · 74 BPM · major key · piano, guitar, drums · love, ballad, happy</p>
-<p>The prompt these were generated from: <q>Cantopop chart instrumental, with a reggae and hip-hop crossover current, 74 BPM, major key, skanking reggae guitar and organ touch, warm rounded bass, punchy programmed kit, Cantopop synth strings, laid-back groove into a glossy pop lift, piano, acoustic guitar and a prominent kit carrying the arrangement, romantic, tender and joyful</q></p>
+<p>Pop / Asian Music / Reggae · 71 BPM · major key · piano, guitar, drums · love, ballad, happy</p>
+<p>The prompt these were generated from: <q>Cantopop chart instrumental, with a reggae and hip-hop crossover current, 71 BPM, major key, skanking reggae guitar and organ touch, warm rounded bass, punchy programmed kit, Cantopop synth strings, laid-back groove into a glossy pop lift, piano, acoustic guitar and a prominent kit carrying the arrangement, romantic, tender and joyful</q></p>
 <ul>
 <li>“Gwong Sin Hai Yat Tau” by Sham Shui Po Choir (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #1</li>
 <li>“Sam Hai Yat Tau” by Sheung Wan Circuit (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #2</li>
 <li>“Gwong Sin Hai Laam” by Sham Shui Po Lamplight (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
 <li>“Ye Man Hai Hoi Bin” by Mong Kok Yeh Set (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #5</li>
+<li>“Gaai Dou Hoi Bin” by Tai Hang Lamplight (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6</li>
+<li>“Sam Hai Bun Ye” by Mong Kok Yeh Collective (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6</li>
+<li>“Ha Tin Hai Gaai Fong” by Tai Hang Radio (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6</li>
+<li>“Ha Tin Hai Hoi Bin” by Mong Kok Yeh Society (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #5 · v6</li>
 </ul></section>
 <section><h2>Istanbul, Turkey</h2>
 <p>Turkish Hip-Hop / Rap / Pop · 115 BPM · minor key · bass, synthesizer, drums · love, energetic, happy</p>
@@ -1747,13 +1777,17 @@ loadLibrary().then(function(data){
 <li>“Midnight Letter” by Yeonnam Sound (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #1</li>
 </ul></section>
 <section><h2>Singapore, Singapore</h2>
-<p>Cantopop / HK-Pop / Pop · 105 BPM · minor key · bass, drums, synthesizer · love, ballad, romantic</p>
-<p>The prompt these were generated from: <q>Singapore chart pop instrumental, mostly K-pop and other global chart hits, with a Cantopop/HK-pop crossover current, 105 BPM, minor key, glossy programmed kit, bright synth hooks, punchy bass, light Cantopop string touches, big polished pop-chorus lift, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, tender and romantic</q></p>
+<p>Pop / Cantopop / HK-Pop / K-Pop · 72 BPM · minor key · synthesizer, bass, drums · love, deep, romantic</p>
+<p>The prompt these were generated from: <q>Singapore chart pop instrumental, mostly K-pop and other global chart hits, with a Cantopop/HK-pop crossover current, 72 BPM, minor key, glossy programmed kit, bright synth hooks, punchy bass, light Cantopop string touches, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and romantic</q></p>
 <ul>
 <li>“Malam di Singapura” by Tanjong Pagar Night Bus (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #1</li>
 <li>“Jalan Selat” by Katong Senja Sessions (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #2</li>
 <li>“Tarian di Matahari” by Chinatown Point Society (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #3</li>
 <li>“Malam di Singapura” by Haji Lane Society (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
+<li>“Tarian di Singapura” by Haji Lane Union (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #1 · v6</li>
+<li>“Hati Kampung” by Tiong Bahru Skyline (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6</li>
+<li>“Cahaya Singapura” by Tanjong Pagar Band (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6</li>
+<li>“Musim Panas di Kampung” by Boat Quay Malam Society (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6</li>
 </ul></section>
 <section><h2>Stockholm, Sweden</h2>
 <p>Hip-Hop / Rap · 123 BPM · major key · drums, bass, synthesizer · energetic, happy, love</p>
