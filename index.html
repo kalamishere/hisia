@@ -212,6 +212,18 @@ header{
   position:absolute;left:var(--pad);bottom:calc(var(--pad) * 1.15);z-index:2;
   max-width:min(56ch,62vw);
 }
+/* Embed only. On the full page there is sky above and below the card and it
+   reads fine (Kalam, 10 Sep: "that's only on the embed - its fine on the
+   website"). In a 360px-tall frame the same text lands on the horizon band,
+   which in daylight is the brightest thing on screen — so the embed gets a
+   soft scrim behind the card and a light shadow on the type. */
+body.embed #card{text-shadow:0 1px 10px rgba(4,6,14,.55)}
+body.embed #card::before{
+  content:"";position:absolute;inset:-1em -2.4em -1em -1.6em;z-index:-1;
+  pointer-events:none;border-radius:18px;
+  background:radial-gradient(118% 94% at 6% 55%, rgba(4,6,14,.52), rgba(4,6,14,.3) 44%, rgba(4,6,14,0) 78%);
+}
+body.embed #promptBox:not([hidden]){text-shadow:none}
 .city{
   font-family:var(--display);font-weight:400;
   font-size:clamp(38px,4.6vw,92px);line-height:1.02;letter-spacing:-.01em;
