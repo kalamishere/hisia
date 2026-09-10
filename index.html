@@ -354,18 +354,52 @@ footer a:hover{color:#fff}
    title), drop the readout line (the prompt repeats its numbers), shrink the
    type, and cap the prompt so it scrolls instead of growing. */
 @media (max-height:470px){
+  /* A short embed is a landscape card, so lay it out as one: identity in a left
+     column, the prompt in a right column, controls along the bottom. Stacking
+     them the way the full-height page does crams everything into the top-left
+     and leaves the right half dead (Kalam, 10 Sep: "cramped on the top left and
+     ugly"). The wordmark, city strip, readout line and footer go — the host
+     page has its own title, and the prompt repeats the readout's numbers. */
   body.embed header .mark{display:none}
   body.embed #strip{display:none}
-  body.embed .city{font-size:clamp(22px,7vh,34px)}
-  body.embed .country{font-size:9px;letter-spacing:.2em;margin-bottom:.5em}
-  body.embed .track{font-size:clamp(13px,3.4vh,17px);margin-bottom:.35em}
-  body.embed .meta{font-size:11px;line-height:1.45}
-  body.embed .readout{display:none}
-  body.embed .honest{font-size:9.5px;margin-top:.45em;line-height:1.45}
-  body.embed #promptBox:not([hidden]){margin-top:.6em;padding:.6em .8em;font-size:10.5px;
-    line-height:1.5;max-height:7.5em;overflow:auto}
   body.embed footer{display:none}
-  body.embed #card{max-width:min(70ch,94vw)}
+  body.embed .readout{display:none}
+  body.embed .nextcity{font-size:9.5px;letter-spacing:.16em}
+
+  body.embed #card{
+    left:var(--pad);right:auto;bottom:calc(var(--pad) + 3.1em);
+    width:min(46%,40ch);max-width:none;
+  }
+  body.embed .city{font-size:clamp(20px,6.4vh,30px);line-height:1.05}
+  body.embed .country{font-size:8.5px;letter-spacing:.2em;margin-bottom:.45em}
+  body.embed .track{font-size:clamp(12px,3vh,15px);line-height:1.3;margin-bottom:.3em}
+  body.embed .meta{font-size:10.5px;line-height:1.45}
+  body.embed .honest{font-size:9px;margin-top:.4em;line-height:1.45;max-width:none}
+
+  body.embed #promptBox:not([hidden]){
+    position:fixed;left:auto;right:var(--pad);top:calc(var(--pad) + 1.4em);
+    bottom:calc(var(--pad) + 3.1em);width:min(46%,44ch);margin:0;z-index:2;
+    font-size:10.5px;line-height:1.55;padding:.7em .85em;
+    overflow:auto;max-height:none;
+  }
+  body.embed #promptBox .lab{font-size:.78em;margin-bottom:.4em}
+
+  body.embed #controls{
+    left:var(--pad);right:var(--pad);bottom:var(--pad);
+    justify-content:flex-start;gap:.6em;flex-wrap:nowrap;
+  }
+  body.embed #controls button.ctl,
+  body.embed #controls .seg{font-size:9px}
+  body.embed #controls button.ctl.icon{width:2.4em;height:2.4em;font-size:10px}
+  body.embed #vol{width:clamp(40px,8vw,70px)}
+}
+/* A frame too small for two columns keeps the prompt closed by default (see
+   ROOMY in the script). Opened by hand it stacks under the card and scrolls,
+   capped so it can never reach the controls. */
+@media (max-height:470px) and (max-width:519px){
+  body.embed #card{width:auto;right:var(--pad);bottom:calc(var(--pad) + 3.1em)}
+  body.embed #promptBox:not([hidden]){position:static;width:auto;max-height:5em;margin-top:.45em}
+  body.embed .honest{display:none}
 }
 
 /* start overlay */
@@ -1355,7 +1389,12 @@ loadLibrary().then(function(data){
      thing that explains what the station is, and a visitor there will not go
      hunting for a button (Kalam, 10 Sep) */
   if (IS_EMBED) document.body.classList.add("embed");
-  if (Q0.get("prompt") === "1" || IS_EMBED){
+  /* An embed opens the prompt by default — but only where it fits. Below about
+     520x240 the frame cannot hold city, track, prompt and controls at once, and
+     forcing it in put the prompt through the controls; there the button stays,
+     and the visitor can open it. */
+  var ROOMY = innerWidth >= 520 && innerHeight >= 240;
+  if (Q0.get("prompt") === "1" || (IS_EMBED && ROOMY)){
     elPromptBox.hidden = false;
     btnPrompt.textContent = "hide prompt";
   }
