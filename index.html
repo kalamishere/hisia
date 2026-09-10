@@ -335,9 +335,15 @@ footer a:hover{color:#fff}
 
 /* on a wide screen the prompt takes its own column on the right, above the controls, so the card never
    grows into the horizon strip; the stream frame has no controls, so its column sits lower */
-@media (min-width:1000px){
+@media (min-width:860px){
   #promptBox:not([hidden]){position:fixed;left:auto;right:var(--pad);bottom:calc(var(--pad) * 1.15 + 4.6em);width:min(46ch,34vw);max-width:none;margin:0;z-index:2}
   body.stream #promptBox:not([hidden]){bottom:calc(var(--pad) * 1.15)}
+}
+/* between the phone rules and that column the prompt sits in the card's flow,
+   where a short frame (a 640x360 embed) let it grow into the controls - cap it
+   and let it scroll instead (Kalam, 10 Sep, on the Zinstrel embed) */
+@media (min-width:761px) and (max-width:859px){
+  #promptBox:not([hidden]){max-height:30vh;overflow:auto}
 }
 
 /* start overlay */
@@ -469,6 +475,7 @@ window.__setClock = function(iso){
    the backend's PCM is already in the encoder. ?puppet=0 opts back out. */
 var Q0 = new URLSearchParams(location.search);
 var IS_STREAM = Q0.get("stream") === "1";
+var IS_EMBED = Q0.get("embed") === "1";
 var PUPPET = Q0.get("puppet") === "1" || (IS_STREAM && Q0.get("puppet") !== "0");
 var puppetStart = 0, puppetDur = 0, puppetSkew = 0;
 
@@ -1322,6 +1329,13 @@ loadLibrary().then(function(data){
   /* ?stream=1 — the capture frame: no start overlay, no controls.
      Puppeted (the default under ?stream=1) it displays the backend's stream;
      with ?puppet=0 it falls back to playing the library itself, as before. */
+  /* an embed on someone else's page shows the prompt by default: it is the
+     thing that explains what the station is, and a visitor there will not go
+     hunting for a button (Kalam, 10 Sep) */
+  if (Q0.get("prompt") === "1" || IS_EMBED){
+    elPromptBox.hidden = false;
+    btnPrompt.textContent = "hide prompt";
+  }
   if (IS_STREAM || PUPPET){
     document.getElementById("start").classList.add("gone");
     document.getElementById("controls").hidden = true;
