@@ -346,6 +346,28 @@ footer a:hover{color:#fff}
   #promptBox:not([hidden]){max-height:30vh;overflow:auto}
 }
 
+/* An embed in a short frame (Marcus's 640x360 listing card) cannot fit the
+   wordmark, city, track, readout, provenance, prompt AND controls at full
+   size. The card is bottom-anchored, so anything that does not fit pushes the
+   city off the top — which is exactly what happened (Kalam, 10 Sep: "it's
+   worse?"). In that frame: drop the wordmark (the host page has its own
+   title), drop the readout line (the prompt repeats its numbers), shrink the
+   type, and cap the prompt so it scrolls instead of growing. */
+@media (max-height:470px){
+  body.embed header .mark{display:none}
+  body.embed #strip{display:none}
+  body.embed .city{font-size:clamp(22px,7vh,34px)}
+  body.embed .country{font-size:9px;letter-spacing:.2em;margin-bottom:.5em}
+  body.embed .track{font-size:clamp(13px,3.4vh,17px);margin-bottom:.35em}
+  body.embed .meta{font-size:11px;line-height:1.45}
+  body.embed .readout{display:none}
+  body.embed .honest{font-size:9.5px;margin-top:.45em;line-height:1.45}
+  body.embed #promptBox:not([hidden]){margin-top:.6em;padding:.6em .8em;font-size:10.5px;
+    line-height:1.5;max-height:7.5em;overflow:auto}
+  body.embed footer{display:none}
+  body.embed #card{max-width:min(70ch,94vw)}
+}
+
 /* start overlay */
 #start{
   position:absolute;inset:0;display:grid;place-items:center;
@@ -1332,6 +1354,7 @@ loadLibrary().then(function(data){
   /* an embed on someone else's page shows the prompt by default: it is the
      thing that explains what the station is, and a visitor there will not go
      hunting for a button (Kalam, 10 Sep) */
+  if (IS_EMBED) document.body.classList.add("embed");
   if (Q0.get("prompt") === "1" || IS_EMBED){
     elPromptBox.hidden = false;
     btnPrompt.textContent = "hide prompt";
