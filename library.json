@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11T10:53:45Z",
+  "generated_at": "2026-09-11T13:45:19Z",
   "chart_week": "2026-08-31",
-  "version": "v6-plain",
+  "version": "v6-measured",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
     "KE": {
@@ -3521,10 +3521,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "TH-04",
+        "TZ-10",
         "TH-03",
         "US-04",
-        "HK-03",
-        "US-02"
+        "HK-03"
       ]
     },
     {
@@ -5022,9 +5022,9 @@
       "nearest5": [
         "TH-04",
         "US-01",
+        "TZ-10",
         "US-04",
-        "HK-03",
-        "PH-04"
+        "HK-03"
       ]
     },
     {
@@ -5052,9 +5052,9 @@
       "nearest5": [
         "TH-03",
         "US-01",
+        "TZ-10",
         "US-04",
-        "HK-03",
-        "UG-04"
+        "HK-03"
       ]
     },
     {
@@ -6823,9 +6823,9 @@
       "nearest5": [
         "TH-04",
         "US-01",
+        "TZ-10",
         "JP-02",
-        "US-04",
-        "ID-04"
+        "US-04"
       ]
     },
     {
@@ -8375,9 +8375,9 @@
       "nearest5": [
         "GR-03",
         "MY-08",
+        "TZ-11",
         "GR-04",
-        "TZ-08",
-        "GR-02"
+        "TZ-08"
       ]
     },
     {
@@ -8461,7 +8461,7 @@
         "GR-01",
         "TZ-06",
         "MY-08",
-        "TZ-07"
+        "TZ-10"
       ]
     },
     {
@@ -9194,11 +9194,11 @@
       "chart_week": "2026-08-31",
       "built_as": "TZ-01",
       "nearest5": [
+        "TZ-09",
         "TZ-07",
         "TZ-06",
         "BR-04",
-        "ET-04",
-        "TZ-08"
+        "ET-04"
       ]
     },
     {
@@ -9223,11 +9223,11 @@
       "chart_week": "2026-08-31",
       "built_as": "TZ-02",
       "nearest5": [
+        "TZ-10",
         "US-01",
         "TH-04",
         "TH-03",
-        "TZ-05",
-        "HK-03"
+        "TZ-05"
       ]
     },
     {
@@ -9252,11 +9252,11 @@
       "chart_week": "2026-08-31",
       "built_as": "TZ-03",
       "nearest5": [
+        "TZ-09",
         "TZ-05",
         "TZ-08",
-        "BR-04",
-        "TZ-06",
-        "CO-06"
+        "TZ-12",
+        "BR-04"
       ]
     },
     {
@@ -9281,11 +9281,11 @@
       "chart_week": "2026-08-31",
       "built_as": "TZ-04",
       "nearest5": [
+        "TZ-12",
         "TZ-07",
         "GR-01",
-        "TZ-05",
-        "GR-03",
-        "TZ-06"
+        "TZ-09",
+        "TZ-05"
       ]
     },
     {
@@ -10353,6 +10353,126 @@
         "KE-02",
         "NG-01",
         "KE-05"
+      ]
+    },
+    {
+      "id": "TZ-09",
+      "region": "TZ",
+      "file": "audio/TZ-09.mp3",
+      "duration_s": 125.84,
+      "title": "Rangi za wa Kusini",
+      "artist": "Kariakoo Lamplight",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112,
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.4,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "TZ-01",
+      "nearest5": [
+        "TZ-07",
+        "TZ-05",
+        "TZ-12",
+        "TZ-08",
+        "UG-02"
+      ]
+    },
+    {
+      "id": "TZ-10",
+      "region": "TZ",
+      "file": "audio/TZ-10.mp3",
+      "duration_s": 127.74,
+      "title": "Rangi za za Asubuhi",
+      "artist": "Kariakoo Sound",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212,
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.0,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "TZ-02",
+      "nearest5": [
+        "TH-04",
+        "TZ-06",
+        "US-01",
+        "TH-03",
+        "HK-03"
+      ]
+    },
+    {
+      "id": "TZ-11",
+      "region": "TZ",
+      "file": "audio/TZ-11.mp3",
+      "duration_s": 130.58,
+      "title": "Upepo wa za Asubuhi",
+      "artist": "Msasani Night Bus",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312,
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "TZ-03",
+      "nearest5": [
+        "US-04",
+        "GR-01",
+        "TH-01",
+        "PH-03",
+        "TZ-12"
+      ]
+    },
+    {
+      "id": "TZ-12",
+      "region": "TZ",
+      "file": "audio/TZ-12.mp3",
+      "duration_s": 118.38,
+      "title": "Rangi za Mchana",
+      "artist": "Kariakoo Lamplight",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412,
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "TZ-04",
+      "nearest5": [
+        "TZ-08",
+        "TZ-09",
+        "TZ-07",
+        "GR-01",
+        "TZ-11"
       ]
     }
   ],
