@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11T06:42:18Z",
+  "generated_at": "2026-09-11T09:02:14Z",
   "chart_week": "2026-08-31",
-  "version": "v6-plain",
+  "version": "v6-measured",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
     "KE": {
@@ -280,46 +280,48 @@
       "readout": {
         "bpm": 112.35,
         "mode": "minor",
-        "lufs": -18.13,
+        "lufs": -15.22,
         "instruments": [
           "synthesizer",
           "drums",
           "bass"
         ],
         "moods": [
-          "deep",
           "happy",
-          "summer"
+          "melodic",
+          "love"
         ],
-        "n_tracks": 4,
-        "excluded_tracks": [
-          "ZA-3"
-        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
         "bpm_iqr": [
-          103.54,
-          112.35
+          112.35,
+          136.0
         ]
       },
       "genres_own": [
         [
-          "Dance",
+          "Maskandi",
           2
         ],
         [
-          "South Africa",
+          "Dance",
           1
         ],
         [
           "Amapiano",
+          1
+        ],
+        [
+          "South Africa",
           1
         ]
       ],
       "heard": [
         "log-drum kit"
       ],
-      "genre_family": "Dance / South Africa / Amapiano",
-      "sa3_prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, deep and hypnotic late-night groove",
-      "suno_prompt": "[style: amapiano, South African dance] [tempo: 112 BPM] [mood: deep, hypnotic, late-night, sunlit come-down] [instruments: log drum, shakers, rimshots, soft piano chords, wide pads] [vocal: sparse chanted vocal in isiZulu and Sepedi phrasing, half-sung ad-libs, long gaps between lines]"
+      "genre_family": "Dance / Maskandi / Amapiano / South Africa",
+      "sa3_prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, late-night groove, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, melodic and romantic",
+      "suno_prompt": "[style: amapiano, South African dance] [tempo: 112 BPM] [mood: joyful, melodic, romantic] [instruments: log drum, shakers, rimshots, soft piano chords, wide pads] [vocal: sparse chanted vocal in isiZulu and Sepedi phrasing, half-sung ad-libs]"
     },
     "GB": {
       "city": "London",
@@ -366,8 +368,8 @@
         "mode": "minor",
         "lufs": -11.15,
         "instruments": [
-          "drums",
           "bass",
+          "drums",
           "synthesizer"
         ],
         "moods": [
@@ -381,14 +383,10 @@
         ],
         "bpm_iqr": [
           141.51,
-          153.15
+          157.06
         ]
       },
       "genres_own": [
-        [
-          "Sertanejo",
-          2
-        ],
         [
           "Brazilian Music",
           1
@@ -396,14 +394,22 @@
         [
           "Pop",
           1
+        ],
+        [
+          "Sertanejo",
+          1
+        ],
+        [
+          "Soul",
+          1
         ]
       ],
       "heard": [
         "riq tambourine"
       ],
-      "genre_family": "Brazilian Music / Pop / Sertanejo",
-      "sa3_prompt": "Brazilian sertanejo and funk instrumental, 150 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, romantic and rowdy",
-      "suno_prompt": "[style: sertanejo universitario meets funk paulista] [tempo: 150 BPM] [mood: festive, romantic, rowdy] [instruments: tamborim and snare, punchy kick, sliding bass, accordion-coloured keys, steel-string acoustic guitar] [vocal: male duet in Brazilian Portuguese, singalong chorus, crowd noise under the last chorus]"
+      "genre_family": "Brazilian Music / Pop / Sertanejo / Soul & Funk",
+      "sa3_prompt": "Brazilian sertanejo and funk instrumental, 150 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "suno_prompt": "[style: sertanejo universitario meets funk paulista] [tempo: 150 BPM] [mood: romantic, energetic, joyful] [instruments: tamborim and snare, punchy kick, sliding bass, accordion-coloured keys, steel-string acoustic guitar] [vocal: male duet in Brazilian Portuguese, singalong chorus]"
     },
     "KR": {
       "city": "Seoul",
@@ -717,7 +723,7 @@
         ],
         "n_tracks": 4,
         "excluded_tracks": [
-          "AR-1"
+          "AR-3"
         ],
         "bpm_iqr": [
           66.56,
@@ -1137,9 +1143,9 @@
       "country": "Malaysia",
       "tz": "Asia/Kuala_Lumpur",
       "readout": {
-        "bpm": 129.2,
+        "bpm": 123.05,
         "mode": "major",
-        "lufs": -12.71,
+        "lufs": -12.15,
         "instruments": [
           "synthesizer",
           "drums",
@@ -1154,23 +1160,19 @@
         "excluded_tracks": [],
         "bpm_iqr": [
           123.05,
-          132.51
+          129.2
         ]
       },
       "genres_own": [
         [
           "Pop",
-          4
-        ],
-        [
-          "Malaysian Pop",
-          1
+          5
         ]
       ],
       "heard": [],
-      "genre_family": "Pop / Malaysian Pop",
-      "sa3_prompt": "Malay-language chart pop instrumental, with a dangdut-adjacent groove and a Western pop crossover, 129 BPM, major key, warm rounded bass, gently swung kick-and-snare, plucked acoustic guitar, soft keys, light hand percussion, easy mid-tempo sway, clean radio mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, energetic and romantic",
-      "suno_prompt": "[style: Malay pop, dangdut-adjacent groove, contemporary pop crossover] [tempo: 129 BPM] [mood: joyful, energetic, romantic] [instruments: rounded bass, swung kit, acoustic guitar, soft keys, hand percussion] [vocal: warm lead vocal in Bahasa Melayu, conversational verse into a gentle sung hook]"
+      "genre_family": "Pop",
+      "sa3_prompt": "Malay-language chart pop instrumental, with a dangdut-adjacent groove and a Western pop crossover, 123 BPM, major key, warm rounded bass, gently swung kick-and-snare, plucked acoustic guitar, soft keys, light hand percussion, easy mid-tempo sway, clean radio mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, energetic and romantic",
+      "suno_prompt": "[style: Malay pop, dangdut-adjacent groove, contemporary pop crossover] [tempo: 123 BPM] [mood: joyful, energetic, romantic] [instruments: rounded bass, swung kit, acoustic guitar, soft keys, hand percussion] [vocal: warm lead vocal in Bahasa Melayu, conversational verse into a gentle sung hook]"
     },
     "DE": {
       "city": "Berlin",
@@ -1313,11 +1315,11 @@
       "readout": {
         "bpm": 129.2,
         "mode": "minor",
-        "lufs": -10.62,
+        "lufs": -10.16,
         "instruments": [
           "synthesizer",
           "bass",
-          "keyboard"
+          "drums"
         ],
         "moods": [
           "energetic",
@@ -1329,23 +1331,23 @@
           "IT-1"
         ],
         "bpm_iqr": [
-          127.66,
+          126.95,
           133.82
         ]
       },
       "genres_own": [
         [
-          "Pop",
-          2
+          "Hip-Hop",
+          3
         ],
         [
-          "Hip-Hop",
-          2
+          "Pop",
+          1
         ]
       ],
       "heard": [],
-      "genre_family": "Pop / Hip-Hop / Rap / Rap / Hip Hop",
-      "sa3_prompt": "Italian chart pop instrumental, with a hip-hop/rap crossover current, 129 BPM, minor key, bright synth-pop chords, punchy programmed kit, warm rounded bass, trap hi-hat accents, light guitar strum, glossy radio-pop lift, polished modern mix, synth-led textures, bass well forward and keyboard chords carrying the arrangement, energetic, sunny and joyful",
+      "genre_family": "Rap / Hip Hop / Hip-Hop / Rap / Pop / Rap",
+      "sa3_prompt": "Italian chart pop instrumental, with a hip-hop/rap crossover current, 129 BPM, minor key, bright synth-pop chords, punchy programmed kit, warm rounded bass, trap hi-hat accents, light guitar strum, glossy radio-pop lift, polished modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, sunny and joyful",
       "suno_prompt": "[style: Italian pop, Italian hip-hop/rap crossover] [tempo: 129 BPM] [mood: energetic, sunny, joyful] [instruments: synth chords, programmed kit, bass, trap hats, guitar] [vocal: Italian-language lead, sung verse opening into a rapped or half-sung hook]"
     },
     "NL": {
@@ -2196,9 +2198,9 @@
       "nearest5": [
         "KE-03",
         "AE-06",
+        "AR-05",
         "NL-01",
-        "ES-02",
-        "PL-04"
+        "ES-02"
       ]
     },
     {
@@ -2226,9 +2228,9 @@
       "nearest5": [
         "KE-04",
         "IN-03",
+        "AR-06",
         "NG-04",
-        "IN-01",
-        "PT-04"
+        "ZA-06"
       ]
     },
     {
@@ -2256,9 +2258,9 @@
       "nearest5": [
         "KE-01",
         "AE-06",
+        "AR-05",
         "AE-07",
-        "ES-01",
-        "EG-01"
+        "ES-01"
       ]
     },
     {
@@ -2286,9 +2288,9 @@
       "nearest5": [
         "KE-02",
         "NG-04",
+        "ZA-08",
         "ES-02",
-        "NG-03",
-        "PT-04"
+        "ZA-06"
       ]
     },
     {
@@ -2347,8 +2349,8 @@
         "ET-01",
         "AE-03",
         "ZW-01",
-        "GH-04",
-        "AE-04"
+        "AR-06",
+        "GH-04"
       ]
     },
     {
@@ -2494,11 +2496,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "IT-08",
         "NZ-01",
         "AU-01",
         "AO-04",
-        "IN-03",
-        "ES-04"
+        "IN-03"
       ]
     },
     {
@@ -2525,10 +2527,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "TZ-01",
+        "ZA-08",
         "PH-04",
         "UG-04",
-        "ID-04",
-        "MZ-03"
+        "ID-04"
       ]
     },
     {
@@ -2647,8 +2649,8 @@
         "KE-04",
         "KE-07",
         "NG-03",
-        "KE-02",
-        "MZ-04"
+        "ZA-06",
+        "KE-02"
       ]
     },
     {
@@ -2944,11 +2946,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "AR-05",
+        "AR-07",
         "KE-04",
-        "KE-06",
-        "NG-04",
-        "NG-03",
-        "TW-03"
+        "ZA-07",
+        "KE-06"
       ]
     },
     {
@@ -3157,8 +3159,8 @@
         "CV-04",
         "CO-05",
         "MX-04",
-        "CO-06",
-        "BR-04"
+        "BR-08",
+        "BR-07"
       ]
     },
     {
@@ -3244,11 +3246,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "BR-08",
+        "BR-07",
         "MX-03",
         "MX-02",
-        "UG-04",
-        "ET-04",
-        "HK-02"
+        "UG-04"
       ]
     },
     {
@@ -3278,7 +3280,7 @@
         "KR-04",
         "IT-03",
         "AU-03",
-        "AU-01"
+        "IT-05"
       ]
     },
     {
@@ -3397,8 +3399,8 @@
         "MX-03",
         "MX-02",
         "MX-04",
-        "CV-01",
-        "CO-03"
+        "BR-06",
+        "CV-01"
       ]
     },
     {
@@ -3427,8 +3429,8 @@
         "MX-03",
         "MX-01",
         "MX-04",
-        "CV-01",
-        "CO-03"
+        "BR-06",
+        "CV-01"
       ]
     },
     {
@@ -3456,9 +3458,9 @@
       "nearest5": [
         "MX-02",
         "MX-01",
+        "BR-06",
         "MX-04",
-        "BR-04",
-        "CV-01"
+        "BR-04"
       ]
     },
     {
@@ -3487,8 +3489,8 @@
         "MX-02",
         "MX-01",
         "MX-03",
-        "ET-04",
-        "BR-01"
+        "BR-05",
+        "ET-04"
       ]
     },
     {
@@ -3664,11 +3666,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "MY-07",
         "MY-03",
         "CM-04",
         "ET-02",
-        "IN-03",
-        "TH-02"
+        "IN-03"
       ]
     },
     {
@@ -3697,8 +3699,8 @@
         "KE-02",
         "TZ-03",
         "IN-01",
-        "CM-04",
-        "UG-02"
+        "MY-07",
+        "CM-04"
       ]
     },
     {
@@ -3726,9 +3728,9 @@
       "nearest5": [
         "IN-07",
         "CM-04",
+        "AR-07",
         "IN-05",
-        "AR-02",
-        "AE-05"
+        "AR-02"
       ]
     },
     {
@@ -3938,7 +3940,7 @@
         "AR-03",
         "PT-04",
         "ZW-01",
-        "UG-04"
+        "AR-07"
       ]
     },
     {
@@ -4117,8 +4119,8 @@
         "ZW-01",
         "AR-04",
         "JM-02",
-        "IN-05",
-        "ZA-02"
+        "AR-07",
+        "IN-05"
       ]
     },
     {
@@ -4145,10 +4147,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "PT-02",
+        "AR-06",
         "KE-02",
         "AR-04",
-        "KE-04",
-        "CM-03"
+        "KE-04"
       ]
     },
     {
@@ -4174,11 +4176,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "AR-07",
         "HK-05",
         "ES-03",
         "AR-04",
-        "SG-03",
-        "SG-08"
+        "SG-03"
       ]
     },
     {
@@ -4208,7 +4210,7 @@
         "SG-05",
         "AR-03",
         "SA-02",
-        "PH-02"
+        "AR-07"
       ]
     },
     {
@@ -4237,8 +4239,8 @@
         "CV-02",
         "CV-04",
         "MX-03",
-        "CO-03",
-        "JP-02"
+        "BR-08",
+        "CO-03"
       ]
     },
     {
@@ -4267,8 +4269,8 @@
         "MY-03",
         "CV-01",
         "MY-04",
-        "CV-03",
-        "AO-02"
+        "IT-08",
+        "CV-03"
       ]
     },
     {
@@ -4294,11 +4296,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "BR-06",
         "MX-02",
         "CO-04",
         "MX-03",
-        "MX-01",
-        "GR-02"
+        "MX-01"
       ]
     },
     {
@@ -4326,9 +4328,9 @@
       "nearest5": [
         "CO-03",
         "TH-01",
+        "MY-08",
         "ZW-02",
-        "MX-02",
-        "TH-02"
+        "BR-06"
       ]
     },
     {
@@ -4356,9 +4358,9 @@
       "nearest5": [
         "PH-03",
         "PH-04",
+        "ZA-08",
         "TW-08",
-        "SA-03",
-        "SG-04"
+        "SA-03"
       ]
     },
     {
@@ -4625,10 +4627,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "AU-02",
+        "IT-08",
         "TZ-03",
         "MY-01",
-        "AU-01",
-        "NZ-01"
+        "AU-01"
       ]
     },
     {
@@ -4715,10 +4717,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "CV-03",
+        "IT-08",
         "CO-02",
         "CV-02",
-        "MX-03",
-        "BR-02"
+        "MX-03"
       ]
     },
     {
@@ -4778,7 +4780,7 @@
         "UG-01",
         "CO-08",
         "UG-02",
-        "CO-02"
+        "IT-08"
       ]
     },
     {
@@ -4804,11 +4806,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "BR-05",
         "CV-02",
         "TZ-01",
         "BR-04",
-        "BR-01",
-        "HK-02"
+        "BR-01"
       ]
     },
     {
@@ -4957,8 +4959,8 @@
         "US-02",
         "TH-02",
         "US-03",
-        "ET-02",
-        "CO-04"
+        "MY-05",
+        "ET-02"
       ]
     },
     {
@@ -4988,7 +4990,7 @@
         "TH-01",
         "CO-02",
         "ET-02",
-        "GH-04"
+        "MY-05"
       ]
     },
     {
@@ -5076,9 +5078,9 @@
       "nearest5": [
         "TW-03",
         "SA-01",
+        "AR-08",
         "SG-04",
-        "SA-04",
-        "VN-05"
+        "SA-04"
       ]
     },
     {
@@ -5318,7 +5320,7 @@
         "MY-04",
         "NZ-02",
         "MA-04",
-        "CV-01"
+        "IT-08"
       ]
     },
     {
@@ -5345,10 +5347,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "MZ-02",
+        "MY-06",
+        "MY-07",
         "MY-03",
-        "PT-02",
-        "SN-02",
-        "AR-02"
+        "PT-02"
       ]
     },
     {
@@ -5376,9 +5378,9 @@
       "nearest5": [
         "TH-02",
         "CO-02",
+        "MY-07",
         "TZ-03",
-        "IN-03",
-        "MY-02"
+        "IN-03"
       ]
     },
     {
@@ -5404,11 +5406,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "IT-08",
         "CO-02",
+        "MY-05",
         "TZ-03",
-        "MY-01",
-        "CV-01",
-        "CV-03"
+        "MY-01"
       ]
     },
     {
@@ -5722,8 +5724,8 @@
         "KE-01",
         "KE-04",
         "KE-02",
-        "NG-04",
-        "KE-03"
+        "AR-05",
+        "NG-04"
       ]
     },
     {
@@ -5805,11 +5807,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "IT-05",
         "IT-03",
         "GB-04",
         "IT-04",
-        "NL-02",
-        "PL-01"
+        "IT-06"
       ]
     },
     {
@@ -5865,10 +5867,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "IT-01",
+        "IT-07",
         "KR-01",
         "IT-04",
-        "GB-04",
-        "AO-01"
+        "GB-04"
       ]
     },
     {
@@ -5894,8 +5896,8 @@
         "IT-01",
         "AU-03",
         "ID-02",
-        "GB-04",
-        "IT-03"
+        "IT-05",
+        "GB-04"
       ]
     },
     {
@@ -5972,8 +5974,8 @@
         "NL-04",
         "SE-04",
         "PL-01",
-        "IT-01",
-        "IT-04"
+        "IT-06",
+        "IT-05"
       ]
     },
     {
@@ -6039,7 +6041,7 @@
         "GB-04",
         "CZ-01",
         "VN-07",
-        "SG-01"
+        "IT-05"
       ]
     },
     {
@@ -6123,10 +6125,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "IT-04",
+        "IT-05",
         "NL-02",
         "CZ-02",
-        "ID-02",
-        "CZ-03"
+        "ID-02"
       ]
     },
     {
@@ -6881,9 +6883,9 @@
       "nearest5": [
         "SN-04",
         "ZW-07",
+        "IT-05",
         "PL-03",
-        "SN-03",
-        "AU-03"
+        "SN-03"
       ]
     },
     {
@@ -7151,9 +7153,9 @@
       "nearest5": [
         "PT-02",
         "CM-03",
+        "MY-07",
         "ET-03",
-        "TH-02",
-        "GH-04"
+        "TH-02"
       ]
     },
     {
@@ -7207,7 +7209,7 @@
         "PT-03",
         "AE-02",
         "BR-04",
-        "ZW-01"
+        "BR-05"
       ]
     },
     {
@@ -7257,11 +7259,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "IT-08",
         "CO-02",
         "AO-01",
         "DO-01",
-        "CV-01",
-        "AO-04"
+        "CV-01"
       ]
     },
     {
@@ -7342,7 +7344,7 @@
         "MZ-04",
         "PT-04",
         "MA-04",
-        "KE-07"
+        "ZA-05"
       ]
     },
     {
@@ -7476,8 +7478,8 @@
         "UG-03",
         "MX-03",
         "CO-02",
-        "CO-04",
-        "NZ-02"
+        "BR-06",
+        "CO-04"
       ]
     },
     {
@@ -7912,8 +7914,8 @@
         "KE-03",
         "KE-01",
         "DO-02",
-        "EG-01",
-        "ES-01"
+        "AR-05",
+        "EG-01"
       ]
     },
     {
@@ -7939,10 +7941,10 @@
       "built_as": "AE-03",
       "nearest5": [
         "AE-08",
+        "AR-05",
+        "AR-07",
         "DO-05",
-        "DO-02",
-        "ES-01",
-        "KE-01"
+        "DO-02"
       ]
     },
     {
@@ -7967,11 +7969,11 @@
       "chart_week": "2026-08-31",
       "built_as": "AE-04",
       "nearest5": [
+        "AR-05",
         "SG-03",
         "AE-07",
         "VN-04",
-        "PL-04",
-        "DO-05"
+        "PL-04"
       ]
     },
     {
@@ -8056,9 +8058,9 @@
       "nearest5": [
         "IN-05",
         "IN-04",
+        "AR-07",
         "SA-03",
-        "EG-02",
-        "SA-01"
+        "EG-02"
       ]
     },
     {
@@ -8284,8 +8286,8 @@
         "KR-01",
         "SE-03",
         "SE-02",
-        "DO-01",
-        "IT-03"
+        "IT-07",
+        "DO-01"
       ]
     },
     {
@@ -8368,10 +8370,10 @@
       "chart_week": "2026-08-31",
       "nearest5": [
         "GR-03",
+        "MY-08",
         "GR-04",
         "TZ-08",
-        "GR-02",
-        "TZ-07"
+        "GR-02"
       ]
     },
     {
@@ -8395,11 +8397,11 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "nearest5": [
+        "MY-08",
         "GR-03",
         "GR-01",
         "CO-03",
-        "CO-04",
-        "TH-02"
+        "CO-04"
       ]
     },
     {
@@ -8424,10 +8426,10 @@
       "chart_week": "2026-08-31",
       "nearest5": [
         "GR-01",
+        "MY-08",
         "GR-02",
         "GR-04",
-        "BR-04",
-        "TH-04"
+        "BR-04"
       ]
     },
     {
@@ -8454,8 +8456,8 @@
         "GR-03",
         "GR-01",
         "TZ-06",
-        "TZ-07",
-        "BR-01"
+        "MY-08",
+        "TZ-07"
       ]
     },
     {
@@ -8654,11 +8656,11 @@
       "chart_week": "2026-08-31",
       "built_as": "MA-03",
       "nearest5": [
+        "IT-06",
         "NL-02",
         "SG-01",
         "NL-04",
-        "SG-07",
-        "CZ-01"
+        "SG-07"
       ]
     },
     {
@@ -9063,8 +9065,8 @@
         "NG-03",
         "KE-08",
         "KE-07",
-        "NG-04",
-        "PT-04"
+        "ZA-07",
+        "NG-04"
       ]
     },
     {
@@ -9093,7 +9095,7 @@
         "SN-03",
         "AE-05",
         "AE-04",
-        "KE-04"
+        "AR-06"
       ]
     },
     {
@@ -9333,11 +9335,11 @@
       "chart_week": "2026-08-31",
       "built_as": "CO-02",
       "nearest5": [
+        "BR-05",
         "CO-05",
+        "BR-07",
         "BR-04",
-        "MX-01",
-        "BR-02",
-        "BR-01"
+        "MX-01"
       ]
     },
     {
@@ -9363,10 +9365,10 @@
       "built_as": "CO-03",
       "nearest5": [
         "CO-08",
+        "MY-06",
         "CO-05",
-        "MY-01",
-        "MY-04",
-        "IN-01"
+        "BR-08",
+        "MY-01"
       ]
     },
     {
@@ -9393,9 +9395,9 @@
       "nearest5": [
         "BR-02",
         "CV-03",
+        "MY-06",
         "CO-07",
-        "CO-02",
-        "MY-03"
+        "CO-02"
       ]
     },
     {
@@ -9563,11 +9565,11 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "nearest5": [
+        "IT-06",
         "PL-03",
         "CZ-01",
         "NL-02",
-        "NL-04",
-        "IT-01"
+        "IT-05"
       ]
     },
     {
@@ -9625,10 +9627,618 @@
         "TW-07",
         "SA-03"
       ]
+    },
+    {
+      "id": "ZA-05",
+      "region": "ZA",
+      "file": "audio/ZA-05.mp3",
+      "duration_s": 102.0,
+      "title": "Phola Wethu",
+      "artist": "Thandeka Yard Band",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        1113,
+        2113,
+        114,
+        1114,
+        2114,
+        114,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.3,
+      "recipe": "mixed",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "ZA-01",
+      "nearest5": [
+        "MZ-01",
+        "ZA-06",
+        "ZA-08",
+        "KE-07",
+        "KE-05"
+      ]
+    },
+    {
+      "id": "ZA-06",
+      "region": "ZA",
+      "file": "audio/ZA-06.mp3",
+      "duration_s": 117.3,
+      "title": "Groove Ya Amnandi",
+      "artist": "Soweto Piano Institute",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.3,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "ZA-02",
+      "nearest5": [
+        "ZA-08",
+        "NG-04",
+        "ZA-05",
+        "KE-02",
+        "KE-04"
+      ]
+    },
+    {
+      "id": "ZA-07",
+      "region": "ZA",
+      "file": "audio/ZA-07.mp3",
+      "duration_s": 102.0,
+      "title": "Phola Kwedini",
+      "artist": "Yeoville Rooftop Lamplight",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        312,
+        313,
+        1313,
+        2313,
+        313,
+        314,
+        1314,
+        315
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.3,
+      "recipe": "mixed",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "ZA-03",
+      "nearest5": [
+        "KE-05",
+        "NG-03",
+        "NG-04",
+        "KE-04",
+        "ES-02"
+      ]
+    },
+    {
+      "id": "ZA-08",
+      "region": "ZA",
+      "file": "audio/ZA-08.mp3",
+      "duration_s": 117.74,
+      "title": "Umoya Kwedini",
+      "artist": "Kasi Midnight Union",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "ZA-04",
+      "nearest5": [
+        "ZA-06",
+        "KE-04",
+        "TZ-04",
+        "ZA-05",
+        "KE-02"
+      ]
+    },
+    {
+      "id": "BR-05",
+      "region": "BR",
+      "file": "audio/BR-05.mp3",
+      "duration_s": 132.82,
+      "title": "Poeira e Manha",
+      "artist": "Beira do Rio Set",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "BR-01",
+      "nearest5": [
+        "BR-07",
+        "CV-04",
+        "CO-06",
+        "ET-04",
+        "MX-04"
+      ]
+    },
+    {
+      "id": "BR-06",
+      "region": "BR",
+      "file": "audio/BR-06.mp3",
+      "duration_s": 133.52,
+      "title": "Festa no Cerveja",
+      "artist": "Boiadeiro Radio",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "BR-02",
+      "nearest5": [
+        "MX-03",
+        "MX-01",
+        "MX-02",
+        "CO-03",
+        "ZW-02"
+      ]
+    },
+    {
+      "id": "BR-07",
+      "region": "BR",
+      "file": "audio/BR-07.mp3",
+      "duration_s": 118.66,
+      "title": "Festa no Segunda",
+      "artist": "Faroleiros Union",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.4,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "BR-03",
+      "nearest5": [
+        "BR-04",
+        "BR-05",
+        "BR-08",
+        "HK-02",
+        "CO-06"
+      ]
+    },
+    {
+      "id": "BR-08",
+      "region": "BR",
+      "file": "audio/BR-08.mp3",
+      "duration_s": 118.82,
+      "title": "Chorando na Manha",
+      "artist": "Sertao Neon Society",
+      "mirrors_rank": 2,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "BR-04",
+      "nearest5": [
+        "BR-04",
+        "BR-07",
+        "BR-01",
+        "CO-07",
+        "CV-04"
+      ]
+    },
+    {
+      "id": "AR-05",
+      "region": "AR",
+      "file": "audio/AR-05.mp3",
+      "duration_s": 114.65,
+      "title": "Verano en Río",
+      "artist": "Costanera Rooftop Crew",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        1113,
+        2113,
+        113,
+        114,
+        1114,
+        2114,
+        114,
+        115,
+        1115,
+        2115,
+        115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "parallel",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "AR-01",
+      "nearest5": [
+        "AE-08",
+        "AE-07",
+        "KE-03",
+        "KE-01",
+        "AE-06"
+      ]
+    },
+    {
+      "id": "AR-06",
+      "region": "AR",
+      "file": "audio/AR-06.mp3",
+      "duration_s": 132.36,
+      "title": "Corazón de Sur",
+      "artist": "La Boca Set",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "AR-02",
+      "nearest5": [
+        "KE-02",
+        "AR-02",
+        "KE-06",
+        "KE-04",
+        "AR-07"
+      ]
+    },
+    {
+      "id": "AR-07",
+      "region": "AR",
+      "file": "audio/AR-07.mp3",
+      "duration_s": 132.44,
+      "title": "Corazón de Barrio",
+      "artist": "Río Plateado Trio",
+      "mirrors_rank": 1,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "AR-03",
+      "nearest5": [
+        "AE-07",
+        "AR-03",
+        "AR-05",
+        "KE-03",
+        "AR-08"
+      ]
+    },
+    {
+      "id": "AR-08",
+      "region": "AR",
+      "file": "audio/AR-08.mp3",
+      "duration_s": 131.4,
+      "title": "Calle Sur",
+      "artist": "Chacarita Circuit",
+      "mirrors_rank": 3,
+      "mirrors_cities": 35,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "AR-04",
+      "nearest5": [
+        "KE-04",
+        "AR-07",
+        "KE-02",
+        "ZA-06",
+        "TZ-04"
+      ]
+    },
+    {
+      "id": "MY-05",
+      "region": "MY",
+      "file": "audio/MY-05.mp3",
+      "duration_s": 118.14,
+      "title": "Suara Hati Bahagia",
+      "artist": "Kelana Jaya Rooftop Crew",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "MY-01",
+      "nearest5": [
+        "MY-04",
+        "MY-01",
+        "MY-07",
+        "TH-01",
+        "TH-02"
+      ]
+    },
+    {
+      "id": "MY-06",
+      "region": "MY",
+      "file": "audio/MY-06.mp3",
+      "duration_s": 118.96,
+      "title": "Angin Malam Bayangan",
+      "artist": "Bangsar Union",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "MY-02",
+      "nearest5": [
+        "CO-08",
+        "MY-02",
+        "MY-05",
+        "CO-02",
+        "ET-02"
+      ]
+    },
+    {
+      "id": "MY-07",
+      "region": "MY",
+      "file": "audio/MY-07.mp3",
+      "duration_s": 117.42,
+      "title": "Angin Malam Kota",
+      "artist": "Kampung Baru Trio",
+      "mirrors_rank": 1,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "MY-03",
+      "nearest5": [
+        "MY-03",
+        "IN-03",
+        "ET-02",
+        "MY-02",
+        "IN-02"
+      ]
+    },
+    {
+      "id": "MY-08",
+      "region": "MY",
+      "file": "audio/MY-08.mp3",
+      "duration_s": 117.08,
+      "title": "Bintang Di Bayangan",
+      "artist": "Petaling Senja Cassette",
+      "mirrors_rank": 3,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "MY-04",
+      "nearest5": [
+        "GR-03",
+        "GR-01",
+        "GR-02",
+        "CO-04",
+        "CO-03"
+      ]
+    },
+    {
+      "id": "IT-05",
+      "region": "IT",
+      "file": "audio/IT-05.mp3",
+      "duration_s": 119.08,
+      "title": "Notte a Vento",
+      "artist": "Brera Sera Skyline",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "IT-01",
+      "nearest5": [
+        "IT-01",
+        "IT-04",
+        "KR-01",
+        "NL-04",
+        "PL-01"
+      ]
+    },
+    {
+      "id": "IT-06",
+      "region": "IT",
+      "file": "audio/IT-06.mp3",
+      "duration_s": 133.48,
+      "title": "Ballo a Quartiere",
+      "artist": "Navigli Collective",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.3,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "IT-02",
+      "nearest5": [
+        "NL-02",
+        "IT-01",
+        "MA-07",
+        "IT-03",
+        "CZ-01"
+      ]
+    },
+    {
+      "id": "IT-07",
+      "region": "IT",
+      "file": "audio/IT-07.mp3",
+      "duration_s": 118.28,
+      "title": "Estate a Blu",
+      "artist": "Navigli Sound",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "IT-03",
+      "nearest5": [
+        "IT-03",
+        "IT-01",
+        "GB-04",
+        "KR-01",
+        "SG-04"
+      ]
+    },
+    {
+      "id": "IT-08",
+      "region": "IT",
+      "file": "audio/IT-08.mp3",
+      "duration_s": 118.82,
+      "title": "Estate a Sole",
+      "artist": "Brera Sera Society",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "IT-04",
+      "nearest5": [
+        "TZ-03",
+        "CV-01",
+        "MY-04",
+        "CO-02",
+        "NZ-02"
+      ]
     }
   ],
   "versions": [
     "v6",
+    "v6-measured",
     "v6-plain"
   ]
 }
