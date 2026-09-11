@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11T09:02:14Z",
+  "generated_at": "2026-09-11T10:53:45Z",
   "chart_week": "2026-08-31",
-  "version": "v6-measured",
+  "version": "v6-plain",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
     "KE": {
@@ -151,9 +151,9 @@
       "country": "Nigeria",
       "tz": "Africa/Lagos",
       "readout": {
-        "bpm": 109.96,
-        "mode": "minor",
-        "lufs": -12.54,
+        "bpm": 107.71,
+        "mode": "major",
+        "lufs": -12.3,
         "instruments": [
           "bass",
           "drums",
@@ -161,28 +161,32 @@
         ],
         "moods": [
           "deep",
-          "love",
-          "summer"
+          "happy",
+          "love"
         ],
         "n_tracks": 4,
         "excluded_tracks": [
-          "NG-3"
+          "NG-5"
         ],
         "bpm_iqr": [
-          104.37,
-          115.6
+          100.99,
+          111.18
         ]
       },
       "genres_own": [
         [
           "Afrobeats",
-          3
+          2
+        ],
+        [
+          "African",
+          2
         ]
       ],
       "heard": [],
-      "genre_family": "Afrobeats",
-      "sa3_prompt": "Nigerian afrobeats instrumental, 110 BPM, minor key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, warm and romantic",
-      "suno_prompt": "[style: afrobeats, Lagos street-pop, afro-fusion] [tempo: 110 BPM] [mood: warm, romantic, sunlit, a little melancholy] [instruments: log drum, shakers, sub bass, muted guitar plucks, electric piano, airy pads] [vocal: male lead, Nigerian-English and pidgin phrasing, relaxed melodic flow, layered ad-libs answering the hook]"
+      "genre_family": "Afrobeats / African",
+      "sa3_prompt": "Nigerian afrobeats instrumental, 108 BPM, major key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, bass well forward, a prominent kit and layered hand percussion carrying the arrangement, deep, joyful and romantic",
+      "suno_prompt": "[style: afrobeats, Lagos street-pop, afro-fusion] [tempo: 108 BPM] [mood: deep, joyful, romantic] [instruments: log drum, shakers, sub bass, muted guitar plucks, electric piano, airy pads] [vocal: male lead, Nigerian-English and pidgin phrasing, relaxed melodic flow, layered ad-libs]"
     },
     "GH": {
       "city": "Accra",
@@ -2290,7 +2294,7 @@
         "NG-04",
         "ZA-08",
         "ES-02",
-        "ZA-06"
+        "NG-08"
       ]
     },
     {
@@ -2560,7 +2564,7 @@
         "NG-03",
         "MZ-01",
         "PT-04",
-        "TZ-04"
+        "NG-08"
       ]
     },
     {
@@ -2740,7 +2744,7 @@
         "GH-04",
         "JM-04",
         "DE-03",
-        "GH-02"
+        "NG-06"
       ]
     },
     {
@@ -3220,7 +3224,7 @@
         "NZ-03",
         "MZ-01",
         "KE-08",
-        "ZA-04"
+        "NG-05"
       ]
     },
     {
@@ -3638,9 +3642,9 @@
       "nearest5": [
         "KE-02",
         "IN-03",
+        "NG-07",
         "IN-08",
-        "CM-04",
-        "MY-03"
+        "CM-04"
       ]
     },
     {
@@ -3727,10 +3731,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "IN-07",
+        "NG-08",
         "CM-04",
         "AR-07",
-        "IN-05",
-        "AR-02"
+        "IN-05"
       ]
     },
     {
@@ -4148,9 +4152,9 @@
       "nearest5": [
         "PT-02",
         "AR-06",
+        "NG-08",
         "KE-02",
-        "AR-04",
-        "KE-04"
+        "AR-04"
       ]
     },
     {
@@ -7560,7 +7564,7 @@
         "GH-01",
         "ET-02",
         "GH-03",
-        "DE-02"
+        "NG-06"
       ]
     },
     {
@@ -7665,10 +7669,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "JM-02",
+        "NG-06",
         "ZA-03",
         "GH-03",
-        "BR-03",
-        "CM-04"
+        "BR-03"
       ]
     },
     {
@@ -8086,10 +8090,10 @@
       "built_as": "IN-04",
       "nearest5": [
         "CM-04",
+        "NG-07",
         "KE-02",
         "IN-03",
-        "IN-01",
-        "AR-02"
+        "IN-01"
       ]
     },
     {
@@ -9065,8 +9069,8 @@
         "NG-03",
         "KE-08",
         "KE-07",
-        "ZA-07",
-        "NG-04"
+        "NG-05",
+        "ZA-07"
       ]
     },
     {
@@ -9165,7 +9169,7 @@
         "NG-03",
         "PT-04",
         "KE-07",
-        "CM-02"
+        "NG-05"
       ]
     },
     {
@@ -9726,8 +9730,8 @@
         "KE-05",
         "NG-03",
         "NG-04",
-        "KE-04",
-        "ES-02"
+        "NG-08",
+        "KE-04"
       ]
     },
     {
@@ -10233,6 +10237,122 @@
         "MY-04",
         "CO-02",
         "NZ-02"
+      ]
+    },
+    {
+      "id": "NG-05",
+      "region": "NG",
+      "file": "audio/NG-05.mp3",
+      "duration_s": 131.56,
+      "title": "Owambe Softly",
+      "artist": "Adaeze Night Market Society",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "NG-01",
+      "nearest5": [
+        "NG-08",
+        "KE-05",
+        "MZ-01",
+        "MZ-04",
+        "ZA-03"
+      ]
+    },
+    {
+      "id": "NG-06",
+      "region": "NG",
+      "file": "audio/NG-06.mp3",
+      "duration_s": 131.48,
+      "title": "Slow Motion Sunrise",
+      "artist": "Ikoyi Lamplight Skyline",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "NG-02",
+      "nearest5": [
+        "GH-03",
+        "JM-01",
+        "PL-02",
+        "JM-02",
+        "NG-05"
+      ]
+    },
+    {
+      "id": "NG-07",
+      "region": "NG",
+      "file": "audio/NG-07.mp3",
+      "duration_s": 130.94,
+      "title": "Slow Motion Sunrise",
+      "artist": "Bariga Palmwine Band",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "NG-03",
+      "nearest5": [
+        "KE-02",
+        "IN-08",
+        "CM-03",
+        "CM-04",
+        "CM-02"
+      ]
+    },
+    {
+      "id": "NG-08",
+      "region": "NG",
+      "file": "audio/NG-08.mp3",
+      "duration_s": 129.4,
+      "title": "Lagos Harmattan",
+      "artist": "Yaba Sunrise Collective",
+      "mirrors_rank": 2,
+      "mirrors_cities": 3,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.4,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "NG-04",
+      "nearest5": [
+        "KE-04",
+        "NG-05",
+        "KE-02",
+        "NG-01",
+        "KE-05"
       ]
     }
   ],
