@@ -490,7 +490,7 @@ footer a:hover{color:#fff}
     <p class="track" id="trackLine"></p>
     <p class="meta"><span class="genre" id="genreLine"></span><br><span class="readout" id="readoutLine"></span></p>
     <p class="honest" id="honestLine"></p>
-    <div id="promptBox" hidden><span class="lab">SA3 prompt <button id="btnCopy" type="button" title="copy the prompt for Suno, Stable Audio, ACE-Step…">copy</button></span><span id="promptText"></span></div>
+    <div id="promptBox" hidden><span class="lab">prompt <button id="btnCopy" type="button" title="copy the prompt for Suno, Stable Audio, ACE-Step…">copy</button></span><span id="promptText"></span></div>
   </div>
 
   <div id="controls">
@@ -1173,7 +1173,9 @@ setInterval(function(){ if (current) paint(); }, 60000); /* sun, moon and clock 
   var b = document.getElementById("btnCopy"); if (!b) return;
   b.addEventListener("click", function(){
     var t = (document.getElementById("promptText").textContent || "").trim(); if (!t) return;
-    var done = function(){ b.textContent = "copied"; b.classList.add("done"); setTimeout(function(){ b.textContent = "copy"; b.classList.remove("done"); }, 1600); };
+    /* say where it can go: the prompt is portable, and pasting it into Suno is
+       the thing people enjoy most about the card (Kalam, 10 Sep) */
+    var done = function(){ b.textContent = "copied — paste into Suno"; b.classList.add("done"); setTimeout(function(){ b.textContent = "copy"; b.classList.remove("done"); }, 2200); };
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, function(){ fallback(); });
     else fallback();
     function fallback(){ var ta = document.createElement("textarea"); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); done(); } catch(e){} ta.remove(); }
