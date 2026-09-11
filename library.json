@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-09T15:29:52Z",
+  "generated_at": "2026-09-11T06:42:18Z",
   "chart_week": "2026-08-31",
-  "version": "v6",
+  "version": "v6-plain",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
   "regions": {
     "KE": {
@@ -9,42 +9,46 @@
       "country": "Kenya",
       "tz": "Africa/Nairobi",
       "readout": {
-        "bpm": 94.9,
+        "bpm": 94.09,
         "mode": "minor",
-        "lufs": -13.43,
+        "lufs": -12.67,
         "instruments": [
           "bass",
-          "keyboard",
-          "drums"
+          "drums",
+          "synthesizer"
         ],
         "moods": [
           "love",
-          "happy",
-          "deep"
+          "energetic",
+          "happy"
         ],
         "n_tracks": 4,
         "excluded_tracks": [
-          "KE-1"
+          "KE-3"
         ],
         "bpm_iqr": [
-          91.88,
+          89.9,
           103.9
         ]
       },
       "genres_own": [
         [
           "Afro-Pop",
-          3
+          2
         ],
         [
           "Dance",
           1
+        ],
+        [
+          "Afrobeats",
+          1
         ]
       ],
       "heard": [],
-      "genre_family": "Dance / Afro-Pop",
-      "sa3_prompt": "East African afro-pop instrumental, 98 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, sunny and romantic",
-      "suno_prompt": "[style: afro-pop, bongo flava, dancehall-zouk swing, tropical house sheen] [tempo: 98 BPM] [mood: romantic, sunny, warm] [instruments: log drum, shakers, sliding bass, plucked guitar, synth pads] [vocal: male lead, Swahili hook, call-and-response backing vocals -- e.g. a repeated 'nakupenda mpenzi wangu' refrain]"
+      "genre_family": "Afro-Pop / Dance / Afrobeats",
+      "sa3_prompt": "East African afro-pop instrumental, 94 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "suno_prompt": "[style: afro-pop, bongo flava, dancehall-zouk swing, tropical house sheen] [tempo: 94 BPM] [mood: romantic, energetic, joyful] [instruments: log drum, shakers, sliding bass, plucked guitar, synth pads] [vocal: male lead, Swahili hook, call-and-response backing vocals]"
     },
     "AE": {
       "city": "Dubai",
@@ -95,32 +99,30 @@
       "country": "Tanzania",
       "tz": "Africa/Dar_es_Salaam",
       "readout": {
-        "bpm": 120.25,
+        "bpm": 99.38,
         "mode": "major",
-        "lufs": -11.4,
+        "lufs": -11.27,
         "instruments": [
           "percussion",
-          "keyboard",
-          "bass"
+          "bass",
+          "drums"
         ],
         "moods": [
           "love",
-          "summer",
-          "happy"
+          "happy",
+          "deep"
         ],
-        "n_tracks": 4,
-        "excluded_tracks": [
-          "TZ-5"
-        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
         "bpm_iqr": [
-          117.45,
-          128.18
+          82.03,
+          117.45
         ]
       },
       "genres_own": [
         [
           "Afro-Pop",
-          2
+          1
         ],
         [
           "Afrobeats",
@@ -129,12 +131,20 @@
         [
           "Pop",
           1
+        ],
+        [
+          "Bongo-Flava",
+          1
+        ],
+        [
+          "Afro-Beat",
+          1
         ]
       ],
       "heard": [],
-      "genre_family": "Afro-Pop / Afrobeats / Pop",
-      "sa3_prompt": "Bongo flava instrumental, 118 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, joyful summer dance groove",
-      "suno_prompt": "[style: bongo flava, afro-pop, zouk-inflected, singeli-adjacent energy] [tempo: 118 BPM] [mood: joyful, summery, celebratory] [instruments: congas, shakers, punchy kick, sliding bass, bright guitar arpeggio, warm keys] [vocal: duet male/female, Swahili lead, big singalong chorus -- e.g. a 'malaika wangu' style refrain]"
+      "genre_family": "Afro-Pop / Afrobeats / Pop / Bongo-Flava / Afro-Beat",
+      "sa3_prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "suno_prompt": "[style: bongo flava, afro-pop, zouk-inflected, singeli-adjacent energy] [tempo: 99 BPM] [mood: romantic, joyful, deep] [instruments: congas, shakers, punchy kick, sliding bass, bright guitar arpeggio, warm keys] [vocal: duet male/female, Swahili lead, big singalong chorus]"
     },
     "NG": {
       "city": "Lagos",
@@ -738,26 +748,27 @@
       "country": "Colombia",
       "tz": "America/Bogota",
       "readout": {
-        "bpm": 88.22,
+        "bpm": 95.7,
         "mode": "minor",
-        "lufs": -12.46,
+        "lufs": -12.4,
         "instruments": [
-          "drums",
           "bass",
+          "drums",
           "synthesizer"
         ],
         "moods": [
           "love",
-          "happy",
-          "energetic"
+          "energetic",
+          "happy"
         ],
-        "n_tracks": 4,
+        "n_tracks": 3,
         "excluded_tracks": [
-          "CO-2"
+          "CO-1",
+          "CO-3"
         ],
         "bpm_iqr": [
-          79.29,
-          100.48
+          85.3,
+          109.38
         ]
       },
       "genres_own": [
@@ -766,18 +777,14 @@
           2
         ],
         [
-          "Pop Latino",
-          1
-        ],
-        [
-          "Hip-Hop",
+          "Underground Rap",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Música Mexicana / Pop Latino / Rap / Hip Hop",
-      "sa3_prompt": "Colombian pop instrumental, 75 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
-      "suno_prompt": "[style: musica mexicana as heard in Colombia, pop latino, reggaeton undertow] [tempo: 75 BPM] [mood: romantic, joyful, energetic] [instruments: bass, requinto guitar, accordion, soft percussion, pads] [vocal: male lead in Spanish, heartfelt delivery, harmonised chorus]"
+      "genre_family": "Música Mexicana / Underground Rap",
+      "sa3_prompt": "Colombian pop instrumental, 96 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "suno_prompt": "[style: musica mexicana as heard in Colombia, pop latino, reggaeton undertow] [tempo: 96 BPM] [mood: romantic, energetic, joyful] [instruments: bass, requinto guitar, accordion, soft percussion, pads] [vocal: male lead in Spanish, heartfelt delivery, harmonised chorus]"
     },
     "PH": {
       "city": "Manila",
@@ -1040,9 +1047,9 @@
       "country": "Taiwan",
       "tz": "Asia/Taipei",
       "readout": {
-        "bpm": 103.88,
+        "bpm": 106.86,
         "mode": "minor",
-        "lufs": -13.05,
+        "lufs": -13.44,
         "instruments": [
           "bass",
           "drums",
@@ -1050,15 +1057,15 @@
         ],
         "moods": [
           "love",
-          "happy",
-          "deep"
+          "ballad",
+          "happy"
         ],
         "n_tracks": 4,
         "excluded_tracks": [
-          "TW-4"
+          "TW-5"
         ],
         "bpm_iqr": [
-          82.26,
+          86.73,
           126.29
         ]
       },
@@ -1074,12 +1081,16 @@
         [
           "K-Pop",
           1
+        ],
+        [
+          "Country",
+          1
         ]
       ],
       "heard": [],
-      "genre_family": "Cantopop / HK-Pop / Pop / K-Pop",
-      "sa3_prompt": "Mandopop and Taiwanese ballad-pop instrumental, with a K-pop crossover edge, 104 BPM, minor key, piano and warm string pad, clean electric guitar, round bass, crisp programmed kit, occasional bright synth stabs, polished ballad-into-chorus lift, glossy Mandopop mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and deep",
-      "suno_prompt": "[style: Mandopop, Taiwanese ballad-pop, K-pop crossover sheen] [tempo: 104 BPM] [mood: romantic, joyful, deep] [instruments: piano, string pad, electric guitar, round bass, programmed kit, synth stabs] [vocal: tender lead vocal in Mandarin, delicate verse opening into a soaring sung chorus]"
+      "genre_family": "Cantopop / HK-Pop / Pop / K-Pop / Country",
+      "sa3_prompt": "Mandopop and Taiwanese ballad-pop instrumental, with a K-pop crossover edge, 107 BPM, minor key, piano and warm string pad, clean electric guitar, round bass, crisp programmed kit, occasional bright synth stabs, polished ballad-into-chorus lift, glossy Mandopop mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, tender and joyful",
+      "suno_prompt": "[style: Mandopop, Taiwanese ballad-pop, K-pop crossover sheen] [tempo: 107 BPM] [mood: romantic, tender, joyful] [instruments: piano, string pad, electric guitar, round bass, programmed kit, synth stabs] [vocal: tender lead vocal in Mandarin, delicate verse opening into a soaring sung chorus]"
     },
     "TR": {
       "city": "Istanbul",
@@ -2115,6 +2126,48 @@
       "genre_family": "Worldwide / Singer / Songwriter",
       "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 135 BPM, major key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, acoustic guitar and a prominent kit carrying the arrangement, romantic, melodic and tender",
       "suno_prompt": "[style: Greek singer-songwriter pop, laiko-adjacent balladry, chart pop] [tempo: 135 BPM] [mood: romantic, melodic, tender] [instruments: nylon guitar, bouzouki-adjacent guitar, piano, brushed drums, round bass] [vocal: solo lead in Greek, confiding verse opening into a warm sung chorus]"
+    },
+    "CZ": {
+      "city": "Prague",
+      "country": "Czechia",
+      "tz": "Europe/Prague",
+      "readout": {
+        "bpm": 115.36,
+        "mode": "major",
+        "lufs": -12.73,
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "CZ-1"
+        ],
+        "bpm_iqr": [
+          100.63,
+          123.05
+        ]
+      },
+      "genres_own": [
+        [
+          "Pop",
+          3
+        ],
+        [
+          "Hip-Hop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Pop / Hip-Hop",
+      "sa3_prompt": "Czech chart-pop instrumental, 115 BPM, major key, clean programmed kit, round synth bass, bright piano and synth chords, light guitar strum, polished mid-tempo radio-pop lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "suno_prompt": "[style: Czech pop, chart pop] [tempo: 115 BPM] [mood: romantic, energetic, joyful] [instruments: programmed kit, synth bass, piano, synth chords, guitar strum] [vocal: solo lead in Czech, warm sung verse into a bright chorus, light harmony]"
     }
   },
   "tracks": [
@@ -2561,11 +2614,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "KE-05",
         "NG-04",
         "NG-01",
-        "KE-04",
-        "PH-04",
-        "PT-04"
+        "KE-08",
+        "KE-04"
       ]
     },
     {
@@ -2592,10 +2645,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "KE-04",
+        "KE-07",
         "NG-03",
         "KE-02",
-        "MZ-04",
-        "MZ-01"
+        "MZ-04"
       ]
     },
     {
@@ -2862,10 +2915,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "SN-03",
+        "KE-06",
         "MZ-04",
         "AE-04",
-        "ES-04",
-        "NG-02"
+        "ES-04"
       ]
     },
     {
@@ -2892,10 +2945,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "KE-04",
+        "KE-06",
         "NG-04",
         "NG-03",
-        "TW-03",
-        "TW-01"
+        "TW-03"
       ]
     },
     {
@@ -3102,10 +3155,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "CV-04",
+        "CO-05",
         "MX-04",
-        "BR-04",
-        "MX-01",
-        "MX-03"
+        "CO-06",
+        "BR-04"
       ]
     },
     {
@@ -3132,10 +3185,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "UG-01",
+        "CO-08",
         "CV-03",
         "CV-01",
-        "UG-02",
-        "NZ-01"
+        "UG-02"
       ]
     },
     {
@@ -3164,8 +3217,8 @@
         "ZA-03",
         "NZ-03",
         "MZ-01",
-        "ZA-04",
-        "UG-04"
+        "KE-08",
+        "ZA-04"
       ]
     },
     {
@@ -3734,8 +3787,8 @@
         "IT-04",
         "AU-01",
         "VN-01",
-        "ID-03",
-        "DO-02"
+        "CZ-01",
+        "ID-03"
       ]
     },
     {
@@ -3765,7 +3818,7 @@
         "VN-01",
         "SG-08",
         "ID-02",
-        "IT-04"
+        "CZ-01"
       ]
     },
     {
@@ -3824,8 +3877,8 @@
         "PT-04",
         "MA-04",
         "KE-02",
-        "ZW-08",
-        "MA-02"
+        "KE-07",
+        "ZW-08"
       ]
     },
     {
@@ -3914,8 +3967,8 @@
         "PT-01",
         "MZ-01",
         "MZ-03",
-        "KE-02",
-        "MZ-04"
+        "KE-07",
+        "KE-02"
       ]
     },
     {
@@ -4303,9 +4356,9 @@
       "nearest5": [
         "PH-03",
         "PH-04",
+        "TW-08",
         "SA-03",
-        "SG-04",
-        "KE-04"
+        "SG-04"
       ]
     },
     {
@@ -4514,8 +4567,8 @@
         "TW-04",
         "HK-02",
         "NZ-04",
-        "ID-04",
-        "PL-01"
+        "TW-07",
+        "ID-04"
       ]
     },
     {
@@ -4723,9 +4776,9 @@
       "nearest5": [
         "CV-01",
         "UG-01",
+        "CO-08",
         "UG-02",
-        "CO-02",
-        "BR-02"
+        "CO-02"
       ]
     },
     {
@@ -4785,7 +4838,7 @@
         "IT-03",
         "SG-06",
         "SG-04",
-        "ES-03"
+        "CZ-01"
       ]
     },
     {
@@ -5112,10 +5165,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "AU-04",
+        "TW-07",
         "NZ-04",
-        "HK-02",
-        "TZ-04",
-        "UG-04"
+        "TW-06",
+        "HK-02"
       ]
     },
     {
@@ -5233,9 +5286,9 @@
       "nearest5": [
         "NL-03",
         "ID-03",
+        "CZ-03",
         "SA-03",
-        "SA-04",
-        "ID-02"
+        "SA-04"
       ]
     },
     {
@@ -5984,9 +6037,9 @@
       "nearest5": [
         "NL-02",
         "GB-04",
+        "CZ-01",
         "VN-07",
-        "SG-01",
-        "SG-08"
+        "SG-01"
       ]
     },
     {
@@ -6071,9 +6124,9 @@
       "nearest5": [
         "IT-04",
         "NL-02",
+        "CZ-02",
         "ID-02",
-        "NL-04",
-        "GB-02"
+        "CZ-03"
       ]
     },
     {
@@ -7289,7 +7342,7 @@
         "MZ-04",
         "PT-04",
         "MA-04",
-        "AE-04"
+        "KE-07"
       ]
     },
     {
@@ -7342,8 +7395,8 @@
         "MZ-01",
         "PT-04",
         "MZ-04",
-        "NG-04",
-        "VN-02"
+        "KE-07",
+        "NG-04"
       ]
     },
     {
@@ -7532,7 +7585,7 @@
         "ET-01",
         "CM-04",
         "ET-03",
-        "UG-03"
+        "KE-08"
       ]
     },
     {
@@ -7827,11 +7880,11 @@
       "chart_week": "2026-08-31",
       "built_as": "AE-01",
       "nearest5": [
+        "KE-06",
         "NG-02",
         "FR-04",
         "ZA-01",
-        "SN-03",
-        "AR-02"
+        "SN-03"
       ]
     },
     {
@@ -8316,9 +8369,9 @@
       "nearest5": [
         "GR-03",
         "GR-04",
+        "TZ-08",
         "GR-02",
-        "CO-03",
-        "CO-04"
+        "TZ-07"
       ]
     },
     {
@@ -8400,9 +8453,9 @@
       "nearest5": [
         "GR-03",
         "GR-01",
-        "BR-01",
-        "MX-04",
-        "BR-04"
+        "TZ-06",
+        "TZ-07",
+        "BR-01"
       ]
     },
     {
@@ -8605,7 +8658,7 @@
         "SG-01",
         "NL-04",
         "SG-07",
-        "FR-01"
+        "CZ-01"
       ]
     },
     {
@@ -8984,9 +9037,598 @@
         "MZ-03",
         "NL-02"
       ]
+    },
+    {
+      "id": "KE-05",
+      "region": "KE",
+      "file": "audio/KE-05.mp3",
+      "duration_s": 129.68,
+      "title": "Taa za Asubuhi",
+      "artist": "Ngong Road Night Bus",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "KE-01",
+      "nearest5": [
+        "NG-03",
+        "KE-08",
+        "KE-07",
+        "NG-04",
+        "PT-04"
+      ]
+    },
+    {
+      "id": "KE-06",
+      "region": "KE",
+      "file": "audio/KE-06.mp3",
+      "duration_s": 126.5,
+      "title": "Moyo Mvua",
+      "artist": "Ngong Road Circuit",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "KE-02",
+      "nearest5": [
+        "ZA-01",
+        "SN-03",
+        "AE-05",
+        "AE-04",
+        "KE-04"
+      ]
+    },
+    {
+      "id": "KE-07",
+      "region": "KE",
+      "file": "audio/KE-07.mp3",
+      "duration_s": 114.06,
+      "title": "Usiku wa Mvua",
+      "artist": "Riverside Stage Cassette",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "KE-03",
+      "nearest5": [
+        "NG-04",
+        "KE-05",
+        "MZ-01",
+        "PT-04",
+        "MZ-03"
+      ]
+    },
+    {
+      "id": "KE-08",
+      "region": "KE",
+      "file": "audio/KE-08.mp3",
+      "duration_s": 116.1,
+      "title": "Taa za Jioni",
+      "artist": "Jioni Union",
+      "mirrors_rank": 3,
+      "mirrors_cities": 35,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        412,
+        413,
+        1413,
+        2413,
+        413,
+        414,
+        1414,
+        2414,
+        414,
+        415,
+        1415,
+        2415,
+        415
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "parallel",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "KE-04",
+      "nearest5": [
+        "KE-05",
+        "NG-03",
+        "PT-04",
+        "KE-07",
+        "CM-02"
+      ]
+    },
+    {
+      "id": "TZ-05",
+      "region": "TZ",
+      "file": "audio/TZ-05.mp3",
+      "duration_s": 118.8,
+      "title": "Rangi za wa Kusini",
+      "artist": "Kariakoo Lamplight",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.4,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "TZ-01",
+      "nearest5": [
+        "TZ-07",
+        "TZ-06",
+        "BR-04",
+        "ET-04",
+        "TZ-08"
+      ]
+    },
+    {
+      "id": "TZ-06",
+      "region": "TZ",
+      "file": "audio/TZ-06.mp3",
+      "duration_s": 132.74,
+      "title": "Rangi za za Asubuhi",
+      "artist": "Kariakoo Sound",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.0,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "TZ-02",
+      "nearest5": [
+        "US-01",
+        "TH-04",
+        "TH-03",
+        "TZ-05",
+        "HK-03"
+      ]
+    },
+    {
+      "id": "TZ-07",
+      "region": "TZ",
+      "file": "audio/TZ-07.mp3",
+      "duration_s": 118.18,
+      "title": "Upepo wa za Asubuhi",
+      "artist": "Msasani Night Bus",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "TZ-03",
+      "nearest5": [
+        "TZ-05",
+        "TZ-08",
+        "BR-04",
+        "TZ-06",
+        "CO-06"
+      ]
+    },
+    {
+      "id": "TZ-08",
+      "region": "TZ",
+      "file": "audio/TZ-08.mp3",
+      "duration_s": 127.82,
+      "title": "Rangi za Mchana",
+      "artist": "Kariakoo Lamplight",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "TZ-04",
+      "nearest5": [
+        "TZ-07",
+        "GR-01",
+        "TZ-05",
+        "GR-03",
+        "TZ-06"
+      ]
+    },
+    {
+      "id": "CO-05",
+      "region": "CO",
+      "file": "audio/CO-05.mp3",
+      "duration_s": 133.8,
+      "title": "Noche en Bogotá",
+      "artist": "La Candelaria Choir",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.3,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "CO-01",
+      "nearest5": [
+        "CO-06",
+        "BR-01",
+        "BR-04",
+        "CO-07",
+        "CO-08"
+      ]
+    },
+    {
+      "id": "CO-06",
+      "region": "CO",
+      "file": "audio/CO-06.mp3",
+      "duration_s": 133.36,
+      "title": "Sabor de Andes",
+      "artist": "Teusaquillo Union",
+      "mirrors_rank": 1,
+      "mirrors_cities": 4,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "CO-02",
+      "nearest5": [
+        "CO-05",
+        "BR-04",
+        "MX-01",
+        "BR-02",
+        "BR-01"
+      ]
+    },
+    {
+      "id": "CO-07",
+      "region": "CO",
+      "file": "audio/CO-07.mp3",
+      "duration_s": 117.74,
+      "title": "Tarde en Azul",
+      "artist": "Teusaquillo Lamplight",
+      "mirrors_rank": 2,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "grow",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "CO-03",
+      "nearest5": [
+        "CO-08",
+        "CO-05",
+        "MY-01",
+        "MY-04",
+        "IN-01"
+      ]
+    },
+    {
+      "id": "CO-08",
+      "region": "CO",
+      "file": "audio/CO-08.mp3",
+      "duration_s": 132.06,
+      "title": "Luz de Barrio",
+      "artist": "Teusaquillo Circuit",
+      "mirrors_rank": 3,
+      "mirrors_cities": 35,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "CO-04",
+      "nearest5": [
+        "BR-02",
+        "CV-03",
+        "CO-07",
+        "CO-02",
+        "MY-03"
+      ]
+    },
+    {
+      "id": "TW-05",
+      "region": "TW",
+      "file": "audio/TW-05.mp3",
+      "duration_s": 128.64,
+      "title": "Yue Guang Lu Kou",
+      "artist": "Jiufen Choir",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "TW-01",
+      "nearest5": [
+        "TW-06",
+        "TW-07",
+        "NZ-01",
+        "CZ-01",
+        "CZ-03"
+      ]
+    },
+    {
+      "id": "TW-06",
+      "region": "TW",
+      "file": "audio/TW-06.mp3",
+      "duration_s": 117.0,
+      "title": "Xia Tian De Gu Shi",
+      "artist": "Wenshan Society",
+      "mirrors_rank": 1,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "TW-02",
+      "nearest5": [
+        "TW-07",
+        "TW-05",
+        "TW-04",
+        "AU-04",
+        "CZ-01"
+      ]
+    },
+    {
+      "id": "TW-07",
+      "region": "TW",
+      "file": "audio/TW-07.mp3",
+      "duration_s": 126.5,
+      "title": "Xia Tian De Cheng Shi",
+      "artist": "Ximending Society",
+      "mirrors_rank": 2,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "TW-03",
+      "nearest5": [
+        "CZ-03",
+        "TW-08",
+        "TW-06",
+        "TW-04",
+        "AU-04"
+      ]
+    },
+    {
+      "id": "TW-08",
+      "region": "TW",
+      "file": "audio/TW-08.mp3",
+      "duration_s": 129.12,
+      "title": "Ye Wan De Tian Kong",
+      "artist": "Jiufen Sound",
+      "mirrors_rank": 3,
+      "mirrors_cities": 3,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "built_as": "TW-04",
+      "nearest5": [
+        "TW-07",
+        "NZ-04",
+        "AU-02",
+        "CZ-03",
+        "VN-01"
+      ]
+    },
+    {
+      "id": "CZ-01",
+      "region": "CZ",
+      "file": "audio/CZ-01.mp3",
+      "duration_s": 117.98,
+      "title": "Ulice v Praha",
+      "artist": "Mala Strana Union",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "NL-04",
+        "ID-02",
+        "NL-02",
+        "CZ-03",
+        "SG-08"
+      ]
+    },
+    {
+      "id": "CZ-02",
+      "region": "CZ",
+      "file": "audio/CZ-02.mp3",
+      "duration_s": 132.38,
+      "title": "Srdce Slunce",
+      "artist": "Karlin Radio",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "PL-03",
+        "CZ-01",
+        "NL-02",
+        "NL-04",
+        "IT-01"
+      ]
+    },
+    {
+      "id": "CZ-03",
+      "region": "CZ",
+      "file": "audio/CZ-03.mp3",
+      "duration_s": 117.48,
+      "title": "Srdce Ctvrt",
+      "artist": "Vinohrady Noc Rooftop Crew",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "grow",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "TW-07",
+        "CZ-01",
+        "NL-02",
+        "ID-02",
+        "PL-01"
+      ]
+    },
+    {
+      "id": "CZ-04",
+      "region": "CZ",
+      "file": "audio/CZ-04.mp3",
+      "duration_s": 117.76,
+      "title": "Leto v Ctvrt",
+      "artist": "Mala Strana Society",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-plain",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "TW-04",
+        "AR-03",
+        "SG-08",
+        "TW-07",
+        "SA-03"
+      ]
     }
   ],
   "versions": [
-    "v6"
+    "v6",
+    "v6-plain"
   ]
 }
