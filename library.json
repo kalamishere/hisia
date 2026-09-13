@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T13:45:19Z",
+  "generated_at": "2026-09-13T09:18:07Z",
   "chart_week": "2026-08-31",
   "version": "v6-measured",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
@@ -2174,6 +2174,49 @@
       "genre_family": "Pop / Hip-Hop",
       "sa3_prompt": "Czech chart-pop instrumental, 115 BPM, major key, clean programmed kit, round synth bass, bright piano and synth chords, light guitar strum, polished mid-tempo radio-pop lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
       "suno_prompt": "[style: Czech pop, chart pop] [tempo: 115 BPM] [mood: romantic, energetic, joyful] [instruments: programmed kit, synth bass, piano, synth chords, guitar strum] [vocal: solo lead in Czech, warm sung verse into a bright chorus, light harmony]"
+    },
+    "FI": {
+      "city": "Helsinki",
+      "country": "Finland",
+      "tz": "Europe/Helsinki",
+      "readout": {
+        "bpm": 74.9,
+        "mode": "major",
+        "lufs": -10.5,
+        "instruments": [
+          "drums",
+          "bass",
+          "electricguitar"
+        ],
+        "moods": [
+          "energetic",
+          "epic",
+          "heavy"
+        ],
+        "n_tracks": 3,
+        "excluded_tracks": [
+          "FI-1",
+          "FI-3"
+        ],
+        "bpm_iqr": [
+          63.29,
+          76.02
+        ]
+      },
+      "genres_own": [
+        [
+          "Rock",
+          2
+        ],
+        [
+          "Pop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Pop / Rock",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 75 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, a prominent kit, bass well forward and electric guitar carrying the arrangement, energetic, big and heavy",
+      "suno_prompt": "[style: Finnish pop, reggae-inflected chart pop] [tempo: 75 BPM] [mood: energetic, big, heavy] [instruments: offbeat guitar, round bass, programmed kit, synth pad] [vocal: solo lead in Finnish, relaxed sung verse into a gentle hook]"
     }
   },
   "tracks": [
@@ -4242,9 +4285,9 @@
       "nearest5": [
         "CV-02",
         "CV-04",
+        "FI-02",
         "MX-03",
-        "BR-08",
-        "CO-03"
+        "BR-08"
       ]
     },
     {
@@ -4872,9 +4915,9 @@
       "nearest5": [
         "HK-03",
         "ID-04",
+        "FI-01",
         "JP-03",
-        "JP-04",
-        "HK-04"
+        "JP-04"
       ]
     },
     {
@@ -4902,9 +4945,9 @@
       "nearest5": [
         "JP-04",
         "JP-02",
+        "FI-01",
         "JP-01",
-        "HK-02",
-        "SG-06"
+        "FI-03"
       ]
     },
     {
@@ -4932,9 +4975,9 @@
       "nearest5": [
         "JP-03",
         "JP-02",
+        "FI-01",
         "JP-01",
-        "SG-06",
-        "HK-03"
+        "FI-03"
       ]
     },
     {
@@ -10473,6 +10516,118 @@
         "TZ-07",
         "GR-01",
         "TZ-11"
+      ]
+    },
+    {
+      "id": "FI-01",
+      "region": "FI",
+      "file": "audio/FI-01.mp3",
+      "duration_s": 130.78,
+      "title": "Kesa Aurinko",
+      "artist": "Punavuori Institute",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "FI-03",
+        "JP-02",
+        "JP-03",
+        "JP-04",
+        "FI-02"
+      ]
+    },
+    {
+      "id": "FI-02",
+      "region": "FI",
+      "file": "audio/FI-02.mp3",
+      "duration_s": 119.0,
+      "title": "Yo Keskiyo",
+      "artist": "Punavuori Institute",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "JP-02",
+        "FI-01",
+        "FI-04",
+        "FI-03",
+        "JP-03"
+      ]
+    },
+    {
+      "id": "FI-03",
+      "region": "FI",
+      "file": "audio/FI-03.mp3",
+      "duration_s": 116.56,
+      "title": "Yo Helsinki",
+      "artist": "Katajanokka Choir",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "FI-01",
+        "HK-03",
+        "JP-02",
+        "FI-02",
+        "JP-04"
+      ]
+    },
+    {
+      "id": "FI-04",
+      "region": "FI",
+      "file": "audio/FI-04.mp3",
+      "duration_s": 132.24,
+      "title": "Kesa Aurinko",
+      "artist": "Hakaniemi Yo Rooftop Crew",
+      "mirrors_rank": 1,
+      "mirrors_cities": 35,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "nearest5": [
+        "FI-02",
+        "FI-01",
+        "GR-01",
+        "JP-02",
+        "CO-04"
       ]
     }
   ],
