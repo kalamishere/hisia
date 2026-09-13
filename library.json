@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T09:18:07Z",
+  "generated_at": "2026-09-13T20:26:53Z",
   "chart_week": "2026-08-31",
   "version": "v6-measured",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
@@ -505,24 +505,24 @@
       "country": "United States",
       "tz": "America/Los_Angeles",
       "readout": {
-        "bpm": 112.35,
+        "bpm": 93.96,
         "mode": "major",
         "lufs": -11.83,
         "instruments": [
           "drums",
           "bass",
-          "keyboard"
+          "synthesizer"
         ],
         "moods": [
-          "happy",
           "energetic",
+          "happy",
           "love"
         ],
         "n_tracks": 5,
         "excluded_tracks": [],
         "bpm_iqr": [
-          90.67,
-          114.84
+          86.13,
+          112.35
         ]
       },
       "genres_own": [
@@ -533,8 +533,8 @@
       ],
       "heard": [],
       "genre_family": "Hip-Hop / Rap",
-      "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 102 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, easy and sunlit",
-      "suno_prompt": "[style: contemporary country-pop meeting melodic hip-hop] [tempo: 102 BPM] [mood: easy, sunlit, wistful] [instruments: strummed acoustic guitar, slide electric, warm bass, laid-back kit with snaps, piano pads] [vocal: mixed male and female lead in English, conversational verse, big singalong chorus]"
+      "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 94 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "suno_prompt": "[style: contemporary country-pop meeting melodic hip-hop] [tempo: 94 BPM] [mood: energetic, joyful, romantic] [instruments: strummed acoustic guitar, slide electric, warm bass, laid-back kit with snaps, piano pads] [vocal: mixed male and female lead in English, conversational verse, big singalong chorus]"
     },
     "IN": {
       "city": "Mumbai",
@@ -1183,46 +1183,47 @@
       "country": "Germany",
       "tz": "Europe/Berlin",
       "readout": {
-        "bpm": 104.03,
+        "bpm": 95.7,
         "mode": "minor",
-        "lufs": -13.57,
+        "lufs": -13.29,
         "instruments": [
           "bass",
           "drums",
-          "synthesizer"
+          "guitar"
         ],
         "moods": [
-          "deep",
+          "love",
           "summer",
-          "happy"
+          "deep"
         ],
-        "n_tracks": 4,
+        "n_tracks": 3,
         "excluded_tracks": [
-          "DE-1"
+          "DE-1",
+          "DE-5"
         ],
         "bpm_iqr": [
-          95.26,
-          115.02
+          94.83,
+          104.02
         ]
       },
       "genres_own": [
         [
           "Hip-Hop",
-          2
-        ],
-        [
-          "Afro-Pop",
           1
         ],
         [
           "Turkish Hip-Hop/Rap",
           1
+        ],
+        [
+          "Afro-Pop",
+          1
         ]
       ],
       "heard": [],
-      "genre_family": "Hip-Hop / Rap / Afro-Pop / Turkish Hip-Hop / Rap",
-      "sa3_prompt": "German-language rap chart instrumental, with an Afro-pop and Turkish-German crossover current, 104 BPM, minor key, deep 808 bass, trap-programmed hi-hats and snare, dark synth pads, plucked oud-adjacent melody line, warm percussion, moody urban-pop groove, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, deep, sunny and joyful",
-      "suno_prompt": "[style: German hip-hop/rap, Afro-pop crossover, Turkish-German rap colour] [tempo: 104 BPM] [mood: deep, sunny, joyful] [instruments: 808 bass, trap drums, synth pads, plucked melody line, percussion] [vocal: male lead rapping in German, half-sung hook, an occasional Turkish phrase]"
+      "genre_family": "Hip-Hop / Rap / Turkish Hip-Hop / Rap / Afro-Pop",
+      "sa3_prompt": "German-language rap chart instrumental, with an Afro-pop and Turkish-German crossover current, 96 BPM, minor key, deep 808 bass, trap-programmed hi-hats and snare, dark synth pads, plucked oud-adjacent melody line, warm percussion, moody urban-pop groove, glossy modern mix, bass well forward, a prominent kit and acoustic guitar carrying the arrangement, romantic, sunny and deep",
+      "suno_prompt": "[style: German hip-hop/rap, Afro-pop crossover, Turkish-German rap colour] [tempo: 96 BPM] [mood: romantic, sunny, deep] [instruments: 808 bass, trap drums, synth pads, plucked melody line, percussion] [vocal: male lead rapping in German, half-sung hook, an occasional Turkish phrase]"
     },
     "FR": {
       "city": "Paris",
@@ -1449,9 +1450,9 @@
       "country": "Sweden",
       "tz": "Europe/Stockholm",
       "readout": {
-        "bpm": 123.05,
+        "bpm": 129.2,
         "mode": "major",
-        "lufs": -11.83,
+        "lufs": -10.57,
         "instruments": [
           "drums",
           "bass",
@@ -1465,20 +1466,20 @@
         "n_tracks": 5,
         "excluded_tracks": [],
         "bpm_iqr": [
-          114.84,
-          129.2
+          123.05,
+          149.8
         ]
       },
       "genres_own": [
         [
-          "Hip-Hop",
+          "Pop",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Hip-Hop / Rap",
-      "sa3_prompt": "Swedish chart pop instrumental, mostly K-pop and other global chart hits, with a Swedish hip-hop/rap current, 123 BPM, major key, glossy Scandi-pop synths, deep 808 bass, trap hi-hat rolls, bright programmed kit, polished Scandi-pop lift, modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
-      "suno_prompt": "[style: Swedish chart pop, K-pop/global crossover, Swedish hip-hop/rap] [tempo: 123 BPM] [mood: energetic, joyful, romantic] [instruments: synths, 808 bass, trap hats, programmed kit] [vocal: Swedish-language lead, rapped verse into a sung pop hook]"
+      "genre_family": "Pop",
+      "sa3_prompt": "Swedish chart pop instrumental, mostly K-pop and other global chart hits, with a Swedish hip-hop/rap current, 129 BPM, major key, glossy Scandi-pop synths, deep 808 bass, trap hi-hat rolls, bright programmed kit, polished Scandi-pop lift, modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "suno_prompt": "[style: Swedish chart pop, K-pop/global crossover, Swedish hip-hop/rap] [tempo: 129 BPM] [mood: energetic, joyful, romantic] [instruments: synths, 808 bass, trap hats, programmed kit] [vocal: Swedish-language lead, rapped verse into a sung pop hook]"
     },
     "SA": {
       "city": "Riyadh",
@@ -3567,7 +3568,7 @@
         "TZ-10",
         "TH-03",
         "US-04",
-        "HK-03"
+        "US-05"
       ]
     },
     {
@@ -3596,8 +3597,8 @@
         "US-01",
         "US-04",
         "US-03",
-        "TH-01",
-        "TH-04"
+        "US-05",
+        "TH-01"
       ]
     },
     {
@@ -3625,9 +3626,9 @@
       "nearest5": [
         "US-04",
         "HK-04",
+        "US-05",
         "US-02",
-        "US-01",
-        "MA-02"
+        "US-01"
       ]
     },
     {
@@ -3654,10 +3655,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "ID-04",
+        "US-05",
         "US-03",
         "US-01",
-        "NZ-04",
-        "PH-04"
+        "NZ-04"
       ]
     },
     {
@@ -4167,7 +4168,7 @@
         "AR-04",
         "JM-02",
         "AR-07",
-        "IN-05"
+        "DE-06"
       ]
     },
     {
@@ -4227,7 +4228,7 @@
         "HK-05",
         "ES-03",
         "AR-04",
-        "SG-03"
+        "SE-06"
       ]
     },
     {
@@ -4255,9 +4256,9 @@
       "nearest5": [
         "AR-02",
         "SG-05",
+        "SE-06",
         "AR-03",
-        "SA-02",
-        "AR-07"
+        "SA-02"
       ]
     },
     {
@@ -5064,10 +5065,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "TH-04",
+        "US-05",
         "US-01",
         "TZ-10",
-        "US-04",
-        "HK-03"
+        "US-04"
       ]
     },
     {
@@ -5096,8 +5097,8 @@
         "TH-03",
         "US-01",
         "TZ-10",
-        "US-04",
-        "HK-03"
+        "US-05",
+        "US-04"
       ]
     },
     {
@@ -5156,8 +5157,8 @@
         "PL-02",
         "DE-04",
         "DE-02",
-        "MA-06",
-        "MA-08"
+        "DE-06",
+        "MA-06"
       ]
     },
     {
@@ -5274,10 +5275,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "CI-01",
+        "SE-07",
         "NL-03",
         "SA-03",
-        "EG-04",
-        "SE-01"
+        "EG-04"
       ]
     },
     {
@@ -5335,9 +5336,9 @@
       "nearest5": [
         "NL-03",
         "ID-03",
+        "SE-08",
         "CZ-03",
-        "SA-03",
-        "SA-04"
+        "SA-03"
       ]
     },
     {
@@ -5704,9 +5705,9 @@
       "nearest5": [
         "FR-01",
         "FR-02",
+        "SE-06",
         "DE-04",
-        "CI-02",
-        "TR-03"
+        "CI-02"
       ]
     },
     {
@@ -6021,8 +6022,8 @@
         "NL-04",
         "SE-04",
         "PL-01",
-        "IT-06",
-        "IT-05"
+        "SE-07",
+        "IT-06"
       ]
     },
     {
@@ -6148,7 +6149,7 @@
         "TW-02",
         "FR-04",
         "MA-02",
-        "DE-01"
+        "DE-06"
       ]
     },
     {
@@ -6171,11 +6172,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "SE-08",
         "IT-04",
         "IT-05",
         "NL-02",
-        "CZ-02",
-        "ID-02"
+        "SE-07"
       ]
     },
     {
@@ -6228,11 +6229,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "SE-06",
+        "SE-07",
+        "SE-05",
         "FR-04",
-        "CI-03",
-        "SE-04",
-        "CI-01",
-        "HK-05"
+        "CI-03"
       ]
     },
     {
@@ -6259,7 +6260,7 @@
         "AU-01",
         "VN-06",
         "DO-02",
-        "SE-03"
+        "SE-07"
       ]
     },
     {
@@ -6309,11 +6310,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "SE-07",
         "NL-02",
         "ES-03",
         "SG-03",
-        "PL-01",
-        "NL-03"
+        "PL-01"
       ]
     },
     {
@@ -6493,8 +6494,8 @@
         "MA-08",
         "PL-02",
         "US-03",
-        "EG-03",
-        "PT-01"
+        "DE-06",
+        "EG-03"
       ]
     },
     {
@@ -6864,11 +6865,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "US-05",
         "TH-04",
         "US-01",
         "TZ-10",
-        "JP-02",
-        "US-04"
+        "JP-02"
       ]
     },
     {
@@ -7063,11 +7064,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "SE-07",
         "TR-02",
         "NL-02",
         "SE-01",
-        "FR-04",
-        "SG-05"
+        "FR-04"
       ]
     },
     {
@@ -7118,10 +7119,10 @@
       "chart_week": "2026-08-24",
       "nearest5": [
         "SE-01",
-        "AR-04",
-        "JM-02",
-        "JM-03",
-        "SG-05"
+        "SE-05",
+        "SE-07",
+        "SE-06",
+        "AR-04"
       ]
     },
     {
@@ -7742,7 +7743,7 @@
         "JM-01",
         "EG-04",
         "CI-04",
-        "GH-04"
+        "DE-06"
       ]
     },
     {
@@ -7765,11 +7766,11 @@
       "recipe": "grow",
       "chart_week": "2026-08-24",
       "nearest5": [
+        "SE-07",
         "GB-02",
         "SE-03",
         "SE-02",
-        "SE-04",
-        "EG-01"
+        "SE-04"
       ]
     },
     {
@@ -8363,7 +8364,7 @@
         "DO-01",
         "ZW-07",
         "JM-04",
-        "DO-03"
+        "SE-07"
       ]
     },
     {
@@ -8420,7 +8421,7 @@
         "MY-08",
         "TZ-11",
         "GR-04",
-        "TZ-08"
+        "US-06"
       ]
     },
     {
@@ -8475,8 +8476,8 @@
         "GR-01",
         "MY-08",
         "GR-02",
-        "GR-04",
-        "BR-04"
+        "US-06",
+        "GR-04"
       ]
     },
     {
@@ -8646,10 +8647,10 @@
       "built_as": "MA-01",
       "nearest5": [
         "MA-08",
+        "DE-06",
         "JM-04",
         "MA-06",
-        "TW-02",
-        "CI-04"
+        "TW-02"
       ]
     },
     {
@@ -8674,11 +8675,11 @@
       "chart_week": "2026-08-31",
       "built_as": "MA-02",
       "nearest5": [
+        "DE-06",
         "MA-08",
         "TW-02",
         "MA-05",
-        "PL-02",
-        "MA-02"
+        "PL-02"
       ]
     },
     {
@@ -8733,10 +8734,10 @@
       "built_as": "MA-04",
       "nearest5": [
         "MA-02",
+        "DE-06",
         "MA-05",
         "JM-04",
-        "TR-03",
-        "PL-02"
+        "TR-03"
       ]
     },
     {
@@ -8761,11 +8762,11 @@
       "chart_week": "2026-08-31",
       "built_as": "SG-01",
       "nearest5": [
+        "SE-07",
         "SG-07",
         "NL-03",
         "CI-01",
-        "NL-02",
-        "SA-02"
+        "NL-02"
       ]
     },
     {
@@ -8822,8 +8823,8 @@
         "SG-06",
         "SG-05",
         "MA-07",
-        "DO-06",
-        "IT-03"
+        "SE-06",
+        "DO-06"
       ]
     },
     {
@@ -8879,9 +8880,9 @@
       "nearest5": [
         "SG-08",
         "HK-08",
+        "SE-06",
         "TR-03",
-        "SG-06",
-        "AR-03"
+        "SG-06"
       ]
     },
     {
@@ -9269,8 +9270,8 @@
         "TZ-10",
         "US-01",
         "TH-04",
-        "TH-03",
-        "TZ-05"
+        "US-05",
+        "TH-03"
       ]
     },
     {
@@ -10337,7 +10338,7 @@
         "JM-01",
         "PL-02",
         "JM-02",
-        "NG-05"
+        "DE-08"
       ]
     },
     {
@@ -10454,8 +10455,8 @@
         "TH-04",
         "TZ-06",
         "US-01",
-        "TH-03",
-        "HK-03"
+        "US-05",
+        "TH-03"
       ]
     },
     {
@@ -10481,11 +10482,11 @@
       "chart_week": "2026-08-31",
       "built_as": "TZ-03",
       "nearest5": [
+        "US-06",
+        "US-05",
         "US-04",
         "GR-01",
-        "TH-01",
-        "PH-03",
-        "TZ-12"
+        "TH-01"
       ]
     },
     {
@@ -10628,6 +10629,354 @@
         "GR-01",
         "JP-02",
         "CO-04"
+      ]
+    },
+    {
+      "id": "US-05",
+      "region": "US",
+      "file": "audio/US-05.mp3",
+      "duration_s": 131.7,
+      "title": "Two Lane Tailgate",
+      "artist": "Eastside Porchlight Society",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.0,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "US-01",
+      "nearest5": [
+        "US-06",
+        "TH-04",
+        "HK-03",
+        "US-04",
+        "TH-03"
+      ]
+    },
+    {
+      "id": "US-06",
+      "region": "US",
+      "file": "audio/US-06.mp3",
+      "duration_s": 128.74,
+      "title": "Dust on the Sunrise",
+      "artist": "Marisol Canyon Choir",
+      "mirrors_rank": 1,
+      "mirrors_cities": 4,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "US-02",
+      "nearest5": [
+        "US-05",
+        "US-07",
+        "TZ-11",
+        "US-04",
+        "HK-03"
+      ]
+    },
+    {
+      "id": "US-07",
+      "region": "US",
+      "file": "audio/US-07.mp3",
+      "duration_s": 117.46,
+      "title": "Dust on the Sunrise",
+      "artist": "Dustbowl Avenue Radio",
+      "mirrors_rank": 2,
+      "mirrors_cities": 35,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "US-03",
+      "nearest5": [
+        "US-06",
+        "US-05",
+        "HK-03",
+        "US-04",
+        "US-08"
+      ]
+    },
+    {
+      "id": "US-08",
+      "region": "US",
+      "file": "audio/US-08.mp3",
+      "duration_s": 117.26,
+      "title": "Cheap Beer Again",
+      "artist": "Sunset Truckstop Collective",
+      "mirrors_rank": 3,
+      "mirrors_cities": 13,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.1,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "US-04",
+      "nearest5": [
+        "US-07",
+        "US-06",
+        "TZ-10",
+        "US-05",
+        "US-01"
+      ]
+    },
+    {
+      "id": "DE-05",
+      "region": "DE",
+      "file": "audio/DE-05.mp3",
+      "duration_s": 119.96,
+      "title": "Herz von Stille",
+      "artist": "Warschauer Bruecke Radio",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.3,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "DE-01",
+      "nearest5": [
+        "DE-07",
+        "CI-04",
+        "DE-06",
+        "DE-08",
+        "DE-01"
+      ]
+    },
+    {
+      "id": "DE-06",
+      "region": "DE",
+      "file": "audio/DE-06.mp3",
+      "duration_s": 119.96,
+      "title": "Licht auf Sehnsucht",
+      "artist": "Kreuzberg Nacht Rooftop Crew",
+      "mirrors_rank": 1,
+      "mirrors_cities": 35,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "DE-02",
+      "nearest5": [
+        "MA-08",
+        "MA-06",
+        "PL-02",
+        "FR-02",
+        "MA-05"
+      ]
+    },
+    {
+      "id": "DE-07",
+      "region": "DE",
+      "file": "audio/DE-07.mp3",
+      "duration_s": 120.0,
+      "title": "Herz von Berlin",
+      "artist": "Kreuzberg Nacht Rooftop Crew",
+      "mirrors_rank": 3,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.3,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "DE-03",
+      "nearest5": [
+        "DE-05",
+        "DE-08",
+        "TW-02",
+        "PL-02",
+        "TW-04"
+      ]
+    },
+    {
+      "id": "DE-08",
+      "region": "DE",
+      "file": "audio/DE-08.mp3",
+      "duration_s": 120.0,
+      "title": "Licht auf Freiheit",
+      "artist": "Neukoelln Society",
+      "mirrors_rank": 4,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.4,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "DE-04",
+      "nearest5": [
+        "DE-02",
+        "DE-07",
+        "DE-05",
+        "FR-02",
+        "CI-04"
+      ]
+    },
+    {
+      "id": "SE-05",
+      "region": "SE",
+      "file": "audio/SE-05.mp3",
+      "duration_s": 133.48,
+      "title": "Gatan i Midnatt",
+      "artist": "Fjallgatan Lamplight",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "SE-01",
+      "nearest5": [
+        "SE-07",
+        "SE-01",
+        "NL-03",
+        "SE-06",
+        "CI-01"
+      ]
+    },
+    {
+      "id": "SE-06",
+      "region": "SE",
+      "file": "audio/SE-06.mp3",
+      "duration_s": 131.02,
+      "title": "Gatan i Bla",
+      "artist": "Sodermalm Cassette",
+      "mirrors_rank": 1,
+      "mirrors_cities": 35,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "SE-02",
+      "nearest5": [
+        "FR-04",
+        "SE-01",
+        "HK-05",
+        "SE-04",
+        "SG-03"
+      ]
+    },
+    {
+      "id": "SE-07",
+      "region": "SE",
+      "file": "audio/SE-07.mp3",
+      "duration_s": 133.48,
+      "title": "Sommar i Midnatt",
+      "artist": "Slussen Rooftop Crew",
+      "mirrors_rank": 2,
+      "mirrors_cities": 13,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "SE-03",
+      "nearest5": [
+        "SE-04",
+        "CI-01",
+        "SE-05",
+        "NL-02",
+        "JM-03"
+      ]
+    },
+    {
+      "id": "SE-08",
+      "region": "SE",
+      "file": "audio/SE-08.mp3",
+      "duration_s": 120.0,
+      "title": "Dans i Stockholm",
+      "artist": "Fjallgatan Rooftop Crew",
+      "mirrors_rank": 3,
+      "mirrors_cities": 10,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.4,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-08-31",
+      "built_as": "SE-04",
+      "nearest5": [
+        "PL-03",
+        "PL-01",
+        "NL-02",
+        "SE-07",
+        "IT-04"
       ]
     }
   ],
