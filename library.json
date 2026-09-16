@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T11:25:40Z",
+  "generated_at": "2026-09-16T13:15:03Z",
   "chart_week": "2026-09-07",
   "version": "v6-measured",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
@@ -333,8 +333,8 @@
       "tz": "Europe/London",
       "readout": {
         "bpm": 123.05,
-        "mode": "major",
-        "lufs": -11.66,
+        "mode": "minor",
+        "lufs": -11.83,
         "instruments": [
           "drums",
           "bass",
@@ -342,26 +342,21 @@
         ],
         "moods": [
           "energetic",
-          "love",
-          "happy"
+          "happy",
+          "love"
         ],
         "n_tracks": 5,
         "excluded_tracks": [],
         "bpm_iqr": [
           114.84,
-          129.2
+          139.67
         ]
       },
-      "genres_own": [
-        [
-          "Pop",
-          1
-        ]
-      ],
+      "genres_own": [],
       "heard": [],
-      "genre_family": "Pop",
-      "sa3_prompt": "UK chart pop instrumental, 126 BPM, major key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, energetic and euphoric",
-      "suno_prompt": "[style: UK chart pop with K-pop crossover sheen, dance-pop] [tempo: 126 BPM] [mood: energetic, euphoric, glossy] [instruments: four-on-the-floor kit, claps, synth bass, supersaw chords, chopped electric guitar] [vocal: group vocal, English hook sung in unison then split into harmony, chanted pre-chorus]"
+      "genre_family": "",
+      "sa3_prompt": "UK chart pop instrumental, 123 BPM, minor key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "suno_prompt": "[style: UK chart pop with K-pop crossover sheen, dance-pop] [tempo: 123 BPM] [mood: energetic, joyful, romantic] [instruments: four-on-the-floor kit, claps, synth bass, supersaw chords, chopped electric guitar] [vocal: group vocal, English hook sung in unison then split into harmony]"
     },
     "BR": {
       "city": "Sao Paulo",
@@ -420,9 +415,9 @@
       "country": "South Korea",
       "tz": "Asia/Seoul",
       "readout": {
-        "bpm": 123.05,
-        "mode": "minor",
-        "lufs": -10.12,
+        "bpm": 121.62,
+        "mode": "major",
+        "lufs": -10.99,
         "instruments": [
           "synthesizer",
           "bass",
@@ -438,22 +433,26 @@
           "KR-1"
         ],
         "bpm_iqr": [
-          120.38,
+          118.23,
           124.59
         ]
       },
       "genres_own": [
         [
           "K-Pop",
-          4
+          3
+        ],
+        [
+          "Hip-Hop",
+          1
         ]
       ],
       "heard": [
         "electric guitar"
       ],
-      "genre_family": "K-Pop",
-      "sa3_prompt": "K-pop instrumental, 123 BPM, minor key, hard programmed drums, distorted synth bass, bright arpeggiated synths, crunchy electric guitar stabs, loud glossy mix, energetic and confident with a big drop",
-      "suno_prompt": "[style: K-pop, dance-pop with a hip-hop spine] [tempo: 123 BPM] [mood: energetic, confident, sharp] [instruments: hard programmed drums, distorted synth bass, arpeggiated synths, electric guitar stabs] [vocal: group vocal, romanised Korean hook with English hooks, rap verse into a chanted drop]"
+      "genre_family": "K-Pop / Hip-Hop / Rap",
+      "sa3_prompt": "K-pop instrumental, 122 BPM, major key, hard programmed drums, distorted synth bass, bright arpeggiated synths, crunchy electric guitar stabs, loud glossy mix with a big drop, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "suno_prompt": "[style: K-pop, dance-pop with a hip-hop spine] [tempo: 122 BPM] [mood: energetic, joyful, romantic] [instruments: hard programmed drums, distorted synth bass, arpeggiated synths, electric guitar stabs] [vocal: group vocal, romanised Korean hook with English lines, rap verse into a chanted drop]"
     },
     "MX": {
       "city": "Mexico City",
@@ -627,33 +626,32 @@
       "country": "Portugal",
       "tz": "Europe/Lisbon",
       "readout": {
-        "bpm": 152.0,
-        "mode": "major",
-        "lufs": -10.98,
+        "bpm": 129.19,
+        "mode": "minor",
+        "lufs": -12.6,
         "instruments": [
           "drums",
           "bass",
           "synthesizer"
         ],
         "moods": [
-          "love",
           "happy",
-          "energetic"
+          "love",
+          "upbeat"
         ],
-        "n_tracks": 3,
+        "n_tracks": 4,
         "excluded_tracks": [
-          "PT-1",
-          "PT-5"
+          "PT-1"
         ],
         "bpm_iqr": [
-          147.78,
-          175.38
+          110.98,
+          145.66
         ]
       },
       "genres_own": [
         [
           "Pop",
-          2
+          3
         ],
         [
           "Afro-Pop",
@@ -662,8 +660,8 @@
       ],
       "heard": [],
       "genre_family": "Pop / Afro-Pop",
-      "sa3_prompt": "Portuguese pop instrumental, 152 BPM, major key, kizomba-leaning drum groove, soft sub bass, nylon-string guitar picking, warm electric piano, light shaker, smooth late-summer sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
-      "suno_prompt": "[style: Portuguese pop, afro-pop with kizomba swing, Lisbon-Luanda crossover] [tempo: 152 BPM] [mood: romantic, joyful, energetic] [instruments: kizomba drums, sub bass, nylon guitar, electric piano, shaker] [vocal: male lead in Portuguese, intimate delivery, a gentle sung hook]"
+      "sa3_prompt": "Portuguese pop instrumental, 129 BPM, minor key, kizomba-leaning drum groove, soft sub bass, nylon-string guitar picking, warm electric piano, light shaker, smooth late-summer sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, romantic and upbeat",
+      "suno_prompt": "[style: Portuguese pop, afro-pop with kizomba swing, Lisbon-Luanda crossover] [tempo: 129 BPM] [mood: joyful, romantic, upbeat] [instruments: kizomba drums, sub bass, nylon guitar, electric piano, shaker] [vocal: male lead in Portuguese, intimate delivery, a gentle sung hook]"
     },
     "EG": {
       "city": "Cairo",
@@ -2563,7 +2561,7 @@
         "NG-02",
         "AE-04",
         "ES-01",
-        "KE-01"
+        "PT-07"
       ]
     },
     {
@@ -3465,10 +3463,10 @@
       ],
       "nearest5": [
         "SN-03",
+        "KR-07",
         "KE-06",
         "MZ-04",
-        "AE-04",
-        "ES-04"
+        "AE-04"
       ]
     },
     {
@@ -3701,8 +3699,8 @@
         "SE-03",
         "GB-04",
         "GB-01",
-        "AU-03",
-        "VN-04"
+        "KR-06",
+        "AU-03"
       ]
     },
     {
@@ -3789,10 +3787,10 @@
       },
       "nearest5": [
         "AU-01",
+        "KR-06",
         "AU-03",
         "SE-03",
-        "DO-05",
-        "VN-04"
+        "DO-05"
       ]
     },
     {
@@ -4030,9 +4028,9 @@
       "nearest5": [
         "SE-03",
         "KR-04",
+        "KR-06",
         "IT-03",
-        "AU-03",
-        "IT-05"
+        "AU-03"
       ]
     },
     {
@@ -4079,8 +4077,8 @@
         "VN-06",
         "KR-04",
         "AO-03",
-        "AU-03",
-        "DO-02"
+        "KR-06",
+        "AU-03"
       ]
     },
     {
@@ -4127,8 +4125,8 @@
         "KR-04",
         "AO-03",
         "AU-03",
-        "AU-01",
-        "KR-02"
+        "KR-06",
+        "AU-01"
       ]
     },
     {
@@ -4686,10 +4684,10 @@
       "hidden_reason": "stuttering chunk joins",
       "nearest5": [
         "KE-02",
+        "PT-05",
+        "PT-07",
         "TZ-03",
-        "IN-01",
-        "MY-07",
-        "CM-04"
+        "IN-01"
       ]
     },
     {
@@ -4958,8 +4956,8 @@
         "PT-04",
         "MA-04",
         "KE-02",
-        "KE-07",
-        "ZW-08"
+        "PT-07",
+        "KE-07"
       ]
     },
     {
@@ -5001,10 +4999,10 @@
       },
       "nearest5": [
         "AR-02",
+        "PT-06",
         "ET-02",
         "KE-02",
-        "PH-03",
-        "MY-02"
+        "PH-03"
       ]
     },
     {
@@ -5859,7 +5857,7 @@
         "SE-03",
         "VN-01",
         "SG-04",
-        "DO-05"
+        "KR-06"
       ]
     },
     {
@@ -5949,7 +5947,7 @@
         "VN-04",
         "GB-04",
         "KR-02",
-        "DO-05"
+        "KR-06"
       ]
     },
     {
@@ -6126,10 +6124,10 @@
       },
       "nearest5": [
         "ID-04",
+        "GB-05",
         "GB-03",
         "UG-04",
-        "MZ-01",
-        "PH-04"
+        "MZ-01"
       ]
     },
     {
@@ -6441,10 +6439,10 @@
       },
       "nearest5": [
         "HK-03",
+        "GB-06",
+        "GB-05",
         "ID-04",
-        "FI-01",
-        "JP-03",
-        "JP-04"
+        "GB-07"
       ]
     },
     {
@@ -7071,10 +7069,10 @@
       },
       "nearest5": [
         "NL-03",
+        "KR-07",
         "ID-03",
         "SE-08",
-        "CZ-03",
-        "SA-03"
+        "CZ-03"
       ]
     },
     {
@@ -7119,7 +7117,7 @@
         "MY-04",
         "NZ-02",
         "MA-04",
-        "IT-08"
+        "PT-07"
       ]
     },
     {
@@ -7892,7 +7890,7 @@
         "IT-01",
         "VN-02",
         "PL-03",
-        "IT-04"
+        "KR-07"
       ]
     },
     {
@@ -7980,8 +7978,8 @@
         "IT-01",
         "AU-03",
         "ID-02",
-        "IT-05",
-        "GB-04"
+        "KR-07",
+        "IT-05"
       ]
     },
     {
@@ -8746,8 +8744,8 @@
         "AO-01",
         "AO-03",
         "IT-04",
-        "DO-01",
-        "DO-08"
+        "KR-08",
+        "KR-07"
       ]
     },
     {
@@ -8977,11 +8975,11 @@
         ]
       },
       "nearest5": [
+        "KR-07",
+        "KR-05",
         "AU-03",
         "MA-04",
-        "MZ-03",
-        "SN-03",
-        "AO-04"
+        "KR-08"
       ]
     },
     {
@@ -9366,11 +9364,11 @@
         ]
       },
       "nearest5": [
+        "GB-05",
         "US-05",
         "TH-04",
         "US-01",
-        "TZ-10",
-        "JP-02"
+        "TZ-10"
       ]
     },
     {
@@ -9829,7 +9827,7 @@
         "ET-04",
         "UG-03",
         "CM-04",
-        "CM-02"
+        "PT-07"
       ]
     },
     {
@@ -9867,11 +9865,11 @@
         ]
       },
       "nearest5": [
+        "PT-06",
         "PT-02",
         "CM-03",
         "MY-07",
-        "ET-03",
-        "TH-02"
+        "ET-03"
       ]
     },
     {
@@ -9913,7 +9911,7 @@
         "CM-03",
         "ET-02",
         "GH-04",
-        "HK-01"
+        "PT-06"
       ]
     },
     {
@@ -10987,6 +10985,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "AE-01",
+      "sa3_prompt": "Mid-tempo Gulf-chart pop instrumental, 89 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and energetic",
+      "readout": {
+        "bpm": 88.84,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "percussion",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "KE-06",
         "NG-02",
@@ -11016,6 +11029,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "AE-02",
+      "sa3_prompt": "Mid-tempo Gulf-chart pop instrumental, 89 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and energetic",
+      "readout": {
+        "bpm": 88.84,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "percussion",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "KE-03",
         "KE-01",
@@ -11045,6 +11073,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "AE-03",
+      "sa3_prompt": "Mid-tempo Gulf-chart pop instrumental, 89 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and energetic",
+      "readout": {
+        "bpm": 88.84,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "percussion",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "AE-08",
         "AR-05",
@@ -11074,6 +11117,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "AE-04",
+      "sa3_prompt": "Mid-tempo Gulf-chart pop instrumental, 89 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and energetic",
+      "readout": {
+        "bpm": 88.84,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "percussion",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "AR-05",
         "SG-03",
@@ -11103,6 +11161,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "IN-01",
+      "sa3_prompt": "Indian film pop instrumental, 88 BPM, minor key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 88.4,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "IN-07",
         "PH-02",
@@ -11132,6 +11205,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "IN-02",
+      "sa3_prompt": "Indian film pop instrumental, 88 BPM, minor key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 88.4,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "IN-05",
         "JM-02",
@@ -11161,6 +11249,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "IN-03",
+      "sa3_prompt": "Indian film pop instrumental, 88 BPM, minor key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 88.4,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "IN-05",
         "IN-04",
@@ -11190,6 +11293,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "IN-04",
+      "sa3_prompt": "Indian film pop instrumental, 88 BPM, minor key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 88.4,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "CM-04",
         "NG-07",
@@ -11219,6 +11337,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "VN-01",
+      "sa3_prompt": "Vietnamese V-pop chart instrumental, with an alternative-rap and K-pop crossover edge, 99 BPM, major key, bright pop keys, clean electric guitar, punchy programmed kit, round bass, K-pop-leaning synth stabs, polished ballad-into-chorus lift, glossy V-pop mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "VN-03",
         "VN-04",
@@ -11248,12 +11381,27 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "VN-02",
+      "sa3_prompt": "Vietnamese V-pop chart instrumental, with an alternative-rap and K-pop crossover edge, 99 BPM, major key, bright pop keys, clean electric guitar, punchy programmed kit, round bass, K-pop-leaning synth stabs, polished ballad-into-chorus lift, glossy V-pop mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "KR-04",
         "KR-02",
         "VN-04",
         "AU-03",
-        "PL-04"
+        "KR-06"
       ]
     },
     {
@@ -11291,6 +11439,21 @@
       "built_as": "VN-03",
       "hidden": true,
       "hidden_reason": "stuttering chunk joins",
+      "sa3_prompt": "Vietnamese V-pop chart instrumental, with an alternative-rap and K-pop crossover edge, 99 BPM, major key, bright pop keys, clean electric guitar, punchy programmed kit, round bass, K-pop-leaning synth stabs, polished ballad-into-chorus lift, glossy V-pop mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "AE-04",
         "NL-04",
@@ -11332,6 +11495,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "VN-04",
+      "sa3_prompt": "Vietnamese V-pop chart instrumental, with an alternative-rap and K-pop crossover edge, 99 BPM, major key, bright pop keys, clean electric guitar, punchy programmed kit, round bass, K-pop-leaning synth stabs, polished ballad-into-chorus lift, glossy V-pop mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "SN-03",
         "SG-02",
@@ -11361,6 +11539,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "DO-01",
+      "sa3_prompt": "Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 129 BPM, minor key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "VN-04",
         "GB-04",
@@ -11390,12 +11583,27 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "DO-02",
+      "sa3_prompt": "Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 129 BPM, minor key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "KR-01",
         "SE-03",
+        "KR-06",
         "SE-02",
-        "IT-07",
-        "DO-01"
+        "IT-07"
       ]
     },
     {
@@ -11419,6 +11627,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "DO-03",
+      "sa3_prompt": "Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 129 BPM, minor key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "EG-03",
         "DO-01",
@@ -11448,6 +11671,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "DO-04",
+      "sa3_prompt": "Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 129 BPM, minor key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "ZW-07",
         "DO-01",
@@ -11476,6 +11714,21 @@
       "recipe": "grow",
       "version": "v6",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 135 BPM, major key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, acoustic guitar and a prominent kit carrying the arrangement, romantic, melodic and tender",
+      "readout": {
+        "bpm": 135.35,
+        "mode": "major",
+        "instruments": [
+          "acousticguitar",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "melodic",
+          "ballad"
+        ]
+      },
       "nearest5": [
         "GR-03",
         "IS-01",
@@ -11504,6 +11757,21 @@
       "recipe": "grow+intro",
       "version": "v6",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 135 BPM, major key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, acoustic guitar and a prominent kit carrying the arrangement, romantic, melodic and tender",
+      "readout": {
+        "bpm": 135.35,
+        "mode": "major",
+        "instruments": [
+          "acousticguitar",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "melodic",
+          "ballad"
+        ]
+      },
       "nearest5": [
         "MY-08",
         "GR-03",
@@ -11532,6 +11800,21 @@
       "recipe": "grow",
       "version": "v6",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 135 BPM, major key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, acoustic guitar and a prominent kit carrying the arrangement, romantic, melodic and tender",
+      "readout": {
+        "bpm": 135.35,
+        "mode": "major",
+        "instruments": [
+          "acousticguitar",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "melodic",
+          "ballad"
+        ]
+      },
       "nearest5": [
         "GR-01",
         "MY-08",
@@ -11560,6 +11843,21 @@
       "recipe": "grow",
       "version": "v6",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 135 BPM, major key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, acoustic guitar and a prominent kit carrying the arrangement, romantic, melodic and tender",
+      "readout": {
+        "bpm": 135.35,
+        "mode": "major",
+        "instruments": [
+          "acousticguitar",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "melodic",
+          "ballad"
+        ]
+      },
       "nearest5": [
         "GR-03",
         "GR-01",
@@ -11589,6 +11887,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "GH-01",
+      "sa3_prompt": "Ghanaian afrobeats and rap instrumental, 111 BPM, minor key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and energetic",
+      "readout": {
+        "bpm": 110.75,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "GH-02",
         "CI-08",
@@ -11618,6 +11931,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "GH-02",
+      "sa3_prompt": "Ghanaian afrobeats and rap instrumental, 111 BPM, minor key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and energetic",
+      "readout": {
+        "bpm": 110.75,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "FR-06",
         "CI-06",
@@ -11647,6 +11975,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "GH-03",
+      "sa3_prompt": "Ghanaian afrobeats and rap instrumental, 111 BPM, minor key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and energetic",
+      "readout": {
+        "bpm": 110.75,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "GH-04",
         "GH-03",
@@ -11676,6 +12019,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "GH-04",
+      "sa3_prompt": "Ghanaian afrobeats and rap instrumental, 111 BPM, minor key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and energetic",
+      "readout": {
+        "bpm": 110.75,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "energetic"
+        ]
+      },
       "nearest5": [
         "GH-06",
         "FR-06",
@@ -11705,6 +12063,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "MA-01",
+      "sa3_prompt": "Moroccan chart pop instrumental, with a folk and hip-hop/rap crossover current, 102 BPM, minor key, bright pop synths, bendir-style hand percussion, warm rounded bass, trap hi-hat accents, plucked oud-adjacent line, festive mid-tempo groove, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 102.42,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "MA-08",
         "DE-06",
@@ -11734,6 +12107,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "MA-02",
+      "sa3_prompt": "Moroccan chart pop instrumental, with a folk and hip-hop/rap crossover current, 102 BPM, minor key, bright pop synths, bendir-style hand percussion, warm rounded bass, trap hi-hat accents, plucked oud-adjacent line, festive mid-tempo groove, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 102.42,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "DE-06",
         "MA-08",
@@ -11763,6 +12151,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "MA-03",
+      "sa3_prompt": "Moroccan chart pop instrumental, with a folk and hip-hop/rap crossover current, 102 BPM, minor key, bright pop synths, bendir-style hand percussion, warm rounded bass, trap hi-hat accents, plucked oud-adjacent line, festive mid-tempo groove, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 102.42,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "IT-06",
         "NL-02",
@@ -11792,6 +12195,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "MA-04",
+      "sa3_prompt": "Moroccan chart pop instrumental, with a folk and hip-hop/rap crossover current, 102 BPM, minor key, bright pop synths, bendir-style hand percussion, warm rounded bass, trap hi-hat accents, plucked oud-adjacent line, festive mid-tempo groove, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 102.42,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "MA-02",
         "DE-06",
@@ -11821,6 +12239,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "SG-01",
+      "sa3_prompt": "Singapore chart pop instrumental, mostly K-pop and other global chart hits, with a Cantopop/HK-pop crossover current, 72 BPM, minor key, glossy programmed kit, bright synth hooks, punchy bass, light Cantopop string touches, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and romantic",
+      "readout": {
+        "bpm": 71.91,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "romantic"
+        ]
+      },
       "nearest5": [
         "SE-07",
         "SG-07",
@@ -11850,6 +12283,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "SG-02",
+      "sa3_prompt": "Singapore chart pop instrumental, mostly K-pop and other global chart hits, with a Cantopop/HK-pop crossover current, 72 BPM, minor key, glossy programmed kit, bright synth hooks, punchy bass, light Cantopop string touches, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and romantic",
+      "readout": {
+        "bpm": 71.91,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "romantic"
+        ]
+      },
       "nearest5": [
         "SG-08",
         "NL-03",
@@ -11879,6 +12327,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "SG-03",
+      "sa3_prompt": "Singapore chart pop instrumental, mostly K-pop and other global chart hits, with a Cantopop/HK-pop crossover current, 72 BPM, minor key, glossy programmed kit, bright synth hooks, punchy bass, light Cantopop string touches, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and romantic",
+      "readout": {
+        "bpm": 71.91,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "romantic"
+        ]
+      },
       "nearest5": [
         "SG-06",
         "SG-05",
@@ -11908,6 +12371,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "SG-04",
+      "sa3_prompt": "Singapore chart pop instrumental, mostly K-pop and other global chart hits, with a Cantopop/HK-pop crossover current, 72 BPM, minor key, glossy programmed kit, bright synth hooks, punchy bass, light Cantopop string touches, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and romantic",
+      "readout": {
+        "bpm": 71.91,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "romantic"
+        ]
+      },
       "nearest5": [
         "HK-05",
         "SG-04",
@@ -11937,6 +12415,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "HK-01",
+      "sa3_prompt": "Cantopop chart instrumental, with a reggae and hip-hop crossover current, 71 BPM, major key, skanking reggae guitar and organ touch, warm rounded bass, punchy programmed kit, Cantopop synth strings, laid-back groove into a glossy pop lift, piano, acoustic guitar and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 71.37,
+        "mode": "major",
+        "instruments": [
+          "piano",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
       "nearest5": [
         "SG-08",
         "HK-08",
@@ -11966,6 +12459,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "HK-02",
+      "sa3_prompt": "Cantopop chart instrumental, with a reggae and hip-hop crossover current, 71 BPM, major key, skanking reggae guitar and organ touch, warm rounded bass, punchy programmed kit, Cantopop synth strings, laid-back groove into a glossy pop lift, piano, acoustic guitar and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 71.37,
+        "mode": "major",
+        "instruments": [
+          "piano",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
       "nearest5": [
         "HK-08",
         "HK-07",
@@ -11995,12 +12503,27 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "HK-03",
+      "sa3_prompt": "Cantopop chart instrumental, with a reggae and hip-hop crossover current, 71 BPM, major key, skanking reggae guitar and organ touch, warm rounded bass, punchy programmed kit, Cantopop synth strings, laid-back groove into a glossy pop lift, piano, acoustic guitar and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 71.37,
+        "mode": "major",
+        "instruments": [
+          "piano",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
       "nearest5": [
         "HK-04",
         "HK-08",
+        "GB-06",
         "ID-04",
-        "HK-02",
-        "HK-03"
+        "HK-02"
       ]
     },
     {
@@ -12024,6 +12547,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "HK-04",
+      "sa3_prompt": "Cantopop chart instrumental, with a reggae and hip-hop crossover current, 71 BPM, major key, skanking reggae guitar and organ touch, warm rounded bass, punchy programmed kit, Cantopop synth strings, laid-back groove into a glossy pop lift, piano, acoustic guitar and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 71.37,
+        "mode": "major",
+        "instruments": [
+          "piano",
+          "guitar",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
       "nearest5": [
         "HK-05",
         "HK-07",
@@ -12053,6 +12591,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "ZW-01",
+      "sa3_prompt": "Zimbabwean chart instrumental, afrobeat-rooted with an afro-pop and dancehall crossover current, 120 BPM, major key, driving afrobeat percussion, deep rounded bass, bright guitar riff, dancehall-style skanking chords, uptempo dance groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 120.19,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "DO-01",
         "ES-01",
@@ -12082,6 +12635,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "ZW-02",
+      "sa3_prompt": "Zimbabwean chart instrumental, afrobeat-rooted with an afro-pop and dancehall crossover current, 120 BPM, major key, driving afrobeat percussion, deep rounded bass, bright guitar riff, dancehall-style skanking chords, uptempo dance groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 120.19,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "ZW-07",
         "NG-02",
@@ -12111,6 +12679,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "ZW-03",
+      "sa3_prompt": "Zimbabwean chart instrumental, afrobeat-rooted with an afro-pop and dancehall crossover current, 120 BPM, major key, driving afrobeat percussion, deep rounded bass, bright guitar riff, dancehall-style skanking chords, uptempo dance groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 120.19,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "ZW-08",
         "DO-08",
@@ -12140,6 +12723,21 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "ZW-04",
+      "sa3_prompt": "Zimbabwean chart instrumental, afrobeat-rooted with an afro-pop and dancehall crossover current, 120 BPM, major key, driving afrobeat percussion, deep rounded bass, bright guitar riff, dancehall-style skanking chords, uptempo dance groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 120.19,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "ZW-07",
         "MZ-01",
@@ -12169,6 +12767,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "KE-01",
+      "sa3_prompt": "East African afro-pop instrumental, 94 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 94.09,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "NG-03",
         "KE-08",
@@ -12198,6 +12811,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "KE-02",
+      "sa3_prompt": "East African afro-pop instrumental, 94 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 94.09,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "ZA-01",
         "SN-03",
@@ -12227,6 +12855,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "KE-03",
+      "sa3_prompt": "East African afro-pop instrumental, 94 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 94.09,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "NG-04",
         "KE-05",
@@ -12270,6 +12913,21 @@
       "built_as": "KE-04",
       "hidden": true,
       "hidden_reason": "stuttering chunk joins",
+      "sa3_prompt": "East African afro-pop instrumental, 94 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 94.09,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "KE-05",
         "NG-03",
@@ -12299,6 +12957,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "TZ-01",
+      "sa3_prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "TZ-09",
         "TZ-07",
@@ -12328,6 +13001,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "TZ-02",
+      "sa3_prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "TZ-10",
         "US-01",
@@ -12357,6 +13045,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "TZ-03",
+      "sa3_prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "TZ-09",
         "TZ-05",
@@ -12386,6 +13089,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "TZ-04",
+      "sa3_prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "TZ-12",
         "TZ-07",
@@ -12415,6 +13133,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "CO-01",
+      "sa3_prompt": "Colombian pop instrumental, 96 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "CO-06",
         "BR-01",
@@ -12444,6 +13177,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "CO-02",
+      "sa3_prompt": "Colombian pop instrumental, 96 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "MX-07",
         "BR-05",
@@ -12473,6 +13221,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "CO-03",
+      "sa3_prompt": "Colombian pop instrumental, 96 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "CO-08",
         "UG-06",
@@ -12502,6 +13265,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "CO-04",
+      "sa3_prompt": "Colombian pop instrumental, 96 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "BR-02",
         "UG-06",
@@ -12531,6 +13309,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "TW-01",
+      "sa3_prompt": "Mandopop and Taiwanese ballad-pop instrumental, with a K-pop crossover edge, 107 BPM, minor key, piano and warm string pad, clean electric guitar, round bass, crisp programmed kit, occasional bright synth stabs, polished ballad-into-chorus lift, glossy Mandopop mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 106.86,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
       "nearest5": [
         "TW-06",
         "TW-07",
@@ -12560,6 +13353,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "TW-02",
+      "sa3_prompt": "Mandopop and Taiwanese ballad-pop instrumental, with a K-pop crossover edge, 107 BPM, minor key, piano and warm string pad, clean electric guitar, round bass, crisp programmed kit, occasional bright synth stabs, polished ballad-into-chorus lift, glossy Mandopop mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 106.86,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
       "nearest5": [
         "TW-07",
         "TW-05",
@@ -12589,6 +13397,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "TW-03",
+      "sa3_prompt": "Mandopop and Taiwanese ballad-pop instrumental, with a K-pop crossover edge, 107 BPM, minor key, piano and warm string pad, clean electric guitar, round bass, crisp programmed kit, occasional bright synth stabs, polished ballad-into-chorus lift, glossy Mandopop mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 106.86,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
       "nearest5": [
         "CZ-03",
         "TW-08",
@@ -12618,6 +13441,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "TW-04",
+      "sa3_prompt": "Mandopop and Taiwanese ballad-pop instrumental, with a K-pop crossover edge, 107 BPM, minor key, piano and warm string pad, clean electric guitar, round bass, crisp programmed kit, occasional bright synth stabs, polished ballad-into-chorus lift, glossy Mandopop mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 106.86,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
       "nearest5": [
         "TW-07",
         "NZ-04",
@@ -12646,6 +13484,21 @@
       "recipe": "grow",
       "version": "v6-plain",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Czech chart-pop instrumental, 115 BPM, major key, clean programmed kit, round synth bass, bright piano and synth chords, light guitar strum, polished mid-tempo radio-pop lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 115.36,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "NL-04",
         "ID-02",
@@ -12674,6 +13527,21 @@
       "recipe": "grow+intro",
       "version": "v6-plain",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Czech chart-pop instrumental, 115 BPM, major key, clean programmed kit, round synth bass, bright piano and synth chords, light guitar strum, polished mid-tempo radio-pop lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 115.36,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "IT-06",
         "PL-03",
@@ -12702,12 +13570,27 @@
       "recipe": "grow",
       "version": "v6-plain",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Czech chart-pop instrumental, 115 BPM, major key, clean programmed kit, round synth bass, bright piano and synth chords, light guitar strum, polished mid-tempo radio-pop lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 115.36,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "TW-07",
         "CZ-01",
+        "KR-07",
         "NL-02",
-        "ID-02",
-        "PL-01"
+        "ID-02"
       ]
     },
     {
@@ -12730,6 +13613,21 @@
       "recipe": "grow",
       "version": "v6-plain",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Czech chart-pop instrumental, 115 BPM, major key, clean programmed kit, round synth bass, bright piano and synth chords, light guitar strum, polished mid-tempo radio-pop lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 115.36,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "TW-04",
         "AR-03",
@@ -12767,6 +13665,24 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "ZA-01",
+      "sa3_prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, late-night groove, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, melodic and romantic",
+      "readout": {
+        "bpm": 112.35,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "melodic",
+          "love"
+        ]
+      },
+      "heard": [
+        "log-drum kit"
+      ],
       "nearest5": [
         "MZ-01",
         "ZA-06",
@@ -12796,6 +13712,24 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "ZA-02",
+      "sa3_prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, late-night groove, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, melodic and romantic",
+      "readout": {
+        "bpm": 112.35,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "melodic",
+          "love"
+        ]
+      },
+      "heard": [
+        "log-drum kit"
+      ],
       "nearest5": [
         "ZA-08",
         "NG-04",
@@ -12832,6 +13766,24 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "ZA-03",
+      "sa3_prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, late-night groove, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, melodic and romantic",
+      "readout": {
+        "bpm": 112.35,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "melodic",
+          "love"
+        ]
+      },
+      "heard": [
+        "log-drum kit"
+      ],
       "nearest5": [
         "KE-05",
         "NG-03",
@@ -12861,6 +13813,24 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "ZA-04",
+      "sa3_prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, late-night groove, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, melodic and romantic",
+      "readout": {
+        "bpm": 112.35,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "melodic",
+          "love"
+        ]
+      },
+      "heard": [
+        "log-drum kit"
+      ],
       "nearest5": [
         "ZA-06",
         "KE-04",
@@ -12890,6 +13860,24 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "BR-01",
+      "sa3_prompt": "Brazilian sertanejo and funk instrumental, 150 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 149.83,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
+      "heard": [
+        "riq tambourine"
+      ],
       "nearest5": [
         "BR-07",
         "CV-04",
@@ -12919,6 +13907,24 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "BR-02",
+      "sa3_prompt": "Brazilian sertanejo and funk instrumental, 150 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 149.83,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
+      "heard": [
+        "riq tambourine"
+      ],
       "nearest5": [
         "MX-03",
         "MX-01",
@@ -12948,6 +13954,24 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "BR-03",
+      "sa3_prompt": "Brazilian sertanejo and funk instrumental, 150 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 149.83,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
+      "heard": [
+        "riq tambourine"
+      ],
       "nearest5": [
         "BR-04",
         "BR-05",
@@ -12977,6 +14001,24 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "BR-04",
+      "sa3_prompt": "Brazilian sertanejo and funk instrumental, 150 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 149.83,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
+      "heard": [
+        "riq tambourine"
+      ],
       "nearest5": [
         "BR-04",
         "BR-07",
@@ -13020,6 +14062,21 @@
       "built_as": "AR-01",
       "hidden": true,
       "hidden_reason": "stuttering chunk joins",
+      "sa3_prompt": "Argentine urban pop instrumental, 76 BPM, minor key, reggaeton dembow drums, round sub bass, plucked synth melody, soft pad chords, light guitar, mid-tempo urbano sway, warm club mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 75.67,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "AE-08",
         "AE-07",
@@ -13049,6 +14106,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "AR-02",
+      "sa3_prompt": "Argentine urban pop instrumental, 76 BPM, minor key, reggaeton dembow drums, round sub bass, plucked synth melody, soft pad chords, light guitar, mid-tempo urbano sway, warm club mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 75.67,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "KE-02",
         "AR-02",
@@ -13078,6 +14150,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "AR-03",
+      "sa3_prompt": "Argentine urban pop instrumental, 76 BPM, minor key, reggaeton dembow drums, round sub bass, plucked synth melody, soft pad chords, light guitar, mid-tempo urbano sway, warm club mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 75.67,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "AE-07",
         "AR-03",
@@ -13107,6 +14194,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "AR-04",
+      "sa3_prompt": "Argentine urban pop instrumental, 76 BPM, minor key, reggaeton dembow drums, round sub bass, plucked synth melody, soft pad chords, light guitar, mid-tempo urbano sway, warm club mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 75.67,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
       "nearest5": [
         "KE-04",
         "AR-07",
@@ -13136,6 +14238,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "MY-01",
+      "sa3_prompt": "Malay-language chart pop instrumental, with a dangdut-adjacent groove and a Western pop crossover, 123 BPM, major key, warm rounded bass, gently swung kick-and-snare, plucked acoustic guitar, soft keys, light hand percussion, easy mid-tempo sway, clean radio mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, energetic and romantic",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "love"
+        ]
+      },
       "nearest5": [
         "MY-04",
         "MY-01",
@@ -13165,6 +14282,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "MY-02",
+      "sa3_prompt": "Malay-language chart pop instrumental, with a dangdut-adjacent groove and a Western pop crossover, 123 BPM, major key, warm rounded bass, gently swung kick-and-snare, plucked acoustic guitar, soft keys, light hand percussion, easy mid-tempo sway, clean radio mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, energetic and romantic",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "love"
+        ]
+      },
       "nearest5": [
         "CO-08",
         "MY-02",
@@ -13194,12 +14326,27 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "MY-03",
+      "sa3_prompt": "Malay-language chart pop instrumental, with a dangdut-adjacent groove and a Western pop crossover, 123 BPM, major key, warm rounded bass, gently swung kick-and-snare, plucked acoustic guitar, soft keys, light hand percussion, easy mid-tempo sway, clean radio mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, energetic and romantic",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "love"
+        ]
+      },
       "nearest5": [
+        "PT-07",
+        "PT-06",
         "MY-03",
-        "IN-03",
-        "ET-02",
-        "MY-02",
-        "IN-02"
+        "PT-08",
+        "IN-03"
       ]
     },
     {
@@ -13223,6 +14370,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "MY-04",
+      "sa3_prompt": "Malay-language chart pop instrumental, with a dangdut-adjacent groove and a Western pop crossover, 123 BPM, major key, warm rounded bass, gently swung kick-and-snare, plucked acoustic guitar, soft keys, light hand percussion, easy mid-tempo sway, clean radio mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, energetic and romantic",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "love"
+        ]
+      },
       "nearest5": [
         "GR-03",
         "GR-01",
@@ -13252,6 +14414,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "IT-01",
+      "sa3_prompt": "Italian chart pop instrumental, with a hip-hop/rap crossover current, 129 BPM, minor key, bright synth-pop chords, punchy programmed kit, warm rounded bass, trap hi-hat accents, light guitar strum, glossy radio-pop lift, polished modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, sunny and joyful",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "summer",
+          "happy"
+        ]
+      },
       "nearest5": [
         "IT-01",
         "IT-04",
@@ -13281,6 +14458,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "IT-02",
+      "sa3_prompt": "Italian chart pop instrumental, with a hip-hop/rap crossover current, 129 BPM, minor key, bright synth-pop chords, punchy programmed kit, warm rounded bass, trap hi-hat accents, light guitar strum, glossy radio-pop lift, polished modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, sunny and joyful",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "summer",
+          "happy"
+        ]
+      },
       "nearest5": [
         "NL-02",
         "IT-01",
@@ -13310,12 +14502,27 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "IT-03",
+      "sa3_prompt": "Italian chart pop instrumental, with a hip-hop/rap crossover current, 129 BPM, minor key, bright synth-pop chords, punchy programmed kit, warm rounded bass, trap hi-hat accents, light guitar strum, glossy radio-pop lift, polished modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, sunny and joyful",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "summer",
+          "happy"
+        ]
+      },
       "nearest5": [
         "IT-03",
         "IT-01",
         "GB-04",
         "KR-01",
-        "SG-04"
+        "KR-06"
       ]
     },
     {
@@ -13339,12 +14546,27 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "IT-04",
+      "sa3_prompt": "Italian chart pop instrumental, with a hip-hop/rap crossover current, 129 BPM, minor key, bright synth-pop chords, punchy programmed kit, warm rounded bass, trap hi-hat accents, light guitar strum, glossy radio-pop lift, polished modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, sunny and joyful",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "summer",
+          "happy"
+        ]
+      },
       "nearest5": [
         "TZ-03",
         "CV-01",
         "AO-06",
-        "MY-04",
-        "CO-02"
+        "PT-07",
+        "MY-04"
       ]
     },
     {
@@ -13368,6 +14590,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "NG-01",
+      "sa3_prompt": "Nigerian afrobeats instrumental, 108 BPM, major key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, bass well forward, a prominent kit and layered hand percussion carrying the arrangement, deep, joyful and romantic",
+      "readout": {
+        "bpm": 107.71,
+        "mode": "major",
+        "instruments": [
+          "bass",
+          "drums",
+          "percussion"
+        ],
+        "moods": [
+          "deep",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "NG-08",
         "KE-05",
@@ -13397,6 +14634,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "NG-02",
+      "sa3_prompt": "Nigerian afrobeats instrumental, 108 BPM, major key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, bass well forward, a prominent kit and layered hand percussion carrying the arrangement, deep, joyful and romantic",
+      "readout": {
+        "bpm": 107.71,
+        "mode": "major",
+        "instruments": [
+          "bass",
+          "drums",
+          "percussion"
+        ],
+        "moods": [
+          "deep",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "GH-03",
         "JM-01",
@@ -13426,6 +14678,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "NG-03",
+      "sa3_prompt": "Nigerian afrobeats instrumental, 108 BPM, major key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, bass well forward, a prominent kit and layered hand percussion carrying the arrangement, deep, joyful and romantic",
+      "readout": {
+        "bpm": 107.71,
+        "mode": "major",
+        "instruments": [
+          "bass",
+          "drums",
+          "percussion"
+        ],
+        "moods": [
+          "deep",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "KE-02",
         "IN-08",
@@ -13455,6 +14722,21 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "NG-04",
+      "sa3_prompt": "Nigerian afrobeats instrumental, 108 BPM, major key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, bass well forward, a prominent kit and layered hand percussion carrying the arrangement, deep, joyful and romantic",
+      "readout": {
+        "bpm": 107.71,
+        "mode": "major",
+        "instruments": [
+          "bass",
+          "drums",
+          "percussion"
+        ],
+        "moods": [
+          "deep",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "KE-04",
         "NG-05",
@@ -13485,6 +14767,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "TZ-01",
+      "sa3_prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "TZ-07",
         "TZ-05",
@@ -13515,6 +14812,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "TZ-02",
+      "sa3_prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "TH-04",
         "TZ-06",
@@ -13545,6 +14857,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "TZ-03",
+      "sa3_prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "US-06",
         "US-05",
@@ -13575,6 +14902,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "TZ-04",
+      "sa3_prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
+      "readout": {
+        "bpm": 99.38,
+        "mode": "major",
+        "instruments": [
+          "percussion",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "deep"
+        ]
+      },
       "nearest5": [
         "TZ-08",
         "TZ-09",
@@ -13603,12 +14945,27 @@
       "recipe": "grow+intro",
       "version": "v6-measured",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 75 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, a prominent kit, bass well forward and electric guitar carrying the arrangement, energetic, big and heavy",
+      "readout": {
+        "bpm": 74.9,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "electricguitar"
+        ],
+        "moods": [
+          "energetic",
+          "epic",
+          "heavy"
+        ]
+      },
       "nearest5": [
         "FI-03",
+        "GB-08",
         "JP-02",
         "JP-03",
-        "JP-04",
-        "FI-02"
+        "JP-04"
       ]
     },
     {
@@ -13631,6 +14988,21 @@
       "recipe": "grow",
       "version": "v6-measured",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 75 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, a prominent kit, bass well forward and electric guitar carrying the arrangement, energetic, big and heavy",
+      "readout": {
+        "bpm": 74.9,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "electricguitar"
+        ],
+        "moods": [
+          "energetic",
+          "epic",
+          "heavy"
+        ]
+      },
       "nearest5": [
         "JP-02",
         "FI-01",
@@ -13659,12 +15031,27 @@
       "recipe": "grow",
       "version": "v6-measured",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 75 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, a prominent kit, bass well forward and electric guitar carrying the arrangement, energetic, big and heavy",
+      "readout": {
+        "bpm": 74.9,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "electricguitar"
+        ],
+        "moods": [
+          "energetic",
+          "epic",
+          "heavy"
+        ]
+      },
       "nearest5": [
         "FI-01",
         "IE-03",
         "HK-03",
         "JP-02",
-        "IS-02"
+        "GB-05"
       ]
     },
     {
@@ -13687,6 +15074,21 @@
       "recipe": "grow+intro",
       "version": "v6-measured",
       "chart_week": "2026-08-31",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 75 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, a prominent kit, bass well forward and electric guitar carrying the arrangement, energetic, big and heavy",
+      "readout": {
+        "bpm": 74.9,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "electricguitar"
+        ],
+        "moods": [
+          "energetic",
+          "epic",
+          "heavy"
+        ]
+      },
       "nearest5": [
         "FI-02",
         "FI-01",
@@ -13716,6 +15118,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "US-01",
+      "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 94 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 93.96,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "US-06",
         "TH-04",
@@ -13745,6 +15162,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "US-02",
+      "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 94 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 93.96,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "US-05",
         "IS-01",
@@ -13774,6 +15206,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "US-03",
+      "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 94 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 93.96,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "US-06",
         "US-05",
@@ -13803,6 +15250,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "US-04",
+      "sa3_prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 94 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 93.96,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "US-07",
         "US-06",
@@ -13832,6 +15294,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "DE-01",
+      "sa3_prompt": "German-language rap chart instrumental, with an Afro-pop and Turkish-German crossover current, 96 BPM, minor key, deep 808 bass, trap-programmed hi-hats and snare, dark synth pads, plucked oud-adjacent melody line, warm percussion, moody urban-pop groove, glossy modern mix, bass well forward, a prominent kit and acoustic guitar carrying the arrangement, romantic, sunny and deep",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "guitar"
+        ],
+        "moods": [
+          "love",
+          "summer",
+          "deep"
+        ]
+      },
       "nearest5": [
         "DE-07",
         "CI-08",
@@ -13861,6 +15338,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "DE-02",
+      "sa3_prompt": "German-language rap chart instrumental, with an Afro-pop and Turkish-German crossover current, 96 BPM, minor key, deep 808 bass, trap-programmed hi-hats and snare, dark synth pads, plucked oud-adjacent melody line, warm percussion, moody urban-pop groove, glossy modern mix, bass well forward, a prominent kit and acoustic guitar carrying the arrangement, romantic, sunny and deep",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "guitar"
+        ],
+        "moods": [
+          "love",
+          "summer",
+          "deep"
+        ]
+      },
       "nearest5": [
         "MA-08",
         "MA-06",
@@ -13890,6 +15382,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "DE-03",
+      "sa3_prompt": "German-language rap chart instrumental, with an Afro-pop and Turkish-German crossover current, 96 BPM, minor key, deep 808 bass, trap-programmed hi-hats and snare, dark synth pads, plucked oud-adjacent melody line, warm percussion, moody urban-pop groove, glossy modern mix, bass well forward, a prominent kit and acoustic guitar carrying the arrangement, romantic, sunny and deep",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "guitar"
+        ],
+        "moods": [
+          "love",
+          "summer",
+          "deep"
+        ]
+      },
       "nearest5": [
         "DE-05",
         "DE-08",
@@ -13919,6 +15426,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "DE-04",
+      "sa3_prompt": "German-language rap chart instrumental, with an Afro-pop and Turkish-German crossover current, 96 BPM, minor key, deep 808 bass, trap-programmed hi-hats and snare, dark synth pads, plucked oud-adjacent melody line, warm percussion, moody urban-pop groove, glossy modern mix, bass well forward, a prominent kit and acoustic guitar carrying the arrangement, romantic, sunny and deep",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "drums",
+          "guitar"
+        ],
+        "moods": [
+          "love",
+          "summer",
+          "deep"
+        ]
+      },
       "nearest5": [
         "DE-02",
         "FR-08",
@@ -13948,6 +15470,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "SE-01",
+      "sa3_prompt": "Swedish chart pop instrumental, mostly K-pop and other global chart hits, with a Swedish hip-hop/rap current, 129 BPM, major key, glossy Scandi-pop synths, deep 808 bass, trap hi-hat rolls, bright programmed kit, polished Scandi-pop lift, modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "SE-07",
         "SE-01",
@@ -13977,6 +15514,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "SE-02",
+      "sa3_prompt": "Swedish chart pop instrumental, mostly K-pop and other global chart hits, with a Swedish hip-hop/rap current, 129 BPM, major key, glossy Scandi-pop synths, deep 808 bass, trap hi-hat rolls, bright programmed kit, polished Scandi-pop lift, modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "FR-04",
         "SE-01",
@@ -14006,6 +15558,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "SE-03",
+      "sa3_prompt": "Swedish chart pop instrumental, mostly K-pop and other global chart hits, with a Swedish hip-hop/rap current, 129 BPM, major key, glossy Scandi-pop synths, deep 808 bass, trap hi-hat rolls, bright programmed kit, polished Scandi-pop lift, modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "SE-04",
         "CI-01",
@@ -14035,6 +15602,21 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "SE-04",
+      "sa3_prompt": "Swedish chart pop instrumental, mostly K-pop and other global chart hits, with a Swedish hip-hop/rap current, 129 BPM, major key, glossy Scandi-pop synths, deep 808 bass, trap hi-hat rolls, bright programmed kit, polished Scandi-pop lift, modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
       "nearest5": [
         "PL-03",
         "PL-01",
@@ -15481,6 +17063,554 @@
         "IS-03",
         "IS-02",
         "GR-03"
+      ]
+    },
+    {
+      "id": "GB-05",
+      "region": "GB",
+      "file": "audio/GB-05.mp3",
+      "duration_s": 117.84,
+      "title": "Two Left Trainers",
+      "artist": "Silvertown Disco Band",
+      "mirrors_rank": 1,
+      "mirrors_cities": 22,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.1,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "UK chart pop instrumental, 123 BPM, minor key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [],
+      "built_as": "GB-01",
+      "nearest5": [
+        "GB-07",
+        "HK-03",
+        "GB-08",
+        "NZ-03",
+        "US-05"
+      ]
+    },
+    {
+      "id": "GB-06",
+      "region": "GB",
+      "file": "audio/GB-06.mp3",
+      "duration_s": 132.26,
+      "title": "Static in the Blues",
+      "artist": "Tottenham Marshes Sessions",
+      "mirrors_rank": 2,
+      "mirrors_cities": 33,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "UK chart pop instrumental, 123 BPM, minor key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [],
+      "built_as": "GB-02",
+      "nearest5": [
+        "GB-07",
+        "HK-07",
+        "GB-05",
+        "ID-04",
+        "JP-02"
+      ]
+    },
+    {
+      "id": "GB-07",
+      "region": "GB",
+      "file": "audio/GB-07.mp3",
+      "duration_s": 117.9,
+      "title": "Nightbus Again",
+      "artist": "Silvertown Disco Institute",
+      "mirrors_rank": 3,
+      "mirrors_cities": 5,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "UK chart pop instrumental, 123 BPM, minor key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [],
+      "built_as": "GB-03",
+      "nearest5": [
+        "GB-05",
+        "GB-08",
+        "GB-06",
+        "PH-04",
+        "DK-04"
+      ]
+    },
+    {
+      "id": "GB-08",
+      "region": "GB",
+      "file": "audio/GB-08.mp3",
+      "duration_s": 117.4,
+      "title": "Late Trainers",
+      "artist": "New Cross Skyline",
+      "mirrors_rank": 4,
+      "mirrors_cities": 6,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "UK chart pop instrumental, 123 BPM, minor key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [],
+      "built_as": "GB-04",
+      "nearest5": [
+        "GB-07",
+        "GB-05",
+        "IS-03",
+        "HK-03",
+        "FI-01"
+      ]
+    },
+    {
+      "id": "KR-05",
+      "region": "KR",
+      "file": "audio/KR-05.mp3",
+      "duration_s": 129.48,
+      "title": "Danger Signal Sonyeo",
+      "artist": "Mapo Night Collective",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.3,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "K-pop instrumental, 122 BPM, major key, hard programmed drums, distorted synth bass, bright arpeggiated synths, crunchy electric guitar stabs, loud glossy mix with a big drop, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 121.62,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [
+        "electric guitar"
+      ],
+      "built_as": "KR-01",
+      "nearest5": [
+        "KR-08",
+        "KR-07",
+        "VN-02",
+        "MA-01",
+        "AO-04"
+      ]
+    },
+    {
+      "id": "KR-06",
+      "region": "KR",
+      "file": "audio/KR-06.mp3",
+      "duration_s": 118.98,
+      "title": "Danger Signal Letter",
+      "artist": "Hongdae Glass Trio",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "K-pop instrumental, 122 BPM, major key, hard programmed drums, distorted synth bass, bright arpeggiated synths, crunchy electric guitar stabs, loud glossy mix with a big drop, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 121.62,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [
+        "electric guitar"
+      ],
+      "built_as": "KR-02",
+      "nearest5": [
+        "GB-04",
+        "KR-02",
+        "AU-03",
+        "KR-04",
+        "KR-01"
+      ]
+    },
+    {
+      "id": "KR-07",
+      "region": "KR",
+      "file": "audio/KR-07.mp3",
+      "duration_s": 119.48,
+      "title": "Bballi Bballi Blue",
+      "artist": "Yeonnam Skyline",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "K-pop instrumental, 122 BPM, major key, hard programmed drums, distorted synth bass, bright arpeggiated synths, crunchy electric guitar stabs, loud glossy mix with a big drop, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 121.62,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [
+        "electric guitar"
+      ],
+      "built_as": "KR-03",
+      "nearest5": [
+        "KR-08",
+        "KR-05",
+        "IT-04",
+        "VN-02",
+        "ZA-01"
+      ]
+    },
+    {
+      "id": "KR-08",
+      "region": "KR",
+      "file": "audio/KR-08.mp3",
+      "duration_s": 118.76,
+      "title": "Danger Signal Heart",
+      "artist": "Seorae Pixel Sound",
+      "mirrors_rank": 1,
+      "mirrors_cities": 22,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "K-pop instrumental, 122 BPM, major key, hard programmed drums, distorted synth bass, bright arpeggiated synths, crunchy electric guitar stabs, loud glossy mix with a big drop, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 121.62,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [
+        "electric guitar"
+      ],
+      "built_as": "KR-04",
+      "nearest5": [
+        "KR-07",
+        "KR-05",
+        "AO-01",
+        "AU-03",
+        "MA-01"
+      ]
+    },
+    {
+      "id": "PT-05",
+      "region": "PT",
+      "file": "audio/PT-05.mp3",
+      "duration_s": 133.38,
+      "title": "Rua da Lisboa",
+      "artist": "Miradouro Skyline",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Portuguese pop instrumental, 129 BPM, minor key, kizomba-leaning drum groove, soft sub bass, nylon-string guitar picking, warm electric piano, light shaker, smooth late-summer sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, romantic and upbeat",
+      "readout": {
+        "bpm": 129.19,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "happy",
+          "love",
+          "upbeat"
+        ]
+      },
+      "heard": [],
+      "built_as": "PT-01",
+      "nearest5": [
+        "PT-07",
+        "IN-03",
+        "MZ-03",
+        "KE-02",
+        "ZW-08"
+      ]
+    },
+    {
+      "id": "PT-06",
+      "region": "PT",
+      "file": "audio/PT-06.mp3",
+      "duration_s": 133.42,
+      "title": "Rua da Sal",
+      "artist": "Mouraria Institute",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.3,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Portuguese pop instrumental, 129 BPM, minor key, kizomba-leaning drum groove, soft sub bass, nylon-string guitar picking, warm electric piano, light shaker, smooth late-summer sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, romantic and upbeat",
+      "readout": {
+        "bpm": 129.19,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "happy",
+          "love",
+          "upbeat"
+        ]
+      },
+      "heard": [],
+      "built_as": "PT-02",
+      "nearest5": [
+        "ET-02",
+        "PT-07",
+        "MY-07",
+        "PT-02",
+        "AR-02"
+      ]
+    },
+    {
+      "id": "PT-07",
+      "region": "PT",
+      "file": "audio/PT-07.mp3",
+      "duration_s": 119.28,
+      "title": "Verão em Lisboa",
+      "artist": "Mouraria Set",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Portuguese pop instrumental, 129 BPM, minor key, kizomba-leaning drum groove, soft sub bass, nylon-string guitar picking, warm electric piano, light shaker, smooth late-summer sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, romantic and upbeat",
+      "readout": {
+        "bpm": 129.19,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "happy",
+          "love",
+          "upbeat"
+        ]
+      },
+      "heard": [],
+      "built_as": "PT-03",
+      "nearest5": [
+        "MY-07",
+        "PT-05",
+        "KE-02",
+        "IN-03",
+        "IT-08"
+      ]
+    },
+    {
+      "id": "PT-08",
+      "region": "PT",
+      "file": "audio/PT-08.mp3",
+      "duration_s": 118.54,
+      "title": "Coração de Lisboa",
+      "artist": "Tejo Society",
+      "mirrors_rank": 1,
+      "mirrors_cities": 33,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Portuguese pop instrumental, 129 BPM, minor key, kizomba-leaning drum groove, soft sub bass, nylon-string guitar picking, warm electric piano, light shaker, smooth late-summer sway, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, romantic and upbeat",
+      "readout": {
+        "bpm": 129.19,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "happy",
+          "love",
+          "upbeat"
+        ]
+      },
+      "heard": [],
+      "built_as": "PT-04",
+      "nearest5": [
+        "MY-07",
+        "PT-07",
+        "IT-08",
+        "MZ-02",
+        "CV-03"
       ]
     }
   ],
