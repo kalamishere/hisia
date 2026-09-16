@@ -1,12 +1,14 @@
 # hisia.live — how it's made (Kalam's draft, 2026-09-05)
 
-hisia.live is a radio station that follows the sun. It plays city evenings — Nairobi, then Dubai, then Mumbai as the earth turns; nineteen cities for now, one for roughly every hour of the clock. Tracks are generated from an audio-analysis reading of what that city is dancing to this week, based on its charts.
+*Written on 5 September, and kept as it was — the three-step story of how the recipe arrived is the point of it. The numbers below have been corrected where they were wrong, and a postscript at the end says what changed after this was written.*
+
+hisia.live is a radio station that follows the sun. It plays city evenings — Nairobi, then Dubai, then Mumbai as the earth turns; fifty-four cities, one for roughly every hour of the clock. Tracks are generated from an audio-analysis reading of what that city is dancing to this week, based on its charts.
 
 Here's how it works, and what it can't do.
 
 ## The chart is the signal → LLM ears
 
-I read YouTube charts for nineteen selected cities. Trending tracks get measured: tempo, key, loudness, and what an instrument/mood model hears in them. Genre is added from Apple's and Deezer's own labels — audio classifiers can't tell afrobeats from reggaeton from dancehall, and kept hearing "K-pop" in Tanzanian records.
+I read YouTube charts for the selected cities — nineteen when this was written, fifty-four now. Trending tracks get measured: tempo, key, loudness, and what an instrument/mood model hears in them. Genre is added from Apple's and Deezer's own labels — audio classifiers can't tell afrobeats from reggaeton from dancehall, and kept hearing "K-pop" in Tanzanian records.
 
 Those measurements are quite detailed. They are converted into text prompts using LLMs to create audio per city. Nairobi this week: *East African afro-pop instrumental, 98 BPM, minor key, log-drum and shaker percussion, warm sliding bass, bright plucked guitar, dancehall-zouk swing, sunny and romantic.*
 
@@ -34,7 +36,9 @@ Other things the numbers and I clashed about: similarity metrics preferred track
 
 ## Cost — half a day wondering if this will work
 
-Seventy-six two-minute tracks for nineteen cities cost about 28 GPU-minutes — inside a single day's included quota on a PRO Hugging Face account, and the weekly refresh is one command. The site is a static page on GitHub Pages and costs nothing to serve. The 24/7 stream runs in a free-tier Hugging Face container: one encoder, two vCPUs, real-time with room to spare, pushing to Twitch and YouTube at once. (Claude wrote this, obviously.)
+A two-minute track costs about 22 GPU-seconds, so a weekly refresh sits inside a single day's included quota on a PRO Hugging Face account, and it is one command. The site is a static page on GitHub Pages and costs nothing to serve.
+
+The 24/7 stream does **not** run in a Hugging Face container. I tried, and the platforms do not accept a live stream from that egress — Twitch takes the RTMP session and never goes live, YouTube sits on "Preparing stream". Same key, same ffmpeg arguments, fine from a laptop. It took a night to isolate. It runs from a small always-free ARM box instead. (Claude wrote this, obviously.)
 
 ## What I'd ask friends in industry
 
@@ -48,12 +52,30 @@ This stuff is fun. And anyone can do it. Especially fans of an artist.
 
 Imagine figuring out a way to use this to make money for artists. Feels like an obvious win.
 
-## The recipe, for builders and agents
+## The recipe, for builders and agents (as it stood on 5 September — see the postscript)
 
 - Charts → per-track measurements (tempo, key, loudness, instrument and mood tags; genre from store labels) → one prompt per city
 - SA3 medium: stage one text-to-audio (prompt + vocal line + energy line), stage two audio-to-audio from that at 0.42 — the setting my ear kept picking in earlier tests — four 30 s chunks crossfaded, loudnorm −14 LUFS
 - Fictional artist and title per track, checked against every real chart artist and title
 - Page: one HTML file; picks among cities within 3.5 hours of evening, weighted toward the one with the sun on the horizon; sunset drawn from the playing city's clock
-- Stream: the same page in headless Chrome + a node player → ffmpeg → Twitch and YouTube, in a free Hugging Face Docker Space
+- Stream: the same page in headless Chrome + a node player → ffmpeg → Twitch, from a small always-free ARM box (not a Hugging Face Space — see above)
 
 Powered by Stability AI. A Friday afternoon experiment with Fable and agentic friends.
+
+---
+
+## Postscript, 16 September
+
+The recipe above is not the one running now. What changed, in the order it happened:
+
+**Fewer joins beat better joins.** Two versions went into making the seams between four parallel 30-second chunks less audible. The fix was to stop having seams. A track is now one 36-second seeded chunk grown into a continuous two minutes by a single inpaint call, with a second inpaint writing a 15-second intro — kept only when its first five seconds sit at least 8 dB under the body. The stitch keeps each generation's own ending rather than cutting before it.
+
+**The vocal line is measured, not written.** It comes from Demucs stems through pyin — median pitch, range, onset rate — per city, rather than one hand-written idiom per region.
+
+**The energy line is gone.** Every prompt used to end with "high energy, driving dancefloor groove … bright, loud and punchy". It was written to restore punch lost across the four-chunk recipe, the recipe changed, and the clause stayed. Measured across eight tracks it was the brightest arm in seven and the thinnest under 200 Hz in six — and it was telling a 71 BPM Hong Kong chart to be a dancefloor.
+
+**Nineteen cities became fifty-four**, and the library appends rather than being replaced, so a published set is a mixture of recipe versions and each track says which one it is.
+
+**Each track stores its own prompt.** The card used to show the region's current prompt, which drifted as the chart weeks moved on. It now shows the prompt that track was actually generated from.
+
+The reason any of this is worth writing down: every one of those changes was decided blind, by ear, and the measurements were run afterwards to explain the verdict rather than to reach it.
