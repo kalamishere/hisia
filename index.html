@@ -938,8 +938,10 @@ function pickRegion(){
   var skip = recent.slice(recent.length - hold);
   var cands = all.filter(function(k){ return skip.indexOf(k) === -1; });
   if (!cands.length) cands = all;
-  /* any city within 3.5 h of evening, at random — strict "closest" looped four
-     cities for half an hour; this spreads an hour across ten */
+  /* any city within 2.5 h of evening, at random — strict "closest" looped four
+     cities for half an hour; this spreads an hour across several. The window was
+     3.5 h when the map held 19 cities; at 54 that reached too far past sunset
+     (Kalam: "auckland at 2330 shows up"), and 2.5 h still leaves a full pool. */
   var d = now(), score = {}, jitter = {};
   cands.forEach(function(k){
     score[k] = eveningness(regionsByIso[k].tz, d);
@@ -947,7 +949,7 @@ function pickRegion(){
   });
   /* weighted toward the sunset: a city with the sun on the horizon (~19:30) plays
      about three times as often as one already two hours into the night */
-  var near = cands.filter(function(k){ return score[k] <= 3.5; });
+  var near = cands.filter(function(k){ return score[k] <= 2.5; });
   /* a thin side of the clock (the Americas at this hour) leaves too few cities in the
      window and the pool repeats; take the six nearest to evening instead */
   if (near.length < 6){ near = cands.slice().sort(function(a,b){ return score[a] - score[b]; }).slice(0, 6); }
