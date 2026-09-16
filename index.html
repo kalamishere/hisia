@@ -1604,8 +1604,13 @@ loadLibrary().then(function(data){
   lib = data;
   regionsByIso = data.regions || {};
   if (Q0.get("mode") === "drift" || Q0.get("mode") === "sun") setMode(Q0.get("mode") === "drift");
+  /* A hidden track stays in library.json - the flag only keeps it out of the
+     map's pools, so hiding is reversible and nothing is deleted. ?hidden=1
+     plays the hidden ones instead, to audition a cut before or after making it. */
+  var SHOW_HIDDEN = Q0.get("hidden") === "1";
   (data.tracks || []).forEach(function(t){
     if (!regionsByIso[t.region]) return;
+    if (SHOW_HIDDEN ? !t.hidden : !!t.hidden) return;
     trackById[t.id] = t;
     (poolByRegion[t.region] = poolByRegion[t.region] || []).push(t);
     playedByRegion[t.region] = playedByRegion[t.region] || [];

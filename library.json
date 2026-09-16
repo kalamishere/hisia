@@ -2933,6 +2933,8 @@
           "summer"
         ]
       },
+      "hidden": true,
+      "hidden_reason": "stuttering chunk joins",
       "nearest5": [
         "KE-04",
         "KE-07",
@@ -4560,6 +4562,8 @@
           "happy"
         ]
       },
+      "hidden": true,
+      "hidden_reason": "stuttering chunk joins",
       "nearest5": [
         "KE-02",
         "TZ-03",
@@ -9389,6 +9393,8 @@
           "deep"
         ]
       },
+      "hidden": true,
+      "hidden_reason": "stuttering chunk joins",
       "nearest5": [
         "EG-01",
         "DO-01",
@@ -11163,6 +11169,8 @@
       "version": "v6",
       "chart_week": "2026-08-31",
       "built_as": "VN-03",
+      "hidden": true,
+      "hidden_reason": "stuttering chunk joins",
       "nearest5": [
         "AE-04",
         "NL-04",
@@ -12140,6 +12148,8 @@
       "version": "v6-plain",
       "chart_week": "2026-08-31",
       "built_as": "KE-04",
+      "hidden": true,
+      "hidden_reason": "stuttering chunk joins",
       "nearest5": [
         "KE-05",
         "NG-03",
@@ -12888,6 +12898,8 @@
       "version": "v6-measured",
       "chart_week": "2026-08-31",
       "built_as": "AR-01",
+      "hidden": true,
+      "hidden_reason": "stuttering chunk joins",
       "nearest5": [
         "AE-08",
         "AE-07",
