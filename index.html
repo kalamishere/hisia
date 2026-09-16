@@ -42,6 +42,17 @@
   --display:"Instrument Serif", Georgia, "Times New Roman", serif;
   --text:"Inter", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
   --horizon:62%;
+  /* How far below the horizon line the city name sits — but only while there is room
+     for it. 38vh is the height under the horizon; take off the floor and the tallest
+     card in the library, and what is left is the lift. The card's type scales with the
+     window, so its worst case does too: 270px measured at 1440 wide, held between 240
+     and 400. On a roomy window this is the 1.6vh line; on a short one the anchor rises
+     above the horizon rather than the provenance line being cut off, and fitStrip()
+     lifts the city strip clear of it as it did before the card was anchored. */
+  --card-lift:min(1.6vh, calc(38vh - 33px - clamp(264px, 21vw, 385px)));
+  --card-floor:calc(var(--pad) * .2 + 1.3em);     /* and the card stops this far above the bottom: clear of the footer */
+  --embed-hang:22vh;                              /* the embed's own anchor: above the horizon, where it has room */
+  --embed-floor:calc(var(--pad) * .2 + 4.4em);    /* its controls sit here */
   --ink:#fff;
   --ink-soft:rgba(255,255,255,.72);
   --ink-faint:rgba(255,255,255,.5);
@@ -232,10 +243,44 @@ header{
 }
 .nextcity b{font-weight:400;color:var(--ink-soft)}
 
+/* The card used to hang off the bottom of the screen and grow upward, so the length
+   of each city's readout moved the city name — 40.2px of drift across the 51 cities
+   at 1440x900 (measured 14 Sep, radio/LAYOUT_CARD_HANDOFF.md). The name is what the
+   eye tracks from city to city, so the name is the anchor: it sits at one fixed line
+   just under the horizon, and the track, readout and provenance flow downward into
+   the space above the footer. Anything longer than that space clamps. */
 #card{
   position:absolute;left:var(--pad);bottom:calc(var(--pad) * 1.15);z-index:2;
   max-width:min(56ch,62vw);
 }
+/* The embed gets the same anchor as the page — it is the only external carrier of the
+   station (the Zinstrel listing iframe) and it drifted 13.1px per city while it stayed
+   bottom-anchored. Its own hang and floor, because a 360px frame will not take the
+   page's: it hides the strip and the controls and shrinks the type. */
+body.embed #card{
+  top:calc(var(--horizon) - var(--embed-hang));bottom:auto;
+  display:flex;flex-direction:column;overflow:visible;
+  max-height:calc(100% - var(--horizon) + var(--embed-hang) - var(--embed-floor));
+}
+/* as on the page: the lines keep their height and the prompt takes what is left */
+body.embed #card > *{flex:0 0 auto}
+body.embed #promptBox:not([hidden]){flex:1 1 0;min-height:0;overflow:auto}
+body.embed .city{min-height:calc(1.2 * clamp(38px,4.6vw,92px))}
+body.embed .track{min-height:3em}
+body:not(.embed) #card{
+  top:calc(var(--horizon) + var(--card-lift));bottom:auto;
+  display:flex;flex-direction:column;overflow:hidden;
+  max-height:calc(100% - var(--horizon) - var(--card-lift) - var(--card-floor));
+}
+/* the identity lines keep their own height and the prompt takes what is left of the
+   card, scrolling inside it — on a phone with the prompt open there is not room for
+   both, and the city, track and readout are the part worth keeping whole */
+body:not(.embed) #card > *{flex:0 0 auto}
+/* the lines keep their own height; where they cannot all fit, the rules below take a
+   line out deliberately rather than letting the bottom of the card cut one in half */
+body:not(.embed) #promptBox:not([hidden]){flex:1 1 0;min-height:4.4em;overflow:auto}
+body:not(.embed) .readout,
+body:not(.embed) .honest{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
 /* Embed only. On the full page there is sky above and below the card and it
    reads fine (Kalam, 10 Sep: "that's only on the embed - its fine on the
    website"). In a 360px-tall frame the same text lands on the horizon band,
@@ -253,7 +298,14 @@ body.embed #promptBox:not([hidden]){text-shadow:none}
   font-size:clamp(38px,4.6vw,92px);line-height:1.02;letter-spacing:-.01em;
   margin:0 0 .18em;text-shadow:0 2px 30px rgba(4,6,16,.45);
 }
+/* A long name drops to a smaller size, and some track names run to two lines. Both
+   moved every line underneath them — the city name held its place but the track,
+   readout and provenance did not (Kalam, 14 Sep: "sometimes the text moves up, see
+   Kuala Lumpur and Ho Chi Minh and Seoul"). Reserve the tall line and the second line
+   so what follows starts in the same place whatever the name is. */
 .city.long{font-size:clamp(30px,3.5vw,70px)}
+body:not(.embed) .city{margin:0;min-height:calc(1.2 * clamp(38px,4.6vw,92px))}   /* the un-shrunk line, plus the gap under it */
+body:not(.embed) .track{min-height:3em}       /* two lines, one of them carrying the 1.12em title */
 .city .time{opacity:.62;font-style:italic}
 .country{
   display:block;font-family:var(--text);font-size:clamp(10px,.78vw,14px);
@@ -361,7 +413,8 @@ footer a:hover{color:#fff}
 @media(max-width:820px){
   #strip{display:none}
   .nextcity .pre{display:none}                       /* "following the sun ·" is implied on a phone */
-  #card{bottom:calc(var(--pad) * .2 + 8.4em + env(safe-area-inset-bottom));max-width:calc(100vw - 2 * var(--pad))}
+  :root{--card-floor:calc(var(--pad) * .2 + 8.8em + env(safe-area-inset-bottom))}   /* the controls, not the footer */
+  #card{max-width:calc(100vw - 2 * var(--pad))}
   #controls{left:var(--pad);right:var(--pad);bottom:calc(var(--pad) * .2 + 4.2em + env(safe-area-inset-bottom));justify-content:flex-start;flex-wrap:wrap}
   .nextcity{white-space:nowrap}
   footer{bottom:calc(var(--pad) * .2 + env(safe-area-inset-bottom));font-size:10px;letter-spacing:.1em}
@@ -403,9 +456,12 @@ footer a:hover{color:#fff}
   body.embed .nextcity{font-size:9.5px;letter-spacing:.16em}
 
   body.embed #card{
-    left:var(--pad);right:auto;bottom:calc(var(--pad) + 3.1em);
+    left:var(--pad);right:auto;
     width:min(46%,40ch);max-width:none;
+    --embed-hang:4.2rem;--embed-floor:calc(var(--pad) * .5 + 3.1em);
   }
+  body.embed .city{min-height:calc(1.14 * clamp(20px,6.4vh,30px))}   /* the shrunk type of a short frame */
+  body.embed .track{min-height:2.9em}
   body.embed .city{font-size:clamp(20px,6.4vh,30px);line-height:1.05}
   body.embed .country{font-size:8.5px;letter-spacing:.2em;margin-bottom:.45em}
   body.embed .track{font-size:clamp(12px,3vh,15px);line-height:1.3;margin-bottom:.3em}
@@ -433,7 +489,7 @@ footer a:hover{color:#fff}
    ROOMY in the script). Opened by hand it stacks under the card and scrolls,
    capped so it can never reach the controls. */
 @media (max-height:470px) and (max-width:519px){
-  body.embed #card{width:auto;right:var(--pad);bottom:calc(var(--pad) + 3.1em)}
+  body.embed #card{width:auto;right:var(--pad)}
   body.embed #promptBox:not([hidden]){position:static;width:auto;max-height:5em;margin-top:.45em}
   body.embed .honest{display:none}
 }
@@ -458,16 +514,52 @@ footer a:hover{color:#fff}
 #err{position:absolute;left:var(--pad);top:50%;color:#ffd8d8;font-size:14px;max-width:60ch}
 
 @media (max-width:760px){
-  :root{--horizon:56%}
+  :root{--horizon:56%;--card-hang:4.4rem}   /* how far above the horizon the city name hangs */
   header{align-items:baseline}
   .mark{flex:none}
   .nextcity{max-width:none;min-width:0;flex:1 1 auto;letter-spacing:.12em;font-size:11px}   /* never clips the clock */
-  /* the city name hangs from the horizon, so it stays put however long the lines under it run */
-  #card{right:var(--pad);top:calc(var(--horizon) - 4.4rem);bottom:auto}
-  #card.low{top:auto;bottom:calc(var(--pad) * .2 + 8.4em + env(safe-area-inset-bottom))}
+  /* on a phone there is no city strip at the horizon, so the name hangs just above it
+     instead of below — same anchor, more room underneath for the lines and the prompt */
+  body:not(.embed) #card{
+    right:var(--pad);top:calc(var(--horizon) - var(--card-hang));bottom:auto;
+    max-height:calc(100% - var(--horizon) + var(--card-hang) - var(--card-floor));
+  }
   .honest{max-width:none}
   footer{right:var(--pad)}   /* vertical stacking of card / controls / footer is set in the 820px block above */
 }
+/* a shorter phone (390x667 and down) has less room between the horizon and the controls
+   than the longest readout needs, so the name hangs higher there rather than clamping */
+@media (max-width:760px) and (max-height:700px){
+  :root{--card-hang:6.6rem}
+}
+/* Opening the prompt on a phone asks for more room than the space under the horizon
+   has, and a prompt squeezed into what is left scrolls in a box too small to read
+   (Kalam, 14 Sep, on an iPhone 13 mini: "scrolling is cramped and doesn't work as ux —
+   just move everything up"). So the whole card rises while the prompt is open: one
+   line for every city, moving only when the visitor presses the button.
+   The card also takes a definite height there — top and bottom both set — otherwise
+   flex:1 has nothing to grow into and the prompt sits at its minimum while the lines
+   above it clamp. */
+@media (max-width:760px){
+  body.promptopen:not(.embed) #card{--card-hang:12rem}
+}
+@media (max-width:859px){
+  body.promptopen:not(.embed) #card{bottom:var(--card-floor)}
+}
+/* On a short phone the lines and an open prompt do not both fit, and what was being
+   cut was the last line in the card — the provenance, which is the one line that must
+   never go. The readout is the line to drop instead: it is made from the prompt, so
+   with the prompt open it is saying the same thing twice (the embed drops it for the
+   same reason). */
+@media (max-width:760px) and (max-height:760px){
+  body.promptopen:not(.embed) .readout{display:none}
+  body.promptopen:not(.embed) .meta br{display:none}   /* or the line break it hangs off leaves a hole */
+  body.promptopen:not(.embed) .meta .genre{display:block;margin-bottom:.1em}
+}
+/* the broadcast frame has no controls and nobody to scroll it, and at 1920 the type is
+   large enough that the longest provenance lines run to three; give it the room */
+body.stream{--card-lift:0.2vh;--card-floor:calc(var(--pad) * .2 + 1.2em)}
+
 </style>
 </head>
 <body>
@@ -685,6 +777,20 @@ function applySky(phase, h, sh){
   root.setProperty("--mirror-op", SKY === "mirror" ? v.mirror : 0);
   root.setProperty("--haze-op", SKY === "mirror" ? v.haze : 0);
 }
+/* The horizon is a CSS custom property because it moves with the breakpoint
+   (62% on a desktop, 56% on a phone). The sun and the moon used to carry 62 as a
+   literal, so on a phone they travelled to a point 6% of the viewport below the
+   line that is actually drawn. Read the property instead, and recompute on resize. */
+var horizonPct = null;
+function horizon(){
+  if (horizonPct === null){
+    var v = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--horizon"));
+    horizonPct = isNaN(v) ? 62 : v;
+  }
+  return horizonPct;
+}
+window.addEventListener("resize", function(){ horizonPct = null; });
+
 function placeMoon(iso, phase){
   var root = document.documentElement.style, c = COORDS[iso];
   if (!c){ root.setProperty("--moon-op", 0); return; }
@@ -692,7 +798,8 @@ function placeMoon(iso, phase){
   var alt = pos.altitude;
   if (alt <= 0){ root.setProperty("--moon-op", 0); return; }
   document.getElementById("moonDark").setAttribute("d", moonDarkPath(ill.fraction, ill.waxing !== (c[0] < 0)));
-  var x = 50 + 36*Math.sin(pos.azimuth), y = 62 - Math.min(1, alt/(Math.PI/2)) * 54;
+  var hz = horizon();
+  var x = 50 + 36*Math.sin(pos.azimuth), y = hz - Math.min(1, alt/(Math.PI/2)) * (hz - 8);
   root.setProperty("--moon-x", x.toFixed(2) + "%");
   root.setProperty("--moon-y", y.toFixed(2) + "%");
   root.setProperty("--moon-op", ((MOON_OP[phase] || 0) * Math.min(1, alt/(RAD*6))).toFixed(3));
@@ -757,10 +864,10 @@ function placeSun(h, sh, phase){
   var root = document.documentElement.style, up = (h > SUNRISE && h < SUNSET);
   var t = (h - SUNRISE) / (SUNSET - SUNRISE);
   var x = 14 + 72 * Math.min(1, Math.max(0, t));
-  var horizon = 62, top = 11;
+  var hz = horizon(), top = 11;
   var elev = up ? Math.sin(Math.PI * t) : 0;
   if (SKY === "mirror" && (phase === "golden" || phase === "dusk")) elev = Math.min(elev, 0.06);
-  var y = horizon - elev * (horizon - top);
+  var y = hz - elev * (hz - top);
   root.setProperty("--sun-x", x.toFixed(2) + "%");
   root.setProperty("--sun-y", y.toFixed(2) + "%");
   /* fade the sun out across the last 20 minutes before it sets */
@@ -905,12 +1012,24 @@ var XFADE = 2.0;
 var PLAIN = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1) ||
             new URLSearchParams(location.search).has("plain");   /* ?plain=1 tries the iPhone path on a desktop */
 var PLAIN_CTX = {state:"running", resume:function(){ return Promise.resolve(); }, get currentTime(){ return performance.now() / 1000; }};
+/* The iPhone path fades with requestAnimationFrame, and rAF is suspended while the
+   page is hidden — a screen lock mid-crossfade left `done` unfired, so the outgoing
+   track never paused and two played at once when the screen came back. Timers still
+   fire when rAF does not, so the finish is guaranteed by one (2026-09-15). */
 function rampVolume(el, to, ms, done){
-  var from = el.volume, t0 = performance.now();
+  var from = el.volume, t0 = performance.now(), finished = false;
+  function finish(){
+    if (finished) return;
+    finished = true;
+    try { el.volume = to; } catch(e){}
+    if (done) done();
+  }
+  setTimeout(finish, ms + 120);
   (function step(){
+    if (finished) return;
     var k = Math.min(1, (performance.now() - t0) / ms);
     try { el.volume = from + (to - from) * k; } catch(e){}
-    if (k < 1) requestAnimationFrame(step); else if (done) done();
+    if (k < 1) requestAnimationFrame(step); else finish();
   })();
 }
 
@@ -968,7 +1087,10 @@ function preloadNext(){
   paintNext();
 }
 
+var playedCount = 0;
 function startTrack(track, fade){
+  playedCount++;
+  if (window.__beat) window.__beat(wantPlay, playedCount);
   var p = players[active];
   if (p.track !== track){ p.track = track; p.el.src = track.file; }
   p.el.currentTime = 0;
@@ -1054,6 +1176,26 @@ function promptCut(p){
   while (out.length > 92 && inst.length > 1){ inst.pop(); out = inst.concat([feel]).join(", "); }
   return out;
 }
+/* A track carries the prompt and the numbers it was actually generated from; the
+   region carries this week's. Since 2026-09-09 the library appends instead of being
+   replaced (refresh/step8_swap.py), so a published set is a mixture of weeks and the
+   region's prompt is not the one an older track was made from — a Harare track built
+   at 76 BPM was displaying 120, under a copy button people paste into Suno. Prefer
+   the track's own, fall back to the region's for anything without one. */
+function provenanceOf(t, r){
+  if (!t || (!t.sa3_prompt && !t.readout && !t.heard)) return r;
+  var out = {}, k;
+  for (k in r) out[k] = r[k];
+  if (t.sa3_prompt) out.sa3_prompt = t.sa3_prompt;
+  if (t.heard) out.heard = t.heard;
+  if (t.readout){
+    var ro = {};
+    for (k in (r.readout || {})) ro[k] = r.readout[k];
+    for (k in t.readout) ro[k] = t.readout[k];
+    out.readout = ro;
+  }
+  return out;
+}
 function readoutLine(r){
   var ro = r.readout || {}, bits = [];
   if (ro.bpm) bits.push(Math.round(ro.bpm) + " BPM");
@@ -1118,15 +1260,16 @@ function paint(){
   elCountry.textContent = r.country || "";
   elTrack.innerHTML = '<span class="artist">' + escapeHTML(current.artist) +
     '</span><span class="sep">—</span><span class="title">' + escapeHTML(current.title) + "</span>";
+  var prov = provenanceOf(current, r);
   elGenre.textContent = genreLine(r);
-  elReadout.textContent = readoutLine(r);
+  elReadout.textContent = readoutLine(prov);
   var n = current.mirrors_cities || 1, fresh = isThisWeek(current);
   elHonest.textContent = "a variation on " + (fresh ? "this week's " + r.city + " chart"
       : "the " + r.city + " chart of " + weekLabel(current)) + " · after #" +
     (current.mirrors_rank || 1) + (n > 1 ? " · a hit in " + n + " cities " + (fresh ? "this week" : "that week") : "") +
     " · AI-generated · no real songs" + provenance(current) +
     (current.by === "sound" ? " · closest by sound" : "");
-  elPromptText.textContent = r.sa3_prompt || "";
+  elPromptText.textContent = prov.sa3_prompt || "";
   document.title = r.city + " · World Sound";
   requestAnimationFrame(fitStrip);
   if ("mediaSession" in navigator){
@@ -1174,16 +1317,13 @@ function paintStrip(){
   }).join("");
 }
 setInterval(paintStrip, 60000);
-/* a two-line track name grows the card upward into the strip: lift the strip clear of it */
+/* The card is anchored below the horizon now, so it can no longer grow up into the
+   city strip; this is the guard for the cases where it still could — a very short
+   desktop window, where the strip and the card's fixed line are close together. */
 function fitStrip(){
   var strip = document.getElementById("strip"), card = document.getElementById("card");
   if (!strip || !card) return;
-  /* phone: the card hangs from the horizon; if the lines under the city would run into the controls, let it sit on them instead */
-  var ctl = document.getElementById("controls");
-  card.classList.remove("low");
-  if (ctl && matchMedia("(max-width:760px)").matches){
-    if (card.getBoundingClientRect().bottom > ctl.getBoundingClientRect().top - 8) card.classList.add("low");
-  }
+  document.body.classList.toggle("promptopen", !elPromptBox.hidden);
   if (getComputedStyle(strip).display === "none") return;
   strip.style.top = ""; card.classList.remove("tight1", "tight2");
   var clear = function(){ var s = strip.getBoundingClientRect(), c = card.getBoundingClientRect(); return s.bottom <= c.top - 8; };
@@ -1207,6 +1347,60 @@ setInterval(function(){ if (current) paint(); }, 60000); /* sun, moon and clock 
     else fallback();
     function fallback(){ var ta = document.createElement("textarea"); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); done(); } catch(e){} ta.remove(); }
   });
+})();
+
+/* Why did this page start? (2026-09-15)
+   Kalam: hisia playing on a phone with the screen unlocked periodically stops and
+   drops back to the intro screen. Nothing in this page can show the intro again —
+   #start only ever has .gone added — so what he sees is the page reloading, and the
+   likeliest cause is iOS reclaiming the tab. This records enough to tell the
+   difference next time instead of guessing: a heartbeat while playing, and on boot
+   how the navigation started and how long the previous session lasted. Nothing
+   leaves the device and nothing is shown unless the page is opened with ?diag=1. */
+(function(){
+  var KEY = "hisia.session", LOG = "hisia.diag";
+  function read(k){ try { return JSON.parse(sessionStorage.getItem(k) || "null"); } catch(e){ return null; } }
+  function write(k, v){ try { sessionStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+  var navType = "";
+  try { navType = (performance.getEntriesByType("navigation")[0] || {}).type || ""; } catch(e){}
+  var prev = read(KEY);
+  if (prev && navType !== "navigate"){
+    var entry = {at: new Date().toISOString(), nav: navType,
+                 lasted_s: Math.round((Date.now() - prev.started) / 1000),
+                 silent_s: Math.round((Date.now() - prev.beat) / 1000),
+                 tracks: prev.tracks, playing: prev.playing, ua: navigator.userAgent.slice(0, 80)};
+    var log;
+    try { log = JSON.parse(localStorage.getItem(LOG) || "[]"); } catch(e){ log = []; }
+    log.push(entry); while (log.length > 20) log.shift();
+    try { localStorage.setItem(LOG, JSON.stringify(log)); } catch(e){}
+  }
+  var me = {started: Date.now(), beat: Date.now(), tracks: 0, playing: false};
+  write(KEY, me);
+  window.__beat = function(playing, tracks){
+    me.beat = Date.now(); me.playing = !!playing;
+    if (typeof tracks === "number") me.tracks = tracks;
+    write(KEY, me);
+  };
+  setInterval(function(){ window.__beat(me.playing, me.tracks); }, 5000);
+  window.__diag = function(){
+    try { return JSON.parse(localStorage.getItem(LOG) || "[]"); } catch(e){ return []; }
+  };
+  if (new URLSearchParams(location.search).get("diag") === "1"){
+    window.addEventListener("load", function(){
+      var box = document.createElement("pre");
+      box.style.cssText = "position:fixed;left:8px;right:8px;bottom:8px;max-height:44vh;overflow:auto;z-index:9;" +
+        "background:rgba(4,6,14,.86);color:#cfd6ea;font:11px/1.5 ui-monospace,Menlo,monospace;padding:10px 12px;border-radius:8px";
+      var rows = window.__diag();
+      box.textContent = rows.length
+        ? "restarts on this device, newest last:\n\n" + rows.map(function(r){
+            return r.at.replace("T", " ").slice(0, 19) + "  " + r.nav +
+                   "  after " + r.lasted_s + "s (" + r.tracks + " tracks, " +
+                   (r.playing ? "playing" : "paused") + "), " + r.silent_s + "s since its last heartbeat";
+          }).join("\n")
+        : "no restarts recorded on this device yet.";
+      document.body.appendChild(box);
+    });
+  }
 })();
 
 /* shooting stars: one every half minute or so, only over a dark sky, never under reduced motion */
@@ -1312,6 +1506,7 @@ function togglePlay(){
     fading = false;
     wantPlay = false; btnPlay.innerHTML = ICON.play;
   }
+  if (window.__beat) window.__beat(wantPlay, playedCount);
 }
 function toggleMute(){
   if (!ctx) return;
@@ -1358,6 +1553,7 @@ btnPrompt.addEventListener("click", function(){
   var open = !elPromptBox.hidden;
   elPromptBox.hidden = open;
   btnPrompt.textContent = open ? "show prompt" : "hide prompt";
+  fitStrip();
 });
 /* a thumb swipe to the left is next; a scroll inside the prompt box is not a swipe */
 (function(){
@@ -1415,6 +1611,14 @@ loadLibrary().then(function(data){
     playedByRegion[t.region] = playedByRegion[t.region] || [];
   });
   refill();
+  /* ?track=ZA-02 — pin the track as well as the city, so a screenshot or a layout
+     comparison shows the same words every time (?city= alone still shuffles) */
+  var forcedTrack = Q0.get("track");
+  if (forcedTrack){
+    for (var ti = 0; ti < data.tracks.length; ti++){
+      if (data.tracks[ti].id === forcedTrack){ data.tracks[ti].by = "sun"; queue.unshift(data.tracks[ti]); break; }
+    }
+  }
   /* paint the sky and the card for the first queued track before anyone presses play */
   var first = queue[0];
   if (first){
@@ -1438,12 +1642,14 @@ loadLibrary().then(function(data){
   if (Q0.get("prompt") === "1" || (IS_EMBED && ROOMY)){
     elPromptBox.hidden = false;
     btnPrompt.textContent = "hide prompt";
+    fitStrip();   /* the card makes room for the prompt when it is open */
   }
   if (IS_STREAM || PUPPET){
     document.getElementById("start").classList.add("gone");
     document.getElementById("controls").hidden = true;
     elPromptBox.hidden = false; /* the stream always shows how the track was made */
     document.body.classList.add("stream");
+    fitStrip();
   }
   if (PUPPET){
     current = null;
@@ -1472,7 +1678,7 @@ loadLibrary().then(function(data){
 <noscript>
 <div id="noscript-index">
 <h2>World Sound — a 24/7 radio of AI-generated mirrors of the world's charts</h2>
-<p>296 tracks across 51 cities. Every track is generated with Stable Audio Open Small (SA3 medium) from a prompt derived from that city's chart week — its measured tempo, key, instrumentation, mood and genre label. No recording is ever an input, and no track is a cover, a soundalike or a real song: the artist and title on every card are invented. This page needs JavaScript to play; the text below is what it plays.</p>
+<p>316 tracks across 51 cities. Every track is generated with Stable Audio Open Small (SA3 medium) from a prompt derived from that city's chart week — its measured tempo, key, instrumentation, mood and genre label. No recording is ever an input, and no track is a cover, a soundalike or a real song: the artist and title on every card are invented. This page needs JavaScript to play; the text below is what it plays.</p>
 <p>Chart weeks in this set: 24 Aug 2026, 31 Aug 2026.</p>
 <section><h2>Abidjan, Cote d&#x27;Ivoire</h2>
 <p>Afrobeats / Rap / Hip Hop · 140 BPM · minor key · bass, drums, percussion · happy, energetic, love</p>
@@ -1482,6 +1688,10 @@ loadLibrary().then(function(data){
 <li>“Groove a Soleil” by Adjame Union (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #2</li>
 <li>“Clarte de Abidjan” by Treichville Union (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #3</li>
 <li>“Groove a Minuit” by Marcory Society (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #5</li>
+<li>“Clarte de Minuit” by Koumassi Union (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #1 · v6-plain</li>
+<li>“Clarte de Abidjan” by Plateau Nuit Radio (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6-plain</li>
+<li>“Chaleur a Soleil” by Koumassi Skyline (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6-plain</li>
+<li>“Chaleur a Soleil” by Koumassi Sessions (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6-plain</li>
 </ul></section>
 <section><h2>Accra, Ghana</h2>
 <p>Rap / Hip Hop / Hip-Hop / Rap / Afro-Beat · 111 BPM · minor key · synthesizer, bass, drums · love, deep, energetic</p>
@@ -1737,6 +1947,10 @@ loadLibrary().then(function(data){
 <li>“Emmwanyi Twala” by Ggaba Lakeside Collective (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #2</li>
 <li>“Tuli Wamu Leero” by Kabalagala Society (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
 <li>“Omukwano Gwaffe” by Ggaba Lakeside Institute (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #3</li>
+<li>“Tuli Wamu Wange” by Kabalagala Band (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #1 · v6-plain</li>
+<li>“Munange Twala” by Nakawa Lamplight (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6-plain</li>
+<li>“Munange Sunrise” by Ggaba Lakeside Cassette (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6-plain</li>
+<li>“Ekyalo Ekiro” by Nakawa Circuit (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6-plain</li>
 </ul></section>
 <section><h2>Kingston, Jamaica</h2>
 <p>Hip-Hop / Rap / Reggae / Dub · 65 BPM · minor key · bass, drums, synthesizer · love, energetic, happy</p>
@@ -1812,6 +2026,10 @@ loadLibrary().then(function(data){
 <li>“Noite em Kianda” by Kilamba Noite Society (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #3</li>
 <li>“Rua da Luanda” by Alvalade Rooftop Crew (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
 <li>“Rua da Meia-noite” by Maianga Night Bus (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #5</li>
+<li>“Verao em Meia-noite” by Maianga Skyline (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #1 · v6-plain</li>
+<li>“Luz de Luanda” by Kilamba Noite Band (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6-plain</li>
+<li>“Danca em Kianda” by Talatona Yard Sessions (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6-plain</li>
+<li>“Coracao de Azul” by Ilha do Cabo Skyline (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #5 · v6-plain</li>
 </ul></section>
 <section><h2>Madrid, Spain</h2>
 <p>Urbano latino / Pop / Latin · 111 BPM · minor key · drums, synthesizer, percussion · happy, love, summer</p>
@@ -1848,6 +2066,10 @@ loadLibrary().then(function(data){
 <li>“Luna de Metrobus” by Coyoacan Circuit (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #3</li>
 <li>“Carretera de Metrobus” by Hermanas Tolvanera Yard Sessions (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
 <li>“Noche de Metrobus” by Coyoacan Lamplight (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #2</li>
+<li>“Noche de Tianguis” by Hermanas Tolvanera Trio (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #1 · v6-plain</li>
+<li>“Ya No Me Noche” by Iztapalapa Society (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6-plain</li>
+<li>“Ya No Me Tianguis” by Coyoacan Institute (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #5 · v6-plain</li>
+<li>“Ya No Me Noche” by Cielo Chilango Circuit (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6-plain</li>
 </ul></section>
 <section><h2>Milan, Italy</h2>
 <p>Rap / Hip Hop / Hip-Hop / Rap / Pop / Rap · 129 BPM · minor key · synthesizer, bass, drums · energetic, summer, happy</p>
@@ -1896,6 +2118,10 @@ loadLibrary().then(function(data){
 <li>“Rue du Soleil” by Bastille Radio (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #3</li>
 <li>“Coeur de Minuit” by Marais Soir Set (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
 <li>“Coeur de Minuit” by Marais Soir Circuit (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #5</li>
+<li>“Nuit a Minuit” by Pigalle Nuit Society (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6-plain</li>
+<li>“Lumiere de Paris” by Quai de Seine Set (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6-plain</li>
+<li>“Danse a Paris” by Republique Lamplight (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6-plain</li>
+<li>“Lumiere de Paris” by Belleville Collective (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #5 · v6-plain</li>
 </ul></section>
 <section><h2>Prague, Czechia</h2>
 <p>Pop / Hip-Hop · 115 BPM · major key · drums, bass, synthesizer · love, energetic, happy</p>
