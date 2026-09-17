@@ -1810,6 +1810,28 @@ btnPrompt.addEventListener("click", function(){
     return Math.max(0.03, beat() * div);
   }
   /* playbackRate is a plain property, not an AudioParam, so the glide is driven here */
+  /* "basically stops the music" (Kalam, iOS) has two opposite causes: the tape doing
+     what tape does, or iOS stalling the element outright when the rate leaves 1. The
+     readout cannot hear, but it can compare the media clock against the wall clock
+     and say which — a rate of 0.62 with the clock running at 0.62x is slow music, and
+     the same rate with the clock at 0.00x is a stalled element. */
+  var clockTimer = null, clockRatio = null;
+  function watchClock(on){
+    clearInterval(clockTimer); clockTimer = null; clockRatio = null;
+    if (!on) return;
+    var el = liveEl(); if (!el) return;
+    var was = el.currentTime, wall = Date.now();
+    clockTimer = setInterval(function(){
+      var e2 = liveEl(); if (!e2) return;
+      var dt = e2.currentTime - was, dw = (Date.now() - wall) / 1000;
+      if (dw > 0.15 && dt > -1) clockRatio = dt / dw;
+      was = e2.currentTime; wall = Date.now();
+      /* the rate glides after the finger stops, so a readout drawn only on movement
+         shows the value before the glide finished — keep it honest while held */
+      if (engaged && lastA) read.textContent = label(lastA);
+    }, 300);
+  }
+
   var rateTimer = null, rateEl = null;
   function liveEl(){ var p = players && players[active]; return p && p.el; }
   /* preservesPitch defaults to true, so a playbackRate under 1 does not slow the tape
@@ -1903,7 +1925,7 @@ btnPrompt.addEventListener("click", function(){
      and a track left playing slow would be a real bug, so it has to be readable */
   window.__fxState = function(){
     var el = liveEl();
-    return {engaged: engaged, wired: wired, rate: el ? el.playbackRate : null,
+    return {engaged: engaged, wired: wired, rate: el ? el.playbackRate : null, clock: clockRatio,
             preservesPitch: el ? (el.preservesPitch !== undefined ? el.preservesPitch : el.webkitPreservesPitch) : null,
             zone: q.get("zone") || "sky", plain: PLAIN};
   };
@@ -1950,9 +1972,13 @@ btnPrompt.addEventListener("click", function(){
     return {n: Math.max(0, ny), s: Math.max(0, -ny), e: Math.max(0, nx), w: Math.max(0, -nx)};
   }
   function label(a){
-    if (PLAIN) return stopAmt(a.w) > 0.02
-      ? "tape stop " + Math.round(stopAmt(a.w) * 100) + "% — the only part that works on this device"
-      : "no audio graph on this device — the shape still works";
+    if (PLAIN){
+      var st = stopAmt(a.w), pel = liveEl();
+      if (st <= 0.02) return "no audio graph on this device — the shape still works";
+      return "tape stop " + Math.round(st * 100) + "%  ·  rate " +
+             (pel ? pel.playbackRate.toFixed(2) : "?") +
+             (clockRatio === null ? "" : "  ·  clock " + clockRatio.toFixed(2) + "x");
+    }
     if (!wired) return "start a track first";
     var west = stopAmt(a.w) > 0.02 ? ["roll + tape", stopAmt(a.w)]
              : rollAmt(a.w) > 0.02 ? ["roll", rollAmt(a.w)]
@@ -1983,8 +2009,10 @@ btnPrompt.addEventListener("click", function(){
     inner.setAttribute("d", "M" + n + " " + e + " " + sth + " " + w + "Z");
     strut.setAttribute("d", "M" + n + " 0,-1M" + e + " 1,0M" + sth + " 0,1M" + w + " -1,0");
   }
+  var lastA = null;
   function move(x, y){
     var a = amounts(x, y);
+    lastA = a;
     turn(x, y);
     dot.style.left = x + "px"; dot.style.top = y + "px";
     read.textContent = label(a);
@@ -2007,6 +2035,7 @@ btnPrompt.addEventListener("click", function(){
     tags.e.style.left = (x0 + R + 4) + "px"; tags.e.style.top = y0 + "px";
     read.style.top = Math.max(34, y0 - R - 34) + "px";   /* clear of the header when held high */
     box.classList.add("on");
+    watchClock(true);
     move(x0, y0);
   }
   function release(){
@@ -2014,6 +2043,7 @@ btnPrompt.addEventListener("click", function(){
     id = null; box.classList.remove("arm");
     if (!engaged) return;
     engaged = false; quiet = Date.now() + QUIET_MS;
+    watchClock(false); lastA = null;
     box.classList.remove("on");
     ["n","s","e","w"].forEach(function(k){ tags[k].classList.remove("hot"); vert[k].style.fillOpacity = 0.08; });
     set({n:0, s:0, w:0, e:0}, true);
