@@ -1730,7 +1730,7 @@ btnPrompt.addEventListener("click", function(){
   var SPLIT = 0.50;
 
   /* ---- the graph. One filter pair in line, two sends off the end of it ---- */
-  var lp = null, hp = null, dly = null, fb = null, wet = null, dry = null, rev = null, send = null, wired = false;
+  var lp = null, hp = null, dly = null, fb = null, wet = null, dry = null, tap = null, rev = null, send = null, wired = false;
   function impulse(){
     /* a reverb you generate is a reverb you do not have to ship: noise, decaying */
     var n = Math.floor(ctx.sampleRate * REV_TAIL), buf = ctx.createBuffer(2, n, ctx.sampleRate);
@@ -1752,16 +1752,18 @@ btnPrompt.addEventListener("click", function(){
       fb = ctx.createGain(); fb.gain.value = 0;
       wet = ctx.createGain(); wet.gain.value = 0;
       dry = ctx.createGain(); dry.gain.value = 1;
+      tap = ctx.createGain(); tap.gain.value = 1;       /* what the delay is allowed to swallow */
       rev = ctx.createConvolver(); rev.buffer = impulse();
       send = ctx.createGain(); send.gain.value = 0;
       master.disconnect();                                /* master only ever fed destination */
       master.connect(lp); lp.connect(hp);
       hp.connect(dry); dry.connect(ctx.destination);      /* dry, duckable */
-      hp.connect(dly); dly.connect(fb); fb.connect(dly);  /* the repeat, feeding itself */
+      hp.connect(tap); tap.connect(dly);                  /* the repeat, feeding itself */
+      dly.connect(fb); fb.connect(dly);
       dly.connect(wet); wet.connect(ctx.destination);
       hp.connect(send); send.connect(rev); rev.connect(ctx.destination);
       wired = true;
-    } catch(e){ lp = hp = dly = fb = wet = dry = rev = send = null; wired = false; }
+    } catch(e){ lp = hp = dly = fb = wet = dry = tap = rev = send = null; wired = false; }
     return wired;
   }
   /* The west corner: echo on the way out, roll at the end of it.
@@ -1792,11 +1794,19 @@ btnPrompt.addEventListener("click", function(){
     var bpm = current && current.readout && current.readout.bpm;
     return (!bpm || bpm < 40 || bpm > 220) ? 0.5 : 60 / bpm;
   }
-  var ECHO_TO = 0.35;                                     /* echo below this, roll above it */
+  /* Three things along one corner, staged rather than piled on top of each other.
+     Kalam on desktop: west is creating stutters that do not always sound nice, is it
+     mixing with something else — and it was, four things rising at once. Curate keeps
+     Roll and Time Stretch on separate knobs; this keeps them on one corner but not at
+     the same moment. Echo first, then the roll, and the tape only gives way at the
+     very end, so the roll is clean for most of the travel and the stop is a move you
+     make deliberately rather than something smeared through everything. */
+  var ECHO_TO = 0.35, STOP_FROM = 0.8;
   function echoAmt(w){ return Math.min(1, w / ECHO_TO); }
-  function rollAmt(w){ return Math.max(0, (w - ECHO_TO) / (1 - ECHO_TO)); }
+  function rollAmt(w){ return Math.max(0, Math.min(1, (w - ECHO_TO) / (STOP_FROM - ECHO_TO))); }
+  function stopAmt(w){ return Math.max(0, (w - STOP_FROM) / (1 - STOP_FROM)); }
   function sliceTime(w){
-    var div = w < ECHO_TO ? 1 : w < 0.7 ? 0.5 : 0.25;     /* stepped, so it lands on the grid */
+    var div = w < ECHO_TO ? 1 : w < 0.62 ? 0.5 : 0.25;    /* stepped, so it lands on the grid */
     return Math.max(0.03, beat() * div);
   }
   /* playbackRate is a plain property, not an AudioParam, so the glide is driven here */
@@ -1838,7 +1848,7 @@ btnPrompt.addEventListener("click", function(){
     }, 16);
   }
   function set(a, glide){
-    rate(1 - (1 - RATE_MIN) * rollAmt(a.w), glide);   /* the one part that works without a graph */
+    rate(1 - (1 - RATE_MIN) * stopAmt(a.w), glide);   /* the one part that works without a graph */
     if (!wire()) return;
     var t = ctx.currentTime, tc = glide ? GLIDE : 0.012;  /* always ramped, never stepped */
     hp.frequency.setTargetAtTime(HP_OPEN * Math.pow(HP_SHUT / HP_OPEN, a.n), t, tc);
@@ -1848,6 +1858,10 @@ btnPrompt.addEventListener("click", function(){
     wet.gain.setTargetAtTime(0.5 * ec + 0.5 * ro, t, tc);
     fb.gain.setTargetAtTime(0.40 * ec + (FB_MAX - 0.40) * ro, t, tc);
     dry.gain.setTargetAtTime(1 - (1 - DUCK) * ro, t, tc);    /* only the roll ducks, and never kills */
+    /* An echo takes new music in behind the track. A roll must not: it closes its
+       mouth on one slice and circles it. Without this the delay keeps swallowing
+       while the feedback climbs, and what comes out is layered echo, not a loop. */
+    tap.gain.setTargetAtTime(1 - 0.85 * ro, t, tc);
     /* the tail is allowed to decay on release rather than being cut off */
     send.gain.setTargetAtTime(REV_MAX * a.e, t, glide ? GLIDE * 3 : tc);
   }
@@ -1936,11 +1950,13 @@ btnPrompt.addEventListener("click", function(){
     return {n: Math.max(0, ny), s: Math.max(0, -ny), e: Math.max(0, nx), w: Math.max(0, -nx)};
   }
   function label(a){
-    if (PLAIN) return rollAmt(a.w) > 0.02
-      ? "roll " + Math.round(rollAmt(a.w) * 100) + "% — only the slowing works on this device"
+    if (PLAIN) return stopAmt(a.w) > 0.02
+      ? "tape stop " + Math.round(stopAmt(a.w) * 100) + "% — the only part that works on this device"
       : "no audio graph on this device — the shape still works";
     if (!wired) return "start a track first";
-    var west = rollAmt(a.w) > 0.02 ? ["roll", rollAmt(a.w)] : ["echo", echoAmt(a.w) * (a.w > 0 ? 1 : 0)];
+    var west = stopAmt(a.w) > 0.02 ? ["roll + tape", stopAmt(a.w)]
+             : rollAmt(a.w) > 0.02 ? ["roll", rollAmt(a.w)]
+             : ["echo", a.w > 0 ? echoAmt(a.w) : 0];
     var top = [["highpass", a.n], ["lowpass", a.s], west, ["reverb", a.e]]
       .filter(function(r){ return r[1] > 0.02; })
       .sort(function(p, r){ return r[1] - p[1]; })
