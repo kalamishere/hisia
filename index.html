@@ -1802,6 +1802,17 @@ btnPrompt.addEventListener("click", function(){
   /* playbackRate is a plain property, not an AudioParam, so the glide is driven here */
   var rateTimer = null, rateEl = null;
   function liveEl(){ var p = players && players[active]; return p && p.el; }
+  /* preservesPitch defaults to true, so a playbackRate under 1 does not slow the tape
+     — the browser time-stretches to hold the pitch, and that algorithm granulates.
+     Kalam heard it as stuttering on the phone, where the slowing is all this corner
+     does. Turning it off is what makes it a tape stop: speed and pitch together. */
+  function tape(el){
+    if (!el || el.__tape) return;
+    ["preservesPitch", "webkitPreservesPitch", "mozPreservesPitch"].forEach(function(k){
+      try { if (k in el) el[k] = false; } catch(e){}
+    });
+    el.__tape = true;
+  }
   /* Restore the element that was actually slowed, not whichever is active now: a
      track change mid-hold would otherwise park the old element at 0.62 and the next
      track to reuse it would play slow. Belt and braces, every player is put back. */
@@ -1812,8 +1823,13 @@ btnPrompt.addEventListener("click", function(){
   function rate(to, glide){
     if (to !== 1 && !rateEl) rateEl = liveEl();
     var el = rateEl || liveEl(); if (!el) return;
+    tape(el);
     clearInterval(rateTimer); rateTimer = null;
-    if (!glide){ try { el.playbackRate = to; } catch(e){} if (to === 1) allBackToOne(); return; }
+    /* a finger drag fires far faster than a decoder wants to be re-rated */
+    if (!glide){
+      if (Math.abs((el.playbackRate || 1) - to) < 0.01 && to !== 1) return;
+      try { el.playbackRate = to; } catch(e){} if (to === 1) allBackToOne(); return;
+    }
     var from = el.playbackRate || 1, t0 = Date.now();
     rateTimer = setInterval(function(){
       var k = Math.min(1, (Date.now() - t0) / RATE_MS);
@@ -1874,6 +1890,7 @@ btnPrompt.addEventListener("click", function(){
   window.__fxState = function(){
     var el = liveEl();
     return {engaged: engaged, wired: wired, rate: el ? el.playbackRate : null,
+            preservesPitch: el ? (el.preservesPitch !== undefined ? el.preservesPitch : el.webkitPreservesPitch) : null,
             zone: q.get("zone") || "sky", plain: PLAIN};
   };
 
