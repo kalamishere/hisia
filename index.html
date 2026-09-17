@@ -588,13 +588,17 @@ body.fx #card,body.fx #stage{-webkit-user-select:none;user-select:none;-webkit-t
 body.fx #promptBox{-webkit-user-select:text;user-select:text}
 #fx b{position:absolute;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;
   background:rgba(255,255,255,.7);box-shadow:0 0 20px rgba(255,255,255,.4)}
-#fx u{position:absolute;transform:translate(-50%,-50%) rotate(45deg);border-radius:3px;
-  border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.03)}
+#fx svg{position:absolute;overflow:visible}
+#fx svg path{vector-effect:non-scaling-stroke;fill:none;stroke:rgba(255,255,255,.22);stroke-width:1}
+#fx svg .o{fill:rgba(255,255,255,.035);stroke:rgba(255,255,255,.26)}
+#fx svg .i{fill:rgba(255,255,255,.05);stroke:rgba(255,255,255,.3)}
+#fx svg .c{stroke:rgba(255,255,255,.14)}
+#fx svg .v{fill:#fff;fill-opacity:.08;stroke:rgba(255,255,255,.5);transition:fill-opacity .08s linear}
 #fx em{position:absolute;transform:translate(-50%,-50%);font-style:normal;white-space:nowrap;
   font:10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:rgba(255,255,255,.42);
   text-shadow:0 1px 8px rgba(0,0,0,.7);transition:color .12s ease}
 #fx em.hot{color:rgba(255,255,255,.95)}
-#fx.arm u,#fx.arm em{display:none}
+#fx.arm svg,#fx.arm em{display:none}
 #fx s{position:absolute;left:0;right:0;text-align:center;text-decoration:none;
   font:11px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.06em;color:rgba(255,255,255,.78);
   text-shadow:0 1px 10px rgba(0,0,0,.65)}
@@ -1836,11 +1840,28 @@ btnPrompt.addEventListener("click", function(){
   document.body.classList.add("fx");    /* see the .fx rules: no text selection under a hold */
   var box = document.createElement("div");
   box.id = "fx"; box.setAttribute("aria-hidden", "true");
-  box.innerHTML = "<u></u><b></b><s></s>" +
+  /* Kalam: "this was the shape of the diamond - tesseract", with a picture of one
+     held in two hands — nested, translucent, tinted. A hypercube drawn flat is an
+     outer cell and an inner cell joined corner to corner, which is exactly what
+     this surface needs: the outer diamond is the clamp, the four vertices are the
+     effects, and the inner cell is dry. Dry used to be a single point you could
+     not hold still on; now it is somewhere to rest. */
+  var SVG = '<svg viewBox="-1 -1 2 2">' +
+      '<path class="o" d="M0,-1 1,0 0,1 -1,0Z"/>' +
+      '<path class="i" d="M0,-.3 .3,0 0,.3 -.3,0Z"/>' +
+      '<path class="c" d="M0,-.3 0,-1M.3,0 1,0M0,.3 0,1M-.3,0 -1,0"/>' +
+      '<path class="v" data-k="n" d="M0,-1.09 .09,-1 0,-.91 -.09,-1Z"/>' +
+      '<path class="v" data-k="s" d="M0,.91 .09,1 0,1.09 -.09,1Z"/>' +
+      '<path class="v" data-k="e" d="M.91,0 1,-.09 1.09,0 1,.09Z"/>' +
+      '<path class="v" data-k="w" d="M-.91,0 -1,-.09 -1.09,0 -1,.09Z"/>' +
+      '</svg>';
+  box.innerHTML = SVG + "<b></b><s></s>" +
                   "<em data-k='n'>highpass</em><em data-k='s'>lowpass</em>" +
                   "<em data-k='w'>echo · roll</em><em data-k='e'>reverb</em>";
   document.getElementById("stage").appendChild(box);
-  var ring = box.querySelector("u"), dot = box.querySelector("b"), read = box.querySelector("s");
+  var ring = box.querySelector("svg"), dot = box.querySelector("b"), read = box.querySelector("s");
+  var vert = {}; [].forEach.call(box.querySelectorAll(".v"), function(el){ vert[el.getAttribute("data-k")] = el; });
+  var inner = box.querySelector(".i"), strut = box.querySelector(".c");
   var tags = {}; [].forEach.call(box.querySelectorAll("em"), function(el){ tags[el.getAttribute("data-k")] = el; });
 
   var hold = null, id = null, x0 = 0, y0 = 0, R = 1, engaged = false, quiet = 0;
@@ -1883,11 +1904,18 @@ btnPrompt.addEventListener("click", function(){
     return !(t && t.closest && t.closest("button, input, a, #promptBox, #start, #controls, header, #strip"));
   }
 
-  /* the diamond: clamp to |x| + |y| <= 1, then each corner is its side of an axis */
+  /* The diamond: clamp to |x| + |y| <= 1, then each corner is its side of an axis.
+     Inside the inner cell nothing happens at all, and the ramp starts from its edge
+     rather than from the centre point, so leaving the dry zone is not a jump. */
+  var DEAD = 0.3;                                          /* the inner cell of the tesseract */
   function amounts(x, y){
     var nx = (x - x0) / R, ny = (y0 - y) / R;
     var l1 = Math.abs(nx) + Math.abs(ny);
-    if (l1 > 1){ nx /= l1; ny /= l1; }
+    var none = {n:0, s:0, e:0, w:0};
+    if (l1 < 1e-6) return none;
+    var k = (Math.min(l1, 1) - DEAD) / (1 - DEAD);
+    if (k <= 0) return none;
+    nx = (nx / l1) * k; ny = (ny / l1) * k;
     return {n: Math.max(0, ny), s: Math.max(0, -ny), e: Math.max(0, nx), w: Math.max(0, -nx)};
   }
   function label(a){
@@ -1902,12 +1930,35 @@ btnPrompt.addEventListener("click", function(){
       .map(function(r){ return r[0] + " " + Math.round(r[1] * 100) + "%"; });
     return top.length ? top.join("  ·  ") : "dry";
   }
+  /* Kalam: "it moved with your thumb". A hypercube drawn flat only reads as one
+     when it turns — the inner cell swings toward where you are pushing, twists with
+     it and falls away in perspective, and the struts to the outer vertices follow.
+     The outer cell never moves: it is the clamp and the four effects sit on it, so
+     what you are aiming at stays where you left it while the thing in your hand
+     turns. */
+  function turn(x, y){
+    var nx = (x - x0) / R, ny = (y0 - y) / R;
+    var l1 = Math.min(1, Math.abs(nx) + Math.abs(ny));
+    var cx = nx * 0.34, cy = -ny * 0.34;                /* it leans the way you push */
+    var th = nx * 0.8 + ny * 0.25;                      /* and twists as it leans */
+    var ri = DEAD * (1 - 0.3 * l1);                     /* falling away in perspective */
+    var co = Math.cos(th), si = Math.sin(th);
+    var pt = function(vx, vy){
+      return [(cx + (vx * co - vy * si) * ri).toFixed(3), (cy + (vx * si + vy * co) * ri).toFixed(3)];
+    };
+    var n = pt(0, -1), e = pt(1, 0), sth = pt(0, 1), w = pt(-1, 0);
+    inner.setAttribute("d", "M" + n + " " + e + " " + sth + " " + w + "Z");
+    strut.setAttribute("d", "M" + n + " 0,-1M" + e + " 1,0M" + sth + " 0,1M" + w + " -1,0");
+  }
   function move(x, y){
     var a = amounts(x, y);
+    turn(x, y);
     dot.style.left = x + "px"; dot.style.top = y + "px";
     read.textContent = label(a);
-    tags.n.classList.toggle("hot", a.n > 0.45); tags.s.classList.toggle("hot", a.s > 0.45);
-    tags.w.classList.toggle("hot", a.w > 0.45); tags.e.classList.toggle("hot", a.e > 0.45);
+    ["n","s","e","w"].forEach(function(k){
+      tags[k].classList.toggle("hot", a[k] > 0.45);
+      vert[k].style.fillOpacity = (0.08 + 0.92 * a[k]).toFixed(3);
+    });
     set(a, false);
   }
   function engage(){
@@ -1915,10 +1966,8 @@ btnPrompt.addEventListener("click", function(){
     R = Math.min(window.innerHeight * 0.28, window.innerWidth * 0.40);
     wire();
     box.classList.remove("arm");
-    /* the diamond is a square stood on a corner, so its side is the half-width times root two */
-    var side = R * Math.SQRT2;
-    ring.style.left = x0 + "px"; ring.style.top = y0 + "px";
-    ring.style.width = side + "px"; ring.style.height = side + "px";
+    ring.style.left = (x0 - R) + "px"; ring.style.top = (y0 - R) + "px";
+    ring.style.width = (R * 2) + "px"; ring.style.height = (R * 2) + "px";
     tags.n.style.left = x0 + "px"; tags.n.style.top = (y0 - R - 14) + "px";
     tags.s.style.left = x0 + "px"; tags.s.style.top = (y0 + R + 14) + "px";
     tags.w.style.left = (x0 - R - 4) + "px"; tags.w.style.top = y0 + "px";
@@ -1933,7 +1982,7 @@ btnPrompt.addEventListener("click", function(){
     if (!engaged) return;
     engaged = false; quiet = Date.now() + QUIET_MS;
     box.classList.remove("on");
-    [tags.n, tags.s, tags.w, tags.e].forEach(function(el){ el.classList.remove("hot"); });
+    ["n","s","e","w"].forEach(function(k){ tags[k].classList.remove("hot"); vert[k].style.fillOpacity = 0.08; });
     set({n:0, s:0, w:0, e:0}, true);
   }
 
