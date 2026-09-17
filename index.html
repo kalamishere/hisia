@@ -1828,7 +1828,7 @@ btnPrompt.addEventListener("click", function(){
       was = e2.currentTime; wall = Date.now();
       /* the rate glides after the finger stops, so a readout drawn only on movement
          shows the value before the glide finished — keep it honest while held */
-      if (engaged && lastA) read.textContent = label(lastA);
+      if (engaged && lastA) read.textContent = label(lastA);   /* the rate glides after the finger stops */
     }, 300);
   }
 
@@ -1852,7 +1852,18 @@ btnPrompt.addEventListener("click", function(){
     (players || []).forEach(function(p){ if (p && p.el) try { p.el.playbackRate = 1; } catch(e){} });
     rateEl = null;
   }
+  /* Not on iOS. Kalam held west to the corner there and watched the clock go to
+     zero, overshoot as it caught up, then settle — over and over, once per move,
+     and the track stopped every time he dragged. Every write to playbackRate stalls
+     and rebuffers the decoder, so a finger dragging it is a finger stopping the
+     music. The recurrence tracks the writes rather than the one-time preservesPitch,
+     which is what points at the writes.
+
+     That leaves the phone with no working corner at all until the handoff in
+     src/probes/ios-audio.html gives it a real graph — which is the honest state to
+     be in, rather than one corner behaving strangely on its own. */
   function rate(to, glide){
+    if (PLAIN) return;
     if (to !== 1 && !rateEl) rateEl = liveEl();
     var el = rateEl || liveEl(); if (!el) return;
     tape(el);
@@ -1972,13 +1983,7 @@ btnPrompt.addEventListener("click", function(){
     return {n: Math.max(0, ny), s: Math.max(0, -ny), e: Math.max(0, nx), w: Math.max(0, -nx)};
   }
   function label(a){
-    if (PLAIN){
-      var st = stopAmt(a.w), pel = liveEl();
-      if (st <= 0.02) return "no audio graph on this device — the shape still works";
-      return "tape stop " + Math.round(st * 100) + "%  ·  rate " +
-             (pel ? pel.playbackRate.toFixed(2) : "?") +
-             (clockRatio === null ? "" : "  ·  clock " + clockRatio.toFixed(2) + "x");
-    }
+    if (PLAIN) return "no audio graph on this device — the shape still works";
     if (!wired) return "start a track first";
     var west = stopAmt(a.w) > 0.02 ? ["roll + tape", stopAmt(a.w)]
              : rollAmt(a.w) > 0.02 ? ["roll", rollAmt(a.w)]
