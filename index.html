@@ -578,6 +578,17 @@ footer a:hover{color:#fff}
    large enough that the longest provenance lines run to three; give it the room */
 body.stream{--card-lift:0.2vh;--card-floor:calc(var(--pad) * .2 + 1.2em)}
 
+/* ---------------- thumb FX (?fx=1) ----------------
+   Inert unless the overlay below is built, which only happens under the flag. */
+#fx{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:0;transition:opacity .16s ease}
+#fx.on{opacity:1}
+#fx i{position:absolute;left:11%;right:11%;height:1px;background:rgba(255,255,255,.32);
+  box-shadow:0 0 14px rgba(255,255,255,.2)}
+#fx b{position:absolute;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;
+  background:rgba(255,255,255,.7);box-shadow:0 0 20px rgba(255,255,255,.4)}
+#fx s{position:absolute;left:0;right:0;text-align:center;text-decoration:none;
+  font:11px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.06em;color:rgba(255,255,255,.78);
+  text-shadow:0 1px 10px rgba(0,0,0,.65)}
 </style>
 </head>
 <body>
@@ -1454,13 +1465,14 @@ setInterval(function(){ if (current) paint(); }, 60000); /* sun, moon and clock 
     var entry = {at: new Date().toISOString(), nav: navType,
                  lasted_s: Math.round((Date.now() - prev.started) / 1000),
                  silent_s: Math.round((Date.now() - prev.beat) / 1000),
-                 tracks: prev.tracks, playing: prev.playing, ua: navigator.userAgent.slice(0, 80)};
+                 tracks: prev.tracks, playing: prev.playing, fx: !!prev.fx, ua: navigator.userAgent.slice(0, 80)};
     var log;
     try { log = JSON.parse(localStorage.getItem(LOG) || "[]"); } catch(e){ log = []; }
     log.push(entry); while (log.length > 20) log.shift();
     try { localStorage.setItem(LOG, JSON.stringify(log)); } catch(e){}
   }
-  var me = {started: Date.now(), beat: Date.now(), tracks: 0, playing: false};
+  var fx = new URLSearchParams(location.search).get("fx") === "1";   /* so a restart log says if effects were on */
+  var me = {started: Date.now(), beat: Date.now(), tracks: 0, playing: false, fx: fx};
   write(KEY, me);
   window.__beat = function(playing, tracks){
     me.beat = Date.now(); me.playing = !!playing;
@@ -1481,7 +1493,7 @@ setInterval(function(){ if (current) paint(); }, 60000); /* sun, moon and clock 
         ? "restarts on this device, newest last:\n\n" + rows.map(function(r){
             return r.at.replace("T", " ").slice(0, 19) + "  " + r.nav +
                    "  after " + r.lasted_s + "s (" + r.tracks + " tracks, " +
-                   (r.playing ? "playing" : "paused") + "), " + r.silent_s + "s since its last heartbeat";
+                   (r.playing ? "playing" : "paused") + (r.fx ? ", fx on" : "") + "), " + r.silent_s + "s since its last heartbeat";
           }).join("\n")
         : "no restarts recorded on this device yet.";
       document.body.appendChild(box);
@@ -1650,9 +1662,135 @@ btnPrompt.addEventListener("click", function(){
   }, {passive:true});
   document.addEventListener("touchend", function(e){
     if (inBox) return;
+    if (window.__fxBusy && window.__fxBusy()) return;   /* the thumb is holding an effect, not swiping */
     var t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
     if (Date.now() - t0 < 700 && dx < -60 && Math.abs(dy) < 50){ if (!ctx) begin(); else advance(true); }
   }, {passive:true});
+})();
+
+/* ---------------- thumb FX — M1: filter, hold to engage ----------------
+   Opened with ?fx=1 or nothing happens: without the flag not one line below runs,
+   so an ordinary listening session is the player it was yesterday. That matters
+   today — the phone-restart bug recorded above (2026-09-15) is instrumented but
+   not fixed, and effects must not be able to cause it, hide inside it or be
+   mistaken for it. The flag is written into the diag session record, so any
+   restart the log catches says whether FX was on when it happened.
+
+   Hold ~180ms low on the screen to engage; the thumb's height is then the filter.
+   Up opens a highpass, down closes a lowpass, the centre passes the whole band, and
+   neither end reaches silence — the worst it can sound is thinner or darker. Release
+   springs back to the centre over ~120ms. Momentary, not latching.
+
+   Why a hold and not a flick: swipe-left-to-skip just above is a fast horizontal
+   gesture, so a still hold is a different shape and the two cannot be confused. For
+   the overlap that is left — engaged, then a flick before letting go — the skip
+   handler asks __fxBusy() and stands down. With the flag off __fxBusy does not
+   exist and skip behaves exactly as before.
+
+   On iPhone PLAIN is true and there is no Web Audio graph to filter at all. The
+   gesture still runs and the readout says so, rather than throwing. */
+(function(){
+  if (new URLSearchParams(location.search).get("fx") !== "1") return;
+
+  var HOLD_MS = 180, SLOP = 12;            /* a hold has to stay still to count as one */
+  var LP_OPEN = 22050, LP_SHUT = 220;      /* the lowpass stops well short of silence */
+  var HP_OPEN = 20,    HP_SHUT = 1400;     /* so does the highpass */
+  var GLIDE = 0.04;                        /* setTargetAtTime constant: ~120ms to settle */
+  var REACH = 0.30, ZONE = 0.55;           /* travel, and how far up the thumb arc reaches */
+  var QUIET_MS = 250;                      /* skip stays down this long after a release */
+
+  var lp = null, hp = null, wired = false;
+  function wire(){
+    if (wired) return true;
+    if (PLAIN || !ctx || !master) return false;
+    try {
+      lp = ctx.createBiquadFilter(); lp.type = "lowpass";
+      lp.frequency.value = LP_OPEN; lp.Q.value = 0.707;   /* Butterworth: no resonant bump */
+      hp = ctx.createBiquadFilter(); hp.type = "highpass";
+      hp.frequency.value = HP_OPEN; hp.Q.value = 0.707;
+      master.disconnect();                                /* master only ever fed destination */
+      master.connect(lp); lp.connect(hp); hp.connect(ctx.destination);
+      wired = true;
+    } catch(e){ lp = hp = null; wired = false; }
+    return wired;
+  }
+  function hz(n){
+    return n > 0 ? HP_OPEN * Math.pow(HP_SHUT / HP_OPEN, n)
+                 : LP_OPEN * Math.pow(LP_SHUT / LP_OPEN, -n);
+  }
+  function set(n, glide){
+    if (!wire()) return;
+    var t = ctx.currentTime, tc = glide ? GLIDE : 0.012;  /* always ramped, never stepped */
+    hp.frequency.setTargetAtTime(HP_OPEN * Math.pow(HP_SHUT / HP_OPEN, Math.max(0, n)), t, tc);
+    lp.frequency.setTargetAtTime(LP_OPEN * Math.pow(LP_SHUT / LP_OPEN, Math.max(0, -n)), t, tc);
+  }
+
+  var box = document.createElement("div");
+  box.id = "fx"; box.setAttribute("aria-hidden", "true");
+  box.innerHTML = "<i></i><b></b><s></s>";
+  document.getElementById("stage").appendChild(box);
+  var line = box.querySelector("i"), dot = box.querySelector("b"), read = box.querySelector("s");
+
+  var hold = null, id = null, x0 = 0, y0 = 0, range = 1, engaged = false, quiet = 0;
+
+  /* skip asks this before acting on a touchend */
+  window.__fxBusy = function(){ return engaged || Date.now() < quiet; };
+
+  function zone(e){
+    if (e.clientY < window.innerHeight * ZONE) return false;
+    var t = e.target;
+    return !(t && t.closest && t.closest("button, input, a, #promptBox, #card, #start, #controls"));
+  }
+  function label(n){
+    if (PLAIN) return "filter — no audio graph on this device";
+    if (!wired) return "filter — start a track first";
+    if (Math.abs(n) < 0.02) return "filter — open";
+    return (n > 0 ? "highpass — " : "lowpass — ") + Math.round(hz(n)) + " Hz";
+  }
+  function move(x, y){
+    var n = Math.max(-1, Math.min(1, (y0 - y) / range));
+    dot.style.left = x + "px"; dot.style.top = y + "px";
+    read.textContent = label(n);
+    set(n, false);
+  }
+  function engage(){
+    hold = null; engaged = true;
+    range = Math.max(120, window.innerHeight * REACH);
+    wire();
+    line.style.top = y0 + "px";                 /* the centre is wherever the thumb landed */
+    read.style.top = (y0 - 26) + "px";      /* above the line: below it is where the controls live */
+    box.classList.add("on");
+    move(x0, y0);
+  }
+  function release(){
+    if (hold){ clearTimeout(hold); hold = null; }
+    id = null;
+    if (!engaged) return;
+    engaged = false; quiet = Date.now() + QUIET_MS;
+    box.classList.remove("on");
+    set(0, true);
+  }
+
+  document.addEventListener("pointerdown", function(e){
+    if (engaged || id !== null || !zone(e)) return;
+    id = e.pointerId; x0 = e.clientX; y0 = e.clientY;
+    hold = setTimeout(engage, HOLD_MS);
+  });
+  document.addEventListener("pointermove", function(e){
+    if (id === null || e.pointerId !== id) return;
+    if (engaged){ move(e.clientX, e.clientY); return; }
+    /* it moved before the hold matured, so it was a swipe: leave it to the swipe */
+    if (Math.abs(e.clientX - x0) > SLOP || Math.abs(e.clientY - y0) > SLOP){
+      clearTimeout(hold); hold = null; id = null;
+    }
+  });
+  ["pointerup", "pointercancel"].forEach(function(k){
+    document.addEventListener(k, function(e){
+      if (id !== null && e.pointerId !== id) return;
+      release();
+    });
+  });
+  window.addEventListener("blur", release);
 })();
 document.addEventListener("keydown", function(e){
   if (e.target && /input|textarea/i.test(e.target.tagName)) return;
