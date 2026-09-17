@@ -1694,13 +1694,14 @@ btnPrompt.addEventListener("click", function(){
    On iPhone PLAIN is true and there is no Web Audio graph to filter at all. The
    gesture still runs and the readout says so, rather than throwing. */
 (function(){
-  if (new URLSearchParams(location.search).get("fx") !== "1") return;
+  var q = new URLSearchParams(location.search);
+  if (q.get("fx") !== "1") return;
 
   var HOLD_MS = 180, SLOP = 12;            /* a hold has to stay still to count as one */
   var LP_OPEN = 22050, LP_SHUT = 220;      /* the lowpass stops well short of silence */
   var HP_OPEN = 20,    HP_SHUT = 1400;     /* so does the highpass */
   var GLIDE = 0.04;                        /* setTargetAtTime constant: ~120ms to settle */
-  var REACH = 0.30, ZONE = 0.50;           /* travel, and how far up the thumb arc reaches */
+  var REACH = 0.30, SPLIT = 0.50;          /* travel, and where the screen divides */
   var QUIET_MS = 250;                      /* skip stays down this long after a release */
 
   var lp = null, hp = null, wired = false;
@@ -1741,13 +1742,32 @@ btnPrompt.addEventListener("click", function(){
   /* skip asks this before acting on a touchend */
   window.__fxBusy = function(){ return engaged || Date.now() < quiet; };
 
-  /* On a 393x852 phone the card fills the whole thumb arc, so excluding it left a
-     55px sliver nobody could find (Kalam, first phone try). The card is inert text;
-     only the things you actually press are out of bounds. */
+  /* Where the hold is allowed to start. Undecided on purpose, and switchable with
+     &zone= until a thumb settles it:
+
+       sky  the top half, over the sky. Kalam, phone in hand: the bottom half is
+            all card text and controls, the sky is empty, and it is where M3
+            wants to draw anyway. The default.
+       arc  the bottom half. What the survey argued for, because a phone held in
+            one hand puts the thumb in an arc down there. That premise is
+            weaker than it looked: Kalam's phone is small, and most people
+            reach in with an index finger rather than the holding thumb, so
+            the top of the screen is not out of reach after all.
+       all  anywhere that is not a control, and let the hand pick.
+
+     Whichever wins becomes the default and this switch goes. Note the card is
+     inert text and stays in bounds either way: excluding it on the first phone
+     try left a 55px sliver nobody could find. */
+  var WHERE = {
+    sky: function(y){ return y < window.innerHeight * SPLIT; },
+    arc: function(y){ return y > window.innerHeight * SPLIT; },
+    all: function(){ return true; }
+  };
+  var where = WHERE[q.get("zone")] || WHERE.sky;
   function zone(e){
-    if (e.clientY < window.innerHeight * ZONE) return false;
+    if (!where(e.clientY)) return false;
     var t = e.target;
-    return !(t && t.closest && t.closest("button, input, a, #promptBox, #start, #controls"));
+    return !(t && t.closest && t.closest("button, input, a, #promptBox, #start, #controls, header, #strip"));
   }
   function label(n){
     if (PLAIN) return "filter — no audio graph on this device";
@@ -1767,7 +1787,7 @@ btnPrompt.addEventListener("click", function(){
     wire();
     box.classList.remove("arm");
     line.style.top = y0 + "px";                 /* the centre is wherever the thumb landed */
-    read.style.top = (y0 - 26) + "px";      /* above the line: below it is where the controls live */
+    read.style.top = Math.max(34, y0 - 26) + "px";   /* clear of the header when held high */      /* above the line: below it is where the controls live */
     box.classList.add("on");
     move(x0, y0);
   }

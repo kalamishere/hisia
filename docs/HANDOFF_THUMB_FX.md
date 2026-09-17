@@ -39,6 +39,11 @@ Distortion via `WaveShaperNode` is the easiest to make ugly. Keep it out of v1.
 
 **Feedback while the thumb is down.** The scene already responds to time of day through CSS variables (`--sun-op`, `--sodium-op`, `--star-op`, `--moon-op`). Bend the same variables rather than drawing a new control surface: a lowpass sweep dims and warms the scene, an echo ripples it. That keeps the player looking like itself and needs no new UI furniture. Show the neutral centre line only while engaged.
 
+## Changed on contact with a phone (2026-09-17, M1)
+- **The hold starts in the sky, not the bottom arc.** The arc came from one-thumb reach, and on a real phone that reasoning does not survive: the bottom half is card text and controls with barely a gap to press, Kalam's phone is small, and people reach in with an index finger rather than the holding thumb. `&zone=sky|arc|all` switches it while that is being felt out; sky is the default and the switch goes once it is settled. Hold-to-engage itself is unaffected — it was never about reach, it was about not being a swipe.
+- **The card is in bounds.** Excluding it left a 55px sliver between the honest line and the controls that nobody could find.
+- **Safari's press-to-select is off under the flag.** A 180ms press on text starts a selection and callout, which cancels the pointer stream mid-hold. The prompt box keeps its selection.
+
 ## Milestones
 - **M1.** Filter only, hold-to-engage, vertical drag, spring back on release. Prove no collision with skip on a real phone. Ship behind a flag.
 - **M2.** Add synced echo using `readout.bpm`, then the reverb send.
