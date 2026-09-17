@@ -78,7 +78,7 @@
 
 <div class="t">
   <h2>D · does resume() bring a dead graph back?</h2>
-  <p>Run B first and let it die. Then unlock and press this — no reload.</p>
+  <p>Only needed if the log says <b>D APPLIES</b> after you unlock. If the music came back by itself there is nothing to resume — that is the answer.</p>
   <div class="row">
     <button class="go" onclick="testD()">run D</button>
     <button class="ear" onclick="say('D: sound came back')">came back</button>
@@ -127,11 +127,44 @@ log("platform " + navigator.platform + " touchPoints " + navigator.maxTouchPoint
   document.addEventListener(k, function(){
     log("EVENT " + k + " · visibility=" + document.visibilityState +
         (ctx ? " ctx=" + ctx.state : "") + (cur ? " t=" + cur.currentTime.toFixed(1) : ""));
-    if (k === "visibilitychange" && handoff) swap(document.visibilityState === "hidden");
+    if (k === "visibilitychange"){
+      if (document.visibilityState === "hidden") markHidden(); else markVisible();
+      if (handoff) swap(document.visibilityState === "hidden");
+    }
   }, false);
 });
 window.addEventListener("blur", function(){ log("EVENT blur"); });
 window.addEventListener("focus", function(){ log("EVENT focus"); });
+
+/* The ear cannot report on twenty seconds it spent in a pocket, and "it came back"
+   does not separate "played the whole time" from "was silent and resumed". Media time
+   against wall time does: if the track advanced as far as the clock did, it played. */
+var hid = null;
+function markHidden(){
+  hid = cur ? {t: cur.currentTime, wall: Date.now(), ctx: ctx ? ctx.state : "-", paused: cur.paused} : null;
+  if (hid) log("HIDDEN at t=" + hid.t.toFixed(1) + " ctx=" + hid.ctx);
+}
+function markVisible(){
+  if (!hid || !cur){ hid = null; return; }
+  var wall = (Date.now() - hid.wall) / 1000;
+  var media = cur.currentTime - hid.t;
+  var dur = cur.duration;
+  if (media < -0.5 && dur) media += dur;          /* the probe track loops */
+  var ratio = wall > 0.5 ? media / wall : 0;
+  var verdict = wall < 3 ? "too short to judge — stay away longer"
+              : ratio > 0.8 ? "PLAYED THROUGH the hidden window"
+              : ratio < 0.2 ? "WAS SILENT for the hidden window, resumed on return"
+              : "PARTIAL — it ran for some of it and stopped";
+  log("VISIBLE after " + wall.toFixed(1) + "s away · media advanced " + media.toFixed(1) + "s · " + verdict);
+  log("   ctx was " + hid.ctx + " going in, " + (ctx ? ctx.state : "-") + " coming back" +
+      " · element " + (cur.paused ? "is paused" : "is playing"));
+  /* D, answered without a button: it only applies if something is still broken here */
+  if (ctx && (ctx.state !== "running" || cur.paused))
+    log("   D APPLIES: still not running — press run D to see if resume() fixes it without a reload");
+  else if (ratio < 0.2)
+    log("   D not applicable: it recovered on its own, no resume() needed");
+  hid = null;
+}
 
 var ctx = null, srcNode = null, gain = null;
 var graphEl = null, plainEl = null, cur = null, handoff = false, ticker = null;

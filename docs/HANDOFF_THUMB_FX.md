@@ -52,6 +52,17 @@ Four effects at the corners of a diamond, each reaching 100% at its corner and b
 - **Reach.** An XY pad was ranked third in the survey on thumb reach. That objection is gone: see the note above on the index finger.
 - **Blocked on PLAIN.** A four-corner blend is nothing but sound, and there is no audio graph on an iPhone to make it with. `src/probes/ios-audio.html` measures whether that is still true before anything is rebuilt around it.
 
+## PLAIN can go (Kalam's ear, 2026-09-17, `src/probes/ios-audio.html`)
+Measured on Kalam's iPhone, by ear with the screen off:
+- **B — a Web Audio graph does not survive the screen lock.** It goes silent while locked and the music comes back on unlock, on its own. No `resume()` needed, so test D never applied.
+- **C — the handoff does survive.** Handing playback to a second bare `<audio>` at the same position on the way into the lock, and back to the graph on the way out, **kept playing through the lock**.
+
+So the sentence at `index.html:1012` that took iPhones off the graph entirely is true only of the locked state, and the locked state is exactly when nobody is touching an effect. The shape that follows: **graph while `visibilityState` is visible, plain element while hidden.** Two elements per player instead of one, four in all, with a swap at every visibility change.
+
+Still open before this is built: whether there is an audible seam at the handover, and whether `el.volume` does anything on iOS (test A) — that decides only whether a track change *while hidden* can crossfade, and today it is a hard cut either way, so it is not a regression.
+
+**Sequencing.** This is surgery on the playback core while the restart bug is still unexplained, and it adds a second way for playback to stop. The bug lands first.
+
 ## Milestones
 - **M1.** Filter only, hold-to-engage, vertical drag, spring back on release. Prove no collision with skip on a real phone. Ship behind a flag.
 - **M2.** Add synced echo using `readout.bpm`, then the reverb send.
