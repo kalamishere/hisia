@@ -44,6 +44,14 @@ Distortion via `WaveShaperNode` is the easiest to make ugly. Keep it out of v1.
 - **The card is in bounds.** Excluding it left a 55px sliver between the honest line and the controls that nobody could find.
 - **Safari's press-to-select is off under the flag.** A 180ms press on text starts a selection and callout, which cancels the pointer stream mid-hold. The prompt box keeps its selection.
 
+## The diamond (Kalam, 2026-09-17) — supersedes the single axis
+Four effects at the corners of a diamond, each reaching 100% at its corner and blending between corners; the centre is dry. Kalam's design, after trying M1 on the phone.
+
+- **Geometry.** Clamp the thumb's offset from the anchor to `|x| + |y| <= 1` (scale both by `1/(|x|+|y|)` outside it). Each corner's amount is then just its side of the axis: `up = max(0, y)`, `down = max(0, -y)`, and the same for left/right. A corner gives one effect at 100%, an edge gives two summing to 100%, the centre gives none. Left and right are mutually exclusive by construction, and so are up and down — that is what "transitions between each corner" means.
+- **Corners.** N highpass, S lowpass, W synced echo, E reverb wash. The filter's two directions are already opposites, so they want to be one axis, and this uses exactly the three effects in the table below with no fourth. Distortion stays out for the reason given there.
+- **Reach.** An XY pad was ranked third in the survey on thumb reach. That objection is gone: see the note above on the index finger.
+- **Blocked on PLAIN.** A four-corner blend is nothing but sound, and there is no audio graph on an iPhone to make it with. `src/probes/ios-audio.html` measures whether that is still true before anything is rebuilt around it.
+
 ## Milestones
 - **M1.** Filter only, hold-to-engage, vertical drag, spring back on release. Prove no collision with skip on a real phone. Ship behind a flag.
 - **M2.** Add synced echo using `readout.bpm`, then the reverb send.

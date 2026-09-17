@@ -1,0 +1,246 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>iOS audio probe — hisia</title>
+<!--
+  Does the PLAIN path still have to exist?
+
+  index.html:1012 takes iPhones and iPads off the Web Audio graph entirely, because
+  "iOS stops Web Audio when the screen locks or Safari goes to the background, and
+  ignores element volume". That was written 2026-09-07 and never retested, and it is
+  now the thing blocking every effect: no graph means nothing to filter, delay or
+  reverb. Before rebuilding the player around a guess, measure the four facts the
+  architecture actually turns on, on the phone that has to run it.
+
+  A  does el.volume do anything at all, or is the crossfade a hard cut by force?
+  B  does a MediaElementSource graph survive the screen locking?
+  C  if it does not, can playback be handed to a second plain element on the way
+     into the lock, and handed back on the way out?
+  D  if the graph dies, does ctx.resume() bring it back without a reload?
+
+  A and C are judged by ear with the screen off; the log is there to read afterwards.
+  Nothing here writes to the site or the library, and it never touches index.html.
+-->
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;padding:16px;background:#070912;color:#dfe5f5;
+       font:15px/1.55 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+       -webkit-text-size-adjust:100%}
+  h1{font-size:17px;margin:0 0 2px;font-weight:600}
+  p.sub{margin:0 0 16px;color:#8e97b4;font-size:13px}
+  .t{border:1px solid #232a44;border-radius:10px;padding:12px;margin:0 0 12px;background:#0b0f1e}
+  .t h2{font-size:14px;margin:0 0 4px;font-weight:600}
+  .t p{margin:0 0 10px;color:#939db9;font-size:13px}
+  button{appearance:none;border:1px solid #39436b;background:#151b31;color:#dfe5f5;
+         border-radius:8px;padding:11px 14px;font-size:14px;margin:0 6px 6px 0;min-height:44px}
+  button:active{background:#232c4c}
+  button.go{border-color:#4d7fd6;background:#16294e}
+  button.ear{border-color:#6b5a2a;background:#241d0d}
+  #log{white-space:pre-wrap;word-break:break-word;background:#05070f;border:1px solid #1b2138;
+       border-radius:10px;padding:10px;font:11px/1.5 ui-monospace,Menlo,monospace;color:#b9c3dd;
+       max-height:46vh;overflow:auto}
+  .row{display:flex;gap:6px;flex-wrap:wrap}
+</style>
+
+<h1>iOS audio probe</h1>
+<p class="sub">Run one test at a time. Where a test says to lock the screen, lock it, count to twenty, unlock, then read the log. Judge sound by ear — the log cannot hear.</p>
+
+<div class="t">
+  <h2>A · does el.volume work?</h2>
+  <p>Plays a plain &lt;audio&gt;, ramps the volume down to 0.15 over 3s and back up over 3s. Listen.</p>
+  <div class="row">
+    <button class="go" onclick="testA()">run A</button>
+    <button class="ear" onclick="say('A: I HEARD it dip and come back')">it dipped</button>
+    <button class="ear" onclick="say('A: NO change in loudness')">no change</button>
+  </div>
+</div>
+
+<div class="t">
+  <h2>B · does the graph survive a screen lock?</h2>
+  <p>Plays through createMediaElementSource → gain → destination. Start it, lock the screen, count to twenty, unlock.</p>
+  <div class="row">
+    <button class="go" onclick="testB()">run B</button>
+    <button class="ear" onclick="say('B: it KEPT playing while locked')">kept playing</button>
+    <button class="ear" onclick="say('B: it WENT SILENT while locked')">went silent</button>
+  </div>
+</div>
+
+<div class="t">
+  <h2>C · can it hand off to a plain element on the way into the lock?</h2>
+  <p>Same graph, but on hidden it starts a second bare element at the same position and pauses the graph one; on visible it hands back. Start it, lock, count to twenty, unlock. Listen for a gap at each handover.</p>
+  <div class="row">
+    <button class="go" onclick="testC()">run C</button>
+    <button class="ear" onclick="say('C: continuous through the lock')">stayed playing</button>
+    <button class="ear" onclick="say('C: audible seam at the handover')">seam</button>
+    <button class="ear" onclick="say('C: went silent while locked')">went silent</button>
+  </div>
+</div>
+
+<div class="t">
+  <h2>D · does resume() bring a dead graph back?</h2>
+  <p>Run B first and let it die. Then unlock and press this — no reload.</p>
+  <div class="row">
+    <button class="go" onclick="testD()">run D</button>
+    <button class="ear" onclick="say('D: sound came back')">came back</button>
+    <button class="ear" onclick="say('D: still silent')">still silent</button>
+  </div>
+</div>
+
+<div class="row">
+  <button onclick="stopAll()">stop everything</button>
+  <button onclick="copyLog()">copy log</button>
+  <button onclick="clearLog()">clear</button>
+</div>
+<div id="log"></div>
+
+<script>
+"use strict";
+/* one known-good file from the published set; read only, nothing here writes to it */
+var SRC = "../../audio/NZ-04.mp3";
+var t0 = Date.now(), logEl = document.getElementById("log"), lines = [];
+
+function stamp(){
+  var s = ((Date.now() - t0) / 1000).toFixed(1);
+  return new Date().toTimeString().slice(0, 8) + " +" + s + "s";
+}
+function log(msg){
+  lines.push(stamp() + "  " + msg);
+  while (lines.length > 300) lines.shift();
+  logEl.textContent = lines.join("\n");
+  logEl.scrollTop = logEl.scrollHeight;
+  try { localStorage.setItem("iosprobe", JSON.stringify(lines)); } catch(e){}
+}
+function say(m){ log("EAR  " + m); }
+function clearLog(){ lines = []; logEl.textContent = ""; try { localStorage.removeItem("iosprobe"); } catch(e){} }
+function copyLog(){
+  var t = lines.join("\n");
+  if (navigator.clipboard) navigator.clipboard.writeText(t).then(function(){ log("(log copied)"); }, function(){});
+}
+try { var old = JSON.parse(localStorage.getItem("iosprobe") || "[]");
+      if (old.length){ lines = old; logEl.textContent = lines.join("\n"); log("— reloaded, previous log above —"); } } catch(e){}
+
+log("UA " + navigator.userAgent);
+log("platform " + navigator.platform + " touchPoints " + navigator.maxTouchPoints);
+
+/* every way the page can be told it is going away, and what the context says about it */
+["visibilitychange","webkitvisibilitychange","pagehide","pageshow","freeze","resume"].forEach(function(k){
+  document.addEventListener(k, function(){
+    log("EVENT " + k + " · visibility=" + document.visibilityState +
+        (ctx ? " ctx=" + ctx.state : "") + (cur ? " t=" + cur.currentTime.toFixed(1) : ""));
+    if (k === "visibilitychange" && handoff) swap(document.visibilityState === "hidden");
+  }, false);
+});
+window.addEventListener("blur", function(){ log("EVENT blur"); });
+window.addEventListener("focus", function(){ log("EVENT focus"); });
+
+var ctx = null, srcNode = null, gain = null;
+var graphEl = null, plainEl = null, cur = null, handoff = false, ticker = null;
+
+function mk(){ var a = new Audio(); a.src = SRC; a.loop = true; a.preload = "auto";
+               a.setAttribute("playsinline",""); a.crossOrigin = "anonymous"; return a; }
+
+function tick(){
+  clearInterval(ticker);
+  /* a timer keeps running where rAF does not, which is the whole point while hidden */
+  ticker = setInterval(function(){
+    if (!cur) return;
+    log("tick t=" + cur.currentTime.toFixed(1) + " paused=" + cur.paused +
+        (ctx ? " ctx=" + ctx.state : "") + " vis=" + document.visibilityState);
+  }, 2000);
+}
+function stopAll(){
+  clearInterval(ticker); handoff = false;
+  [graphEl, plainEl].forEach(function(a){ if (a) try { a.pause(); } catch(e){} });
+  log("stopped");
+}
+
+function testA(){
+  stopAll();
+  plainEl = plainEl || mk(); cur = plainEl;
+  plainEl.play().then(function(){ log("A playing"); }, function(e){ log("A play REJECTED " + e); });
+  var t = 0;
+  var iv = setInterval(function(){
+    t += 0.1;
+    var v = t < 3 ? 1 - (t / 3) * 0.85 : (t < 6 ? 0.15 + ((t - 3) / 3) * 0.85 : 1);
+    try { plainEl.volume = v; } catch(e){ log("A volume threw " + e); }
+    if (t >= 6.2){ clearInterval(iv);
+      log("A ramp done, requested 1→0.15→1, element reports volume=" + plainEl.volume); }
+  }, 100);
+  setTimeout(function(){ log("A after 1s element reports volume=" + plainEl.volume +
+                            " (if this is not what was set, iOS is ignoring it)"); }, 1000);
+  tick();
+}
+
+function graphUp(){
+  if (!ctx){
+    var AC = window.AudioContext || window.webkitAudioContext;
+    ctx = new AC();
+    ctx.addEventListener && ctx.addEventListener("statechange", function(){ log("ctx statechange → " + ctx.state); });
+    log("ctx created, state=" + ctx.state + " rate=" + ctx.sampleRate);
+  }
+  if (!graphEl){
+    graphEl = mk();
+    srcNode = ctx.createMediaElementSource(graphEl);
+    gain = ctx.createGain(); gain.gain.value = 1;
+    srcNode.connect(gain); gain.connect(ctx.destination);
+    log("graph built: element → source → gain → destination");
+  }
+  if (ctx.state !== "running") ctx.resume().then(function(){ log("ctx resumed → " + ctx.state); },
+                                                 function(e){ log("resume rejected " + e); });
+}
+
+function testB(){
+  stopAll(); handoff = false;
+  graphUp(); cur = graphEl;
+  graphEl.play().then(function(){ log("B playing through the graph — lock the screen now"); },
+                      function(e){ log("B play REJECTED " + e); });
+  tick();
+}
+
+function testC(){
+  stopAll();
+  graphUp(); cur = graphEl;
+  if (!plainEl) plainEl = mk();
+  /* unlock the second element inside this gesture, or iOS will refuse it later */
+  plainEl.play().then(function(){ plainEl.pause(); plainEl.currentTime = 0; log("C plain element unlocked and parked"); },
+                      function(e){ log("C could not unlock the plain element: " + e); });
+  graphEl.play().then(function(){ handoff = true;
+      log("C playing through the graph, handoff armed — lock the screen now"); },
+      function(e){ log("C play REJECTED " + e); });
+  tick();
+}
+
+function swap(toPlain){
+  try {
+    if (toPlain){
+      var at = graphEl.currentTime;
+      plainEl.currentTime = at;
+      var pr = plainEl.play();
+      if (pr) pr.then(function(){ log("SWAP → plain at t=" + at.toFixed(2)); },
+                      function(e){ log("SWAP → plain REJECTED " + e); });
+      try { graphEl.pause(); } catch(e){}
+      cur = plainEl;
+    } else {
+      var at2 = plainEl.currentTime;
+      graphEl.currentTime = at2;
+      if (ctx && ctx.state !== "running") ctx.resume().then(function(){ log("ctx resumed on return → " + ctx.state); }, function(){});
+      var pr2 = graphEl.play();
+      if (pr2) pr2.then(function(){ log("SWAP → graph at t=" + at2.toFixed(2)); },
+                        function(e){ log("SWAP → graph REJECTED " + e); });
+      try { plainEl.pause(); } catch(e){}
+      cur = graphEl;
+    }
+  } catch(e){ log("SWAP threw " + e); }
+}
+
+function testD(){
+  if (!ctx){ log("D: run B first"); return; }
+  log("D before: ctx=" + ctx.state + " paused=" + (graphEl ? graphEl.paused : "?"));
+  ctx.resume().then(function(){
+    log("D after resume: ctx=" + ctx.state);
+    if (graphEl && graphEl.paused) graphEl.play().then(function(){ log("D element restarted"); },
+                                                       function(e){ log("D element play rejected " + e); });
+  }, function(e){ log("D resume rejected " + e); });
+  tick();
+}
+</script>
