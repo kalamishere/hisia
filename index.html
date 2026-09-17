@@ -583,13 +583,18 @@ body.stream{--card-lift:0.2vh;--card-floor:calc(var(--pad) * .2 + 1.2em)}
 #fx{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:0;transition:opacity .16s ease}
 #fx.on{opacity:1}
 #fx.arm{opacity:.34}
-#fx.arm i,#fx.arm s{display:none}
+#fx.arm s{display:none}
 body.fx #card,body.fx #stage{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 body.fx #promptBox{-webkit-user-select:text;user-select:text}
-#fx i{position:absolute;left:11%;right:11%;height:1px;background:rgba(255,255,255,.32);
-  box-shadow:0 0 14px rgba(255,255,255,.2)}
 #fx b{position:absolute;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;
   background:rgba(255,255,255,.7);box-shadow:0 0 20px rgba(255,255,255,.4)}
+#fx u{position:absolute;transform:translate(-50%,-50%) rotate(45deg);border-radius:3px;
+  border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.03)}
+#fx em{position:absolute;transform:translate(-50%,-50%);font-style:normal;white-space:nowrap;
+  font:10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:rgba(255,255,255,.42);
+  text-shadow:0 1px 8px rgba(0,0,0,.7);transition:color .12s ease}
+#fx em.hot{color:rgba(255,255,255,.95)}
+#fx.arm u,#fx.arm em{display:none}
 #fx s{position:absolute;left:0;right:0;text-align:center;text-decoration:none;
   font:11px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.06em;color:rgba(255,255,255,.78);
   text-shadow:0 1px 10px rgba(0,0,0,.65)}
@@ -1672,27 +1677,40 @@ btnPrompt.addEventListener("click", function(){
   }, {passive:true});
 })();
 
-/* ---------------- thumb FX — M1: filter, hold to engage ----------------
+/* ---------------- thumb FX — the diamond, hold to engage ----------------
    Opened with ?fx=1 or nothing happens: without the flag not one line below runs,
    so an ordinary listening session is the player it was yesterday. That matters
-   today — the phone-restart bug recorded above (2026-09-15) is instrumented but
+   still — the phone-restart bug recorded above (2026-09-15) is instrumented but
    not fixed, and effects must not be able to cause it, hide inside it or be
    mistaken for it. The flag is written into the diag session record, so any
    restart the log catches says whether FX was on when it happened.
 
-   Hold ~180ms low on the screen to engage; the thumb's height is then the filter.
-   Up opens a highpass, down closes a lowpass, the centre passes the whole band, and
-   neither end reaches silence — the worst it can sound is thinner or darker. Release
-   springs back to the centre over ~120ms. Momentary, not latching.
+   Hold ~180ms to engage, and the thumb is then inside a diamond centred where it
+   landed. Kalam's design: four effects, one at each corner, each reaching 100% at
+   its own corner and blending on the way between them.
+
+     N  highpass     W  synced echo     E  reverb wash     S  lowpass
+                          centre: dry
+
+   The maths is the diamond itself. Clamp the offset to |x| + |y| <= 1 and each
+   corner's amount is just its side of an axis, so a corner gives one effect whole,
+   an edge gives two that sum to one, and the centre gives none. N and S are the
+   same filter in its two directions, which is why three effects fill four corners
+   and no fourth had to be invented — the brief calls distortion the easy one to
+   make ugly. W and E are mutually exclusive, and so are N and S: that is what
+   moving between corners means, not a limitation of it.
+
+   Release springs everything back to dry over ~120ms. Momentary, not latching.
 
    Why a hold and not a flick: swipe-left-to-skip just above is a fast horizontal
-   gesture, so a still hold is a different shape and the two cannot be confused. For
-   the overlap that is left — engaged, then a flick before letting go — the skip
-   handler asks __fxBusy() and stands down. With the flag off __fxBusy does not
-   exist and skip behaves exactly as before.
+   gesture, so a still hold is a different shape and the two cannot be confused.
+   While engaged, and for a moment after, the skip handler asks __fxBusy() and
+   stands down. With the flag off __fxBusy does not exist and skip is untouched.
 
-   On iPhone PLAIN is true and there is no Web Audio graph to filter at all. The
-   gesture still runs and the readout says so, rather than throwing. */
+   On iPhone PLAIN is true and there is no Web Audio graph to feed, so the diamond
+   runs and reads out and makes no sound. src/probes/ios-audio.html is measuring
+   whether that has to stay true; until it is settled this is judged by finger on
+   the phone and by ear on a desktop. */
 (function(){
   var q = new URLSearchParams(location.search);
   if (q.get("fx") !== "1") return;
@@ -1700,11 +1718,23 @@ btnPrompt.addEventListener("click", function(){
   var HOLD_MS = 180, SLOP = 12;            /* a hold has to stay still to count as one */
   var LP_OPEN = 22050, LP_SHUT = 220;      /* the lowpass stops well short of silence */
   var HP_OPEN = 20,    HP_SHUT = 1400;     /* so does the highpass */
+  var ECHO_MAX = 0.55, FB_MAX = 0.45;      /* feedback capped below self-oscillation */
+  var REV_MAX = 0.60, REV_TAIL = 1.8;
   var GLIDE = 0.04;                        /* setTargetAtTime constant: ~120ms to settle */
-  var REACH = 0.30, SPLIT = 0.50;          /* travel, and where the screen divides */
   var QUIET_MS = 250;                      /* skip stays down this long after a release */
+  var SPLIT = 0.50;
 
-  var lp = null, hp = null, wired = false;
+  /* ---- the graph. One filter pair in line, two sends off the end of it ---- */
+  var lp = null, hp = null, dly = null, fb = null, wet = null, rev = null, send = null, wired = false;
+  function impulse(){
+    /* a reverb you generate is a reverb you do not have to ship: noise, decaying */
+    var n = Math.floor(ctx.sampleRate * REV_TAIL), buf = ctx.createBuffer(2, n, ctx.sampleRate);
+    for (var c = 0; c < 2; c++){
+      var d = buf.getChannelData(c);
+      for (var i = 0; i < n; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / n, 2.6);
+    }
+    return buf;
+  }
   function wire(){
     if (wired) return true;
     if (PLAIN || !ctx || !master) return false;
@@ -1713,51 +1743,70 @@ btnPrompt.addEventListener("click", function(){
       lp.frequency.value = LP_OPEN; lp.Q.value = 0.707;   /* Butterworth: no resonant bump */
       hp = ctx.createBiquadFilter(); hp.type = "highpass";
       hp.frequency.value = HP_OPEN; hp.Q.value = 0.707;
+      dly = ctx.createDelay(2.0);
+      fb = ctx.createGain(); fb.gain.value = 0;
+      wet = ctx.createGain(); wet.gain.value = 0;
+      rev = ctx.createConvolver(); rev.buffer = impulse();
+      send = ctx.createGain(); send.gain.value = 0;
       master.disconnect();                                /* master only ever fed destination */
-      master.connect(lp); lp.connect(hp); hp.connect(ctx.destination);
+      master.connect(lp); lp.connect(hp);
+      hp.connect(ctx.destination);                        /* dry */
+      hp.connect(dly); dly.connect(fb); fb.connect(dly);  /* echo, feeding itself */
+      dly.connect(wet); wet.connect(ctx.destination);
+      hp.connect(send); send.connect(rev); rev.connect(ctx.destination);
       wired = true;
-    } catch(e){ lp = hp = null; wired = false; }
+    } catch(e){ lp = hp = dly = fb = wet = rev = send = null; wired = false; }
     return wired;
   }
-  function hz(n){
-    return n > 0 ? HP_OPEN * Math.pow(HP_SHUT / HP_OPEN, n)
-                 : LP_OPEN * Math.pow(LP_SHUT / LP_OPEN, -n);
+  /* the advantage no DJ app has by default: the grid of the track actually playing */
+  function echoTime(){
+    var bpm = current && current.readout && current.readout.bpm;
+    if (!bpm || bpm < 40 || bpm > 220) return 0.25;
+    return (60 / bpm) / 2;                                /* an eighth note */
   }
-  function set(n, glide){
+  function set(a, glide){
     if (!wire()) return;
     var t = ctx.currentTime, tc = glide ? GLIDE : 0.012;  /* always ramped, never stepped */
-    hp.frequency.setTargetAtTime(HP_OPEN * Math.pow(HP_SHUT / HP_OPEN, Math.max(0, n)), t, tc);
-    lp.frequency.setTargetAtTime(LP_OPEN * Math.pow(LP_SHUT / LP_OPEN, Math.max(0, -n)), t, tc);
+    hp.frequency.setTargetAtTime(HP_OPEN * Math.pow(HP_SHUT / HP_OPEN, a.n), t, tc);
+    lp.frequency.setTargetAtTime(LP_OPEN * Math.pow(LP_SHUT / LP_OPEN, a.s), t, tc);
+    if (a.w > 0.001) dly.delayTime.setTargetAtTime(echoTime(), t, 0.05);
+    wet.gain.setTargetAtTime(ECHO_MAX * a.w, t, tc);
+    fb.gain.setTargetAtTime(FB_MAX * a.w, t, tc);
+    /* the tail is allowed to decay on release rather than being cut off */
+    send.gain.setTargetAtTime(REV_MAX * a.e, t, glide ? GLIDE * 3 : tc);
   }
 
+  /* ---- the overlay ---- */
   document.body.classList.add("fx");    /* see the .fx rules: no text selection under a hold */
   var box = document.createElement("div");
   box.id = "fx"; box.setAttribute("aria-hidden", "true");
-  box.innerHTML = "<i></i><b></b><s></s>";
+  box.innerHTML = "<u></u><b></b><s></s>" +
+                  "<em data-k='n'>highpass</em><em data-k='s'>lowpass</em>" +
+                  "<em data-k='w'>echo</em><em data-k='e'>reverb</em>";
   document.getElementById("stage").appendChild(box);
-  var line = box.querySelector("i"), dot = box.querySelector("b"), read = box.querySelector("s");
+  var ring = box.querySelector("u"), dot = box.querySelector("b"), read = box.querySelector("s");
+  var tags = {}; [].forEach.call(box.querySelectorAll("em"), function(el){ tags[el.getAttribute("data-k")] = el; });
 
-  var hold = null, id = null, x0 = 0, y0 = 0, range = 1, engaged = false, quiet = 0;
+  var hold = null, id = null, x0 = 0, y0 = 0, R = 1, engaged = false, quiet = 0;
 
   /* skip asks this before acting on a touchend */
   window.__fxBusy = function(){ return engaged || Date.now() < quiet; };
 
   /* Where the hold is allowed to start. Undecided on purpose, and switchable with
-     &zone= until a thumb settles it:
+     &zone= until a finger settles it:
 
        sky  the top half, over the sky. Kalam, phone in hand: the bottom half is
-            all card text and controls, the sky is empty, and it is where M3
-            wants to draw anyway. The default.
+            all card text and controls, the sky is empty, and it is where the
+            scene coupling wants to draw anyway. The default.
        arc  the bottom half. What the survey argued for, because a phone held in
-            one hand puts the thumb in an arc down there. That premise is
-            weaker than it looked: Kalam's phone is small, and most people
-            reach in with an index finger rather than the holding thumb, so
-            the top of the screen is not out of reach after all.
+            one hand puts the thumb in an arc down there. That premise is weaker
+            than it looked: Kalam's phone is small, and most people reach in with
+            an index finger rather than the holding thumb, so the top of the
+            screen is not out of reach after all.
        all  anywhere that is not a control, and let the hand pick.
 
-     Whichever wins becomes the default and this switch goes. Note the card is
-     inert text and stays in bounds either way: excluding it on the first phone
-     try left a 55px sliver nobody could find. */
+     The card is inert text and stays in bounds either way: excluding it on the
+     first phone try left a 55px sliver nobody could find. */
   var WHERE = {
     sky: function(y){ return y < window.innerHeight * SPLIT; },
     arc: function(y){ return y > window.innerHeight * SPLIT; },
@@ -1769,25 +1818,45 @@ btnPrompt.addEventListener("click", function(){
     var t = e.target;
     return !(t && t.closest && t.closest("button, input, a, #promptBox, #start, #controls, header, #strip"));
   }
-  function label(n){
-    if (PLAIN) return "filter — no audio graph on this device";
-    if (!wired) return "filter — start a track first";
-    if (Math.abs(n) < 0.02) return "filter — open";
-    return (n > 0 ? "highpass — " : "lowpass — ") + Math.round(hz(n)) + " Hz";
+
+  /* the diamond: clamp to |x| + |y| <= 1, then each corner is its side of an axis */
+  function amounts(x, y){
+    var nx = (x - x0) / R, ny = (y0 - y) / R;
+    var l1 = Math.abs(nx) + Math.abs(ny);
+    if (l1 > 1){ nx /= l1; ny /= l1; }
+    return {n: Math.max(0, ny), s: Math.max(0, -ny), e: Math.max(0, nx), w: Math.max(0, -nx)};
+  }
+  function label(a){
+    if (PLAIN) return "no audio graph on this device — the shape still works";
+    if (!wired) return "start a track first";
+    var top = [["highpass", a.n], ["lowpass", a.s], ["echo", a.w], ["reverb", a.e]]
+      .filter(function(r){ return r[1] > 0.02; })
+      .sort(function(p, r){ return r[1] - p[1]; })
+      .map(function(r){ return r[0] + " " + Math.round(r[1] * 100) + "%"; });
+    return top.length ? top.join("  ·  ") : "dry";
   }
   function move(x, y){
-    var n = Math.max(-1, Math.min(1, (y0 - y) / range));
+    var a = amounts(x, y);
     dot.style.left = x + "px"; dot.style.top = y + "px";
-    read.textContent = label(n);
-    set(n, false);
+    read.textContent = label(a);
+    tags.n.classList.toggle("hot", a.n > 0.45); tags.s.classList.toggle("hot", a.s > 0.45);
+    tags.w.classList.toggle("hot", a.w > 0.45); tags.e.classList.toggle("hot", a.e > 0.45);
+    set(a, false);
   }
   function engage(){
     hold = null; engaged = true;
-    range = Math.max(120, window.innerHeight * REACH);
+    R = Math.min(window.innerHeight * 0.28, window.innerWidth * 0.40);
     wire();
     box.classList.remove("arm");
-    line.style.top = y0 + "px";                 /* the centre is wherever the thumb landed */
-    read.style.top = Math.max(34, y0 - 26) + "px";   /* clear of the header when held high */      /* above the line: below it is where the controls live */
+    /* the diamond is a square stood on a corner, so its side is the half-width times root two */
+    var side = R * Math.SQRT2;
+    ring.style.left = x0 + "px"; ring.style.top = y0 + "px";
+    ring.style.width = side + "px"; ring.style.height = side + "px";
+    tags.n.style.left = x0 + "px"; tags.n.style.top = (y0 - R - 14) + "px";
+    tags.s.style.left = x0 + "px"; tags.s.style.top = (y0 + R + 14) + "px";
+    tags.w.style.left = (x0 - R - 4) + "px"; tags.w.style.top = y0 + "px";
+    tags.e.style.left = (x0 + R + 4) + "px"; tags.e.style.top = y0 + "px";
+    read.style.top = Math.max(34, y0 - R - 34) + "px";   /* clear of the header when held high */
     box.classList.add("on");
     move(x0, y0);
   }
@@ -1797,14 +1866,15 @@ btnPrompt.addEventListener("click", function(){
     if (!engaged) return;
     engaged = false; quiet = Date.now() + QUIET_MS;
     box.classList.remove("on");
-    set(0, true);
+    [tags.n, tags.s, tags.w, tags.e].forEach(function(el){ el.classList.remove("hot"); });
+    set({n:0, s:0, w:0, e:0}, true);
   }
 
   document.addEventListener("pointerdown", function(e){
     if (engaged || id !== null || !zone(e)) return;
     id = e.pointerId; x0 = e.clientX; y0 = e.clientY;
     dot.style.left = x0 + "px"; dot.style.top = y0 + "px";
-    read.textContent = ""; line.style.top = "-20px";
+    read.textContent = "";
     box.classList.add("arm");            /* the press is being considered; keep holding */
     hold = setTimeout(engage, HOLD_MS);
   });
