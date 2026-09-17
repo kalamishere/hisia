@@ -582,6 +582,10 @@ body.stream{--card-lift:0.2vh;--card-floor:calc(var(--pad) * .2 + 1.2em)}
    Inert unless the overlay below is built, which only happens under the flag. */
 #fx{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:0;transition:opacity .16s ease}
 #fx.on{opacity:1}
+#fx.arm{opacity:.34}
+#fx.arm i,#fx.arm s{display:none}
+body.fx #card,body.fx #stage{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+body.fx #promptBox{-webkit-user-select:text;user-select:text}
 #fx i{position:absolute;left:11%;right:11%;height:1px;background:rgba(255,255,255,.32);
   box-shadow:0 0 14px rgba(255,255,255,.2)}
 #fx b{position:absolute;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;
@@ -1696,7 +1700,7 @@ btnPrompt.addEventListener("click", function(){
   var LP_OPEN = 22050, LP_SHUT = 220;      /* the lowpass stops well short of silence */
   var HP_OPEN = 20,    HP_SHUT = 1400;     /* so does the highpass */
   var GLIDE = 0.04;                        /* setTargetAtTime constant: ~120ms to settle */
-  var REACH = 0.30, ZONE = 0.55;           /* travel, and how far up the thumb arc reaches */
+  var REACH = 0.30, ZONE = 0.50;           /* travel, and how far up the thumb arc reaches */
   var QUIET_MS = 250;                      /* skip stays down this long after a release */
 
   var lp = null, hp = null, wired = false;
@@ -1725,6 +1729,7 @@ btnPrompt.addEventListener("click", function(){
     lp.frequency.setTargetAtTime(LP_OPEN * Math.pow(LP_SHUT / LP_OPEN, Math.max(0, -n)), t, tc);
   }
 
+  document.body.classList.add("fx");    /* see the .fx rules: no text selection under a hold */
   var box = document.createElement("div");
   box.id = "fx"; box.setAttribute("aria-hidden", "true");
   box.innerHTML = "<i></i><b></b><s></s>";
@@ -1736,10 +1741,13 @@ btnPrompt.addEventListener("click", function(){
   /* skip asks this before acting on a touchend */
   window.__fxBusy = function(){ return engaged || Date.now() < quiet; };
 
+  /* On a 393x852 phone the card fills the whole thumb arc, so excluding it left a
+     55px sliver nobody could find (Kalam, first phone try). The card is inert text;
+     only the things you actually press are out of bounds. */
   function zone(e){
     if (e.clientY < window.innerHeight * ZONE) return false;
     var t = e.target;
-    return !(t && t.closest && t.closest("button, input, a, #promptBox, #card, #start, #controls"));
+    return !(t && t.closest && t.closest("button, input, a, #promptBox, #start, #controls"));
   }
   function label(n){
     if (PLAIN) return "filter — no audio graph on this device";
@@ -1757,6 +1765,7 @@ btnPrompt.addEventListener("click", function(){
     hold = null; engaged = true;
     range = Math.max(120, window.innerHeight * REACH);
     wire();
+    box.classList.remove("arm");
     line.style.top = y0 + "px";                 /* the centre is wherever the thumb landed */
     read.style.top = (y0 - 26) + "px";      /* above the line: below it is where the controls live */
     box.classList.add("on");
@@ -1764,7 +1773,7 @@ btnPrompt.addEventListener("click", function(){
   }
   function release(){
     if (hold){ clearTimeout(hold); hold = null; }
-    id = null;
+    id = null; box.classList.remove("arm");
     if (!engaged) return;
     engaged = false; quiet = Date.now() + QUIET_MS;
     box.classList.remove("on");
@@ -1774,6 +1783,9 @@ btnPrompt.addEventListener("click", function(){
   document.addEventListener("pointerdown", function(e){
     if (engaged || id !== null || !zone(e)) return;
     id = e.pointerId; x0 = e.clientX; y0 = e.clientY;
+    dot.style.left = x0 + "px"; dot.style.top = y0 + "px";
+    read.textContent = ""; line.style.top = "-20px";
+    box.classList.add("arm");            /* the press is being considered; keep holding */
     hold = setTimeout(engage, HOLD_MS);
   });
   document.addEventListener("pointermove", function(e){
@@ -1781,7 +1793,7 @@ btnPrompt.addEventListener("click", function(){
     if (engaged){ move(e.clientX, e.clientY); return; }
     /* it moved before the hold matured, so it was a swipe: leave it to the swipe */
     if (Math.abs(e.clientX - x0) > SLOP || Math.abs(e.clientY - y0) > SLOP){
-      clearTimeout(hold); hold = null; id = null;
+      clearTimeout(hold); hold = null; id = null; box.classList.remove("arm");
     }
   });
   ["pointerup", "pointercancel"].forEach(function(k){
