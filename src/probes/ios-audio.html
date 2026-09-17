@@ -43,7 +43,7 @@
 </style>
 
 <h1>iOS audio probe</h1>
-<p class="sub">Run one test at a time. Where a test says to lock the screen, lock it, count to twenty, unlock, then read the log. Judge sound by ear — the log cannot hear.</p>
+<p class="sub">Start with <b>CTL</b> on a fresh reload, then <b>E</b>. Run one test at a time. Where a test says to lock the screen, lock it, count to twenty, unlock, then read the log. Judge sound by ear — the log cannot hear.</p>
 
 <div class="t">
   <h2>A · does el.volume work?</h2>
@@ -77,6 +77,28 @@
 </div>
 
 <div class="t">
+  <h2>CTL · control: does a bare element dip at the lock anyway?</h2>
+  <p>No graph, no handoff, one plain &lt;audio&gt; — the player you have today. Reload the page first, then start it, lock, count to twenty, unlock. If this dips too, the dip is iOS and the handoff is not to blame.</p>
+  <div class="row">
+    <button class="go" onclick="testCtl()">run CTL</button>
+    <button class="ear" onclick="say('CTL: it dipped at lock and/or unlock too')">it dipped too</button>
+    <button class="ear" onclick="say('CTL: clean, no dip')">clean</button>
+  </div>
+</div>
+
+<div class="t">
+  <h2>E · handoff without the gap</h2>
+  <p>Same as C, but the second element plays alongside the whole time, muted and kept in step, so the handover is a mute toggle instead of a seek and a cold start. Start it, lock, count to twenty, unlock. Compare with C.</p>
+  <div class="row">
+    <button class="go" onclick="testE()">run E</button>
+    <button class="ear" onclick="say('E: clean, no dip either way')">clean</button>
+    <button class="ear" onclick="say('E: still dips, but less than C')">better than C</button>
+    <button class="ear" onclick="say('E: dips the same as C')">same as C</button>
+    <button class="ear" onclick="say('E: went silent while locked')">went silent</button>
+  </div>
+</div>
+
+<div class="t">
   <h2>D · does resume() bring a dead graph back?</h2>
   <p>Only needed if the log says <b>D APPLIES</b> after you unlock. If the music came back by itself there is nothing to resume — that is the answer.</p>
   <div class="row">
@@ -98,14 +120,17 @@
 /* one known-good file from the published set; read only, nothing here writes to it */
 var SRC = "../../audio/NZ-04.mp3";
 var t0 = Date.now(), logEl = document.getElementById("log"), lines = [];
+var TEST = "-";          /* every line says which test it belongs to; the first run lost that */
+var CAP = 2000;          /* 300 threw away the start, which was the part that mattered */
+function which(){ return cur === graphEl ? "graph" : cur === plainEl ? "plain" : cur === twinEl ? "twin" : "none"; }
 
 function stamp(){
   var s = ((Date.now() - t0) / 1000).toFixed(1);
   return new Date().toTimeString().slice(0, 8) + " +" + s + "s";
 }
 function log(msg){
-  lines.push(stamp() + "  " + msg);
-  while (lines.length > 300) lines.shift();
+  lines.push(stamp() + " [" + TEST + "] " + msg);
+  while (lines.length > CAP) lines.shift();
   logEl.textContent = lines.join("\n");
   logEl.scrollTop = logEl.scrollHeight;
   try { localStorage.setItem("iosprobe", JSON.stringify(lines)); } catch(e){}
@@ -125,11 +150,15 @@ log("platform " + navigator.platform + " touchPoints " + navigator.maxTouchPoint
 /* every way the page can be told it is going away, and what the context says about it */
 ["visibilitychange","webkitvisibilitychange","pagehide","pageshow","freeze","resume"].forEach(function(k){
   document.addEventListener(k, function(){
-    log("EVENT " + k + " · visibility=" + document.visibilityState +
-        (ctx ? " ctx=" + ctx.state : "") + (cur ? " t=" + cur.currentTime.toFixed(1) : ""));
+    var line = "EVENT " + k + " · visibility=" + document.visibilityState +
+               (ctx ? " ctx=" + ctx.state : "") + (cur ? " " + which() + " t=" + cur.currentTime.toFixed(1) : "");
+    if (line === lastEvent){ repeat++; if (repeat === 2) log("  … repeating, collapsing …"); }
+    else { if (repeat > 1) log("  (last line repeated " + repeat + "x)"); repeat = 1; lastEvent = line; log(line); }
     if (k === "visibilitychange"){
       if (document.visibilityState === "hidden") markHidden(); else markVisible();
-      if (handoff) swap(document.visibilityState === "hidden");
+      var toHidden = document.visibilityState === "hidden";
+      if (handoff === "swap") swap(toHidden);
+      else if (handoff === "twin") twinSwap(toHidden);
     }
   }, false);
 });
@@ -139,6 +168,7 @@ window.addEventListener("focus", function(){ log("EVENT focus"); });
 /* The ear cannot report on twenty seconds it spent in a pocket, and "it came back"
    does not separate "played the whole time" from "was silent and resumed". Media time
    against wall time does: if the track advanced as far as the clock did, it played. */
+var lastEvent = "", repeat = 0;
 var hid = null;
 function markHidden(){
   hid = cur ? {t: cur.currentTime, wall: Date.now(), ctx: ctx ? ctx.state : "-", paused: cur.paused} : null;
@@ -155,9 +185,10 @@ function markVisible(){
               : ratio > 0.8 ? "PLAYED THROUGH the hidden window"
               : ratio < 0.2 ? "WAS SILENT for the hidden window, resumed on return"
               : "PARTIAL — it ran for some of it and stopped";
-  log("VISIBLE after " + wall.toFixed(1) + "s away · media advanced " + media.toFixed(1) + "s · " + verdict);
+  log("VISIBLE after " + wall.toFixed(1) + "s away · " + which() + " advanced " + media.toFixed(1) + "s · " + verdict);
   log("   ctx was " + hid.ctx + " going in, " + (ctx ? ctx.state : "-") + " coming back" +
-      " · element " + (cur.paused ? "is paused" : "is playing"));
+      " · the " + which() + " element " + (cur.paused ? "is paused" : "is playing, readyState=" + cur.readyState) +
+      (media < 0.2 && !cur.paused ? "  ** which means it was STALLED, not playing **" : ""));
   /* D, answered without a button: it only applies if something is still broken here */
   if (ctx && (ctx.state !== "running" || cur.paused))
     log("   D APPLIES: still not running — press run D to see if resume() fixes it without a reload");
@@ -167,7 +198,7 @@ function markVisible(){
 }
 
 var ctx = null, srcNode = null, gain = null;
-var graphEl = null, plainEl = null, cur = null, handoff = false, ticker = null;
+var graphEl = null, plainEl = null, twinEl = null, cur = null, handoff = false, ticker = null, syncer = null;
 
 function mk(){ var a = new Audio(); a.src = SRC; a.loop = true; a.preload = "auto";
                a.setAttribute("playsinline",""); a.crossOrigin = "anonymous"; return a; }
@@ -175,19 +206,25 @@ function mk(){ var a = new Audio(); a.src = SRC; a.loop = true; a.preload = "aut
 function tick(){
   clearInterval(ticker);
   /* a timer keeps running where rAF does not, which is the whole point while hidden */
+  var was = null, still = 0;
   ticker = setInterval(function(){
     if (!cur) return;
-    log("tick t=" + cur.currentTime.toFixed(1) + " paused=" + cur.paused +
-        (ctx ? " ctx=" + ctx.state : "") + " vis=" + document.visibilityState);
+    var t = cur.currentTime;
+    if (was !== null && Math.abs(t - was) < 0.05 && !cur.paused) still++; else still = 0;
+    was = t;
+    log("tick " + which() + " t=" + t.toFixed(1) + " paused=" + cur.paused +
+        " ready=" + cur.readyState + (ctx ? " ctx=" + ctx.state : "") + " vis=" + document.visibilityState +
+        (still >= 2 ? "  ** STALLED: not paused but the clock is not moving **" : ""));
   }, 2000);
 }
 function stopAll(){
-  clearInterval(ticker); handoff = false;
-  [graphEl, plainEl].forEach(function(a){ if (a) try { a.pause(); } catch(e){} });
+  clearInterval(ticker); clearInterval(syncer); handoff = false;
+  [graphEl, plainEl, twinEl].forEach(function(a){ if (a) try { a.pause(); } catch(e){} });
   log("stopped");
 }
 
 function testA(){
+  TEST = "A";
   stopAll();
   plainEl = plainEl || mk(); cur = plainEl;
   plainEl.play().then(function(){ log("A playing"); }, function(e){ log("A play REJECTED " + e); });
@@ -223,6 +260,7 @@ function graphUp(){
 }
 
 function testB(){
+  TEST = "B";
   stopAll(); handoff = false;
   graphUp(); cur = graphEl;
   graphEl.play().then(function(){ log("B playing through the graph — lock the screen now"); },
@@ -231,13 +269,14 @@ function testB(){
 }
 
 function testC(){
+  TEST = "C";
   stopAll();
   graphUp(); cur = graphEl;
   if (!plainEl) plainEl = mk();
   /* unlock the second element inside this gesture, or iOS will refuse it later */
   plainEl.play().then(function(){ plainEl.pause(); plainEl.currentTime = 0; log("C plain element unlocked and parked"); },
                       function(e){ log("C could not unlock the plain element: " + e); });
-  graphEl.play().then(function(){ handoff = true;
+  graphEl.play().then(function(){ handoff = "swap";
       log("C playing through the graph, handoff armed — lock the screen now"); },
       function(e){ log("C play REJECTED " + e); });
   tick();
@@ -266,7 +305,71 @@ function swap(toPlain){
   } catch(e){ log("SWAP threw " + e); }
 }
 
+/* The control. If this dips at the lock as well then iOS dips at the lock, the
+   handoff is innocent, and the player Kalam listens to today already does it. */
+function testCtl(){
+  TEST = "CTL";
+  stopAll(); handoff = false;
+  if (ctx) log("CTL note: a graph already exists on this page load — reload before trusting this");
+  plainEl = plainEl || mk(); cur = plainEl;
+  try { plainEl.muted = false; plainEl.volume = 1; } catch(e){}
+  plainEl.play().then(function(){ log("CTL playing on a bare element, no graph — lock the screen now"); },
+                      function(e){ log("CTL play REJECTED " + e); });
+  tick();
+}
+
+/* C dipped at both handovers because it seeks a cold element and starts it, then
+   pauses the live one before the cold one is making sound — a gap by construction.
+   Here the twin plays the whole time, muted and kept in step, so the handover is a
+   mute toggle. iOS honours muted even where it ignores volume, which is what makes
+   this the version worth trying. */
+function testE(){
+  TEST = "E";
+  stopAll();
+  graphUp(); cur = graphEl;
+  if (!twinEl) twinEl = mk();
+  twinEl.muted = true;
+  var startTwin = twinEl.play();
+  if (startTwin) startTwin.then(function(){ log("E twin playing, muted, alongside"); },
+                                function(e){ log("E twin play REJECTED " + e); });
+  graphEl.play().then(function(){
+    handoff = "twin";
+    syncer = setInterval(function(){
+      if (!twinEl || twinEl.paused || document.visibilityState !== "visible") return;
+      var drift = twinEl.currentTime - graphEl.currentTime;
+      if (Math.abs(drift) > 0.05){ twinEl.currentTime = graphEl.currentTime; }   /* inaudible: it is muted */
+    }, 500);
+    log("E playing through the graph with a muted twin in step — lock the screen now");
+  }, function(e){ log("E play REJECTED " + e); });
+  tick();
+}
+
+function twinSwap(toHidden){
+  try {
+    if (toHidden){
+      var d = (twinEl.currentTime - graphEl.currentTime).toFixed(3);
+      twinEl.muted = false;                 /* already playing and in step: nothing to start */
+      cur = twinEl;
+      log("TWIN → audible, drift was " + d + "s (graph element left running)");
+    } else {
+      if (ctx && ctx.state !== "running") ctx.resume().then(function(){ log("ctx resumed → " + ctx.state); }, function(){});
+      var gap = twinEl.currentTime - graphEl.currentTime;
+      if (Math.abs(gap) > 0.1){
+        graphEl.currentTime = twinEl.currentTime;
+        log("TWIN → graph, had to seek it " + gap.toFixed(2) + "s (it did not run while locked)");
+      }
+      if (graphEl.paused) graphEl.play().catch(function(){});
+      /* mute the twin only once the graph side is actually making sound again */
+      var done = false, mute = function(){ if (done) return; done = true; twinEl.muted = true; cur = graphEl;
+                                           log("TWIN → muted, back on the graph"); };
+      graphEl.addEventListener("playing", mute, {once:true});
+      setTimeout(mute, 400);
+    }
+  } catch(e){ log("TWIN swap threw " + e); }
+}
+
 function testD(){
+  TEST = "D";
   if (!ctx){ log("D: run B first"); return; }
   log("D before: ctx=" + ctx.state + " paused=" + (graphEl ? graphEl.paused : "?"));
   ctx.resume().then(function(){

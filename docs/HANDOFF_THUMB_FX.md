@@ -59,7 +59,10 @@ Measured on Kalam's iPhone, by ear with the screen off:
 
 So the sentence at `index.html:1012` that took iPhones off the graph entirely is true only of the locked state, and the locked state is exactly when nobody is touching an effect. The shape that follows: **graph while `visibilityState` is visible, plain element while hidden.** Two elements per player instead of one, four in all, with a swap at every visibility change.
 
-Still open before this is built: whether there is an audible seam at the handover, and whether `el.volume` does anything on iOS (test A) — that decides only whether a track change *while hidden* can crossfade, and today it is a hard cut either way, so it is not a regression.
+- **A — `el.volume` does nothing on iOS.** Kalam's ear: no change across a 1 → 0.15 → 1 ramp. The 7 Sep comment was right, `rampVolume` is a no-op on the phone, and nothing on the plain side can fade. `muted` is a separate flag and does work, which is what the twin below leans on.
+- **C dips at both handovers.** It seeks a cold element and starts it, then pauses the live one before the cold one is making sound — a gap by construction. Test **E** replaces it: the second element plays the whole time, muted and kept in step, so the handover is a mute toggle with nothing to start. Test **CTL** is the control that has to run first — if a bare element dips at the lock too, the dip is iOS and the handoff is innocent.
+
+Not yet known: the first log came back with the media clock frozen at 18.0s for five minutes while the element reported not-paused — a stall, not playback — and the head that would have said which test it belonged to had scrolled off a 300-line cap. So no numbers from that run are usable. The probe now tags every line with the test and the element, says STALLED out loud, collapses repeats and keeps 2000 lines. One thing that run did show and nothing yet explains: the page went hidden and visible in pairs every ~6 seconds, unprompted, for four minutes. Worth handing to whoever has the restart bug.
 
 **Sequencing.** This is surgery on the playback core while the restart bug is still unexplained, and it adds a second way for playback to stop. The bug lands first.
 
