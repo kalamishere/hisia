@@ -1689,7 +1689,7 @@ btnPrompt.addEventListener("click", function(){
    landed. Kalam's design: four effects, one at each corner, each reaching 100% at
    its own corner and blending on the way between them.
 
-     N  highpass     W  synced echo     E  reverb wash     S  lowpass
+     N  highpass     W  echo into roll     E  reverb wash     S  lowpass
                           centre: dry
 
    The maths is the diamond itself. Clamp the offset to |x| + |y| <= 1 and each
@@ -1718,14 +1718,15 @@ btnPrompt.addEventListener("click", function(){
   var HOLD_MS = 180, SLOP = 12;            /* a hold has to stay still to count as one */
   var LP_OPEN = 22050, LP_SHUT = 220;      /* the lowpass stops well short of silence */
   var HP_OPEN = 20,    HP_SHUT = 1400;     /* so does the highpass */
-  var ECHO_MAX = 0.55, FB_MAX = 0.45;      /* feedback capped below self-oscillation */
+  var FB_MAX = 0.85, DUCK = 0.15;          /* feedback capped below self-oscillation */
+  var RATE_MIN = 0.62, RATE_MS = 180;      /* how far the tape slows, and the glide back */
   var REV_MAX = 0.60, REV_TAIL = 1.8;
   var GLIDE = 0.04;                        /* setTargetAtTime constant: ~120ms to settle */
   var QUIET_MS = 250;                      /* skip stays down this long after a release */
   var SPLIT = 0.50;
 
   /* ---- the graph. One filter pair in line, two sends off the end of it ---- */
-  var lp = null, hp = null, dly = null, fb = null, wet = null, rev = null, send = null, wired = false;
+  var lp = null, hp = null, dly = null, fb = null, wet = null, dry = null, rev = null, send = null, wired = false;
   function impulse(){
     /* a reverb you generate is a reverb you do not have to ship: noise, decaying */
     var n = Math.floor(ctx.sampleRate * REV_TAIL), buf = ctx.createBuffer(2, n, ctx.sampleRate);
@@ -1746,32 +1747,87 @@ btnPrompt.addEventListener("click", function(){
       dly = ctx.createDelay(2.0);
       fb = ctx.createGain(); fb.gain.value = 0;
       wet = ctx.createGain(); wet.gain.value = 0;
+      dry = ctx.createGain(); dry.gain.value = 1;
       rev = ctx.createConvolver(); rev.buffer = impulse();
       send = ctx.createGain(); send.gain.value = 0;
       master.disconnect();                                /* master only ever fed destination */
       master.connect(lp); lp.connect(hp);
-      hp.connect(ctx.destination);                        /* dry */
-      hp.connect(dly); dly.connect(fb); fb.connect(dly);  /* echo, feeding itself */
+      hp.connect(dry); dry.connect(ctx.destination);      /* dry, duckable */
+      hp.connect(dly); dly.connect(fb); fb.connect(dly);  /* the repeat, feeding itself */
       dly.connect(wet); wet.connect(ctx.destination);
       hp.connect(send); send.connect(rev); rev.connect(ctx.destination);
       wired = true;
-    } catch(e){ lp = hp = dly = fb = wet = rev = send = null; wired = false; }
+    } catch(e){ lp = hp = dly = fb = wet = dry = rev = send = null; wired = false; }
     return wired;
   }
-  /* the advantage no DJ app has by default: the grid of the track actually playing */
-  function echoTime(){
+  /* The west corner: echo on the way out, roll at the end of it.
+
+     Kalam sent a screenshot of the Curate controls (2026-09-17). Six knobs —
+     Volume, Low/High Pass, Time Stretch (pinch), Reverb (stretch), Roll (two
+     finger), Echo — so what he remembered as one glitch that "sounded like it was
+     slowing down and repeating" is two of them, Time Stretch and Roll, and Echo is
+     a separate control that does exist. Note this is the app, not the decks: the
+     research finding that the decks do not contain this design still stands, the
+     PDFs really are a sample browser.
+
+     Six knobs do not fit four corners. Low/High Pass is already one bipolar knob
+     and maps onto N/S exactly; Reverb takes E; Volume the player already has. That
+     leaves Echo and Roll wanting the same corner, so the corner travels through
+     one into the other: near the middle it is an echo behind the music, and pushed
+     to the corner it collapses into a roll — the slice shortens onto the grid, the
+     feedback winds up, the dry leg ducks away and the tape slows under it. Which
+     is the thing he described, with the echo kept rather than thrown away.
+
+     The slice snaps to the beat of the track actually playing, which is the
+     advantage a library with a BPM on every one of its tracks has and a DJ app
+     does not. The slowing is the element's own playbackRate, dropping speed and
+     pitch together the way tape does; it is not a Web Audio node, so it is the one
+     part of the diamond that also works on the PLAIN path — on an iPhone this
+     corner slows but does not repeat. */
+  function beat(){
     var bpm = current && current.readout && current.readout.bpm;
-    if (!bpm || bpm < 40 || bpm > 220) return 0.25;
-    return (60 / bpm) / 2;                                /* an eighth note */
+    return (!bpm || bpm < 40 || bpm > 220) ? 0.5 : 60 / bpm;
+  }
+  var ECHO_TO = 0.35;                                     /* echo below this, roll above it */
+  function echoAmt(w){ return Math.min(1, w / ECHO_TO); }
+  function rollAmt(w){ return Math.max(0, (w - ECHO_TO) / (1 - ECHO_TO)); }
+  function sliceTime(w){
+    var div = w < ECHO_TO ? 1 : w < 0.7 ? 0.5 : 0.25;     /* stepped, so it lands on the grid */
+    return Math.max(0.03, beat() * div);
+  }
+  /* playbackRate is a plain property, not an AudioParam, so the glide is driven here */
+  var rateTimer = null, rateEl = null;
+  function liveEl(){ var p = players && players[active]; return p && p.el; }
+  /* Restore the element that was actually slowed, not whichever is active now: a
+     track change mid-hold would otherwise park the old element at 0.62 and the next
+     track to reuse it would play slow. Belt and braces, every player is put back. */
+  function allBackToOne(){
+    (players || []).forEach(function(p){ if (p && p.el) try { p.el.playbackRate = 1; } catch(e){} });
+    rateEl = null;
+  }
+  function rate(to, glide){
+    if (to !== 1 && !rateEl) rateEl = liveEl();
+    var el = rateEl || liveEl(); if (!el) return;
+    clearInterval(rateTimer); rateTimer = null;
+    if (!glide){ try { el.playbackRate = to; } catch(e){} if (to === 1) allBackToOne(); return; }
+    var from = el.playbackRate || 1, t0 = Date.now();
+    rateTimer = setInterval(function(){
+      var k = Math.min(1, (Date.now() - t0) / RATE_MS);
+      try { el.playbackRate = from + (to - from) * k; } catch(e){}
+      if (k >= 1){ clearInterval(rateTimer); rateTimer = null; if (to === 1) allBackToOne(); }
+    }, 16);
   }
   function set(a, glide){
+    rate(1 - (1 - RATE_MIN) * rollAmt(a.w), glide);   /* the one part that works without a graph */
     if (!wire()) return;
     var t = ctx.currentTime, tc = glide ? GLIDE : 0.012;  /* always ramped, never stepped */
     hp.frequency.setTargetAtTime(HP_OPEN * Math.pow(HP_SHUT / HP_OPEN, a.n), t, tc);
     lp.frequency.setTargetAtTime(LP_OPEN * Math.pow(LP_SHUT / LP_OPEN, a.s), t, tc);
-    if (a.w > 0.001) dly.delayTime.setTargetAtTime(echoTime(), t, 0.05);
-    wet.gain.setTargetAtTime(ECHO_MAX * a.w, t, tc);
-    fb.gain.setTargetAtTime(FB_MAX * a.w, t, tc);
+    var ec = echoAmt(a.w), ro = rollAmt(a.w);
+    if (a.w > 0.001) dly.delayTime.setTargetAtTime(sliceTime(a.w), t, 0.02);
+    wet.gain.setTargetAtTime(0.5 * ec + 0.5 * ro, t, tc);
+    fb.gain.setTargetAtTime(0.40 * ec + (FB_MAX - 0.40) * ro, t, tc);
+    dry.gain.setTargetAtTime(1 - (1 - DUCK) * ro, t, tc);    /* only the roll ducks, and never kills */
     /* the tail is allowed to decay on release rather than being cut off */
     send.gain.setTargetAtTime(REV_MAX * a.e, t, glide ? GLIDE * 3 : tc);
   }
@@ -1782,7 +1838,7 @@ btnPrompt.addEventListener("click", function(){
   box.id = "fx"; box.setAttribute("aria-hidden", "true");
   box.innerHTML = "<u></u><b></b><s></s>" +
                   "<em data-k='n'>highpass</em><em data-k='s'>lowpass</em>" +
-                  "<em data-k='w'>echo</em><em data-k='e'>reverb</em>";
+                  "<em data-k='w'>echo · roll</em><em data-k='e'>reverb</em>";
   document.getElementById("stage").appendChild(box);
   var ring = box.querySelector("u"), dot = box.querySelector("b"), read = box.querySelector("s");
   var tags = {}; [].forEach.call(box.querySelectorAll("em"), function(el){ tags[el.getAttribute("data-k")] = el; });
@@ -1791,6 +1847,14 @@ btnPrompt.addEventListener("click", function(){
 
   /* skip asks this before acting on a touchend */
   window.__fxBusy = function(){ return engaged || Date.now() < quiet; };
+  /* what the diamond is doing right now, for checking on a phone where there is no
+     console: the stutter leaves the element's playbackRate off 1 while it is held,
+     and a track left playing slow would be a real bug, so it has to be readable */
+  window.__fxState = function(){
+    var el = liveEl();
+    return {engaged: engaged, wired: wired, rate: el ? el.playbackRate : null,
+            zone: q.get("zone") || "sky", plain: PLAIN};
+  };
 
   /* Where the hold is allowed to start. Undecided on purpose, and switchable with
      &zone= until a finger settles it:
@@ -1827,9 +1891,12 @@ btnPrompt.addEventListener("click", function(){
     return {n: Math.max(0, ny), s: Math.max(0, -ny), e: Math.max(0, nx), w: Math.max(0, -nx)};
   }
   function label(a){
-    if (PLAIN) return "no audio graph on this device — the shape still works";
+    if (PLAIN) return rollAmt(a.w) > 0.02
+      ? "roll " + Math.round(rollAmt(a.w) * 100) + "% — only the slowing works on this device"
+      : "no audio graph on this device — the shape still works";
     if (!wired) return "start a track first";
-    var top = [["highpass", a.n], ["lowpass", a.s], ["echo", a.w], ["reverb", a.e]]
+    var west = rollAmt(a.w) > 0.02 ? ["roll", rollAmt(a.w)] : ["echo", echoAmt(a.w) * (a.w > 0 ? 1 : 0)];
+    var top = [["highpass", a.n], ["lowpass", a.s], west, ["reverb", a.e]]
       .filter(function(r){ return r[1] > 0.02; })
       .sort(function(p, r){ return r[1] - p[1]; })
       .map(function(r){ return r[0] + " " + Math.round(r[1] * 100) + "%"; });
