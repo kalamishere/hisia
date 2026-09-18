@@ -734,7 +734,10 @@ var COORDS = {KE:[-1.29,36.82],AE:[25.20,55.27],TZ:[-6.79,39.28],NG:[6.52,3.38],
   ZW:[-17.83,31.05],CM:[4.05,9.70],JM:[18.00,-76.79],DO:[18.49,-69.93],
   GR:[37.98,23.73],RO:[44.43,26.10],UA:[50.45,30.52],RS:[44.79,20.46],IE:[53.35,-6.26],
   DK:[55.68,12.57],FI:[60.17,24.94],IS:[64.15,-21.94],CZ:[50.08,14.44],
-  CL:[-33.45,-70.67],PE:[-12.05,-77.04],CA:[43.65,-79.38]};
+  CL:[-33.45,-70.67],PE:[-12.05,-77.04],CA:[43.65,-79.38],
+  /* second cities, 18 Sep: all three share Asia/Kolkata with Mumbai, so the
+     clock cannot tell them apart - only these longitudes can. */
+  INMAA:[13.08,80.27],INIXC:[30.73,76.78],INHYD:[17.39,78.49]};
 var RAD = Math.PI/180, J1970 = 2440588, J2000 = 2451545, OBL = RAD*23.4397;
 function toDays(d){ return d.valueOf()/86400000 - 0.5 + J1970 - J2000; }
 function fromJulian(j){ return new Date((j + 0.5 - J1970) * 86400000); }
@@ -1729,7 +1732,7 @@ loadLibrary().then(function(data){
 <noscript>
 <div id="noscript-index">
 <h2>World Sound — a 24/7 radio of AI-generated mirrors of the world's charts</h2>
-<p>340 tracks across 54 cities. Every track is generated with Stable Audio Open Small (SA3 medium) from a prompt derived from that city's chart week — its measured tempo, key, instrumentation, mood and genre label. No recording is ever an input, and no track is a cover, a soundalike or a real song: the artist and title on every card are invented. This page needs JavaScript to play; the text below is what it plays.</p>
+<p>368 tracks across 61 cities. Every track is generated with Stable Audio Open Small (SA3 medium) from a prompt derived from that city's chart week — its measured tempo, key, instrumentation, mood and genre label. No recording is ever an input, and no track is a cover, a soundalike or a real song: the artist and title on every card are invented. This page needs JavaScript to play; the text below is what it plays.</p>
 <p>Chart weeks in this set: 24 Aug 2026, 31 Aug 2026, 7 Sep 2026.</p>
 <section><h2>Abidjan, Cote d&#x27;Ivoire</h2>
 <p>Afrobeats / Rap / Hip Hop · 140 BPM · minor key · bass, drums, percussion · happy, energetic, love</p>
@@ -1828,6 +1831,15 @@ loadLibrary().then(function(data){
 <li>“Tarde en Azul” by Teusaquillo Lamplight (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6-plain</li>
 <li>“Luz de Barrio” by Teusaquillo Circuit (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6-plain</li>
 </ul></section>
+<section><h2>Bucharest, Romania</h2>
+<p>Worldwide / Europe / Pop / Afro-Pop · 133 BPM · minor key · synthesizer, bass, drums · love, happy, energetic</p>
+<p>The prompt these were generated from: <q>Romanian europop chart instrumental, with a worldwide dance-pop current, 133 BPM, minor key, four-on-the-floor programmed kit, bouncy synth bassline, bright synth stabs, light accordion-adjacent lead line, glossy uptempo europop lift, radio-bright mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic</q></p>
+<ul>
+<li>“Lumina din Strada” by Calea Victoriei Sessions (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #1 · v6-measured</li>
+<li>“Dans in Miezul Noptii” by Obor Rooftop Crew (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #2 · v6-measured</li>
+<li>“Inima din Strada” by Calea Victoriei Union (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #3 · v6-measured</li>
+<li>“Dans in Albastru” by Calea Victoriei Circuit (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #4 · v6-measured</li>
+</ul></section>
 <section><h2>Buenos Aires, Argentina</h2>
 <p>Latin Music / Urbano latino / Música tropical · 76 BPM · minor key · drums, bass, synthesizer · love, energetic, happy</p>
 <p>The prompt these were generated from: <q>Argentine urban pop instrumental, 76 BPM, minor key, reggaeton dembow drums, round sub bass, plucked synth melody, soft pad chords, light guitar, mid-tempo urbano sway, warm club mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful</q></p>
@@ -1862,6 +1874,24 @@ loadLibrary().then(function(data){
 <li>“Sif fi Bhar” by Anfa Layl Lamplight (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6</li>
 <li>“Sif fi Nos Lil” by Medina Qadima Collective (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6</li>
 <li>“Sif fi Bhar” by Medina Qadima Sound (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #5 · v6</li>
+</ul></section>
+<section><h2>Chandigarh, India</h2>
+<p>Punjabi / Bollywood · 123 BPM · major key · synthesizer, bass, drums · happy, energetic, funny</p>
+<p>The prompt these were generated from: <q>Punjabi urban-pop instrumental, 123 BPM, major key, dhol and tumbi accents over hard trap drums, deep sliding 808 bass, plucked synth riff, wide brass-like stabs, harmonium and string swells on the turnarounds, confident mid-tempo bounce, loud club-ready mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, joyful, energetic and playful</q></p>
+<ul>
+<li>“Raat Di Gedha” by Panchkula Bounce Lamplight (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #1 · v6-measured</li>
+<li>“Raat Di Nakhra” by Panchkula Bounce Skyline (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #2 · v6-measured</li>
+<li>“Sadke Yaari” by Elante Nights Choir (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #3 · v6-measured</li>
+<li>“Chann Ve Gedha” by Panchkula Bounce Sessions (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #4 · v6-measured</li>
+</ul></section>
+<section><h2>Chennai, India</h2>
+<p>Tamil / Telugu / Pop · 136 BPM · minor key · synthesizer, bass, drums · energetic, love, happy</p>
+<p>The prompt these were generated from: <q>Tamil film-pop instrumental, 136 BPM, minor key, thavil and parai hand-drum kuthu groove under a programmed kit, nadaswaram and bamboo flute lead lines, deep 808 sub bass, staccato string ostinato, bright synth brass stabs, driving gaana-kuthu swing, loud punchy cinematic mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, romantic and joyful</q></p>
+<ul>
+<li>“Nila Oru Marina” by Egmore Junction Trio (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #2 · v6-measured</li>
+<li>“Kaatru Nenjam” by Triplicane Kuthu Radio (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #3 · v6-measured</li>
+<li>“Ponnu Kanaa” by Mylapore Thavil Union (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #4 · v6-measured</li>
+<li>“Mazhai Neram Kanaa” by T Nagar Neon Institute (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #1 · v6-measured</li>
 </ul></section>
 <section><h2>Copenhagen, Denmark</h2>
 <p>Alternative · 75 BPM · minor key · bass, synthesizer, drums · energetic, happy, love</p>
@@ -1977,6 +2007,15 @@ loadLibrary().then(function(data){
 <li>“Ha Tin Hai Gaai Fong” by Tai Hang Radio (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6</li>
 <li>“Ha Tin Hai Hoi Bin” by Mong Kok Yeh Society (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #5 · v6</li>
 </ul></section>
+<section><h2>Hyderabad, India</h2>
+<p>Telugu · 91 BPM · minor key · drums, synthesizer, bass · energetic, film, happy</p>
+<p>The prompt these were generated from: <q>Telugu folk-pop instrumental, 91 BPM, minor key, dappu frame-drum and teenmaar percussion, tapping shakers, harmonium drone, shehnai and bamboo flute lead lines, round synth bass, bright string stabs, fast teenmaar swing, open-air procession energy, a prominent kit, synth-led textures and bass well forward carrying the arrangement, energetic, cinematic and joyful</q></p>
+<ul>
+<li>“Gattu Meeda Bathukamma” by Jubilee Hills Cassette (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #1 · v6-measured</li>
+<li>“Palle Gopuram” by Begumpet Shehnai Lamplight (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #3 · v6-measured</li>
+<li>“Palle Jatara” by Jubilee Hills Radio (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #4 · v6-measured</li>
+<li>“Cheruvu Gopuram” by Banjara Nights Trio (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #5 · v6-measured</li>
+</ul></section>
 <section><h2>Istanbul, Turkey</h2>
 <p>Turkish Hip-Hop / Rap / Pop · 115 BPM · minor key · bass, synthesizer, drums · love, energetic, happy</p>
 <p>The prompt these were generated from: <q>Turkish pop instrumental, arabesque-tinged with a hip-hop backbone, 115 BPM, minor key, trap-programmed drums, deep 808 bass, ornamented saz and violin melody line, dark synth pads, hand percussion accents, moody urban-pop groove, glossy modern mix, bass well forward, synth-led textures and a prominent kit carrying the arrangement, romantic, energetic and joyful</q></p>
@@ -2055,6 +2094,15 @@ loadLibrary().then(function(data){
 <li>“Slow Motion Sunrise” by Ikoyi Lamplight Skyline (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #3 · v6-plain</li>
 <li>“Slow Motion Sunrise” by Bariga Palmwine Band (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #4 · v6-plain</li>
 <li>“Lagos Harmattan” by Yaba Sunrise Collective (invented name, AI-generated) · mirroring the chart of 31 Aug 2026 · after #2 · v6-plain</li>
+</ul></section>
+<section><h2>Lima, Peru</h2>
+<p>Música tropical / Latin Music / Urbano latino · 119 BPM · minor key · synthesizer, drums, percussion · happy, energetic, love</p>
+<p>The prompt these were generated from: <q>Peruvian tropical chart instrumental, cumbia-rooted with an urbano-latino current, 119 BPM, minor key, bright cumbia guitar riff, rolling bass, cumbia-shuffle percussion, light synth stabs, sunny mid-tempo tropical-dance groove, synth-led textures, a prominent kit and layered hand percussion carrying the arrangement, joyful, energetic and romantic</q></p>
+<ul>
+<li>“Noche en Barrio” by Miraflores Malecon Band (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #1 · v6-measured</li>
+<li>“Luz de Azul” by Surquillo Collective (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #3 · v6-measured</li>
+<li>“Verano en Lima” by Barranco Noche Choir (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #4 · v6-measured</li>
+<li>“Calle Malecon” by Magdalena Band (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #2 · v6-measured</li>
 </ul></section>
 <section><h2>Lisbon, Portugal</h2>
 <p>Pop / Afro-Pop · 129 BPM · minor key · drums, bass, synthesizer · happy, love, upbeat</p>
@@ -2236,6 +2284,15 @@ loadLibrary().then(function(data){
 <li>“Shari Al Muntasaf” by Al Faisaliah Sessions (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #5</li>
 <li>“Sayf fi Shams” by Al Murabba Set (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #1</li>
 </ul></section>
+<section><h2>Santiago, Chile</h2>
+<p>Urbano latino / Latin Music / Música tropical · 99 BPM · minor key · synthesizer, bass, drums · love, energetic, deep</p>
+<p>The prompt these were generated from: <q>Chilean urbano latino chart instrumental, with a balada-romantica current, 99 BPM, minor key, reggaeton-leaning dembow-adjacent drum pattern, deep sub bass, bright synth stabs, warm piano accents, glossy mid-tempo urbano groove, cinematic ballad lift on the hook, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, energetic and deep</q></p>
+<ul>
+<li>“Noche en Azul” by Providencia Band (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #2 · v6-measured</li>
+<li>“Verano en Azul” by Bellas Artes Radio (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #4 · v6-measured</li>
+<li>“Corazon de Medianoche” by Barrio Italia Set (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #5 · v6-measured</li>
+<li>“Calle Cordillera” by Barrio Italia Choir (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #1 · v6-measured</li>
+</ul></section>
 <section><h2>Santo Domingo, Dominican Republic</h2>
 <p>Underground Rap / Música tropical / Urbano latino · 129 BPM · minor key · synthesizer, bass, drums · energetic, happy, love</p>
 <p>The prompt these were generated from: <q>Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 129 BPM, minor key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic</q></p>
@@ -2331,6 +2388,15 @@ loadLibrary().then(function(data){
 <li>“Kimi to Hoshi” by Kichijoji Collective (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #2</li>
 <li>“Hikari ga Yume” by Sumida Gawa Sessions (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #3</li>
 <li>“Kaze no Hoshi” by Yanaka Yūgure Radio (invented name, AI-generated) · mirroring the chart of 24 Aug 2026 · after #4</li>
+</ul></section>
+<section><h2>Toronto, Canada</h2>
+<p>115 BPM · minor key · drums, synthesizer, bass · energetic, happy, love</p>
+<p>The prompt these were generated from: <q>Global chart-pop instrumental, K-pop-adjacent, for a Toronto own-hits chart with no distinct Canadian scene, 115 BPM, minor key, crisp programmed kit, deep synth bass, bright synth hooks, layered vocal-chop textures, glossy uptempo global-pop lift, radio-bright mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, energetic, joyful and romantic</q></p>
+<ul>
+<li>“Down the Midnight” by Distillery District Set (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #1 · v6-measured</li>
+<li>“Dancing on the 6” by Leslieville Lamplight (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #2 · v6-measured</li>
+<li>“Heart of Sunrise” by Kensington Night Radio (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #3 · v6-measured</li>
+<li>“Down the the 6” by Cabbagetown Skyline (invented name, AI-generated) · mirroring the chart of 7 Sep 2026 · after #4 · v6-measured</li>
 </ul></section>
 <section><h2>Warsaw, Poland</h2>
 <p>Pop / Electronic / Hip-Hop / Rap · 111 BPM · minor key · synthesizer, bass, drums · energetic, melodic, happy</p>
