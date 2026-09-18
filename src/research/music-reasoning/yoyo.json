@@ -1,0 +1,127 @@
+{
+ "track": "/Users/kalam/Downloads/Joshua Baraka - YoYo MAIN.mp3",
+ "features": {
+  "bpm": 117.5,
+  "key": "E",
+  "mode": "major",
+  "rms_db": -11.2,
+  "centroid_hz": 2538,
+  "duration_s": 200.7
+ },
+ "library_neighbours": [
+  {
+   "id": "ET-01",
+   "cos": 0.778,
+   "region": "ET",
+   "family": "reggae",
+   "prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 88 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, bass well forward and layered hand percussion carrying the arrangement, romantic, joyful and melodic"
+  },
+  {
+   "id": "CM-02",
+   "cos": 0.712,
+   "region": "CM",
+   "family": "afro",
+   "prompt": "Cameroonian chart instrumental, Afrobeats crossed with R&B/soul warmth, 101 BPM, major key, warm afrobeats percussion, soulful rounded bass, smooth electric guitar and keys, soft synth pads, mid-tempo soulful groove, glossy modern mix, bass well forward, synth-led textures and a prominent kit carrying the arrangement, romantic, energetic and joyful"
+  },
+  {
+   "id": "MY-01",
+   "cos": 0.705,
+   "region": "MY",
+   "family": "pop",
+   "prompt": "Malay-language chart pop instrumental, with a dangdut-adjacent groove and a Western pop crossover, 129 BPM, major key, warm rounded bass, gently swung kick-and-snare, plucked acoustic guitar, soft keys, light hand percussion, easy mid-tempo sway, clean radio mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, energetic and romantic"
+  },
+  {
+   "id": "KE-02",
+   "cos": 0.692,
+   "region": "KE",
+   "family": "afro",
+   "prompt": "East African afro-pop instrumental, 98 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, sunny and romantic"
+  },
+  {
+   "id": "ES-02",
+   "cos": 0.69,
+   "region": "ES",
+   "family": "latin",
+   "prompt": "Spanish-language urbano latino chart instrumental, reggaeton-rooted with a Latin pop crossover current, 111 BPM, minor key, dembow reggaeton drum pattern, deep sub bass, plucked nylon-guitar and synth melody, bright percussion accents, warm dancefloor groove, glossy modern mix, a prominent kit, synth-led textures and layered hand percussion carrying the arrangement, joyful, romantic and sunny"
+  },
+  {
+   "id": "KE-06",
+   "cos": 0.685,
+   "region": "KE",
+   "family": "afro",
+   "prompt": "East African afro-pop instrumental, 94 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful"
+  }
+ ],
+ "real_neighbours": [
+  {
+   "key": "ZW-04",
+   "cos": 0.835,
+   "region": "ZW",
+   "artist": "Shinsoman, Kae Chaps",
+   "title": "Always in My Mind",
+   "genre": "African Dancehall",
+   "family": "afro"
+  },
+  {
+   "key": "TZ-01",
+   "cos": 0.833,
+   "region": "TZ",
+   "artist": "Harmonize, Jay melody",
+   "title": "Imeshindikana",
+   "genre": "Afrobeats",
+   "family": "afro"
+  },
+  {
+   "key": "TZ-03",
+   "cos": 0.832,
+   "region": "TZ",
+   "artist": "Harmonize, Marioo",
+   "title": "Tangazo",
+   "genre": "Afrobeats",
+   "family": "afro"
+  },
+  {
+   "key": "KE-04",
+   "cos": 0.829,
+   "region": "KE",
+   "artist": "Mbosso",
+   "title": "Ozalima",
+   "genre": "Afro-Pop",
+   "family": "afro"
+  },
+  {
+   "key": "UG-01",
+   "cos": 0.826,
+   "region": "UG",
+   "artist": "King Saha",
+   "title": "WEWE",
+   "genre": "Afro-Beat",
+   "family": "afro"
+  },
+  {
+   "key": "ZW-03",
+   "cos": 0.813,
+   "region": "ZW",
+   "artist": "Nisha Ts",
+   "title": "Shasha (feat. Holy Ten)",
+   "genre": "Afro-Pop",
+   "family": "afro"
+  }
+ ],
+ "vote_family_library": [
+  "afro",
+  0.49
+ ],
+ "vote_family_real": [
+  "afro",
+  1.0
+ ],
+ "vote_region_real": [
+  "TZ",
+  0.34
+ ],
+ "vote_region_library": [
+  "KE",
+  0.32
+ ]
+}

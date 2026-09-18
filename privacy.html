@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · hisia.live</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 3rem 1.25rem 6rem; max-width: 40rem;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1rem; margin: 2.25rem 0 .5rem; }
+  .date { opacity: .6; margin: 0 0 2rem; font-size: .9rem; }
+  a { color: inherit; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Privacy</h1>
+<p class="date">hisia.live and the “hisia stream” application · last updated 18 September 2026</p>
+
+<p>hisia.live is a personal project run by one person. It collects nothing about you,
+has no accounts, and has no users other than its operator.</p>
+
+<h2>The website</h2>
+<p>The page is static and hosted on GitHub Pages. It sets no cookies, runs no analytics
+and loads nothing from advertising or tracking services. It fetches only its own files
+from this domain.</p>
+<p>It does keep a few things in your own browser's storage, and none of them are ever
+transmitted: a display preference, the state of the player between page loads, and a
+small local diagnostic record — when a listening session started and ended, how long it
+lasted, how many tracks played, whether audio was still playing, and your browser's
+user-agent string. That record exists so the operator can debug playback on his own
+device; it is only ever displayed on the device that made it, by opening the page with
+<code>?diag=1</code>. Clearing your browser data removes all of it. As with any
+website, the host (GitHub) processes ordinary request information such as IP addresses
+in order to serve the page.</p>
+
+<h2>The “hisia stream” application</h2>
+<p>“hisia stream” is private tooling that broadcasts this radio to its own YouTube
+channel and to Twitch. It is not offered to anyone else and has no sign-in.</p>
+<p>Both platforms receive one thing: the broadcast itself — the same audio and the same
+page you can see here, encoded and sent as video. Nothing about you is included in it.
+If you watch on YouTube or Twitch rather than here, that platform's own privacy policy
+governs what it collects from you, and this project neither receives nor asks for any
+of it. The Twitch side uses a stream key only, with no access to any account data.</p>
+<p>It uses the YouTube Data API, with the
+<code>youtube.force-ssl</code> permission, for one purpose: to create, bind, start and
+end the operator's own live broadcasts on the operator's own channel. It does not read
+viewers' data, comments, subscriptions or analytics, and it touches no channel but its
+own.</p>
+<p>The only credential it holds is an OAuth refresh token for that channel, stored on
+the operator's own server and used solely for the calls described above. It is not
+shared with anyone, is never sent anywhere except to Google, and can be revoked by the
+operator at any time at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+which ends the application's access immediately.</p>
+<p>Use of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Sharing</h2>
+<p>Nothing is sold, shared or passed to third parties. The only services involved are
+GitHub, which hosts the page, and Google/YouTube and Twitch, which carry the broadcast.</p>
+
+<h2>Contact</h2>
+<p>Questions about any of this can be sent through the stream chat.</p>
+
+<footer><a href="/">← hisia.live</a></footer>
+
+</body>
+</html>

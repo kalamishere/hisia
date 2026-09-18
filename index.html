@@ -34,9 +34,26 @@
  "areaServed":"Worldwide",
  "broadcastAffiliateOf":{"@type":"Organization","name":"Decimal Points"}}
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- Fonts are served from this site, not from Google. 18 Sep: the privacy page
+     says the site fetches only its own files, and with the Google Fonts links here
+     that was false - every visit sent an IP and user-agent to Google before a glyph
+     rendered. Inter is variable (100-900), so 300/400/500 are real weights, not
+     synthesised. The unicode-range split is Google's own, so a visitor still
+     downloads only the subset they need. Files in fonts/, shipped by publish.sh. -->
+<style>
+@font-face{font-family:"Inter";src:url("fonts/inter-latin.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Inter";src:url("fonts/inter-latin-ext.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:"Instrument Serif";src:url("fonts/instrument-serif-400-latin.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Instrument Serif";src:url("fonts/instrument-serif-400-latin-ext.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:"Instrument Serif";src:url("fonts/instrument-serif-400-italic-latin.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap;
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Instrument Serif";src:url("fonts/instrument-serif-400-italic-latin-ext.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap;
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+</style>
 <style>
 :root{
   --display:"Instrument Serif", Georgia, "Times New Roman", serif;
@@ -393,6 +410,7 @@ footer{
   position:absolute;left:var(--pad);bottom:calc(var(--pad) * .2);z-index:2;
   font-size:clamp(10px,.72vw,13px);letter-spacing:.16em;color:rgba(255,255,255,.38);
 }
+footer.yield{opacity:0;pointer-events:none}   /* the card needed the room; see fitFooter() */
 footer a{color:rgba(255,255,255,.6);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
 footer a:hover{color:#fff}
 
@@ -1281,6 +1299,10 @@ function paint(){
         album: r.city + " · " + localClock(r.tz) + " · World Sound" });
     } catch(e){}
   }
+  /* every card is a different length, so the fit has to be rechecked per track,
+     not only on resize (Kalam, 18 Sep: "noticed cramping at bottom"). */
+  if (typeof fitStrip === "function") fitStrip();
+  if (typeof fitFooter === "function") fitFooter();
 }
 if ("mediaSession" in navigator){
   try {
@@ -1335,7 +1357,29 @@ function fitStrip(){
   var s = strip.getBoundingClientRect(), c = card.getBoundingClientRect();
   strip.style.top = Math.max(0, c.top - s.height - 10) + "px";
 }
-window.addEventListener("resize", fitStrip);
+
+/* The card hangs from the horizon and grows DOWNWARD, and nothing stopped it
+   reaching the footer. A long genre line ("mostly K-pop and other global chart
+   hits, tender and romantic" wraps to two lines) pushed the provenance line
+   under the footer and the two overprinted (Kalam, 18 Sep: "noticed cramping at
+   bottom"). fitStrip solves the same collision at the top by tightening the card
+   before moving anything; this does the mirror of it at the bottom, reusing the
+   same tight1/tight2 steps so a card never has two different type sizes for the
+   two reasons. If it still does not fit, the footer yields - it is the least
+   important line on the page, and losing it beats overprinting the track's own
+   provenance. */
+function fitFooter(){
+  var card = document.getElementById("card"), foot = document.querySelector("footer");
+  if (!card || !foot) return;
+  foot.classList.remove("yield");
+  if (getComputedStyle(foot).display === "none") return;
+  var clear = function(){ return card.getBoundingClientRect().bottom <= foot.getBoundingClientRect().top - 6; };
+  if (clear()) return;
+  card.classList.add("tight1"); if (clear()) return;
+  card.classList.remove("tight1"); card.classList.add("tight2"); if (clear()) return;
+  foot.classList.add("yield");
+}
+window.addEventListener("resize", function(){ fitStrip(); fitFooter(); });
 setInterval(function(){ if (current) paint(); }, 60000); /* sun, moon and clock keep moving between tracks */
 /* copy the prompt: listeners take it to Suno, Stable Audio, ACE-Step or anything else that takes words */
 (function(){
@@ -1555,7 +1599,7 @@ btnPrompt.addEventListener("click", function(){
   var open = !elPromptBox.hidden;
   elPromptBox.hidden = open;
   btnPrompt.textContent = open ? "show prompt" : "hide prompt";
-  fitStrip();
+  fitStrip(); fitFooter();
 });
 /* a thumb swipe to the left is next; a scroll inside the prompt box is not a swipe */
 (function(){
@@ -1649,14 +1693,14 @@ loadLibrary().then(function(data){
   if (Q0.get("prompt") === "1" || (IS_EMBED && ROOMY)){
     elPromptBox.hidden = false;
     btnPrompt.textContent = "hide prompt";
-    fitStrip();   /* the card makes room for the prompt when it is open */
+    fitStrip(); fitFooter();   /* the card makes room for the prompt when it is open */
   }
   if (IS_STREAM || PUPPET){
     document.getElementById("start").classList.add("gone");
     document.getElementById("controls").hidden = true;
     elPromptBox.hidden = false; /* the stream always shows how the track was made */
     document.body.classList.add("stream");
-    fitStrip();
+    fitStrip(); fitFooter();
   }
   if (PUPPET){
     current = null;

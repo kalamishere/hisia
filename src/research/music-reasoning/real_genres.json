@@ -1,0 +1,5989 @@
+{
+ "KE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "KE-02": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Kapitani",
+  "matched_title": "Kitemeo",
+  "query": "Kapitani Kitemeo"
+ },
+ "KE-03": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Sabi Wu, djprodluigi & Thirtyfourbrick",
+  "matched_title": "Nisho (feat. Mauru Gwash)",
+  "query": "Hongo Ya Karao (Vol. 2) (feat. Mauru Gwash & Kapitani)"
+ },
+ "KE-04": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Mbosso",
+  "matched_title": "Ozalima",
+  "query": "Mbosso Ozalima"
+ },
+ "KE-05": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Bien & Alikiba",
+  "matched_title": "Finale",
+  "query": "Bien, Alikiba Finale"
+ },
+ "AE-01": {
+  "label": "Indie Pop",
+  "source": "itunes",
+  "matched_artist": "Jibon Krishna Das & Anonya Das",
+  "matched_title": "Kalyani (Remix Version)",
+  "query": "KALYANI (Remix)"
+ },
+ "AE-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "AE-03": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE",
+  "matched_title": "Garee2a Awy - A COLORS SHOW",
+  "query": "TUL8TE Garee2a Awy (Live)"
+ },
+ "AE-04": {
+  "label": "Soundtrack",
+  "source": "itunes",
+  "matched_artist": "Jakes Bejoy, Sid Sriram, Mohammed Maqbool Mansoor & Muthu",
+  "matched_title": "Asalayavale (From \"Khalifa\")",
+  "query": "Jakes Bejoy, Sid Sriram, Mohammed Maqbool Mansoor, Muthu Asalayavale "
+ },
+ "AE-05": {
+  "label": "Tamil",
+  "source": "itunes",
+  "matched_artist": "Sai Abhyankkar, Nargis Teji, Asma Teji & Vivek",
+  "matched_title": "Radhimaa (feat. Sai Smriti) [From \"Think Indie\"]",
+  "query": "Sai Abhyankkar, Nargis Teji, Asma Teji, Vivek, Sai Smriti Radhimaa"
+ },
+ "TZ-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Harmonize & Jay Melody",
+  "matched_title": "Imeshindikana",
+  "query": "Harmonize, Jay melody Imeshindikana"
+ },
+ "TZ-02": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Harmonize & Rayvanny",
+  "matched_title": "Siwezi",
+  "query": "Harmonize Siwezi (feat. Rayvanny)"
+ },
+ "TZ-03": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Harmonize & Marioo",
+  "matched_title": "Tangazo",
+  "query": "Harmonize, Marioo Tangazo"
+ },
+ "TZ-04": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Mbosso, Nandy & S2Kizzy",
+  "matched_title": "Malaika",
+  "query": "Nandy Malaika"
+ },
+ "TZ-05": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Ibraah",
+  "matched_title": "Uhakika (feat. Zuchu) [Remix]",
+  "query": "Ibraah Uhakika"
+ },
+ "NG-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Davido, FOLA & Mayorkun",
+  "matched_title": "B4 B4",
+  "query": "Davido, Mayorkun, FOLA B4 B4"
+ },
+ "NG-02": {
+  "label": "African",
+  "source": "itunes",
+  "matched_artist": "Asake",
+  "matched_title": "Gratitude (Live in London)",
+  "query": "Asake Gratitude (Live in London)"
+ },
+ "NG-03": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Asake",
+  "matched_title": "Nzaza",
+  "query": "Asake Forgiveness"
+ },
+ "NG-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "NG-05": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Ayra Starr",
+  "matched_title": "Heaven Baby (feat. ZAYN)",
+  "query": "Ayra Starr Heaven Baby (feat. ZAYN)"
+ },
+ "GH-01": {
+  "label": "Electronic",
+  "source": "itunes",
+  "matched_artist": "Shura",
+  "matched_title": "(II)",
+  "query": "Dont Come Too Close II"
+ },
+ "GH-02": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "L'Oiseau Rare & Emma'a",
+  "matched_title": "YANGO",
+  "query": "L'Oiseau Rare YANGO (feat. Emma'a)"
+ },
+ "GH-03": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Amerado",
+  "matched_title": "Sika Mframa",
+  "query": "Amerado Sika Mframa"
+ },
+ "GH-04": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Fameye",
+  "matched_title": "Gen Z",
+  "query": "Fameye Gen Z"
+ },
+ "GH-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Kweku Smoke & Lasmid",
+  "matched_title": "Faith",
+  "query": "Kweku Smoke, Lasmid Faith"
+ },
+ "UG-01": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "King Saha",
+  "matched_title": "Wewe",
+  "query": "King Saha WEWE"
+ },
+ "UG-02": {
+  "label": "Afro-fusion",
+  "source": "itunes",
+  "matched_artist": "Lutty Neika",
+  "matched_title": "Anaconda (feat. Bravion Emcee)",
+  "query": "Lutty Neika Anaconda (feat. Bravion Emcee )"
+ },
+ "UG-03": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Kalifah Aganaga",
+  "matched_title": "Nassanga (feat. Eddy Kenzo & Winnie Nwagi & LIL PAZO LUNABE MUSIC & Weasel) [Remix]",
+  "query": "Kalifah Aganaga Nassanga (Remix) (feat. Eddy Kenzo, Winnie Nwagi, LIL PAZO LUNABE MUSIC & Weasel)"
+ },
+ "UG-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "UG-05": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Joshua Baraka",
+  "matched_title": "YoYo",
+  "query": "Joshua Baraka YoYo"
+ },
+ "ZA-01": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Tman Xpress & Mellow & Sleazy",
+  "matched_title": "Remember",
+  "query": "Tman Xpress, Mellow & Sleazy Remember"
+ },
+ "ZA-02": {
+  "label": "Amapiano",
+  "source": "itunes",
+  "matched_artist": "Thatohatsi & Sjava",
+  "matched_title": "Ama hem hem (feat. ShaunMusiq)",
+  "query": "Thatohatsi, Sjava Ama hem hem (feat. Shaunmusiq)"
+ },
+ "ZA-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "ZA-04": {
+  "label": "Maskandi",
+  "source": "itunes",
+  "matched_artist": "Zulu Queens, Lwah Ndlunkulu, MaWhoo & Feza",
+  "matched_title": "Distance",
+  "query": "Zulu Queens, Lwah Ndlunkulu, MaWhoo, FEZA Distance"
+ },
+ "ZA-05": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Trechyson Molly vx, DJ Promatic SA & Dendofela",
+  "matched_title": "Botshelo Ke Eng",
+  "query": "Trechyson Molly vx, DJ Promatic SA, Dendofela Botshelo Ke Eng"
+ },
+ "GB-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "GB-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "GB-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "GB-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "GB-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "BR-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jeninho & Mariana Fagundes",
+  "matched_title": "Pe\u00e3o Todo Tatuado",
+  "query": "jeninho, Mariana Fagundes Pe\u00e3o Todo Tatuado"
+ },
+ "BR-02": null,
+ "BR-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "BR-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "BR-05": {
+  "label": "Forr\u00f3",
+  "source": "itunes",
+  "matched_artist": "Hendson Trankinha",
+  "matched_title": "Corolla Cross ( T\u00e1 Pedindo Toma )",
+  "query": "Ta Pedindo Toma"
+ },
+ "KR-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "KR-02": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ATEEZ",
+  "matched_title": "BAD",
+  "query": "ATEEZ BAD"
+ },
+ "KR-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "RESCENE",
+  "matched_title": "LOVE ATTACK",
+  "query": "RESCENE LOVE ATTACK"
+ },
+ "KR-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "SoulPop FM",
+  "matched_title": "\uc0ac\ucc28\uc6d0 \uc5ec\uadc0\uc2e0",
+  "query": "\ud1f4\uc0ac\ud560\uac8c\uc5ec"
+ },
+ "KR-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "aespa",
+  "matched_title": "LEMONADE",
+  "query": "aespa LEMONADE"
+ },
+ "MX-01": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Neton Vega",
+  "matched_title": "RIKI",
+  "query": "Neton Vega RIKI"
+ },
+ "MX-02": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "KAROL G, Judeline & rusowsky",
+  "matched_title": "BbY WOW",
+  "query": "KAROL G, Judeline, rusowsky BbY WOW"
+ },
+ "MX-03": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Lenin Ram\u00edrez",
+  "matched_title": "Todo Lo Fue",
+  "query": "Lenin Ramirez Todo Lo Fue"
+ },
+ "MX-04": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Lenin Ram\u00edrez",
+  "matched_title": "Todo Lo Fue",
+  "query": "Lenin Ramirez Polvo Rosita"
+ },
+ "MX-05": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Moy Bobadilla, Grupo Firme, Hernan Sepulveda & Max Peraza",
+  "matched_title": "Tus Mentiras",
+  "query": "Moy Bobadilla, Grupo Firme, Hernan Sepulveda, Max Peraza Tus Mentiras (En Vivo)"
+ },
+ "US-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "US-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "US-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "US-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Post Malone & Swae Lee",
+  "matched_title": "Sunflower (Spider-Man: Into the Spider-Verse)",
+  "query": "Post Malone, Swae Lee Sunflower"
+ },
+ "US-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "IN-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "IN-02": {
+  "label": "Indie Pop",
+  "source": "itunes",
+  "matched_artist": "Jibon Krishna Das & Anonya Das",
+  "matched_title": "Kalyani (Remix Version)",
+  "query": "KALYANI (Remix)"
+ },
+ "IN-04": {
+  "label": "Telugu",
+  "source": "itunes",
+  "matched_artist": "G.V. Prakash Kumar, Ananthu, Shiva Nirvana & Kalyan Chakravarthy",
+  "matched_title": "Irumudi Kattu (From \"Irumudi\") - TELUGU",
+  "query": "Irumudi Kattu"
+ },
+ "IN-05": {
+  "label": "Bollywood",
+  "source": "itunes",
+  "matched_artist": "Sadhu Tiwari",
+  "matched_title": "Parvati",
+  "query": "Sadhu Tiwari Parvati"
+ },
+ "ID-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Tulus",
+  "matched_title": "Teh Hijau",
+  "query": "Tulus Teh Hijau"
+ },
+ "ID-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "ID-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "karaoke SESH",
+  "matched_title": "Sesi Potret (Originally Performed by e\u0144au & Ari Lesmana) [Karaoke Version]",
+  "query": "Ari Lesmana, e\u0144au Sesi Potret"
+ },
+ "ID-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Raim Laode",
+  "matched_title": "Dunia Yang Nanti",
+  "query": "Raim laode Dunia Yang Nanti"
+ },
+ "ID-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Raim Laode",
+  "matched_title": "Iqro'",
+  "query": "Raim laode Iqro'"
+ },
+ "PT-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "PT-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Chico da Tina",
+  "matched_title": "PEGA OU LARGA",
+  "query": "Chico da Tina PEGA OU LARGA"
+ },
+ "PT-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jeninho & Mariana Fagundes",
+  "matched_title": "Pe\u00e3o Todo Tatuado",
+  "query": "jeninho, Mariana Fagundes Pe\u00e3o Todo Tatuado"
+ },
+ "PT-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Soraia Ramos & Calema",
+  "matched_title": "O Nosso Amor",
+  "query": "Calema Chuva De Amor"
+ },
+ "PT-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Vizinhos",
+  "matched_title": "P\u00f4r do Sol",
+  "query": "Vizinhos P\u00f4r do Sol"
+ },
+ "EG-01": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE",
+  "matched_title": "Garee2a Awy - A COLORS SHOW",
+  "query": "TUL8TE Garee2a Awy (Live)"
+ },
+ "EG-02": {
+  "label": "Egyptian Pop",
+  "source": "itunes",
+  "matched_artist": "Amr Diab",
+  "matched_title": "Lola El Banat",
+  "query": "Amr Diab, Orange Lola El Banat"
+ },
+ "EG-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Mohamed Ramadan",
+  "matched_title": "HABIBI ANA MEN GHERAK",
+  "query": "Mohamed Ramadan HABIBI ANA MEN GHERAK"
+ },
+ "EG-04": {
+  "label": "Egyptian Hip-Hop",
+  "source": "itunes",
+  "matched_artist": "HAMO ELGALAD",
+  "matched_title": "\u0645\u062a\u062d\u0635\u0646 (feat. \u0627\u0644\u062e\u0627\u0644 El khal)",
+  "query": "HAMO ELGALAD \u0645\u062a\u062d\u0635\u0646 (feat. \u0627\u0644\u062e\u0627\u0644 El khal)"
+ },
+ "EG-05": {
+  "label": "Arabic",
+  "source": "itunes",
+  "matched_artist": "\u0645\u0635\u0637\u0641\u064a \u0627\u0644\u062c\u0646 \u0648\u0647\u0627\u062f\u064a \u0627\u0644\u0635\u063a\u064a\u0631 - \u062a\u064a\u0645 \u0627\u0644\u0627\u0628\u062f\u0627\u0639",
+  "matched_title": "\u0627\u0644\u063a\u0627\u0628\u0629 \u0644\u064a\u0647\u0627 \u0628\u0627\u0628\u0627 ( \u0647\u0648 \u0627\u0644\u062f\u064a\u0628 \u0644\u0645\u0627 \u064a\u063a\u064a\u0628 )",
+  "query": "\u0645\u0635\u0637\u0641\u064a \u0627\u0644\u062c\u0646 \u0648\u0647\u0627\u062f\u064a \u0627\u0644\u0635\u063a\u064a\u0631 - \u062a\u064a\u0645 \u0627\u0644\u0627\u0628\u062f\u0627\u0639 \u0627\u0644\u063a\u0627\u0628\u0629 \u0644\u064a\u0647\u0627 \u0628\u0627\u0628\u0627 ( \u0647\u0648 \u0627\u0644\u062f\u064a\u0628 \u0644\u0645\u0627 \u064a\u063a\u064a\u0628 )"
+ },
+ "AR-01": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Nico Manriquez, Zito Dj & BlackRiver",
+  "matched_title": "Cuando No Era Cantante",
+  "query": "El Bogueto, Anuel AA, Fuerza Regida, Yung Beef Cuando No Era Cantante (Remix)"
+ },
+ "AR-02": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Tainy, Anuel AA & Ozuna",
+  "matched_title": "Adicto",
+  "query": "Anuel AA Las mas bonitas son p#tas"
+ },
+ "AR-03": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Eugenia Quevedo",
+  "matched_title": "No Podr\u00e1s (feat. Angela Leiva & La banda de Carlitos) [En Vivo]",
+  "query": "Eugenia Quevedo No Podr\u00e1s (En Vivo) (feat. Angela Leiva & La banda de Carlitos)"
+ },
+ "AR-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "AR-05": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Jay Wheeler, Brytiago & DJ Nelson",
+  "matched_title": "Sin Ti (Remix)",
+  "query": "Brytiago Estoy Pa' Ti"
+ },
+ "CO-01": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "KAROL G, Judeline & rusowsky",
+  "matched_title": "BbY WOW",
+  "query": "KAROL G, Judeline, rusowsky BbY WOW"
+ },
+ "CO-02": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Lenin Ram\u00edrez",
+  "matched_title": "Todo Lo Fue",
+  "query": "Lenin Ramirez Todo Lo Fue"
+ },
+ "CO-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "CO-04": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Grupo Firme",
+  "matched_title": "El Beneficio De La Duda",
+  "query": "Grupo Firme El Beneficio De La Duda"
+ },
+ "CO-05": {
+  "label": "Pop Latino",
+  "source": "itunes",
+  "matched_artist": "Luister La Voz",
+  "matched_title": "La Mar\u00eda",
+  "query": "Luister La Voz La Mar\u00eda"
+ },
+ "PH-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Katy Perry",
+  "matched_title": "The One That Got Away",
+  "query": "Katy Perry The One That Got Away"
+ },
+ "PH-02": null,
+ "PH-03": {
+  "label": "Indie Pop",
+  "source": "itunes",
+  "matched_artist": "nicole",
+  "matched_title": "Panaginip",
+  "query": "nicole Panaginip"
+ },
+ "PH-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "HELLMERRY",
+  "matched_title": "Summer Crush",
+  "query": "HELLMERRY Summer Crush"
+ },
+ "PH-05": {
+  "label": "Soundtrack",
+  "source": "itunes",
+  "matched_artist": "Jim Johnston",
+  "matched_title": "Viva La Raza (Eddie Guerrero)",
+  "query": "Viva La Raza"
+ },
+ "AU-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "AU-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "AU-03": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "AU-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "AU-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "JISOO",
+  "matched_title": "CLICK",
+  "query": "JISOO CLICK"
+ },
+ "NZ-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "NZ-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "NZ-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "NZ-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Post Malone & Swae Lee",
+  "matched_title": "Sunflower (Spider-Man: Into the Spider-Verse)",
+  "query": "Post Malone, Swae Lee Sunflower"
+ },
+ "NZ-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "CV-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Alex Aks",
+  "matched_title": "Berdiana (feat. Marcia Cruz)",
+  "query": "Berdiana"
+ },
+ "CV-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "CV-03": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Tony Fika",
+  "matched_title": "Dona Ana",
+  "query": "Tony Fika Dona Ana"
+ },
+ "CV-04": {
+  "label": "R&B/Soul",
+  "source": "itunes",
+  "matched_artist": "Dynamo",
+  "matched_title": "Kumpanhero",
+  "query": "Dynamo Kumpanhero"
+ },
+ "CV-05": null,
+ "JP-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "JP-02": null,
+ "JP-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ILLIT",
+  "matched_title": "It's Me",
+  "query": "ILLIT It's Me"
+ },
+ "JP-04": {
+  "label": "J-Pop",
+  "source": "itunes",
+  "matched_artist": "M!LK",
+  "matched_title": "Sukisugite METSU!",
+  "query": "M!LK \u597d\u304d\u3059\u304e\u3066\u6ec5\uff01"
+ },
+ "JP-05": {
+  "label": "J-Pop",
+  "source": "itunes",
+  "matched_artist": "M!LK",
+  "matched_title": "Bakuretsu Aishiteru",
+  "query": "M!LK \u7206\u88c2\u611b\u3057\u3066\u308b"
+ },
+ "TH-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "TH-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "\u0e2b\u0e19\u0e36\u0e48\u0e07 \u0e1a\u0e35\u0e40\u0e04\u0e41\u0e1a\u0e19\u0e14\u0e4c",
+  "matched_title": "\u0e40\u0e1e\u0e23\u0e32\u0e30\u0e1e\u0e35\u0e48\u0e23\u0e31\u0e01\u0e08\u0e23\u0e34\u0e07",
+  "query": "\u0e2b\u0e19\u0e36\u0e48\u0e07 \u0e1a\u0e35\u0e40\u0e04\u0e41\u0e1a\u0e19\u0e14\u0e4c \u0e40\u0e1e\u0e23\u0e32\u0e30\u0e1e\u0e35\u0e48\u0e23\u0e31\u0e01\u0e08\u0e23\u0e34\u0e07"
+ },
+ "TH-03": null,
+ "TH-04": {
+  "label": "R&B/Soul",
+  "source": "itunes",
+  "matched_artist": "SEA.",
+  "matched_title": "\u0e04\u0e23\u0e31\u0e49\u0e07\u0e2b\u0e19\u0e36\u0e48\u0e07 (feat. Z9)",
+  "query": "Z9 \u0e44\u0e21\u0e48\u0e23\u0e31\u0e01\u0e14\u0e35\u0e01\u0e27\u0e48\u0e32"
+ },
+ "TH-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Ly Nova",
+  "matched_title": "BOWKYLION \u2013 \u0e19\u0e32\u0e2c\u0e34\u0e01\u0e32\u0e17\u0e23\u0e32\u0e22 (sign) [Official MV]",
+  "query": "BOWKYLION \u0e19\u0e32\u0e2c\u0e34\u0e01\u0e32\u0e17\u0e23\u0e32\u0e22 (sign)"
+ },
+ "TW-01": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "Jess Lee",
+  "matched_title": "\u7532\u4e59\u4e19\u4e01Strangers (\u7cb5\u8a9e\u7248)",
+  "query": "Jess Lee \u7532\u4e59\u4e19\u4e01Strangers"
+ },
+ "TW-02": {
+  "label": "Mandopop",
+  "source": "itunes",
+  "matched_artist": "\u99ac\u4e5f_Crabbit & Cole\u5148\u751f",
+  "matched_title": "\u6d77\u5c7f\u4f60",
+  "query": "\u9a6c\u4e5fCrabbit, Cole\u5148\u751f \u6d77\u5c7f\u4f60"
+ },
+ "TW-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "TW-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "JISOO",
+  "matched_title": "CLICK",
+  "query": "JISOO CLICK"
+ },
+ "TW-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ATEEZ",
+  "matched_title": "BAD",
+  "query": "ATEEZ BAD"
+ },
+ "TR-01": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3",
+  "matched_title": "Sebebi Yar",
+  "query": "BLOK3 Sebebi Yar (Live)"
+ },
+ "TR-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "manifest",
+  "matched_title": "Toz Pembe",
+  "query": "manifest Toz Pembe"
+ },
+ "TR-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3 & Poizi",
+  "matched_title": "\u00c7ok G\u00fczel G\u00fcl\u00fcyorsun",
+  "query": "BLOK3, Poizi C\u0327ok G\u00fczel G\u00fcl\u00fcyorsun"
+ },
+ "TR-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3",
+  "matched_title": "Kay\u0131p Kalp",
+  "query": "BLOK3 Kay\u0131p Kalp"
+ },
+ "TR-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "manifest & Ajda Pekkan",
+  "matched_title": "Hileli",
+  "query": "manifest, Ajda Pekkan Hileli"
+ },
+ "MY-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Tulus",
+  "matched_title": "Teh Hijau",
+  "query": "Tulus Teh Hijau"
+ },
+ "MY-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "MY-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Dua Lipa",
+  "matched_title": "Training Season (Live from the Royal Albert Hall)",
+  "query": "Dua Lipa Training Season"
+ },
+ "MY-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Katy Perry",
+  "matched_title": "The One That Got Away",
+  "query": "Katy Perry The One That Got Away"
+ },
+ "MY-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Akbar Chalay & Mingse",
+  "matched_title": "Astaga Bercanda",
+  "query": "Akbar Chalay, Mingse Astaga Bercanda"
+ },
+ "DE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "DE-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "DE-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Jamule, Sido & Miksu / Macloud",
+  "matched_title": "LOVEBOMB (feat. RYCH)",
+  "query": "Sido ISSA"
+ },
+ "DE-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3",
+  "matched_title": "Sebebi Yar",
+  "query": "BLOK3 Sebebi Yar (Live)"
+ },
+ "DE-05": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "DJ Goja, Jason Derulo & Melody",
+  "matched_title": "Mi Chico (Jason Derulo x Melody Version)",
+  "query": "DJ Goja, Jason Derulo, Melody Mi Chico "
+ },
+ "FR-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "FR-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "FR-03": {
+  "label": "Christian",
+  "source": "itunes",
+  "matched_artist": "Mauvais Djo",
+  "matched_title": "Pil\u00e9 (Gospel)",
+  "query": "Mauvais djo Pil\u00e9"
+ },
+ "FR-04": {
+  "label": "South African Hip-Hop",
+  "source": "itunes",
+  "matched_artist": "Mauvais Djo",
+  "matched_title": "Maladie",
+  "query": "Mauvais djo Maladie"
+ },
+ "FR-05": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Don Omar",
+  "matched_title": "Sicario (feat. MERO)",
+  "query": "Sicario"
+ },
+ "ES-01": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Quevedo & Elvis Crespo",
+  "matched_title": "LA GRACIOSA",
+  "query": "Quevedo, Elvis Crespo LA GRACIOSA"
+ },
+ "ES-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "ES-03": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "KAROL G, Judeline & rusowsky",
+  "matched_title": "BbY WOW",
+  "query": "KAROL G, Judeline, rusowsky BbY WOW"
+ },
+ "ES-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Ana Mena & Lola Indigo",
+  "matched_title": "pa ti toa <3",
+  "query": "Ana Mena, Lola Indigo pa ti toa <3"
+ },
+ "ES-05": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Tainy, Anuel AA & Ozuna",
+  "matched_title": "Adicto",
+  "query": "Anuel AA Las mas bonitas son p#tas"
+ },
+ "IT-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "IT-02": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Calvin Harris & Rihanna",
+  "matched_title": "This Is What You Came For",
+  "query": "ANNA WHITE GIRL WASTED"
+ },
+ "IT-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Fred De Palma",
+  "matched_title": "TUTTO QUELLO CHE HO (feat. Emis Killa, Omar Montes & Juli)",
+  "query": "Fred De Palma, Anitta, Emis Killa LA TESTA GIRA"
+ },
+ "IT-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Philip & Davyx",
+  "matched_title": "Costiera Amalfitana",
+  "query": "LA COSTIERA AMALFITANA (feat. Arisa & Nino D'Angelo)"
+ },
+ "IT-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Dipinto & Fresh Beatz",
+  "matched_title": "Boss",
+  "query": "Dipinto, Fresh Beatz Boss"
+ },
+ "NL-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "NL-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "NL-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "NL-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Rutger Van Barneveld",
+  "matched_title": "Zwoele Zomernachten",
+  "query": "Rutger Van Barneveld Zwoele Zomernachten"
+ },
+ "NL-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "PL-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Micha\u0142 Wi\u015bniewski & Mandaryna",
+  "matched_title": "B\u0119dzie By\u0142o",
+  "query": "Micha\u0142 Wi\u015bniewski B\u0119dzie By\u0142o"
+ },
+ "PL-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Nina Lakomy",
+  "matched_title": "Kawa z diab\u0142em",
+  "query": "Nina Lakomy Kawa z diab\u0142em"
+ },
+ "PL-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "PL-04": {
+  "label": "Electronic",
+  "source": "itunes",
+  "matched_artist": "PUMPSOUND, Sequento & Cypis",
+  "matched_title": "Stan Deweloperski (PUMPSOUND Remix)",
+  "query": "Sequento, Cypis Stan Deweloperski"
+ },
+ "PL-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Kuqe 2115 & francis",
+  "matched_title": "taki ma\u0142y ja",
+  "query": "Nareszcie"
+ },
+ "SE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "SE-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "SE-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "SE-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "SE-05": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Rasmus Gozzi, FR\u00d6KEN SNUSK & Louise Andersson Bodin",
+  "matched_title": "Kissekatt",
+  "query": "Rasmus Gozzi, FR\u00d6KEN SNUSK, Louise Andersson Bodin OM DU FR\u00c5GAR NOOSHI"
+ },
+ "SA-01": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "Cairokee",
+  "matched_title": "Tata Tata",
+  "query": "Cairokee \u062a\u0627\u062a\u0627 \u062a\u0627\u062a\u0627"
+ },
+ "SA-02": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE",
+  "matched_title": "Garee2a Awy - A COLORS SHOW",
+  "query": "TUL8TE Garee2a Awy (Live)"
+ },
+ "SA-03": {
+  "label": "Egyptian Pop",
+  "source": "itunes",
+  "matched_artist": "Nabil",
+  "matched_title": "Tayeh Fel Amaken",
+  "query": "Nabil \u062a\u0627\u064a\u0647 \u0641\u064a \u0627\u0644\u0623\u0645\u0627\u0643\u0646"
+ },
+ "SA-04": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "SA-05": {
+  "label": "Egyptian Pop",
+  "source": "itunes",
+  "matched_artist": "Sherine",
+  "matched_title": "Tebaa'n Tebaa'n",
+  "query": "Sherine Tebaa'n Tebaa'n"
+ },
+ "MA-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LAZARO",
+  "matched_title": "ZOMBIE",
+  "query": "LAZARO ZOMBIE"
+ },
+ "MA-02": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Stormy",
+  "matched_title": "KILOWAT",
+  "query": "Stormy KILOWAT"
+ },
+ "MA-03": {
+  "label": "North African",
+  "source": "itunes",
+  "matched_artist": "Zouhair Bahaoui & LAZARO",
+  "matched_title": "TITIZ A KHAY",
+  "query": "Zouhair Bahaoui, LAZARO TITIZ A KHAY"
+ },
+ "MA-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "MA-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Stormy & Manal",
+  "matched_title": "SATA 9TTALA",
+  "query": "Stormy, Manal SATA 9TTALA"
+ },
+ "VN-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jack - J97",
+  "matched_title": "L\u01b0u Ni\u00ean",
+  "query": "Jack - J97 L\u01afU NI\u00caN"
+ },
+ "VN-02": {
+  "label": "House",
+  "source": "itunes",
+  "matched_artist": "AKA DJ TEAM",
+  "matched_title": "THIE\u0302N \u0110U\u031bO\u031b\u0300NG VO\u031b\u0301I NGU\u031bO\u031b\u0300I THU\u031bO\u031bNG (feat. PHU\u031bO\u031bNG MY\u0303 CHI x DTAP & DJ KRISSNA) [BASS HOUSE REMIX]",
+  "query": "Ph\u01b0\u01a1ng M\u1ef9 Chi, DTAP Thi\u00ean \u0110\u01b0\u1eddng V\u1edbi Ng\u01b0\u1eddi Th\u01b0\u01a1ng"
+ },
+ "VN-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jack - J97",
+  "matched_title": "Ng\u01b0\u1eddi D\u01b0ng",
+  "query": "Jack - J97 NG\u01af\u1edcI D\u01afNG"
+ },
+ "VN-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "TINH H\u00c0 \"SAY HI\"",
+  "matched_title": "SECRET (feat. Quang H\u00f9ng MasterD, CODYNAMVO, CONGB & Wren Evans)",
+  "query": "TINH H\u00c0 \"SAY HI\" SECRET (feat. Quang H\u00f9ng MasterD, CODYNAMVO, CONGB & Wren Evans)"
+ },
+ "VN-05": {
+  "label": "J-Pop",
+  "source": "itunes",
+  "matched_artist": "TINH H\u00c0 \"SAY HI\"",
+  "matched_title": "LAVIEM (feat. Quang H\u00f9ng MasterD, CAPTAIN BOY, Ph\u00e1p Ki\u1ec1u, COOLKID & Danny Chung)",
+  "query": "TINH H\u00c0 \"SAY HI\", Quang H\u00f9ng MasterD, CAPTAIN BOY LAVIEM"
+ },
+ "SG-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "SG-02": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "JISOO",
+  "matched_title": "CLICK",
+  "query": "JISOO CLICK"
+ },
+ "SG-03": {
+  "label": "Mandopop",
+  "source": "itunes",
+  "matched_artist": "\u99ac\u4e5f_Crabbit & Cole\u5148\u751f",
+  "matched_title": "\u6d77\u5c7f\u4f60",
+  "query": "\u9a6c\u4e5fCrabbit, Cole\u5148\u751f \u6d77\u5c7f\u4f60"
+ },
+ "SG-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Dua Lipa",
+  "matched_title": "Training Season (Live from the Royal Albert Hall)",
+  "query": "Dua Lipa Training Season"
+ },
+ "SG-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ATEEZ",
+  "matched_title": "BAD",
+  "query": "ATEEZ BAD"
+ },
+ "HK-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "HK-02": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "JISOO",
+  "matched_title": "CLICK",
+  "query": "JISOO CLICK"
+ },
+ "HK-03": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "MC Cheung Tinfu",
+  "matched_title": "\u7537\u4eba\u600e\u53ef\u4ee5",
+  "query": "MC Cheung Tinfu What Makes A Man"
+ },
+ "HK-04": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "Goodnight, Lillie",
+  "matched_title": "\u6211\u770b\u898b\u4eca\u665a\u7684\u6708\u8272\u5f88\u7f8e,\u4f60\u5462?",
+  "query": "Goodnight, Lillie \u6211\u770b\u898b\u4eca\u665a\u7684\u6708\u8272\u5f88\u7f8e\uff0c\u4f60\u5462\uff1f"
+ },
+ "HK-05": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Shaggy",
+  "matched_title": "Boombastic",
+  "query": "At Least A Hug"
+ },
+ "SN-01": {
+  "label": "Mbalax",
+  "source": "itunes",
+  "matched_artist": "Viviane Chidid",
+  "matched_title": "Nous 2 (feat. Wally B. Seck)",
+  "query": "Viviane Chidid Nous 2 (feat. Wally B. Seck)"
+ },
+ "SN-02": {
+  "label": "Mbalax",
+  "source": "itunes",
+  "matched_artist": "Bass Thioung",
+  "matched_title": "Baol",
+  "query": "Bass Thioung Baol"
+ },
+ "SN-03": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Roseline Layo",
+  "matched_title": "Bara",
+  "query": "Roseline Layo Bara"
+ },
+ "SN-04": {
+  "label": "Mbalax",
+  "source": "itunes",
+  "matched_artist": "Mia Guisse & VJ",
+  "matched_title": "Sama Xool",
+  "query": "Mia Guisse, Vj Sama Xool"
+ },
+ "SN-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Sindika",
+  "matched_title": "Joker",
+  "query": "Sindika Joker"
+ },
+ "CI-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Dydy Yeman",
+  "matched_title": "CASSE TES REINS",
+  "query": "Dydy Yeman CASSE TES REINS"
+ },
+ "CI-02": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "TAZEBOY",
+  "matched_title": "MATATA",
+  "query": "Tazeboy MATATA"
+ },
+ "CI-03": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Wizkid",
+  "matched_title": "Apr\u00e8s Minuit (feat. Tiakola)",
+  "query": "Tiakola M\u00e9lo D\u00e9cal\u00e9"
+ },
+ "CI-04": {
+  "label": "Hard Rock",
+  "source": "itunes",
+  "matched_artist": "Primus",
+  "matched_title": "Tragedy's a-Comin'",
+  "query": "NAIGAIDJAN"
+ },
+ "CI-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "ET-02": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Teddy Afro",
+  "matched_title": "Shih Bibal (Back to 90s)",
+  "query": "Teddy Afro Shih Bibal (Back to 90s)"
+ },
+ "ET-04": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Teddy Afro",
+  "matched_title": "Tayegn",
+  "query": "Teddy Afro Tayegn"
+ },
+ "ET-05": {
+  "label": "African",
+  "source": "itunes",
+  "matched_artist": "Teddy Afro",
+  "matched_title": "Das Tal (Ansaw)",
+  "query": "Teddy Afro Das Tal (Ansaw)"
+ },
+ "AO-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "DJ Kalisboy",
+  "matched_title": "Homenagem Ao Scr\u00f3 Que Cuia (feat. LEONEL PATRICINHO)",
+  "query": "SINTONIA07, Scro Que Cuia, Dj Kalisboy S\u00f3 Mais um Pouco"
+ },
+ "AO-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "AO-03": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Primavera Club",
+  "matched_title": "Dorama",
+  "query": "Dorama"
+ },
+ "AO-04": {
+  "label": "House",
+  "source": "itunes",
+  "matched_artist": "Delma Silva, Mozany Bu\u00e9 de Ahh & D'benilson",
+  "matched_title": "Idolatrada (Agorinha Mesmo)",
+  "query": "Delma Silva, Mozany Bu\u00e9 De Ahh, D'benilson Idolatrada (Agorinha Mesmo)"
+ },
+ "AO-05": {
+  "label": "African",
+  "source": "itunes",
+  "matched_artist": "Preto Show, Kelson Most Wanted & Deezy",
+  "matched_title": "Coringa (feat. Filho do Zua)",
+  "query": "Preto Show, Kelson Most Wanted, deezy Coringa (feat. Filho do Zua)"
+ },
+ "MZ-01": {
+  "label": "Amapiano",
+  "source": "itunes",
+  "matched_artist": "Blow258 & Eazy-K",
+  "matched_title": "Parte Parte",
+  "query": "Blow258 Parte Parte"
+ },
+ "MZ-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Nadson o Ferinha",
+  "matched_title": "Abre a Porta",
+  "query": "Ritmo Da Lusofonia Abre A Porta Amor / S\u00f3 Sa\u00ed Pra Beber"
+ },
+ "MZ-03": {
+  "label": "Praise & Worship",
+  "source": "itunes",
+  "matched_artist": "Suzy P\u00e9cora",
+  "matched_title": "Meu Noivo Vem",
+  "query": "Veio Buscar a Suzy"
+ },
+ "MZ-04": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Twenty Fingers",
+  "matched_title": "Amor N\u00e3o \u00e9 Para Doer",
+  "query": "Twenty Fingers Amor N\u00e3o \u00e9 Para Doer"
+ },
+ "MZ-05": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Z\u00e9 Ngola",
+  "matched_title": "Ta me quer Voltar",
+  "query": "Z\u00e9 Ngola Ta me quer Voltar"
+ },
+ "ZW-01": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "Major Terro",
+  "matched_title": "Yadeuka Yadeuka (feat. King Alfa Kadiki)",
+  "query": "Major Terro Yadeuka Yadeuka"
+ },
+ "ZW-02": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "Hulengende",
+  "matched_title": "Bhura Dhanzi (feat. Madedido)",
+  "query": "Hulengende Bhura Dhanzi (feat. Madedido)"
+ },
+ "ZW-03": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Nisha Ts",
+  "matched_title": "Shasha (feat. Holy Ten)",
+  "query": "Nisha Ts Shasha (feat. Holy Ten)"
+ },
+ "ZW-04": {
+  "label": "African Dancehall",
+  "source": "itunes",
+  "matched_artist": "Shinsoman",
+  "matched_title": "Always in My Mind (feat. Kae Chaps)",
+  "query": "Shinsoman, Kae Chaps Always in My Mind"
+ },
+ "ZW-05": {
+  "label": "African",
+  "source": "itunes",
+  "matched_artist": "King98",
+  "matched_title": "Wangu (feat. Jnr Spragga)",
+  "query": "King98 Wangu (feat. Jnr Spragga)"
+ },
+ "CM-01": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Fally Ipupa",
+  "matched_title": "100",
+  "query": "Fally Ipupa Deux \u00eatres"
+ },
+ "CM-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "CM-03": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Tim Storm",
+  "matched_title": "SUSPENDU (GOSPEL)",
+  "query": "Tim Storm SUSPENDU (GOSPEL)"
+ },
+ "CM-04": {
+  "label": "R&B/Soul",
+  "source": "itunes",
+  "matched_artist": "Imen Es & MHD",
+  "matched_title": "Appelez-les",
+  "query": "Appelez les"
+ },
+ "CM-05": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Wizkid",
+  "matched_title": "Apr\u00e8s Minuit (feat. Tiakola)",
+  "query": "Tiakola M\u00e9lo D\u00e9cal\u00e9"
+ },
+ "JM-01": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Jahshii",
+  "matched_title": "Paper Chaser (feat. Malie Donn)",
+  "query": "Malie Donn, Dan Sky Vancleef Pt 2"
+ },
+ "JM-02": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Masicka & Kraff Gad",
+  "matched_title": "Honor Roll",
+  "query": "Masicka Honor Roll"
+ },
+ "JM-03": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Govana",
+  "matched_title": "Satellite",
+  "query": "Govana Satellite"
+ },
+ "JM-04": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Jahshii",
+  "matched_title": "Paper Chaser (feat. Malie Donn)",
+  "query": "Malie Donn, Attomatic Van Cleef"
+ },
+ "JM-05": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Cali Fr & Bornstar876",
+  "matched_title": "I Know",
+  "query": "Cali Fr Bread"
+ },
+ "DO-01": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Dalvin La Melodia",
+  "matched_title": "Amnesia",
+  "query": "Dalvin La Melodia Amnesia"
+ },
+ "DO-02": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Dalvin La Melodia & El Blachy",
+  "matched_title": "Alma Rota",
+  "query": "Dalvin La Melodia, El Blachy Alma Rota"
+ },
+ "DO-03": {
+  "label": "Underground Rap",
+  "source": "itunes",
+  "matched_artist": "Lil Naay",
+  "matched_title": "MAMI",
+  "query": "Lil Naay PERRA"
+ },
+ "DO-04": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Dalvin La Melodia",
+  "matched_title": "Duele",
+  "query": "Dalvin La Melodia Duele"
+ },
+ "DO-05": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ovi & Kim Loaiza",
+  "matched_title": "Despu\u00e9s De Las 12",
+  "query": "Despues de las 12"
+ },
+ "GR-02": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Giorgos Mazonakis",
+  "matched_title": "Ores Mikres (Mega Live)",
+  "query": "Giorgos Mazonakis \u038f\u03c1\u03b5\u03c2 \u039c\u03b9\u03ba\u03c1\u03ad\u03c2"
+ },
+ "GR-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "GR-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Giorgos Mazonakis",
+  "matched_title": "Na Pernas",
+  "query": "Giorgos Mazonakis Na Pernas"
+ },
+ "GR-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "RO-01": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Florin Cercel",
+  "matched_title": "Doar Pentru Tine Amore (feat. Antonia Cercel)",
+  "query": "Florin Cercel Doar Pentru Tine Amore (feat. Antonia Cercel)"
+ },
+ "RO-02": {
+  "label": "Europe",
+  "source": "itunes",
+  "matched_artist": "Bogdan DLP",
+  "matched_title": "Hazolina",
+  "query": "Bogdan DLP Hazolina"
+ },
+ "RO-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Leo de la Rosiori",
+  "matched_title": "Am intrebat un om (Nebunu)",
+  "query": "Leo de la Rosiori Am intrebat un om (Nebunu)"
+ },
+ "RO-04": {
+  "label": "Europe",
+  "source": "itunes",
+  "matched_artist": "Bogdan DLP",
+  "matched_title": "Te pup",
+  "query": "Bogdan DLP Te pup"
+ },
+ "RO-05": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Denis Spaniolu' & Zeno Music",
+  "matched_title": "Ce domnisoara aroganta",
+  "query": "Denis Spaniolu', Zeno Music Ce domnisoara aroganta"
+ },
+ "UA-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Fayna Divka",
+  "matched_title": "\u0427\u0435\u0440\u0432\u043e\u043d\u0438\u0439 \u043c\u0430\u043a - \u043c\u0456\u0439 \u043c\u0430\u044f\u043a",
+  "query": "\u0427\u0435\u0440\u0432\u043e\u043d\u0438\u0439 \u043c\u0430\u043a"
+ },
+ "UA-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KAVYRO",
+  "matched_title": "\u041f\u043b\u044f\u0448\u043a\u0430 \u0444\u0440\u0430\u0433\u043e\u043b\u0456\u043d\u043e",
+  "query": "Uran Yopa \u041f\u043b\u044f\u0448\u043a\u0430 \u0424\u0440\u0430\u0433\u043e\u043b\u0456\u043d\u043e"
+ },
+ "UA-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "DNK",
+  "matched_title": "\u0406 \u0423 \u0422\u0415\u041c\u041d\u0423\u042e \u041d\u0406\u0427 (feat. TEMRA)",
+  "query": "DNK \u0406 \u0423 \u0422\u0415\u041c\u041d\u0423\u042e \u041d\u0406\u0427 (feat. TEMRA)"
+ },
+ "UA-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "DNK",
+  "matched_title": "\u0410 \u041c\u043e\u0436\u0435 \u0422\u0438 \u041c\u0435\u043d\u0435 \u041f\u043e\u043b\u044e\u0431\u0438\u0448 (feat. TEMRA)",
+  "query": "DNK \u0410 \u041c\u043e\u0436\u0435 \u0422\u0438 \u041c\u0435\u043d\u0435 \u041f\u043e\u043b\u044e\u0431\u0438\u0448 (feat. TEMRA)"
+ },
+ "UA-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432",
+  "matched_title": "\u0412\u0456\u0432\u0442\u0430\u0440",
+  "query": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432 \u0412\u0456\u0432\u0442\u0430\u0440"
+ },
+ "RS-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Devito",
+  "matched_title": "RocknRolla",
+  "query": "Devito RocknRolla"
+ },
+ "RS-02": {
+  "label": "Folk",
+  "source": "itunes",
+  "matched_artist": "Aleksandra Prijovi\u0107",
+  "matched_title": "Kababa",
+  "query": "Aleksandra Prijovic Kababa"
+ },
+ "RS-03": {
+  "label": "Folk",
+  "source": "itunes",
+  "matched_artist": "Aleksandra Prijovi\u0107",
+  "matched_title": "Macho Man (feat. Dejan Petrovic)",
+  "query": "Aleksandra Prijovic Macho Man (feat. Dejan Petrovic)"
+ },
+ "RS-04": {
+  "label": "Rap",
+  "source": "itunes",
+  "matched_artist": "Popovska & 2soma",
+  "matched_title": "Malo Sutra",
+  "query": "Popovska, 2soma Malo Sutra"
+ },
+ "RS-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "IE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "IE-02": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Kingfishr",
+  "matched_title": "Killeagh",
+  "query": "Kingfishr Killeagh"
+ },
+ "IE-03": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Kingfishr",
+  "matched_title": "The Sun Will Never Settle",
+  "query": "Kingfishr The Sun Will Never Settle"
+ },
+ "IE-04": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "IE-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "DK-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "DK-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "DK-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "DK-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "DK-05": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Tame Impala",
+  "matched_title": "Loser",
+  "query": "Tame Impala Loser"
+ },
+ "FI-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "FI-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Markku Aro",
+  "matched_title": "V\u00e4\u00e4r\u00e4 Nainen",
+  "query": "V\u00e4\u00e4r\u00e4 nainen"
+ },
+ "FI-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "FI-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "FI-05": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "RobbeBoy",
+  "matched_title": "Espanja Blessaa",
+  "query": "RobbeBoy Espanja Blessaa"
+ },
+ "IS-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "IS-02": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Billy Joel",
+  "matched_title": "Only the Good Die Young",
+  "query": "Kaleo The Good Die Young"
+ },
+ "IS-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "IS-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "IS-05": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Tame Impala",
+  "matched_title": "Loser",
+  "query": "Tame Impala Loser"
+ },
+ "CZ-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "CZ-02": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Ewa Farna",
+  "matched_title": "Smej Se",
+  "query": "Ewa Farna Ne\u0159\u00edkej, co m\u00e1 se st\u00e1t"
+ },
+ "CZ-03": null,
+ "CZ-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Penguin Cafe Orchestra",
+  "matched_title": "Perpetuum Mobile",
+  "query": "PERPETUUM MOBILE"
+ },
+ "CZ-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Ewa Farna & Mirai",
+  "matched_title": "Vzpomene\u0161 si?",
+  "query": "Ewa Farna, Mirai Vzpomene\u0161 si?"
+ },
+ "CL-01": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "KAROL G, Judeline & rusowsky",
+  "matched_title": "BbY WOW",
+  "query": "KAROL G, Judeline, rusowsky BbY WOW"
+ },
+ "CL-02": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Jere Klein, Blessd & Raven la R",
+  "matched_title": "MILLONETA",
+  "query": "Jere Klein, Blessd, Raven la R MILLONETA"
+ },
+ "CL-03": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Tainy, Anuel AA & Ozuna",
+  "matched_title": "Adicto",
+  "query": "Anuel AA Las mas bonitas son p#tas"
+ },
+ "CL-04": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Agua Marina",
+  "matched_title": "Cenizas",
+  "query": "Anuel AA Donde Hubo Fuego Cenizas Quedan"
+ },
+ "CL-05": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ovy On the Drums, Jere Klein & Blessd",
+  "matched_title": "Q Hubo Amor (Medell\u00edn)",
+  "query": "Ovy On The Drums, Jere Klein, Blessd Q Hubo Amor (Medell\u00edn)"
+ },
+ "PE-01": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "La Bella Luz",
+  "matched_title": "Y Qu\u00e9 Pas\u00f3",
+  "query": "La Bella Luz Y Que Pas\u00f3"
+ },
+ "PE-02": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "KAROL G, Judeline & rusowsky",
+  "matched_title": "BbY WOW",
+  "query": "KAROL G, Judeline, rusowsky BbY WOW"
+ },
+ "PE-03": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Pascualillo Coronado",
+  "matched_title": "Quiero ser Feliz",
+  "query": "La Bella Luz Mix Quiero Ser Feliz (31 Aniversario)"
+ },
+ "PE-04": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ya Ice Dilan, DJ Honda, Rey Tony, Helabusador & JipMusic Global",
+  "matched_title": "Tienes (Remix)",
+  "query": "Ya Ice Dilan, Rey Tony, Helabusador, JipMusic Global, dj honda Dichavate"
+ },
+ "PE-05": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Jay Wheeler, Brytiago & DJ Nelson",
+  "matched_title": "Sin Ti (Remix)",
+  "query": "Brytiago Estoy Pa' Ti"
+ },
+ "CA-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LISA",
+  "matched_title": "SaWaDiKa",
+  "query": "LISA SaWaDiKa"
+ },
+ "CA-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "CA-03": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "CA-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "CA-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-KE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-KE-02": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Kapitani",
+  "matched_title": "Kitemeo",
+  "query": "Kapitani Kitemeo"
+ },
+ "w0824-KE-03": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Sabi Wu, djprodluigi & Thirtyfourbrick",
+  "matched_title": "Nisho (feat. Mauru Gwash)",
+  "query": "Hongo Ya Karao (Vol. 2) (feat. Mauru Gwash & Kapitani)"
+ },
+ "w0824-KE-04": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Mbosso",
+  "matched_title": "Ozalima",
+  "query": "Mbosso Ozalima"
+ },
+ "w0824-KE-05": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Bien & Alikiba",
+  "matched_title": "Finale",
+  "query": "Bien, Alikiba Finale"
+ },
+ "w0824-AE-01": {
+  "label": "Indie Pop",
+  "source": "itunes",
+  "matched_artist": "Jibon Krishna Das & Anonya Das",
+  "matched_title": "Kalyani (Remix Version)",
+  "query": "KALYANI (Remix)"
+ },
+ "w0824-AE-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-AE-03": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0824-AE-04": {
+  "label": "Bollywood",
+  "source": "itunes",
+  "matched_artist": "Mithoon, Saaj Bhatt, Subodhh Sharma, Pritam, Sayeed Quadri & Mustafa Zahid",
+  "matched_title": "Tera Mera Rishta - New Version (From \"Awarapan 2\")",
+  "query": "Mithoon, Pritam, Mustafa Zahid, Sayeed Quadri, Saaj Bhatt, Subodhh Sharma Tera Mera Rishta "
+ },
+ "w0824-AE-05": {
+  "label": "Soundtrack",
+  "source": "itunes",
+  "matched_artist": "Jakes Bejoy, Sid Sriram, Mohammed Maqbool Mansoor & Muthu",
+  "matched_title": "Asalayavale (From \"Khalifa\")",
+  "query": "Jakes Bejoy, Sid Sriram, Mohammed Maqbool Mansoor, Muthu Asalayavale "
+ },
+ "w0824-TZ-01": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Mbosso, Nandy & S2Kizzy",
+  "matched_title": "Malaika",
+  "query": "Nandy Malaika"
+ },
+ "w0824-TZ-02": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Ibraah",
+  "matched_title": "Uhakika (feat. Zuchu) [Remix]",
+  "query": "Ibraah Uhakika"
+ },
+ "w0824-TZ-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Marioo & D Voice",
+  "matched_title": "Watu",
+  "query": "Marioo, D Voice Watu"
+ },
+ "w0824-TZ-04": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Nandy & Marioo",
+  "matched_title": "Somebody",
+  "query": "Nandy, Marioo Somebody"
+ },
+ "w0824-TZ-05": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "BBILLIONAIRE",
+  "matched_title": "ABU DHABI",
+  "query": "BBILLIONAIRE ABU DHABI"
+ },
+ "w0824-NG-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Davido, FOLA & Mayorkun",
+  "matched_title": "B4 B4",
+  "query": "Davido, Mayorkun, FOLA B4 B4"
+ },
+ "w0824-NG-02": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Ayra Starr",
+  "matched_title": "Heaven Baby (feat. ZAYN)",
+  "query": "Ayra Starr Heaven Baby (feat. ZAYN)"
+ },
+ "w0824-NG-03": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "BBILLIONAIRE",
+  "matched_title": "ABU DHABI",
+  "query": "BBILLIONAIRE ABU DHABI"
+ },
+ "w0824-NG-04": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "Xpensive",
+  "matched_title": "Victony Slick",
+  "query": "Victony SLICK"
+ },
+ "w0824-NG-05": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Rema",
+  "matched_title": "TEA",
+  "query": "Rema TEA"
+ },
+ "w0824-GH-01": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Sarz",
+  "matched_title": "Hennessy Cypher 2026 (feat. Kwesi Arthur, ENNY, Suspect 95, Fena Gitu, Yanga Chief & Tenor)",
+  "query": "Sarz Hennessy Cypher 2026 (feat. Kwesi Arthur, ENNY, Suspect95, Fena Gitu, Yanga Chief & Tenor)"
+ },
+ "w0824-GH-02": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "BBILLIONAIRE",
+  "matched_title": "ABU DHABI",
+  "query": "BBILLIONAIRE ABU DHABI"
+ },
+ "w0824-GH-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-GH-04": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Fancy",
+  "matched_title": "Happy (feat. Bella Shmurda)",
+  "query": "Bella Shmurda Happy Song"
+ },
+ "w0824-GH-05": {
+  "label": "Christian",
+  "source": "itunes",
+  "matched_artist": "Landry Cantrell",
+  "matched_title": "Signature",
+  "query": "Signature"
+ },
+ "w0824-UG-01": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "King Saha",
+  "matched_title": "Wewe",
+  "query": "King Saha WEWE"
+ },
+ "w0824-UG-02": {
+  "label": "Afro-fusion",
+  "source": "itunes",
+  "matched_artist": "Lutty Neika",
+  "matched_title": "Anaconda (feat. Bravion Emcee)",
+  "query": "Lutty Neika Anaconda (feat. Bravion Emcee )"
+ },
+ "w0824-UG-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-UG-04": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Kalifah Aganaga",
+  "matched_title": "Nassanga (feat. Eddy Kenzo & Winnie Nwagi & LIL PAZO LUNABE MUSIC & Weasel) [Remix]",
+  "query": "Kalifah Aganaga Nassanga (Remix) (feat. Eddy Kenzo, Winnie Nwagi, LIL PAZO LUNABE MUSIC & Weasel)"
+ },
+ "w0824-UG-05": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "BBILLIONAIRE",
+  "matched_title": "ABU DHABI",
+  "query": "BBILLIONAIRE ABU DHABI"
+ },
+ "w0824-ZA-01": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Tman Xpress & Mellow & Sleazy",
+  "matched_title": "Remember",
+  "query": "Tman Xpress, Mellow & Sleazy Remember"
+ },
+ "w0824-ZA-02": {
+  "label": "South Africa",
+  "source": "itunes",
+  "matched_artist": "MENZI MUSIC",
+  "matched_title": "Vuma",
+  "query": "MENZI MUSIC Vuma"
+ },
+ "w0824-ZA-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-ZA-04": {
+  "label": "Amapiano",
+  "source": "itunes",
+  "matched_artist": "Thatohatsi & Sjava",
+  "matched_title": "Ama hem hem (feat. ShaunMusiq)",
+  "query": "Thatohatsi, Sjava Ama hem hem (feat. Shaunmusiq)"
+ },
+ "w0824-ZA-05": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Trechyson Molly vx, DJ Promatic SA & Dendofela",
+  "matched_title": "Botshelo Ke Eng",
+  "query": "Trechyson Molly vx, DJ Promatic SA, Dendofela Botshelo Ke Eng"
+ },
+ "w0824-GB-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-GB-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-GB-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0824-GB-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-GB-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Alex Warren",
+  "matched_title": "Ordinary",
+  "query": "Alex Warren Ordinary"
+ },
+ "w0824-BR-01": null,
+ "w0824-BR-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jeninho & Mariana Fagundes",
+  "matched_title": "Pe\u00e3o Todo Tatuado",
+  "query": "jeninho, Mariana Fagundes Pe\u00e3o Todo Tatuado"
+ },
+ "w0824-BR-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-BR-04": {
+  "label": "Sertanejo",
+  "source": "itunes",
+  "matched_artist": "CountryBeat & Mari Fernandez",
+  "matched_title": "Um Pe\u00e3o Desse",
+  "query": "CountryBeat, Mari Fernandez Um Pe\u00e3o Desse (Live)"
+ },
+ "w0824-BR-05": {
+  "label": "Sertanejo",
+  "source": "itunes",
+  "matched_artist": "Zez\u00e9 Di Camargo",
+  "matched_title": "Irm\u00e3o da Lua, Amigo das Estrelas",
+  "query": "Zez\u00e9 Di Camargo Irm\u00e3o da Lua, Amigo das Estrelas"
+ },
+ "w0824-KR-01": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "BIGBANG",
+  "matched_title": "BiiiG",
+  "query": "BIGBANG BiiiG"
+ },
+ "w0824-KR-02": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ATEEZ",
+  "matched_title": "BAD",
+  "query": "ATEEZ BAD"
+ },
+ "w0824-KR-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "aespa",
+  "matched_title": "LEMONADE",
+  "query": "aespa LEMONADE"
+ },
+ "w0824-KR-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "RESCENE",
+  "matched_title": "LOVE ATTACK",
+  "query": "RESCENE LOVE ATTACK"
+ },
+ "w0824-KR-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "CORTIS",
+  "matched_title": "REDRED",
+  "query": "CORTIS REDRED"
+ },
+ "w0824-MX-01": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Neton Vega",
+  "matched_title": "RIKI",
+  "query": "Neton Vega RIKI"
+ },
+ "w0824-MX-02": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Lenin Ram\u00edrez",
+  "matched_title": "Todo Lo Fue",
+  "query": "Lenin Ramirez Todo Lo Fue"
+ },
+ "w0824-MX-03": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Lenin Ram\u00edrez",
+  "matched_title": "Todo Lo Fue",
+  "query": "Lenin Ramirez Polvo Rosita"
+ },
+ "w0824-MX-04": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Herencia De Grandes",
+  "matched_title": "Ya Borracho",
+  "query": "Herencia De Grandes Ya Borracho"
+ },
+ "w0824-MX-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-US-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-US-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "w0824-US-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-US-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-US-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Post Malone & Swae Lee",
+  "matched_title": "Sunflower (Spider-Man: Into the Spider-Verse)",
+  "query": "Post Malone, Swae Lee Sunflower"
+ },
+ "w0824-IN-01": {
+  "label": "Indie Pop",
+  "source": "itunes",
+  "matched_artist": "Jibon Krishna Das & Anonya Das",
+  "matched_title": "Kalyani (Remix Version)",
+  "query": "KALYANI (Remix)"
+ },
+ "w0824-IN-02": {
+  "label": "Bollywood",
+  "source": "itunes",
+  "matched_artist": "Mithoon, Saaj Bhatt, Subodhh Sharma, Pritam, Sayeed Quadri & Mustafa Zahid",
+  "matched_title": "Tera Mera Rishta - New Version (From \"Awarapan 2\")",
+  "query": "Mithoon, Pritam, Mustafa Zahid, Sayeed Quadri, Saaj Bhatt, Subodhh Sharma Tera Mera Rishta "
+ },
+ "w0824-IN-03": {
+  "label": "Bollywood",
+  "source": "itunes",
+  "matched_artist": "Shashwat Sachdev, Madhubanti Bagchi & Jasmine Sandlas",
+  "matched_title": "Shararat (From \"Dhurandhar\")",
+  "query": "Shashwat Sachdev, Madhubanti Bagchi, Jasmine Sandlas Shararat"
+ },
+ "w0824-IN-04": {
+  "label": "Indian Pop",
+  "source": "itunes",
+  "matched_artist": "Banjaare & Roni",
+  "matched_title": "Barsaat",
+  "query": "Banjaare, Roni Barsaat"
+ },
+ "w0824-ID-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Tulus",
+  "matched_title": "Teh Hijau",
+  "query": "Tulus Teh Hijau"
+ },
+ "w0824-ID-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "karaoke SESH",
+  "matched_title": "Sesi Potret (Originally Performed by e\u0144au & Ari Lesmana) [Karaoke Version]",
+  "query": "Ari Lesmana, e\u0144au Sesi Potret"
+ },
+ "w0824-ID-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Raim Laode",
+  "matched_title": "Dunia Yang Nanti",
+  "query": "Raim laode Dunia Yang Nanti"
+ },
+ "w0824-ID-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Naykilla",
+  "matched_title": "MMG (My Mine Gueh)",
+  "query": "Naykilla MMG (My Mine Gueh)"
+ },
+ "w0824-ID-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ENHYPEN",
+  "matched_title": "Bloody Paradise",
+  "query": "ENHYPEN Bloody Paradise"
+ },
+ "w0824-PT-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-PT-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Chico da Tina",
+  "matched_title": "PEGA OU LARGA",
+  "query": "Chico da Tina PEGA OU LARGA"
+ },
+ "w0824-PT-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jeninho & Mariana Fagundes",
+  "matched_title": "Pe\u00e3o Todo Tatuado",
+  "query": "jeninho, Mariana Fagundes Pe\u00e3o Todo Tatuado"
+ },
+ "w0824-PT-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Soraia Ramos & Calema",
+  "matched_title": "O Nosso Amor",
+  "query": "Calema Chuva De Amor"
+ },
+ "w0824-PT-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0824-EG-01": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0824-EG-02": {
+  "label": "Egyptian Pop",
+  "source": "itunes",
+  "matched_artist": "Amr Diab",
+  "matched_title": "Lola El Banat",
+  "query": "Amr Diab, Orange Lola El Banat"
+ },
+ "w0824-EG-03": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0824-EG-04": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "Essam Sasa",
+  "matched_title": "\u0643\u0644\u0647\u0627 \u0645\u0633\u062a\u0646\u0638\u0631\u0647 \u0639\u064a\u0632\u0646\u064a \u0627\u0631\u062c\u0639 \u0648\u0631\u0627",
+  "query": "\u0643\u0644\u0647\u0627 \u0645\u0633\u062a\u0646\u0638\u0631\u0647 \u0639\u064a\u0632\u0646\u064a \u0627\u0631\u062c\u0639 \u0648\u0631\u0627"
+ },
+ "w0824-AR-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-AR-02": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Nico Manriquez, Zito Dj & BlackRiver",
+  "matched_title": "Cuando No Era Cantante",
+  "query": "El Bogueto, Anuel AA, Fuerza Regida, Yung Beef Cuando No Era Cantante (Remix)"
+ },
+ "w0824-AR-03": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Jay Wheeler, Brytiago & DJ Nelson",
+  "matched_title": "Sin Ti (Remix)",
+  "query": "Brytiago Estoy Pa' Ti"
+ },
+ "w0824-AR-04": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Tainy, Anuel AA & Ozuna",
+  "matched_title": "Adicto",
+  "query": "Anuel AA Las mas bonitas son p#tas"
+ },
+ "w0824-AR-05": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Eugenia Quevedo",
+  "matched_title": "No Podr\u00e1s (feat. Angela Leiva & La banda de Carlitos) [En Vivo]",
+  "query": "Eugenia Quevedo No Podr\u00e1s (En Vivo) (feat. Angela Leiva & La banda de Carlitos)"
+ },
+ "w0824-CO-01": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Lenin Ram\u00edrez",
+  "matched_title": "Todo Lo Fue",
+  "query": "Lenin Ramirez Todo Lo Fue"
+ },
+ "w0824-CO-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-CO-03": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Grupo Firme",
+  "matched_title": "El Beneficio De La Duda",
+  "query": "Grupo Firme El Beneficio De La Duda"
+ },
+ "w0824-CO-04": {
+  "label": "Pop Latino",
+  "source": "itunes",
+  "matched_artist": "Luister La Voz",
+  "matched_title": "La Mar\u00eda",
+  "query": "Luister La Voz La Mar\u00eda"
+ },
+ "w0824-CO-05": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Kris R. & Los Money Makers",
+  "matched_title": "Como Te Va Sin Mi",
+  "query": "Kris R., Los Money Makers GAMINA"
+ },
+ "w0824-PH-01": null,
+ "w0824-PH-02": {
+  "label": "Indie Pop",
+  "source": "itunes",
+  "matched_artist": "nicole",
+  "matched_title": "Panaginip",
+  "query": "nicole Panaginip"
+ },
+ "w0824-PH-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Katy Perry",
+  "matched_title": "The One That Got Away",
+  "query": "Katy Perry The One That Got Away"
+ },
+ "w0824-PH-04": {
+  "label": "Soundtrack",
+  "source": "itunes",
+  "matched_artist": "Jim Johnston",
+  "matched_title": "Viva La Raza (Eddie Guerrero)",
+  "query": "Viva La Raza"
+ },
+ "w0824-PH-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "HELLMERRY",
+  "matched_title": "Summer Crush",
+  "query": "HELLMERRY Summer Crush"
+ },
+ "w0824-AU-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-AU-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "w0824-AU-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0824-AU-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-AU-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-NZ-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-NZ-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "w0824-NZ-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-NZ-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-NZ-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Post Malone & Swae Lee",
+  "matched_title": "Sunflower (Spider-Man: Into the Spider-Verse)",
+  "query": "Post Malone, Swae Lee Sunflower"
+ },
+ "w0824-CV-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Alex Aks",
+  "matched_title": "Berdiana (feat. Marcia Cruz)",
+  "query": "Berdiana"
+ },
+ "w0824-CV-02": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Tony Fika",
+  "matched_title": "Dona Ana",
+  "query": "Tony Fika Dona Ana"
+ },
+ "w0824-CV-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-CV-04": null,
+ "w0824-CV-05": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Babysdu & Rods Wires",
+  "matched_title": "Limpa Nome",
+  "query": "Babysdu, Rods Wires Limpa Nome"
+ },
+ "w0824-JP-01": null,
+ "w0824-JP-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ILLIT",
+  "matched_title": "It's Me",
+  "query": "ILLIT It's Me"
+ },
+ "w0824-JP-05": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Mrs. GREEN APPLE",
+  "matched_title": "Brand New",
+  "query": "Mrs. GREEN APPLE Brand New"
+ },
+ "w0824-TH-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432",
+  "matched_title": "\u0412\u0456\u0432\u0442\u0430\u0440",
+  "query": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432 \u0412\u0456\u0432\u0442\u0430\u0440"
+ },
+ "w0824-TH-02": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "YONIA",
+  "matched_title": "\u0e21\u0e35\u0e15\u0e31\u0e07\u0e04\u0e4c\u0e2b\u0e21\u0e38\u0e19",
+  "query": "YONIA \u0e21\u0e35\u0e15\u0e31\u0e07\u0e04\u0e4c\u0e2b\u0e21\u0e38\u0e19"
+ },
+ "w0824-TH-03": {
+  "label": "R&B/Soul",
+  "source": "itunes",
+  "matched_artist": "SEA.",
+  "matched_title": "\u0e04\u0e23\u0e31\u0e49\u0e07\u0e2b\u0e19\u0e36\u0e48\u0e07 (feat. Z9)",
+  "query": "Z9 \u0e44\u0e21\u0e48\u0e23\u0e31\u0e01\u0e14\u0e35\u0e01\u0e27\u0e48\u0e32"
+ },
+ "w0824-TH-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Ly Nova",
+  "matched_title": "BOWKYLION \u2013 \u0e19\u0e32\u0e2c\u0e34\u0e01\u0e32\u0e17\u0e23\u0e32\u0e22 (sign) [Official MV]",
+  "query": "BOWKYLION \u0e19\u0e32\u0e2c\u0e34\u0e01\u0e32\u0e17\u0e23\u0e32\u0e22 (sign)"
+ },
+ "w0824-TH-05": null,
+ "w0824-TW-01": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "Jess Lee",
+  "matched_title": "\u7532\u4e59\u4e19\u4e01Strangers (\u7cb5\u8a9e\u7248)",
+  "query": "Jess Lee \u7532\u4e59\u4e19\u4e01Strangers"
+ },
+ "w0824-TW-02": {
+  "label": "Mandopop",
+  "source": "itunes",
+  "matched_artist": "\u99ac\u4e5f_Crabbit & Cole\u5148\u751f",
+  "matched_title": "\u6d77\u5c7f\u4f60",
+  "query": "\u9a6c\u4e5fCrabbit, Cole\u5148\u751f \u6d77\u5c7f\u4f60"
+ },
+ "w0824-TW-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ATEEZ",
+  "matched_title": "BAD",
+  "query": "ATEEZ BAD"
+ },
+ "w0824-TW-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "BIGBANG",
+  "matched_title": "BiiiG",
+  "query": "BIGBANG BiiiG"
+ },
+ "w0824-TW-05": {
+  "label": "Instrumental",
+  "source": "itunes",
+  "matched_artist": "By Heart",
+  "matched_title": "\u4e0d\u611b\u5c31\u4e0d\u611b (Instrumental)",
+  "query": "\u4e0d\u611b\u5c31\u4e0d\u611b"
+ },
+ "w0824-TR-01": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3",
+  "matched_title": "Sebebi Yar",
+  "query": "BLOK3 Sebebi Yar (Live)"
+ },
+ "w0824-TR-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "manifest",
+  "matched_title": "Toz Pembe",
+  "query": "manifest Toz Pembe"
+ },
+ "w0824-TR-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3 & Poizi",
+  "matched_title": "\u00c7ok G\u00fczel G\u00fcl\u00fcyorsun",
+  "query": "BLOK3, Poizi C\u0327ok G\u00fczel G\u00fcl\u00fcyorsun"
+ },
+ "w0824-TR-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "manifest & Ajda Pekkan",
+  "matched_title": "Hileli",
+  "query": "manifest, Ajda Pekkan Hileli"
+ },
+ "w0824-TR-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3",
+  "matched_title": "Kay\u0131p Kalp",
+  "query": "BLOK3 Kay\u0131p Kalp"
+ },
+ "w0824-MY-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Tulus",
+  "matched_title": "Teh Hijau",
+  "query": "Tulus Teh Hijau"
+ },
+ "w0824-MY-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Akbar Chalay & Mingse",
+  "matched_title": "Astaga Bercanda",
+  "query": "Akbar Chalay, Mingse Astaga Bercanda"
+ },
+ "w0824-MY-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Katy Perry",
+  "matched_title": "The One That Got Away",
+  "query": "Katy Perry The One That Got Away"
+ },
+ "w0824-MY-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Naykilla",
+  "matched_title": "MMG (My Mine Gueh)",
+  "query": "Naykilla MMG (My Mine Gueh)"
+ },
+ "w0824-MY-05": {
+  "label": "Malaysian Pop",
+  "source": "itunes",
+  "matched_artist": "K.O.I",
+  "matched_title": "Tiwikarma",
+  "query": "K.O.I Tiwikarma"
+ },
+ "w0824-DE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-DE-02": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Jamule, Sido & Miksu / Macloud",
+  "matched_title": "LOVEBOMB (feat. RYCH)",
+  "query": "Sido ISSA"
+ },
+ "w0824-DE-03": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "DJ Goja, Jason Derulo & Melody",
+  "matched_title": "Mi Chico (Jason Derulo x Melody Version)",
+  "query": "DJ Goja, Jason Derulo, Melody Mi Chico "
+ },
+ "w0824-DE-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "KITSCHKRIEG, Blumengarten & Shirin David",
+  "matched_title": "Gut Genug (mit Blumengarten & Shirin David)",
+  "query": "KITSCHKRIEG GUT GENUG (feat. Blumengarten & Shirin David)"
+ },
+ "w0824-DE-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3",
+  "matched_title": "Sebebi Yar",
+  "query": "BLOK3 Sebebi Yar (Live)"
+ },
+ "w0824-FR-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-FR-02": {
+  "label": "Christian",
+  "source": "itunes",
+  "matched_artist": "Mauvais Djo",
+  "matched_title": "Pil\u00e9 (Gospel)",
+  "query": "Mauvais djo Pil\u00e9"
+ },
+ "w0824-FR-03": {
+  "label": "South African Hip-Hop",
+  "source": "itunes",
+  "matched_artist": "Mauvais Djo",
+  "matched_title": "Maladie",
+  "query": "Mauvais djo Maladie"
+ },
+ "w0824-FR-04": {
+  "label": "Rap",
+  "source": "itunes",
+  "matched_artist": "Aya Nakamura & La Rvfleuze",
+  "matched_title": "Sexy Nana",
+  "query": "Aya Nakamura, La Rvfleuze Sexy Nana"
+ },
+ "w0824-FR-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "GIMS & La Mano 1.9",
+  "matched_title": "PARISIENNE",
+  "query": "GIMS, La Mano 1.9 PARISIENNE"
+ },
+ "w0824-ES-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-ES-02": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Quevedo & Elvis Crespo",
+  "matched_title": "LA GRACIOSA",
+  "query": "Quevedo, Elvis Crespo LA GRACIOSA"
+ },
+ "w0824-ES-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Ana Mena & Lola Indigo",
+  "matched_title": "pa ti toa <3",
+  "query": "Ana Mena, Lola Indigo pa ti toa <3"
+ },
+ "w0824-ES-04": {
+  "label": "Soundtrack",
+  "source": "itunes",
+  "matched_artist": "Lorien Testard, Alice Duport-Percier & Victor Borba",
+  "matched_title": "For Those Who Come After",
+  "query": "Conep After"
+ },
+ "w0824-ES-05": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ya Ice Dilan, DJ Honda, Rey Tony, Helabusador & JipMusic Global",
+  "matched_title": "Tienes (Remix)",
+  "query": "Ya Ice Dilan, Rey Tony, Helabusador, JipMusic Global, dj honda Dichavate"
+ },
+ "w0824-IT-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-IT-02": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Philip & Davyx",
+  "matched_title": "Costiera Amalfitana",
+  "query": "LA COSTIERA AMALFITANA (feat. Arisa & Nino D'Angelo)"
+ },
+ "w0824-IT-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Fred De Palma",
+  "matched_title": "TUTTO QUELLO CHE HO (feat. Emis Killa, Omar Montes & Juli)",
+  "query": "Fred De Palma, Anitta, Emis Killa LA TESTA GIRA"
+ },
+ "w0824-IT-04": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Calvin Harris & Rihanna",
+  "matched_title": "This Is What You Came For",
+  "query": "ANNA WHITE GIRL WASTED"
+ },
+ "w0824-IT-05": {
+  "label": "Electronic",
+  "source": "itunes",
+  "matched_artist": "EMMANUELLE",
+  "matched_title": "Ossessione",
+  "query": "OSSESSIONE"
+ },
+ "w0824-NL-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-NL-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-NL-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-NL-04": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "DJ Goja, Jason Derulo & Melody",
+  "matched_title": "Mi Chico (Jason Derulo x Melody Version)",
+  "query": "DJ Goja, Jason Derulo, Melody Mi Chico "
+ },
+ "w0824-NL-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Justen de Wildt",
+  "matched_title": "Cheerio",
+  "query": "Justen de Wildt Cheerio"
+ },
+ "w0824-PL-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-PL-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Nina Lakomy",
+  "matched_title": "Kawa z diab\u0142em",
+  "query": "Nina Lakomy Kawa z diab\u0142em"
+ },
+ "w0824-PL-03": {
+  "label": "Electronic",
+  "source": "itunes",
+  "matched_artist": "PUMPSOUND, Sequento & Cypis",
+  "matched_title": "Stan Deweloperski (PUMPSOUND Remix)",
+  "query": "Sequento, Cypis Stan Deweloperski"
+ },
+ "w0824-PL-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Kuqe 2115 & francis",
+  "matched_title": "taki ma\u0142y ja",
+  "query": "Nareszcie"
+ },
+ "w0824-PL-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Sok\u00f3\u0142, clearmind & ENKLAWA",
+  "matched_title": "Pogwarzymy",
+  "query": "Sok\u00f3\u0142, clearmind, ENKLAWA Pogwarzymy"
+ },
+ "w0824-SE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-SE-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-SE-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-SE-04": {
+  "label": "Vocal",
+  "source": "itunes",
+  "matched_artist": "KhariXKhari",
+  "matched_title": "July 8th, 1991",
+  "query": "Yasin 1991"
+ },
+ "w0824-SE-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0824-SA-01": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0824-SA-02": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "Cairokee",
+  "matched_title": "Tata Tata",
+  "query": "Cairokee \u062a\u0627\u062a\u0627 \u062a\u0627\u062a\u0627"
+ },
+ "w0824-SA-03": {
+  "label": "Egyptian Pop",
+  "source": "itunes",
+  "matched_artist": "Sherine",
+  "matched_title": "Tebaa'n Tebaa'n",
+  "query": "Sherine Tebaa'n Tebaa'n"
+ },
+ "w0824-SA-04": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0824-SA-05": {
+  "label": "Egyptian Pop",
+  "source": "itunes",
+  "matched_artist": "Nabil",
+  "matched_title": "Tayeh Fel Amaken",
+  "query": "Nabil \u062a\u0627\u064a\u0647 \u0641\u064a \u0627\u0644\u0623\u0645\u0627\u0643\u0646"
+ },
+ "w0824-VN-01": {
+  "label": "House",
+  "source": "itunes",
+  "matched_artist": "AKA DJ TEAM",
+  "matched_title": "THIE\u0302N \u0110U\u031bO\u031b\u0300NG VO\u031b\u0301I NGU\u031bO\u031b\u0300I THU\u031bO\u031bNG (feat. PHU\u031bO\u031bNG MY\u0303 CHI x DTAP & DJ KRISSNA) [BASS HOUSE REMIX]",
+  "query": "Ph\u01b0\u01a1ng M\u1ef9 Chi, DTAP Thi\u00ean \u0110\u01b0\u1eddng V\u1edbi Ng\u01b0\u1eddi Th\u01b0\u01a1ng"
+ },
+ "w0824-VN-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "TINH H\u00c0 \"SAY HI\"",
+  "matched_title": "SECRET (feat. Quang H\u00f9ng MasterD, CODYNAMVO, CONGB & Wren Evans)",
+  "query": "TINH H\u00c0 \"SAY HI\" SECRET (feat. Quang H\u00f9ng MasterD, CODYNAMVO, CONGB & Wren Evans)"
+ },
+ "w0824-VN-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "TINH H\u00c0 \"SAY HI\"",
+  "matched_title": "MRT (feat. Xu\u00e2n \u0110\u1ecbnh K.Y, buitruonglinh, CAPTAIN BOY & HYO)",
+  "query": "ANH TRAI \"SAY HI\", Xu\u00e2n \u0110\u1ecbnh K.Y, buitruonglinh, CAPTAIN BOY, HYO MRT"
+ },
+ "w0824-VN-04": {
+  "label": "Alternative Rap",
+  "source": "itunes",
+  "matched_artist": "Dangrangto & DONAL",
+  "matched_title": "x\u01b0\u01a1ng r\u1ed3ng (intro)",
+  "query": "Dangrangto, DONAL x\u01b0\u01a1ng r\u1ed3ng (intro)"
+ },
+ "w0824-VN-05": null,
+ "w0824-SG-01": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "Jess Lee",
+  "matched_title": "\u7532\u4e59\u4e19\u4e01Strangers (\u7cb5\u8a9e\u7248)",
+  "query": "Jess Lee \u7532\u4e59\u4e19\u4e01Strangers"
+ },
+ "w0824-SG-02": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "BIGBANG",
+  "matched_title": "BiiiG",
+  "query": "BIGBANG BiiiG"
+ },
+ "w0824-SG-03": {
+  "label": "Mandopop",
+  "source": "itunes",
+  "matched_artist": "\u99ac\u4e5f_Crabbit & Cole\u5148\u751f",
+  "matched_title": "\u6d77\u5c7f\u4f60",
+  "query": "\u9a6c\u4e5fCrabbit, Cole\u5148\u751f \u6d77\u5c7f\u4f60"
+ },
+ "w0824-SG-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-SG-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-HK-01": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Shaggy",
+  "matched_title": "Boombastic",
+  "query": "At Least A Hug"
+ },
+ "w0824-HK-02": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "MC Cheung Tinfu",
+  "matched_title": "\u7537\u4eba\u600e\u53ef\u4ee5",
+  "query": "MC Cheung Tinfu What Makes A Man"
+ },
+ "w0824-HK-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "BIGBANG",
+  "matched_title": "BiiiG",
+  "query": "BIGBANG BiiiG"
+ },
+ "w0824-HK-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "SiiRO",
+  "matched_title": "\u7528\u80cc\u810a\u5531\u60c5\u6b4c",
+  "query": "Gareth.T \u7528\u80cc\u810a\u5531\u60c5\u6b4c"
+ },
+ "w0824-HK-05": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "Goodnight, Lillie",
+  "matched_title": "\u6211\u770b\u898b\u4eca\u665a\u7684\u6708\u8272\u5f88\u7f8e,\u4f60\u5462?",
+  "query": "Goodnight, Lillie \u6211\u770b\u898b\u4eca\u665a\u7684\u6708\u8272\u5f88\u7f8e\uff0c\u4f60\u5462\uff1f"
+ },
+ "w0824-MA-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LAZARO",
+  "matched_title": "ZOMBIE",
+  "query": "LAZARO ZOMBIE"
+ },
+ "w0824-MA-02": null,
+ "w0824-MA-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-MA-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Stormy",
+  "matched_title": "KILOWAT",
+  "query": "Stormy KILOWAT"
+ },
+ "w0824-MA-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "MDA Production",
+  "matched_title": "Happy Birthday King Mohammed VI",
+  "query": "MDA Production Happy Birthday King Mohammed VI"
+ },
+ "w0824-ZW-01": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "Major Terro",
+  "matched_title": "Yadeuka Yadeuka (feat. King Alfa Kadiki)",
+  "query": "Major Terro Yadeuka Yadeuka"
+ },
+ "w0824-ZW-02": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Nisha Ts",
+  "matched_title": "Shasha (feat. Holy Ten)",
+  "query": "Nisha Ts Shasha (feat. Holy Ten)"
+ },
+ "w0824-ZW-03": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "Hulengende",
+  "matched_title": "Bhura Dhanzi (feat. Madedido)",
+  "query": "Hulengende Bhura Dhanzi (feat. Madedido)"
+ },
+ "w0824-ZW-04": {
+  "label": "African Dancehall",
+  "source": "itunes",
+  "matched_artist": "Shinsoman",
+  "matched_title": "Always in My Mind (feat. Kae Chaps)",
+  "query": "Shinsoman, Kae Chaps Always in My Mind"
+ },
+ "w0824-ZW-05": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "Nashie Zim",
+  "matched_title": "PAFEYA FEYA",
+  "query": "Nashie Zim PAFEYA FEYA"
+ },
+ "w0824-DO-01": {
+  "label": "Underground Rap",
+  "source": "itunes",
+  "matched_artist": "Lil Naay",
+  "matched_title": "MAMI",
+  "query": "Lil Naay PERRA"
+ },
+ "w0824-DO-02": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Dalvin La Melodia",
+  "matched_title": "Amnesia",
+  "query": "Dalvin La Melodia Amnesia"
+ },
+ "w0824-DO-03": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "La Prendia",
+  "matched_title": "ALPLAX",
+  "query": "Alplax"
+ },
+ "w0824-DO-04": null,
+ "w0824-DO-05": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ovi & Kim Loaiza",
+  "matched_title": "Despu\u00e9s De Las 12",
+  "query": "Despues de las 12"
+ },
+ "w0824-SN-01": {
+  "label": "Mbalax",
+  "source": "itunes",
+  "matched_artist": "Viviane Chidid",
+  "matched_title": "Nous 2 (feat. Wally B. Seck)",
+  "query": "Viviane Chidid Nous 2 (feat. Wally B. Seck)"
+ },
+ "w0824-SN-02": {
+  "label": "Mbalax",
+  "source": "itunes",
+  "matched_artist": "Bass Thioung",
+  "matched_title": "Baol",
+  "query": "Bass Thioung Baol"
+ },
+ "w0824-SN-03": {
+  "label": "Mbalax",
+  "source": "itunes",
+  "matched_artist": "Mia Guisse & VJ",
+  "matched_title": "Sama Xool",
+  "query": "Mia Guisse, Vj Sama Xool"
+ },
+ "w0824-SN-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-SN-05": {
+  "label": "African",
+  "source": "itunes",
+  "matched_artist": "Jahman X-press",
+  "matched_title": "Arva (feat. Souleymane Faye, Soda Mama Fall & Kine Lam)",
+  "query": "Jahman X-Press Arva (feat. Souleymane Faye, Soda Mama Fall & Kin\u00e9 Lam)"
+ },
+ "w0824-CI-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Dydy Yeman",
+  "matched_title": "CASSE TES REINS",
+  "query": "Dydy Yeman CASSE TES REINS"
+ },
+ "w0824-CI-02": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "TAZEBOY",
+  "matched_title": "MATATA",
+  "query": "Tazeboy MATATA"
+ },
+ "w0824-CI-03": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Wizkid",
+  "matched_title": "Apr\u00e8s Minuit (feat. Tiakola)",
+  "query": "Tiakola M\u00e9lo D\u00e9cal\u00e9"
+ },
+ "w0824-CI-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-CI-05": null,
+ "w0824-ET-02": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Teddy Afro",
+  "matched_title": "Shih Bibal (Back to 90s)",
+  "query": "Teddy Afro Shih Bibal (Back to 90s)"
+ },
+ "w0824-ET-04": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Teddy Afro",
+  "matched_title": "Tayegn",
+  "query": "Teddy Afro Tayegn"
+ },
+ "w0824-ET-05": null,
+ "w0824-AO-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "DJ Kalisboy",
+  "matched_title": "Homenagem Ao Scr\u00f3 Que Cuia (feat. LEONEL PATRICINHO)",
+  "query": "SINTONIA07, Scro Que Cuia, Dj Kalisboy S\u00f3 Mais um Pouco"
+ },
+ "w0824-AO-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-AO-03": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Primavera Club",
+  "matched_title": "Dorama",
+  "query": "Dorama"
+ },
+ "w0824-AO-04": {
+  "label": "House",
+  "source": "itunes",
+  "matched_artist": "Delma Silva, Mozany Bu\u00e9 de Ahh & D'benilson",
+  "matched_title": "Idolatrada (Agorinha Mesmo)",
+  "query": "Delma Silva, Mozany Bu\u00e9 De Ahh, D'benilson Idolatrada (Agorinha Mesmo)"
+ },
+ "w0824-AO-05": {
+  "label": "Baile Funk",
+  "source": "itunes",
+  "matched_artist": "MC Peruzzo",
+  "matched_title": "Mulher de Bandido",
+  "query": "Mulher Do Bandido"
+ },
+ "w0824-MZ-01": {
+  "label": "Amapiano",
+  "source": "itunes",
+  "matched_artist": "Blow258 & Eazy-K",
+  "matched_title": "Parte Parte",
+  "query": "Blow258 Parte Parte"
+ },
+ "w0824-MZ-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Nadson o Ferinha",
+  "matched_title": "Abre a Porta",
+  "query": "Ritmo Da Lusofonia Abre A Porta Amor / S\u00f3 Sa\u00ed Pra Beber"
+ },
+ "w0824-MZ-03": {
+  "label": "Praise & Worship",
+  "source": "itunes",
+  "matched_artist": "Suzy P\u00e9cora",
+  "matched_title": "Meu Noivo Vem",
+  "query": "Veio Buscar a Suzy"
+ },
+ "w0824-MZ-04": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Z\u00e9 Ngola",
+  "matched_title": "Ta me quer Voltar",
+  "query": "Z\u00e9 Ngola Ta me quer Voltar"
+ },
+ "w0824-MZ-05": null,
+ "w0824-CM-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-CM-02": {
+  "label": "R&B/Soul",
+  "source": "itunes",
+  "matched_artist": "Imen Es & MHD",
+  "matched_title": "Appelez-les",
+  "query": "Appelez les"
+ },
+ "w0824-CM-03": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Tim Storm",
+  "matched_title": "SUSPENDU (GOSPEL)",
+  "query": "Tim Storm SUSPENDU (GOSPEL)"
+ },
+ "w0824-CM-04": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Fally Ipupa",
+  "matched_title": "100",
+  "query": "Fally Ipupa Deux \u00eatres"
+ },
+ "w0824-CM-05": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Ayra Starr",
+  "matched_title": "Heaven Baby (feat. ZAYN)",
+  "query": "Ayra Starr Heaven Baby (feat. ZAYN)"
+ },
+ "w0824-JM-01": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "J.Sipp",
+  "matched_title": "We Outside Today (feat. Wacotron & RapperX) [Special Version]",
+  "query": "We Outside Today"
+ },
+ "w0824-JM-02": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Masicka & Kraff Gad",
+  "matched_title": "Honor Roll",
+  "query": "Masicka Honor Roll"
+ },
+ "w0824-JM-03": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Jahshii",
+  "matched_title": "Paper Chaser (feat. Malie Donn)",
+  "query": "Malie Donn, Dan Sky Vancleef Pt 2"
+ },
+ "w0824-JM-04": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Jahshii",
+  "matched_title": "Paper Chaser (feat. Malie Donn)",
+  "query": "Malie Donn, Attomatic Van Cleef"
+ },
+ "w0824-JM-05": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Cali Fr & Bornstar876",
+  "matched_title": "I Know",
+  "query": "Cali Fr Bread"
+ },
+ "w0824-RO-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Leo de la Rosiori",
+  "matched_title": "Am intrebat un om (Nebunu)",
+  "query": "Leo de la Rosiori Am intrebat un om (Nebunu)"
+ },
+ "w0824-RO-02": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Florin Cercel",
+  "matched_title": "Doar Pentru Tine Amore (feat. Antonia Cercel)",
+  "query": "Florin Cercel Doar Pentru Tine Amore (feat. Antonia Cercel)"
+ },
+ "w0824-RO-03": {
+  "label": "Europe",
+  "source": "itunes",
+  "matched_artist": "Bogdan DLP",
+  "matched_title": "Hazolina",
+  "query": "Bogdan DLP Hazolina"
+ },
+ "w0824-RO-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-RO-05": {
+  "label": "Europe",
+  "source": "itunes",
+  "matched_artist": "Bogdan DLP",
+  "matched_title": "Te pup",
+  "query": "Bogdan DLP Te pup"
+ },
+ "w0824-UA-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Fayna Divka",
+  "matched_title": "\u0427\u0435\u0440\u0432\u043e\u043d\u0438\u0439 \u043c\u0430\u043a - \u043c\u0456\u0439 \u043c\u0430\u044f\u043a",
+  "query": "\u0427\u0435\u0440\u0432\u043e\u043d\u0438\u0439 \u043c\u0430\u043a"
+ },
+ "w0824-UA-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KAVYRO",
+  "matched_title": "\u041f\u043b\u044f\u0448\u043a\u0430 \u0444\u0440\u0430\u0433\u043e\u043b\u0456\u043d\u043e",
+  "query": "Uran Yopa \u041f\u043b\u044f\u0448\u043a\u0430 \u0424\u0440\u0430\u0433\u043e\u043b\u0456\u043d\u043e"
+ },
+ "w0824-UA-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Alena Omargalieva",
+  "matched_title": "\u041c\u0443\u0437\u0438\u043a\u043e",
+  "query": "\u041c\u0443\u0437\u0438\u043a\u043e"
+ },
+ "w0824-UA-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "DNK",
+  "matched_title": "\u0410 \u041c\u043e\u0436\u0435 \u0422\u0438 \u041c\u0435\u043d\u0435 \u041f\u043e\u043b\u044e\u0431\u0438\u0448 (feat. TEMRA)",
+  "query": "DNK \u0410 \u041c\u043e\u0436\u0435 \u0422\u0438 \u041c\u0435\u043d\u0435 \u041f\u043e\u043b\u044e\u0431\u0438\u0448 (feat. TEMRA)"
+ },
+ "w0824-UA-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432",
+  "matched_title": "\u0412\u0456\u0432\u0442\u0430\u0440",
+  "query": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432 \u0412\u0456\u0432\u0442\u0430\u0440"
+ },
+ "w0824-RS-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Devito",
+  "matched_title": "RocknRolla",
+  "query": "Devito RocknRolla"
+ },
+ "w0824-RS-02": {
+  "label": "Folk",
+  "source": "itunes",
+  "matched_artist": "Aleksandra Prijovi\u0107",
+  "matched_title": "Kababa",
+  "query": "Aleksandra Prijovic Kababa"
+ },
+ "w0824-RS-03": {
+  "label": "Folk",
+  "source": "itunes",
+  "matched_artist": "Aleksandra Prijovi\u0107",
+  "matched_title": "Macho Man (feat. Dejan Petrovic)",
+  "query": "Aleksandra Prijovic Macho Man (feat. Dejan Petrovic)"
+ },
+ "w0824-RS-04": {
+  "label": "Rap",
+  "source": "itunes",
+  "matched_artist": "Popovska & 2soma",
+  "matched_title": "Malo Sutra",
+  "query": "Popovska, 2soma Malo Sutra"
+ },
+ "w0824-RS-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-IE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-IE-02": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Carolyn Hyde",
+  "matched_title": "Bring Them Home",
+  "query": "Carolyn Hyde Bring Them Home"
+ },
+ "w0824-IE-03": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Kingfishr",
+  "matched_title": "Killeagh",
+  "query": "Kingfishr Killeagh"
+ },
+ "w0824-IE-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-IE-05": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Kingfishr",
+  "matched_title": "The Sun Will Never Settle",
+  "query": "Kingfishr The Sun Will Never Settle"
+ },
+ "w0824-DK-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-DK-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-DK-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-DK-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Tobias Rahim",
+  "matched_title": "Den Danske Sommer (feat. Birthe Kj\u00e6r)",
+  "query": "Tobias Rahim Den Danske Sommer (feat. Birthe Kj\u00e6r)"
+ },
+ "w0824-DK-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0824-FI-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-FI-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Markku Aro",
+  "matched_title": "V\u00e4\u00e4r\u00e4 Nainen",
+  "query": "V\u00e4\u00e4r\u00e4 nainen"
+ },
+ "w0824-FI-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-FI-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-FI-05": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "RobbeBoy",
+  "matched_title": "Espanja Blessaa",
+  "query": "RobbeBoy Espanja Blessaa"
+ },
+ "w0824-IS-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-IS-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-IS-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0824-IS-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-IS-05": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Dolly Parton",
+  "matched_title": "9 to 5",
+  "query": "9 to 5"
+ },
+ "w0824-CZ-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-CZ-02": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Ewa Farna",
+  "matched_title": "Smej Se",
+  "query": "Ewa Farna Ne\u0159\u00edkej, co m\u00e1 se st\u00e1t"
+ },
+ "w0824-CZ-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Penguin Cafe Orchestra",
+  "matched_title": "Perpetuum Mobile",
+  "query": "PERPETUUM MOBILE"
+ },
+ "w0824-CZ-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Ewa Farna & Mirai",
+  "matched_title": "Vzpomene\u0161 si?",
+  "query": "Ewa Farna, Mirai Vzpomene\u0161 si?"
+ },
+ "w0824-CZ-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Fayna Divka",
+  "matched_title": "\u0427\u0435\u0440\u0432\u043e\u043d\u0438\u0439 \u043c\u0430\u043a - \u043c\u0456\u0439 \u043c\u0430\u044f\u043a",
+  "query": "\u0427\u0435\u0440\u0432\u043e\u043d\u0438\u0439 \u043c\u0430\u043a"
+ },
+ "w0824-CL-01": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Jere Klein, Blessd & Raven la R",
+  "matched_title": "MILLONETA",
+  "query": "Jere Klein, Blessd, Raven la R MILLONETA"
+ },
+ "w0824-CL-02": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Tainy, Anuel AA & Ozuna",
+  "matched_title": "Adicto",
+  "query": "Anuel AA Las mas bonitas son p#tas"
+ },
+ "w0824-CL-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-CL-04": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ovy On the Drums, Jere Klein & Blessd",
+  "matched_title": "Q Hubo Amor (Medell\u00edn)",
+  "query": "Ovy On The Drums, Jere Klein, Blessd Q Hubo Amor (Medell\u00edn)"
+ },
+ "w0824-CL-05": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Agua Marina",
+  "matched_title": "Cenizas",
+  "query": "Anuel AA Donde Hubo Fuego Cenizas Quedan"
+ },
+ "w0824-PE-01": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "La Bella Luz",
+  "matched_title": "Y Qu\u00e9 Pas\u00f3",
+  "query": "La Bella Luz Y Que Pas\u00f3"
+ },
+ "w0824-PE-02": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Pascualillo Coronado",
+  "matched_title": "Quiero ser Feliz",
+  "query": "La Bella Luz Mix Quiero Ser Feliz (31 Aniversario)"
+ },
+ "w0824-PE-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-PE-04": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ya Ice Dilan, DJ Honda, Rey Tony, Helabusador & JipMusic Global",
+  "matched_title": "Tienes (Remix)",
+  "query": "Ya Ice Dilan, Rey Tony, Helabusador, JipMusic Global, dj honda Dichavate"
+ },
+ "w0824-PE-05": null,
+ "w0824-CA-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-CA-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "w0824-CA-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0824-CA-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ILLIT",
+  "matched_title": "IYKYK (If You Know You Know)",
+  "query": "IYKYK"
+ },
+ "w0824-CA-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0824-GR-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0824-GR-02": {
+  "label": "Singer/Songwriter",
+  "source": "itunes",
+  "matched_artist": "Antonis Karatzis",
+  "matched_title": "Leipeis",
+  "query": "Leipeis"
+ },
+ "w0824-GR-05": {
+  "label": "Singer/Songwriter",
+  "source": "itunes",
+  "matched_artist": "Giannis Grosis",
+  "matched_title": "Den Exei Mathei N' Agapaei / Den Eimai San Tous Allous / Kai Xristos Ki Alitis (Synaisthimata Medley, Pt.1 - Autopepoithisi)",
+  "query": "Giannis Grosis Den Exei Mathei N' Agapaei, Den Eimai San Tous Allous, Kai Xristos Ki Alitis (Synaisthimata Medley pt.1 - Autopepoithisi)"
+ },
+ "w0831-KE-01": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Sabi Wu, djprodluigi & Thirtyfourbrick",
+  "matched_title": "Nisho (feat. Mauru Gwash)",
+  "query": "Hongo Ya Karao (Vol. 2) (feat. Mauru Gwash & Kapitani)"
+ },
+ "w0831-KE-02": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Kapitani",
+  "matched_title": "Kitemeo",
+  "query": "Kapitani Kitemeo"
+ },
+ "w0831-KE-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-KE-04": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Ayra Starr",
+  "matched_title": "Heaven Baby (feat. ZAYN)",
+  "query": "Ayra Starr Heaven Baby (feat. ZAYN)"
+ },
+ "w0831-KE-05": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Mbosso",
+  "matched_title": "Ozalima",
+  "query": "Mbosso Ozalima"
+ },
+ "w0831-AE-01": {
+  "label": "Indie Pop",
+  "source": "itunes",
+  "matched_artist": "Jibon Krishna Das & Anonya Das",
+  "matched_title": "Kalyani (Remix Version)",
+  "query": "KALYANI (Remix)"
+ },
+ "w0831-AE-02": {
+  "label": "Soundtrack",
+  "source": "itunes",
+  "matched_artist": "Jakes Bejoy, Sid Sriram, Mohammed Maqbool Mansoor & Muthu",
+  "matched_title": "Asalayavale (From \"Khalifa\")",
+  "query": "Jakes Bejoy, Sid Sriram, Mohammed Maqbool Mansoor, Muthu Asalayavale "
+ },
+ "w0831-AE-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-AE-05": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0831-TZ-01": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Mbosso, Nandy & S2Kizzy",
+  "matched_title": "Malaika",
+  "query": "Nandy Malaika"
+ },
+ "w0831-TZ-02": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Ibraah",
+  "matched_title": "Uhakika (feat. Zuchu) [Remix]",
+  "query": "Ibraah Uhakika"
+ },
+ "w0831-TZ-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Marioo & D Voice",
+  "matched_title": "Watu",
+  "query": "Marioo, D Voice Watu"
+ },
+ "w0831-TZ-04": {
+  "label": "Bongo-Flava",
+  "source": "itunes",
+  "matched_artist": "Lulu Diva & D Voice",
+  "matched_title": "Viatu Vyangu",
+  "query": "Lulu Diva, D Voice Viatu Vyangu"
+ },
+ "w0831-TZ-05": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "Mbosso",
+  "matched_title": "DJ",
+  "query": "Mbosso DJ"
+ },
+ "w0831-NG-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Davido, FOLA & Mayorkun",
+  "matched_title": "B4 B4",
+  "query": "Davido, Mayorkun, FOLA B4 B4"
+ },
+ "w0831-NG-02": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Ayra Starr",
+  "matched_title": "Heaven Baby (feat. ZAYN)",
+  "query": "Ayra Starr Heaven Baby (feat. ZAYN)"
+ },
+ "w0831-NG-03": {
+  "label": "African",
+  "source": "itunes",
+  "matched_artist": "Seyi Vibez",
+  "matched_title": "BACK 2 U",
+  "query": "BACK 2 U"
+ },
+ "w0831-NG-04": {
+  "label": "African",
+  "source": "itunes",
+  "matched_artist": "Asake",
+  "matched_title": "Gratitude (Live in London)",
+  "query": "Asake Gratitude (Live in London)"
+ },
+ "w0831-NG-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-GH-01": {
+  "label": "R&B/Soul",
+  "source": "itunes",
+  "matched_artist": "Niah",
+  "matched_title": "Don't Come Too Close",
+  "query": "Don't Come Too Close"
+ },
+ "w0831-GH-02": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Kweku Smoke & Lasmid",
+  "matched_title": "Faith",
+  "query": "Kweku Smoke, Lasmid Faith"
+ },
+ "w0831-GH-03": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "L'Oiseau Rare & Emma'a",
+  "matched_title": "YANGO",
+  "query": "L'Oiseau Rare YANGO (feat. Emma'a)"
+ },
+ "w0831-GH-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Sarz",
+  "matched_title": "Hennessy Cypher 2026 (feat. Kwesi Arthur, ENNY, Suspect 95, Fena Gitu, Yanga Chief & Tenor)",
+  "query": "Sarz Hennessy Cypher 2026 (feat. Kwesi Arthur, ENNY, Suspect95, Fena Gitu, Yanga Chief & Tenor)"
+ },
+ "w0831-GH-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-UG-01": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "King Saha",
+  "matched_title": "Wewe",
+  "query": "King Saha WEWE"
+ },
+ "w0831-UG-02": {
+  "label": "Afro-fusion",
+  "source": "itunes",
+  "matched_artist": "Lutty Neika",
+  "matched_title": "Anaconda (feat. Bravion Emcee)",
+  "query": "Lutty Neika Anaconda (feat. Bravion Emcee )"
+ },
+ "w0831-UG-03": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Kalifah Aganaga",
+  "matched_title": "Nassanga (feat. Eddy Kenzo & Winnie Nwagi & LIL PAZO LUNABE MUSIC & Weasel) [Remix]",
+  "query": "Kalifah Aganaga Nassanga (Remix) (feat. Eddy Kenzo, Winnie Nwagi, LIL PAZO LUNABE MUSIC & Weasel)"
+ },
+ "w0831-UG-04": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Joshua Baraka",
+  "matched_title": "YoYo",
+  "query": "Joshua Baraka YoYo"
+ },
+ "w0831-UG-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-ZA-01": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Tman Xpress & Mellow & Sleazy",
+  "matched_title": "Remember",
+  "query": "Tman Xpress, Mellow & Sleazy Remember"
+ },
+ "w0831-ZA-02": {
+  "label": "Maskandi",
+  "source": "itunes",
+  "matched_artist": "Zulu Queens, Lwah Ndlunkulu, MaWhoo & Feza",
+  "matched_title": "Distance",
+  "query": "Zulu Queens, Lwah Ndlunkulu, MaWhoo, FEZA Distance"
+ },
+ "w0831-ZA-03": {
+  "label": "Maskandi",
+  "source": "itunes",
+  "matched_artist": "Mthandeni SK",
+  "matched_title": "Ichunu (feat. Sne Ntuli)",
+  "query": "Mthandeni Sk, Sne Ntuli Ichunu"
+ },
+ "w0831-ZA-04": {
+  "label": "Amapiano",
+  "source": "itunes",
+  "matched_artist": "Thatohatsi & Sjava",
+  "matched_title": "Ama hem hem (feat. ShaunMusiq)",
+  "query": "Thatohatsi, Sjava Ama hem hem (feat. Shaunmusiq)"
+ },
+ "w0831-ZA-05": {
+  "label": "South Africa",
+  "source": "itunes",
+  "matched_artist": "MENZI MUSIC",
+  "matched_title": "Vuma",
+  "query": "MENZI MUSIC Vuma"
+ },
+ "w0831-GB-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-GB-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-GB-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-GB-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0831-GB-05": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Dolly Parton",
+  "matched_title": "9 to 5",
+  "query": "9 to 5"
+ },
+ "w0831-BR-01": null,
+ "w0831-BR-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jeninho & Mariana Fagundes",
+  "matched_title": "Pe\u00e3o Todo Tatuado",
+  "query": "jeninho, Mariana Fagundes Pe\u00e3o Todo Tatuado"
+ },
+ "w0831-BR-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-BR-04": {
+  "label": "Sertanejo",
+  "source": "itunes",
+  "matched_artist": "Zez\u00e9 Di Camargo",
+  "matched_title": "Irm\u00e3o da Lua, Amigo das Estrelas",
+  "query": "Zez\u00e9 Di Camargo Irm\u00e3o da Lua, Amigo das Estrelas"
+ },
+ "w0831-BR-05": {
+  "label": "Forr\u00f3",
+  "source": "itunes",
+  "matched_artist": "Hendson Trankinha",
+  "matched_title": "Corolla Cross ( T\u00e1 Pedindo Toma )",
+  "query": "Ta Pedindo Toma"
+ },
+ "w0831-KR-01": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "BIGBANG",
+  "matched_title": "BiiiG",
+  "query": "BIGBANG BiiiG"
+ },
+ "w0831-KR-02": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ATEEZ",
+  "matched_title": "BAD",
+  "query": "ATEEZ BAD"
+ },
+ "w0831-KR-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "RESCENE",
+  "matched_title": "LOVE ATTACK",
+  "query": "RESCENE LOVE ATTACK"
+ },
+ "w0831-KR-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "aespa",
+  "matched_title": "LEMONADE",
+  "query": "aespa LEMONADE"
+ },
+ "w0831-KR-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "CORTIS",
+  "matched_title": "REDRED",
+  "query": "CORTIS REDRED"
+ },
+ "w0831-MX-01": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Neton Vega",
+  "matched_title": "RIKI",
+  "query": "Neton Vega RIKI"
+ },
+ "w0831-MX-02": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Lenin Ram\u00edrez",
+  "matched_title": "Todo Lo Fue",
+  "query": "Lenin Ramirez Todo Lo Fue"
+ },
+ "w0831-MX-03": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Lenin Ram\u00edrez",
+  "matched_title": "Todo Lo Fue",
+  "query": "Lenin Ramirez Polvo Rosita"
+ },
+ "w0831-MX-04": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "KAROL G, Judeline & rusowsky",
+  "matched_title": "BbY WOW",
+  "query": "KAROL G, Judeline, rusowsky BbY WOW"
+ },
+ "w0831-MX-05": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Herencia De Grandes",
+  "matched_title": "Ya Borracho",
+  "query": "Herencia De Grandes Ya Borracho"
+ },
+ "w0831-US-01": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "w0831-US-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-US-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-US-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Cardi B",
+  "matched_title": "AH HA",
+  "query": "Cardi B AH HA"
+ },
+ "w0831-US-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-IN-02": {
+  "label": "Indie Pop",
+  "source": "itunes",
+  "matched_artist": "Jibon Krishna Das & Anonya Das",
+  "matched_title": "Kalyani (Remix Version)",
+  "query": "KALYANI (Remix)"
+ },
+ "w0831-IN-03": {
+  "label": "Tamil",
+  "source": "itunes",
+  "matched_artist": "G.V. Prakash Kumar & Ken Karunaas",
+  "matched_title": "Mutta Kalakki (From \"Youth\")",
+  "query": "G.V. Prakash Kumar, Ken Karunaas Mutta Kalakki "
+ },
+ "w0831-IN-04": {
+  "label": "Telugu",
+  "source": "itunes",
+  "matched_artist": "G.V. Prakash Kumar, Dappu Srinu, Sunkara Anjaneyulu & Chowdam Srinivasa Rao",
+  "matched_title": "Mallepoola Pallaki",
+  "query": "G.V. Prakash Kumar, Dappu Srinu Mallepoola Pallaki"
+ },
+ "w0831-IN-05": {
+  "label": "Telugu",
+  "source": "itunes",
+  "matched_artist": "G.V. Prakash Kumar, Ananthu, Shiva Nirvana & Kalyan Chakravarthy",
+  "matched_title": "Irumudi Kattu (From \"Irumudi\") - TELUGU",
+  "query": "Irumudi Kattu"
+ },
+ "w0831-ID-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Tulus",
+  "matched_title": "Teh Hijau",
+  "query": "Tulus Teh Hijau"
+ },
+ "w0831-ID-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "karaoke SESH",
+  "matched_title": "Sesi Potret (Originally Performed by e\u0144au & Ari Lesmana) [Karaoke Version]",
+  "query": "Ari Lesmana, e\u0144au Sesi Potret"
+ },
+ "w0831-ID-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Raim Laode",
+  "matched_title": "Dunia Yang Nanti",
+  "query": "Raim laode Dunia Yang Nanti"
+ },
+ "w0831-ID-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Naykilla",
+  "matched_title": "MMG (My Mine Gueh)",
+  "query": "Naykilla MMG (My Mine Gueh)"
+ },
+ "w0831-ID-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ALPHA DRIVE ONE",
+  "matched_title": "BORN DIRE",
+  "query": "BORN DIRE"
+ },
+ "w0831-PT-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-PT-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Chico da Tina",
+  "matched_title": "PEGA OU LARGA",
+  "query": "Chico da Tina PEGA OU LARGA"
+ },
+ "w0831-PT-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jeninho & Mariana Fagundes",
+  "matched_title": "Pe\u00e3o Todo Tatuado",
+  "query": "jeninho, Mariana Fagundes Pe\u00e3o Todo Tatuado"
+ },
+ "w0831-PT-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Soraia Ramos & Calema",
+  "matched_title": "O Nosso Amor",
+  "query": "Calema Chuva De Amor"
+ },
+ "w0831-PT-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-EG-01": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0831-EG-02": {
+  "label": "Egyptian Pop",
+  "source": "itunes",
+  "matched_artist": "Amr Diab",
+  "matched_title": "Lola El Banat",
+  "query": "Amr Diab, Orange Lola El Banat"
+ },
+ "w0831-EG-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Mohamed Ramadan",
+  "matched_title": "HABIBI ANA MEN GHERAK",
+  "query": "Mohamed Ramadan HABIBI ANA MEN GHERAK"
+ },
+ "w0831-EG-04": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0831-EG-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432",
+  "matched_title": "\u0412\u0456\u0432\u0442\u0430\u0440",
+  "query": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432 \u0412\u0456\u0432\u0442\u0430\u0440"
+ },
+ "w0831-AR-01": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Tainy, Anuel AA & Ozuna",
+  "matched_title": "Adicto",
+  "query": "Anuel AA Las mas bonitas son p#tas"
+ },
+ "w0831-AR-02": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Nico Manriquez, Zito Dj & BlackRiver",
+  "matched_title": "Cuando No Era Cantante",
+  "query": "El Bogueto, Anuel AA, Fuerza Regida, Yung Beef Cuando No Era Cantante (Remix)"
+ },
+ "w0831-AR-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-AR-04": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Jay Wheeler, Brytiago & DJ Nelson",
+  "matched_title": "Sin Ti (Remix)",
+  "query": "Brytiago Estoy Pa' Ti"
+ },
+ "w0831-AR-05": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Eugenia Quevedo",
+  "matched_title": "No Podr\u00e1s (feat. Angela Leiva & La banda de Carlitos) [En Vivo]",
+  "query": "Eugenia Quevedo No Podr\u00e1s (En Vivo) (feat. Angela Leiva & La banda de Carlitos)"
+ },
+ "w0831-CO-01": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "KAROL G, Judeline & rusowsky",
+  "matched_title": "BbY WOW",
+  "query": "KAROL G, Judeline, rusowsky BbY WOW"
+ },
+ "w0831-CO-02": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Lenin Ram\u00edrez",
+  "matched_title": "Todo Lo Fue",
+  "query": "Lenin Ramirez Todo Lo Fue"
+ },
+ "w0831-CO-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-CO-04": {
+  "label": "M\u00fasica Mexicana",
+  "source": "itunes",
+  "matched_artist": "Grupo Firme",
+  "matched_title": "El Beneficio De La Duda",
+  "query": "Grupo Firme El Beneficio De La Duda"
+ },
+ "w0831-CO-05": {
+  "label": "Underground Rap",
+  "source": "itunes",
+  "matched_artist": "Lil Naay",
+  "matched_title": "MAMI",
+  "query": "Lil Naay PERRA"
+ },
+ "w0831-PH-01": null,
+ "w0831-PH-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Katy Perry",
+  "matched_title": "The One That Got Away",
+  "query": "Katy Perry The One That Got Away"
+ },
+ "w0831-PH-03": {
+  "label": "Indie Pop",
+  "source": "itunes",
+  "matched_artist": "nicole",
+  "matched_title": "Panaginip",
+  "query": "nicole Panaginip"
+ },
+ "w0831-PH-04": {
+  "label": "Soundtrack",
+  "source": "itunes",
+  "matched_artist": "Jim Johnston",
+  "matched_title": "Viva La Raza (Eddie Guerrero)",
+  "query": "Viva La Raza"
+ },
+ "w0831-PH-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "HELLMERRY",
+  "matched_title": "Summer Crush",
+  "query": "HELLMERRY Summer Crush"
+ },
+ "w0831-AU-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-AU-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "w0831-AU-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-AU-04": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0831-AU-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-NZ-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-NZ-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "w0831-NZ-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-NZ-04": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Dolly Parton & Kenny Rogers",
+  "matched_title": "Islands In the Stream",
+  "query": "Dolly Parton, Kenny Rogers Islands in the Stream"
+ },
+ "w0831-NZ-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-CV-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Alex Aks",
+  "matched_title": "Berdiana (feat. Marcia Cruz)",
+  "query": "Berdiana"
+ },
+ "w0831-CV-02": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Tony Fika",
+  "matched_title": "Dona Ana",
+  "query": "Tony Fika Dona Ana"
+ },
+ "w0831-CV-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-CV-04": {
+  "label": "R&B/Soul",
+  "source": "itunes",
+  "matched_artist": "Dynamo",
+  "matched_title": "Kumpanhero",
+  "query": "Dynamo Kumpanhero"
+ },
+ "w0831-CV-05": null,
+ "w0831-JP-01": null,
+ "w0831-JP-02": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ILLIT",
+  "matched_title": "It's Me",
+  "query": "ILLIT It's Me"
+ },
+ "w0831-JP-03": {
+  "label": "J-Pop",
+  "source": "itunes",
+  "matched_artist": "M!LK",
+  "matched_title": "Bakuretsu Aishiteru",
+  "query": "M!LK \u7206\u88c2\u611b\u3057\u3066\u308b"
+ },
+ "w0831-JP-04": {
+  "label": "J-Pop",
+  "source": "itunes",
+  "matched_artist": "M!LK",
+  "matched_title": "Bakuretsu Aishiteru",
+  "query": "M!LK \u7206\u88c2\u611b\u3057\u3066\u308b"
+ },
+ "w0831-JP-05": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Mrs. GREEN APPLE",
+  "matched_title": "Brand New",
+  "query": "Mrs. GREEN APPLE Brand New"
+ },
+ "w0831-TH-01": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "YONIA",
+  "matched_title": "\u0e21\u0e35\u0e15\u0e31\u0e07\u0e04\u0e4c\u0e2b\u0e21\u0e38\u0e19",
+  "query": "YONIA \u0e21\u0e35\u0e15\u0e31\u0e07\u0e04\u0e4c\u0e2b\u0e21\u0e38\u0e19"
+ },
+ "w0831-TH-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432",
+  "matched_title": "\u0412\u0456\u0432\u0442\u0430\u0440",
+  "query": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432 \u0412\u0456\u0432\u0442\u0430\u0440"
+ },
+ "w0831-TH-03": {
+  "label": "R&B/Soul",
+  "source": "itunes",
+  "matched_artist": "SEA.",
+  "matched_title": "\u0e04\u0e23\u0e31\u0e49\u0e07\u0e2b\u0e19\u0e36\u0e48\u0e07 (feat. Z9)",
+  "query": "Z9 \u0e44\u0e21\u0e48\u0e23\u0e31\u0e01\u0e14\u0e35\u0e01\u0e27\u0e48\u0e32"
+ },
+ "w0831-TH-04": null,
+ "w0831-TH-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Ly Nova",
+  "matched_title": "BOWKYLION \u2013 \u0e19\u0e32\u0e2c\u0e34\u0e01\u0e32\u0e17\u0e23\u0e32\u0e22 (sign) [Official MV]",
+  "query": "BOWKYLION \u0e19\u0e32\u0e2c\u0e34\u0e01\u0e32\u0e17\u0e23\u0e32\u0e22 (sign)"
+ },
+ "w0831-TW-01": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "Jess Lee",
+  "matched_title": "\u7532\u4e59\u4e19\u4e01Strangers (\u7cb5\u8a9e\u7248)",
+  "query": "Jess Lee \u7532\u4e59\u4e19\u4e01Strangers"
+ },
+ "w0831-TW-02": {
+  "label": "Mandopop",
+  "source": "itunes",
+  "matched_artist": "\u99ac\u4e5f_Crabbit & Cole\u5148\u751f",
+  "matched_title": "\u6d77\u5c7f\u4f60",
+  "query": "\u9a6c\u4e5fCrabbit, Cole\u5148\u751f \u6d77\u5c7f\u4f60"
+ },
+ "w0831-TW-03": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ATEEZ",
+  "matched_title": "BAD",
+  "query": "ATEEZ BAD"
+ },
+ "w0831-TW-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432",
+  "matched_title": "\u0412\u0456\u0432\u0442\u0430\u0440",
+  "query": "\u041d\u0456\u043a\u0456\u0442\u0430 \u041a\u0456\u0441\u0435\u043b\u044c\u043e\u0432 \u0412\u0456\u0432\u0442\u0430\u0440"
+ },
+ "w0831-TR-01": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3",
+  "matched_title": "Sebebi Yar",
+  "query": "BLOK3 Sebebi Yar (Live)"
+ },
+ "w0831-TR-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "manifest",
+  "matched_title": "Toz Pembe",
+  "query": "manifest Toz Pembe"
+ },
+ "w0831-TR-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3 & Poizi",
+  "matched_title": "\u00c7ok G\u00fczel G\u00fcl\u00fcyorsun",
+  "query": "BLOK3, Poizi C\u0327ok G\u00fczel G\u00fcl\u00fcyorsun"
+ },
+ "w0831-TR-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3",
+  "matched_title": "Kay\u0131p Kalp",
+  "query": "BLOK3 Kay\u0131p Kalp"
+ },
+ "w0831-TR-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "manifest & Ajda Pekkan",
+  "matched_title": "Hileli",
+  "query": "manifest, Ajda Pekkan Hileli"
+ },
+ "w0831-MY-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Tulus",
+  "matched_title": "Teh Hijau",
+  "query": "Tulus Teh Hijau"
+ },
+ "w0831-MY-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Akbar Chalay & Mingse",
+  "matched_title": "Astaga Bercanda",
+  "query": "Akbar Chalay, Mingse Astaga Bercanda"
+ },
+ "w0831-MY-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Naykilla",
+  "matched_title": "MMG (My Mine Gueh)",
+  "query": "Naykilla MMG (My Mine Gueh)"
+ },
+ "w0831-MY-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Katy Perry",
+  "matched_title": "The One That Got Away",
+  "query": "Katy Perry The One That Got Away"
+ },
+ "w0831-MY-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Dua Lipa",
+  "matched_title": "Training Season (Live from the Royal Albert Hall)",
+  "query": "Dua Lipa Training Season"
+ },
+ "w0831-DE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-DE-02": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Jamule, Sido & Miksu / Macloud",
+  "matched_title": "LOVEBOMB (feat. RYCH)",
+  "query": "Sido ISSA"
+ },
+ "w0831-DE-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "BLOK3",
+  "matched_title": "Sebebi Yar",
+  "query": "BLOK3 Sebebi Yar (Live)"
+ },
+ "w0831-DE-04": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "DJ Goja, Jason Derulo & Melody",
+  "matched_title": "Mi Chico (Jason Derulo x Melody Version)",
+  "query": "DJ Goja, Jason Derulo, Melody Mi Chico "
+ },
+ "w0831-DE-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-FR-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-FR-02": {
+  "label": "Christian",
+  "source": "itunes",
+  "matched_artist": "Mauvais Djo",
+  "matched_title": "Pil\u00e9 (Gospel)",
+  "query": "Mauvais djo Pil\u00e9"
+ },
+ "w0831-FR-03": {
+  "label": "South African Hip-Hop",
+  "source": "itunes",
+  "matched_artist": "Mauvais Djo",
+  "matched_title": "Maladie",
+  "query": "Mauvais djo Maladie"
+ },
+ "w0831-FR-04": {
+  "label": "Rap",
+  "source": "itunes",
+  "matched_artist": "Aya Nakamura & La Rvfleuze",
+  "matched_title": "Sexy Nana",
+  "query": "Aya Nakamura, La Rvfleuze Sexy Nana"
+ },
+ "w0831-FR-05": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "GIMS & La Mano 1.9",
+  "matched_title": "PARISIENNE",
+  "query": "GIMS, La Mano 1.9 PARISIENNE"
+ },
+ "w0831-ES-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-ES-02": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Quevedo & Elvis Crespo",
+  "matched_title": "LA GRACIOSA",
+  "query": "Quevedo, Elvis Crespo LA GRACIOSA"
+ },
+ "w0831-ES-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Ana Mena & Lola Indigo",
+  "matched_title": "pa ti toa <3",
+  "query": "Ana Mena, Lola Indigo pa ti toa <3"
+ },
+ "w0831-ES-04": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "KAROL G, Judeline & rusowsky",
+  "matched_title": "BbY WOW",
+  "query": "KAROL G, Judeline, rusowsky BbY WOW"
+ },
+ "w0831-ES-05": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ya Ice Dilan, DJ Honda, Rey Tony, Helabusador & JipMusic Global",
+  "matched_title": "Tienes (Remix)",
+  "query": "Ya Ice Dilan, Rey Tony, Helabusador, JipMusic Global, dj honda Dichavate"
+ },
+ "w0831-IT-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-IT-02": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Calvin Harris & Rihanna",
+  "matched_title": "This Is What You Came For",
+  "query": "ANNA WHITE GIRL WASTED"
+ },
+ "w0831-IT-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Fred De Palma",
+  "matched_title": "TUTTO QUELLO CHE HO (feat. Emis Killa, Omar Montes & Juli)",
+  "query": "Fred De Palma, Anitta, Emis Killa LA TESTA GIRA"
+ },
+ "w0831-IT-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Philip & Davyx",
+  "matched_title": "Costiera Amalfitana",
+  "query": "LA COSTIERA AMALFITANA (feat. Arisa & Nino D'Angelo)"
+ },
+ "w0831-IT-05": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "Raffaella Fico & Gigi Soriani",
+  "matched_title": "Mamacita Loca",
+  "query": "RAFFAELLA FICO"
+ },
+ "w0831-NL-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-NL-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-NL-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-NL-04": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "DJ Goja, Jason Derulo & Melody",
+  "matched_title": "Mi Chico (Jason Derulo x Melody Version)",
+  "query": "DJ Goja, Jason Derulo, Melody Mi Chico "
+ },
+ "w0831-NL-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0831-PL-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-PL-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Nina Lakomy",
+  "matched_title": "Kawa z diab\u0142em",
+  "query": "Nina Lakomy Kawa z diab\u0142em"
+ },
+ "w0831-PL-03": {
+  "label": "Electronic",
+  "source": "itunes",
+  "matched_artist": "PUMPSOUND, Sequento & Cypis",
+  "matched_title": "Stan Deweloperski (PUMPSOUND Remix)",
+  "query": "Sequento, Cypis Stan Deweloperski"
+ },
+ "w0831-PL-04": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Kuqe 2115 & francis",
+  "matched_title": "taki ma\u0142y ja",
+  "query": "Nareszcie"
+ },
+ "w0831-PL-05": null,
+ "w0831-SE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-SE-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-SE-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-SE-04": null,
+ "w0831-SE-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0831-SA-01": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0831-SA-02": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "Cairokee",
+  "matched_title": "Tata Tata",
+  "query": "Cairokee \u062a\u0627\u062a\u0627 \u062a\u0627\u062a\u0627"
+ },
+ "w0831-SA-03": {
+  "label": "Egyptian Pop",
+  "source": "itunes",
+  "matched_artist": "Nabil",
+  "matched_title": "Tayeh Fel Amaken",
+  "query": "Nabil \u062a\u0627\u064a\u0647 \u0641\u064a \u0627\u0644\u0623\u0645\u0627\u0643\u0646"
+ },
+ "w0831-SA-04": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "TUL8TE & Saint Levant",
+  "matched_title": "Nano",
+  "query": "TUL8TE, Saint Levant \u0646\u0627\u0646\u0648"
+ },
+ "w0831-SA-05": {
+  "label": "Egyptian Pop",
+  "source": "itunes",
+  "matched_artist": "Sherine",
+  "matched_title": "Tebaa'n Tebaa'n",
+  "query": "Sherine Tebaa'n Tebaa'n"
+ },
+ "w0831-MA-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "LAZARO",
+  "matched_title": "ZOMBIE",
+  "query": "LAZARO ZOMBIE"
+ },
+ "w0831-MA-02": {
+  "label": "North African",
+  "source": "itunes",
+  "matched_artist": "Zouhair Bahaoui & LAZARO",
+  "matched_title": "TITIZ A KHAY",
+  "query": "Zouhair Bahaoui, LAZARO TITIZ A KHAY"
+ },
+ "w0831-MA-03": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "Stormy",
+  "matched_title": "KILOWAT",
+  "query": "Stormy KILOWAT"
+ },
+ "w0831-MA-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-MA-05": {
+  "label": "Arabic Pop",
+  "source": "itunes",
+  "matched_artist": "DYSTINCT",
+  "matched_title": "KATKOUTA",
+  "query": "KATKOUTA"
+ },
+ "w0831-VN-01": {
+  "label": "House",
+  "source": "itunes",
+  "matched_artist": "AKA DJ TEAM",
+  "matched_title": "THIE\u0302N \u0110U\u031bO\u031b\u0300NG VO\u031b\u0301I NGU\u031bO\u031b\u0300I THU\u031bO\u031bNG (feat. PHU\u031bO\u031bNG MY\u0303 CHI x DTAP & DJ KRISSNA) [BASS HOUSE REMIX]",
+  "query": "Ph\u01b0\u01a1ng M\u1ef9 Chi, DTAP Thi\u00ean \u0110\u01b0\u1eddng V\u1edbi Ng\u01b0\u1eddi Th\u01b0\u01a1ng"
+ },
+ "w0831-VN-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "TINH H\u00c0 \"SAY HI\"",
+  "matched_title": "SECRET (feat. Quang H\u00f9ng MasterD, CODYNAMVO, CONGB & Wren Evans)",
+  "query": "TINH H\u00c0 \"SAY HI\" SECRET (feat. Quang H\u00f9ng MasterD, CODYNAMVO, CONGB & Wren Evans)"
+ },
+ "w0831-VN-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jack - J97",
+  "matched_title": "L\u01b0u Ni\u00ean",
+  "query": "Jack - J97 L\u01afU NI\u00caN"
+ },
+ "w0831-VN-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jack - J97",
+  "matched_title": "Ng\u01b0\u1eddi D\u01b0ng",
+  "query": "Jack - J97 NG\u01af\u1edcI D\u01afNG"
+ },
+ "w0831-VN-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Jack - J97",
+  "matched_title": "Hoa Trong \u0110\u00e1",
+  "query": "Jack - J97 HOA TRONG \u0110\u00c1"
+ },
+ "w0831-SG-01": {
+  "label": "Mandopop",
+  "source": "itunes",
+  "matched_artist": "\u99ac\u4e5f_Crabbit & Cole\u5148\u751f",
+  "matched_title": "\u6d77\u5c7f\u4f60",
+  "query": "\u9a6c\u4e5fCrabbit, Cole\u5148\u751f \u6d77\u5c7f\u4f60"
+ },
+ "w0831-SG-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "JENNIE",
+  "matched_title": "FALLEN ANGEL",
+  "query": "JENNIE FALLEN ANGEL"
+ },
+ "w0831-SG-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-SG-04": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "Jess Lee",
+  "matched_title": "\u7532\u4e59\u4e19\u4e01Strangers (\u7cb5\u8a9e\u7248)",
+  "query": "Jess Lee \u7532\u4e59\u4e19\u4e01Strangers"
+ },
+ "w0831-SG-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "ATEEZ",
+  "matched_title": "BAD",
+  "query": "ATEEZ BAD"
+ },
+ "w0831-HK-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "JENNIE",
+  "matched_title": "FALLEN ANGEL",
+  "query": "JENNIE FALLEN ANGEL"
+ },
+ "w0831-HK-03": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "MC Cheung Tinfu",
+  "matched_title": "\u7537\u4eba\u600e\u53ef\u4ee5",
+  "query": "MC Cheung Tinfu What Makes A Man"
+ },
+ "w0831-HK-04": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Shaggy",
+  "matched_title": "Boombastic",
+  "query": "At Least A Hug"
+ },
+ "w0831-HK-05": {
+  "label": "Cantopop/HK-Pop",
+  "source": "itunes",
+  "matched_artist": "Goodnight, Lillie",
+  "matched_title": "\u6211\u770b\u898b\u4eca\u665a\u7684\u6708\u8272\u5f88\u7f8e,\u4f60\u5462?",
+  "query": "Goodnight, Lillie \u6211\u770b\u898b\u4eca\u665a\u7684\u6708\u8272\u5f88\u7f8e\uff0c\u4f60\u5462\uff1f"
+ },
+ "w0831-SN-01": {
+  "label": "Mbalax",
+  "source": "itunes",
+  "matched_artist": "Viviane Chidid",
+  "matched_title": "Nous 2 (feat. Wally B. Seck)",
+  "query": "Viviane Chidid Nous 2 (feat. Wally B. Seck)"
+ },
+ "w0831-SN-02": {
+  "label": "Mbalax",
+  "source": "itunes",
+  "matched_artist": "Bass Thioung",
+  "matched_title": "Baol",
+  "query": "Bass Thioung Baol"
+ },
+ "w0831-SN-03": {
+  "label": "Mbalax",
+  "source": "itunes",
+  "matched_artist": "Mia Guisse & VJ",
+  "matched_title": "Sama Xool",
+  "query": "Mia Guisse, Vj Sama Xool"
+ },
+ "w0831-SN-04": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Akhlou Brick",
+  "matched_title": "Tidjani Barhama (feat. Abou Ndao, Kalimou Sy & Zayda Fatou Biteye)",
+  "query": "Tidjani Barhama"
+ },
+ "w0831-SN-05": null,
+ "w0831-CI-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Dydy Yeman",
+  "matched_title": "CASSE TES REINS",
+  "query": "Dydy Yeman CASSE TES REINS"
+ },
+ "w0831-CI-02": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "TAZEBOY",
+  "matched_title": "MATATA",
+  "query": "Tazeboy MATATA"
+ },
+ "w0831-CI-03": {
+  "label": "Christian",
+  "source": "itunes",
+  "matched_artist": "Ariel Sheney & Nadiya Sabeh",
+  "matched_title": "Ce Que Dieu a fait",
+  "query": "Ariel Sheney Ce Que Dieu a fait"
+ },
+ "w0831-CI-04": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Wizkid",
+  "matched_title": "Apr\u00e8s Minuit (feat. Tiakola)",
+  "query": "Tiakola M\u00e9lo D\u00e9cal\u00e9"
+ },
+ "w0831-CI-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-ET-02": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Teddy Afro",
+  "matched_title": "Shih Bibal (Back to 90s)",
+  "query": "Teddy Afro Shih Bibal (Back to 90s)"
+ },
+ "w0831-ET-04": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Teddy Afro",
+  "matched_title": "Tayegn",
+  "query": "Teddy Afro Tayegn"
+ },
+ "w0831-ET-05": {
+  "label": "African",
+  "source": "itunes",
+  "matched_artist": "Teddy Afro",
+  "matched_title": "Das Tal (Ansaw)",
+  "query": "Teddy Afro Das Tal (Ansaw)"
+ },
+ "w0831-AO-01": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "DJ Kalisboy",
+  "matched_title": "Homenagem Ao Scr\u00f3 Que Cuia (feat. LEONEL PATRICINHO)",
+  "query": "SINTONIA07, Scro Que Cuia, Dj Kalisboy S\u00f3 Mais um Pouco"
+ },
+ "w0831-AO-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-AO-03": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Primavera Club",
+  "matched_title": "Dorama",
+  "query": "Dorama"
+ },
+ "w0831-AO-04": {
+  "label": "House",
+  "source": "itunes",
+  "matched_artist": "Delma Silva, Mozany Bu\u00e9 de Ahh & D'benilson",
+  "matched_title": "Idolatrada (Agorinha Mesmo)",
+  "query": "Delma Silva, Mozany Bu\u00e9 De Ahh, D'benilson Idolatrada (Agorinha Mesmo)"
+ },
+ "w0831-AO-05": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "John Trouble, Dada 2 & Gree Cassua",
+  "matched_title": "Tenho Medo",
+  "query": "JOHN TROUBLE, Gree Cassua Eu Tenho um Deus"
+ },
+ "w0831-MZ-01": {
+  "label": "Amapiano",
+  "source": "itunes",
+  "matched_artist": "Blow258 & Eazy-K",
+  "matched_title": "Parte Parte",
+  "query": "Blow258 Parte Parte"
+ },
+ "w0831-MZ-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Nadson o Ferinha",
+  "matched_title": "Abre a Porta",
+  "query": "Ritmo Da Lusofonia Abre A Porta Amor / S\u00f3 Sa\u00ed Pra Beber"
+ },
+ "w0831-MZ-03": {
+  "label": "Praise & Worship",
+  "source": "itunes",
+  "matched_artist": "Suzy P\u00e9cora",
+  "matched_title": "Meu Noivo Vem",
+  "query": "Veio Buscar a Suzy"
+ },
+ "w0831-MZ-04": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Z\u00e9 Ngola",
+  "matched_title": "Ta me quer Voltar",
+  "query": "Z\u00e9 Ngola Ta me quer Voltar"
+ },
+ "w0831-MZ-05": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Twenty Fingers",
+  "matched_title": "Amor N\u00e3o \u00e9 Para Doer",
+  "query": "Twenty Fingers Amor N\u00e3o \u00e9 Para Doer"
+ },
+ "w0831-ZW-01": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "Major Terro",
+  "matched_title": "Yadeuka Yadeuka (feat. King Alfa Kadiki)",
+  "query": "Major Terro Yadeuka Yadeuka"
+ },
+ "w0831-ZW-02": {
+  "label": "Afro-Pop",
+  "source": "itunes",
+  "matched_artist": "Nisha Ts",
+  "matched_title": "Shasha (feat. Holy Ten)",
+  "query": "Nisha Ts Shasha (feat. Holy Ten)"
+ },
+ "w0831-ZW-03": {
+  "label": "Afro-Beat",
+  "source": "itunes",
+  "matched_artist": "Hulengende",
+  "matched_title": "Bhura Dhanzi (feat. Madedido)",
+  "query": "Hulengende Bhura Dhanzi (feat. Madedido)"
+ },
+ "w0831-ZW-04": null,
+ "w0831-ZW-05": {
+  "label": "African Dancehall",
+  "source": "itunes",
+  "matched_artist": "Shinsoman",
+  "matched_title": "Always in My Mind (feat. Kae Chaps)",
+  "query": "Shinsoman, Kae Chaps Always in My Mind"
+ },
+ "w0831-CM-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-CM-02": {
+  "label": "R&B/Soul",
+  "source": "itunes",
+  "matched_artist": "Imen Es & MHD",
+  "matched_title": "Appelez-les",
+  "query": "Appelez les"
+ },
+ "w0831-CM-03": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Fally Ipupa",
+  "matched_title": "100",
+  "query": "Fally Ipupa Deux \u00eatres"
+ },
+ "w0831-CM-04": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Ayra Starr",
+  "matched_title": "Heaven Baby (feat. ZAYN)",
+  "query": "Ayra Starr Heaven Baby (feat. ZAYN)"
+ },
+ "w0831-CM-05": {
+  "label": "Afrobeats",
+  "source": "itunes",
+  "matched_artist": "Tim Storm",
+  "matched_title": "SUSPENDU (GOSPEL)",
+  "query": "Tim Storm SUSPENDU (GOSPEL)"
+ },
+ "w0831-JM-01": {
+  "label": "Hip-Hop/Rap",
+  "source": "itunes",
+  "matched_artist": "J.Sipp",
+  "matched_title": "We Outside Today (feat. Wacotron & RapperX) [Special Version]",
+  "query": "We Outside Today"
+ },
+ "w0831-JM-02": {
+  "label": "Reggae",
+  "source": "itunes",
+  "matched_artist": "Masicka & Kraff Gad",
+  "matched_title": "Honor Roll",
+  "query": "Masicka Honor Roll"
+ },
+ "w0831-JM-03": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Jahshii",
+  "matched_title": "Paper Chaser (feat. Malie Donn)",
+  "query": "Malie Donn, Dan Sky Vancleef Pt 2"
+ },
+ "w0831-JM-04": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Govana",
+  "matched_title": "Satellite",
+  "query": "Govana Satellite"
+ },
+ "w0831-JM-05": {
+  "label": "Modern Dancehall",
+  "source": "itunes",
+  "matched_artist": "Jahshii",
+  "matched_title": "Paper Chaser (feat. Malie Donn)",
+  "query": "Malie Donn, Attomatic Van Cleef"
+ },
+ "w0831-DO-01": {
+  "label": "Underground Rap",
+  "source": "itunes",
+  "matched_artist": "Lil Naay",
+  "matched_title": "MAMI",
+  "query": "Lil Naay PERRA"
+ },
+ "w0831-DO-02": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Dalvin La Melodia",
+  "matched_title": "Amnesia",
+  "query": "Dalvin La Melodia Amnesia"
+ },
+ "w0831-DO-03": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Dalvin La Melodia & El Blachy",
+  "matched_title": "Alma Rota",
+  "query": "Dalvin La Melodia, El Blachy Alma Rota"
+ },
+ "w0831-DO-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Bo Diddley",
+  "matched_title": "Mona",
+  "query": "Mona"
+ },
+ "w0831-DO-05": null,
+ "w0831-GR-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-GR-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-GR-04": null,
+ "w0831-GR-05": {
+  "label": "Singer/Songwriter",
+  "source": "itunes",
+  "matched_artist": "Antonis Karatzis",
+  "matched_title": "Leipeis",
+  "query": "Leipeis"
+ },
+ "w0831-RO-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Leo de la Rosiori",
+  "matched_title": "Am intrebat un om (Nebunu)",
+  "query": "Leo de la Rosiori Am intrebat un om (Nebunu)"
+ },
+ "w0831-RO-02": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Florin Cercel",
+  "matched_title": "Doar Pentru Tine Amore (feat. Antonia Cercel)",
+  "query": "Florin Cercel Doar Pentru Tine Amore (feat. Antonia Cercel)"
+ },
+ "w0831-RO-03": {
+  "label": "Europe",
+  "source": "itunes",
+  "matched_artist": "Bogdan DLP",
+  "matched_title": "Hazolina",
+  "query": "Bogdan DLP Hazolina"
+ },
+ "w0831-RO-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-RO-05": {
+  "label": "Europe",
+  "source": "itunes",
+  "matched_artist": "Bogdan DLP",
+  "matched_title": "Te pup",
+  "query": "Bogdan DLP Te pup"
+ },
+ "w0831-UA-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Fayna Divka",
+  "matched_title": "\u0427\u0435\u0440\u0432\u043e\u043d\u0438\u0439 \u043c\u0430\u043a - \u043c\u0456\u0439 \u043c\u0430\u044f\u043a",
+  "query": "\u0427\u0435\u0440\u0432\u043e\u043d\u0438\u0439 \u043c\u0430\u043a"
+ },
+ "w0831-UA-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "DNK",
+  "matched_title": "\u0410 \u041c\u043e\u0436\u0435 \u0422\u0438 \u041c\u0435\u043d\u0435 \u041f\u043e\u043b\u044e\u0431\u0438\u0448 (feat. TEMRA)",
+  "query": "DNK \u0410 \u041c\u043e\u0436\u0435 \u0422\u0438 \u041c\u0435\u043d\u0435 \u041f\u043e\u043b\u044e\u0431\u0438\u0448 (feat. TEMRA)"
+ },
+ "w0831-UA-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KAVYRO",
+  "matched_title": "\u041f\u043b\u044f\u0448\u043a\u0430 \u0444\u0440\u0430\u0433\u043e\u043b\u0456\u043d\u043e",
+  "query": "Uran Yopa \u041f\u043b\u044f\u0448\u043a\u0430 \u0424\u0440\u0430\u0433\u043e\u043b\u0456\u043d\u043e"
+ },
+ "w0831-UA-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "DNK",
+  "matched_title": "\u0410 \u041c\u043e\u0436\u0435 \u0422\u0438 \u041c\u0435\u043d\u0435 \u041f\u043e\u043b\u044e\u0431\u0438\u0448 (feat. TEMRA)",
+  "query": "DNK \u0410 \u041c\u043e\u0436\u0435 \u0422\u0438 \u041c\u0435\u043d\u0435 \u041f\u043e\u043b\u044e\u0431\u0438\u0448 (feat. TEMRA)"
+ },
+ "w0831-UA-05": {
+  "label": "Dance",
+  "source": "itunes",
+  "matched_artist": "MILA PAZIK, Banda UA & DJ Bandos -",
+  "matched_title": "\u0428\u043e \u0422\u0438, \u0428\u043e \u0422\u0438",
+  "query": "MILA PAZIK, Banda UA, DJ BANDOS \u0428\u041e \u0422\u0418, \u0428\u041e \u0422\u0418"
+ },
+ "w0831-RS-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Devito",
+  "matched_title": "RocknRolla",
+  "query": "Devito RocknRolla"
+ },
+ "w0831-RS-02": {
+  "label": "Folk",
+  "source": "itunes",
+  "matched_artist": "Aleksandra Prijovi\u0107",
+  "matched_title": "Kababa",
+  "query": "Aleksandra Prijovic Kababa"
+ },
+ "w0831-RS-03": {
+  "label": "Folk",
+  "source": "itunes",
+  "matched_artist": "Aleksandra Prijovi\u0107",
+  "matched_title": "Macho Man (feat. Dejan Petrovic)",
+  "query": "Aleksandra Prijovic Macho Man (feat. Dejan Petrovic)"
+ },
+ "w0831-RS-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-RS-05": {
+  "label": "Rap",
+  "source": "itunes",
+  "matched_artist": "Popovska & 2soma",
+  "matched_title": "Malo Sutra",
+  "query": "Popovska, 2soma Malo Sutra"
+ },
+ "w0831-IE-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-IE-02": {
+  "label": "Worldwide",
+  "source": "itunes",
+  "matched_artist": "Carolyn Hyde",
+  "matched_title": "Bring Them Home",
+  "query": "Carolyn Hyde Bring Them Home"
+ },
+ "w0831-IE-03": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Dolly Parton",
+  "matched_title": "9 to 5",
+  "query": "9 to 5"
+ },
+ "w0831-IE-04": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Kingfishr",
+  "matched_title": "Killeagh",
+  "query": "Kingfishr Killeagh"
+ },
+ "w0831-IE-05": {
+  "label": "Alternative",
+  "source": "itunes",
+  "matched_artist": "Kingfishr",
+  "matched_title": "The Sun Will Never Settle",
+  "query": "Kingfishr The Sun Will Never Settle"
+ },
+ "w0831-DK-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-DK-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-DK-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-DK-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Tobias Rahim",
+  "matched_title": "Den Danske Sommer (feat. Birthe Kj\u00e6r)",
+  "query": "Tobias Rahim Den Danske Sommer (feat. Birthe Kj\u00e6r)"
+ },
+ "w0831-DK-05": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Dolly Parton",
+  "matched_title": "9 to 5",
+  "query": "9 to 5"
+ },
+ "w0831-FI-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-FI-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Markku Aro",
+  "matched_title": "V\u00e4\u00e4r\u00e4 Nainen",
+  "query": "V\u00e4\u00e4r\u00e4 nainen"
+ },
+ "w0831-FI-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-FI-04": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Aston Kalmari",
+  "matched_title": "Polkupy\u00f6r\u00e4",
+  "query": "Aston Kalmari Polkupy\u00f6r\u00e4"
+ },
+ "w0831-FI-05": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "CHTHONIC & Mariska",
+  "matched_title": "N\u00e4in M\u00e4\u00e4r\u00e4ttiin",
+  "query": "Chthonic \u5357\u9580\u753a N\u00e4in M\u00e4\u00e4r\u00e4ttiin"
+ },
+ "w0831-IS-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-IS-02": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-IS-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-IS-04": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Dolly Parton",
+  "matched_title": "9 to 5",
+  "query": "9 to 5"
+ },
+ "w0831-IS-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ },
+ "w0831-CZ-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-CZ-02": {
+  "label": "Rock",
+  "source": "itunes",
+  "matched_artist": "Ewa Farna",
+  "matched_title": "Smej Se",
+  "query": "Ewa Farna Ne\u0159\u00edkej, co m\u00e1 se st\u00e1t"
+ },
+ "w0831-CZ-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Penguin Cafe Orchestra",
+  "matched_title": "Perpetuum Mobile",
+  "query": "PERPETUUM MOBILE"
+ },
+ "w0831-CZ-04": null,
+ "w0831-CZ-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Ewa Farna & Mirai",
+  "matched_title": "Vzpomene\u0161 si?",
+  "query": "Ewa Farna, Mirai Vzpomene\u0161 si?"
+ },
+ "w0831-CL-01": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Jere Klein, Blessd & Raven la R",
+  "matched_title": "MILLONETA",
+  "query": "Jere Klein, Blessd, Raven la R MILLONETA"
+ },
+ "w0831-CL-02": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "Agua Marina",
+  "matched_title": "Cenizas",
+  "query": "Anuel AA Donde Hubo Fuego Cenizas Quedan"
+ },
+ "w0831-CL-03": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Tainy, Anuel AA & Ozuna",
+  "matched_title": "Adicto",
+  "query": "Anuel AA Las mas bonitas son p#tas"
+ },
+ "w0831-CL-04": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ovy On the Drums, Jere Klein & Blessd",
+  "matched_title": "Q Hubo Amor (Medell\u00edn)",
+  "query": "Ovy On The Drums, Jere Klein, Blessd Q Hubo Amor (Medell\u00edn)"
+ },
+ "w0831-CL-05": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-PE-01": {
+  "label": "M\u00fasica tropical",
+  "source": "itunes",
+  "matched_artist": "La Bella Luz",
+  "matched_title": "Y Qu\u00e9 Pas\u00f3",
+  "query": "La Bella Luz Y Que Pas\u00f3"
+ },
+ "w0831-PE-02": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "KAROL G, Judeline & rusowsky",
+  "matched_title": "BbY WOW",
+  "query": "KAROL G, Judeline, rusowsky BbY WOW"
+ },
+ "w0831-PE-03": {
+  "label": "Latin",
+  "source": "itunes",
+  "matched_artist": "Pascualillo Coronado",
+  "matched_title": "Quiero ser Feliz",
+  "query": "La Bella Luz Mix Quiero Ser Feliz (31 Aniversario)"
+ },
+ "w0831-PE-04": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Ya Ice Dilan, DJ Honda, Rey Tony, Helabusador & JipMusic Global",
+  "matched_title": "Tienes (Remix)",
+  "query": "Ya Ice Dilan, Rey Tony, Helabusador, JipMusic Global, dj honda Dichavate"
+ },
+ "w0831-PE-05": {
+  "label": "Urbano latino",
+  "source": "itunes",
+  "matched_artist": "Jay Wheeler, Brytiago & DJ Nelson",
+  "matched_title": "Sin Ti (Remix)",
+  "query": "Brytiago Estoy Pa' Ti"
+ },
+ "w0831-CA-01": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "Shakira & Burna Boy",
+  "matched_title": "Dai Dai",
+  "query": "Shakira, Burna Boy Dai Dai"
+ },
+ "w0831-CA-02": {
+  "label": "Country",
+  "source": "itunes",
+  "matched_artist": "Ella Langley",
+  "matched_title": "Choosin' Texas",
+  "query": "Ella Langley Choosin' Texas"
+ },
+ "w0831-CA-03": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Hootie Frutti",
+  "query": "KATSEYE Hootie Frutti"
+ },
+ "w0831-CA-04": {
+  "label": "Pop",
+  "source": "itunes",
+  "matched_artist": "KATSEYE",
+  "matched_title": "Animal",
+  "query": "KATSEYE Animal"
+ },
+ "w0831-CA-05": {
+  "label": "K-Pop",
+  "source": "itunes",
+  "matched_artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+  "matched_title": "Golden",
+  "query": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast Golden"
+ }
+}
