@@ -155,6 +155,24 @@ IDIOM = {
               "Tamil film pop, kuthu and gaana rhythms with an electronic dance underlay",
               "thavil, parai and urumi percussion, programmed kit, nadaswaram, bamboo flute, 808 bass, staccato strings, synth brass",
               "male lead in Tamil with chanted crowd responses, konnakol rhythmic syllables, folk-modal hook"),
+    # DRAFT, added 2026-09-18, NOT YET SIGNED OFF BY EAR. Chandigarh's chart is
+    # Punjabi-industry (Cheema Y/Gur Sidhu carry 4 of its top 20, alongside Karan
+    # Aujla, Sultaan, B Praak, R Nait) - modern urban pop, not folk bhangra.
+    "INIXC": ("Punjabi urban-pop instrumental",
+              "dhol and tumbi accents over hard trap drums, deep sliding 808 bass, plucked synth riff, wide brass-like stabs, harmonium and string swells on the turnarounds",
+              "confident mid-tempo bounce, loud club-ready mix",
+              "modern Punjabi pop, desi hip-hop, bhangra-inflected trap",
+              "dhol, tumbi, trap drums, 808 bass, plucked synth, brass stabs, harmonium",
+              "male lead in Punjabi, swaggering delivery between sung and rapped, gang-vocal hook"),
+    # DRAFT, added 2026-09-18, NOT YET SIGNED OFF BY EAR. Hyderabad's chart is
+    # Telangana folk-pop (Madhu Priya, Kasarla Shyam, Jangi Reddy; one entry is
+    # literally credited "Dappu Srinu") plus Telugu film and a devotional strand.
+    "INHYD": ("Telugu folk-pop instrumental",
+              "dappu frame-drum and teenmaar percussion, tapping shakers, harmonium drone, shehnai and bamboo flute lead lines, round synth bass, bright string stabs",
+              "fast teenmaar swing, open-air procession energy",
+              "Telugu folk pop, Telangana janapadalu, film-song crossover with a devotional strand",
+              "dappu drums, teenmaar percussion, harmonium, shehnai, bamboo flute, synth bass, strings",
+              "female lead in Telugu with an answering male line, folk-modal ornament, chanted refrain"),
     "CV": ("Cape Verdean dance instrumental",
            "funana-style accordion riffs, fast ferro-scraper percussion, bouncing bass, kizomba-zouk drum groove, bright guitar",
            "joyful island dance energy",

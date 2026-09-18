@@ -54,13 +54,15 @@ CITY = {
     # airport code, deliberately not an ISO-3166 code - nothing parses the
     # first two characters, and track ids are just f"{region}-0{k}".
     "INMAA": ("Chennai", "India", "Asia/Kolkata"),
+    "INIXC": ("Chandigarh", "India", "Asia/Kolkata"),
+    "INHYD": ("Hyderabad", "India", "Asia/Kolkata"),
 }
 REGIONS = tuple(CITY)
 
 # GH and CV are not in YouTube's country-code dropdown, and INMAA is a city
 # rather than a country, so all three come from the location route (marathon
 # design/LOCATION_CHARTS.md). Their ranks are list positions.
-LOCATION_REGIONS = {"GH", "CV", "INMAA"}
+LOCATION_REGIONS = {"GH", "CV", "INMAA", "INIXC", "INHYD"}
 CHART_SLUG = "top-songs"
 LOCATION_SLUG = "location-top-songs"
 
@@ -74,9 +76,12 @@ PRIORS = {
     "MX": 120.0, "US": 100.0, "IN": 105.0, "ID": 105.0,
     "PT": 110.0, "EG": 100.0, "AR": 100.0, "CO": 100.0,
     "PH": 100.0, "AU": 110.0, "NZ": 110.0, "CV": 100.0,
-    # INMAA carried over from IN unverified - no Chennai readout exists yet.
-    # Re-derive from the first week's measured BPM median before trusting it.
-    "INMAA": 105.0,
+    # The three Indian city priors are GUESSES from the chart's genre, not
+    # measurements - no readout exists for any of them yet. Re-derive each from
+    # the first week's measured BPM median before trusting it.
+    "INMAA": 105.0,   # Tamil film pop
+    "INIXC": 100.0,   # Punjabi urban pop, trap-leaning half-time feel
+    "INHYD": 110.0,   # Telugu folk-pop, fast teenmaar patterns
 }
 
 TOP_N = 5          # chart ranks resolved per region
