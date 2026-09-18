@@ -702,10 +702,28 @@ function localClock(tz, d){
   var p = parts(tz, d||now());
   return String(p.h).padStart(2,"0") + ":" + String(p.m).padStart(2,"0");
 }
-/* circular distance in hours to the evening target */
+/* Circular distance in hours to the evening target, scored by MEAN SOLAR time
+   rather than the clock. India runs one timezone across 15+ degrees of
+   longitude, so Mumbai, Chandigarh, Hyderabad and Chennai are all
+   Asia/Kolkata and the clock cannot tell them apart at all - yet Chennai's
+   sunset genuinely precedes Mumbai's by about half an hour. Longitude knows
+   that; the clock is a political convention. COORDS already carries [lat, lon]
+   for the real sunrise/sunset maths below, so this only reads what is there.
+   Any region without a COORDS entry falls back to its clock hour. */
 var EVENING = 20.0;
-function eveningness(tz, d){
-  var h = localHour(tz, d), diff = Math.abs(h - EVENING);
+function solarHour(iso, d){
+  var c = COORDS[iso];
+  if (!c) return null;
+  var t = d || now();
+  return ((t.getUTCHours() + t.getUTCMinutes() / 60 + c[1] / 15) % 24 + 24) % 24;
+}
+/* the hour the picker scores a region by: solar where we know where it is */
+function eveningHour(iso, tz, d){
+  var h = solarHour(iso, d);
+  return h === null ? localHour(tz, d) : h;
+}
+function eveningness(iso, tz, d){
+  var h = eveningHour(iso, tz, d), diff = Math.abs(h - EVENING);
   return Math.min(diff, 24 - diff);
 }
 
@@ -725,7 +743,7 @@ var PHASES = {
 /* real sunrise/sunset and moon for the playing city (suncalc maths, BSD; no library) */
 var COORDS = {KE:[-1.29,36.82],AE:[25.20,55.27],TZ:[-6.79,39.28],NG:[6.52,3.38],GH:[5.60,-0.19],UG:[0.35,32.58],
   ZA:[-26.20,28.04],GB:[51.51,-0.13],BR:[-23.55,-46.63],KR:[37.57,126.98],MX:[19.43,-99.13],US:[34.05,-118.24],
-  IN:[19.08,72.88],ID:[-6.21,106.85],CO:[4.71,-74.07],PH:[14.60,120.98],AU:[-33.87,151.21],NZ:[-36.85,174.76],
+  IN:[19.08,72.88],INIXC:[30.73,76.78],INHYD:[17.39,78.49],INMAA:[13.08,80.27],ID:[-6.21,106.85],CO:[4.71,-74.07],PH:[14.60,120.98],AU:[-33.87,151.21],NZ:[-36.85,174.76],
   CV:[14.93,-23.51],PT:[38.72,-9.14],EG:[30.04,31.24],AR:[-34.60,-58.38],
   JP:[35.68,139.69],TH:[13.76,100.50],TW:[25.03,121.57],TR:[41.01,28.98],MY:[3.14,101.69],DE:[52.52,13.40],
   FR:[48.86,2.35],ES:[40.42,-3.70],IT:[45.46,9.19],NL:[52.37,4.90],PL:[52.23,21.01],SE:[59.33,18.07],
@@ -962,7 +980,7 @@ function pickRegion(){
      (Kalam: "auckland at 2330 shows up"), and 2.5 h still leaves a full pool. */
   var d = now(), score = {}, jitter = {};
   cands.forEach(function(k){
-    score[k] = eveningness(regionsByIso[k].tz, d);
+    score[k] = eveningness(k, regionsByIso[k].tz, d);
     jitter[k] = Math.random();
   });
   /* weighted toward the sunset: a city with the sun on the horizon (~19:30) plays
@@ -972,7 +990,7 @@ function pickRegion(){
      window and the pool repeats; take the six nearest to evening instead */
   if (near.length < 6){ near = cands.slice().sort(function(a,b){ return score[a] - score[b]; }).slice(0, 6); }
   if (near.length){
-    var w = near.map(function(k){ var dd = Math.abs(localHour(regionsByIso[k].tz, d) - 19.5); dd = Math.min(dd, 24 - dd); return 1 / (0.5 + dd); });
+    var w = near.map(function(k){ var dd = Math.abs(eveningHour(k, regionsByIso[k].tz, d) - 19.5); dd = Math.min(dd, 24 - dd); return 1 / (0.5 + dd); });
     var total = w.reduce(function(a,b){ return a + b; }, 0), pick = Math.random() * total;
     for (var i = 0; i < near.length; i++){ pick -= w[i]; if (pick <= 0) return near[i]; }
     return near[near.length - 1];
@@ -1326,7 +1344,7 @@ function paintStrip(){
   var d = now();
   var rows = Object.keys(regionsByIso).map(function(k){
     var r = regionsByIso[k];
-    return {iso:k, city:r.city, h:localHour(r.tz, d), clock:localClock(r.tz, d), ev:eveningness(r.tz, d)};
+    return {iso:k, city:r.city, h:eveningHour(k, r.tz, d), clock:localClock(r.tz, d), ev:eveningness(k, r.tz, d)};
   }).sort(function(a,b){ return a.h - b.h; });
   /* rotate so the playing city (or the one nearest evening) is the centre of the row */
   var centre = current ? rows.findIndex(function(x){ return x.iso === current.region; }) : -1;
