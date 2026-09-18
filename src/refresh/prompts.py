@@ -146,6 +146,15 @@ IDIOM = {
            "chart pop, country-pop, girl-group pop, hip-hop crossover",
            "pop drums, bass, synth hooks, acoustic guitar",
            "warm lead vocal, layered harmonies, singalong chorus"),
+    # DRAFT, added 2026-09-18, NOT YET SIGNED OFF BY EAR. Chennai's chart is a
+    # Tamil-industry chart sharing only 4/20 with India national, so it gets its
+    # own idiom rather than reusing IN's Bollywood/Hindi one.
+    "INMAA": ("Tamil film-pop instrumental",
+              "thavil and parai hand-drum kuthu groove under a programmed kit, nadaswaram and bamboo flute lead lines, deep 808 sub bass, staccato string ostinato, bright synth brass stabs",
+              "driving gaana-kuthu swing, loud punchy cinematic mix",
+              "Tamil film pop, kuthu and gaana rhythms with an electronic dance underlay",
+              "thavil, parai and urumi percussion, programmed kit, nadaswaram, bamboo flute, 808 bass, staccato strings, synth brass",
+              "male lead in Tamil with chanted crowd responses, konnakol rhythmic syllables, folk-modal hook"),
     "CV": ("Cape Verdean dance instrumental",
            "funana-style accordion riffs, fast ferro-scraper percussion, bouncing bass, kizomba-zouk drum groove, bright guitar",
            "joyful island dance energy",
