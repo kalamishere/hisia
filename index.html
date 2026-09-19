@@ -1291,6 +1291,21 @@ function weekLabel(t){
   var y = +m[1], txt = +m[3] + " " + MONTHS[+m[2] - 1];
   return y === new Date().getFullYear() ? txt : txt + " " + y;
 }
+/* The rAF loop repaints at 1 Hz so the sky keeps moving between tracks, but paint()
+   rewrote every field of the card each time, identical text included. Replacing a
+   text node forces the browser to re-lay-out and re-rasterise it, and with a web
+   font and a text-shadow that reads as a flicker once a second (Kalam, 19 Sep:
+   "the words glitch on a regular tempo" — measured at 1.00 s in his recording).
+   These write only when the value actually changed, and report whether they did
+   so the fit pass can be skipped when nothing moved. */
+function setHTML(el, html){
+  if (el.__last === html) return false;
+  el.__last = html; el.innerHTML = html; return true;
+}
+function setText(el, txt){
+  if (el.__last === txt) return false;
+  el.__last = txt; el.textContent = txt; return true;
+}
 function paint(){
   if (!current) return;
   var r = regionsByIso[current.region];
@@ -1301,22 +1316,26 @@ function paint(){
   placeMoon(current.region, ph);
   applySky(ph, h, sh);
   elCity.classList.toggle("long", String(r.city).length > 10);
-  elCity.innerHTML = escapeHTML(r.city) + ' <span class="time">' + localClock(r.tz) + "</span>";
-  elCountry.textContent = r.country || "";
-  elTrack.innerHTML = '<span class="artist">' + escapeHTML(current.artist) +
-    '</span><span class="sep">—</span><span class="title">' + escapeHTML(current.title) + "</span>";
+  var moved = false;
+  moved = setHTML(elCity, escapeHTML(r.city) + ' <span class="time">' + localClock(r.tz) + "</span>") || moved;
+  moved = setText(elCountry, r.country || "") || moved;
+  moved = setHTML(elTrack, '<span class="artist">' + escapeHTML(current.artist) +
+    '</span><span class="sep">—</span><span class="title">' + escapeHTML(current.title) + "</span>") || moved;
   var prov = provenanceOf(current, r);
-  elGenre.textContent = genreLine(r);
-  elReadout.textContent = readoutLine(prov);
+  moved = setText(elGenre, genreLine(r)) || moved;
+  moved = setText(elReadout, readoutLine(prov)) || moved;
   var n = current.mirrors_cities || 1, fresh = isThisWeek(current);
-  elHonest.textContent = "a variation on " + (fresh ? "this week's " + r.city + " chart"
+  moved = setText(elHonest, "a variation on " + (fresh ? "this week's " + r.city + " chart"
       : "the " + r.city + " chart of " + weekLabel(current)) + " · after #" +
     (current.mirrors_rank || 1) + (n > 1 ? " · a hit in " + n + " cities " + (fresh ? "this week" : "that week") : "") +
     " · AI-generated · no real songs" + provenance(current) +
-    (current.by === "sound" ? " · closest by sound" : "");
-  elPromptText.textContent = prov.sa3_prompt || "";
+    (current.by === "sound" ? " · closest by sound" : "")) || moved;
+  moved = setText(elPromptText, prov.sa3_prompt || "") || moved;
   document.title = r.city + " · World Sound";
-  requestAnimationFrame(fitStrip);
+  /* only refit when something in the card actually changed - the fit pass adds and
+     removes the tight1/tight2 classes, so running it at 1 Hz churned the font size
+     on every borderline card. */
+  if (moved) requestAnimationFrame(function(){ fitStrip(); fitFooter(); });
   if ("mediaSession" in navigator){
     try {
       navigator.mediaSession.metadata = new MediaMetadata({
@@ -1324,10 +1343,6 @@ function paint(){
         album: r.city + " · " + localClock(r.tz) + " · World Sound" });
     } catch(e){}
   }
-  /* every card is a different length, so the fit has to be rechecked per track,
-     not only on resize (Kalam, 18 Sep: "noticed cramping at bottom"). */
-  if (typeof fitStrip === "function") fitStrip();
-  if (typeof fitFooter === "function") fitFooter();
 }
 if ("mediaSession" in navigator){
   try {
