@@ -702,10 +702,32 @@ function localClock(tz, d){
   var p = parts(tz, d||now());
   return String(p.h).padStart(2,"0") + ":" + String(p.m).padStart(2,"0");
 }
-/* circular distance in hours to the evening target */
+/* Circular distance in hours to the evening target, scored by MEAN SOLAR time
+   rather than the clock (Kalam, 19 Sep: "we chose longitude for all cities").
+   India runs one timezone across 15+ degrees of longitude, so Mumbai,
+   Chandigarh, Hyderabad and Chennai are all Asia/Kolkata and the clock cannot
+   tell them apart at all - yet Chennai's sunset genuinely precedes Mumbai's by
+   about half an hour. Longitude knows that; the clock is a political
+   convention, and the station follows the sun. This also moves cities whose
+   clock is far from their sun: Madrid comes round 2.25 h earlier than it did,
+   Paris 1.84, Santiago 1.71, Lisbon 1.61, Casablanca 1.51. That is the change
+   being right rather than a side effect. COORDS already carries [lat, lon] for
+   the sunrise/sunset maths below, so this only reads what is there; any region
+   without an entry falls back to its clock hour. */
 var EVENING = 20.0;
-function eveningness(tz, d){
-  var h = localHour(tz, d), diff = Math.abs(h - EVENING);
+function solarHour(iso, d){
+  var c = COORDS[iso];
+  if (!c) return null;
+  var t = d || now();
+  return ((t.getUTCHours() + t.getUTCMinutes() / 60 + c[1] / 15) % 24 + 24) % 24;
+}
+/* the hour the picker scores a region by: solar where we know where it is */
+function eveningHour(iso, tz, d){
+  var h = solarHour(iso, d);
+  return h === null ? localHour(tz, d) : h;
+}
+function eveningness(iso, tz, d){
+  var h = eveningHour(iso, tz, d), diff = Math.abs(h - EVENING);
   return Math.min(diff, 24 - diff);
 }
 
@@ -965,7 +987,7 @@ function pickRegion(){
      (Kalam: "auckland at 2330 shows up"), and 2.5 h still leaves a full pool. */
   var d = now(), score = {}, jitter = {};
   cands.forEach(function(k){
-    score[k] = eveningness(regionsByIso[k].tz, d);
+    score[k] = eveningness(k, regionsByIso[k].tz, d);
     jitter[k] = Math.random();
   });
   /* weighted toward the sunset: a city with the sun on the horizon (~19:30) plays
@@ -975,7 +997,7 @@ function pickRegion(){
      window and the pool repeats; take the six nearest to evening instead */
   if (near.length < 6){ near = cands.slice().sort(function(a,b){ return score[a] - score[b]; }).slice(0, 6); }
   if (near.length){
-    var w = near.map(function(k){ var dd = Math.abs(localHour(regionsByIso[k].tz, d) - 19.5); dd = Math.min(dd, 24 - dd); return 1 / (0.5 + dd); });
+    var w = near.map(function(k){ var dd = Math.abs(eveningHour(k, regionsByIso[k].tz, d) - 19.5); dd = Math.min(dd, 24 - dd); return 1 / (0.5 + dd); });
     var total = w.reduce(function(a,b){ return a + b; }, 0), pick = Math.random() * total;
     for (var i = 0; i < near.length; i++){ pick -= w[i]; if (pick <= 0) return near[i]; }
     return near[near.length - 1];
@@ -1329,7 +1351,7 @@ function paintStrip(){
   var d = now();
   var rows = Object.keys(regionsByIso).map(function(k){
     var r = regionsByIso[k];
-    return {iso:k, city:r.city, h:localHour(r.tz, d), clock:localClock(r.tz, d), ev:eveningness(r.tz, d)};
+    return {iso:k, city:r.city, h:eveningHour(k, r.tz, d), clock:localClock(r.tz, d), ev:eveningness(k, r.tz, d)};
   }).sort(function(a,b){ return a.h - b.h; });
   /* rotate so the playing city (or the one nearest evening) is the centre of the row */
   var centre = current ? rows.findIndex(function(x){ return x.iso === current.region; }) : -1;
