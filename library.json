@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T20:34:12Z",
+  "generated_at": "2026-09-19T12:10:14Z",
   "chart_week": "2026-09-07",
   "version": "v6-measured",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
@@ -849,29 +849,29 @@
       "readout": {
         "bpm": 123.05,
         "mode": "major",
-        "lufs": -11.8,
+        "lufs": -12.11,
         "instruments": [
           "drums",
-          "bass",
-          "synthesizer"
+          "synthesizer",
+          "bass"
         ],
         "moods": [
           "happy",
           "energetic",
-          "love"
+          "summer"
         ],
         "n_tracks": 5,
         "excluded_tracks": [],
         "bpm_iqr": [
           114.84,
-          129.2
+          124.52
         ]
       },
       "genres_own": [],
       "heard": [],
       "genre_family": "",
-      "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, joyful, energetic and romantic",
-      "suno_prompt": "[style: chart pop, country-pop, K-pop-styled girl-group pop] [tempo: 123 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: confident female lead, big harmonised chorus]"
+      "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, synth-led textures and bass well forward carrying the arrangement, joyful, energetic and sunny",
+      "suno_prompt": "[style: chart pop, country-pop, K-pop-styled girl-group pop] [tempo: 123 BPM] [mood: joyful, energetic, sunny] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: confident female lead, big harmonised chorus]"
     },
     "NZ": {
       "city": "Auckland",
@@ -1702,26 +1702,24 @@
       "country": "Senegal",
       "tz": "Africa/Dakar",
       "readout": {
-        "bpm": 137.93,
+        "bpm": 129.2,
         "mode": "minor",
-        "lufs": -13.43,
+        "lufs": -15.0,
         "instruments": [
-          "percussion",
           "bass",
+          "percussion",
           "drums"
         ],
         "moods": [
-          "happy",
           "love",
-          "deep"
+          "deep",
+          "happy"
         ],
-        "n_tracks": 4,
-        "excluded_tracks": [
-          "SN-4"
-        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
         "bpm_iqr": [
-          124.58,
-          152.73
+          120.19,
+          149.8
         ]
       },
       "genres_own": [
@@ -1730,14 +1728,18 @@
           3
         ],
         [
-          "African",
+          "Afro-Pop",
+          1
+        ],
+        [
+          "Hip-Hop",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Mbalax / African",
-      "sa3_prompt": "Senegalese mbalax chart instrumental, sabar-drum rooted with a wider Afropop crossover current, 138 BPM, minor key, sabar and tama talking-drum percussion, warm plucked guitar riff, deep rounded bass, bright synth pads, festive uptempo mbalax groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, joyful, romantic and deep",
-      "suno_prompt": "[style: Senegalese mbalax, sabar percussion, Afropop crossover] [tempo: 138 BPM] [mood: joyful, romantic, deep] [instruments: sabar/tama percussion, plucked guitar, bass, synth pads] [vocal: male lead singing in Wolof, call-and-response griot-style hook]"
+      "genre_family": "Mbalax / Afro-Pop / Hip-Hop / Rap",
+      "sa3_prompt": "Senegalese mbalax chart instrumental, sabar-drum rooted with a wider Afropop crossover current, 129 BPM, minor key, sabar and tama talking-drum percussion, warm plucked guitar riff, deep rounded bass, bright synth pads, festive uptempo mbalax groove, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and joyful",
+      "suno_prompt": "[style: Senegalese mbalax, sabar percussion, Afropop crossover] [tempo: 129 BPM] [mood: romantic, deep, joyful] [instruments: sabar/tama percussion, plucked guitar, bass, synth pads] [vocal: male lead singing in Wolof, call-and-response griot-style hook]"
     },
     "CI": {
       "city": "Abidjan",
@@ -1959,46 +1961,50 @@
       "country": "Cameroon",
       "tz": "Africa/Douala",
       "readout": {
-        "bpm": 101.37,
-        "mode": "major",
-        "lufs": -12.45,
+        "bpm": 109.1,
+        "mode": "minor",
+        "lufs": -12.29,
         "instruments": [
+          "percussion",
           "bass",
-          "synthesizer",
-          "drums"
+          "synthesizer"
         ],
         "moods": [
-          "love",
           "energetic",
+          "love",
           "happy"
         ],
         "n_tracks": 4,
         "excluded_tracks": [
-          "CM-1"
+          "CM-2"
         ],
         "bpm_iqr": [
-          96.43,
-          106.23
+          102.36,
+          121.05
         ]
       },
       "genres_own": [
         [
+          "Worldwide",
+          1
+        ],
+        [
           "Afrobeats",
-          2
+          1
         ],
         [
           "R&B",
           1
         ],
         [
-          "Worldwide",
+          "Hip-Hop",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "R&B / Soul / Afrobeats / Worldwide",
-      "sa3_prompt": "Cameroonian chart instrumental, Afrobeats crossed with R&B/soul warmth, 101 BPM, major key, warm afrobeats percussion, soulful rounded bass, smooth electric guitar and keys, soft synth pads, mid-tempo soulful groove, glossy modern mix, bass well forward, synth-led textures and a prominent kit carrying the arrangement, romantic, energetic and joyful",
-      "suno_prompt": "[style: Cameroonian Afrobeats, R&B/soul crossover] [tempo: 101 BPM] [mood: romantic, energetic, joyful] [instruments: percussion, bass, guitar/keys, synth pads] [vocal: French-language lead, smooth sung verse into a soulful hook]"
+      "genre_family": "Worldwide / Afrobeats / R&B / Soul / Rap / Hip Hop",
+      "sa3_prompt": "Cameroonian chart instrumental, Afrobeats crossed with R&B/soul warmth, 109 BPM, minor key, warm afrobeats percussion, soulful rounded bass, smooth electric guitar and keys, soft synth pads, mid-tempo soulful groove, glossy modern mix, layered hand percussion, bass well forward and synth-led textures carrying the arrangement, energetic, romantic and joyful",
+      "suno_prompt": "[style: Cameroonian Afrobeats, R&B/soul crossover] [tempo: 109 BPM] [mood: energetic, romantic, joyful] [instruments: percussion, bass, guitar/keys, synth pads] [vocal: French-language lead, smooth sung verse into a soulful hook]"
     },
     "JM": {
       "city": "Kingston",
@@ -2632,6 +2638,92 @@
       "genre_family": "Telugu",
       "sa3_prompt": "Telugu folk-pop instrumental, 91 BPM, minor key, dappu frame-drum and teenmaar percussion, tapping shakers, harmonium drone, shehnai and bamboo flute lead lines, round synth bass, bright string stabs, fast teenmaar swing, open-air procession energy, a prominent kit, synth-led textures and bass well forward carrying the arrangement, energetic, cinematic and joyful",
       "suno_prompt": "[style: Telugu folk pop, Telangana janapadalu, film-song crossover with a devotional strand] [tempo: 91 BPM] [mood: energetic, cinematic, joyful] [instruments: dappu drums, teenmaar percussion, harmonium, shehnai, bamboo flute, synth bass, strings] [vocal: female lead in Telugu with an answering male line, folk-modal ornament, chanted refrain]"
+    },
+    "UA": {
+      "city": "Kyiv",
+      "country": "Ukraine",
+      "tz": "Europe/Kyiv",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "major",
+        "lufs": -17.02,
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "melodic"
+        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
+        "bpm_iqr": [
+          95.7,
+          97.51
+        ]
+      },
+      "genres_own": [
+        [
+          "Pop",
+          4
+        ],
+        [
+          "Country",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Pop / Country",
+      "sa3_prompt": "Ukrainian pop chart instrumental, 96 BPM, major key, clean programmed drums, warm round bass, bright piano and synth chords, light guitar strum, mid-tempo radio-pop sway, polished mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, romantic, joyful and melodic",
+      "suno_prompt": "[style: Ukrainian pop, chart pop] [tempo: 96 BPM] [mood: romantic, joyful, melodic] [instruments: programmed drums, round bass, piano, synth chords, guitar strum] [vocal: solo lead in Ukrainian, tender verse into a soaring sung chorus]"
+    },
+    "RS": {
+      "city": "Belgrade",
+      "country": "Serbia",
+      "tz": "Europe/Belgrade",
+      "readout": {
+        "bpm": 111.16,
+        "mode": "minor",
+        "lufs": -12.18,
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ],
+        "n_tracks": 4,
+        "excluded_tracks": [
+          "RS-5"
+        ],
+        "bpm_iqr": [
+          105.14,
+          116.56
+        ]
+      },
+      "genres_own": [
+        [
+          "Folk",
+          2
+        ],
+        [
+          "Pop",
+          1
+        ],
+        [
+          "Hip-Hop",
+          1
+        ]
+      ],
+      "heard": [],
+      "genre_family": "Pop / Folk / Rap",
+      "sa3_prompt": "Serbian pop chart instrumental, with a turbo-folk-leaning current and a rap edge, 111 BPM, minor key, driving four-on-the-floor kit, accordion-adjacent synth line, deep round bass, hand percussion accents, festive uptempo turbo-pop lift, big room-ready mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, energetic, joyful and romantic",
+      "suno_prompt": "[style: Serbian pop, turbo-folk colour, Balkan rap crossover] [tempo: 111 BPM] [mood: energetic, joyful, romantic] [instruments: programmed kit, accordion-adjacent synth, round bass, hand percussion] [vocal: lead in Serbian, sung verse and a rapped passage into a shouted singalong hook]"
     }
   },
   "tracks": [
@@ -3258,11 +3350,11 @@
         ]
       },
       "nearest5": [
+        "SN-08",
         "SN-03",
         "ZW-07",
         "MZ-04",
-        "MA-04",
-        "ZA-01"
+        "MA-04"
       ]
     },
     {
@@ -3307,7 +3399,7 @@
         "NG-04",
         "NG-01",
         "KE-08",
-        "KE-04"
+        "CM-08"
       ]
     },
     {
@@ -3761,8 +3853,8 @@
         "SN-03",
         "KR-07",
         "KE-06",
-        "MZ-04",
-        "AE-04"
+        "RS-02",
+        "MZ-04"
       ]
     },
     {
@@ -3854,11 +3946,11 @@
         "log-drum kit"
       ],
       "nearest5": [
+        "SN-08",
         "ZA-04",
         "SN-04",
         "ZW-04",
-        "BR-03",
-        "NG-02"
+        "RS-01"
       ]
     },
     {
@@ -3903,10 +3995,10 @@
       ],
       "nearest5": [
         "ZA-03",
-        "ZA-01",
-        "ZW-07",
-        "NG-02",
-        "SN-03"
+        "SN-08",
+        "SN-07",
+        "SN-06",
+        "ZA-01"
       ]
     },
     {
@@ -5609,11 +5701,11 @@
         ]
       },
       "nearest5": [
+        "CM-07",
         "ZW-01",
         "AR-04",
         "JM-02",
-        "AR-07",
-        "DE-06"
+        "AR-07"
       ]
     },
     {
@@ -6288,7 +6380,7 @@
         "HK-02",
         "NZ-04",
         "TW-07",
-        "ID-04"
+        "AU-07"
       ]
     },
     {
@@ -6782,8 +6874,8 @@
         "JP-04",
         "JP-02",
         "FI-01",
-        "DK-01",
-        "JP-01"
+        "UA-01",
+        "DK-01"
       ]
     },
     {
@@ -7008,7 +7100,7 @@
         "US-01",
         "TZ-10",
         "US-05",
-        "US-04"
+        "AU-05"
       ]
     },
     {
@@ -8102,7 +8194,7 @@
         "CL-01",
         "DO-05",
         "PL-04",
-        "DO-01"
+        "RS-02"
       ]
     },
     {
@@ -8183,10 +8275,10 @@
       },
       "nearest5": [
         "SN-04",
+        "SN-08",
         "IT-01",
         "VN-02",
-        "PL-03",
-        "KR-07"
+        "PL-03"
       ]
     },
     {
@@ -9190,8 +9282,8 @@
         "MZ-01",
         "RO-01",
         "SN-03",
-        "AE-04",
-        "VN-02"
+        "SN-08",
+        "AE-04"
       ]
     },
     {
@@ -9577,10 +9669,10 @@
       },
       "nearest5": [
         "ET-03",
+        "CM-05",
         "HK-04",
         "CM-04",
-        "HK-06",
-        "MA-02"
+        "HK-06"
       ]
     },
     {
@@ -9662,9 +9754,9 @@
       "nearest5": [
         "GB-05",
         "US-05",
+        "AU-05",
         "TH-04",
-        "US-01",
-        "TZ-10"
+        "US-01"
       ]
     },
     {
@@ -9754,11 +9846,11 @@
         ]
       },
       "nearest5": [
+        "SN-08",
         "SN-04",
+        "SN-06",
         "ZW-07",
-        "RO-04",
-        "IT-05",
-        "PL-03"
+        "RO-04"
       ]
     },
     {
@@ -9909,11 +10001,11 @@
         ]
       },
       "nearest5": [
+        "SN-08",
         "ZA-03",
         "ZW-04",
         "SN-01",
-        "IT-02",
-        "NG-02"
+        "IT-02"
       ]
     },
     {
@@ -10203,11 +10295,11 @@
         ]
       },
       "nearest5": [
+        "CM-05",
         "CM-04",
         "CM-03",
         "ET-02",
-        "GH-04",
-        "PT-06"
+        "GH-04"
       ]
     },
     {
@@ -10710,8 +10802,8 @@
         "INHYD-03",
         "AO-01",
         "EG-02",
-        "ZW-08",
-        "ZW-07"
+        "RS-04",
+        "ZW-08"
       ]
     },
     {
@@ -10751,9 +10843,9 @@
       "nearest5": [
         "ZA-03",
         "SN-04",
+        "SN-08",
         "ZW-07",
-        "NL-02",
-        "EG-04"
+        "NL-02"
       ]
     },
     {
@@ -10793,9 +10885,9 @@
       "nearest5": [
         "CM-03",
         "GH-01",
+        "CM-05",
         "ET-02",
-        "GH-03",
-        "NG-06"
+        "GH-03"
       ]
     },
     {
@@ -10878,8 +10970,8 @@
         "CM-02",
         "CM-01",
         "ET-02",
-        "ET-03",
-        "AR-02"
+        "CM-05",
+        "ET-03"
       ]
     },
     {
@@ -11984,10 +12076,10 @@
       },
       "nearest5": [
         "ZW-07",
+        "SN-05",
+        "SN-07",
         "DO-01",
-        "ZW-05",
-        "PE-02",
-        "NG-02"
+        "ZW-05"
       ]
     },
     {
@@ -12155,11 +12247,11 @@
         ]
       },
       "nearest5": [
+        "AU-08",
         "GR-03",
         "GR-01",
         "TZ-06",
-        "IS-02",
-        "MY-08"
+        "IS-02"
       ]
     },
     {
@@ -12949,9 +13041,9 @@
       "nearest5": [
         "ZW-07",
         "NG-02",
-        "MA-04",
-        "DO-08",
-        "ZW-05"
+        "SN-08",
+        "RS-02",
+        "MA-04"
       ]
     },
     {
@@ -12991,11 +13083,11 @@
         ]
       },
       "nearest5": [
+        "SN-08",
         "ZW-08",
+        "SN-06",
         "DO-08",
-        "NG-02",
-        "EG-03",
-        "DO-07"
+        "RS-02"
       ]
     },
     {
@@ -13226,10 +13318,10 @@
       },
       "nearest5": [
         "KE-05",
+        "CM-08",
         "NG-03",
         "PT-04",
-        "KE-07",
-        "NG-05"
+        "KE-07"
       ]
     },
     {
@@ -13316,8 +13408,8 @@
         "TZ-10",
         "US-01",
         "TH-04",
-        "US-05",
-        "TH-03"
+        "AU-05",
+        "US-05"
       ]
     },
     {
@@ -13449,7 +13541,7 @@
         "BR-01",
         "MX-05",
         "BR-04",
-        "CO-07"
+        "UA-04"
       ]
     },
     {
@@ -13622,10 +13714,10 @@
       },
       "nearest5": [
         "TW-06",
+        "AU-06",
+        "UA-04",
         "TW-07",
-        "NZ-01",
-        "CZ-01",
-        "DK-01"
+        "NZ-01"
       ]
     },
     {
@@ -13667,9 +13759,9 @@
       "nearest5": [
         "TW-07",
         "TW-05",
+        "UA-03",
         "TW-04",
-        "DK-01",
-        "AU-04"
+        "AU-06"
       ]
     },
     {
@@ -13798,9 +13890,9 @@
       "nearest5": [
         "NL-04",
         "RO-04",
+        "AU-06",
         "CA-03",
-        "ID-02",
-        "DK-02"
+        "ID-02"
       ]
     },
     {
@@ -13843,7 +13935,7 @@
         "PL-03",
         "RO-04",
         "CZ-01",
-        "NL-02"
+        "RS-03"
       ]
     },
     {
@@ -14994,7 +15086,7 @@
         "IN-08",
         "CM-03",
         "CM-04",
-        "CM-02"
+        "CM-05"
       ]
     },
     {
@@ -15128,7 +15220,7 @@
         "TZ-06",
         "US-01",
         "US-05",
-        "TH-03"
+        "AU-05"
       ]
     },
     {
@@ -15698,7 +15790,7 @@
         "DE-08",
         "TW-02",
         "PL-02",
-        "TW-04"
+        "CM-06"
       ]
     },
     {
@@ -17048,9 +17140,9 @@
       "nearest5": [
         "TW-06",
         "DK-02",
-        "DK-04",
-        "PH-01",
-        "PH-04"
+        "AU-06",
+        "UA-03",
+        "UA-01"
       ]
     },
     {
@@ -17092,9 +17184,9 @@
       "nearest5": [
         "CZ-01",
         "CA-03",
+        "AU-06",
         "CZ-03",
-        "NL-03",
-        "SG-04"
+        "NL-03"
       ]
     },
     {
@@ -17314,7 +17406,7 @@
         "IS-04",
         "US-06",
         "IS-01",
-        "TZ-10"
+        "AU-05"
       ]
     },
     {
@@ -17403,7 +17495,7 @@
         "HK-03",
         "GB-08",
         "NZ-03",
-        "US-05"
+        "AU-05"
       ]
     },
     {
@@ -17446,9 +17538,9 @@
       "nearest5": [
         "GB-07",
         "HK-07",
+        "AU-05",
         "GB-05",
-        "ID-04",
-        "JP-02"
+        "ID-04"
       ]
     },
     {
@@ -17492,8 +17584,8 @@
         "GB-05",
         "GB-08",
         "GB-06",
-        "PH-04",
-        "DK-04"
+        "AU-05",
+        "PH-04"
       ]
     },
     {
@@ -17536,9 +17628,9 @@
       "nearest5": [
         "GB-07",
         "GB-05",
+        "AU-05",
         "IS-03",
-        "HK-03",
-        "FI-01"
+        "HK-03"
       ]
     },
     {
@@ -18222,11 +18314,11 @@
       },
       "heard": [],
       "nearest5": [
+        "RS-02",
         "ZW-06",
         "AE-05",
         "NG-02",
-        "JM-04",
-        "FR-04"
+        "JM-04"
       ]
     },
     {
@@ -18311,10 +18403,10 @@
       "heard": [],
       "nearest5": [
         "ID-01",
+        "AU-06",
         "CZ-01",
         "TZ-01",
-        "EG-02",
-        "AE-04"
+        "EG-02"
       ]
     },
     {
@@ -19151,6 +19243,909 @@
         "KE-05",
         "KE-02",
         "ES-02"
+      ]
+    },
+    {
+      "id": "AU-05",
+      "region": "AU",
+      "file": "audio/AU-05.mp3",
+      "duration_s": 131.68,
+      "title": "Dancing at January",
+      "artist": "Bondi Dusk Society",
+      "mirrors_rank": 1,
+      "mirrors_cities": 22,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, synth-led textures and bass well forward carrying the arrangement, joyful, energetic and sunny",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "synthesizer",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "AU-01",
+      "nearest5": [
+        "TZ-10",
+        "TH-04",
+        "HK-03",
+        "GB-08",
+        "GB-05"
+      ]
+    },
+    {
+      "id": "AU-06",
+      "region": "AU",
+      "file": "audio/AU-06.mp3",
+      "duration_s": 132.32,
+      "title": "Down the Blue",
+      "artist": "Marrickville Skyline",
+      "mirrors_rank": 2,
+      "mirrors_cities": 33,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, synth-led textures and bass well forward carrying the arrangement, joyful, energetic and sunny",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "synthesizer",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "AU-02",
+      "nearest5": [
+        "AU-07",
+        "CZ-01",
+        "DK-02",
+        "PE-01",
+        "CA-03"
+      ]
+    },
+    {
+      "id": "AU-07",
+      "region": "AU",
+      "file": "audio/AU-07.mp3",
+      "duration_s": 118.0,
+      "title": "Heart of January",
+      "artist": "Surry Hills Trio",
+      "mirrors_rank": 3,
+      "mirrors_cities": 5,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.3,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, synth-led textures and bass well forward carrying the arrangement, joyful, energetic and sunny",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "synthesizer",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "AU-03",
+      "nearest5": [
+        "AU-06",
+        "AU-04",
+        "DK-02",
+        "CZ-01",
+        "CA-03"
+      ]
+    },
+    {
+      "id": "AU-08",
+      "region": "AU",
+      "file": "audio/AU-08.mp3",
+      "duration_s": 117.2,
+      "title": "Dancing at January",
+      "artist": "Coogee Band",
+      "mirrors_rank": 4,
+      "mirrors_cities": 5,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Australian chart pop instrumental, 123 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, country-pop lilt in the verses, sunny festival-pop energy, a prominent kit, synth-led textures and bass well forward carrying the arrangement, joyful, energetic and sunny",
+      "readout": {
+        "bpm": 123.05,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "synthesizer",
+          "bass"
+        ],
+        "moods": [
+          "happy",
+          "energetic",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "AU-04",
+      "nearest5": [
+        "IS-03",
+        "AU-05",
+        "GR-04",
+        "GB-08",
+        "GR-03"
+      ]
+    },
+    {
+      "id": "SN-05",
+      "region": "SN",
+      "file": "audio/SN-05.mp3",
+      "duration_s": 108.0,
+      "title": "Mbedd bu Teranga",
+      "artist": "Ouakam Union",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 4,
+      "seeds": [
+        112,
+        113,
+        1113,
+        2113,
+        113,
+        114,
+        1114,
+        2114,
+        114,
+        115,
+        1115,
+        2115
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.3,
+      "recipe": "mixed",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Senegalese mbalax chart instrumental, sabar-drum rooted with a wider Afropop crossover current, 129 BPM, minor key, sabar and tama talking-drum percussion, warm plucked guitar riff, deep rounded bass, bright synth pads, festive uptempo mbalax groove, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and joyful",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "percussion",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "SN-01",
+      "nearest5": [
+        "DO-08",
+        "SN-07",
+        "SN-08",
+        "MA-01",
+        "ZW-07"
+      ]
+    },
+    {
+      "id": "SN-06",
+      "region": "SN",
+      "file": "audio/SN-06.mp3",
+      "duration_s": 132.12,
+      "title": "Nawet ci Yoff",
+      "artist": "Yoff Guddi Band",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.5,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Senegalese mbalax chart instrumental, sabar-drum rooted with a wider Afropop crossover current, 129 BPM, minor key, sabar and tama talking-drum percussion, warm plucked guitar riff, deep rounded bass, bright synth pads, festive uptempo mbalax groove, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and joyful",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "percussion",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "SN-02",
+      "nearest5": [
+        "SN-08",
+        "ZW-07",
+        "RS-02",
+        "SN-07",
+        "AU-03"
+      ]
+    },
+    {
+      "id": "SN-07",
+      "region": "SN",
+      "file": "audio/SN-07.mp3",
+      "duration_s": 133.32,
+      "title": "Leer bu Yoff",
+      "artist": "Point E Yard Sessions",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Senegalese mbalax chart instrumental, sabar-drum rooted with a wider Afropop crossover current, 129 BPM, minor key, sabar and tama talking-drum percussion, warm plucked guitar riff, deep rounded bass, bright synth pads, festive uptempo mbalax groove, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and joyful",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "percussion",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "SN-03",
+      "nearest5": [
+        "DO-08",
+        "SN-06",
+        "SN-08",
+        "SN-05",
+        "DO-01"
+      ]
+    },
+    {
+      "id": "SN-08",
+      "region": "SN",
+      "file": "audio/SN-08.mp3",
+      "duration_s": 119.08,
+      "title": "Guddi ci Jant",
+      "artist": "Almadies Cassette",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Senegalese mbalax chart instrumental, sabar-drum rooted with a wider Afropop crossover current, 129 BPM, minor key, sabar and tama talking-drum percussion, warm plucked guitar riff, deep rounded bass, bright synth pads, festive uptempo mbalax groove, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and joyful",
+      "readout": {
+        "bpm": 129.2,
+        "mode": "minor",
+        "instruments": [
+          "bass",
+          "percussion",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "deep",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "SN-04",
+      "nearest5": [
+        "SN-06",
+        "ZW-07",
+        "RS-02",
+        "ZA-03",
+        "SN-04"
+      ]
+    },
+    {
+      "id": "CM-05",
+      "region": "CM",
+      "file": "audio/CM-05.mp3",
+      "duration_s": 131.82,
+      "title": "Nuit de Quartier",
+      "artist": "Bonapriso Sound",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Cameroonian chart instrumental, Afrobeats crossed with R&B/soul warmth, 109 BPM, minor key, warm afrobeats percussion, soulful rounded bass, smooth electric guitar and keys, soft synth pads, mid-tempo soulful groove, glossy modern mix, layered hand percussion, bass well forward and synth-led textures carrying the arrangement, energetic, romantic and joyful",
+      "readout": {
+        "bpm": 109.1,
+        "mode": "minor",
+        "instruments": [
+          "percussion",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "love",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "CM-01",
+      "nearest5": [
+        "ET-03",
+        "CM-03",
+        "CM-04",
+        "NG-07",
+        "CM-01"
+      ]
+    },
+    {
+      "id": "CM-06",
+      "region": "CM",
+      "file": "audio/CM-06.mp3",
+      "duration_s": 117.38,
+      "title": "Eclat de Vert",
+      "artist": "New Bell Trio",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Cameroonian chart instrumental, Afrobeats crossed with R&B/soul warmth, 109 BPM, minor key, warm afrobeats percussion, soulful rounded bass, smooth electric guitar and keys, soft synth pads, mid-tempo soulful groove, glossy modern mix, layered hand percussion, bass well forward and synth-led textures carrying the arrangement, energetic, romantic and joyful",
+      "readout": {
+        "bpm": 109.1,
+        "mode": "minor",
+        "instruments": [
+          "percussion",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "love",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "CM-02",
+      "nearest5": [
+        "DE-07",
+        "JM-01",
+        "NG-06",
+        "DE-08",
+        "PL-02"
+      ]
+    },
+    {
+      "id": "CM-07",
+      "region": "CM",
+      "file": "audio/CM-07.mp3",
+      "duration_s": 115.34,
+      "title": "Boulevard de Quartier",
+      "artist": "Bonaberi Nuit Circuit",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.3,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Cameroonian chart instrumental, Afrobeats crossed with R&B/soul warmth, 109 BPM, minor key, warm afrobeats percussion, soulful rounded bass, smooth electric guitar and keys, soft synth pads, mid-tempo soulful groove, glossy modern mix, layered hand percussion, bass well forward and synth-led textures carrying the arrangement, energetic, romantic and joyful",
+      "readout": {
+        "bpm": 109.1,
+        "mode": "minor",
+        "instruments": [
+          "percussion",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "love",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "CM-03",
+      "nearest5": [
+        "CM-08",
+        "PT-03",
+        "AR-01",
+        "KE-08",
+        "PT-04"
+      ]
+    },
+    {
+      "id": "CM-08",
+      "region": "CM",
+      "file": "audio/CM-08.mp3",
+      "duration_s": 119.38,
+      "title": "Makossa a Wouri",
+      "artist": "Bonapriso Lamplight",
+      "mirrors_rank": 2,
+      "mirrors_cities": 33,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Cameroonian chart instrumental, Afrobeats crossed with R&B/soul warmth, 109 BPM, minor key, warm afrobeats percussion, soulful rounded bass, smooth electric guitar and keys, soft synth pads, mid-tempo soulful groove, glossy modern mix, layered hand percussion, bass well forward and synth-led textures carrying the arrangement, energetic, romantic and joyful",
+      "readout": {
+        "bpm": 109.1,
+        "mode": "minor",
+        "instruments": [
+          "percussion",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "energetic",
+          "love",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "CM-04",
+      "nearest5": [
+        "KE-08",
+        "CM-07",
+        "PT-04",
+        "NG-03",
+        "KE-05"
+      ]
+    },
+    {
+      "id": "UA-01",
+      "region": "UA",
+      "file": "audio/UA-01.mp3",
+      "duration_s": 120.0,
+      "title": "Tanets u Dnipro",
+      "artist": "Lypky Union",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Ukrainian pop chart instrumental, 96 BPM, major key, clean programmed drums, warm round bass, bright piano and synth chords, light guitar strum, mid-tempo radio-pop sway, polished mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, romantic, joyful and melodic",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "nearest5": [
+        "DK-01",
+        "UA-03",
+        "TW-06",
+        "UA-04",
+        "AU-07"
+      ]
+    },
+    {
+      "id": "UA-02",
+      "region": "UA",
+      "file": "audio/UA-02.mp3",
+      "duration_s": 132.76,
+      "title": "Lito u Sontse",
+      "artist": "Andriivskyi Uzviz Band",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.5,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Ukrainian pop chart instrumental, 96 BPM, major key, clean programmed drums, warm round bass, bright piano and synth chords, light guitar strum, mid-tempo radio-pop sway, polished mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, romantic, joyful and melodic",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "nearest5": [
+        "UA-03",
+        "TW-06",
+        "AU-08",
+        "UA-04",
+        "UA-01"
+      ]
+    },
+    {
+      "id": "UA-03",
+      "region": "UA",
+      "file": "audio/UA-03.mp3",
+      "duration_s": 128.82,
+      "title": "Svitlo z Pivnich",
+      "artist": "Obolon Union",
+      "mirrors_rank": 3,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Ukrainian pop chart instrumental, 96 BPM, major key, clean programmed drums, warm round bass, bright piano and synth chords, light guitar strum, mid-tempo radio-pop sway, polished mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, romantic, joyful and melodic",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "nearest5": [
+        "TW-06",
+        "AU-04",
+        "UA-02",
+        "DK-01",
+        "UA-01"
+      ]
+    },
+    {
+      "id": "UA-04",
+      "region": "UA",
+      "file": "audio/UA-04.mp3",
+      "duration_s": 117.58,
+      "title": "Vulytsia Dnipro",
+      "artist": "Trukhaniv Circuit",
+      "mirrors_rank": 4,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.4,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Ukrainian pop chart instrumental, 96 BPM, major key, clean programmed drums, warm round bass, bright piano and synth chords, light guitar strum, mid-tempo radio-pop sway, polished mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, romantic, joyful and melodic",
+      "readout": {
+        "bpm": 95.7,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "nearest5": [
+        "TW-05",
+        "UA-03",
+        "UA-01",
+        "CO-05",
+        "BR-07"
+      ]
+    },
+    {
+      "id": "RS-01",
+      "region": "RS",
+      "file": "audio/RS-01.mp3",
+      "duration_s": 131.22,
+      "title": "Srce moje Beograd",
+      "artist": "Skadarlija Noc Set",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.0,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Serbian pop chart instrumental, with a turbo-folk-leaning current and a rap edge, 111 BPM, minor key, driving four-on-the-floor kit, accordion-adjacent synth line, deep round bass, hand percussion accents, festive uptempo turbo-pop lift, big room-ready mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 111.16,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [],
+      "nearest5": [
+        "RS-04",
+        "RS-02",
+        "RO-04",
+        "GB-02",
+        "ZA-03"
+      ]
+    },
+    {
+      "id": "RS-02",
+      "region": "RS",
+      "file": "audio/RS-02.mp3",
+      "duration_s": 131.42,
+      "title": "Leto u Sunce",
+      "artist": "Ada Ciganlija Cassette",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.0,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Serbian pop chart instrumental, with a turbo-folk-leaning current and a rap edge, 111 BPM, minor key, driving four-on-the-floor kit, accordion-adjacent synth line, deep round bass, hand percussion accents, festive uptempo turbo-pop lift, big room-ready mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 111.16,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [],
+      "nearest5": [
+        "SN-08",
+        "RS-04",
+        "RS-01",
+        "SN-06",
+        "ES-04"
+      ]
+    },
+    {
+      "id": "RS-03",
+      "region": "RS",
+      "file": "audio/RS-03.mp3",
+      "duration_s": 123.46,
+      "title": "Leto u Sunce",
+      "artist": "Savamala Radio",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Serbian pop chart instrumental, with a turbo-folk-leaning current and a rap edge, 111 BPM, minor key, driving four-on-the-floor kit, accordion-adjacent synth line, deep round bass, hand percussion accents, festive uptempo turbo-pop lift, big room-ready mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 111.16,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [],
+      "nearest5": [
+        "CZ-02",
+        "RS-01",
+        "NL-02",
+        "IT-05",
+        "PL-03"
+      ]
+    },
+    {
+      "id": "RS-04",
+      "region": "RS",
+      "file": "audio/RS-04.mp3",
+      "duration_s": 132.04,
+      "title": "Ulica u Plavo",
+      "artist": "Savamala Sound",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Serbian pop chart instrumental, with a turbo-folk-leaning current and a rap edge, 111 BPM, minor key, driving four-on-the-floor kit, accordion-adjacent synth line, deep round bass, hand percussion accents, festive uptempo turbo-pop lift, big room-ready mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, energetic, joyful and romantic",
+      "readout": {
+        "bpm": 111.16,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "drums",
+          "bass"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "love"
+        ]
+      },
+      "heard": [],
+      "nearest5": [
+        "RS-01",
+        "RS-02",
+        "GB-04",
+        "NL-02",
+        "PL-04"
       ]
     }
   ],
