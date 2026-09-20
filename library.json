@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T10:42:47Z",
+  "generated_at": "2026-09-20T16:06:07Z",
   "chart_week": "2026-09-07",
   "version": "v6-measured",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
@@ -884,24 +884,24 @@
       "country": "New Zealand",
       "tz": "Pacific/Auckland",
       "readout": {
-        "bpm": 112.35,
+        "bpm": 114.84,
         "mode": "major",
-        "lufs": -11.83,
+        "lufs": -12.11,
         "instruments": [
           "drums",
           "bass",
-          "keyboard"
+          "synthesizer"
         ],
         "moods": [
+          "love",
           "happy",
-          "energetic",
-          "love"
+          "energetic"
         ],
         "n_tracks": 5,
         "excluded_tracks": [],
         "bpm_iqr": [
-          90.67,
-          114.84
+          112.35,
+          123.05
         ]
       },
       "genres_own": [
@@ -912,8 +912,8 @@
       ],
       "heard": [],
       "genre_family": "Hip-Hop / Rap",
-      "sa3_prompt": "New Zealand chart pop instrumental, 112 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and keyboard chords carrying the arrangement, joyful, energetic and romantic",
-      "suno_prompt": "[style: chart pop, country-pop, girl-group pop, hip-hop crossover] [tempo: 112 BPM] [mood: joyful, energetic, romantic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: warm lead vocal, layered harmonies, singalong chorus]"
+      "sa3_prompt": "New Zealand chart pop instrumental, 115 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "suno_prompt": "[style: chart pop, country-pop, girl-group pop, hip-hop crossover] [tempo: 115 BPM] [mood: romantic, joyful, energetic] [instruments: pop drums, bass, synth hooks, acoustic guitar] [vocal: warm lead vocal, layered harmonies, singalong chorus]"
     },
     "CV": {
       "city": "Praia",
@@ -1360,44 +1360,36 @@
       "country": "Netherlands",
       "tz": "Europe/Amsterdam",
       "readout": {
-        "bpm": 99.24,
+        "bpm": 132.51,
         "mode": "minor",
-        "lufs": -12.65,
+        "lufs": -12.11,
         "instruments": [
+          "synthesizer",
           "bass",
-          "drums",
-          "keyboard"
+          "drums"
         ],
         "moods": [
-          "summer",
-          "deep",
-          "happy"
+          "energetic",
+          "happy",
+          "summer"
         ],
-        "n_tracks": 2,
-        "excluded_tracks": [
-          "NL-1",
-          "NL-2",
-          "NL-3"
-        ],
+        "n_tracks": 5,
+        "excluded_tracks": [],
         "bpm_iqr": [
-          92.68,
-          105.79
+          114.84,
+          139.67
         ]
       },
       "genres_own": [
-        [
-          "Afro-Pop",
-          1
-        ],
         [
           "Pop",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Afro-Pop / Pop",
-      "sa3_prompt": "Dutch chart pop instrumental, mostly K-pop and other global chart hits, with an Afro-pop crossover current, 99 BPM, minor key, glossy programmed kit, punchy synth bass, bright supersaw chords, warm Afro-pop guitar and percussion touch, big polished pop-chorus lift, bass well forward, a prominent kit and keyboard chords carrying the arrangement, sunny, deep and joyful",
-      "suno_prompt": "[style: Dutch chart pop, K-pop/global crossover sheen, Afro-pop touch] [tempo: 99 BPM] [mood: sunny, deep, joyful] [instruments: programmed kit, synth bass, supersaw chords, guitar, percussion] [vocal: bright lead vocal in Dutch or English, unison pop hook]"
+      "genre_family": "Pop",
+      "sa3_prompt": "Dutch chart pop instrumental, mostly K-pop and other global chart hits, with an Afro-pop crossover current, 133 BPM, minor key, glossy programmed kit, punchy synth bass, bright supersaw chords, warm Afro-pop guitar and percussion touch, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and sunny",
+      "suno_prompt": "[style: Dutch chart pop, K-pop/global crossover sheen, Afro-pop touch] [tempo: 133 BPM] [mood: energetic, joyful, sunny] [instruments: programmed kit, synth bass, supersaw chords, guitar, percussion] [vocal: bright lead vocal in Dutch or English, unison pop hook]"
     },
     "PL": {
       "city": "Warsaw",
@@ -1414,36 +1406,32 @@
         ],
         "moods": [
           "energetic",
-          "melodic",
-          "happy"
+          "happy",
+          "melodic"
         ],
         "n_tracks": 4,
         "excluded_tracks": [
-          "PL-1"
+          "PL-3"
         ],
         "bpm_iqr": [
-          98.46,
+          98.02,
           128.18
         ]
       },
       "genres_own": [
         [
           "Pop",
-          2
+          3
         ],
         [
           "Electronic",
           1
-        ],
-        [
-          "Hip-Hop",
-          1
         ]
       ],
       "heard": [],
-      "genre_family": "Pop / Electronic / Hip-Hop / Rap",
-      "sa3_prompt": "Polish chart pop instrumental, with an electronic and hip-hop/rap crossover current, 111 BPM, minor key, bright synth pads, four-on-the-floor electronic drums, rounded bass, trap hi-hat accents, clean radio-pop energy, glossy mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, melodic and joyful",
-      "suno_prompt": "[style: Polish pop, electronic dance-pop, Polish hip-hop/rap] [tempo: 111 BPM] [mood: energetic, melodic, joyful] [instruments: synth pads, electronic drums, bass, trap hats] [vocal: Polish-language lead, sung verse into a catchy pop hook]"
+      "genre_family": "Pop / Electronic",
+      "sa3_prompt": "Polish chart pop instrumental, with an electronic and hip-hop/rap crossover current, 111 BPM, minor key, bright synth pads, four-on-the-floor electronic drums, rounded bass, trap hi-hat accents, clean radio-pop energy, glossy mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and melodic",
+      "suno_prompt": "[style: Polish pop, electronic dance-pop, Polish hip-hop/rap] [tempo: 111 BPM] [mood: energetic, joyful, melodic] [instruments: synth pads, electronic drums, bass, trap hats] [vocal: Polish-language lead, sung verse into a catchy pop hook]"
     },
     "SE": {
       "city": "Stockholm",
@@ -1486,30 +1474,33 @@
       "country": "Saudi Arabia",
       "tz": "Asia/Riyadh",
       "readout": {
-        "bpm": 71.78,
+        "bpm": 114.84,
         "mode": "minor",
-        "lufs": -14.26,
+        "lufs": -14.55,
         "instruments": [
-          "drums",
           "synthesizer",
-          "bass"
+          "bass",
+          "drums"
         ],
         "moods": [
           "love",
           "happy",
           "energetic"
         ],
-        "n_tracks": 5,
-        "excluded_tracks": [],
+        "n_tracks": 3,
+        "excluded_tracks": [
+          "SA-2",
+          "SA-4"
+        ],
         "bpm_iqr": [
-          60.1,
-          87.59
+          101.22,
+          117.52
         ]
       },
       "genres_own": [
         [
-          "Arabic Pop",
-          3
+          "Pop",
+          1
         ],
         [
           "Egyptian Pop",
@@ -1517,9 +1508,9 @@
         ]
       ],
       "heard": [],
-      "genre_family": "Arabic Pop / Egyptian Pop",
-      "sa3_prompt": "Khaliji and Arabic pop chart instrumental, with an Egyptian-pop crossover current, 72 BPM, minor key, ornamented oud and synth melody line, driving Khaliji hand percussion, deep sub bass, bright keys, cinematic glossy mix, mid-tempo sway, a prominent kit, synth-led textures and bass well forward carrying the arrangement, romantic, joyful and energetic",
-      "suno_prompt": "[style: Khaliji pop, Arabic pop, Egyptian pop crossover] [tempo: 72 BPM] [mood: romantic, joyful, energetic] [instruments: oud/synth melody, hand percussion, sub bass, keys] [vocal: melismatic Arabic lead vocal, ornamented sung hook]"
+      "genre_family": "Pop / Egyptian Pop",
+      "sa3_prompt": "Khaliji and Arabic pop chart instrumental, with an Egyptian-pop crossover current, 115 BPM, minor key, ornamented oud and synth melody line, driving Khaliji hand percussion, deep sub bass, bright keys, cinematic glossy mix, mid-tempo sway, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "suno_prompt": "[style: Khaliji pop, Arabic pop, Egyptian pop crossover] [tempo: 115 BPM] [mood: romantic, joyful, energetic] [instruments: oud/synth melody, hand percussion, sub bass, keys] [vocal: melismatic Arabic lead vocal, ornamented sung hook]"
     },
     "MA": {
       "city": "Casablanca",
@@ -4096,10 +4087,10 @@
       },
       "nearest5": [
         "SE-03",
+        "NL-07",
         "GB-04",
         "GB-01",
-        "KR-06",
-        "AU-03"
+        "KR-06"
       ]
     },
     {
@@ -5265,8 +5256,8 @@
         "CA-03",
         "ID-01",
         "VN-01",
-        "SG-08",
-        "ID-02"
+        "PL-07",
+        "SG-08"
       ]
     },
     {
@@ -5622,11 +5613,11 @@
         ]
       },
       "nearest5": [
+        "PL-08",
+        "PL-06",
         "DO-07",
         "JM-04",
-        "ZW-07",
-        "ZW-08",
-        "FR-04"
+        "PL-05"
       ]
     },
     {
@@ -6522,11 +6513,11 @@
         ]
       },
       "nearest5": [
+        "NZ-07",
         "ID-04",
         "PE-04",
         "GB-05",
-        "GB-03",
-        "UG-04"
+        "GB-03"
       ]
     },
     {
@@ -7111,7 +7102,7 @@
         "US-01",
         "TZ-10",
         "US-05",
-        "AU-05"
+        "NZ-06"
       ]
     },
     {
@@ -7152,11 +7143,11 @@
         ]
       },
       "nearest5": [
+        "SA-05",
         "TW-03",
         "SA-01",
         "AR-08",
-        "SG-04",
-        "SA-04"
+        "SG-04"
       ]
     },
     {
@@ -7336,7 +7327,7 @@
         "TR-03",
         "NL-03",
         "HK-05",
-        "VN-07"
+        "PL-06"
       ]
     },
     {
@@ -7873,7 +7864,7 @@
         "EG-05",
         "JM-04",
         "JM-08",
-        "DE-03"
+        "PL-08"
       ]
     },
     {
@@ -8019,8 +8010,8 @@
         "FR-01",
         "FR-02",
         "SE-06",
-        "DE-04",
-        "CI-02"
+        "PL-08",
+        "PL-06"
       ]
     },
     {
@@ -8484,9 +8475,9 @@
       "nearest5": [
         "NL-04",
         "SE-04",
-        "PL-01",
-        "SE-07",
-        "RO-04"
+        "PL-07",
+        "PL-08",
+        "PL-01"
       ]
     },
     {
@@ -8525,10 +8516,10 @@
       },
       "nearest5": [
         "TR-04",
+        "PL-07",
         "SG-08",
         "SE-04",
-        "SG-06",
-        "SA-03"
+        "SG-06"
       ]
     },
     {
@@ -8581,8 +8572,8 @@
         "NL-02",
         "GB-04",
         "CZ-01",
-        "ES-07",
-        "RO-04"
+        "NL-08",
+        "ES-07"
       ]
     },
     {
@@ -8669,10 +8660,10 @@
       },
       "nearest5": [
         "DE-02",
+        "PL-06",
         "TW-02",
         "FR-04",
-        "MA-02",
-        "DE-06"
+        "MA-02"
       ]
     },
     {
@@ -8710,11 +8701,11 @@
         ]
       },
       "nearest5": [
+        "PL-08",
+        "NL-08",
         "RO-04",
         "SE-08",
-        "IT-04",
-        "IT-05",
-        "RO-02"
+        "IT-04"
       ]
     },
     {
@@ -8925,9 +8916,9 @@
       "nearest5": [
         "SE-07",
         "NL-02",
+        "PL-07",
         "ES-03",
-        "SG-03",
-        "CA-01"
+        "SG-03"
       ]
     },
     {
@@ -9293,8 +9284,8 @@
         "MZ-01",
         "RO-01",
         "SN-03",
-        "SN-08",
-        "AE-04"
+        "PL-05",
+        "SN-08"
       ]
     },
     {
@@ -10056,9 +10047,9 @@
       "nearest5": [
         "SE-07",
         "TR-02",
+        "PL-08",
         "NL-02",
-        "SE-01",
-        "FR-04"
+        "SE-01"
       ]
     },
     {
@@ -10814,7 +10805,7 @@
         "AO-01",
         "EG-02",
         "RS-04",
-        "ZW-08"
+        "SA-07"
       ]
     },
     {
@@ -11148,9 +11139,9 @@
       "nearest5": [
         "SE-07",
         "GB-02",
+        "PL-08",
         "SE-03",
-        "SE-02",
-        "SE-04"
+        "SE-02"
       ]
     },
     {
@@ -11665,10 +11656,10 @@
       },
       "nearest5": [
         "IN-05",
+        "SA-08",
         "INHYD-02",
         "IN-04",
-        "INHYD-03",
-        "AR-07"
+        "INHYD-03"
       ]
     },
     {
@@ -11911,10 +11902,10 @@
       },
       "nearest5": [
         "SN-03",
+        "PL-05",
         "SG-02",
         "VN-05",
-        "VN-04",
-        "VN-02"
+        "VN-04"
       ]
     },
     {
@@ -13098,7 +13089,7 @@
         "ZW-08",
         "SN-06",
         "DO-08",
-        "RS-02"
+        "NL-05"
       ]
     },
     {
@@ -13140,9 +13131,9 @@
       "nearest5": [
         "PE-04",
         "ZW-07",
+        "SA-07",
         "MZ-01",
-        "EG-03",
-        "MZ-03"
+        "EG-03"
       ]
     },
     {
@@ -13419,8 +13410,8 @@
         "TZ-10",
         "GR-07",
         "US-01",
-        "TH-04",
-        "AU-05"
+        "NZ-06",
+        "TH-04"
       ]
     },
     {
@@ -14375,8 +14366,8 @@
         "BR-04",
         "BR-05",
         "BR-08",
-        "HK-02",
-        "FI-08"
+        "NZ-08",
+        "HK-02"
       ]
     },
     {
@@ -14831,9 +14822,9 @@
       "nearest5": [
         "RO-04",
         "IT-01",
+        "NL-08",
         "RO-03",
-        "IT-04",
-        "RO-02"
+        "IT-04"
       ]
     },
     {
@@ -15229,9 +15220,9 @@
       "nearest5": [
         "TH-04",
         "TZ-06",
+        "NZ-06",
         "US-01",
-        "US-05",
-        "GR-07"
+        "US-05"
       ]
     },
     {
@@ -15799,9 +15790,9 @@
       "nearest5": [
         "DE-05",
         "DE-08",
+        "PL-06",
         "TW-02",
-        "PL-02",
-        "CM-06"
+        "PL-02"
       ]
     },
     {
@@ -15843,9 +15834,9 @@
       "nearest5": [
         "DE-02",
         "FR-08",
+        "PL-06",
         "FR-07",
-        "DE-07",
-        "DE-05"
+        "DE-07"
       ]
     },
     {
@@ -15886,10 +15877,10 @@
       },
       "nearest5": [
         "SE-07",
+        "PL-08",
         "SE-01",
         "NL-03",
-        "SE-06",
-        "CI-01"
+        "SE-06"
       ]
     },
     {
@@ -15973,11 +15964,11 @@
         ]
       },
       "nearest5": [
+        "PL-08",
         "SE-04",
         "CI-01",
         "JM-07",
-        "SE-05",
-        "NL-02"
+        "SE-05"
       ]
     },
     {
@@ -16017,11 +16008,11 @@
         ]
       },
       "nearest5": [
+        "PL-05",
         "RO-04",
         "PL-03",
         "PL-01",
-        "NL-02",
-        "SE-07"
+        "PL-08"
       ]
     },
     {
@@ -17506,7 +17497,7 @@
         "HK-03",
         "GB-08",
         "JP-06",
-        "NZ-03"
+        "NZ-07"
       ]
     },
     {
@@ -17594,9 +17585,9 @@
       "nearest5": [
         "GB-05",
         "GB-08",
+        "NZ-07",
         "JP-05",
-        "JP-06",
-        "GB-06"
+        "JP-06"
       ]
     },
     {
@@ -17734,8 +17725,8 @@
         "GB-04",
         "KR-02",
         "AU-03",
-        "KR-04",
-        "KR-01"
+        "NL-06",
+        "KR-04"
       ]
     },
     {
@@ -18094,10 +18085,10 @@
       "heard": [],
       "nearest5": [
         "AO-03",
+        "NL-08",
         "IT-04",
         "KR-01",
-        "IT-05",
-        "MA-01"
+        "IT-05"
       ]
     },
     {
@@ -18140,8 +18131,8 @@
         "KR-04",
         "SE-03",
         "KR-01",
-        "KR-02",
-        "AU-01"
+        "NL-06",
+        "KR-02"
       ]
     },
     {
@@ -18183,9 +18174,9 @@
       "nearest5": [
         "IT-05",
         "IT-01",
+        "NL-08",
         "PL-01",
-        "NL-04",
-        "IT-04"
+        "PL-05"
       ]
     },
     {
@@ -18634,10 +18625,10 @@
       "heard": [],
       "nearest5": [
         "MA-04",
+        "NL-08",
         "SN-03",
         "MZ-02",
-        "VN-02",
-        "RO-01"
+        "VN-02"
       ]
     },
     {
@@ -18987,9 +18978,9 @@
       "nearest5": [
         "SE-07",
         "KR-02",
+        "PL-08",
         "KR-06",
-        "KR-01",
-        "AU-03"
+        "KR-01"
       ]
     },
     {
@@ -19294,11 +19285,11 @@
       "heard": [],
       "built_as": "AU-01",
       "nearest5": [
+        "NZ-07",
+        "NZ-06",
+        "NZ-08",
         "TZ-10",
-        "JP-06",
-        "TH-04",
-        "HK-03",
-        "GB-08"
+        "JP-06"
       ]
     },
     {
@@ -19429,11 +19420,11 @@
       "heard": [],
       "built_as": "AU-04",
       "nearest5": [
+        "NZ-08",
         "GR-07",
         "IS-03",
         "AU-05",
-        "GR-04",
-        "GB-08"
+        "GR-04"
       ]
     },
     {
@@ -20023,8 +20014,8 @@
         "RS-04",
         "RS-02",
         "RO-04",
-        "GB-02",
-        "ZA-03"
+        "NL-07",
+        "GB-02"
       ]
     },
     {
@@ -20471,7 +20462,7 @@
         "JM-04",
         "JM-08",
         "EG-05",
-        "CL-04"
+        "NL-05"
       ]
     },
     {
@@ -20741,7 +20732,7 @@
         "JP-06",
         "GB-07",
         "JP-02",
-        "GB-06"
+        "NZ-07"
       ]
     },
     {
@@ -21056,7 +21047,7 @@
         "ZA-01",
         "ES-04",
         "ES-05",
-        "CZ-08"
+        "NL-06"
       ]
     },
     {
@@ -21728,10 +21719,10 @@
       "built_as": "GR-03",
       "nearest5": [
         "GR-05",
+        "NZ-08",
         "TZ-10",
-        "GR-04",
-        "IS-03",
-        "AU-05"
+        "NZ-06",
+        "GR-04"
       ]
     },
     {
@@ -22045,8 +22036,8 @@
         "VN-07",
         "MA-04",
         "RO-04",
-        "RO-01",
-        "NL-04"
+        "PL-05",
+        "RO-01"
       ]
     },
     {
@@ -22136,6 +22127,726 @@
         "CZ-03",
         "PL-01",
         "TW-03",
+        "ES-05"
+      ]
+    },
+    {
+      "id": "NZ-05",
+      "region": "NZ",
+      "file": "audio/NZ-05.mp3",
+      "duration_s": 117.2,
+      "title": "Dance at Piha",
+      "artist": "Karangahape Yard Sessions",
+      "mirrors_rank": 1,
+      "mirrors_cities": 33,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "New Zealand chart pop instrumental, 115 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "NZ-01",
+      "nearest5": [
+        "NZ-08",
+        "NZ-06",
+        "TH-04",
+        "ID-05",
+        "GR-03"
+      ]
+    },
+    {
+      "id": "NZ-06",
+      "region": "NZ",
+      "file": "audio/NZ-06.mp3",
+      "duration_s": 127.02,
+      "title": "Heart of the Gulf",
+      "artist": "Mt Eden Skyline",
+      "mirrors_rank": 2,
+      "mirrors_cities": 5,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "New Zealand chart pop instrumental, 115 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "NZ-02",
+      "nearest5": [
+        "NZ-08",
+        "AU-05",
+        "NZ-07",
+        "TZ-10",
+        "TH-04"
+      ]
+    },
+    {
+      "id": "NZ-07",
+      "region": "NZ",
+      "file": "audio/NZ-07.mp3",
+      "duration_s": 117.58,
+      "title": "Dance at Blue",
+      "artist": "Kingsland Night Bus",
+      "mirrors_rank": 3,
+      "mirrors_cities": 22,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "New Zealand chart pop instrumental, 115 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "NZ-03",
+      "nearest5": [
+        "AU-05",
+        "NZ-06",
+        "NZ-03",
+        "GB-07",
+        "NZ-08"
+      ]
+    },
+    {
+      "id": "NZ-08",
+      "region": "NZ",
+      "file": "audio/NZ-08.mp3",
+      "duration_s": 119.02,
+      "title": "Light on Blue",
+      "artist": "Ponsonby Rooftop Crew",
+      "mirrors_rank": 4,
+      "mirrors_cities": 2,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "New Zealand chart pop instrumental, 115 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "NZ-04",
+      "nearest5": [
+        "NZ-06",
+        "AU-05",
+        "NZ-07",
+        "GR-07",
+        "TH-04"
+      ]
+    },
+    {
+      "id": "NL-05",
+      "region": "NL",
+      "file": "audio/NL-05.mp3",
+      "duration_s": 133.06,
+      "title": "Licht van Middernacht",
+      "artist": "Nieuwmarkt Yard Sessions",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Dutch chart pop instrumental, mostly K-pop and other global chart hits, with an Afro-pop crossover current, 133 BPM, minor key, glossy programmed kit, punchy synth bass, bright supersaw chords, warm Afro-pop guitar and percussion touch, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and sunny",
+      "readout": {
+        "bpm": 132.51,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "NL-01",
+      "nearest5": [
+        "RS-01",
+        "ZW-07",
+        "RO-04",
+        "SN-08",
+        "PL-05"
+      ]
+    },
+    {
+      "id": "NL-06",
+      "region": "NL",
+      "file": "audio/NL-06.mp3",
+      "duration_s": 130.88,
+      "title": "Nacht in Blauw",
+      "artist": "Oosterpark Night Bus",
+      "mirrors_rank": 1,
+      "mirrors_cities": 33,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Dutch chart pop instrumental, mostly K-pop and other global chart hits, with an Afro-pop crossover current, 133 BPM, minor key, glossy programmed kit, punchy synth bass, bright supersaw chords, warm Afro-pop guitar and percussion touch, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and sunny",
+      "readout": {
+        "bpm": 132.51,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "NL-02",
+      "nearest5": [
+        "CA-03",
+        "CA-04",
+        "PE-03",
+        "AU-03",
+        "KR-06"
+      ]
+    },
+    {
+      "id": "NL-07",
+      "region": "NL",
+      "file": "audio/NL-07.mp3",
+      "duration_s": 116.88,
+      "title": "Straat van Middernacht",
+      "artist": "Oosterpark Set",
+      "mirrors_rank": 2,
+      "mirrors_cities": 22,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Dutch chart pop instrumental, mostly K-pop and other global chart hits, with an Afro-pop crossover current, 133 BPM, minor key, glossy programmed kit, punchy synth bass, bright supersaw chords, warm Afro-pop guitar and percussion touch, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and sunny",
+      "readout": {
+        "bpm": 132.51,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "NL-03",
+      "nearest5": [
+        "GB-02",
+        "RS-01",
+        "NL-08",
+        "AO-03",
+        "RO-02"
+      ]
+    },
+    {
+      "id": "NL-08",
+      "region": "NL",
+      "file": "audio/NL-08.mp3",
+      "duration_s": 118.3,
+      "title": "Hart van Zon",
+      "artist": "Nieuwmarkt Sessions",
+      "mirrors_rank": 3,
+      "mirrors_cities": 7,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Dutch chart pop instrumental, mostly K-pop and other global chart hits, with an Afro-pop crossover current, 133 BPM, minor key, glossy programmed kit, punchy synth bass, bright supersaw chords, warm Afro-pop guitar and percussion touch, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and sunny",
+      "readout": {
+        "bpm": 132.51,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "NL-04",
+      "nearest5": [
+        "RO-04",
+        "NL-04",
+        "RO-02",
+        "IT-05",
+        "PL-03"
+      ]
+    },
+    {
+      "id": "PL-05",
+      "region": "PL",
+      "file": "audio/PL-05.mp3",
+      "duration_s": 115.6,
+      "title": "Lato w Niebieski",
+      "artist": "Wisla Brzeg Lamplight",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Polish chart pop instrumental, with an electronic and hip-hop/rap crossover current, 111 BPM, minor key, bright synth pads, four-on-the-floor electronic drums, rounded bass, trap hi-hat accents, clean radio-pop energy, glossy mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and melodic",
+      "readout": {
+        "bpm": 111.22,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "built_as": "PL-01",
+      "nearest5": [
+        "RO-04",
+        "SE-08",
+        "PL-01",
+        "VN-07",
+        "PL-08"
+      ]
+    },
+    {
+      "id": "PL-06",
+      "region": "PL",
+      "file": "audio/PL-06.mp3",
+      "duration_s": 131.44,
+      "title": "Ulica Slonce",
+      "artist": "Saska Kepa Society",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Polish chart pop instrumental, with an electronic and hip-hop/rap crossover current, 111 BPM, minor key, bright synth pads, four-on-the-floor electronic drums, rounded bass, trap hi-hat accents, clean radio-pop energy, glossy mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and melodic",
+      "readout": {
+        "bpm": 111.22,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "built_as": "PL-02",
+      "nearest5": [
+        "PL-08",
+        "EG-03",
+        "FR-04",
+        "PL-05",
+        "PL-02"
+      ]
+    },
+    {
+      "id": "PL-07",
+      "region": "PL",
+      "file": "audio/PL-07.mp3",
+      "duration_s": 132.34,
+      "title": "Serce Polnoc",
+      "artist": "Zoliborz Sessions",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Polish chart pop instrumental, with an electronic and hip-hop/rap crossover current, 111 BPM, minor key, bright synth pads, four-on-the-floor electronic drums, rounded bass, trap hi-hat accents, clean radio-pop energy, glossy mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and melodic",
+      "readout": {
+        "bpm": 111.22,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "built_as": "PL-03",
+      "nearest5": [
+        "NL-02",
+        "SE-04",
+        "NL-03",
+        "PL-08",
+        "PL-01"
+      ]
+    },
+    {
+      "id": "PL-08",
+      "region": "PL",
+      "file": "audio/PL-08.mp3",
+      "duration_s": 132.76,
+      "title": "Serce Niebieski",
+      "artist": "Powisle Circuit",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.4,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Polish chart pop instrumental, with an electronic and hip-hop/rap crossover current, 111 BPM, minor key, bright synth pads, four-on-the-floor electronic drums, rounded bass, trap hi-hat accents, clean radio-pop energy, glossy mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and melodic",
+      "readout": {
+        "bpm": 111.22,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "energetic",
+          "happy",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "built_as": "PL-04",
+      "nearest5": [
+        "SE-07",
+        "PL-06",
+        "PL-03",
+        "NL-02",
+        "EG-03"
+      ]
+    },
+    {
+      "id": "SA-05",
+      "region": "SA",
+      "file": "audio/SA-05.mp3",
+      "duration_s": 117.76,
+      "title": "Raqs fi Sahra",
+      "artist": "Tahlia Layl Rooftop Crew",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Khaliji and Arabic pop chart instrumental, with an Egyptian-pop crossover current, 115 BPM, minor key, ornamented oud and synth melody line, driving Khaliji hand percussion, deep sub bass, bright keys, cinematic glossy mix, mid-tempo sway, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "SA-01",
+      "nearest5": [
+        "TW-01",
+        "AR-08",
+        "SA-01",
+        "SA-04",
+        "ZA-08"
+      ]
+    },
+    {
+      "id": "SA-06",
+      "region": "SA",
+      "file": "audio/SA-06.mp3",
+      "duration_s": 117.8,
+      "title": "Shari Al Azraq",
+      "artist": "Diriyah Sound",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Khaliji and Arabic pop chart instrumental, with an Egyptian-pop crossover current, 115 BPM, minor key, ornamented oud and synth melody line, driving Khaliji hand percussion, deep sub bass, bright keys, cinematic glossy mix, mid-tempo sway, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "SA-02",
+      "nearest5": [
+        "SA-08",
+        "ZA-08",
+        "EG-02",
+        "TR-04",
+        "SA-03"
+      ]
+    },
+    {
+      "id": "SA-07",
+      "region": "SA",
+      "file": "audio/SA-07.mp3",
+      "duration_s": 117.84,
+      "title": "Shari Al Sahra",
+      "artist": "Diriyah Night Bus",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Khaliji and Arabic pop chart instrumental, with an Egyptian-pop crossover current, 115 BPM, minor key, ornamented oud and synth melody line, driving Khaliji hand percussion, deep sub bass, bright keys, cinematic glossy mix, mid-tempo sway, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "SA-03",
+      "nearest5": [
+        "ES-05",
+        "ZW-08",
+        "NL-02",
+        "CZ-08",
+        "KR-07"
+      ]
+    },
+    {
+      "id": "SA-08",
+      "region": "SA",
+      "file": "audio/SA-08.mp3",
+      "duration_s": 118.2,
+      "title": "Qalb Al Muntasaf",
+      "artist": "Al Murabba Circuit",
+      "mirrors_rank": 2,
+      "mirrors_cities": 4,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-07",
+      "sa3_prompt": "Khaliji and Arabic pop chart instrumental, with an Egyptian-pop crossover current, 115 BPM, minor key, ornamented oud and synth melody line, driving Khaliji hand percussion, deep sub bass, bright keys, cinematic glossy mix, mid-tempo sway, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "minor",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "SA-04",
+      "nearest5": [
+        "SA-06",
+        "IN-07",
+        "AR-07",
+        "ZA-08",
         "ES-05"
       ]
     }

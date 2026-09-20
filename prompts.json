@@ -3,7 +3,7 @@
  "city": "Belgrade",
  "iso": "RS",
  "note": "Prompts World Sound generates from, one per city; 'prompt' is the newest city's. Live now-playing is not here yet. Audio CC BY 4.0, hisia.live.",
- "published": "2026-09-20T10:44:57Z",
+ "published": "2026-09-20T16:08:54Z",
  "cities": [
   {
    "iso": "KE",
@@ -170,8 +170,8 @@
    "city": "Auckland",
    "country": "New Zealand",
    "genre_family": "Hip-Hop / Rap",
-   "prompt": "New Zealand chart pop instrumental, 112 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and keyboard chords carrying the arrangement, joyful, energetic and romantic",
-   "tracks": 4
+   "prompt": "New Zealand chart pop instrumental, 115 BPM, major key, crisp pop drums, deep bass, bright synth hooks, acoustic guitar strum, a touch of country-pop swing, open-air summer-pop energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+   "tracks": 8
   },
   {
    "iso": "CV",
@@ -257,17 +257,17 @@
    "iso": "NL",
    "city": "Amsterdam",
    "country": "Netherlands",
-   "genre_family": "Afro-Pop / Pop",
-   "prompt": "Dutch chart pop instrumental, mostly K-pop and other global chart hits, with an Afro-pop crossover current, 99 BPM, minor key, glossy programmed kit, punchy synth bass, bright supersaw chords, warm Afro-pop guitar and percussion touch, big polished pop-chorus lift, bass well forward, a prominent kit and keyboard chords carrying the arrangement, sunny, deep and joyful",
-   "tracks": 4
+   "genre_family": "Pop",
+   "prompt": "Dutch chart pop instrumental, mostly K-pop and other global chart hits, with an Afro-pop crossover current, 133 BPM, minor key, glossy programmed kit, punchy synth bass, bright supersaw chords, warm Afro-pop guitar and percussion touch, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and sunny",
+   "tracks": 8
   },
   {
    "iso": "PL",
    "city": "Warsaw",
    "country": "Poland",
-   "genre_family": "Pop / Electronic / Hip-Hop / Rap",
-   "prompt": "Polish chart pop instrumental, with an electronic and hip-hop/rap crossover current, 111 BPM, minor key, bright synth pads, four-on-the-floor electronic drums, rounded bass, trap hi-hat accents, clean radio-pop energy, glossy mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, melodic and joyful",
-   "tracks": 4
+   "genre_family": "Pop / Electronic",
+   "prompt": "Polish chart pop instrumental, with an electronic and hip-hop/rap crossover current, 111 BPM, minor key, bright synth pads, four-on-the-floor electronic drums, rounded bass, trap hi-hat accents, clean radio-pop energy, glossy mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and melodic",
+   "tracks": 8
   },
   {
    "iso": "SE",
@@ -281,9 +281,9 @@
    "iso": "SA",
    "city": "Riyadh",
    "country": "Saudi Arabia",
-   "genre_family": "Arabic Pop / Egyptian Pop",
-   "prompt": "Khaliji and Arabic pop chart instrumental, with an Egyptian-pop crossover current, 72 BPM, minor key, ornamented oud and synth melody line, driving Khaliji hand percussion, deep sub bass, bright keys, cinematic glossy mix, mid-tempo sway, a prominent kit, synth-led textures and bass well forward carrying the arrangement, romantic, joyful and energetic",
-   "tracks": 4
+   "genre_family": "Pop / Egyptian Pop",
+   "prompt": "Khaliji and Arabic pop chart instrumental, with an Egyptian-pop crossover current, 115 BPM, minor key, ornamented oud and synth melody line, driving Khaliji hand percussion, deep sub bass, bright keys, cinematic glossy mix, mid-tempo sway, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
+   "tracks": 8
   },
   {
    "iso": "MA",
