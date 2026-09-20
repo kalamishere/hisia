@@ -3,7 +3,7 @@
  "city": "Belgrade",
  "iso": "RS",
  "note": "Prompts World Sound generates from, one per city; 'prompt' is the newest city's. Live now-playing is not here yet. Audio CC BY 4.0, hisia.live.",
- "published": "2026-09-19T23:14:48Z",
+ "published": "2026-09-20T10:44:57Z",
  "cities": [
   {
    "iso": "KE",
@@ -113,9 +113,9 @@
    "iso": "ID",
    "city": "Jakarta",
    "country": "Indonesia",
-   "genre_family": "Pop / K-Pop",
-   "prompt": "Indonesian pop instrumental, 120 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, warm and hopeful",
-   "tracks": 4
+   "genre_family": "Pop",
+   "prompt": "Indonesian pop instrumental, 109 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, acoustic guitar, a prominent kit and bass well forward carrying the arrangement, romantic, tender and spacious",
+   "tracks": 8
   },
   {
    "iso": "PT",
@@ -129,9 +129,9 @@
    "iso": "EG",
    "city": "Cairo",
    "country": "Egypt",
-   "genre_family": "Arabic Pop / Egyptian Pop",
-   "prompt": "Egyptian pop instrumental, 115 BPM, minor key, mahraganat-style drum programming, deep 808 bass, ornamented oud and string lines, hand percussion, bright synth stabs, punchy street-pop energy, glossy mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, sunny, joyful and energetic",
-   "tracks": 4
+   "genre_family": "Egyptian Pop / Hip-Hop / Rap / Egyptian Hip-Hop / Country",
+   "prompt": "Egyptian pop instrumental, 95 BPM, minor key, mahraganat-style drum programming, deep 808 bass, ornamented oud and string lines, hand percussion, bright synth stabs, punchy street-pop energy, glossy mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, joyful, sunny and deep",
+   "tracks": 8
   },
   {
    "iso": "AR",
@@ -177,17 +177,17 @@
    "iso": "CV",
    "city": "Praia",
    "country": "Cape Verde",
-   "genre_family": "Worldwide / African Music / Dance",
-   "prompt": "Cape Verdean dance instrumental, 128 BPM, minor key, funana-style accordion riffs, fast ferro-scraper percussion, bouncing bass, kizomba-zouk drum groove, bright guitar, joyful island dance energy, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, deep and sunny",
-   "tracks": 4
+   "genre_family": "Worldwide / R&B / Soul / African Music",
+   "prompt": "Cape Verdean dance instrumental, 131 BPM, minor key, funana-style accordion riffs, fast ferro-scraper percussion, bouncing bass, kizomba-zouk drum groove, bright guitar, joyful island dance energy, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, deep and joyful",
+   "tracks": 8
   },
   {
    "iso": "JP",
    "city": "Tokyo",
    "country": "Japan",
-   "genre_family": "J-Pop / K-Pop / Rock",
-   "prompt": "J-pop and idol-pop chart instrumental, with a K-pop and guitar-rock crossover edge, 148 BPM, major key, bright synth arpeggios, punchy programmed kit, driving electric guitar power chords, high melodic bassline, glossy keys, big anthemic pop-rock lift, glossy mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, energetic, melodic and joyful",
-   "tracks": 4
+   "genre_family": "J-Pop / K-Pop",
+   "prompt": "J-pop and idol-pop chart instrumental, with a K-pop and guitar-rock crossover edge, 148 BPM, minor key, bright synth arpeggios, punchy programmed kit, driving electric guitar power chords, high melodic bassline, glossy keys, big anthemic pop-rock lift, glossy mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, energetic, melodic and joyful",
+   "tracks": 8
   },
   {
    "iso": "TH",
@@ -241,9 +241,9 @@
    "iso": "ES",
    "city": "Madrid",
    "country": "Spain",
-   "genre_family": "Urbano latino / Pop / Latin",
-   "prompt": "Spanish-language urbano latino chart instrumental, reggaeton-rooted with a Latin pop crossover current, 111 BPM, minor key, dembow reggaeton drum pattern, deep sub bass, plucked nylon-guitar and synth melody, bright percussion accents, warm dancefloor groove, glossy modern mix, a prominent kit, synth-led textures and layered hand percussion carrying the arrangement, joyful, romantic and sunny",
-   "tracks": 4
+   "genre_family": "Urbano latino / Pop / Latin Music",
+   "prompt": "Spanish-language urbano latino chart instrumental, reggaeton-rooted with a Latin pop crossover current, 115 BPM, minor key, dembow reggaeton drum pattern, deep sub bass, plucked nylon-guitar and synth melody, bright percussion accents, warm dancefloor groove, glossy modern mix, synth-led textures, a prominent kit and keyboard chords carrying the arrangement, joyful, romantic and sunny",
+   "tracks": 8
   },
   {
    "iso": "IT",
@@ -337,9 +337,9 @@
    "iso": "ET",
    "city": "Addis Ababa",
    "country": "Ethiopia",
-   "genre_family": "Reggae",
-   "prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 88 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, bass well forward and layered hand percussion carrying the arrangement, romantic, joyful and melodic",
-   "tracks": 4
+   "genre_family": "Reggae / African",
+   "prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 112 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, layered hand percussion and bass well forward carrying the arrangement, romantic, joyful and melodic",
+   "tracks": 8
   },
   {
    "iso": "AO",
@@ -353,9 +353,9 @@
    "iso": "MZ",
    "city": "Maputo",
    "country": "Mozambique",
-   "genre_family": "Amapiano / African Music / Alternative",
-   "prompt": "Mozambican chart instrumental, amapiano-rooted with a wider African-pop crossover current, 112 BPM, major key, log-drum amapiano bass, shaker and hi-hat groove, warm marrabenta-adjacent guitar line, soft synth pads, mid-tempo amapiano sway, glossy modern mix, synth-led textures, keyboard chords and bass well forward carrying the arrangement, romantic, joyful and melodic",
-   "tracks": 4
+   "genre_family": "Amapiano / African Music / Afrobeats / Alternative",
+   "prompt": "Mozambican chart instrumental, amapiano-rooted with a wider African-pop crossover current, 112 BPM, major key, log-drum amapiano bass, shaker and hi-hat groove, warm marrabenta-adjacent guitar line, soft synth pads, mid-tempo amapiano sway, glossy modern mix, synth-led textures, keyboard chords and bass well forward carrying the arrangement, romantic, joyful and deep",
+   "tracks": 8
   },
   {
    "iso": "ZW",
@@ -377,9 +377,9 @@
    "iso": "JM",
    "city": "Kingston",
    "country": "Jamaica",
-   "genre_family": "Hip-Hop / Rap / Reggae / Dub",
+   "genre_family": "Reggae / Modern Dancehall / Dub",
    "prompt": "Jamaican chart instrumental, dancehall/reggae-rooted with a hip-hop crossover current, 65 BPM, minor key, skanking reggae guitar and organ, deep dub-style sub bass, punchy dancehall riddim drums, trap hi-hat accents, laid-back groove into a driving dancehall lift, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
-   "tracks": 4
+   "tracks": 8
   },
   {
    "iso": "DO",
@@ -393,25 +393,25 @@
    "iso": "GR",
    "city": "Athens",
    "country": "Greece",
-   "genre_family": "Worldwide / Singer / Songwriter",
-   "prompt": "Greek singer-songwriter chart-pop instrumental, 135 BPM, major key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, acoustic guitar and a prominent kit carrying the arrangement, romantic, melodic and tender",
-   "tracks": 4
+   "genre_family": "Worldwide / Pop",
+   "prompt": "Greek singer-songwriter chart-pop instrumental, 106 BPM, minor key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, a prominent kit and bass well forward carrying the arrangement, easy, uplifting and emotional",
+   "tracks": 8
   },
   {
    "iso": "CZ",
    "city": "Prague",
    "country": "Czechia",
-   "genre_family": "Pop / Hip-Hop",
-   "prompt": "Czech chart-pop instrumental, 115 BPM, major key, clean programmed kit, round synth bass, bright piano and synth chords, light guitar strum, polished mid-tempo radio-pop lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
-   "tracks": 4
+   "genre_family": "Pop / Rap / Hip Hop",
+   "prompt": "Czech chart-pop instrumental, 115 BPM, major key, clean programmed kit, round synth bass, bright piano and synth chords, light guitar strum, polished mid-tempo radio-pop lift, synth-led textures, a prominent kit and bass well forward carrying the arrangement, romantic, energetic and joyful",
+   "tracks": 8
   },
   {
    "iso": "FI",
    "city": "Helsinki",
    "country": "Finland",
-   "genre_family": "Pop / Rock",
-   "prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 75 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, a prominent kit, bass well forward and electric guitar carrying the arrangement, energetic, big and heavy",
-   "tracks": 4
+   "genre_family": "Pop / Reggae",
+   "prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 82 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, romantic, energetic and joyful",
+   "tracks": 8
   },
   {
    "iso": "IE",
