@@ -3,23 +3,23 @@
  "city": "Belgrade",
  "iso": "RS",
  "note": "Prompts World Sound generates from, one per city; 'prompt' is the newest city's. Live now-playing is not here yet. Audio CC BY 4.0, hisia.live.",
- "published": "2026-09-21T09:24:55Z",
+ "published": "2026-09-21T15:50:15Z",
  "cities": [
   {
    "iso": "KE",
    "city": "Nairobi",
    "country": "Kenya",
-   "genre_family": "Afro-Pop / Dance / Afrobeats",
-   "prompt": "East African afro-pop instrumental, 94 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
-   "tracks": 8
+   "genre_family": "Dance / Afro-Pop",
+   "prompt": "East African afro-pop instrumental, 95 BPM, minor key, live log-drum and shaker percussion, warm sliding bass, bright plucked guitar riff, soft synth pads, mid-tempo dancehall-zouk swing, bass well forward, keyboard chords and a prominent kit carrying the arrangement, romantic, joyful and deep",
+   "tracks": 12
   },
   {
    "iso": "AE",
    "city": "Dubai",
    "country": "United Arab Emirates",
-   "genre_family": "Pop / Soundtrack",
-   "prompt": "Mid-tempo Gulf-chart pop instrumental, 89 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix, bass well forward, layered hand percussion and a prominent kit carrying the arrangement, romantic, deep and energetic",
-   "tracks": 8
+   "genre_family": "Pop / Soundtrack / Tamil",
+   "prompt": "Mid-tempo Gulf-chart pop instrumental, 78 BPM, minor key, reggaeton-leaning drum groove, deep sub bass, trap hi-hat rolls, ornamented string and reed melody, cinematic and emotional, glossy modern mix, layered hand percussion, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and deep",
+   "tracks": 12
   },
   {
    "iso": "TZ",
@@ -33,9 +33,9 @@
    "iso": "NG",
    "city": "Lagos",
    "country": "Nigeria",
-   "genre_family": "Afrobeats / African",
-   "prompt": "Nigerian afrobeats instrumental, 108 BPM, major key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, bass well forward, a prominent kit and layered hand percussion carrying the arrangement, deep, joyful and romantic",
-   "tracks": 8
+   "genre_family": "Afrobeats / African / African Music",
+   "prompt": "Nigerian afrobeats instrumental, 112 BPM, minor key, loose log-drum and shaker groove, rolling sub bass, muted guitar plucks, soft electric-piano chords, airy synth pads, mid-tempo street-pop swing, bass well forward, a prominent kit and synth-led textures carrying the arrangement, joyful, deep and romantic",
+   "tracks": 12
   },
   {
    "iso": "GH",
@@ -73,9 +73,9 @@
    "iso": "BR",
    "city": "Sao Paulo",
    "country": "Brazil",
-   "genre_family": "Brazilian Music / Pop / Sertanejo / Soul & Funk",
-   "prompt": "Brazilian sertanejo and funk instrumental, 150 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
-   "tracks": 8
+   "genre_family": "Pop / Brazilian Music / Soul & Funk",
+   "prompt": "Brazilian sertanejo and funk instrumental, 123 BPM, minor key, tight snare and tamborim groove, punchy kick, sliding bass, accordion-coloured keys and steel-string acoustic guitar, festive arena energy, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, romantic and joyful",
+   "tracks": 12
   },
   {
    "iso": "KR",
@@ -105,9 +105,9 @@
    "iso": "IN",
    "city": "Mumbai",
    "country": "India",
-   "genre_family": "Pop / Tamil / Telugu",
-   "prompt": "Indian film pop instrumental, 88 BPM, minor key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and energetic",
-   "tracks": 8
+   "genre_family": "Pop / Telugu / Bollywood",
+   "prompt": "Indian film pop instrumental, 86 BPM, minor key, dholak and tabla layered under a programmed kit, plucked sitar and santoor figures, sub-heavy synth bass, sweeping string pad, bright cinematic mix, bass well forward, a prominent kit and acoustic guitar carrying the arrangement, romantic, joyful and energetic",
+   "tracks": 12
   },
   {
    "iso": "ID",
@@ -137,25 +137,25 @@
    "iso": "AR",
    "city": "Buenos Aires",
    "country": "Argentina",
-   "genre_family": "Latin Music / Urbano latino / Música tropical",
+   "genre_family": "Latin Music / Música tropical / Urbano latino",
    "prompt": "Argentine urban pop instrumental, 76 BPM, minor key, reggaeton dembow drums, round sub bass, plucked synth melody, soft pad chords, light guitar, mid-tempo urbano sway, warm club mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
-   "tracks": 8
+   "tracks": 12
   },
   {
    "iso": "CO",
    "city": "Bogota",
    "country": "Colombia",
-   "genre_family": "Música Mexicana / Underground Rap",
-   "prompt": "Colombian pop instrumental, 96 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
-   "tracks": 8
+   "genre_family": "Música Mexicana / Pop Latino",
+   "prompt": "Colombian pop instrumental, 96 BPM, minor key, regional-Mexican-influenced groove with tuba-like bass, requinto guitar runs, accordion colour, soft percussion, sentimental mid-tempo sway, a prominent kit, bass well forward and layered hand percussion carrying the arrangement, romantic, joyful and energetic",
+   "tracks": 12
   },
   {
    "iso": "PH",
    "city": "Manila",
    "country": "Philippines",
-   "genre_family": "Alternative / Indie Pop / Pop / Rap / Hip Hop / Hip-Hop / Rap",
+   "genre_family": "Pop / Alternative / Indie Pop / Hip-Hop / Rap / Rap / Hip Hop",
    "prompt": "Filipino pop instrumental, 70 BPM, major key, clean drum kit groove, warm bass, jangly electric guitar, soft piano, wide pads, earnest indie-pop lift, big-chorus dynamics, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
-   "tracks": 4
+   "tracks": 8
   },
   {
    "iso": "AU",
@@ -193,9 +193,9 @@
    "iso": "TH",
    "city": "Bangkok",
    "country": "Thailand",
-   "genre_family": "Country / Hip-Hop / Rap / R&B / Soul / Pop",
-   "prompt": "Thai chart pop instrumental, with a country and hip-hop/R&B current running through it, 112 BPM, major key, steel-string acoustic guitar picking, warm bass, snapping trap-leaning hi-hats, soft synth pads, light hand percussion, warm mid-tempo sway, close intimate mix, a prominent kit, bass well forward and electric guitar carrying the arrangement, romantic, joyful and energetic",
-   "tracks": 4
+   "genre_family": "Country / Pop / R&B / Soul",
+   "prompt": "Thai chart pop instrumental, with a country and hip-hop/R&B current running through it, 110 BPM, major key, steel-string acoustic guitar picking, warm bass, snapping trap-leaning hi-hats, soft synth pads, light hand percussion, warm mid-tempo sway, close intimate mix, synth-led textures, a prominent kit and acoustic guitar carrying the arrangement, romantic, tender and joyful",
+   "tracks": 8
   },
   {
    "iso": "TW",
@@ -211,7 +211,7 @@
    "country": "Turkey",
    "genre_family": "Turkish Hip-Hop / Rap / Pop",
    "prompt": "Turkish pop instrumental, arabesque-tinged with a hip-hop backbone, 115 BPM, minor key, trap-programmed drums, deep 808 bass, ornamented saz and violin melody line, dark synth pads, hand percussion accents, moody urban-pop groove, glossy modern mix, bass well forward, synth-led textures and a prominent kit carrying the arrangement, romantic, energetic and joyful",
-   "tracks": 4
+   "tracks": 8
   },
   {
    "iso": "MY",
@@ -227,7 +227,7 @@
    "country": "Germany",
    "genre_family": "Hip-Hop / Rap / Turkish Hip-Hop / Rap / Afro-Pop",
    "prompt": "German-language rap chart instrumental, with an Afro-pop and Turkish-German crossover current, 96 BPM, minor key, deep 808 bass, trap-programmed hi-hats and snare, dark synth pads, plucked oud-adjacent melody line, warm percussion, moody urban-pop groove, glossy modern mix, bass well forward, a prominent kit and acoustic guitar carrying the arrangement, romantic, sunny and deep",
-   "tracks": 8
+   "tracks": 12
   },
   {
    "iso": "FR",
@@ -297,9 +297,9 @@
    "iso": "VN",
    "city": "Ho Chi Minh City",
    "country": "Vietnam",
-   "genre_family": "Pop",
-   "prompt": "Vietnamese V-pop chart instrumental, with an alternative-rap and K-pop crossover edge, 99 BPM, major key, bright pop keys, clean electric guitar, punchy programmed kit, round bass, K-pop-leaning synth stabs, polished ballad-into-chorus lift, glossy V-pop mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and energetic",
-   "tracks": 8
+   "genre_family": "Pop / J-Pop",
+   "prompt": "Vietnamese V-pop chart instrumental, with an alternative-rap and K-pop crossover edge, 94 BPM, major key, bright pop keys, clean electric guitar, punchy programmed kit, round bass, K-pop-leaning synth stabs, polished ballad-into-chorus lift, glossy V-pop mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, joyful and energetic",
+   "tracks": 12
   },
   {
    "iso": "SG",
@@ -329,9 +329,9 @@
    "iso": "CI",
    "city": "Abidjan",
    "country": "Cote d'Ivoire",
-   "genre_family": "Afrobeats / Rap / Hip Hop",
-   "prompt": "Ivorian chart instrumental, Afrobeats-rooted crossed with French-language rap and hip-hop, 140 BPM, minor key, log-drum bass, snapping afrobeats percussion, trap hi-hat rolls, bright synth stabs, uptempo coupe-decale-adjacent dance energy, glossy modern mix, bass well forward, a prominent kit and layered hand percussion carrying the arrangement, joyful, energetic and romantic",
-   "tracks": 8
+   "genre_family": "Afrobeats / Rap / Hip Hop / Hard Rock",
+   "prompt": "Ivorian chart instrumental, Afrobeats-rooted crossed with French-language rap and hip-hop, 140 BPM, minor key, log-drum bass, snapping afrobeats percussion, trap hi-hat rolls, bright synth stabs, uptempo coupe-decale-adjacent dance energy, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, energetic, joyful and romantic",
+   "tracks": 12
   },
   {
    "iso": "ET",
@@ -345,9 +345,9 @@
    "iso": "AO",
    "city": "Luanda",
    "country": "Angola",
-   "genre_family": "African / African Music / House / Baile Funk",
-   "prompt": "Angolan chart instrumental, kuduro-adjacent African dance crossed with house and baile funk, 137 BPM, minor key, driving kuduro-tempo percussion, four-on-the-floor house kick, punchy baile-funk-style bass stabs, bright synth leads, high-energy uptempo dancefloor groove, glossy mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, energetic, romantic and joyful",
-   "tracks": 8
+   "genre_family": "African / African Music / House",
+   "prompt": "Angolan chart instrumental, kuduro-adjacent African dance crossed with house and baile funk, 137 BPM, minor key, driving kuduro-tempo percussion, four-on-the-floor house kick, punchy baile-funk-style bass stabs, bright synth leads, high-energy uptempo dancefloor groove, glossy mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+   "tracks": 12
   },
   {
    "iso": "MZ",
@@ -385,9 +385,9 @@
    "iso": "DO",
    "city": "Santo Domingo",
    "country": "Dominican Republic",
-   "genre_family": "Underground Rap / Música tropical / Urbano latino",
-   "prompt": "Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 129 BPM, minor key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, joyful and romantic",
-   "tracks": 8
+   "genre_family": "Música tropical / Underground Rap",
+   "prompt": "Dominican chart instrumental, dembow-rooted with an underground-rap and Latin-tropical crossover current, 126 BPM, major key, dembow drum pattern, deep sub bass, bright synth stabs, tropical percussion accents, driving uptempo dembow groove, glossy modern mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, energetic and romantic",
+   "tracks": 12
   },
   {
    "iso": "GR",
