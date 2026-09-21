@@ -963,6 +963,28 @@ function loadLibrary(){
     });
 }
 
+/* 21 Sep: the newest chart week plays most. Weight = 1 for the oldest of the
+   newest three weeks in the library, 2 for the middle, 3 for the newest; anything
+   older is 1. Every track still plays; the fresh reading plays three times as
+   often as the stale one. Same rule in hisia-stream/player.js. */
+var WEEK_RANK = {};
+function rankWeeks(tracks){
+  var seen = {}; tracks.forEach(function(t){ if (t.chart_week) seen[t.chart_week] = 1; });
+  var weeks = Object.keys(seen).sort(), n = weeks.length;
+  WEEK_RANK = {};
+  weeks.forEach(function(w, i){ WEEK_RANK[w] = Math.max(1, 3 - (n - 1 - i)); });
+}
+function weekWeight(t){ return (t.chart_week && WEEK_RANK[t.chart_week]) || 1; }
+function weightedTake(pool, n){
+  var rest = pool.slice(), out = [];
+  while (out.length < n && rest.length){
+    var total = 0; rest.forEach(function(t){ total += weekWeight(t); });
+    var r = Math.random() * total, i = 0;
+    for (; i < rest.length - 1; i++){ r -= weekWeight(rest[i]); if (r < 0) break; }
+    out.push(rest.splice(i, 1)[0]);
+  }
+  return out;
+}
 function shuffle(a){
   for (var i=a.length-1;i>0;i--){ var j = Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; }
   return a;
@@ -1039,8 +1061,7 @@ function refill(){
     var pool = poolByRegion[iso], played = playedByRegion[iso];
     var fresh = pool.filter(function(t){ return played.indexOf(t.id) === -1; });
     if (!fresh.length){ played.length = 0; fresh = pool.slice(); }
-    shuffle(fresh);
-    var take = fresh.slice(0, Math.min(RUN, fresh.length));
+    var take = weightedTake(fresh, Math.min(RUN, fresh.length));
     take.forEach(function(t){ t.by = "sun"; played.push(t.id); queue.push(t); });
     lastRegion = iso;
     recent.push(iso);
@@ -1701,6 +1722,7 @@ loadLibrary().then(function(data){
     (poolByRegion[t.region] = poolByRegion[t.region] || []).push(t);
     playedByRegion[t.region] = playedByRegion[t.region] || [];
   });
+  rankWeeks(data.tracks || []);
   refill();
   /* ?track=ZA-02 — pin the track as well as the city, so a screenshot or a layout
      comparison shows the same words every time (?city= alone still shuffles) */
