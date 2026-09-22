@@ -3,7 +3,7 @@
  "city": "Belgrade",
  "iso": "RS",
  "note": "Prompts World Sound generates from, one per city; 'prompt' is the newest city's. Live now-playing is not here yet. Audio CC BY 4.0, hisia.live.",
- "published": "2026-09-21T15:50:15Z",
+ "published": "2026-09-22T23:51:09Z",
  "cities": [
   {
    "iso": "KE",
@@ -25,9 +25,9 @@
    "iso": "TZ",
    "city": "Dar es Salaam",
    "country": "Tanzania",
-   "genre_family": "Afro-Pop / Afrobeats / Pop / Bongo-Flava / Afro-Beat",
-   "prompt": "Bongo flava instrumental, 99 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
-   "tracks": 12
+   "genre_family": "Afrobeats / Pop / Afro-Pop",
+   "prompt": "Bongo flava instrumental, 123 BPM, major key, driving conga and shaker percussion, punchy kick, melodic sliding bass, bright electric guitar arpeggio, warm keys, loud glossy mix, summer dance groove, layered hand percussion, keyboard chords and bass well forward carrying the arrangement, romantic, deep and joyful",
+   "tracks": 16
   },
   {
    "iso": "NG",
@@ -41,25 +41,25 @@
    "iso": "GH",
    "city": "Accra",
    "country": "Ghana",
-   "genre_family": "Rap / Hip Hop / Hip-Hop / Rap / Afro-Beat",
-   "prompt": "Ghanaian afrobeats and rap instrumental, 111 BPM, minor key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and energetic",
-   "tracks": 8
+   "genre_family": "Afro-Beat / Afrobeats / Rap / Hip Hop / Hip-Hop / Rap",
+   "prompt": "Ghanaian afrobeats and rap instrumental, 126 BPM, minor key, swung kick-and-clap pattern, hand percussion and shaker, deep round bass, bright piano stabs, sparse guitar licks, spacious sunny mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and energetic",
+   "tracks": 12
   },
   {
    "iso": "UG",
    "city": "Kampala",
    "country": "Uganda",
-   "genre_family": "Afro-Beat / Afro-fusion / Afro-Pop",
-   "prompt": "Ugandan afro-fusion instrumental, 126 BPM, major key, fast hand-drum and shaker patterns, bouncing bass, bright single-coil guitar riff, warm organ keys, up-tempo dance lilt, joyful and romantic",
-   "tracks": 8
+   "genre_family": "Afro-Beat / Afro-fusion / Afro-Pop / Afrobeats",
+   "prompt": "Ugandan afro-fusion instrumental, 123 BPM, major key, fast hand-drum and shaker patterns, bouncing bass, bright single-coil guitar riff, warm organ keys, up-tempo dance lilt, layered hand percussion, bass well forward and keyboard chords carrying the arrangement, romantic, deep and sunny",
+   "tracks": 12
   },
   {
    "iso": "ZA",
    "city": "Johannesburg",
    "country": "South Africa",
-   "genre_family": "Dance / Maskandi / Amapiano / South Africa",
-   "prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, late-night groove, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, melodic and romantic",
-   "tracks": 8
+   "genre_family": "Dance / Amapiano / South Africa / Maskandi",
+   "prompt": "Amapiano instrumental, 112 BPM, minor key, deep log-drum bassline, shuffled shaker and rimshot percussion, soft piano chords, wide warm pads, quiet spacious mix with long tails, late-night groove, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, romantic and melodic",
+   "tracks": 12
   },
   {
    "iso": "GB",
@@ -90,16 +90,16 @@
    "city": "Mexico City",
    "country": "Mexico",
    "genre_family": "Latin / Música Mexicana",
-   "prompt": "Mexican regional instrumental, norteno and corridos tumbados, 109 BPM, minor key, bajo sexto and nylon-string requinto lines, tuba and sousaphone bass walking under the beat, snare and tambora shuffle, accordion swells, close warm mix, romantic and swaggering",
-   "tracks": 8
+   "prompt": "Mexican regional instrumental, norteno and corridos tumbados, 123 BPM, minor key, bajo sexto and nylon-string requinto lines, tuba and sousaphone bass walking under the beat, snare and tambora shuffle, accordion swells, close warm mix, a prominent kit, bass well forward and layered hand percussion carrying the arrangement, romantic, joyful and energetic",
+   "tracks": 12
   },
   {
    "iso": "US",
    "city": "Los Angeles",
    "country": "United States",
    "genre_family": "Hip-Hop / Rap",
-   "prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 94 BPM, major key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
-   "tracks": 8
+   "prompt": "US chart instrumental, country-pop with a hip-hop backbeat, 115 BPM, minor key, strummed acoustic guitar and slide electric, upright-feel bass, laid-back kit with rim clicks and finger snaps, warm piano pads, roomy radio mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, deep, joyful and romantic",
+   "tracks": 12
   },
   {
    "iso": "IN",
@@ -201,9 +201,9 @@
    "iso": "TW",
    "city": "Taipei",
    "country": "Taiwan",
-   "genre_family": "Cantopop / HK-Pop / Pop / K-Pop / Country",
-   "prompt": "Mandopop and Taiwanese ballad-pop instrumental, with a K-pop crossover edge, 107 BPM, minor key, piano and warm string pad, clean electric guitar, round bass, crisp programmed kit, occasional bright synth stabs, polished ballad-into-chorus lift, glossy Mandopop mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, tender and joyful",
-   "tracks": 8
+   "genre_family": "Cantopop / HK-Pop / Pop / K-Pop / Soundtrack",
+   "prompt": "Mandopop and Taiwanese ballad-pop instrumental, with a K-pop crossover edge, 103 BPM, minor key, piano and warm string pad, clean electric guitar, round bass, crisp programmed kit, occasional bright synth stabs, polished ballad-into-chorus lift, glossy Mandopop mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+   "tracks": 12
   },
   {
    "iso": "TR",
@@ -218,8 +218,8 @@
    "city": "Kuala Lumpur",
    "country": "Malaysia",
    "genre_family": "Pop",
-   "prompt": "Malay-language chart pop instrumental, with a dangdut-adjacent groove and a Western pop crossover, 123 BPM, major key, warm rounded bass, gently swung kick-and-snare, plucked acoustic guitar, soft keys, light hand percussion, easy mid-tempo sway, clean radio mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, joyful, energetic and romantic",
-   "tracks": 8
+   "prompt": "Malay-language chart pop instrumental, with a dangdut-adjacent groove and a Western pop crossover, 126 BPM, major key, warm rounded bass, gently swung kick-and-snare, plucked acoustic guitar, soft keys, light hand percussion, easy mid-tempo sway, clean radio mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, joyful, energetic and romantic",
+   "tracks": 12
   },
   {
    "iso": "DE",
@@ -233,9 +233,9 @@
    "iso": "FR",
    "city": "Paris",
    "country": "France",
-   "genre_family": "South African Hip-Hop / Rap / Hip-Hop / Rap",
-   "prompt": "French-language rap and hip-hop chart instrumental, with an amapiano-adjacent South African crossover current, 131 BPM, major key, deep sub bass, log-drum-adjacent low end, trap hi-hat rolls, dark piano and synth stabs, plucked guitar accents, moody urban-pop groove, glossy modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, romantic and joyful",
-   "tracks": 8
+   "genre_family": "South African Hip-Hop / Rap / Hip Hop / Pop",
+   "prompt": "French-language rap and hip-hop chart instrumental, with an amapiano-adjacent South African crossover current, 129 BPM, minor key, deep sub bass, log-drum-adjacent low end, trap hi-hat rolls, dark piano and synth stabs, plucked guitar accents, moody urban-pop groove, glossy modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, romantic and joyful",
+   "tracks": 12
   },
   {
    "iso": "ES",
@@ -249,9 +249,9 @@
    "iso": "IT",
    "city": "Milan",
    "country": "Italy",
-   "genre_family": "Rap / Hip Hop / Hip-Hop / Rap / Pop / Rap",
-   "prompt": "Italian chart pop instrumental, with a hip-hop/rap crossover current, 129 BPM, minor key, bright synth-pop chords, punchy programmed kit, warm rounded bass, trap hi-hat accents, light guitar strum, glossy radio-pop lift, polished modern mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, energetic, sunny and joyful",
-   "tracks": 8
+   "genre_family": "Pop / Rap / Hip Hop / Hip-Hop / Rap",
+   "prompt": "Italian chart pop instrumental, with a hip-hop/rap crossover current, 134 BPM, minor key, bright synth-pop chords, punchy programmed kit, warm rounded bass, trap hi-hat accents, light guitar strum, glossy radio-pop lift, polished modern mix, synth-led textures, a prominent kit and bass well forward carrying the arrangement, energetic, romantic and joyful",
+   "tracks": 12
   },
   {
    "iso": "NL",
@@ -275,7 +275,7 @@
    "country": "Sweden",
    "genre_family": "Pop",
    "prompt": "Swedish chart pop instrumental, mostly K-pop and other global chart hits, with a Swedish hip-hop/rap current, 129 BPM, major key, glossy Scandi-pop synths, deep 808 bass, trap hi-hat rolls, bright programmed kit, polished Scandi-pop lift, modern mix, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
-   "tracks": 8
+   "tracks": 12
   },
   {
    "iso": "SA",
@@ -289,9 +289,9 @@
    "iso": "MA",
    "city": "Casablanca",
    "country": "Morocco",
-   "genre_family": "Pop / North African / Hip-Hop / Rap / Arabic Pop",
-   "prompt": "Moroccan chart pop instrumental, with a folk and hip-hop/rap crossover current, 102 BPM, minor key, bright pop synths, bendir-style hand percussion, warm rounded bass, trap hi-hat accents, plucked oud-adjacent line, festive mid-tempo groove, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, romantic, joyful and deep",
-   "tracks": 8
+   "genre_family": "Hip-Hop / Rap / Pop / North African / Electronic",
+   "prompt": "Moroccan chart pop instrumental, with a folk and hip-hop/rap crossover current, 77 BPM, minor key, bright pop synths, bendir-style hand percussion, warm rounded bass, trap hi-hat accents, plucked oud-adjacent line, festive mid-tempo groove, glossy modern mix, bass well forward, a prominent kit and synth-led textures carrying the arrangement, deep, romantic and sunny",
+   "tracks": 12
   },
   {
    "iso": "VN",
@@ -305,17 +305,17 @@
    "iso": "SG",
    "city": "Singapore",
    "country": "Singapore",
-   "genre_family": "Pop / Cantopop / HK-Pop / K-Pop",
-   "prompt": "Singapore chart pop instrumental, mostly K-pop and other global chart hits, with a Cantopop/HK-pop crossover current, 72 BPM, minor key, glossy programmed kit, bright synth hooks, punchy bass, light Cantopop string touches, big polished pop-chorus lift, synth-led textures, bass well forward and a prominent kit carrying the arrangement, romantic, deep and romantic",
-   "tracks": 8
+   "genre_family": "Pop / K-Pop",
+   "prompt": "Singapore chart pop instrumental, mostly K-pop and other global chart hits, with a Cantopop/HK-pop crossover current, 123 BPM, minor key, glossy programmed kit, bright synth hooks, punchy bass, light Cantopop string touches, big polished pop-chorus lift, a prominent kit, bass well forward and keyboard chords carrying the arrangement, joyful, energetic and romantic",
+   "tracks": 12
   },
   {
    "iso": "HK",
    "city": "Hong Kong",
    "country": "Hong Kong",
-   "genre_family": "Pop / Asian Music / Reggae",
-   "prompt": "Cantopop chart instrumental, with a reggae and hip-hop crossover current, 71 BPM, major key, skanking reggae guitar and organ touch, warm rounded bass, punchy programmed kit, Cantopop synth strings, laid-back groove into a glossy pop lift, piano, acoustic guitar and a prominent kit carrying the arrangement, romantic, tender and joyful",
-   "tracks": 8
+   "genre_family": "Asian Music / Cantopop / HK-Pop",
+   "prompt": "Cantopop chart instrumental, with a reggae and hip-hop crossover current, 82 BPM, major key, skanking reggae guitar and organ touch, warm rounded bass, punchy programmed kit, Cantopop synth strings, laid-back groove into a glossy pop lift, a prominent kit, piano and bass well forward carrying the arrangement, romantic, tender and emotional",
+   "tracks": 12
   },
   {
    "iso": "SN",
@@ -361,9 +361,9 @@
    "iso": "ZW",
    "city": "Harare",
    "country": "Zimbabwe",
-   "genre_family": "Afro-Beat / Afro-Pop / African Dancehall",
-   "prompt": "Zimbabwean chart instrumental, afrobeat-rooted with an afro-pop and dancehall crossover current, 120 BPM, major key, driving afrobeat percussion, deep rounded bass, bright guitar riff, dancehall-style skanking chords, uptempo dance groove, glossy modern mix, layered hand percussion, bass well forward and a prominent kit carrying the arrangement, romantic, joyful and deep",
-   "tracks": 8
+   "genre_family": "Afro-Beat / African Dancehall",
+   "prompt": "Zimbabwean chart instrumental, afrobeat-rooted with an afro-pop and dancehall crossover current, 105 BPM, minor key, driving afrobeat percussion, deep rounded bass, bright guitar riff, dancehall-style skanking chords, uptempo dance groove, glossy modern mix, layered hand percussion, bass well forward and keyboard chords carrying the arrangement, romantic, deep and sunny",
+   "tracks": 12
   },
   {
    "iso": "CM",
@@ -466,8 +466,8 @@
    "city": "Toronto",
    "country": "Canada",
    "genre_family": "",
-   "prompt": "Global chart-pop instrumental, K-pop-adjacent, for a Toronto own-hits chart with no distinct Canadian scene, 115 BPM, minor key, crisp programmed kit, deep synth bass, bright synth hooks, layered vocal-chop textures, glossy uptempo global-pop lift, radio-bright mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, energetic, joyful and romantic",
-   "tracks": 4
+   "prompt": "Global chart-pop instrumental, K-pop-adjacent, for a Toronto own-hits chart with no distinct Canadian scene, 123 BPM, minor key, crisp programmed kit, deep synth bass, bright synth hooks, layered vocal-chop textures, glossy uptempo global-pop lift, radio-bright mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, energetic, joyful and romantic",
+   "tracks": 8
   },
   {
    "iso": "INMAA",
