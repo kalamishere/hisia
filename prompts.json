@@ -3,7 +3,7 @@
  "city": "Belgrade",
  "iso": "RS",
  "note": "Prompts World Sound generates from, one per city; 'prompt' is the newest city's. Live now-playing is not here yet. Audio CC BY 4.0, hisia.live.",
- "published": "2026-10-09T21:09:57Z",
+ "published": "2026-10-11T13:29:01Z",
  "cities": [
   {
    "iso": "KE",
@@ -65,9 +65,9 @@
    "iso": "GB",
    "city": "London",
    "country": "United Kingdom",
-   "genre_family": "",
-   "prompt": "UK chart pop instrumental, 123 BPM, minor key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
-   "tracks": 8
+   "genre_family": "Pop",
+   "prompt": "UK chart pop instrumental, 115 BPM, major key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+   "tracks": 12
   },
   {
    "iso": "BR",
@@ -114,8 +114,8 @@
    "city": "Jakarta",
    "country": "Indonesia",
    "genre_family": "Pop",
-   "prompt": "Indonesian pop instrumental, 109 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, acoustic guitar, a prominent kit and bass well forward carrying the arrangement, romantic, tender and spacious",
-   "tracks": 8
+   "prompt": "Indonesian pop instrumental, 117 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, acoustic guitar, bass well forward and a prominent kit carrying the arrangement, romantic, tender and joyful",
+   "tracks": 12
   },
   {
    "iso": "PT",
@@ -337,9 +337,9 @@
    "iso": "ET",
    "city": "Addis Ababa",
    "country": "Ethiopia",
-   "genre_family": "Reggae / African",
-   "prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 112 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, layered hand percussion and bass well forward carrying the arrangement, romantic, joyful and melodic",
-   "tracks": 8
+   "genre_family": "Hip-Hop / Rap / Reggae / Rock",
+   "prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 94 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, layered hand percussion and bass well forward carrying the arrangement, romantic, joyful and energetic",
+   "tracks": 12
   },
   {
    "iso": "AO",
@@ -393,9 +393,9 @@
    "iso": "GR",
    "city": "Athens",
    "country": "Greece",
-   "genre_family": "Worldwide / Pop",
-   "prompt": "Greek singer-songwriter chart-pop instrumental, 106 BPM, minor key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, a prominent kit and bass well forward carrying the arrangement, easy, uplifting and emotional",
-   "tracks": 8
+   "genre_family": "Worldwide / Pop / Hip-Hop / Rap / Singer / Songwriter",
+   "prompt": "Greek singer-songwriter chart-pop instrumental, 122 BPM, minor key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, a prominent kit, acoustic guitar and synth-led textures carrying the arrangement, romantic, easy and melodic",
+   "tracks": 12
   },
   {
    "iso": "CZ",
@@ -409,9 +409,9 @@
    "iso": "FI",
    "city": "Helsinki",
    "country": "Finland",
-   "genre_family": "Pop / Reggae",
-   "prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 82 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, romantic, energetic and joyful",
-   "tracks": 8
+   "genre_family": "Pop",
+   "prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 101 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, deep, energetic and sunny",
+   "tracks": 12
   },
   {
    "iso": "IE",

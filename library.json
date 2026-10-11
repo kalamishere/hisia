@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T21:04:57Z",
+  "generated_at": "2026-10-11T13:25:02Z",
   "chart_week": "2026-09-28",
   "version": "v6-measured",
   "recipe": "two-stage synthetic (E1+E3): text-only stage one from the region readout, then four a2a chunks from that gen at 0.42. No recording is ever an input.",
@@ -330,8 +330,8 @@
       "country": "United Kingdom",
       "tz": "Europe/London",
       "readout": {
-        "bpm": 123.05,
-        "mode": "minor",
+        "bpm": 114.84,
+        "mode": "major",
         "lufs": -11.83,
         "instruments": [
           "drums",
@@ -339,22 +339,27 @@
           "synthesizer"
         ],
         "moods": [
+          "love",
           "energetic",
-          "happy",
-          "love"
+          "happy"
         ],
         "n_tracks": 5,
         "excluded_tracks": [],
         "bpm_iqr": [
-          114.84,
-          139.67
+          112.35,
+          129.2
         ]
       },
-      "genres_own": [],
+      "genres_own": [
+        [
+          "Pop",
+          1
+        ]
+      ],
       "heard": [],
-      "genre_family": "",
-      "sa3_prompt": "UK chart pop instrumental, 123 BPM, minor key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, energetic, joyful and romantic",
-      "suno_prompt": "[style: UK chart pop with K-pop crossover sheen, dance-pop] [tempo: 123 BPM] [mood: energetic, joyful, romantic] [instruments: four-on-the-floor kit, claps, synth bass, supersaw chords, chopped electric guitar] [vocal: group vocal, English hook sung in unison then split into harmony]"
+      "genre_family": "Pop",
+      "sa3_prompt": "UK chart pop instrumental, 115 BPM, major key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "suno_prompt": "[style: UK chart pop with K-pop crossover sheen, dance-pop] [tempo: 115 BPM] [mood: romantic, energetic, joyful] [instruments: four-on-the-floor kit, claps, synth bass, supersaw chords, chopped electric guitar] [vocal: group vocal, English hook sung in unison then split into harmony]"
     },
     "BR": {
       "city": "Sao Paulo",
@@ -583,38 +588,39 @@
       "country": "Indonesia",
       "tz": "Asia/Jakarta",
       "readout": {
-        "bpm": 109.39,
+        "bpm": 117.45,
         "mode": "major",
-        "lufs": -12.22,
+        "lufs": -13.01,
         "instruments": [
           "guitar",
-          "drums",
-          "bass"
+          "bass",
+          "drums"
         ],
         "moods": [
           "love",
           "ballad",
-          "background"
+          "happy"
         ],
-        "n_tracks": 4,
+        "n_tracks": 3,
         "excluded_tracks": [
-          "ID-2"
+          "ID-2",
+          "ID-4"
         ],
         "bpm_iqr": [
-          100.84,
-          120.8
+          109.39,
+          124.15
         ]
       },
       "genres_own": [
         [
           "Pop",
-          4
+          3
         ]
       ],
       "heard": [],
       "genre_family": "Pop",
-      "sa3_prompt": "Indonesian pop instrumental, 109 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, acoustic guitar, a prominent kit and bass well forward carrying the arrangement, romantic, tender and spacious",
-      "suno_prompt": "[style: Indonesian pop with a K-pop-leaning gloss] [tempo: 109 BPM] [mood: romantic, tender, spacious] [instruments: clean electric guitar arpeggios, synth bass, programmed kit with claps, glassy keys, airy pads] [vocal: soft male lead in Bahasa Indonesia, breathy verse, group-sung chorus]"
+      "sa3_prompt": "Indonesian pop instrumental, 117 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, acoustic guitar, bass well forward and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "suno_prompt": "[style: Indonesian pop with a K-pop-leaning gloss] [tempo: 117 BPM] [mood: romantic, tender, joyful] [instruments: clean electric guitar arpeggios, synth bass, programmed kit with claps, glassy keys, airy pads] [vocal: soft male lead in Bahasa Indonesia, breathy verse, group-sung chorus]"
     },
     "PT": {
       "city": "Lisbon",
@@ -1772,9 +1778,9 @@
       "country": "Ethiopia",
       "tz": "Africa/Addis_Ababa",
       "readout": {
-        "bpm": 112.35,
+        "bpm": 93.96,
         "mode": "major",
-        "lufs": -11.29,
+        "lufs": -11.37,
         "instruments": [
           "synthesizer",
           "percussion",
@@ -1783,32 +1789,36 @@
         "moods": [
           "love",
           "happy",
-          "melodic"
+          "energetic"
         ],
         "n_tracks": 3,
         "excluded_tracks": [
-          "ET-1",
-          "ET-3"
+          "ET-3",
+          "ET-5"
         ],
         "bpm_iqr": [
-          97.85,
-          114.9
+          88.66,
+          96.67
         ]
       },
       "genres_own": [
         [
-          "Reggae",
-          2
+          "Hip-Hop",
+          1
         ],
         [
-          "African",
+          "Reggae",
+          1
+        ],
+        [
+          "Rock",
           1
         ]
       ],
       "heard": [],
-      "genre_family": "Reggae / African",
-      "sa3_prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 112 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, layered hand percussion and bass well forward carrying the arrangement, romantic, joyful and melodic",
-      "suno_prompt": "[style: Ethiopian reggae-pop, Amharic pop crossover] [tempo: 112 BPM] [mood: romantic, joyful, melodic] [instruments: reggae guitar/organ, bass, hand percussion, synth pads] [vocal: melismatic Amharic lead vocal, sung verse into a reggae-lilt chorus]"
+      "genre_family": "Hip-Hop / Rap / Reggae / Rock",
+      "sa3_prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 94 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, layered hand percussion and bass well forward carrying the arrangement, romantic, joyful and energetic",
+      "suno_prompt": "[style: Ethiopian reggae-pop, Amharic pop crossover] [tempo: 94 BPM] [mood: romantic, joyful, energetic] [instruments: reggae guitar/organ, bass, hand percussion, synth pads] [vocal: melismatic Amharic lead vocal, sung verse into a reggae-lilt chorus]"
     },
     "AO": {
       "city": "Luanda",
@@ -2078,28 +2088,26 @@
       "country": "Greece",
       "tz": "Europe/Athens",
       "readout": {
-        "bpm": 106.07,
+        "bpm": 121.62,
         "mode": "minor",
-        "lufs": -15.39,
+        "lufs": -13.35,
         "instruments": [
-          "guitar",
           "drums",
-          "bass"
+          "guitar",
+          "synthesizer"
         ],
         "moods": [
+          "love",
           "relaxing",
-          "inspiring",
-          "emotional"
+          "melodic"
         ],
-        "n_tracks": 2,
+        "n_tracks": 4,
         "excluded_tracks": [
-          "GR-1",
-          "GR-3",
-          "GR-5"
+          "GR-4"
         ],
         "bpm_iqr": [
-          97.59,
-          114.56
+          116.51,
+          129.2
         ]
       },
       "genres_own": [
@@ -2110,12 +2118,20 @@
         [
           "Pop",
           1
+        ],
+        [
+          "Hip-Hop",
+          1
+        ],
+        [
+          "Singer-songwriter",
+          1
         ]
       ],
       "heard": [],
-      "genre_family": "Worldwide / Pop",
-      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 106 BPM, minor key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, acoustic guitar, a prominent kit and bass well forward carrying the arrangement, easy, uplifting and emotional",
-      "suno_prompt": "[style: Greek singer-songwriter pop, laiko-adjacent balladry, chart pop] [tempo: 106 BPM] [mood: easy, uplifting, emotional] [instruments: nylon guitar, bouzouki-adjacent guitar, piano, brushed drums, round bass] [vocal: solo lead in Greek, confiding verse opening into a warm sung chorus]"
+      "genre_family": "Worldwide / Pop / Hip-Hop / Rap / Singer / Songwriter",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 122 BPM, minor key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, a prominent kit, acoustic guitar and synth-led textures carrying the arrangement, romantic, easy and melodic",
+      "suno_prompt": "[style: Greek singer-songwriter pop, laiko-adjacent balladry, chart pop] [tempo: 122 BPM] [mood: romantic, easy, melodic] [instruments: nylon guitar, bouzouki-adjacent guitar, piano, brushed drums, round bass] [vocal: solo lead in Greek, confiding verse opening into a warm sung chorus]"
     },
     "CZ": {
       "city": "Prague",
@@ -2164,44 +2180,39 @@
       "country": "Finland",
       "tz": "Europe/Helsinki",
       "readout": {
-        "bpm": 81.63,
+        "bpm": 101.33,
         "mode": "major",
-        "lufs": -11.37,
+        "lufs": -10.83,
         "instruments": [
-          "drums",
           "synthesizer",
-          "bass"
+          "bass",
+          "drums"
         ],
         "moods": [
-          "love",
+          "deep",
           "energetic",
-          "happy"
+          "summer"
         ],
-        "n_tracks": 2,
+        "n_tracks": 3,
         "excluded_tracks": [
-          "FI-1",
           "FI-3",
           "FI-4"
         ],
         "bpm_iqr": [
-          79.38,
-          83.88
+          89.23,
+          110.76
         ]
       },
       "genres_own": [
         [
           "Pop",
-          1
-        ],
-        [
-          "Reggae",
-          1
+          3
         ]
       ],
       "heard": [],
-      "genre_family": "Pop / Reggae",
-      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 82 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, a prominent kit, synth-led textures and bass well forward carrying the arrangement, romantic, energetic and joyful",
-      "suno_prompt": "[style: Finnish pop, reggae-inflected chart pop] [tempo: 82 BPM] [mood: romantic, energetic, joyful] [instruments: offbeat guitar, round bass, programmed kit, synth pad] [vocal: solo lead in Finnish, relaxed sung verse into a gentle hook]"
+      "genre_family": "Pop",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 101 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, deep, energetic and sunny",
+      "suno_prompt": "[style: Finnish pop, reggae-inflected chart pop] [tempo: 101 BPM] [mood: deep, energetic, sunny] [instruments: offbeat guitar, round bass, programmed kit, synth pad] [vocal: solo lead in Finnish, relaxed sung verse into a gentle hook]"
     },
     "IE": {
       "city": "Dublin",
@@ -4011,11 +4022,11 @@
         ]
       },
       "nearest5": [
+        "GB-09",
         "GB-02",
         "SE-03",
         "SG-10",
-        "VN-04",
-        "GB-04"
+        "VN-04"
       ]
     },
     {
@@ -4059,8 +4070,8 @@
         "IT-11",
         "SE-03",
         "NL-07",
-        "GB-04",
-        "SG-11"
+        "GB-09",
+        "GB-04"
       ]
     },
     {
@@ -4102,10 +4113,10 @@
       },
       "nearest5": [
         "SG-10",
+        "GB-12",
+        "GB-11",
         "ID-04",
-        "GB-04",
-        "SG-12",
-        "NZ-03"
+        "GB-09"
       ]
     },
     {
@@ -4907,10 +4918,10 @@
       },
       "nearest5": [
         "ID-04",
+        "GB-12",
         "US-05",
         "US-03",
-        "US-01",
-        "SG-10"
+        "US-01"
       ]
     },
     {
@@ -5268,11 +5279,11 @@
         ]
       },
       "nearest5": [
+        "GB-12",
         "SG-10",
         "US-04",
         "NZ-04",
-        "NZ-03",
-        "GB-03"
+        "NZ-03"
       ]
     },
     {
@@ -5944,10 +5955,10 @@
       },
       "nearest5": [
         "FI-06",
+        "FI-12",
         "BR-06",
         "MX-02",
-        "CO-04",
-        "MX-03"
+        "CO-04"
       ]
     },
     {
@@ -6034,10 +6045,10 @@
       },
       "nearest5": [
         "PH-03",
+        "ID-11",
         "PH-07",
         "DK-01",
-        "PH-04",
-        "DK-02"
+        "PH-04"
       ]
     },
     {
@@ -6168,11 +6179,11 @@
         ]
       },
       "nearest5": [
+        "GB-12",
+        "FI-09",
         "NG-01",
         "DK-04",
-        "NG-12",
-        "SG-10",
-        "ID-04"
+        "NG-12"
       ]
     },
     {
@@ -6260,9 +6271,9 @@
       "nearest5": [
         "AU-01",
         "VN-10",
+        "GB-09",
         "NZ-02",
-        "GB-03",
-        "TZ-15"
+        "GB-03"
       ]
     },
     {
@@ -6483,11 +6494,11 @@
         ]
       },
       "nearest5": [
+        "GB-12",
         "NZ-07",
         "SG-10",
         "ID-04",
-        "PE-04",
-        "GB-05"
+        "PE-04"
       ]
     },
     {
@@ -6801,8 +6812,8 @@
         "JP-06",
         "JP-05",
         "HK-03",
-        "JP-08",
-        "GB-06"
+        "FI-10",
+        "FI-09"
       ]
     },
     {
@@ -9727,8 +9738,8 @@
         "GB-05",
         "US-05",
         "AU-05",
-        "ID-08",
-        "JP-06"
+        "GB-12",
+        "ID-08"
       ]
     },
     {
@@ -10309,11 +10320,11 @@
         ]
       },
       "nearest5": [
+        "ET-12",
+        "ET-09",
         "ET-07",
         "ET-01",
-        "FI-05",
-        "MX-07",
-        "CO-11"
+        "FI-05"
       ]
     },
     {
@@ -12178,9 +12189,9 @@
       "nearest5": [
         "GR-01",
         "MY-08",
+        "GR-10",
         "GR-06",
-        "IS-04",
-        "US-10"
+        "IS-04"
       ]
     },
     {
@@ -12219,11 +12230,11 @@
         ]
       },
       "nearest5": [
+        "GR-10",
+        "GR-09",
+        "GR-11",
         "GR-07",
-        "GR-08",
-        "GR-05",
-        "AU-08",
-        "GR-03"
+        "GR-08"
       ]
     },
     {
@@ -13380,8 +13391,8 @@
         "TZ-10",
         "GR-07",
         "US-01",
-        "TH-07",
-        "NZ-06"
+        "GR-11",
+        "TH-07"
       ]
     },
     {
@@ -13424,8 +13435,8 @@
         "TZ-09",
         "TZ-05",
         "TZ-08",
-        "CO-12",
-        "TZ-12"
+        "ET-09",
+        "CO-12"
       ]
     },
     {
@@ -14336,8 +14347,8 @@
         "BR-04",
         "BR-05",
         "BR-08",
-        "NZ-08",
-        "TW-12"
+        "ET-10",
+        "NZ-08"
       ]
     },
     {
@@ -14750,7 +14761,7 @@
         "GR-01",
         "GR-02",
         "GR-06",
-        "CO-04"
+        "FI-12"
       ]
     },
     {
@@ -15321,11 +15332,11 @@
         ]
       },
       "nearest5": [
+        "FI-10",
         "FI-03",
         "JP-07",
         "JP-06",
-        "GB-08",
-        "JP-05"
+        "GB-08"
       ]
     },
     {
@@ -15364,11 +15375,11 @@
         ]
       },
       "nearest5": [
+        "FI-12",
         "JP-02",
         "FI-01",
         "FI-04",
-        "JP-06",
-        "FI-03"
+        "JP-06"
       ]
     },
     {
@@ -17110,11 +17121,11 @@
       },
       "heard": [],
       "nearest5": [
+        "FI-09",
+        "ID-11",
         "TW-06",
         "DK-02",
-        "DK-08",
-        "ID-05",
-        "AU-06"
+        "DK-08"
       ]
     },
     {
@@ -17242,11 +17253,11 @@
       },
       "heard": [],
       "nearest5": [
+        "FI-09",
         "SG-04",
-        "VN-12",
-        "SG-10",
-        "PH-04",
-        "SG-03"
+        "GB-09",
+        "GB-12",
+        "VN-12"
       ]
     },
     {
@@ -17464,10 +17475,10 @@
       "built_as": "GB-01",
       "nearest5": [
         "GB-07",
+        "GB-12",
         "HK-03",
-        "GB-08",
-        "JP-06",
-        "NZ-07"
+        "FI-10",
+        "GB-08"
       ]
     },
     {
@@ -17512,7 +17523,7 @@
         "GB-07",
         "JP-05",
         "HK-07",
-        "AU-05"
+        "FI-10"
       ]
     },
     {
@@ -17555,9 +17566,9 @@
       "nearest5": [
         "GB-05",
         "GB-08",
-        "NZ-07",
-        "JP-05",
-        "JP-06"
+        "GB-12",
+        "FI-09",
+        "FI-10"
       ]
     },
     {
@@ -17599,10 +17610,10 @@
       "built_as": "GB-04",
       "nearest5": [
         "GB-07",
+        "FI-10",
         "PH-08",
         "GB-05",
-        "JP-06",
-        "AU-05"
+        "JP-06"
       ]
     },
     {
@@ -19348,8 +19359,8 @@
         "AU-06",
         "CZ-07",
         "DK-05",
-        "AU-04",
-        "DK-02"
+        "FI-09",
+        "AU-04"
       ]
     },
     {
@@ -19806,10 +19817,10 @@
       "heard": [],
       "nearest5": [
         "ID-06",
+        "ID-10",
         "DK-01",
         "UA-03",
-        "TW-09",
-        "ID-05"
+        "TW-09"
       ]
     },
     {
@@ -20160,9 +20171,9 @@
       "nearest5": [
         "ID-08",
         "ID-06",
+        "ID-11",
         "GB-08",
-        "GR-05",
-        "AU-05"
+        "ID-12"
       ]
     },
     {
@@ -20206,8 +20217,8 @@
         "ID-07",
         "ID-08",
         "ID-05",
-        "UA-01",
-        "FI-08"
+        "ID-10",
+        "FI-09"
       ]
     },
     {
@@ -20249,10 +20260,10 @@
       "built_as": "ID-03",
       "nearest5": [
         "ID-08",
+        "ID-11",
         "ID-06",
-        "PH-04",
-        "NZ-04",
-        "ID-05"
+        "FI-09",
+        "PH-04"
       ]
     },
     {
@@ -20294,10 +20305,10 @@
       "built_as": "ID-04",
       "nearest5": [
         "ID-05",
+        "ID-11",
         "ID-07",
         "ID-06",
-        "PH-05",
-        "GB-05"
+        "PH-05"
       ]
     },
     {
@@ -20699,10 +20710,10 @@
       "built_as": "JP-01",
       "nearest5": [
         "JP-08",
+        "FI-10",
         "JP-06",
         "GB-07",
-        "JP-02",
-        "NZ-07"
+        "FI-09"
       ]
     },
     {
@@ -20744,10 +20755,10 @@
       "built_as": "JP-02",
       "nearest5": [
         "JP-02",
+        "FI-10",
         "JP-05",
         "GB-05",
-        "GB-07",
-        "AU-05"
+        "GB-07"
       ]
     },
     {
@@ -21688,11 +21699,11 @@
       "heard": [],
       "built_as": "GR-03",
       "nearest5": [
+        "GR-09",
+        "GR-11",
+        "GR-10",
         "GR-05",
-        "NZ-08",
-        "TZ-10",
-        "IS-07",
-        "IS-06"
+        "GR-12"
       ]
     },
     {
@@ -21733,11 +21744,11 @@
       "heard": [],
       "built_as": "GR-04",
       "nearest5": [
+        "GR-12",
+        "GR-11",
         "IS-02",
         "IE-03",
-        "IS-05",
-        "IE-08",
-        "IE-05"
+        "IS-05"
       ]
     },
     {
@@ -21778,11 +21789,11 @@
       "heard": [],
       "built_as": "FI-01",
       "nearest5": [
+        "ET-12",
+        "ET-11",
         "ET-04",
-        "ET-07",
-        "TW-12",
-        "ZW-09",
-        "ET-08"
+        "ET-10",
+        "ET-07"
       ]
     },
     {
@@ -21823,11 +21834,11 @@
       "heard": [],
       "built_as": "FI-02",
       "nearest5": [
+        "FI-12",
         "CO-03",
         "GR-06",
         "GR-03",
-        "MX-03",
-        "MY-08"
+        "MX-03"
       ]
     },
     {
@@ -21872,7 +21883,7 @@
         "JP-03",
         "CZ-09",
         "PH-07",
-        "CZ-08"
+        "FI-09"
       ]
     },
     {
@@ -21914,10 +21925,10 @@
       "built_as": "FI-04",
       "nearest5": [
         "ID-08",
+        "FI-09",
+        "FI-10",
         "GB-05",
-        "HK-10",
-        "ID-05",
-        "PH-08"
+        "HK-10"
       ]
     },
     {
@@ -22230,9 +22241,9 @@
       "nearest5": [
         "AU-05",
         "NZ-06",
+        "GB-12",
         "NZ-03",
-        "GB-07",
-        "NZ-08"
+        "GB-07"
       ]
     },
     {
@@ -23771,11 +23782,11 @@
       "heard": [],
       "built_as": "AR-01",
       "nearest5": [
+        "ID-09",
         "CM-07",
         "TZ-13",
         "ZA-09",
-        "TZ-16",
-        "ZA-08"
+        "TZ-16"
       ]
     },
     {
@@ -24356,11 +24367,11 @@
       "heard": [],
       "built_as": "TH-02",
       "nearest5": [
+        "GR-10",
         "TH-07",
+        "GR-12",
         "GR-08",
-        "US-02",
-        "US-05",
-        "IE-05"
+        "GR-11"
       ]
     },
     {
@@ -24942,10 +24953,10 @@
       "built_as": "VN-03",
       "nearest5": [
         "VN-12",
+        "GB-09",
         "AE-08",
         "VN-10",
-        "RS-07",
-        "TW-03"
+        "RS-07"
       ]
     },
     {
@@ -25707,10 +25718,10 @@
       "built_as": "TZ-04",
       "nearest5": [
         "TZ-04",
+        "ID-09",
         "ET-08",
         "NZ-05",
-        "HK-10",
-        "TZ-13"
+        "HK-10"
       ]
     },
     {
@@ -26023,9 +26034,9 @@
       "nearest5": [
         "ZW-03",
         "GB-03",
+        "FI-11",
         "UG-04",
-        "CV-01",
-        "UG-09"
+        "CV-01"
       ]
     },
     {
@@ -26398,11 +26409,11 @@
       ],
       "built_as": "MX-03",
       "nearest5": [
+        "GR-10",
+        "GR-12",
         "TH-07",
         "GR-07",
-        "AU-11",
-        "GR-08",
-        "NZ-08"
+        "GR-11"
       ]
     },
     {
@@ -26537,10 +26548,10 @@
       "built_as": "US-02",
       "nearest5": [
         "US-12",
+        "GR-09",
         "GR-07",
-        "IS-07",
-        "GR-03",
-        "IS-02"
+        "GR-11",
+        "IS-07"
       ]
     },
     {
@@ -26581,11 +26592,11 @@
       "heard": [],
       "built_as": "US-03",
       "nearest5": [
+        "ET-10",
         "PH-08",
         "IS-05",
         "FI-03",
-        "HK-03",
-        "AU-10"
+        "HK-03"
       ]
     },
     {
@@ -27809,10 +27820,10 @@
       "built_as": "SG-02",
       "nearest5": [
         "SG-12",
+        "GB-12",
+        "GB-09",
         "MZ-01",
-        "PE-04",
-        "GB-03",
-        "VN-11"
+        "PE-04"
       ]
     },
     {
@@ -28033,11 +28044,11 @@
       "heard": [],
       "built_as": "HK-03",
       "nearest5": [
+        "FI-11",
         "HK-12",
         "HK-04",
         "HK-09",
-        "HK-10",
-        "HK-02"
+        "HK-10"
       ]
     },
     {
@@ -28262,7 +28273,7 @@
         "ZW-09",
         "ET-07",
         "ZW-10",
-        "ES-02"
+        "ET-09"
       ]
     },
     {
@@ -29564,10 +29575,10 @@
       "built_as": "UA-01",
       "nearest5": [
         "TW-12",
+        "ET-10",
         "AU-04",
         "AU-12",
-        "TZ-04",
-        "HK-10"
+        "TZ-04"
       ]
     },
     {
@@ -29835,9 +29846,9 @@
       "nearest5": [
         "VN-11",
         "RS-05",
+        "GB-09",
         "NL-07",
-        "AU-03",
-        "DO-12"
+        "AU-03"
       ]
     },
     {
@@ -31323,6 +31334,906 @@
         "CI-02",
         "FR-04",
         "CI-11"
+      ]
+    },
+    {
+      "id": "GB-09",
+      "region": "GB",
+      "file": "audio/GB-09.mp3",
+      "duration_s": 131.58,
+      "title": "Corner Shop Rain",
+      "artist": "Tottenham Marshes Rooftop Crew",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "UK chart pop instrumental, 115 BPM, major key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "GB-01",
+      "nearest5": [
+        "VN-11",
+        "GB-01",
+        "GB-12",
+        "GB-11",
+        "RS-07"
+      ]
+    },
+    {
+      "id": "GB-10",
+      "region": "GB",
+      "file": "audio/GB-10.mp3",
+      "duration_s": 117.86,
+      "title": "Static in the Arcade",
+      "artist": "Camberwell Union",
+      "mirrors_rank": 1,
+      "mirrors_cities": 23,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "UK chart pop instrumental, 115 BPM, major key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "GB-02",
+      "nearest5": [
+        "SN-06",
+        "ZW-07",
+        "PE-04",
+        "SG-10",
+        "GB-03"
+      ]
+    },
+    {
+      "id": "GB-11",
+      "region": "GB",
+      "file": "audio/GB-11.mp3",
+      "duration_s": 132.54,
+      "title": "Glass Arcade",
+      "artist": "Hackney Sunrise Rooftop Crew",
+      "mirrors_rank": 2,
+      "mirrors_cities": 11,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        512
+      ],
+      "stage1_seed": 511,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "UK chart pop instrumental, 115 BPM, major key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "GB-03",
+      "nearest5": [
+        "GB-09",
+        "GB-12",
+        "GB-03",
+        "GB-01",
+        "GB-02"
+      ]
+    },
+    {
+      "id": "GB-12",
+      "region": "GB",
+      "file": "audio/GB-12.mp3",
+      "duration_s": 131.98,
+      "title": "Glass Trainers",
+      "artist": "New Cross Yard Sessions",
+      "mirrors_rank": 3,
+      "mirrors_cities": 11,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        612
+      ],
+      "stage1_seed": 611,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "UK chart pop instrumental, 115 BPM, major key, four-on-the-floor drums with clap backbeat, driving synth bass, bright supersaw chords, chopped electric guitar, big polished chorus lift, a prominent kit, bass well forward and synth-led textures carrying the arrangement, romantic, energetic and joyful",
+      "readout": {
+        "bpm": 114.84,
+        "mode": "major",
+        "instruments": [
+          "drums",
+          "bass",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "energetic",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "GB-04",
+      "nearest5": [
+        "ID-04",
+        "NZ-03",
+        "GB-05",
+        "SG-10",
+        "GB-09"
+      ]
+    },
+    {
+      "id": "ID-09",
+      "region": "ID",
+      "file": "audio/ID-09.mp3",
+      "duration_s": 117.44,
+      "title": "Hujan di Kota",
+      "artist": "Kembang Api Band",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        512
+      ],
+      "stage1_seed": 511,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Indonesian pop instrumental, 117 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, acoustic guitar, bass well forward and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 117.45,
+        "mode": "major",
+        "instruments": [
+          "guitar",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "ID-01",
+      "nearest5": [
+        "ID-11",
+        "ID-08",
+        "ID-12",
+        "TZ-16",
+        "ID-07"
+      ]
+    },
+    {
+      "id": "ID-10",
+      "region": "ID",
+      "file": "audio/ID-10.mp3",
+      "duration_s": 118.98,
+      "title": "Sore di Angkot",
+      "artist": "Angkot Sore Cassette",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Indonesian pop instrumental, 117 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, acoustic guitar, bass well forward and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 117.45,
+        "mode": "major",
+        "instruments": [
+          "guitar",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "ID-02",
+      "nearest5": [
+        "ID-06",
+        "ID-05",
+        "ID-08",
+        "UA-01",
+        "ID-07"
+      ]
+    },
+    {
+      "id": "ID-11",
+      "region": "ID",
+      "file": "audio/ID-11.mp3",
+      "duration_s": 117.84,
+      "title": "Malam Jakarta Angkot",
+      "artist": "Angkot Sore Sound",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Indonesian pop instrumental, 117 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, acoustic guitar, bass well forward and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 117.45,
+        "mode": "major",
+        "instruments": [
+          "guitar",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "ID-03",
+      "nearest5": [
+        "ID-08",
+        "ID-12",
+        "ID-07",
+        "PH-04",
+        "ID-05"
+      ]
+    },
+    {
+      "id": "ID-12",
+      "region": "ID",
+      "file": "audio/ID-12.mp3",
+      "duration_s": 118.1,
+      "title": "Langit Kota",
+      "artist": "Angkot Sore Circuit",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Indonesian pop instrumental, 117 BPM, major key, clean electric guitar arpeggios, round synth bass, crisp programmed kit with handclaps, glassy keyboard chords, airy pads, bright uncluttered mix, acoustic guitar, bass well forward and a prominent kit carrying the arrangement, romantic, tender and joyful",
+      "readout": {
+        "bpm": 117.45,
+        "mode": "major",
+        "instruments": [
+          "guitar",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "love",
+          "ballad",
+          "happy"
+        ]
+      },
+      "heard": [],
+      "built_as": "ID-04",
+      "nearest5": [
+        "ID-11",
+        "US-05",
+        "ID-08",
+        "US-06",
+        "PH-04"
+      ]
+    },
+    {
+      "id": "ET-09",
+      "region": "ET",
+      "file": "audio/ET-09.mp3",
+      "duration_s": 132.0,
+      "title": "Bega be Semayawi",
+      "artist": "Merkato Choir",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.2,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 94 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, layered hand percussion and bass well forward carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 93.96,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "percussion",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "ET-01",
+      "nearest5": [
+        "ET-04",
+        "ET-12",
+        "ET-01",
+        "ET-07",
+        "PE-05"
+      ]
+    },
+    {
+      "id": "ET-10",
+      "region": "ET",
+      "file": "audio/ET-10.mp3",
+      "duration_s": 115.62,
+      "title": "Libe ye Addis",
+      "artist": "Arat Kilo Institute",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        512
+      ],
+      "stage1_seed": 511,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 94 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, layered hand percussion and bass well forward carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 93.96,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "percussion",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "ET-02",
+      "nearest5": [
+        "ET-12",
+        "FI-05",
+        "ET-04",
+        "UA-05",
+        "AU-05"
+      ]
+    },
+    {
+      "id": "ET-11",
+      "region": "ET",
+      "file": "audio/ET-11.mp3",
+      "duration_s": 117.46,
+      "title": "Chewata be Semayawi",
+      "artist": "Meskel Rooftop Crew",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        612
+      ],
+      "stage1_seed": 611,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 94 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, layered hand percussion and bass well forward carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 93.96,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "percussion",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "ET-03",
+      "nearest5": [
+        "FI-05",
+        "ET-12",
+        "ET-04",
+        "MX-07",
+        "MX-11"
+      ]
+    },
+    {
+      "id": "ET-12",
+      "region": "ET",
+      "file": "audio/ET-12.mp3",
+      "duration_s": 131.1,
+      "title": "Menged ye Wenz",
+      "artist": "Piazza Skyline",
+      "mirrors_rank": 4,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Ethiopian chart instrumental, reggae-rooted with an Amharic pop sway, 94 BPM, major key, skanking reggae guitar and organ, deep bass, driving hand percussion, warm synth pads, mid-tempo reggae-pop sway, glossy mix, synth-led textures, layered hand percussion and bass well forward carrying the arrangement, romantic, joyful and energetic",
+      "readout": {
+        "bpm": 93.96,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "percussion",
+          "bass"
+        ],
+        "moods": [
+          "love",
+          "happy",
+          "energetic"
+        ]
+      },
+      "heard": [],
+      "built_as": "ET-04",
+      "nearest5": [
+        "FI-05",
+        "ET-10",
+        "ET-04",
+        "ET-09",
+        "ET-08"
+      ]
+    },
+    {
+      "id": "GR-09",
+      "region": "GR",
+      "file": "audio/GR-09.mp3",
+      "duration_s": 117.82,
+      "title": "Fos tis Thalassa",
+      "artist": "Thiseio Circuit",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 122 BPM, minor key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, a prominent kit, acoustic guitar and synth-led textures carrying the arrangement, romantic, easy and melodic",
+      "readout": {
+        "bpm": 121.62,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "guitar",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "relaxing",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "built_as": "GR-01",
+      "nearest5": [
+        "GR-10",
+        "GR-07",
+        "GR-11",
+        "GR-04",
+        "US-10"
+      ]
+    },
+    {
+      "id": "GR-10",
+      "region": "GR",
+      "file": "audio/GR-10.mp3",
+      "duration_s": 117.6,
+      "title": "Choros sti Geitonia",
+      "artist": "Psiri Collective",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.3,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 122 BPM, minor key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, a prominent kit, acoustic guitar and synth-led textures carrying the arrangement, romantic, easy and melodic",
+      "readout": {
+        "bpm": 121.62,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "guitar",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "relaxing",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "built_as": "GR-02",
+      "nearest5": [
+        "GR-09",
+        "GR-07",
+        "GR-11",
+        "GR-12",
+        "GR-04"
+      ]
+    },
+    {
+      "id": "GR-11",
+      "region": "GR",
+      "file": "audio/GR-11.mp3",
+      "duration_s": 118.4,
+      "title": "Dromos tis Mesanychta",
+      "artist": "Lycabettus Choir",
+      "mirrors_rank": 3,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        612
+      ],
+      "stage1_seed": 611,
+      "lufs": -14.1,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 122 BPM, minor key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, a prominent kit, acoustic guitar and synth-led textures carrying the arrangement, romantic, easy and melodic",
+      "readout": {
+        "bpm": 121.62,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "guitar",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "relaxing",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "built_as": "GR-03",
+      "nearest5": [
+        "GR-07",
+        "GR-09",
+        "GR-08",
+        "GR-10",
+        "GR-12"
+      ]
+    },
+    {
+      "id": "GR-12",
+      "region": "GR",
+      "file": "audio/GR-12.mp3",
+      "duration_s": 117.16,
+      "title": "Choros sti Thalassa",
+      "artist": "Monastiraki Nychta Institute",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Greek singer-songwriter chart-pop instrumental, 122 BPM, minor key, warm nylon-string and bouzouki-adjacent guitar picking, soft piano chords, brushed live drums, round bass, intimate mid-tempo balladry lifting into a fuller chorus, a prominent kit, acoustic guitar and synth-led textures carrying the arrangement, romantic, easy and melodic",
+      "readout": {
+        "bpm": 121.62,
+        "mode": "minor",
+        "instruments": [
+          "drums",
+          "guitar",
+          "synthesizer"
+        ],
+        "moods": [
+          "love",
+          "relaxing",
+          "melodic"
+        ]
+      },
+      "heard": [],
+      "built_as": "GR-04",
+      "nearest5": [
+        "GR-08",
+        "GR-10",
+        "GR-11",
+        "GR-07",
+        "IS-06"
+      ]
+    },
+    {
+      "id": "FI-09",
+      "region": "FI",
+      "file": "audio/FI-09.mp3",
+      "duration_s": 116.14,
+      "title": "Tanssi Aurinko",
+      "artist": "Punavuori Trio",
+      "mirrors_rank": 1,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        412
+      ],
+      "stage1_seed": 411,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 101 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, deep, energetic and sunny",
+      "readout": {
+        "bpm": 101.33,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "deep",
+          "energetic",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "FI-01",
+      "nearest5": [
+        "DK-04",
+        "GB-12",
+        "FI-10",
+        "GB-07",
+        "PH-04"
+      ]
+    },
+    {
+      "id": "FI-10",
+      "region": "FI",
+      "file": "audio/FI-10.mp3",
+      "duration_s": 130.96,
+      "title": "Yo Sininen",
+      "artist": "Kallio Ilta Sessions",
+      "mirrors_rank": 2,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        112
+      ],
+      "stage1_seed": 111,
+      "lufs": -14.1,
+      "recipe": "grow+intro",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 101 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, deep, energetic and sunny",
+      "readout": {
+        "bpm": 101.33,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "deep",
+          "energetic",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "FI-02",
+      "nearest5": [
+        "FI-09",
+        "JP-06",
+        "GB-07",
+        "GB-08",
+        "JP-05"
+      ]
+    },
+    {
+      "id": "FI-11",
+      "region": "FI",
+      "file": "audio/FI-11.mp3",
+      "duration_s": 116.42,
+      "title": "Kesa Kortteli",
+      "artist": "Suomenlinna Choir",
+      "mirrors_rank": 5,
+      "mirrors_cities": 1,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        312
+      ],
+      "stage1_seed": 311,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 101 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, deep, energetic and sunny",
+      "readout": {
+        "bpm": 101.33,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "deep",
+          "energetic",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "FI-03",
+      "nearest5": [
+        "HK-11",
+        "UG-11",
+        "PT-04",
+        "ID-04",
+        "US-04"
+      ]
+    },
+    {
+      "id": "FI-12",
+      "region": "FI",
+      "file": "audio/FI-12.mp3",
+      "duration_s": 119.02,
+      "title": "Sydan Meri",
+      "artist": "Hakaniemi Yo Sessions",
+      "mirrors_rank": 3,
+      "mirrors_cities": 23,
+      "seed_source": "synthetic",
+      "vibe": 0.42,
+      "chunks": 1,
+      "seeds": [
+        212
+      ],
+      "stage1_seed": 211,
+      "lufs": -14.2,
+      "recipe": "grow",
+      "version": "v6-measured",
+      "chart_week": "2026-09-28",
+      "sa3_prompt": "Finnish pop chart instrumental, with a reggae-tinged current, 101 BPM, major key, loping offbeat guitar skank, warm round bass, laid-back programmed kit, soft synth pad, easy mid-tempo sway, warm intimate mix, synth-led textures, bass well forward and a prominent kit carrying the arrangement, deep, energetic and sunny",
+      "readout": {
+        "bpm": 101.33,
+        "mode": "major",
+        "instruments": [
+          "synthesizer",
+          "bass",
+          "drums"
+        ],
+        "moods": [
+          "deep",
+          "energetic",
+          "summer"
+        ]
+      },
+      "heard": [],
+      "built_as": "FI-04",
+      "nearest5": [
+        "FI-06",
+        "CO-03",
+        "MY-08",
+        "FI-02",
+        "MX-02"
       ]
     }
   ],
