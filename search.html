@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt search · hisia.live</title>
+<meta name="description" content="Search 149 published music prompts from 63 cities by place, genre, sound or mood, hear the tracks made from each, and copy the prompt (CC BY 4.0).">
+<meta name="robots" content="noindex">
+<style>
+@font-face{font-family:"Inter";src:url("fonts/inter-latin.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url("fonts/instrument-serif-400-latin.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url("fonts/instrument-serif-400-italic-latin.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+:root{color-scheme:dark;--navy:#0a1020;--amber:#f0a53a;--cream:#ece9dc;--ink:var(--cream);--ink-soft:rgba(236,233,220,.72);
+  --ink-faint:rgba(236,233,220,.48);--line:rgba(236,233,220,.16);--display:"Instrument Serif",Georgia,serif;--text:"Inter",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{background:var(--navy)}
+body{margin:0 auto;max-width:40rem;padding:18px 16px 7rem;background:var(--navy);color:var(--ink);font-family:var(--text);font-weight:300;font-size:15px;line-height:1.5}
+h1{font-family:var(--display);font-weight:400;font-size:30px;margin:0 0 2px;letter-spacing:-.01em}
+.sub{margin:0 0 12px;font-size:13px;color:var(--ink-faint)}
+.top{position:sticky;top:0;z-index:5;background:var(--navy);padding:6px 0 4px}
+.search{display:flex;align-items:center;gap:8px;border:1px solid rgba(236,233,220,.3);border-radius:999px;padding:10px 15px;background:rgba(6,8,18,.4)}
+.search span{color:var(--ink-faint)}
+.search input{flex:1;border:0;background:none;color:var(--ink);font:inherit;font-size:16px;outline:none;min-width:0}
+.search input::placeholder{color:var(--ink-faint)}
+.feelrow{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.feelrow::-webkit-scrollbar{display:none}
+.chips{display:none;flex-wrap:wrap;gap:6px;padding:6px 0 4px}
+.chips.open{display:flex}
+.chips .k{width:100%;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-faint);margin:6px 0 0}
+.chip{appearance:none;font:inherit;font-size:12.5px;color:var(--ink-soft);border:1px solid rgba(236,233,220,.28);background:rgba(6,8,18,.3);
+  border-radius:999px;padding:4px 11px;cursor:pointer;white-space:nowrap;flex:none}
+.chip[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:var(--navy);font-weight:500}
+.chip .n{opacity:.55;margin-left:4px;font-size:11px}
+.chip.more{border-style:dashed}
+.count{font-size:12px;color:var(--ink-faint);margin:6px 0 0;min-height:1.2em}
+.card{border-top:1px solid var(--line);padding:13px 0 10px}
+.card.now{border-left:2px solid var(--amber);padding-left:10px;margin-left:-12px}
+.card .city{font-family:var(--display);font-weight:400;font-size:22px;line-height:1.1;margin:0}
+.card .city i{font-style:italic;color:var(--ink-soft);font-size:.8em;margin-left:.35em}
+.card .meta{font-size:11.5px;color:var(--ink-faint);letter-spacing:.06em;margin:3px 0 6px;display:flex;flex-wrap:wrap;gap:4px 10px}
+.card .meta .g{color:var(--ink-soft);letter-spacing:.02em}
+.card .prompt{margin:0 0 8px;font-size:13.5px;line-height:1.5;color:var(--ink-soft)}
+.card mark{background:rgba(240,165,58,.28);color:var(--ink);padding:0 .1em;border-radius:2px}
+.acts{display:flex;align-items:center;gap:8px;margin:0 0 6px;flex-wrap:wrap}
+.btn{appearance:none;font-family:var(--text);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);background:rgba(236,233,220,.08);
+  border:1px solid rgba(236,233,220,.26);border-radius:999px;padding:8px 13px;cursor:pointer;white-space:nowrap}
+.btn.cue,.btn.cue:hover{opacity:1;background:var(--amber);border-color:var(--amber);color:var(--navy);font-weight:500}
+.btn.cue::before{content:"\25B6";font-size:9px;margin-right:7px}
+.btn.cue[aria-pressed="true"]::before{content:"\23F8"}
+.btn.done{background:var(--amber);border-color:var(--amber);color:var(--navy)}
+.btn.ghost{background:none;color:var(--ink-soft)}
+.card ul{list-style:none;margin:0;padding:0;font-size:12.5px;color:var(--ink-faint)}
+.card li{padding:4px 0;cursor:pointer}
+.card li b{font-weight:400;color:var(--ink-soft);font-family:var(--display);font-size:1.08em}
+.card li.playing,.card li.playing b{color:var(--amber)}
+.empty p{color:var(--ink-soft)}
+footer{margin-top:2rem;color:var(--ink-faint);font-size:12.5px}
+a{color:inherit}
+
+  .cue, #player { display: none; }
+  html.player-on body { padding-bottom: calc(7rem + env(safe-area-inset-bottom, 0px)); }
+  html.player-on .cue { display: inline-block; }
+  .cue { margin: .1rem 0 .2rem; padding: .25rem .8rem; font: inherit; font-size: .8rem;
+         line-height: 1.5; color: inherit; background: none; border: 1px solid;
+         border-radius: 999px; opacity: .55; cursor: pointer; }
+  .cue:hover { opacity: 1; }
+  .cue[aria-pressed="true"] { opacity: 1; font-weight: 600; }
+  li.playing { opacity: 1; font-weight: 600; }
+  html.player-on li[data-file] { cursor: pointer; }
+  html.player-on #player { display: block; }
+  #player { position: fixed; left: 0; right: 0; bottom: 0; z-index: 9;
+            box-sizing: border-box; background: Canvas; color: CanvasText;
+            border-top: 1px solid; border-top-color: color-mix(in srgb, CanvasText 30%, transparent);
+            padding: .5rem 1.25rem calc(.5rem + env(safe-area-inset-bottom, 0px)); }
+  #player .bar { display: flex; align-items: center; gap: .7rem;
+                 max-width: 40rem; margin: 0 auto; }
+  #pp { flex: none; width: 2.5rem; height: 2.5rem; font: inherit; font-size: .9rem;
+        color: inherit; background: none; border: 1px solid; border-radius: 50%;
+        cursor: pointer; }
+  #now { flex: 1 1 auto; min-width: 0; margin: 0; font-size: .85rem;
+         white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #now-city { font-weight: 600; }
+  #now-title { opacity: .75; }
+  #player a { flex: none; font-size: .8rem; opacity: .7; }
+  .cue:focus-visible, #pp:focus-visible, #player a:focus-visible {
+    outline: 2px solid currentColor; outline-offset: 2px; opacity: 1; }
+
+#player{background:var(--navy);color:var(--ink);border-top-color:var(--line)}
+#pp{border-color:var(--amber);color:var(--amber)}
+</style>
+</head>
+<body>
+<h1>Prompt search</h1>
+<p class="sub">149 published prompts from 63 cities, each with the tracks made from it. Find a sound, copy its prompt. CC BY 4.0.</p>
+<div class="top">
+  <label class="search"><span>&#9906;</span><input id="q" type="search" placeholder="lagos, amapiano, slow brass, melancholic&#8230;" autocomplete="off" aria-label="Search prompts"></label>
+  <div class="feelrow" id="feelrow"></div>
+  <div class="chips" id="chips"></div>
+  <p class="count" id="count" aria-live="polite"></p>
+</div>
+<div id="results"></div>
+<footer><a href="/">Radio</a> · <a href="/cities.html">All cities</a> · <a href="/privacy.html">Privacy</a> · prompts and audio CC BY 4.0</footer>
+<script src="search-sheet.js"></script>
+<script>
+(function () {
+  'use strict';
+  /* ranking, chips and the card are search-sheet.js (HisiaSearch), the same component the radio page's sheet uses */
+  var HS = window.HisiaSearch;
+  var q = document.getElementById('q'), out = document.getElementById('results'), count = document.getElementById('count');
+  var feelrow = document.getElementById('feelrow'), chipsEl = document.getElementById('chips');
+  var IDX = [], ON = {}, shown = [], SETS = [];
+  function paintChips() {
+    var c = HS.chipsHTML(SETS, ON, chipsEl.classList.contains('open'));
+    feelrow.innerHTML = c.row; chipsEl.innerHTML = c.grid;
+  }
+  function render() {
+    var r = HS.rank(IDX, q.value.trim(), ON); shown = r.shown;
+    count.textContent = HS.countText(r);
+    out.innerHTML = shown.length ? shown.map(function (g, i) { return HS.cardHTML(g, r.qws, i); }).join('')
+      : '<div class="empty"><p>Nothing matches that. Try fewer words, or one of these.</p></div>';
+    if (!shown.length) chipsEl.classList.add('open');
+    paintChips();
+    if (window.hisiaPlayer) window.hisiaPlayer.scan();
+  }
+  function writeUrl(push) {
+    var sp = new URLSearchParams(), v = q.value.trim(), keys = Object.keys(ON);
+    if (v) sp.set('q', v); if (keys.length) sp.set('feel', keys.join(' '));
+    var url = (sp.toString() ? '?' + sp.toString() : location.pathname) + location.hash;
+    if (push) history.pushState(null, '', url); else history.replaceState(null, '', url);
+  }
+  function readUrl() {
+    var sp = new URLSearchParams(location.search); q.value = sp.get('q') || ''; ON = {};
+    (sp.get('feel') || '').split(' ').filter(Boolean).forEach(function (k) { ON[k] = true; });
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.more) { chipsEl.classList.toggle('open'); paintChips(); return; }
+    if (b.dataset.chip) { var k = b.dataset.chip; if (ON[k]) delete ON[k]; else ON[k] = true; writeUrl(true); render(); return; }
+    var sec = b.closest('section.card'); if (!sec) return;
+    HS.cardButton(b, shown[+sec.dataset.i], q.value);
+  });
+  var t = null;
+  q.addEventListener('input', function () { clearTimeout(t); t = setTimeout(function () { writeUrl(false); render(); }, 200); });
+  q.addEventListener('keydown', function (e) { if (e.key === 'Enter') { clearTimeout(t); writeUrl(true); render(); q.blur(); } });
+  window.addEventListener('popstate', function () { readUrl(); render(); });
+  HS.load('search-index.json').then(function (idx) {
+    IDX = idx;
+    var nt = document.getElementById('now-title'); if (nt) nt.textContent = 'Pick a track';
+    SETS = HS.chipSets(IDX); readUrl(); render();
+    if (location.hash.length > 1) { var el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el) el.scrollIntoView(); }
+  }, function () { out.innerHTML = '<p>The prompt list did not load. Try again in a moment.</p>'; });
+})();
+</script>
+
+<div id="player">
+  <div class="bar">
+    <button id="pp" type="button" aria-label="Play">▶</button>
+    <p id="now" aria-live="polite"><span id="now-city"></span><span id="now-title">Pick a city</span></p>
+    <a href="/">Radio ↗</a>
+  </div>
+  <audio id="au" preload="none"></audio>
+</div>
+
+<script>
+/* The bottom audio bar, one component shared by cities.html and search.html.
+   It plays <section data-city> blocks whose <li data-file> rows are the takes, in
+   page order: a section's Play button starts its first take, clicking a row plays
+   that take, and the bar's next step walks down the page. A page that rebuilds its
+   sections (search) calls window.hisiaPlayer.scan() after each render. */
+(function () {
+  'use strict';
+  var probe = document.createElement('audio');
+  if (!probe.canPlayType || !probe.canPlayType('audio/mpeg')) return;
+  var au = document.getElementById('au');
+  var pp = document.getElementById('pp');
+  var nowCity = document.getElementById('now-city');
+  var nowTitle = document.getElementById('now-title');
+  if (!au || !pp || !nowCity || !nowTitle) return;
+
+  var sections = [], si = -1, ti = 0, shown = false, playingFile = null;
+  function items(s) { return Array.prototype.slice.call(s.querySelectorAll('li[data-file]')); }
+  function show() { if (!shown) { shown = true; document.documentElement.className += ' player-on'; } }
+  function reveal() {
+    // Reveal the bar only once one mp3 is known to be there. A page served without
+    // its audio/ folder keeps no trace of the player at all.
+    if (shown || !sections.length) return;
+    if (location.protocol !== 'http:' && location.protocol !== 'https:') return show();
+    if (!window.fetch) return show();
+    fetch(items(sections[0])[0].getAttribute('data-file'), { method: 'HEAD' })
+      .then(function (r) { if (r.ok) show(); }, function () {});
+  }
+
+  function paint() {
+    var playing = !au.paused && !au.ended;
+    for (var i = 0; i < sections.length; i++) {
+      var b = sections[i].querySelector('.cue');
+      var on = (i === si && playing);
+      sections[i].classList.toggle('now', i === si);
+      if (!b) continue;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.setAttribute('aria-label', (on ? 'Pause ' : 'Play ') + sections[i].getAttribute('data-city'));
+    }
+    var lit = document.querySelectorAll('li.playing');
+    for (var j = 0; j < lit.length; j++) lit[j].classList.remove('playing');
+    pp.textContent = playing ? '\u23f8' : '\u25b6';
+    pp.setAttribute('aria-label', playing ? 'Pause' : 'Play');
+    var s = sections[si], li = s ? items(s)[ti] : null;
+    if (!li) return;
+    if (playing) li.classList.add('playing');
+    nowCity.textContent = s.getAttribute('data-city') + ' \u2014 ';
+    nowTitle.textContent = li.getAttribute('data-title') + ' \u00b7 ' + li.getAttribute('data-artist');
+  }
+  function start() { var p = au.play(); if (p && p.catch) p.catch(function () { paint(); }); }
+  function cue(i, j, play) {
+    var s = sections[i], li = s ? items(s)[j] : null;
+    if (!li) return;
+    si = i; ti = j; playingFile = li.getAttribute('data-file');
+    au.src = playingFile;
+    paint();
+    if (play) start();
+  }
+  function next() {
+    if (si < 0) return cue(0, 0, true);
+    if (ti + 1 < items(sections[si]).length) return cue(si, ti + 1, true);
+    if (si + 1 < sections.length) return cue(si + 1, 0, true);  // the next block down the page
+    au.pause(); paint();
+  }
+
+  function scan() {
+    sections = Array.prototype.slice.call(document.querySelectorAll('section[data-city]'))
+      .filter(function (s) { return s.querySelector('li[data-file]'); });
+    // keep the playing take selected if it survived a re-render
+    si = -1; ti = 0;
+    sections.forEach(function (s, i) {
+      items(s).forEach(function (li, j) {
+        if (playingFile && li.getAttribute('data-file') === playingFile && si < 0) { si = i; ti = j; }
+        if (li.__bound) return; li.__bound = true;
+        li.addEventListener('click', function (e) {
+          if (e.target.closest('a,button')) return;
+          var k = sections.indexOf(s), m = items(s).indexOf(li);
+          if (k === si && m === ti && !au.paused) au.pause(); else cue(k, m, true);
+        });
+      });
+      var b = s.querySelector('.cue');
+      if (!b || b.__bound) return; b.__bound = true;
+      b.addEventListener('click', function () {
+        var k = sections.indexOf(s);
+        if (k === si && !au.paused) au.pause();
+        else if (k === si) start();
+        else cue(k, 0, true);
+      });
+    });
+    reveal(); paint();
+  }
+
+  pp.addEventListener('click', function () {
+    if (si < 0) cue(0, 0, true); else if (au.paused) start(); else au.pause();
+  });
+  au.addEventListener('play', paint);
+  au.addEventListener('pause', paint);
+  au.addEventListener('ended', next);
+  au.addEventListener('error', function () { paint(); nowTitle.textContent = 'that track did not load'; });
+
+  window.hisiaPlayer = { scan: scan };
+  scan();
+  // A deep link (#INMAA) cues that city but does not autoplay: autoplay is
+  // blocked on phones and rude on a page of text.
+  if (location.hash.length > 1) {
+    var id = location.hash.slice(1);
+    for (var k = 0; k < sections.length; k++) if (sections[k].id === id) { cue(k, 0, false); break; }
+  }
+})();
+</script>
+</body>
+</html>

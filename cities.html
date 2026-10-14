@@ -30,6 +30,7 @@
   .cue:hover { opacity: 1; }
   .cue[aria-pressed="true"] { opacity: 1; font-weight: 600; }
   li.playing { opacity: 1; font-weight: 600; }
+  html.player-on li[data-file] { cursor: pointer; }
   html.player-on #player { display: block; }
   #player { position: fixed; left: 0; right: 0; bottom: 0; z-index: 9;
             box-sizing: border-box; background: Canvas; color: CanvasText;
@@ -1103,101 +1104,112 @@ Chart weeks in this set: 24 Aug 2026, 31 Aug 2026, 7 Sep 2026, 14 Sep 2026, 28 S
 </div>
 
 <script>
+/* The bottom audio bar, one component shared by cities.html and search.html.
+   It plays <section data-city> blocks whose <li data-file> rows are the takes, in
+   page order: a section's Play button starts its first take, clicking a row plays
+   that take, and the bar's next step walks down the page. A page that rebuilds its
+   sections (search) calls window.hisiaPlayer.scan() after each render. */
 (function () {
   'use strict';
   var probe = document.createElement('audio');
   if (!probe.canPlayType || !probe.canPlayType('audio/mpeg')) return;
-
-  var sections = Array.prototype.slice.call(document.querySelectorAll('section[data-city]'))
-    .filter(function (s) { return s.querySelector('li[data-file]'); });
   var au = document.getElementById('au');
   var pp = document.getElementById('pp');
   var nowCity = document.getElementById('now-city');
   var nowTitle = document.getElementById('now-title');
-  if (!sections.length || !au || !pp || !nowCity || !nowTitle) return;
+  if (!au || !pp || !nowCity || !nowTitle) return;
 
+  var sections = [], si = -1, ti = 0, shown = false, playingFile = null;
   function items(s) { return Array.prototype.slice.call(s.querySelectorAll('li[data-file]')); }
-  function show() { document.documentElement.className += ' player-on'; }
-
-  // Reveal the bar only once one mp3 is known to be there. A page served without
-  // its audio/ folder keeps no trace of the player at all.
-  if (location.protocol !== 'http:' && location.protocol !== 'https:') show();
-  else if (!window.fetch) show();
-  else fetch(items(sections[0])[0].getAttribute('data-file'), { method: 'HEAD' })
-         .then(function (r) { if (r.ok) show(); }, function () {});
-
-  var si = -1, ti = 0;
+  function show() { if (!shown) { shown = true; document.documentElement.className += ' player-on'; } }
+  function reveal() {
+    // Reveal the bar only once one mp3 is known to be there. A page served without
+    // its audio/ folder keeps no trace of the player at all.
+    if (shown || !sections.length) return;
+    if (location.protocol !== 'http:' && location.protocol !== 'https:') return show();
+    if (!window.fetch) return show();
+    fetch(items(sections[0])[0].getAttribute('data-file'), { method: 'HEAD' })
+      .then(function (r) { if (r.ok) show(); }, function () {});
+  }
 
   function paint() {
     var playing = !au.paused && !au.ended;
     for (var i = 0; i < sections.length; i++) {
       var b = sections[i].querySelector('.cue');
-      if (!b) continue;
       var on = (i === si && playing);
+      sections[i].classList.toggle('now', i === si);
+      if (!b) continue;
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
       b.setAttribute('aria-label', (on ? 'Pause ' : 'Play ') + sections[i].getAttribute('data-city'));
     }
     var lit = document.querySelectorAll('li.playing');
     for (var j = 0; j < lit.length; j++) lit[j].classList.remove('playing');
-    pp.textContent = playing ? '⏸' : '▶';
+    pp.textContent = playing ? '\u23f8' : '\u25b6';
     pp.setAttribute('aria-label', playing ? 'Pause' : 'Play');
     var s = sections[si], li = s ? items(s)[ti] : null;
     if (!li) return;
     if (playing) li.classList.add('playing');
-    nowCity.textContent = s.getAttribute('data-city') + ' — ';
-    nowTitle.textContent = li.getAttribute('data-title') + ' · ' + li.getAttribute('data-artist');
+    nowCity.textContent = s.getAttribute('data-city') + ' \u2014 ';
+    nowTitle.textContent = li.getAttribute('data-title') + ' \u00b7 ' + li.getAttribute('data-artist');
   }
-
   function start() { var p = au.play(); if (p && p.catch) p.catch(function () { paint(); }); }
-
   function cue(i, j, play) {
-    var s = sections[i];
-    var li = s ? items(s)[j] : null;
+    var s = sections[i], li = s ? items(s)[j] : null;
     if (!li) return;
-    si = i; ti = j;
-    au.src = li.getAttribute('data-file');
+    si = i; ti = j; playingFile = li.getAttribute('data-file');
+    au.src = playingFile;
     paint();
     if (play) start();
   }
-
   function next() {
     if (si < 0) return cue(0, 0, true);
     if (ti + 1 < items(sections[si]).length) return cue(si, ti + 1, true);
-    if (si + 1 < sections.length) return cue(si + 1, 0, true);  // the next city down the page
+    if (si + 1 < sections.length) return cue(si + 1, 0, true);  // the next block down the page
     au.pause(); paint();
   }
 
-  sections.forEach(function (s, i) {
-    var b = s.querySelector('.cue');
-    if (!b) return;
-    b.addEventListener('click', function () {
-      if (i === si && !au.paused) au.pause();
-      else if (i === si) start();
-      else cue(i, 0, true);
+  function scan() {
+    sections = Array.prototype.slice.call(document.querySelectorAll('section[data-city]'))
+      .filter(function (s) { return s.querySelector('li[data-file]'); });
+    // keep the playing take selected if it survived a re-render
+    si = -1; ti = 0;
+    sections.forEach(function (s, i) {
+      items(s).forEach(function (li, j) {
+        if (playingFile && li.getAttribute('data-file') === playingFile && si < 0) { si = i; ti = j; }
+        if (li.__bound) return; li.__bound = true;
+        li.addEventListener('click', function (e) {
+          if (e.target.closest('a,button')) return;
+          var k = sections.indexOf(s), m = items(s).indexOf(li);
+          if (k === si && m === ti && !au.paused) au.pause(); else cue(k, m, true);
+        });
+      });
+      var b = s.querySelector('.cue');
+      if (!b || b.__bound) return; b.__bound = true;
+      b.addEventListener('click', function () {
+        var k = sections.indexOf(s);
+        if (k === si && !au.paused) au.pause();
+        else if (k === si) start();
+        else cue(k, 0, true);
+      });
     });
-  });
+    reveal(); paint();
+  }
 
   pp.addEventListener('click', function () {
-    if (si < 0) cue(0, 0, true);
-    else if (au.paused) start();
-    else au.pause();
+    if (si < 0) cue(0, 0, true); else if (au.paused) start(); else au.pause();
   });
-
   au.addEventListener('play', paint);
   au.addEventListener('pause', paint);
   au.addEventListener('ended', next);
-  au.addEventListener('error', function () {
-    paint();
-    nowTitle.textContent = 'that track did not load';
-  });
+  au.addEventListener('error', function () { paint(); nowTitle.textContent = 'that track did not load'; });
 
+  window.hisiaPlayer = { scan: scan };
+  scan();
   // A deep link (#INMAA) cues that city but does not autoplay: autoplay is
   // blocked on phones and rude on a page of text.
   if (location.hash.length > 1) {
     var id = location.hash.slice(1);
-    for (var k = 0; k < sections.length; k++) {
-      if (sections[k].id === id) { cue(k, 0, false); break; }
-    }
+    for (var k = 0; k < sections.length; k++) if (sections[k].id === id) { cue(k, 0, false); break; }
   }
 })();
 </script>
