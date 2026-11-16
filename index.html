@@ -259,6 +259,13 @@ header{
   color:var(--ink-faint);text-align:right;
 }
 .nextcity b{font-weight:400;color:var(--ink-soft)}
+/* search: a 34px magnifier out of the header's flow, so the next-city line keeps its place.
+   Wide screens: same row, right of the line. Phones: the row is full, so it sits just under it. */
+#btnSearch{position:absolute;right:var(--pad);top:calc(var(--pad) * .72 - 11px);width:34px;height:34px;padding:0;border-radius:50%;
+  border:1px solid rgba(255,255,255,.3);background:rgba(6,8,18,.28);color:#fff;display:grid;place-items:center;cursor:pointer}
+#btnSearch svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8}
+body:not(.embed):not(.stream) header{padding-right:calc(var(--pad) + 46px)}
+body.embed #btnSearch,body.stream #btnSearch{display:none}
 
 /* The card used to hang off the bottom of the screen and grow upward, so the length
    of each city's readout moved the city name — 40.2px of drift across the 51 cities
@@ -534,6 +541,8 @@ footer a:hover{color:#fff}
 @media (max-width:760px){
   :root{--horizon:56%;--card-hang:4.4rem}   /* how far above the horizon the city name hangs */
   header{align-items:baseline}
+  body:not(.embed):not(.stream) header{padding-right:var(--pad)}   /* the next-city line keeps its place; the magnifier sits under it */
+  #btnSearch{top:calc(var(--pad) * .72 + 20px)}
   .mark{flex:none}
   .nextcity{max-width:none;min-width:0;flex:1 1 auto;letter-spacing:.12em;font-size:11px}   /* never clips the clock */
   /* on a phone there is no city strip at the horizon, so the name hangs just above it
@@ -619,6 +628,7 @@ body.stream{--card-lift:0.2vh;--card-floor:calc(var(--pad) * .2 + 1.2em)}
   <header>
     <div class="mark">World Sound</div>
     <div class="nextcity" id="nextCity"></div>
+    <button id="btnSearch" type="button" title="search the prompts (/)" aria-label="Search the prompts"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
   </header>
 
   <div id="card">
@@ -654,6 +664,7 @@ body.stream{--card-lift:0.2vh;--card-floor:calc(var(--pad) * .2 + 1.2em)}
   </div>
 </div>
 
+<script src="search-sheet.js" defer></script>
 <script>
 "use strict";
 (function(){
@@ -1176,7 +1187,49 @@ function startTrack(track, fade){
   fading = false;
   paint();
   preloadNext();
+  window.dispatchEvent(new Event("hisia:track"));
 }
+
+/* search-sheet.js hand-off: play a given track on THIS player (no second audio element).
+   Same path as the next button - advance() with the track put first in the queue - so the
+   usual crossfade runs, sky and card jump to its city, and refill() plans what follows in
+   the current mode. Before the first Play it does what begin() does, with this track. */
+function playFile(file){
+  var t = null;
+  for (var i = 0; lib && i < lib.tracks.length; i++) if (lib.tracks[i].file === file){ t = lib.tracks[i]; break; }
+  if (!t || !regionsByIso[t.region]) return false;
+  if (!playedByRegion[t.region]) playedByRegion[t.region] = [];
+  queue.forEach(function(q){      /* give back the plan; the next ones are drawn from the new track on */
+    var played = playedByRegion[q.region] || [], k = played.indexOf(q.id);
+    if (k !== -1) played.splice(k, 1);
+    var j = recent.lastIndexOf(q.region); if (j !== -1) recent.splice(j, 1);
+  });
+  queue.length = 0;
+  t.by = "sun";
+  if (playedByRegion[t.region].indexOf(t.id) === -1) playedByRegion[t.region].push(t.id);
+  recent.push(t.region); if (recent.length > 4) recent.shift();
+  lastRegion = t.region;
+  if (!ctx){
+    initAudio();
+    if (ctx.state === "suspended") ctx.resume();
+    startOverlay.classList.add("gone");
+    wantPlay = true; btnPlay.innerHTML = ICON.pause;
+    startTrack(t, true);
+    return true;
+  }
+  if (!wantPlay){ ctx.resume(); wantPlay = true; btnPlay.innerHTML = ICON.pause; }
+  queue.push(t);
+  advance(false);
+  return true;
+}
+window.hisiaRadio = {
+  play: playFile,
+  toggle: function(){ togglePlay(); window.dispatchEvent(new Event("hisia:track")); },
+  now: function(){
+    var r = current && regionsByIso[current.region];
+    return current ? {file: current.file, title: current.title, artist: current.artist, city: r ? r.city : "", paused: !wantPlay} : null;
+  }
+};
 
 function advance(immediate){
   if (!queue.length) refill();
