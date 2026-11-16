@@ -1713,6 +1713,8 @@ btnPrompt.addEventListener("click", function(){
   var open = !elPromptBox.hidden;
   elPromptBox.hidden = open;
   btnPrompt.textContent = open ? "show prompt" : "hide prompt";
+  /* the visitor's choice sticks: hidden once, hidden on the next visit (Kalam, 16 Nov) */
+  try { localStorage.setItem("hisia.prompt", open ? "hidden" : "shown"); } catch(e){}
   fitStrip(); fitFooter();
 });
 /* a thumb swipe to the left is next; a scroll inside the prompt box is not a swipe */
@@ -1805,7 +1807,10 @@ loadLibrary().then(function(data){
      forcing it in put the prompt through the controls; there the button stays,
      and the visitor can open it. */
   var ROOMY = innerWidth >= 520 && innerHeight >= 240;
-  if (Q0.get("prompt") === "1" || (IS_EMBED && ROOMY)){
+  /* 16 Nov, Kalam: "show prompt always on website. user can hide if they want".
+     Open by default on the site too; a visitor who pressed hide keeps it hidden. */
+  var HID = false; try { HID = localStorage.getItem("hisia.prompt") === "hidden"; } catch(e){}
+  if (Q0.get("prompt") !== "0" && (Q0.get("prompt") === "1" || (IS_EMBED ? ROOMY : !HID))){
     elPromptBox.hidden = false;
     btnPrompt.textContent = "hide prompt";
     fitStrip(); fitFooter();   /* the card makes room for the prompt when it is open */
